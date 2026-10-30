@@ -7,7 +7,7 @@
 Outputs:
   lab3d.html           - artifact page (claude.ai adds the document skeleton); fetches packs/<system>.pack
   packs/<system>.pack  - concatenated meshes per system (published alongside the page)
-  site/index.html + site/packs/  - standalone copy for static hosting (site root)
+  docs/index.html + docs/packs/  - standalone copy, published by GitHub Pages from the docs/ folder
 """
 import json, sys, pathlib, re, difflib, shutil
 here = pathlib.Path(__file__).parent
@@ -164,7 +164,7 @@ img {{ max-width: 100%; }}
 {body_part}</body>
 </html>
 """
-site = here / "site"; site.mkdir(parents=True, exist_ok=True)
+site = here / "docs"; site.mkdir(parents=True, exist_ok=True)
 (site / "index.html").write_text(standalone)
 (site / "robots.txt").write_text("User-agent: *\nAllow: /\n")
 (site / "404.html").write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Not found</title><style>body{font:16px system-ui;padding:40px;max-width:40ch}</style></head><body><h1>Page not found</h1><p>The 3D lab lives at <a href="/">the home page</a>.</p></body></html>\n')

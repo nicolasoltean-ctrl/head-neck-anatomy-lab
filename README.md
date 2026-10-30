@@ -2,7 +2,7 @@
 
 A rotatable 3D head and neck atlas with a skin-to-brain peel, click-to-identify cards and a quiz, written for USMLE Step 2 CK study.
 
-- `site/` is the deployed site (GitHub Pages publishes it on every push to `main`).
+- `docs/` is the deployed site: GitHub Pages publishes it from the `main` branch on every push.
 - `template3d.html` + `data/*.json` + `build3d.py` build it: `python3 build3d.py <mesh_dir>` (see `tools/README.md` for the mesh export).
 - `DEPLOY.md` covers hosting and custom domains.
 

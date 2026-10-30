@@ -1,6 +1,6 @@
 # Putting the Head and Neck Anatomy Lab on your own domain
 
-The 3D lab is a static site: the `site/` folder (`index.html`, `404.html`, `robots.txt`, and `packs/*.pack`, about 21 MB of mesh data).
+The 3D lab is a static site: the `docs/` folder (`index.html`, `404.html`, `robots.txt`, and `packs/*.pack`, about 21 MB of mesh data).
 The earlier flat 2D plate is retired; `build.py` still writes it to `site2d/` if you ever want it, but it is not part of the hosted site.
 No server, database, or build step is needed on the host. Any static host works; the steps below use
 Cloudflare because it can hold both the domain and the hosting, so DNS is one click.
@@ -22,13 +22,13 @@ If `headandneck.io` is taken after all, `headneck.io` also showed no registratio
 
 1. In the Cloudflare dashboard, open **Workers & Pages → Create → Pages → Upload assets**.
 2. Name the project (for example `headandneck`).
-3. Drag the **contents** of the `site/` folder (`index.html`, `404.html`, `robots.txt` and the `packs/` folder) into the upload box,
+3. Drag the **contents** of the `docs/` folder (`index.html`, `404.html`, `robots.txt` and the `packs/` folder) into the upload box,
    not the folder's parent. Click **Deploy site**. The 3D lab is the home page.
 4. You get a temporary URL like `https://headandneck.pages.dev`. Open it on your phone and laptop to confirm
    the model loads, peels and the quiz works.
 
 Alternatives that work the same way with a drag-and-drop upload: Netlify (<https://app.netlify.com/drop>)
-and Vercel. GitHub Pages works too if you want version history: commit `site/` to a repo, enable Pages on it,
+and Vercel. GitHub Pages works too if you want version history: commit `docs/` to a repo, enable Pages on it,
 and add a file named `CNAME` containing `headandneck.io`.
 
 ## 3. Attach the domain
@@ -53,8 +53,8 @@ apex offer an ALIAS/ANAME record, which does the same job.
 
    `<mesh_dir>` is the folder of exported `.bin` meshes produced from the Z-Anatomy Blender file
    (see `tools/README.md`; the meshes only need re-exporting if you change which structures are included).
-   This refreshes `lab3d.html` (the claude.ai artifact version) and `site/` (the standalone version).
-3. In Cloudflare Pages, open the project → **Create new deployment** → upload the `site/` folder contents again.
+   This refreshes `lab3d.html` (the claude.ai artifact version) and `docs/` (the standalone version).
+3. In Cloudflare Pages, open the project → **Create new deployment** → upload the `docs/` folder contents again.
    The previous version stays available under Deployments if you need to roll back.
 
 ## What to expect once it is public
