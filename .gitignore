@@ -1,7 +1,7 @@
 # build outputs that build3d.py / build.py regenerate (docs/ is committed: it is what GitHub Pages serves)
-packs/
-packs_b64/
-site2d/
-index.html
+/packs/
+/packs_b64/
+/site2d/
+/index.html
 .DS_Store
 __pycache__/
