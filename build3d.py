@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Build the 3D lab.
 
-  python3 build3d.py <mesh_dir>
+  python3 build3d.py [mesh_dir]      (default: ./meshes)
 
-<mesh_dir> holds <id>.bin files and manifest.json produced by the Blender exporter.
+<mesh_dir> holds <id>.bin files and manifest.json produced by the Blender exporter (tools/export_meshes.py).
+The export is kept in ./meshes (ignored by git, about 24 MB); re-export only to change which structures are included.
 Outputs:
   lab3d.html           - artifact page (claude.ai adds the document skeleton); fetches packs/<system>.pack
   packs/<system>.pack  - concatenated meshes per system (published alongside the page)
@@ -11,7 +12,7 @@ Outputs:
 """
 import json, sys, pathlib, re, difflib, shutil
 here = pathlib.Path(__file__).parent
-mesh_dir = pathlib.Path(sys.argv[1])
+mesh_dir = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else pathlib.Path(__file__).resolve().parent / "meshes"
 man = json.load(open(mesh_dir / "manifest.json"))["meshes"]
 
 # ---------------- cards ----------------

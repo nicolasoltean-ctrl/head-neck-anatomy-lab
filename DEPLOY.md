@@ -17,11 +17,11 @@ Deploy from a branch → `main` / `/docs`). Every push to `main` republishes it 
 2. Rebuild:
 
    ```bash
-   python3 build3d.py <mesh_dir>
+   python3 build3d.py
    ```
 
-   `<mesh_dir>` is the folder of exported `.bin` meshes produced from the Z-Anatomy Blender file
-   (see `tools/README.md`; the meshes only need re-exporting if you change which structures are included).
+   It reads the exported meshes from `meshes/` (kept in the project folder, outside git; see `tools/README.md`
+   for re-exporting them from the Z-Anatomy Blender file, which is only needed to change which structures are included).
    This refreshes `lab3d.html` (the claude.ai artifact version) and `docs/` (the published site).
 3. Commit and push:
 
