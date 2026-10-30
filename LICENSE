@@ -1,0 +1,27 @@
+Head and Neck Simulator
+Copyright (c) 2026 Nicolas Oltean. All rights reserved.
+
+1. Original work (all rights reserved)
+   The name "Head and Neck Simulator", the structure cards in data/*.json
+   (names as compiled, functions, details and pearls), the viewer and build
+   code (template3d.html, build3d.py, build.py, tools/*.py), the page design
+   and the documentation are the original work of the copyright holder.
+   They may not be copied, modified, redistributed, republished or used to
+   build a derivative product without prior written permission. Viewing the
+   published site for personal study is permitted.
+
+2. Model data (CC BY-SA 4.0, excluded from the above)
+   The 3D meshes in docs/packs/ and meshes/ are derived from Z-Anatomy
+   (https://github.com/Z-Anatomy/Models-of-human-anatomy), itself derived from
+   BodyParts3D (The Database Center for Life Science, CC BY-SA 2.1 JP) with
+   cranial nerves from the University of Dundee CAHID (CC BY 4.0). They were
+   decimated, recolored and repacked for this viewer and are shared under the
+   Creative Commons Attribution-ShareAlike 4.0 International license
+   (https://creativecommons.org/licenses/by-sa/4.0/). Attribution to the
+   sources above must be kept when the model data is reused.
+
+3. Third-party software
+   three.js (MIT License, Copyright (c) 2010-2021 three.js authors) is loaded
+   from a CDN. Fonts are served by Google Fonts under the SIL Open Font License.
+
+This simulator is an educational study aid and is not medical advice.

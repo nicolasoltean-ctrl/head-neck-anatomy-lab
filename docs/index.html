@@ -160,6 +160,7 @@ header.top .count { margin-left: auto; font-family: var(--font-mono); font-size:
 .quiz .setup { display: grid; gap: 10px; }
 .quiz .setup p { margin: 0; font-size: 14px; color: var(--fg-2); }
 .quiz .warn { color: var(--bad); font-size: 13px; }
+.foot + .foot { margin-top: -6px; }
 .foot { margin-top: 18px; font-size: 12.5px; color: var(--fg-3); max-width: 80ch; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
@@ -224,6 +225,7 @@ header.top .count { margin-left: auto; font-family: var(--font-mono); font-size:
     </aside>
   </div>
   <p class="foot" id="foot">Model: <a href="https://github.com/Z-Anatomy/Models-of-human-anatomy" target="_blank" rel="noopener">Z-Anatomy, the libre 3D atlas of anatomy</a> (CC BY-SA 4.0), derived from <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html" target="_blank" rel="noopener">BodyParts3D</a> (The Database Center for Life Science, CC BY-SA 2.1 JP) with cranial nerves from the University of Dundee CAHID (CC BY 4.0). Meshes were decimated and recolored for this viewer; this page's model data is shared under CC BY-SA 4.0. Functions and pearls are written at USMLE Step 2 CK depth. Not a substitute for a dissection atlas.</p>
+  <p class="foot" id="legal">&copy; 2026 Nicolas Oltean. The Head and Neck Simulator name, the structure cards (functions, details and pearls), the viewer code and the design are copyright and all rights are reserved; they may not be copied, redistributed or republished without written permission. The model data above is excluded and remains under its own CC BY-SA 4.0 terms. Educational use only; not medical advice.</p>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
