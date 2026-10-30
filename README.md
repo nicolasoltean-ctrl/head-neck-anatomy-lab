@@ -1,4 +1,4 @@
-# Head and Neck Anatomy Lab 3D
+# Head and Neck Simulator
 
 A rotatable 3D head and neck atlas with a skin-to-brain peel, click-to-identify cards and a quiz, written for USMLE Step 2 CK study.
 

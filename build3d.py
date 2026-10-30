@@ -151,7 +151,7 @@ standalone = f"""<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Rotatable 3D head and neck anatomy: peel from skin to brain, click any bone, muscle, nerve, vessel or lymph node to identify it, read its function and a Step 2 CK pearl, or quiz yourself.">
 <meta name="color-scheme" content="light dark">
-<meta property="og:title" content="Head and Neck Anatomy Lab 3D">
+<meta property="og:title" content="Head and Neck Simulator">
 <meta property="og:type" content="website">
 <link rel="icon" href="{favicon}">
 <style>

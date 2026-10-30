@@ -1,4 +1,4 @@
-# Hosting the Head and Neck Anatomy Lab 3D
+# Hosting the Head and Neck Simulator
 
 The lab is a static site. The `docs/` folder (`index.html`, `404.html`, `robots.txt` and `packs/*.pack`,
 about 22 MB of mesh data) is everything a host needs; there is no server, database or build step on the host.
