@@ -1,0 +1,600 @@
+<title>Head and Neck Anatomy Lab</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a dissection bench. Sticky lateral-view plate on the left, a reading panel (search, index, specimen card, quiz) on the right; stacks on phones. */
+:root {
+  --bg: #eef0f3;
+  --bg-2: #ffffff;
+  --bg-3: #e2e6eb;
+  --fg: #1b2330;
+  --fg-2: #4e5a6a;
+  --fg-3: #7c8797;
+  --line: #cdd3db;
+  --accent: #1f6f8b;
+  --accent-fg: #ffffff;
+  --good: #2d7d46;
+  --bad: #b23a3a;
+  --c-bone: #a8832e;
+  --c-muscle: #a8463c;
+  --c-nerve: #b48a00;
+  --c-lymph: #2f8a5b;
+  --c-artery: #d1232a;
+  --c-vein: #2f5fbf;
+  --skin: #f5f0e6;
+  --skin-line: #8b8378;
+  --font-display: "Spectral", "Iowan Old Style", Georgia, serif;
+  --font-ui: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+  --radius: 6px;
+  --shadow: 0 1px 2px rgba(20, 30, 45, .08), 0 4px 14px rgba(20, 30, 45, .06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12161c; --bg-2: #1a2028; --bg-3: #232b35; --fg: #e8ecf1; --fg-2: #aab4c1; --fg-3: #76818f; --line: #313b47;
+    --accent: #5fb3cf; --accent-fg: #0f1419; --good: #5fcf8f; --bad: #ef7c7c;
+    --c-bone: #e0bf6c; --c-muscle: #e8907f; --c-nerve: #f2cc4f; --c-lymph: #63d195; --c-artery: #ff6b6b; --c-vein: #6f9bff;
+    --skin: #262d37; --skin-line: #8d98a7; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12161c; --bg-2: #1a2028; --bg-3: #232b35; --fg: #e8ecf1; --fg-2: #aab4c1; --fg-3: #76818f; --line: #313b47;
+  --accent: #5fb3cf; --accent-fg: #0f1419; --good: #5fcf8f; --bad: #ef7c7c;
+  --c-bone: #e0bf6c; --c-muscle: #e8907f; --c-nerve: #f2cc4f; --c-lymph: #63d195; --c-artery: #ff6b6b; --c-vein: #6f9bff;
+  --skin: #262d37; --skin-line: #8d98a7; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-ui); font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+button { font: inherit; color: inherit; }
+button:focus-visible, input:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 14px 40px; max-width: 1400px; margin: 0 auto; }
+header.top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; padding-bottom: 12px; border-bottom: 1px solid var(--line); margin-bottom: 14px; }
+header.top h1 { font-family: var(--font-display); font-weight: 600; font-size: 26px; margin: 0; letter-spacing: -.01em; text-wrap: balance; }
+header.top .sub { color: var(--fg-2); font-size: 14px; }
+header.top .count { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--fg-3); letter-spacing: .02em; }
+
+.bench { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(320px, 420px); gap: 18px; align-items: start; }
+@media (max-width: 900px) { .bench { grid-template-columns: minmax(0, 1fr); } }
+
+/* Plate */
+.plate { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 10px); display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+@media (max-width: 900px) { .plate { position: static; } }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.toolbar .spacer { flex: 1; }
+.chip { display: inline-flex; align-items: center; gap: 7px; padding: 5px 11px; border: 1px solid var(--line); border-radius: 999px; background: var(--bg-2); cursor: pointer; font-size: 13px; font-weight: 500; transition: background .15s, border-color .15s; }
+.chip .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--c); box-shadow: 0 0 0 2px var(--bg-2); }
+.chip[aria-pressed="true"] { border-color: var(--c, var(--accent)); background: color-mix(in srgb, var(--c, var(--accent)) 14%, var(--bg-2)); }
+.chip[aria-pressed="false"] { color: var(--fg-3); }
+.chip[aria-pressed="false"] .dot { background: var(--bg-3); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--bg-2); }
+.seg button { padding: 5px 12px; border: 0; background: transparent; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--fg-2); }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-fg); }
+.icon-btn { width: 32px; height: 32px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-2); cursor: pointer; font-size: 16px; line-height: 1; display: inline-grid; place-items: center; }
+.icon-btn:hover { background: var(--bg-3); }
+
+.stage { position: relative; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.stage svg { display: block; width: 100%; height: auto; max-height: calc(100vh - 150px); min-height: 360px; touch-action: pan-y pinch-zoom; cursor: grab; user-select: none; }
+.stage svg.panning { cursor: grabbing; }
+.stage .hint { position: absolute; left: 10px; bottom: 8px; font-family: var(--font-mono); font-size: 11px; color: var(--fg-3); pointer-events: none; }
+.stage .corner { position: absolute; right: 10px; top: 8px; font-family: var(--font-mono); font-size: 11px; color: var(--fg-3); pointer-events: none; letter-spacing: .04em; }
+.tip { position: absolute; pointer-events: none; background: var(--fg); color: var(--bg); padding: 4px 9px; border-radius: 4px; font-size: 12px; font-weight: 500; white-space: nowrap; transform: translate(-50%, -140%); opacity: 0; transition: opacity .1s; z-index: 3; }
+.tip.on { opacity: 1; }
+
+/* SVG structure styling */
+.base { fill: var(--skin); stroke: var(--skin-line); stroke-width: 2; stroke-linejoin: round; }
+.base-line { fill: none; stroke: var(--skin-line); stroke-width: 1.6; stroke-linecap: round; }
+.base-fill { fill: var(--skin-line); opacity: .5; }
+g.layer { display: none; }
+g.layer.on { display: block; }
+g.s { cursor: pointer; }
+g.s .shp { fill: var(--c); fill-opacity: .11; stroke: var(--c); stroke-width: 1.4; stroke-linejoin: round; stroke-linecap: round; transition: fill-opacity .12s, stroke-width .12s; vector-effect: non-scaling-stroke; }
+g.s .shp.ln { fill: none; stroke-width: 2.4; }
+#L-artery g.s .shp.ln, #L-vein g.s .shp.ln { stroke-width: 3.2; }
+g.s.deep .shp { stroke-dasharray: 5 4; fill-opacity: .08; }
+g.s .mk { fill: var(--c); stroke: var(--bg-2); stroke-width: 1.5; r: 4.5; transition: r .12s; }
+g.s.deep .mk { fill: var(--bg-2); stroke: var(--c); stroke-width: 2; }
+g.s:hover .shp, g.s.hov .shp { fill-opacity: .42; stroke-width: 2.4; }
+g.s:hover .shp.ln, g.s.hov .shp.ln { stroke-width: 4; }
+g.s:hover .mk, g.s.hov .mk { r: 6.5; }
+g.s.sel .shp { fill-opacity: .55; stroke-width: 3; filter: drop-shadow(0 0 4px var(--c)); }
+g.s.sel .shp.ln { stroke-width: 5; }
+g.s.sel .mk { r: 7; }
+g.s.good .shp { stroke: var(--good); fill: var(--good); fill-opacity: .5; stroke-width: 3; }
+g.s.good .mk { fill: var(--good); }
+g.s.bad .shp { stroke: var(--bad); fill: var(--bad); fill-opacity: .45; stroke-width: 3; }
+g.s.bad .mk { fill: var(--bad); }
+g.s.dim { opacity: .25; pointer-events: none; }
+g.s .lbl { font-family: var(--font-ui); font-size: 13px; font-weight: 500; fill: var(--fg); paint-order: stroke; stroke: var(--bg-2); stroke-width: 3px; stroke-linejoin: round; pointer-events: none; display: none; }
+svg.labels g.s .lbl { display: block; }
+svg.quiet g.s { pointer-events: none; }
+svg.hidemarks g.s .lbl { display: none; }
+g.s.off { display: none; }
+svg.nooutlines g.s:not(.sel):not(.good):not(.bad):not(:hover) .shp { fill-opacity: 0; stroke-opacity: .18; }
+.index h4 button.grp { border: 0; background: none; padding: 0; font: inherit; color: inherit; cursor: pointer; }
+.index h4 button.grp:hover { color: var(--accent); text-decoration: underline; }
+.search .icon-btn { width: 28px; height: 28px; font-size: 15px; }
+svg.hidemarks g.s .mk { r: 5.5; }
+@media (max-width: 900px) { .stage svg { max-height: 58vh; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* Panel */
+.panel { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.card { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.search { display: flex; align-items: center; gap: 8px; padding: 8px 10px; }
+.search input { flex: 1; min-width: 0; border: 1px solid var(--line); border-radius: var(--radius); padding: 7px 10px; background: var(--bg); color: var(--fg); font-size: 14px; }
+.search .n { font-family: var(--font-mono); font-size: 12px; color: var(--fg-3); white-space: nowrap; }
+.index { max-height: 34vh; overflow: auto; padding: 4px 0; }
+@media (max-width: 900px) { .index { max-height: 32vh; } }
+.index h3 { margin: 0; padding: 8px 12px 2px; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--c); font-weight: 600; position: sticky; top: 0; background: var(--bg-2); z-index: 1; }
+.index h4 { margin: 0; padding: 6px 12px 2px; font-size: 12px; color: var(--fg-3); font-weight: 500; }
+.index button.row { display: flex; width: 100%; text-align: left; gap: 8px; align-items: center; padding: 4px 12px 4px 14px; border: 0; background: transparent; cursor: pointer; font-size: 14px; border-left: 3px solid transparent; }
+.index button.row:hover { background: var(--bg-3); }
+.index button.row[aria-current="true"] { border-left-color: var(--c); background: color-mix(in srgb, var(--c) 12%, var(--bg-2)); font-weight: 500; }
+.index button.row .deep { margin-left: auto; font-family: var(--font-mono); font-size: 10px; color: var(--fg-3); letter-spacing: .04em; }
+.index .empty { padding: 14px 12px; color: var(--fg-3); font-size: 14px; }
+
+.detail { padding: 14px 16px 16px; }
+.detail .eyebrow { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--fg-3); }
+.detail .eyebrow .cat { color: var(--c); font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
+.detail .eyebrow .cat::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+.detail h2 { font-family: var(--font-display); font-weight: 600; font-size: 23px; line-height: 1.2; margin: 6px 0 8px; text-wrap: balance; }
+.detail .fn { font-size: 15.5px; line-height: 1.5; margin: 0 0 12px; }
+.detail dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 5px 12px; margin: 0 0 12px; font-size: 14px; }
+.detail dt { color: var(--fg-3); font-size: 12.5px; padding-top: 1px; }
+.detail dd { margin: 0; min-width: 0; }
+.detail .pearl { border-left: 3px solid var(--accent); background: color-mix(in srgb, var(--accent) 9%, var(--bg-2)); padding: 8px 12px; border-radius: 0 var(--radius) var(--radius) 0; font-size: 14px; }
+.detail .pearl b { display: block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+.detail .nav { display: flex; gap: 8px; margin-top: 12px; }
+.detail .nav button { flex: 1; padding: 6px 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); cursor: pointer; font-size: 13px; }
+.detail .nav button:hover { background: var(--bg-3); }
+.detail .placeholder { color: var(--fg-2); font-size: 14.5px; }
+.detail .placeholder h2 { font-size: 20px; margin-top: 4px; }
+
+/* Quiz */
+.quiz { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 12px; }
+.quiz .score { display: flex; gap: 14px; flex-wrap: wrap; font-family: var(--font-mono); font-size: 12px; color: var(--fg-3); font-variant-numeric: tabular-nums; }
+.quiz .score b { color: var(--fg); font-weight: 500; }
+.quiz .q { font-family: var(--font-display); font-size: 19px; line-height: 1.3; margin: 0; text-wrap: balance; }
+.quiz .stem { font-size: 15px; background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; }
+.quiz .opts { display: grid; gap: 7px; }
+.quiz .opts button { text-align: left; padding: 9px 12px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); cursor: pointer; font-size: 14.5px; display: flex; gap: 10px; align-items: baseline; }
+.quiz .opts button .k { font-family: var(--font-mono); font-size: 11px; color: var(--fg-3); }
+.quiz .opts button:hover:not(:disabled) { background: var(--bg-3); }
+.quiz .opts button:disabled { cursor: default; }
+.quiz .opts button.good { border-color: var(--good); background: color-mix(in srgb, var(--good) 16%, var(--bg)); }
+.quiz .opts button.bad { border-color: var(--bad); background: color-mix(in srgb, var(--bad) 14%, var(--bg)); }
+.quiz .verdict { font-weight: 600; }
+.quiz .verdict.good { color: var(--good); }
+.quiz .verdict.bad { color: var(--bad); }
+.quiz .explain { font-size: 14px; color: var(--fg-2); }
+.quiz .explain b { color: var(--fg); font-weight: 600; }
+.quiz .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn { padding: 7px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); cursor: pointer; font-size: 14px; font-weight: 500; }
+.btn.primary { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+.btn:hover { filter: brightness(.96); }
+.quiz .missed { font-size: 13px; color: var(--fg-2); }
+.quiz .missed ul { margin: 4px 0 0; padding-left: 18px; }
+.quiz .missed li button { border: 0; background: none; padding: 0; color: var(--accent); cursor: pointer; text-decoration: underline; font-size: 13px; }
+.quiz .setup { display: grid; gap: 10px; }
+.quiz .setup .seg { align-self: start; }
+.quiz .setup p { margin: 0; font-size: 14px; color: var(--fg-2); }
+.quiz .warn { color: var(--bad); font-size: 13px; }
+.foot { margin-top: 18px; font-size: 12.5px; color: var(--fg-3); max-width: 70ch; }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>Head and Neck Anatomy Lab</h1>
+    <span class="sub">Lateral view. Toggle layers, click any structure to identify it, or switch to Quiz.</span>
+    <span class="count" id="count"></span>
+  </header>
+
+  <div class="bench">
+    <section class="plate" aria-label="Anatomy plate">
+      <div class="toolbar" id="layers">
+        <button class="chip" data-layer="bone" style="--c: var(--c-bone)" aria-pressed="true"><span class="dot"></span>Bone</button>
+        <button class="chip" data-layer="muscle" style="--c: var(--c-muscle)" aria-pressed="true"><span class="dot"></span>Muscle</button>
+        <button class="chip" data-layer="nerve" style="--c: var(--c-nerve)" aria-pressed="false"><span class="dot"></span>Nerve</button>
+        <button class="chip" data-layer="lymph" style="--c: var(--c-lymph)" aria-pressed="false"><span class="dot"></span>Lymphatics</button>
+        <button class="chip" data-layer="artery" style="--c: var(--c-artery)" aria-pressed="false"><span class="dot"></span>Arteries</button>
+        <button class="chip" data-layer="vein" style="--c: var(--c-vein)" aria-pressed="false"><span class="dot"></span>Veins</button>
+        <span class="spacer"></span>
+        <div class="seg" role="group" aria-label="Mode">
+          <button id="mode-explore" aria-pressed="true">Explore</button>
+          <button id="mode-quiz" aria-pressed="false">Quiz</button>
+        </div>
+      </div>
+      <div class="stage">
+        <svg id="svg" viewBox="0 0 1000 1100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lateral view of the head and neck">
+          <g id="base">
+            <path class="base" d="M 520 40 C 440 40 360 90 330 150 C 305 200 292 240 290 280 L 295 300 C 275 330 240 370 225 400 C 220 420 240 430 255 430 C 262 450 270 460 275 470 C 285 480 288 490 280 497 C 290 505 290 515 285 520 C 275 540 285 560 300 580 C 320 595 335 605 330 610 C 345 622 355 628 360 630 C 390 720 420 860 440 980 C 450 1010 450 1050 440 1090 L 1000 1090 L 1000 900 C 960 890 920 880 900 880 C 850 860 790 855 760 850 C 775 700 790 540 800 400 C 830 360 845 300 830 250 C 800 150 680 60 520 40 Z"/>
+            <path class="base-line" d="M 290 290 C 320 272 365 275 390 290"/>
+            <path class="base-line" d="M 302 318 C 320 302 360 304 378 320 C 360 334 320 334 302 318 Z"/>
+            <circle class="base-fill" cx="346" cy="320" r="6"/>
+            <path class="base-line" d="M 236 418 C 244 426 254 426 258 420"/>
+            <path class="base-line" d="M 280 497 C 300 494 318 492 332 489"/>
+            <path class="base-line" d="M 603 298 C 640 282 684 305 683 350 C 682 395 660 438 625 438 C 605 438 594 420 596 400 C 598 385 606 377 604 368"/>
+            <path class="base-line" d="M 617 322 C 650 316 668 346 662 380 C 658 404 642 420 626 418"/>
+            <path class="base-line" d="M 598 355 C 606 350 616 356 614 368 C 612 376 604 378 600 372"/>
+            <path class="base-line" d="M 440 980 C 520 965 700 945 820 930"/>
+          </g>
+          <g id="L-bone" class="layer on" style="--c: var(--c-bone)"></g>
+          <g id="L-muscle" class="layer on" style="--c: var(--c-muscle)"></g>
+          <g id="L-nerve" class="layer on" style="--c: var(--c-nerve)"></g>
+          <g id="L-lymph" class="layer on" style="--c: var(--c-lymph)"></g>
+          <g id="L-artery" class="layer on" style="--c: var(--c-artery)"></g>
+          <g id="L-vein" class="layer on" style="--c: var(--c-vein)"></g>
+        </svg>
+        <div class="tip" id="tip"></div>
+        <div class="corner">LATERAL · FACE LEFT</div>
+        <div class="hint">scroll to zoom · drag to pan · dashed = deep structure</div>
+      </div>
+      <div class="toolbar">
+        <button class="chip" id="toggle-outlines" aria-pressed="true" style="--c: var(--accent)"><span class="dot"></span>Outlines</button>
+        <button class="chip" id="toggle-labels" aria-pressed="false" style="--c: var(--accent)"><span class="dot"></span>Labels</button>
+        <span class="spacer"></span>
+        <button class="icon-btn" id="zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
+        <button class="icon-btn" id="zoom-out" title="Zoom out" aria-label="Zoom out">−</button>
+        <button class="icon-btn" id="zoom-reset" title="Reset view" aria-label="Reset view">⟲</button>
+      </div>
+    </section>
+
+    <aside class="panel" aria-label="Structure panel">
+      <div id="explore-ui" style="display: contents">
+        <div class="card search">
+          <input type="search" id="q" placeholder="Filter plate and index: larynx, CN VII, level II…" aria-label="Search structures" autocomplete="off">
+          <button class="icon-btn" id="clear-q" title="Clear filter" aria-label="Clear filter" hidden>×</button>
+          <span class="n" id="qn"></span>
+        </div>
+        <div class="card index" id="index"></div>
+        <div class="card detail" id="detail"></div>
+      </div>
+      <div id="quiz-ui" class="card quiz" hidden></div>
+    </aside>
+  </div>
+  <p class="foot">A rotatable 3D version with surface-to-deep peeling is at <a href="https://claude.ai/artifact/PLzhX51wTpv5VSqc7FnQQ1">the 3D lab</a>. Positions on this plate are schematic projections onto a lateral view; deep structures (dashed outlines) are shown where they lie beneath the surface. Functions and pearls are written at USMLE Step 2 CK depth. Not a substitute for a dissection atlas.</p>
+</div>
+
+<script>
+const DATA = /*__DATA__*/[];
+const CAT = {
+  bone:   { label: 'Bone & cartilage', color: 'var(--c-bone)' },
+  muscle: { label: 'Muscle',           color: 'var(--c-muscle)' },
+  nerve:  { label: 'Nerve',            color: 'var(--c-nerve)' },
+  lymph:  { label: 'Lymphatics',       color: 'var(--c-lymph)' },
+  artery: { label: 'Arteries',         color: 'var(--c-artery)' },
+  vein:   { label: 'Veins',            color: 'var(--c-vein)' },
+};
+const ORDER = ['bone', 'muscle', 'nerve', 'lymph', 'artery', 'vein'];
+const byId = new Map(DATA.map(s => [s.id, s]));
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('hnal:' + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem('hnal:' + k, JSON.stringify(v)); } catch {} },
+};
+
+const state = {
+  layers: Object.assign({ bone: true, muscle: true, nerve: false, lymph: false, artery: false, vein: false }, store.get('layers', {})),
+  labels: !!store.get('labels', false),
+  outlines: store.get('outlines', true) !== false,
+  selected: null,
+  query: '',
+  mode: 'explore',
+  quiz: null,
+  stats: store.get('stats', { correct: 0, total: 0, best: 0 }),
+};
+
+/* ---------- SVG build ---------- */
+const svg = document.getElementById('svg');
+const NS = 'http://www.w3.org/2000/svg';
+const el = (tag, attrs = {}) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
+const nodes = new Map();
+for (const s of DATA) {
+  const g = el('g', { class: 's' + (s.depth === 'deep' ? ' deep' : ''), 'data-id': s.id });
+  const sh = s.shape || { type: 'none' };
+  let shp = null;
+  if (sh.type === 'path' && sh.d) shp = el('path', { d: sh.d, class: 'shp' });
+  else if (sh.type === 'polyline' && sh.points) shp = el('polyline', { points: sh.points, class: 'shp ln' });
+  else if (sh.type === 'circle') shp = el('circle', { cx: s.marker.x, cy: s.marker.y, r: sh.r || 14, class: 'shp' });
+  if (shp) g.appendChild(shp);
+  g.appendChild(el('circle', { cx: s.marker.x, cy: s.marker.y, class: 'mk' }));
+  const t = el('text', { x: s.marker.x + 8, y: s.marker.y + 4, class: 'lbl' });
+  t.textContent = s.name;
+  g.appendChild(t);
+  const title = el('title'); title.textContent = s.name; g.appendChild(title);
+  document.getElementById('L-' + s.category).appendChild(g);
+  nodes.set(s.id, g);
+}
+// markers above shapes within each layer: re-append markers last so small nodes stay clickable
+for (const c of ORDER) {
+  const layer = document.getElementById('L-' + c);
+  const gs = [...layer.querySelectorAll('g.s')];
+  // sort by shape area proxy: shapes without area first, then larger ones first so small ones sit on top
+  gs.sort((a, b) => bboxArea(b) - bboxArea(a)).forEach(g => layer.appendChild(g));
+}
+function bboxArea(g) { const p = g.querySelector('.shp'); if (!p) return 0; try { const b = p.getBBox(); return b.width * b.height; } catch { return 0; } }
+
+/* ---------- Viewbox zoom / pan ---------- */
+const HOME = { x: 0, y: 0, w: 1000, h: 1100 };
+let vb = { ...HOME };
+function applyVB() { svg.setAttribute('viewBox', `${vb.x} ${vb.y} ${vb.w} ${vb.h}`); }
+function clientToSvg(cx, cy) { const pt = svg.createSVGPoint(); pt.x = cx; pt.y = cy; const m = svg.getScreenCTM(); return m ? pt.matrixTransform(m.inverse()) : { x: 0, y: 0 }; }
+function zoomAt(factor, px, py) {
+  const nw = Math.min(1600, Math.max(160, vb.w * factor)); const f = nw / vb.w;
+  vb = { x: px - (px - vb.x) * f, y: py - (py - vb.y) * f, w: nw, h: vb.h * f };
+  applyVB();
+}
+svg.addEventListener('wheel', e => { e.preventDefault(); const p = clientToSvg(e.clientX, e.clientY); zoomAt(e.deltaY > 0 ? 1.12 : 1 / 1.12, p.x, p.y); }, { passive: false });
+document.getElementById('zoom-in').onclick = () => zoomAt(1 / 1.3, vb.x + vb.w / 2, vb.y + vb.h / 2);
+document.getElementById('zoom-out').onclick = () => zoomAt(1.3, vb.x + vb.w / 2, vb.y + vb.h / 2);
+document.getElementById('zoom-reset').onclick = () => { vb = { ...HOME }; applyVB(); };
+let drag = null;
+svg.addEventListener('pointerdown', e => { if (e.button !== 0 && e.pointerType === 'mouse') return; const g = e.target.closest && e.target.closest('g.s'); drag = { sx: e.clientX, sy: e.clientY, vx: vb.x, vy: vb.y, moved: false, id: e.pointerId, target: g ? g.dataset.id : null }; try { svg.setPointerCapture(e.pointerId); } catch {} });
+svg.addEventListener('pointercancel', () => { drag = null; svg.classList.remove('panning'); });
+svg.addEventListener('pointermove', e => {
+  if (drag && drag.id === e.pointerId) {
+    const dx = e.clientX - drag.sx, dy = e.clientY - drag.sy;
+    if (Math.abs(dx) + Math.abs(dy) > 4) { drag.moved = true; svg.classList.add('panning'); }
+    if (drag.moved) { const r = svg.getBoundingClientRect(); const k = vb.w / r.width; vb.x = drag.vx - dx * k; vb.y = drag.vy - dy * k; applyVB(); }
+  }
+  const g = e.target.closest && e.target.closest('g.s');
+  showTip(g, e);
+});
+svg.addEventListener('pointerup', e => {
+  if (!drag || drag.id !== e.pointerId) return;
+  const moved = drag.moved, target = drag.target; drag = null; svg.classList.remove('panning');
+  if (moved) return;
+  if (target) onStructureClick(target);
+});
+svg.addEventListener('pointerleave', () => showTip(null));
+
+const tip = document.getElementById('tip');
+function showTip(g, e) {
+  if (!g || svg.classList.contains('quiet')) { tip.classList.remove('on'); return; }
+  const s = byId.get(g.dataset.id);
+  if (!s) return;
+  if (state.mode === 'quiz' && state.quiz && state.quiz.q && !state.quiz.q.answered) { tip.classList.remove('on'); return; }
+  tip.textContent = s.name;
+  const r = svg.parentElement.getBoundingClientRect();
+  tip.style.left = (e.clientX - r.left) + 'px'; tip.style.top = (e.clientY - r.top) + 'px';
+  tip.classList.add('on');
+}
+
+/* ---------- Layers & labels ---------- */
+function applyLayers() {
+  for (const c of ORDER) {
+    document.getElementById('L-' + c).classList.toggle('on', !!state.layers[c]);
+    document.querySelector(`[data-layer="${c}"]`).setAttribute('aria-pressed', String(!!state.layers[c]));
+  }
+  svg.classList.toggle('labels', state.labels && state.mode === 'explore');
+  svg.classList.toggle('nooutlines', !state.outlines);
+  document.getElementById('toggle-labels').setAttribute('aria-pressed', String(state.labels));
+  document.getElementById('toggle-outlines').setAttribute('aria-pressed', String(state.outlines));
+  store.set('layers', state.layers); store.set('labels', state.labels); store.set('outlines', state.outlines);
+}
+document.getElementById('layers').addEventListener('click', e => {
+  const b = e.target.closest('[data-layer]'); if (!b) return;
+  const c = b.dataset.layer; state.layers[c] = !state.layers[c];
+  applyLayers(); renderIndex();
+  if (state.selected && !state.layers[byId.get(state.selected).category]) select(null);
+  if (state.mode === 'quiz') resetQuizPool();
+});
+document.getElementById('toggle-labels').onclick = () => { state.labels = !state.labels; applyLayers(); };
+
+/* ---------- Explore: index + detail ---------- */
+const visible = () => { const q = state.query.trim().toLowerCase(); return DATA.filter(s => state.layers[s.category] && matches(s, q)); };
+function applyFilter() {
+  const q = state.query.trim().toLowerCase();
+  for (const s of DATA) nodes.get(s.id).classList.toggle('off', !matches(s, q));
+}
+function matches(s, q) {
+  if (!q) return true;
+  const hay = [s.name, s.group, s.function, s.pearl, ...(s.details || []).map(d => d.label + ' ' + d.value)].join(' ').toLowerCase();
+  return q.split(/\s+/).every(w => hay.includes(w));
+}
+function renderIndex() {
+  const list = visible();
+  const idx = document.getElementById('index');
+  let html = '';
+  for (const c of ORDER) {
+    const items = list.filter(s => s.category === c);
+    if (!items.length) continue;
+    html += `<h3 style="--c:${CAT[c].color}">${CAT[c].label} <span style="color:var(--fg-3);font-weight:400">· ${items.length}</span></h3>`;
+    const groups = [...new Set(items.map(s => s.group))];
+    for (const g of groups) {
+      html += `<h4><button class="grp" data-grp="${esc(g)}" title="Show only this group">${esc(g)}</button></h4>`;
+      for (const s of items.filter(s => s.group === g)) {
+        html += `<button class="row" data-id="${esc(s.id)}" style="--c:${CAT[c].color}" aria-current="${s.id === state.selected}">${esc(s.name)}${s.depth === 'deep' ? '<span class="deep">deep</span>' : ''}</button>`;
+      }
+    }
+  }
+  idx.innerHTML = html || `<div class="empty">No structures match “${esc(state.query)}” in the active layers.</div>`;
+  document.getElementById('qn').textContent = `${list.length} / ${DATA.length}`;
+  document.getElementById('clear-q').hidden = !state.query;
+}
+document.getElementById('index').addEventListener('click', e => {
+  const g = e.target.closest('button.grp');
+  if (g) { setQuery(state.query.trim().toLowerCase() === g.dataset.grp.toLowerCase() ? '' : g.dataset.grp); return; }
+  const b = e.target.closest('button.row'); if (b) select(b.dataset.id, true);
+});
+function setQuery(v) {
+  state.query = v; document.getElementById('q').value = v;
+  applyFilter(); renderIndex();
+  if (state.selected && !visible().some(s => s.id === state.selected)) select(null);
+  if (state.mode === 'quiz') resetQuizPool();
+}
+document.getElementById('q').addEventListener('input', e => setQuery(e.target.value));
+document.getElementById('clear-q').onclick = () => setQuery('');
+document.getElementById('toggle-outlines').onclick = () => { state.outlines = !state.outlines; applyLayers(); };
+
+function select(id, fromList) {
+  if (state.selected && nodes.get(state.selected)) nodes.get(state.selected).classList.remove('sel');
+  state.selected = id;
+  if (id && nodes.get(id)) { const g = nodes.get(id); g.classList.add('sel'); g.parentElement.appendChild(g); }
+  renderDetail();
+  const idx = document.getElementById('index');
+  idx.querySelectorAll('button.row').forEach(b => b.setAttribute('aria-current', String(b.dataset.id === id)));
+  const row = idx.querySelector(`button.row[data-id="${CSS.escape(id || '')}"]`);
+  if (row && !fromList) row.scrollIntoView({ block: 'nearest' });
+}
+function renderDetail() {
+  const d = document.getElementById('detail');
+  const s = state.selected && byId.get(state.selected);
+  if (!s) {
+    d.innerHTML = `<div class="placeholder"><div class="eyebrow">Specimen card</div><h2>Pick a structure</h2><p>Click a shape or marker on the plate, or choose from the index. Toggle layers to isolate bone, muscle, nerve, lymphatics, arteries, or veins. Dashed outlines are deep structures projected onto the surface.</p></div>`;
+    return;
+  }
+  const c = CAT[s.category];
+  const list = visible();
+  const i = list.findIndex(x => x.id === s.id);
+  const prev = list[(i - 1 + list.length) % list.length], next = list[(i + 1) % list.length];
+  d.innerHTML = `
+    <div class="eyebrow" style="--c:${c.color}"><span class="cat">${c.label}</span><span>·</span><span>${esc(s.group)}</span><span>·</span><span>${s.depth}</span></div>
+    <h2>${esc(s.name)}</h2>
+    <p class="fn">${esc(s.function)}</p>
+    <dl>${(s.details || []).map(x => `<dt>${esc(x.label)}</dt><dd>${esc(x.value)}</dd>`).join('')}</dl>
+    ${s.pearl ? `<div class="pearl"><b>Step 2 pearl</b>${esc(s.pearl)}</div>` : ''}
+    <div class="nav"><button data-go="${esc(prev.id)}">← ${esc(prev.name)}</button><button data-go="${esc(next.id)}">${esc(next.name)} →</button></div>`;
+}
+document.getElementById('detail').addEventListener('click', e => { const b = e.target.closest('[data-go]'); if (b) select(b.dataset.go); });
+
+/* ---------- Mode switching ---------- */
+function setMode(m) {
+  state.mode = m;
+  document.getElementById('mode-explore').setAttribute('aria-pressed', String(m === 'explore'));
+  document.getElementById('mode-quiz').setAttribute('aria-pressed', String(m === 'quiz'));
+  document.getElementById('explore-ui').hidden = m !== 'explore';
+  document.getElementById('explore-ui').style.display = m === 'explore' ? 'contents' : 'none';
+  document.getElementById('quiz-ui').hidden = m !== 'quiz';
+  clearQuizMarks();
+  svg.classList.remove('quiet', 'hidemarks');
+  if (m === 'explore') { applyLayers(); renderIndex(); renderDetail(); }
+  else { svg.classList.remove('labels'); select(null); state.quiz = state.quiz || { type: 'name', q: null, correct: 0, total: 0, streak: 0, missed: [] }; renderQuiz(); }
+}
+document.getElementById('mode-explore').onclick = () => setMode('explore');
+document.getElementById('mode-quiz').onclick = () => setMode('quiz');
+
+function onStructureClick(id) {
+  if (state.mode === 'explore') { select(id); return; }
+  const qz = state.quiz; if (!qz || !qz.q || qz.q.answered || qz.type !== 'find') return;
+  answer(id);
+}
+
+/* ---------- Quiz ---------- */
+const TYPES = { name: 'Name it', find: 'Find it', function: 'Function' };
+function quizPool() { return visible(); }
+function resetQuizPool() { if (state.quiz) { state.quiz.q = null; clearQuizMarks(); renderQuiz(); } }
+function pick(arr, n, exclude) { const pool = arr.filter(x => !exclude.has(x.id)); for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; } return pool.slice(0, n); }
+function newQuestion() {
+  const qz = state.quiz; const pool = quizPool();
+  if (pool.length < 4) { qz.q = null; renderQuiz(); return; }
+  // prefer structures not yet asked this session, then missed ones
+  const asked = qz.asked || (qz.asked = new Set());
+  let candidates = pool.filter(s => !asked.has(s.id)); if (!candidates.length) { asked.clear(); candidates = pool; }
+  const target = candidates[Math.floor(Math.random() * candidates.length)];
+  asked.add(target.id);
+  const same = pool.filter(s => s.category === target.category && s.id !== target.id);
+  const sameGroup = same.filter(s => s.group === target.group);
+  const ex = new Set([target.id]);
+  let distractors = pick(sameGroup, 3, ex); distractors.forEach(d => ex.add(d.id));
+  if (distractors.length < 3) distractors = distractors.concat(pick(same, 3 - distractors.length, ex)); distractors.forEach(d => ex.add(d.id));
+  if (distractors.length < 3) distractors = distractors.concat(pick(pool, 3 - distractors.length, ex));
+  const options = pick([target, ...distractors], 4, new Set());
+  qz.q = { target, options, answered: false, picked: null, correct: false };
+  clearQuizMarks();
+  const g = nodes.get(target.id);
+  if (qz.type === 'name') { g.classList.add('sel'); g.parentElement.appendChild(g); svg.classList.add('quiet'); focusOn(target); }
+  else if (qz.type === 'find') { svg.classList.remove('quiet'); svg.classList.add('hidemarks'); svg.classList.remove('labels'); }
+  else { svg.classList.add('quiet'); }
+  renderQuiz();
+}
+function focusOn(s) {
+  // gently zoom so the highlighted structure is on screen (keep current zoom if already visible)
+  const m = s.marker; const pad = 40;
+  if (m.x < vb.x + pad || m.x > vb.x + vb.w - pad || m.y < vb.y + pad || m.y > vb.y + vb.h - pad) { vb = { ...HOME }; applyVB(); }
+}
+function clearQuizMarks() { nodes.forEach(g => g.classList.remove('sel', 'good', 'bad', 'dim')); }
+function answer(id) {
+  const qz = state.quiz, q = qz.q; if (!q || q.answered) return;
+  q.answered = true; q.picked = id; q.correct = id === q.target.id;
+  qz.total++; if (q.correct) { qz.correct++; qz.streak++; } else { qz.streak = 0; if (!qz.missed.some(m => m.id === q.target.id)) qz.missed.push(q.target); }
+  state.stats.total++; if (q.correct) state.stats.correct++; state.stats.best = Math.max(state.stats.best, qz.streak); store.set('stats', state.stats);
+  svg.classList.remove('quiet', 'hidemarks');
+  const tg = nodes.get(q.target.id); tg.classList.remove('sel'); tg.classList.add('good'); tg.parentElement.appendChild(tg);
+  if (!q.correct && nodes.get(id)) { const pg = nodes.get(id); pg.classList.add('bad'); pg.parentElement.appendChild(pg); }
+  renderQuiz();
+}
+function renderQuiz() {
+  const qz = state.quiz; const ui = document.getElementById('quiz-ui'); const pool = quizPool();
+  const pct = qz.total ? Math.round(100 * qz.correct / qz.total) : 0;
+  const head = `<div class="score"><span>Session <b>${qz.correct}/${qz.total}</b> (${pct}%)</span><span>Streak <b>${qz.streak}</b></span><span>Pool <b>${pool.length}</b>${state.query.trim() ? ` · filter “${esc(state.query.trim())}”` : ''}</span><span>All-time <b>${state.stats.correct}/${state.stats.total}</b></span></div>
+    <div class="search" style="padding:0"><input type="search" id="qq" placeholder="Narrow the pool: larynx, facial nerve branches…" aria-label="Quiz filter" autocomplete="off" value="${esc(state.query)}"></div>
+    <div class="seg" role="group" aria-label="Quiz type">${Object.entries(TYPES).map(([k, v]) => `<button data-type="${k}" aria-pressed="${qz.type === k}">${v}</button>`).join('')}</div>`;
+  let body = '';
+  if (pool.length < 4) {
+    body = `<p class="warn">Turn on at least one layer with four or more structures to start a quiz.</p>`;
+  } else if (!qz.q) {
+    const desc = { name: 'A structure is highlighted on the plate. Pick its name.', find: 'You are given a name. Click the matching structure on the plate (labels and hover names are hidden).', function: 'You are given a function and a clue. Pick the structure it describes.' }[qz.type];
+    body = `<div class="setup"><p>${desc} Questions come from the layers switched on above.</p><button class="btn primary" id="start">Start</button></div>`;
+  } else {
+    const q = qz.q, t = q.target, c = CAT[t.category];
+    if (qz.type === 'name') {
+      body += `<h2 class="q">Which structure is highlighted?</h2>`;
+      body += optsHtml(q, s => s.name);
+    } else if (qz.type === 'find') {
+      body += `<h2 class="q">Find: ${esc(t.name)}</h2><div class="stem" style="--c:${c.color}">${c.label} · ${esc(t.group)}${t.depth === 'deep' ? ' · deep (dashed outline)' : ''}</div>`;
+      if (!q.answered) body += `<p class="explain">Click the structure on the plate.</p>`;
+    } else {
+      body += `<h2 class="q">Which structure does this describe?</h2><div class="stem">${esc(maskName(t.function, t))}<br><span style="color:var(--fg-3);font-size:13px">${c.label} · ${esc(t.group)}</span></div>`;
+      body += optsHtml(q, s => s.name);
+    }
+    if (q.answered) {
+      const picked = q.picked && byId.get(q.picked);
+      body += `<div class="verdict ${q.correct ? 'good' : 'bad'}">${q.correct ? 'Correct.' : `Not quite — that was ${picked ? esc(picked.name) : 'nothing'}.`}</div>
+        <div class="explain"><b>${esc(t.name)}</b> — ${esc(t.function)}${t.pearl ? `<br><span style="color:var(--accent)">Pearl:</span> ${esc(t.pearl)}` : ''}</div>
+        <div class="actions"><button class="btn primary" id="next">Next question</button><button class="btn" data-open="${esc(t.id)}">Open specimen card</button></div>`;
+    }
+    if (qz.missed.length) body += `<div class="missed">Missed this session: <ul>${qz.missed.map(m => `<li><button data-open="${esc(m.id)}">${esc(m.name)}</button></li>`).join('')}</ul></div>`;
+  }
+  ui.innerHTML = head + body;
+}
+function maskName(text, s) {
+  const words = s.name.replace(/^CN [IVX]+ – /, '').split(/[\s\-–()\/,]+/).filter(w => w.length > 3);
+  let out = text;
+  for (const w of words) out = out.replace(new RegExp(w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), '▒▒▒');
+  return out;
+}
+function optsHtml(q, f) {
+  return `<div class="opts">${q.options.map((o, i) => {
+    let cls = ''; if (q.answered) { if (o.id === q.target.id) cls = 'good'; else if (o.id === q.picked) cls = 'bad'; }
+    return `<button data-ans="${esc(o.id)}" class="${cls}" ${q.answered ? 'disabled' : ''}><span class="k">${'ABCD'[i]}</span><span>${esc(f(o))}</span></button>`;
+  }).join('')}</div>`;
+}
+document.getElementById('quiz-ui').addEventListener('input', e => { if (e.target.id === 'qq') { const pos = e.target.selectionStart; setQuery(e.target.value); const n = document.getElementById('qq'); if (n) { n.focus(); try { n.setSelectionRange(pos, pos); } catch {} } } });
+document.getElementById('quiz-ui').addEventListener('click', e => {
+  const t = e.target.closest('button'); if (!t) return;
+  if (t.dataset.type) { state.quiz.type = t.dataset.type; state.quiz.q = null; clearQuizMarks(); svg.classList.remove('quiet', 'hidemarks'); renderQuiz(); }
+  else if (t.id === 'start' || t.id === 'next') newQuestion();
+  else if (t.dataset.ans) answer(t.dataset.ans);
+  else if (t.dataset.open) { setMode('explore'); select(t.dataset.open); }
+});
+document.addEventListener('keydown', e => {
+  if (state.mode !== 'quiz' || !state.quiz) return;
+  const q = state.quiz.q;
+  if (e.key === 'Enter' && (!q || q.answered)) { newQuestion(); return; }
+  if (e.target && /^(INPUT|TEXTAREA)$/.test(e.target.tagName)) return;
+  const i = 'abcd'.indexOf(e.key.toLowerCase());
+  if (i >= 0 && q && !q.answered && state.quiz.type !== 'find' && q.options[i]) answer(q.options[i].id);
+});
+
+/* ---------- Boot ---------- */
+document.getElementById('count').textContent = ORDER.map(c => `${DATA.filter(s => s.category === c).length} ${CAT[c].label.toLowerCase()}`).join(' · ');
+applyLayers(); applyFilter(); renderIndex(); renderDetail();
+const hash = (location.hash || '').slice(1);
+if (hash && byId.has(hash)) select(hash);
+</script>

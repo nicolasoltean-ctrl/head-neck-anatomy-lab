@@ -1,0 +1,7 @@
+# build outputs that build3d.py / build.py regenerate (site/ is committed: it is what gets deployed)
+packs/
+packs_b64/
+site2d/
+index.html
+.DS_Store
+__pycache__/

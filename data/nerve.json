@@ -1,0 +1,2780 @@
+[
+ {
+  "id": "cn-i-olfactory-nerve",
+  "name": "CN I – Olfactory nerve",
+  "category": "nerve",
+  "group": "Cranial nerves",
+  "function": "Special sensory nerve for smell; olfactory fila from the nasal roof pass through the cribriform plate to the olfactory bulb and tract.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Special sensory (olfaction)"
+   },
+   {
+    "label": "Exit foramen",
+    "value": "Cribriform plate of ethmoid (foramina)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Olfactory epithelium of superior nasal cavity (superior concha, septum)"
+   },
+   {
+    "label": "Branches",
+    "value": "~20 olfactory fila -> olfactory bulb -> olfactory tract (no brainstem nucleus)"
+   }
+  ],
+  "pearl": "Anterior cranial fossa / cribriform fracture -> anosmia + CSF rhinorrhea. Anosmia also in Kallmann syndrome (with hypogonadotropic hypogonadism) and early Parkinson disease.",
+  "depth": "deep",
+  "marker": {
+   "x": 305,
+   "y": 278
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "300,248 318,266 305,290 292,330"
+  }
+ },
+ {
+  "id": "cn-ii-optic-nerve",
+  "name": "CN II – Optic nerve",
+  "category": "nerve",
+  "group": "Cranial nerves",
+  "function": "Special sensory nerve for vision; retinal ganglion cell axons pass through the optic canal to the chiasm, optic tract and lateral geniculate nucleus.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Special sensory (vision); CNS tract wrapped in meninges"
+   },
+   {
+    "label": "Exit foramen",
+    "value": "Optic canal (with ophthalmic artery)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Retina -> optic chiasm -> optic tract -> LGN / pretectum (light reflex afferent)"
+   },
+   {
+    "label": "Branches",
+    "value": "None; nasal fibers decussate at chiasm"
+   }
+  ],
+  "pearl": "Optic neuritis (MS): painful monocular vision loss, RAPD (Marcus Gunn pupil), red desaturation. Papilledema with raised ICP because the nerve sheath carries CSF.",
+  "depth": "deep",
+  "marker": {
+   "x": 410,
+   "y": 322
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "448,300 420,310 390,316 368,320"
+  }
+ },
+ {
+  "id": "cn-iii-oculomotor-nerve",
+  "name": "CN III – Oculomotor nerve",
+  "category": "nerve",
+  "group": "Cranial nerves",
+  "function": "Motor to most extraocular muscles and levator palpebrae; carries preganglionic parasympathetics for pupillary constriction and accommodation.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Somatic motor + parasympathetic (Edinger-Westphal)"
+   },
+   {
+    "label": "Exit foramen",
+    "value": "Superior orbital fissure (via lateral wall of cavernous sinus)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Superior, inferior, medial rectus; inferior oblique; levator palpebrae; sphincter pupillae & ciliary muscle via ciliary ganglion"
+   },
+   {
+    "label": "Branches",
+    "value": "Superior division (SR, levator); inferior division (MR, IR, IO, parasympathetic root to ciliary ganglion)"
+   }
+  ],
+  "pearl": "Compressive palsy (PCom aneurysm, uncal herniation) hits superficial parasympathetic fibers first -> blown pupil. Diabetic/ischemic palsy spares the pupil: ptosis, eye 'down and out'.",
+  "depth": "deep",
+  "marker": {
+   "x": 470,
+   "y": 345
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "565,385 520,362 470,345 430,335 390,330"
+  }
+ },
+ {
+  "id": "cn-iv-trochlear-nerve",
+  "name": "CN IV – Trochlear nerve",
+  "category": "nerve",
+  "group": "Cranial nerves",
+  "function": "Motor to the superior oblique, which depresses, intorts and abducts the eye; the only cranial nerve exiting the dorsal brainstem.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Somatic motor"
+   },
+   {
+    "label": "Exit foramen",
+    "value": "Superior orbital fissure (outside annulus of Zinn), via cavernous sinus"
+   },
+   {
+    "label": "Supplies",
+    "value": "Superior oblique (contralateral nucleus; fibers decussate dorsally)"
+   },
+   {
+    "label": "Branches",
+    "value": "None; longest intracranial course, thinnest CN"
+   }
+  ],
+  "pearl": "Palsy -> vertical diplopia worst looking down and in (stairs, reading); patient tilts head AWAY from the lesion. Common after closed head trauma.",
+  "depth": "deep",
+  "marker": {
+   "x": 495,
+   "y": 362
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "578,372 535,365 495,362 440,340 372,310"
+  }
+ },
+ {
+  "id": "cn-v-trigeminal-nerve",
+  "name": "CN V – Trigeminal nerve",
+  "category": "nerve",
+  "group": "Cranial nerves",
+  "function": "Chief sensory nerve of the face and motor nerve of mastication; three divisions arise from the trigeminal (Gasserian) ganglion in Meckel cave.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Mixed: general sensory (V1-V3) + branchial motor (V3)"
+   },
+   {
+    "label": "Exit foramen",
+    "value": "V1 superior orbital fissure; V2 foramen rotundum; V3 foramen ovale"
+   },
+   {
+    "label": "Supplies",
+    "value": "Face, scalp to vertex, oral/nasal mucosa, teeth, dura; muscles of mastication, mylohyoid, ant. digastric, tensor tympani, tensor veli palatini"
+   },
+   {
+    "label": "Branches",
+    "value": "Ophthalmic (V1), maxillary (V2), mandibular (V3)"
+   }
+  ],
+  "pearl": "Trigeminal neuralgia: brief lancinating V2/V3 pain triggered by touch or chewing (vascular compression); first-line carbamazepine. Motor lesion -> jaw deviates toward the weak side.",
+  "depth": "deep",
+  "marker": {
+   "x": 528,
+   "y": 375
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "592,402 558,384 528,375 505,368"
+  }
+ },
+ {
+  "id": "cn-vi-abducens-nerve",
+  "name": "CN VI – Abducens nerve",
+  "category": "nerve",
+  "group": "Cranial nerves",
+  "function": "Motor to the lateral rectus, abducting the eye; runs a long course over the clivus and through the cavernous sinus beside the internal carotid.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Somatic motor"
+   },
+   {
+    "label": "Exit foramen",
+    "value": "Superior orbital fissure (within annulus of Zinn) after Dorello canal and cavernous sinus"
+   },
+   {
+    "label": "Supplies",
+    "value": "Lateral rectus"
+   },
+   {
+    "label": "Branches",
+    "value": "None"
+   }
+  ],
+  "pearl": "Long intracranial course makes it the first nerve to fail with raised ICP (false localizing sign): horizontal diplopia, esotropia, cannot abduct. Also cavernous sinus thrombosis.",
+  "depth": "deep",
+  "marker": {
+   "x": 450,
+   "y": 365
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "598,412 540,392 490,372 450,365 400,340 382,325"
+  }
+ },
+ {
+  "id": "cn-vii-facial-nerve",
+  "name": "CN VII – Facial nerve",
+  "category": "nerve",
+  "group": "Cranial nerves",
+  "function": "Motor to muscles of facial expression, taste from anterior 2/3 of tongue, and parasympathetics to lacrimal, submandibular and sublingual glands.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Mixed: branchial motor, special sensory (taste), parasympathetic, small general sensory"
+   },
+   {
+    "label": "Exit foramen",
+    "value": "Internal acoustic meatus -> facial canal -> stylomastoid foramen"
+   },
+   {
+    "label": "Supplies",
+    "value": "Facial expression muscles, stapedius, posterior digastric, stylohyoid; taste ant. 2/3 tongue; lacrimal, nasal, submandibular, sublingual glands"
+   },
+   {
+    "label": "Branches",
+    "value": "Greater petrosal, nerve to stapedius, chorda tympani (intracanal); posterior auricular; temporal, zygomatic, buccal, marginal mandibular, cervical"
+   }
+  ],
+  "pearl": "Bell palsy (LMN) involves the forehead; UMN stroke spares it. Treat with prednisone +/- valacyclovir and eye protection. Ramsay Hunt = VZV with vesicles in the ear canal.",
+  "depth": "deep",
+  "marker": {
+   "x": 605,
+   "y": 462
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "598,405 592,425 600,460 575,468 545,470"
+  }
+ },
+ {
+  "id": "cn-viii-vestibulocochlear-nerve",
+  "name": "CN VIII – Vestibulocochlear nerve",
+  "category": "nerve",
+  "group": "Cranial nerves",
+  "function": "Special sensory nerve for hearing (cochlear division) and balance (vestibular division), entering the brainstem at the cerebellopontine angle.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Special sensory (hearing, equilibrium)"
+   },
+   {
+    "label": "Exit foramen",
+    "value": "Internal acoustic meatus (with CN VII and labyrinthine artery)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Cochlea (spiral ganglion); utricle, saccule, semicircular canals (vestibular ganglion)"
+   },
+   {
+    "label": "Branches",
+    "value": "Cochlear nerve, vestibular nerve (superior and inferior)"
+   }
+  ],
+  "pearl": "Vestibular schwannoma at the cerebellopontine angle: unilateral sensorineural loss, tinnitus, imbalance; bilateral = NF2. Weber lateralizes to the better ear, Rinne AC > BC.",
+  "depth": "deep",
+  "marker": {
+   "x": 615,
+   "y": 405
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "642,420 620,408 600,395"
+  }
+ },
+ {
+  "id": "cn-ix-glossopharyngeal-nerve",
+  "name": "CN IX – Glossopharyngeal nerve",
+  "category": "nerve",
+  "group": "Cranial nerves",
+  "function": "Mixed nerve to the pharynx and posterior tongue: taste and sensation of posterior 1/3 tongue, carotid body/sinus afferents, motor to stylopharyngeus, parasympathetics to parotid.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Mixed: sensory, taste, branchial motor, parasympathetic"
+   },
+   {
+    "label": "Exit foramen",
+    "value": "Jugular foramen (with X, XI)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Stylopharyngeus; posterior 1/3 tongue, oropharynx, tonsil, middle ear; carotid sinus/body; parotid via otic ganglion"
+   },
+   {
+    "label": "Branches",
+    "value": "Tympanic (Jacobson), carotid sinus (Hering), pharyngeal, stylopharyngeal, tonsillar, lingual"
+   }
+  ],
+  "pearl": "Lesion -> loss of gag reflex afferent limb and posterior tongue taste. Glossopharyngeal neuralgia: swallowing-triggered throat/ear pain that can cause bradycardia and syncope.",
+  "depth": "deep",
+  "marker": {
+   "x": 630,
+   "y": 445
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "650,455 630,445 595,495 540,545 480,590"
+  }
+ },
+ {
+  "id": "cn-x-vagus-nerve",
+  "name": "CN X – Vagus nerve",
+  "category": "nerve",
+  "group": "Cranial nerves",
+  "function": "Motor to pharynx, palate and larynx, sensory from larynx/pharynx, and parasympathetic supply to thoracic and abdominal viscera as far as the splenic flexure.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Mixed: branchial motor, parasympathetic, visceral and general sensory, taste (epiglottis)"
+   },
+   {
+    "label": "Exit foramen",
+    "value": "Jugular foramen; descends in carotid sheath between ICA/CCA and IJV"
+   },
+   {
+    "label": "Supplies",
+    "value": "Pharyngeal constrictors, palate (except tensor veli palatini), all laryngeal muscles; heart, lungs, gut; skin of EAM"
+   },
+   {
+    "label": "Branches",
+    "value": "Auricular (Arnold), pharyngeal, superior laryngeal, recurrent laryngeal, cardiac, pulmonary, esophageal"
+   }
+  ],
+  "pearl": "Palsy -> uvula deviates AWAY from the lesion, dysphagia, hoarseness, lost gag efferent limb. Vasovagal syncope and carotid sinus reflex run through it.",
+  "depth": "deep",
+  "marker": {
+   "x": 570,
+   "y": 560
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "648,452 622,452 585,500 560,600 540,750 522,900 512,990"
+  }
+ },
+ {
+  "id": "cn-xi-accessory-nerve",
+  "name": "CN XI – Accessory nerve",
+  "category": "nerve",
+  "group": "Cranial nerves",
+  "function": "Motor nerve to the sternocleidomastoid and trapezius; its spinal root ascends through the foramen magnum and exits via the jugular foramen.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Branchial (somatic) motor"
+   },
+   {
+    "label": "Exit foramen",
+    "value": "Jugular foramen (spinal root C1-C5 enters skull via foramen magnum)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Sternocleidomastoid, trapezius (cranial root fibers join vagus to pharynx/larynx)"
+   },
+   {
+    "label": "Branches",
+    "value": "Spinal root -> branches to SCM, then crosses posterior triangle superficially (SCM posterior border to anterior border of trapezius) -> trapezius; cranial root joins CN X"
+   }
+  ],
+  "pearl": "Injured in posterior triangle lymph node biopsy or neck dissection -> shoulder droop, cannot shrug, scapular winging on abduction, weak head turn to the opposite side.",
+  "depth": "deep",
+  "marker": {
+   "x": 690,
+   "y": 690
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "652,450 636,472 632,520 645,600 700,700 770,800"
+  }
+ },
+ {
+  "id": "cn-xii-hypoglossal-nerve",
+  "name": "CN XII – Hypoglossal nerve",
+  "category": "nerve",
+  "group": "Cranial nerves",
+  "function": "Motor nerve of the tongue, supplying all intrinsic and extrinsic tongue muscles except palatoglossus; carries C1 fibers to geniohyoid and thyrohyoid.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Somatic motor"
+   },
+   {
+    "label": "Exit foramen",
+    "value": "Hypoglossal canal; descends between ICA and IJV, hooks around occipital artery, passes above hyoid on hyoglossus"
+   },
+   {
+    "label": "Supplies",
+    "value": "Genioglossus, hyoglossus, styloglossus, intrinsic tongue muscles (palatoglossus = X)"
+   },
+   {
+    "label": "Branches",
+    "value": "Lingual branches; superior root of ansa cervicalis (C1 fibers), nerve to thyrohyoid and geniohyoid (C1)"
+   }
+  ],
+  "pearl": "LMN lesion -> tongue deviates TOWARD the lesion with atrophy and fasciculations. At risk in carotid endarterectomy and submandibular surgery.",
+  "depth": "deep",
+  "marker": {
+   "x": 490,
+   "y": 625
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "648,468 622,500 582,560 525,610 445,615 392,600"
+  }
+ },
+ {
+  "id": "ophthalmic-division-v1",
+  "name": "Ophthalmic division (V1)",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Purely sensory division of the trigeminal supplying the forehead, scalp to vertex, upper eyelid, cornea, nose and frontal/ethmoid sinuses; afferent limb of the corneal reflex.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Lateral wall of cavernous sinus -> superior orbital fissure"
+   },
+   {
+    "label": "Supplies",
+    "value": "Forehead, upper eyelid, cornea/conjunctiva, dorsum and tip of nose, frontal & ethmoid sinuses, tentorium"
+   },
+   {
+    "label": "Branches",
+    "value": "Frontal, lacrimal, nasociliary; recurrent tentorial (meningeal)"
+   }
+  ],
+  "pearl": "Herpes zoster ophthalmicus: vesicles in V1 dermatome; Hutchinson sign (nasal tip lesion via nasociliary) predicts ocular involvement. Cavernous sinus lesions involve V1 (and V2) but spare V3.",
+  "depth": "deep",
+  "marker": {
+   "x": 478,
+   "y": 318
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "522,372 500,350 478,335 448,328 420,328"
+  }
+ },
+ {
+  "id": "supraorbital-nerve",
+  "name": "Supraorbital nerve",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Terminal branch of the frontal nerve (V1) that exits the supraorbital foramen to supply the forehead, anterior scalp to the vertex, upper eyelid and frontal sinus mucosa.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Supraorbital foramen or notch, with supraorbital artery"
+   },
+   {
+    "label": "Supplies",
+    "value": "Forehead skin, scalp to vertex, upper eyelid, conjunctiva, frontal sinus"
+   },
+   {
+    "label": "Branches",
+    "value": "Medial and lateral branches"
+   }
+  ],
+  "pearl": "Supraorbital pressure is a standard painful stimulus in GCS/coma assessment. Supraorbital + supratrochlear block anesthetizes the forehead for laceration repair.",
+  "depth": "superficial",
+  "marker": {
+   "x": 335,
+   "y": 240
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "352,298 325,285 322,245 335,190 360,140"
+  }
+ },
+ {
+  "id": "nasociliary-nerve",
+  "name": "Nasociliary nerve",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "V1 branch crossing the orbit medially; supplies the cornea via long ciliary nerves, the ethmoid air cells and nasal cavity, and the nasal tip via the external nasal branch.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory (carries sympathetics to dilator pupillae via long ciliary)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Superior orbital fissure within the annulus of Zinn, crosses above the optic nerve"
+   },
+   {
+    "label": "Supplies",
+    "value": "Cornea, iris, ciliary body; ethmoid & sphenoid sinuses, nasal septum; skin of nose dorsum and tip; medial eyelids"
+   },
+   {
+    "label": "Branches",
+    "value": "Sensory root to ciliary ganglion, long ciliary, posterior & anterior ethmoidal (-> external nasal), infratrochlear"
+   }
+  ],
+  "pearl": "Corneal reflex afferent (long ciliary). Hutchinson sign: nasal-tip zoster predicts eye involvement. FESS: anterior ethmoidal artery injury -> orbital hematoma; CSF leak if the thin lateral lamella beside it is breached.",
+  "depth": "deep",
+  "marker": {
+   "x": 345,
+   "y": 340
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "418,330 375,336 335,332 300,335 268,375 232,398"
+  }
+ },
+ {
+  "id": "frontal-nerve",
+  "name": "Frontal nerve",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Largest branch of V1; runs forward on the levator palpebrae beneath the orbital roof and divides into the supraorbital and supratrochlear nerves.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Superior orbital fissure above the annulus of Zinn, along orbital roof"
+   },
+   {
+    "label": "Supplies",
+    "value": "Forehead, scalp, upper eyelid, medial canthus (via supratrochlear), frontal sinus"
+   },
+   {
+    "label": "Branches",
+    "value": "Supraorbital (lateral, larger), supratrochlear (medial)"
+   }
+  ],
+  "pearl": "Lies just beneath the orbital roof, so orbital roof fractures or frontal sinus surgery can cause forehead numbness; supratrochlear block numbs the medial forehead and glabella.",
+  "depth": "deep",
+  "marker": {
+   "x": 360,
+   "y": 290
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "418,322 388,302 360,292 332,288"
+  }
+ },
+ {
+  "id": "lacrimal-nerve",
+  "name": "Lacrimal nerve",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Smallest V1 branch running along the upper border of the lateral rectus to the lacrimal gland, conjunctiva and lateral upper eyelid; relays parasympathetic fibers from the zygomatic nerve.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory (+ carries postganglionic parasympathetics to lacrimal gland)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Superior orbital fissure (lateral, outside annulus), along lateral orbital wall"
+   },
+   {
+    "label": "Supplies",
+    "value": "Lacrimal gland, lateral conjunctiva, lateral upper eyelid skin"
+   },
+   {
+    "label": "Branches",
+    "value": "Communicating branch with zygomaticotemporal nerve"
+   }
+  ],
+  "pearl": "Secretomotor fibers reach the gland via VII -> greater petrosal -> pterygopalatine ganglion -> zygomatic -> lacrimal; a facial nerve lesion proximal to the geniculate ganglion causes dry eye.",
+  "depth": "deep",
+  "marker": {
+   "x": 388,
+   "y": 308
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "420,335 404,320 388,308 372,296"
+  }
+ },
+ {
+  "id": "maxillary-division-v2",
+  "name": "Maxillary division (V2)",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Purely sensory division passing through the foramen rotundum into the pterygopalatine fossa; supplies the midface, maxillary teeth, palate, nasal cavity and maxillary sinus.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Foramen rotundum -> pterygopalatine fossa -> inferior orbital fissure (as infraorbital nerve)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Lower eyelid, cheek, side of nose, upper lip, maxillary teeth and gingiva, hard/soft palate, nasal cavity, nasopharynx, maxillary sinus"
+   },
+   {
+    "label": "Branches",
+    "value": "Meningeal, zygomatic, pterygopalatine (nasopalatine, greater/lesser palatine, pharyngeal), posterior superior alveolar, infraorbital"
+   }
+  ],
+  "pearl": "Nasopharyngeal carcinoma and perineural spread of skin cancer track along V2 through foramen rotundum; maxillary sinus tumors present with cheek numbness. Zygomaticomaxillary fractures injure it.",
+  "depth": "deep",
+  "marker": {
+   "x": 468,
+   "y": 385
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "522,374 498,372 482,374 468,385 456,392"
+  }
+ },
+ {
+  "id": "infraorbital-nerve",
+  "name": "Infraorbital nerve",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Terminal continuation of V2 through the infraorbital groove, canal and foramen to the lower eyelid, side of nose, upper lip and anterior maxillary teeth.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Inferior orbital fissure -> infraorbital groove/canal -> infraorbital foramen (~1 cm below orbital rim)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Lower eyelid, ala and side of nose, upper lip, cheek; incisors to premolars via anterior and middle superior alveolar nerves"
+   },
+   {
+    "label": "Branches",
+    "value": "Anterior & middle superior alveolar, inferior palpebral, nasal, superior labial"
+   }
+  ],
+  "pearl": "Orbital floor blowout fracture: infraorbital numbness (cheek, upper lip, teeth) plus diplopia on upgaze from inferior rectus entrapment. Infraorbital block numbs the upper lip.",
+  "depth": "superficial",
+  "marker": {
+   "x": 345,
+   "y": 392
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "452,392 400,383 345,375 312,410 280,455"
+  }
+ },
+ {
+  "id": "zygomatic-nerve-v2",
+  "name": "Zygomatic nerve (V2)",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "V2 branch entering the orbit through the inferior orbital fissure to supply skin over the cheek and temple; carries parasympathetic fibers onward to the lacrimal nerve.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory (+ postganglionic parasympathetic carrier)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Pterygopalatine fossa -> inferior orbital fissure -> lateral orbital wall -> zygomatic bone foramina"
+   },
+   {
+    "label": "Supplies",
+    "value": "Skin of prominence of cheek (zygomaticofacial), anterior temple (zygomaticotemporal)"
+   },
+   {
+    "label": "Branches",
+    "value": "Zygomaticofacial, zygomaticotemporal, communicating branch to lacrimal nerve"
+   }
+  ],
+  "pearl": "Secretomotor fibers from the pterygopalatine ganglion hitch a ride on the zygomaticotemporal branch to reach the lacrimal gland; zygomatic fractures cause cheek numbness.",
+  "depth": "deep",
+  "marker": {
+   "x": 405,
+   "y": 365
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "455,388 428,372 405,365 390,340"
+  }
+ },
+ {
+  "id": "mandibular-division-v3",
+  "name": "Mandibular division (V3)",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Only trigeminal division with motor fibers; exits through the foramen ovale into the infratemporal fossa to supply mastication muscles and sensation to the lower face, tongue and mandibular teeth.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Mixed: general sensory + branchial motor"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Foramen ovale -> infratemporal fossa (divides into anterior and posterior trunks)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Masseter, temporalis, pterygoids, mylohyoid, ant. digastric, tensor tympani, tensor veli palatini; chin, lower lip, cheek, temple, auricle, ant. 2/3 tongue, mandibular teeth"
+   },
+   {
+    "label": "Branches",
+    "value": "Meningeal, n. to medial pterygoid, masseteric, deep temporal, n. to lateral pterygoid, buccal, auriculotemporal, lingual, inferior alveolar (-> n. to mylohyoid)"
+   }
+  ],
+  "pearl": "Motor lesion -> jaw deviates toward the weak side on opening, weak bite. Nasopharyngeal carcinoma invades via foramen ovale; V3 is spared in cavernous sinus syndromes.",
+  "depth": "deep",
+  "marker": {
+   "x": 545,
+   "y": 408
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "524,378 538,396 545,408 548,425"
+  }
+ },
+ {
+  "id": "auriculotemporal-nerve",
+  "name": "Auriculotemporal nerve",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "V3 branch whose roots encircle the middle meningeal artery; passes behind the TMJ and ascends with the superficial temporal artery to supply the auricle, EAM, TMJ and temple; relays parasympathetics to the parotid.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory + postganglionic parasympathetic (from otic ganglion)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Posterior trunk of V3 -> around middle meningeal artery -> deep to parotid behind TMJ -> ascends anterior to tragus"
+   },
+   {
+    "label": "Supplies",
+    "value": "TMJ, skin of auricle, EAM, outer tympanic membrane, temple; parotid secretomotor"
+   },
+   {
+    "label": "Branches",
+    "value": "Anterior auricular, auricular branches to EAM and tympanic membrane, articular (TMJ), parotid, superficial temporal, communicating branches to CN VII"
+   }
+  ],
+  "pearl": "Frey syndrome after parotidectomy: regenerating parotid parasympathetic fibers reinnervate facial sweat glands -> gustatory sweating/flushing of the cheek. Also carries TMJ and parotid pain referred to the ear.",
+  "depth": "superficial",
+  "marker": {
+   "x": 582,
+   "y": 320
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "548,418 575,400 592,362 588,300 580,250"
+  }
+ },
+ {
+  "id": "lingual-nerve",
+  "name": "Lingual nerve",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "V3 branch giving general sensation to the anterior 2/3 of the tongue and floor of mouth; joined by the chorda tympani, so it also carries taste and parasympathetic fibers.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory (+ taste and preganglionic parasympathetic via chorda tympani)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Infratemporal fossa -> medial to ramus -> lateral to hyoglossus -> loops under submandibular (Wharton) duct"
+   },
+   {
+    "label": "Supplies",
+    "value": "Anterior 2/3 tongue (general sensation), floor of mouth, lingual gingiva"
+   },
+   {
+    "label": "Branches",
+    "value": "Branches to submandibular ganglion, sublingual nerve, lingual branches"
+   }
+  ],
+  "pearl": "At risk in third molar extraction and submandibular gland excision (passes beneath Wharton duct) -> loss of sensation and taste on the anterior tongue.",
+  "depth": "deep",
+  "marker": {
+   "x": 480,
+   "y": 525
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "545,425 520,470 490,520 452,560 410,585"
+  }
+ },
+ {
+  "id": "inferior-alveolar-nerve",
+  "name": "Inferior alveolar nerve",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Largest V3 branch entering the mandibular foramen to run in the mandibular canal, supplying all mandibular teeth and ending as the mental and incisive nerves.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory (+ motor nerve to mylohyoid before entering canal)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Mandibular foramen (medial ramus, at lingula) -> mandibular canal -> mental foramen"
+   },
+   {
+    "label": "Supplies",
+    "value": "Mandibular teeth and gingiva, lower lip, chin; mylohyoid and anterior digastric via its branch"
+   },
+   {
+    "label": "Branches",
+    "value": "Nerve to mylohyoid, inferior dental plexus, mental nerve, incisive nerve"
+   }
+  ],
+  "pearl": "Dental IAN block at the lingula numbs lower teeth, lip and chin. Mandibular body/angle fractures and bisphosphonate osteonecrosis cause lip/chin numbness.",
+  "depth": "deep",
+  "marker": {
+   "x": 455,
+   "y": 565
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "548,428 545,470 500,530 440,560 372,560"
+  }
+ },
+ {
+  "id": "mental-nerve",
+  "name": "Mental nerve",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Terminal sensory branch of the inferior alveolar nerve exiting the mental foramen to supply the chin, lower lip skin and mucosa, and labial gingiva.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Mental foramen (below 2nd premolar, in line with supraorbital and infraorbital foramina)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Skin of chin, lower lip skin and mucosa, labial gingiva of incisors/premolars"
+   },
+   {
+    "label": "Branches",
+    "value": "Mental, inferior labial, gingival branches"
+   }
+  ],
+  "pearl": "Numb chin syndrome: isolated mental nerve neuropathy from mandibular metastasis (breast, lung, lymphoma) - a red flag for occult malignancy.",
+  "depth": "superficial",
+  "marker": {
+   "x": 350,
+   "y": 548
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "372,560 345,545 300,525 310,575"
+  }
+ },
+ {
+  "id": "buccal-nerve-v3",
+  "name": "Buccal nerve (V3, sensory)",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Sensory branch of the anterior trunk of V3 that emerges between the heads of the lateral pterygoid and runs onto the buccinator to supply the cheek skin and mucosa and molar gingiva.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Between heads of lateral pterygoid -> deep to temporalis tendon -> pierces buccinator (does not supply it)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Skin and mucosa of cheek, buccal gingiva of mandibular molars"
+   },
+   {
+    "label": "Branches",
+    "value": "Cutaneous and mucosal branches"
+   }
+  ],
+  "pearl": "Not the same as the buccal branch of CN VII (motor to buccinator). Long buccal block supplements IAN block for lower molar extraction.",
+  "depth": "deep",
+  "marker": {
+   "x": 425,
+   "y": 455
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "548,420 510,432 470,448 425,460 380,480"
+  }
+ },
+ {
+  "id": "nerve-to-mylohyoid",
+  "name": "Nerve to mylohyoid",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Motor branch leaving the inferior alveolar nerve just before the mandibular foramen; runs in the mylohyoid groove to supply the mylohyoid and anterior belly of digastric.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Branchial motor (small sensory contribution to chin)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Mylohyoid groove on medial mandible -> superficial surface of mylohyoid"
+   },
+   {
+    "label": "Supplies",
+    "value": "Mylohyoid, anterior belly of digastric"
+   },
+   {
+    "label": "Branches",
+    "value": "Muscular branches"
+   }
+  ],
+  "pearl": "'Two bellies, two nerves': anterior digastric = V3 (nerve to mylohyoid), posterior digastric = CN VII. It can supply the chin and cause IAN-block failure.",
+  "depth": "deep",
+  "marker": {
+   "x": 495,
+   "y": 580
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "545,472 520,520 490,565 440,600 392,615"
+  }
+ },
+ {
+  "id": "facial-temporal-branch",
+  "name": "Temporal branch of facial nerve",
+  "category": "nerve",
+  "group": "Facial nerve branches",
+  "function": "Uppermost terminal branch of CN VII; leaves the parotid and crosses the zygomatic arch to supply frontalis, orbicularis oculi (upper), corrugator and auricular muscles.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Branchial motor"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Exits parotid superiorly, crosses zygomatic arch midway between tragus and lateral canthus (Pitanguy line) within the temporoparietal fascia"
+   },
+   {
+    "label": "Supplies",
+    "value": "Frontalis, orbicularis oculi (upper part), corrugator supercilii, auricularis anterior/superior"
+   },
+   {
+    "label": "Branches",
+    "value": "Frontal (temporal) rami"
+   }
+  ],
+  "pearl": "Runs superficially over the zygomatic arch, so it is at risk in facelifts and temporal incisions; injury -> brow ptosis and inability to wrinkle the forehead.",
+  "depth": "superficial",
+  "marker": {
+   "x": 505,
+   "y": 320
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "560,455 535,400 505,340 470,290 430,255"
+  }
+ },
+ {
+  "id": "facial-zygomatic-branch",
+  "name": "Zygomatic branch of facial nerve",
+  "category": "nerve",
+  "group": "Facial nerve branches",
+  "function": "CN VII terminal branch crossing the zygomatic bone to the orbicularis oculi, responsible for forceful eye closure and the blink/corneal reflex efferent limb.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Branchial motor"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Exits parotid anterosuperiorly across zygomatic bone toward lateral orbit"
+   },
+   {
+    "label": "Supplies",
+    "value": "Orbicularis oculi (lower and lateral), parts of zygomaticus and nasalis"
+   },
+   {
+    "label": "Branches",
+    "value": "Communicates with buccal branch"
+   }
+  ],
+  "pearl": "Injury -> lagophthalmos (incomplete eye closure) and exposure keratitis; this is why facial palsy patients need lubricant drops and eye taping at night.",
+  "depth": "superficial",
+  "marker": {
+   "x": 455,
+   "y": 420
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "560,465 512,440 460,420 405,385"
+  }
+ },
+ {
+  "id": "facial-buccal-branch",
+  "name": "Buccal branch of facial nerve",
+  "category": "nerve",
+  "group": "Facial nerve branches",
+  "function": "Motor branches of CN VII running with the parotid duct across the masseter to buccinator, orbicularis oris and the lip elevators; drives smiling, lip closure and cheek tone.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Branchial motor"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Exits anterior parotid border, superficial to masseter, above and below the parotid (Stensen) duct"
+   },
+   {
+    "label": "Supplies",
+    "value": "Buccinator, orbicularis oris, zygomaticus major/minor, levator labii superioris, levator anguli oris, nasalis, risorius"
+   },
+   {
+    "label": "Branches",
+    "value": "Superior (deep) and inferior buccal rami"
+   }
+  ],
+  "pearl": "Injury -> food pools in the buccal vestibule, cannot puff cheeks or whistle, flattened nasolabial fold. Lacerations of the cheek that cut the duct usually cut this nerve too.",
+  "depth": "superficial",
+  "marker": {
+   "x": 470,
+   "y": 478
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "560,472 512,478 452,480 385,485 340,490"
+  }
+ },
+ {
+  "id": "facial-marginal-mandibular-branch",
+  "name": "Marginal mandibular branch of facial nerve",
+  "category": "nerve",
+  "group": "Facial nerve branches",
+  "function": "CN VII branch running along the lower border of the mandible, often dipping below it in the submandibular triangle, to supply the lower lip depressors and mentalis.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Branchial motor"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Exits lower parotid, deep to platysma, superficial to facial artery and vein; may lie 1-2 cm below the mandibular border"
+   },
+   {
+    "label": "Supplies",
+    "value": "Depressor anguli oris, depressor labii inferioris, mentalis, risorius (part)"
+   },
+   {
+    "label": "Branches",
+    "value": "Rami to lower lip muscles"
+   }
+  ],
+  "pearl": "At risk in submandibular gland excision/neck dissection: incise 2+ cm below the mandible, ligate facial vessels low. Injury -> asymmetric smile: affected lower lip cannot depress/evert and sits higher than normal side.",
+  "depth": "superficial",
+  "marker": {
+   "x": 450,
+   "y": 590
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "560,480 530,560 480,595 420,580 360,540"
+  }
+ },
+ {
+  "id": "facial-cervical-branch",
+  "name": "Cervical branch of facial nerve",
+  "category": "nerve",
+  "group": "Facial nerve branches",
+  "function": "Lowest terminal branch of CN VII, descending from the parotid into the neck deep to platysma, which it supplies.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Branchial motor"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Exits inferior parotid pole, runs forward and down deep to platysma"
+   },
+   {
+    "label": "Supplies",
+    "value": "Platysma"
+   },
+   {
+    "label": "Branches",
+    "value": "Communicates with transverse cervical nerve (C2-C3)"
+   }
+  ],
+  "pearl": "Injury in neck lift or parotid surgery -> pseudoparalysis of the lower lip (platysma aids lip depression), mimicking marginal mandibular injury but with intact mentalis.",
+  "depth": "superficial",
+  "marker": {
+   "x": 548,
+   "y": 648
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "560,485 552,540 545,620 530,700"
+  }
+ },
+ {
+  "id": "chorda-tympani",
+  "name": "Chorda tympani",
+  "category": "nerve",
+  "group": "Facial nerve branches",
+  "function": "Branch of CN VII carrying taste from the anterior 2/3 of the tongue and preganglionic parasympathetics to the submandibular ganglion; crosses the middle ear and joins the lingual nerve.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Special sensory (taste) + preganglionic parasympathetic"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Leaves facial canal above stylomastoid foramen -> crosses medial surface of tympanic membrane between malleus handle and long process of incus -> petrotympanic fissure -> joins lingual nerve in infratemporal fossa"
+   },
+   {
+    "label": "Supplies",
+    "value": "Taste buds of anterior 2/3 tongue; submandibular and sublingual glands (via submandibular ganglion)"
+   },
+   {
+    "label": "Branches",
+    "value": "Joins lingual nerve; taste cell bodies in geniculate ganglion"
+   }
+  ],
+  "pearl": "Bell palsy (lesion proximal to its origin) or direct injury in middle ear surgery (e.g., stapedectomy) -> ipsilateral loss of anterior 2/3 tongue taste and reduced salivation; visible through the TM.",
+  "depth": "deep",
+  "marker": {
+   "x": 570,
+   "y": 420
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "598,438 586,422 570,420 548,432"
+  }
+ },
+ {
+  "id": "greater-petrosal-nerve",
+  "name": "Greater petrosal nerve",
+  "category": "nerve",
+  "group": "Facial nerve branches",
+  "function": "First branch of CN VII, from the geniculate ganglion; carries preganglionic parasympathetics through the pterygoid canal to the pterygopalatine ganglion for lacrimal, nasal and palatine glands.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Preganglionic parasympathetic + taste from palate"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Geniculate ganglion -> hiatus of facial canal -> foramen lacerum -> joins deep petrosal (sympathetic) as nerve of pterygoid canal (Vidian) -> pterygopalatine ganglion"
+   },
+   {
+    "label": "Supplies",
+    "value": "Lacrimal gland, nasal, palatine and pharyngeal mucous glands; taste from soft palate"
+   },
+   {
+    "label": "Branches",
+    "value": "Nerve of the pterygoid canal (with deep petrosal nerve)"
+   }
+  ],
+  "pearl": "Facial nerve lesion at or proximal to the geniculate ganglion -> dry eye (reduced tearing), which localizes the lesion; aberrant regeneration -> crocodile tears when eating.",
+  "depth": "deep",
+  "marker": {
+   "x": 515,
+   "y": 395
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "592,396 552,398 515,395 460,392"
+  }
+ },
+ {
+  "id": "nerve-to-stapedius",
+  "name": "Nerve to stapedius",
+  "category": "nerve",
+  "group": "Facial nerve branches",
+  "function": "Tiny motor branch arising from CN VII in the descending facial canal to the stapedius, which damps stapes vibration and protects the cochlea from loud sound.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Branchial motor"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Arises in vertical (mastoid) segment of facial canal, enters pyramidal eminence of middle ear"
+   },
+   {
+    "label": "Supplies",
+    "value": "Stapedius muscle"
+   },
+   {
+    "label": "Branches",
+    "value": "None"
+   }
+  ],
+  "pearl": "Facial lesion proximal to this branch -> hyperacusis (sounds painfully loud); an absent acoustic (stapedial) reflex on tympanometry helps localize the lesion.",
+  "depth": "deep",
+  "marker": {
+   "x": 610,
+   "y": 432
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "598,428 604,434 610,440"
+  }
+ },
+ {
+  "id": "posterior-auricular-nerve",
+  "name": "Posterior auricular nerve",
+  "category": "nerve",
+  "group": "Facial nerve branches",
+  "function": "First extracranial branch of CN VII, arising just below the stylomastoid foramen and running up behind the ear to the occipitalis and posterior auricular muscles.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Branchial motor (+ small sensory to auricle)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Just below stylomastoid foramen, ascends between mastoid and auricle with posterior auricular artery"
+   },
+   {
+    "label": "Supplies",
+    "value": "Occipitalis, auricularis posterior, intrinsic auricular muscles"
+   },
+   {
+    "label": "Branches",
+    "value": "Auricular and occipital branches"
+   }
+  ],
+  "pearl": "Given off before the trunk enters the parotid, so spared by intraparotid tumors. In parotidectomy the facial trunk is found just above its origin using the tragal pointer, tympanomastoid suture and posterior belly of digastric as landmarks.",
+  "depth": "superficial",
+  "marker": {
+   "x": 650,
+   "y": 470
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "602,462 635,462 665,432 690,392"
+  }
+ },
+ {
+  "id": "tympanic-nerve-lesser-petrosal",
+  "name": "Tympanic nerve (Jacobson) / lesser petrosal nerve",
+  "category": "nerve",
+  "group": "Glossopharyngeal/Vagus branches",
+  "function": "CN IX branch forming the tympanic plexus on the middle ear promontory, then continuing as the lesser petrosal nerve carrying preganglionic parasympathetics to the otic ganglion for the parotid.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Preganglionic parasympathetic + general sensory (middle ear)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Inferior ganglion of IX -> tympanic canaliculus -> tympanic plexus -> lesser petrosal -> foramen ovale -> otic ganglion -> auriculotemporal -> parotid"
+   },
+   {
+    "label": "Supplies",
+    "value": "Mucosa of middle ear, mastoid air cells, Eustachian tube (sensory); parotid gland (secretomotor)"
+   },
+   {
+    "label": "Branches",
+    "value": "Tympanic plexus, lesser petrosal nerve, caroticotympanic communications"
+   }
+  ],
+  "pearl": "Explains referred otalgia from tonsillitis, post-tonsillectomy and oropharyngeal cancer (CN IX). Glomus tympanicum paragangliomas arise from Jacobson nerve -> pulsatile tinnitus.",
+  "depth": "deep",
+  "marker": {
+   "x": 588,
+   "y": 448
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "625,447 608,425 592,402 565,404 545,412"
+  }
+ },
+ {
+  "id": "carotid-sinus-nerve-hering",
+  "name": "Carotid sinus nerve (Hering)",
+  "category": "nerve",
+  "group": "Glossopharyngeal/Vagus branches",
+  "function": "Visceral afferent branch of CN IX descending to the carotid bifurcation; carries baroreceptor input from the carotid sinus and chemoreceptor input from the carotid body to the solitary nucleus.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Visceral sensory (afferent)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "From IX just below jugular foramen, descends on internal carotid artery to bifurcation"
+   },
+   {
+    "label": "Supplies",
+    "value": "Carotid sinus baroreceptors (stretch), carotid body chemoreceptors (O2, CO2, pH)"
+   },
+   {
+    "label": "Branches",
+    "value": "Joins with vagal and sympathetic fibers at the carotid sinus"
+   }
+  ],
+  "pearl": "Afferent limb of the baroreflex: carotid sinus massage or tight collars -> bradycardia and syncope (carotid sinus hypersensitivity); efferent limb runs via the vagus.",
+  "depth": "deep",
+  "marker": {
+   "x": 520,
+   "y": 665
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "612,470 580,540 542,620 505,685"
+  }
+ },
+ {
+  "id": "pharyngeal-branch-of-vagus",
+  "name": "Pharyngeal branch of vagus / pharyngeal plexus",
+  "category": "nerve",
+  "group": "Glossopharyngeal/Vagus branches",
+  "function": "Main motor nerve of the pharynx and soft palate; joins IX and sympathetic fibers on the middle constrictor to form the pharyngeal plexus.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Branchial motor (vagus; fibers partly from cranial root of XI)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "From inferior (nodose) ganglion, passes between ICA and ECA to the middle constrictor"
+   },
+   {
+    "label": "Supplies",
+    "value": "Superior, middle, inferior constrictors; levator veli palatini, palatoglossus, palatopharyngeus, salpingopharyngeus, musculus uvulae"
+   },
+   {
+    "label": "Branches",
+    "value": "Pharyngeal plexus (motor X, sensory IX, sympathetic from superior cervical ganglion)"
+   }
+  ],
+  "pearl": "Vagal lesion -> uvula deviates away from the lesion, nasal regurgitation, dysphagia. Palatoglossus is the only tongue muscle not supplied by XII; tensor veli palatini is V3.",
+  "depth": "deep",
+  "marker": {
+   "x": 590,
+   "y": 610
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "622,460 602,520 588,580 572,640"
+  }
+ },
+ {
+  "id": "superior-laryngeal-nerve",
+  "name": "Superior laryngeal nerve",
+  "category": "nerve",
+  "group": "Glossopharyngeal/Vagus branches",
+  "function": "Vagal branch descending medial to the internal carotid artery that divides at the greater horn of the hyoid into the internal (sensory) and external (motor) laryngeal nerves.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Mixed (sensory internal branch, motor external branch)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "From inferior (nodose) vagal ganglion, descends medial to ICA, divides at level of greater horn of hyoid"
+   },
+   {
+    "label": "Supplies",
+    "value": "Supraglottic larynx sensation (internal); cricothyroid and part of inferior constrictor (external)"
+   },
+   {
+    "label": "Branches",
+    "value": "Internal laryngeal nerve (pierces thyrohyoid membrane), external laryngeal nerve (runs with superior thyroid artery)"
+   }
+  ],
+  "pearl": "External branch tracks the superior thyroid artery: ligate the artery close to the upper thyroid pole, not high, to spare it (injury -> loss of high pitch). Internal branch is the cough-reflex afferent, blocked at the thyrohyoid membrane for awake intubation.",
+  "depth": "deep",
+  "marker": {
+   "x": 545,
+   "y": 590
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "606,500 578,548 545,590 505,650"
+  }
+ },
+ {
+  "id": "internal-laryngeal-nerve",
+  "name": "Internal laryngeal nerve",
+  "category": "nerve",
+  "group": "Glossopharyngeal/Vagus branches",
+  "function": "Sensory branch of the superior laryngeal nerve that pierces the thyrohyoid membrane to supply laryngeal mucosa above the vocal folds, the epiglottis and the piriform recess.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General and visceral sensory (+ taste from epiglottis, parasympathetic to glands)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Pierces thyrohyoid membrane with superior laryngeal artery (branch of superior thyroid artery)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Mucosa of supraglottic larynx (down to the vocal folds), vallecula, epiglottis, piriform recess"
+   },
+   {
+    "label": "Branches",
+    "value": "Superior and inferior branches; communicates with recurrent laryngeal (Galen anastomosis)"
+   }
+  ],
+  "pearl": "Afferent limb of the laryngeal cough reflex; injury (e.g., removing a fish bone from the piriform recess) -> loss of supraglottic sensation and aspiration. Blocked for awake intubation.",
+  "depth": "deep",
+  "marker": {
+   "x": 470,
+   "y": 672
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "502,650 470,672 438,692 420,722"
+  }
+ },
+ {
+  "id": "external-laryngeal-nerve",
+  "name": "External laryngeal nerve",
+  "category": "nerve",
+  "group": "Glossopharyngeal/Vagus branches",
+  "function": "Motor branch of the superior laryngeal nerve that descends with the superior thyroid artery to the cricothyroid, the muscle that tenses the vocal folds and raises pitch.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Branchial motor"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Descends on inferior constrictor alongside superior thyroid artery to upper pole of thyroid"
+   },
+   {
+    "label": "Supplies",
+    "value": "Cricothyroid; part of inferior pharyngeal constrictor"
+   },
+   {
+    "label": "Branches",
+    "value": "Muscular branches"
+   }
+  ],
+  "pearl": "Injured when ligating the superior thyroid artery in thyroidectomy -> cannot raise pitch, voice fatigue, monotone voice (singer's complaint) with normal-looking cords.",
+  "depth": "deep",
+  "marker": {
+   "x": 470,
+   "y": 730
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "502,652 486,700 462,745 436,766"
+  }
+ },
+ {
+  "id": "recurrent-laryngeal-nerve",
+  "name": "Recurrent laryngeal nerve",
+  "category": "nerve",
+  "group": "Glossopharyngeal/Vagus branches",
+  "function": "Vagal branch looping under the right subclavian artery or left aortic arch, ascending in the tracheoesophageal groove to supply all intrinsic laryngeal muscles except cricothyroid and infraglottic sensation.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Mixed: branchial motor + sensory below vocal folds"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Right: loops under subclavian artery; left: under aortic arch (ligamentum arteriosum). Ascends in tracheoesophageal groove near inferior thyroid artery, enters larynx behind cricothyroid joint"
+   },
+   {
+    "label": "Supplies",
+    "value": "Posterior and lateral cricoarytenoids, thyroarytenoid, vocalis, arytenoids; mucosa below vocal folds; esophagus/trachea branches"
+   },
+   {
+    "label": "Branches",
+    "value": "Inferior laryngeal nerve (terminal), tracheal, esophageal, cardiac branches"
+   }
+  ],
+  "pearl": "Unilateral injury (thyroidectomy, apical lung or mediastinal tumor, aortic aneurysm) -> hoarseness. Bilateral injury -> stridor and airway obstruction from loss of posterior cricoarytenoid abduction.",
+  "depth": "deep",
+  "marker": {
+   "x": 478,
+   "y": 880
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "522,965 486,960 472,900 462,850 452,800 442,776"
+  }
+ },
+ {
+  "id": "auricular-branch-of-vagus-arnold",
+  "name": "Auricular branch of vagus (Arnold)",
+  "category": "nerve",
+  "group": "Glossopharyngeal/Vagus branches",
+  "function": "Sensory vagal branch from the superior ganglion that passes through the mastoid canaliculus and tympanomastoid fissure to the posterior ear canal, concha and outer tympanic membrane.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "General sensory"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Superior (jugular) ganglion -> mastoid canaliculus -> tympanomastoid fissure"
+   },
+   {
+    "label": "Supplies",
+    "value": "Skin of posterior/inferior external acoustic meatus, concha, outer tympanic membrane"
+   },
+   {
+    "label": "Branches",
+    "value": "Communicates with CN IX and VII (posterior auricular)"
+   }
+  ],
+  "pearl": "Arnold reflex: ear canal stimulation (cerumen removal, suction) triggers cough or syncope. Referred otalgia from laryngeal/hypopharyngeal cancer travels via the vagus.",
+  "depth": "deep",
+  "marker": {
+   "x": 640,
+   "y": 415
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "628,450 640,428 626,396 612,372"
+  }
+ },
+ {
+  "id": "ciliary-ganglion",
+  "name": "Ciliary ganglion",
+  "category": "nerve",
+  "group": "Parasympathetic ganglia",
+  "function": "Parasympathetic ganglion behind the eye where CN III fibers synapse; postganglionic short ciliary nerves constrict the pupil and contract the ciliary muscle for accommodation.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Parasympathetic ganglion (CN III relay)"
+   },
+   {
+    "label": "Location",
+    "value": "Posterior orbit, lateral to optic nerve, medial to lateral rectus"
+   },
+   {
+    "label": "Synapse",
+    "value": "Preganglionic from Edinger-Westphal nucleus via inferior division of III (branch to inferior oblique)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Sphincter pupillae, ciliary muscle via short ciliary nerves"
+   },
+   {
+    "label": "Passes through unrelayed",
+    "value": "Sympathetic fibers (dilator pupillae), sensory fibers from nasociliary nerve"
+   }
+  ],
+  "pearl": "Adie tonic pupil: viral damage to the ganglion/postganglionic fibers -> dilated pupil with poor light but slow tonic near response; constricts to dilute pilocarpine (denervation supersensitivity).",
+  "depth": "deep",
+  "marker": {
+   "x": 398,
+   "y": 345
+  },
+  "shape": {
+   "type": "circle",
+   "r": 9
+  }
+ },
+ {
+  "id": "pterygopalatine-ganglion",
+  "name": "Pterygopalatine ganglion",
+  "category": "nerve",
+  "group": "Parasympathetic ganglia",
+  "function": "Largest parasympathetic ganglion, suspended from V2 in the pterygopalatine fossa; relays facial nerve fibers to the lacrimal gland and the mucous glands of the nose, palate and nasopharynx.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Parasympathetic ganglion (CN VII relay)"
+   },
+   {
+    "label": "Location",
+    "value": "Pterygopalatine fossa, below maxillary nerve, in front of pterygoid canal"
+   },
+   {
+    "label": "Synapse",
+    "value": "Preganglionic from superior salivatory nucleus via greater petrosal nerve / nerve of pterygoid canal"
+   },
+   {
+    "label": "Supplies",
+    "value": "Lacrimal gland (via zygomatic -> lacrimal nerve); nasal, palatine, pharyngeal glands (via V2 branches)"
+   },
+   {
+    "label": "Passes through unrelayed",
+    "value": "Sympathetic fibers (deep petrosal), sensory V2 fibers"
+   }
+  ],
+  "pearl": "Facial nerve lesion proximal to the geniculate ganglion cuts greater petrosal fibers -> dry eye; aberrant regeneration -> crocodile tears. Sphenopalatine ganglion block treats cluster and post-dural-puncture headache; juvenile nasopharyngeal angiofibroma spreads through the pterygopalatine fossa.",
+  "depth": "deep",
+  "marker": {
+   "x": 452,
+   "y": 400
+  },
+  "shape": {
+   "type": "circle",
+   "r": 9
+  }
+ },
+ {
+  "id": "otic-ganglion",
+  "name": "Otic ganglion",
+  "category": "nerve",
+  "group": "Parasympathetic ganglia",
+  "function": "Parasympathetic ganglion just below the foramen ovale, medial to V3, where lesser petrosal (CN IX) fibers synapse; postganglionic fibers reach the parotid via the auriculotemporal nerve.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Parasympathetic ganglion (CN IX relay)"
+   },
+   {
+    "label": "Location",
+    "value": "Infratemporal fossa, immediately below foramen ovale, medial to mandibular nerve"
+   },
+   {
+    "label": "Synapse",
+    "value": "Preganglionic from inferior salivatory nucleus via tympanic nerve -> lesser petrosal nerve"
+   },
+   {
+    "label": "Supplies",
+    "value": "Parotid gland (secretomotor) via auriculotemporal nerve"
+   },
+   {
+    "label": "Passes through unrelayed",
+    "value": "Sympathetic fibers from middle meningeal plexus; motor fibers to tensor tympani/veli palatini"
+   }
+  ],
+  "pearl": "Parotid secretomotor supply is CN IX, not VII: IX -> tympanic -> lesser petrosal -> otic -> auriculotemporal. After parotidectomy, aberrant regeneration of these fibers into sweat glands causes Frey syndrome (gustatory sweating and flushing over the cheek).",
+  "depth": "deep",
+  "marker": {
+   "x": 550,
+   "y": 432
+  },
+  "shape": {
+   "type": "circle",
+   "r": 9
+  }
+ },
+ {
+  "id": "submandibular-ganglion",
+  "name": "Submandibular ganglion",
+  "category": "nerve",
+  "group": "Parasympathetic ganglia",
+  "function": "Parasympathetic ganglion hanging from the lingual nerve on the hyoglossus; chorda tympani (CN VII) fibers synapse here to drive the submandibular and sublingual salivary glands.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Parasympathetic ganglion (CN VII relay)"
+   },
+   {
+    "label": "Location",
+    "value": "On hyoglossus, suspended from lingual nerve above the deep part of the submandibular gland"
+   },
+   {
+    "label": "Synapse",
+    "value": "Preganglionic from superior salivatory nucleus via chorda tympani -> lingual nerve"
+   },
+   {
+    "label": "Supplies",
+    "value": "Submandibular and sublingual glands, anterior lingual glands"
+   },
+   {
+    "label": "Passes through unrelayed",
+    "value": "Sympathetic fibers from the facial artery plexus"
+   }
+  ],
+  "pearl": "Facial nerve or chorda tympani lesion -> reduced salivation on that side. The ganglion and lingual nerve are at risk in submandibular gland excision for sialolithiasis (most stones are in Wharton duct).",
+  "depth": "deep",
+  "marker": {
+   "x": 428,
+   "y": 578
+  },
+  "shape": {
+   "type": "circle",
+   "r": 9
+  }
+ },
+ {
+  "id": "cervical-plexus",
+  "name": "Cervical plexus (C1–C4)",
+  "category": "nerve",
+  "group": "Cervical plexus",
+  "function": "Network formed by ventral rami of C1–C4 deep to SCM on levator scapulae and middle scalene; gives cutaneous branches to neck skin and motor branches to strap muscles and the diaphragm.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Mixed (sensory cutaneous branches + motor branches)"
+   },
+   {
+    "label": "Route",
+    "value": "Ventral rami C1–C4 form loops anterior to transverse processes, deep to prevertebral fascia, IJV and SCM"
+   },
+   {
+    "label": "Supplies",
+    "value": "Skin of neck, posterolateral scalp, auricle, shoulder; infrahyoid muscles; diaphragm; prevertebral muscles"
+   },
+   {
+    "label": "Cutaneous branches",
+    "value": "Lesser occipital, great auricular, transverse cervical, supraclavicular (emerge at nerve point)"
+   },
+   {
+    "label": "Motor branches",
+    "value": "Ansa cervicalis, phrenic nerve, C1 fibers via CN XII, branches to prevertebral and scalene muscles"
+   }
+  ],
+  "pearl": "Superficial cervical plexus block at the nerve point anesthetizes neck skin for carotid endarterectomy; a deep block risks phrenic nerve palsy and intravascular/intrathecal injection.",
+  "depth": "deep",
+  "marker": {
+   "x": 650,
+   "y": 560
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "640,490 646,540 652,600 658,660"
+  }
+ },
+ {
+  "id": "lesser-occipital-nerve",
+  "name": "Lesser occipital nerve (C2)",
+  "category": "nerve",
+  "group": "Cervical plexus",
+  "function": "Cutaneous branch of C2 that ascends along the posterior border of SCM to supply the scalp behind and above the auricle.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sensory"
+   },
+   {
+    "label": "Route",
+    "value": "Emerges at nerve point, hooks around the spinal accessory nerve, ascends posterior border of SCM to the scalp"
+   },
+   {
+    "label": "Supplies",
+    "value": "Skin of lateral occipital scalp behind the ear and upper medial (cranial) surface of the auricle"
+   },
+   {
+    "label": "Root",
+    "value": "Ventral ramus C2 (sometimes C3)"
+   }
+  ],
+  "pearl": "Occipital neuralgia can involve the lesser or greater occipital nerve; a block along the posterior SCM border/superior nuchal line relieves lancinating posterior scalp pain.",
+  "depth": "superficial",
+  "marker": {
+   "x": 690,
+   "y": 440
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "605,700 630,600 660,490 700,390 730,300"
+  }
+ },
+ {
+  "id": "great-auricular-nerve",
+  "name": "Great auricular nerve (C2–C3)",
+  "category": "nerve",
+  "group": "Cervical plexus",
+  "function": "Largest ascending branch of the cervical plexus; crosses SCM obliquely with the external jugular vein to supply skin over the parotid, mastoid, and lower auricle (lobule).",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sensory"
+   },
+   {
+    "label": "Route",
+    "value": "Winds around posterior border of SCM at the nerve point, ascends on SCM parallel and posterior to the EJV toward the parotid"
+   },
+   {
+    "label": "Supplies",
+    "value": "Skin over parotid gland and angle of mandible, mastoid, both surfaces of the lower auricle and lobule"
+   },
+   {
+    "label": "Roots",
+    "value": "C2–C3"
+   }
+  ],
+  "pearl": "Most commonly injured nerve in parotidectomy and facelift (rhytidectomy): numb ear lobule. Lobule = C2–C3; the concha is CN VII/X and the tragus/anterior ear is auriculotemporal (V3).",
+  "depth": "superficial",
+  "marker": {
+   "x": 578,
+   "y": 560
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "605,700 590,620 578,540 570,470 600,440"
+  }
+ },
+ {
+  "id": "transverse-cervical-nerve",
+  "name": "Transverse cervical nerve (C2–C3)",
+  "category": "nerve",
+  "group": "Cervical plexus",
+  "function": "Runs horizontally forward across SCM deep to platysma and the EJV to supply skin of the anterior triangle from mandible to sternum.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sensory"
+   },
+   {
+    "label": "Route",
+    "value": "Emerges at nerve point, crosses SCM horizontally deep to platysma, divides into ascending and descending branches"
+   },
+   {
+    "label": "Supplies",
+    "value": "Skin of the anterior neck (anterior triangle) from the lower border of the mandible to the sternum"
+   },
+   {
+    "label": "Roots",
+    "value": "C2–C3"
+   },
+   {
+    "label": "Communication",
+    "value": "Forms a plexus with the cervical branch of the facial nerve (CN VII) deep to platysma"
+   }
+  ],
+  "pearl": "Routinely cut in thyroidectomy and neck dissection incisions, causing anterior neck numbness; its link with the cervical branch of CN VII explains mixed sensory/platysma findings.",
+  "depth": "superficial",
+  "marker": {
+   "x": 520,
+   "y": 715
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "605,700 550,710 490,720 430,730"
+  }
+ },
+ {
+  "id": "supraclavicular-nerves",
+  "name": "Supraclavicular nerves (C3–C4)",
+  "category": "nerve",
+  "group": "Cervical plexus",
+  "function": "Descend from the nerve point as medial, intermediate, and lateral branches over the clavicle to supply skin of the lower neck, shoulder cap, and upper chest to the 2nd rib.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sensory"
+   },
+   {
+    "label": "Route",
+    "value": "Common trunk emerges under SCM, descends in posterior triangle, pierces deep fascia above the clavicle, branches cross it"
+   },
+   {
+    "label": "Supplies",
+    "value": "Skin over clavicle, sternoclavicular joint, shoulder (over deltoid/trapezius), upper pectoral region to 2nd rib"
+   },
+   {
+    "label": "Branches",
+    "value": "Medial, intermediate, lateral supraclavicular nerves"
+   },
+   {
+    "label": "Roots",
+    "value": "C3–C4"
+   }
+  ],
+  "pearl": "Share C3–C4 roots with the phrenic nerve (C3–C5), so diaphragmatic irritation (splenic rupture, ruptured ectopic, pneumoperitoneum, subphrenic abscess) refers pain to the shoulder tip (Kehr sign).",
+  "depth": "superficial",
+  "marker": {
+   "x": 650,
+   "y": 870
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "605,700 625,790 645,880 660,940"
+  }
+ },
+ {
+  "id": "ansa-cervicalis",
+  "name": "Ansa cervicalis (C1–C3)",
+  "category": "nerve",
+  "group": "Cervical plexus",
+  "function": "Loop of C1–C3 fibers on the anterior surface of the carotid sheath/IJV that supplies the infrahyoid strap muscles, which depress the hyoid and larynx during swallowing and speech.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Motor"
+   },
+   {
+    "label": "Superior root",
+    "value": "Descendens hypoglossi: C1 fibers that travel with CN XII and leave it (where XII hooks around the occipital artery) to descend on the carotid sheath"
+   },
+   {
+    "label": "Inferior root",
+    "value": "Descendens cervicalis: C2–C3 fibers that descend lateral (sometimes medial) to the IJV and join the superior root at about the level of the omohyoid intermediate tendon"
+   },
+   {
+    "label": "Supplies",
+    "value": "Omohyoid (both bellies), sternohyoid, sternothyroid (thyrohyoid and geniohyoid get C1 directly via CN XII)"
+   },
+   {
+    "label": "Route",
+    "value": "Loop lies anterior to carotid sheath at about the level of the cricoid/omohyoid tendon"
+   }
+  ],
+  "pearl": "Sits on the carotid sheath at the carotid endarterectomy site and can be divided with little deficit; used as a donor nerve for laryngeal reinnervation after recurrent laryngeal nerve injury.",
+  "depth": "deep",
+  "marker": {
+   "x": 525,
+   "y": 790
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "560,560 535,660 520,800 560,730 620,630"
+  }
+ },
+ {
+  "id": "c1-fibers-via-hypoglossal",
+  "name": "C1 fibers traveling with CN XII (nerves to thyrohyoid and geniohyoid)",
+  "category": "nerve",
+  "group": "Cervical plexus",
+  "function": "Ventral ramus C1 fibers hitchhike on the hypoglossal nerve below the skull base, then leave it as the superior root of the ansa and as direct branches to thyrohyoid and geniohyoid.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Motor (spinal C1, not true hypoglossal fibers)"
+   },
+   {
+    "label": "Route",
+    "value": "Joins CN XII near the skull base, runs with it over the carotid vessels, branches off near the greater horn of the hyoid"
+   },
+   {
+    "label": "Supplies",
+    "value": "Thyrohyoid, geniohyoid; also gives superior root of ansa cervicalis"
+   },
+   {
+    "label": "Root",
+    "value": "C1 (with contribution from C2 in some)"
+   }
+  ],
+  "pearl": "A nuclear/medullary CN XII lesion spares thyrohyoid and geniohyoid because C1 fibers join the nerve only extracranially; a peripheral neck lesion of CN XII (e.g., carotid surgery) affects both.",
+  "depth": "deep",
+  "marker": {
+   "x": 545,
+   "y": 610
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "640,490 600,520 560,565 520,620 470,650"
+  }
+ },
+ {
+  "id": "phrenic-nerve",
+  "name": "Phrenic nerve (C3–C5)",
+  "category": "nerve",
+  "group": "Cervical plexus",
+  "function": "Sole motor nerve to the diaphragm plus sensory supply to the central diaphragm, pericardium, and mediastinal pleura: C3, 4, 5 keeps the diaphragm alive.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Mixed (motor to diaphragm, sensory to pericardium/pleura/peritoneum)"
+   },
+   {
+    "label": "Route",
+    "value": "Forms at lateral border of anterior scalene, descends obliquely on its anterior surface deep to prevertebral fascia, enters thorax between subclavian vein and artery"
+   },
+   {
+    "label": "Supplies",
+    "value": "Diaphragm (motor); central tendon, pericardium, mediastinal and diaphragmatic pleura and peritoneum (sensory)"
+   },
+   {
+    "label": "Relations",
+    "value": "Crossed anteriorly by transverse cervical and suprascapular arteries; thoracic duct on the left; deep to IJV and SCM"
+   },
+   {
+    "label": "Roots",
+    "value": "C3–C5 (C4 main)"
+   }
+  ],
+  "pearl": "Elevated hemidiaphragm on CXR after neck surgery, interscalene block, or mediastinal/Pancoast tumor; sniff test shows paradoxical upward motion. Irritation refers pain to the shoulder (C3–C5).",
+  "depth": "deep",
+  "marker": {
+   "x": 615,
+   "y": 830
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "650,660 632,740 612,830 592,920 580,980"
+  }
+ },
+ {
+  "id": "nerve-point-of-neck",
+  "name": "Nerve point of the neck (Erb's point)",
+  "category": "nerve",
+  "group": "Cervical plexus",
+  "function": "Point at the midpoint of the posterior border of SCM where the four cutaneous branches of the cervical plexus emerge; landmark for superficial cervical plexus block.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Midpoint of posterior border of SCM, about the level of the upper thyroid cartilage (C3–C4)"
+   },
+   {
+    "label": "Nerves emerging",
+    "value": "Lesser occipital, great auricular, transverse cervical, supraclavicular"
+   },
+   {
+    "label": "Nearby hazards",
+    "value": "Spinal accessory nerve exits SCM about 1 cm above; EJV crosses SCM anteriorly"
+   },
+   {
+    "label": "Clinical use",
+    "value": "Superficial cervical plexus block (carotid surgery, clavicle fixation, neck procedures)"
+   }
+  ],
+  "pearl": "Distinct from Erb's point of the brachial plexus (C5–C6 upper trunk). The spinal accessory nerve emerges just above it, so posterior-triangle lymph node biopsy here risks trapezius palsy.",
+  "depth": "superficial",
+  "marker": {
+   "x": 605,
+   "y": 700
+  },
+  "shape": {
+   "type": "circle",
+   "r": 12
+  }
+ },
+ {
+  "id": "greater-occipital-nerve",
+  "name": "Greater occipital nerve (C2)",
+  "category": "nerve",
+  "group": "Dorsal rami",
+  "function": "Medial branch of the C2 dorsal ramus and largest cutaneous dorsal ramus; pierces semispinalis capitis and trapezius to supply the posterior scalp up to the vertex.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sensory (plus motor twigs to semispinalis capitis)"
+   },
+   {
+    "label": "Route",
+    "value": "Emerges below obliquus capitis inferior, ascends, pierces semispinalis capitis and trapezius aponeurosis about 2 cm lateral to the inion, alongside the occipital artery"
+   },
+   {
+    "label": "Supplies",
+    "value": "Skin of posterior scalp from the superior nuchal line to the vertex"
+   },
+   {
+    "label": "Root",
+    "value": "C2 dorsal ramus (medial branch)"
+   }
+  ],
+  "pearl": "Occipital neuralgia: paroxysmal shooting occipital pain with tenderness at its emergence; GON block 2 cm lateral to the inion (medial to the occipital artery) is diagnostic and used for migraine.",
+  "depth": "superficial",
+  "marker": {
+   "x": 775,
+   "y": 380
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "720,545 740,470 770,400 790,330 800,250"
+  }
+ },
+ {
+  "id": "third-occipital-nerve",
+  "name": "Third occipital nerve (C3)",
+  "category": "nerve",
+  "group": "Dorsal rami",
+  "function": "Medial branch of the C3 dorsal ramus; supplies the C2–C3 facet joint and skin of the lower occiput and upper nuchal region, medial to the greater occipital nerve.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sensory (articular and cutaneous)"
+   },
+   {
+    "label": "Route",
+    "value": "Winds around the C2–C3 zygapophyseal joint, pierces semispinalis, splenius, and trapezius near the midline"
+   },
+   {
+    "label": "Supplies",
+    "value": "C2–C3 facet joint; skin of suboccipital and upper nuchal region"
+   },
+   {
+    "label": "Root",
+    "value": "C3 dorsal ramus (superficial medial branch)"
+   }
+  ],
+  "pearl": "Third occipital headache: cervicogenic headache from C2–C3 facet arthropathy, classically after whiplash; confirmed by third occipital nerve block and treated with radiofrequency ablation.",
+  "depth": "superficial",
+  "marker": {
+   "x": 785,
+   "y": 460
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "735,605 760,530 790,450 800,400"
+  }
+ },
+ {
+  "id": "suboccipital-nerve",
+  "name": "Suboccipital nerve (C1)",
+  "category": "nerve",
+  "group": "Dorsal rami",
+  "function": "Dorsal ramus of C1; a purely motor nerve emerging in the suboccipital triangle to supply the four suboccipital muscles and, often, semispinalis capitis.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Motor (usually no cutaneous branch)"
+   },
+   {
+    "label": "Route",
+    "value": "Emerges between the occiput and posterior arch of the atlas, below the vertebral artery, within the suboccipital triangle"
+   },
+   {
+    "label": "Supplies",
+    "value": "Rectus capitis posterior major and minor, obliquus capitis superior and inferior, semispinalis capitis"
+   },
+   {
+    "label": "Relations",
+    "value": "Vertebral artery (V3 segment) runs just above it in the groove on the atlas"
+   }
+  ],
+  "pearl": "Typically purely motor, no cutaneous branch (C6–C8 dorsal rami usually lack one too). Its triangle carries the vertebral artery (V3): dissection = neck pain + posterior-circulation stroke (vertigo, ataxia, diplopia).",
+  "depth": "deep",
+  "marker": {
+   "x": 725,
+   "y": 455
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "700,485 722,462 745,440"
+  }
+ },
+ {
+  "id": "brachial-plexus-roots-trunks",
+  "name": "Brachial plexus roots and trunks (C5–T1)",
+  "category": "nerve",
+  "group": "Brachial plexus in the neck",
+  "function": "Ventral rami C5–T1 emerge between the anterior and middle scalenes with the subclavian artery, form upper, middle, and lower trunks in the posterior triangle, then pass under the clavicle to the axilla.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Mixed"
+   },
+   {
+    "label": "Route",
+    "value": "Interscalene groove → supraclavicular posterior triangle → behind the clavicle over the 1st rib into the axilla"
+   },
+   {
+    "label": "Trunks",
+    "value": "Upper (C5–C6), middle (C7), lower (C8–T1); each divides into anterior and posterior divisions behind the clavicle"
+   },
+   {
+    "label": "Relations",
+    "value": "Subclavian artery with plexus between scalenes; subclavian vein anterior to anterior scalene; phrenic on anterior scalene"
+   },
+   {
+    "label": "Roots",
+    "value": "C5, C6, C7, C8, T1 (prefixed C4 / postfixed T2 variants)"
+   }
+  ],
+  "pearl": "Erb palsy (C5–C6 upper trunk): waiter's tip after birth or shoulder traction. Klumpke (C8–T1 lower trunk): claw hand ± Horner from upward arm traction or Pancoast tumor. Interscalene block spares C8–T1.",
+  "depth": "deep",
+  "marker": {
+   "x": 720,
+   "y": 820
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "690,720 700,780 720,840 760,900"
+  }
+ },
+ {
+  "id": "dorsal-scapular-nerve",
+  "name": "Dorsal scapular nerve (C5)",
+  "category": "nerve",
+  "group": "Brachial plexus in the neck",
+  "function": "Arises from the C5 root, pierces the middle scalene, and descends deep to levator scapulae to supply the rhomboids and levator scapulae (scapular retraction and elevation).",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Motor"
+   },
+   {
+    "label": "Route",
+    "value": "C5 root → pierces middle scalene → runs with dorsal scapular artery deep to levator scapulae along the medial scapular border"
+   },
+   {
+    "label": "Supplies",
+    "value": "Rhomboid major, rhomboid minor, levator scapulae (with C3–C4 twigs)"
+   },
+   {
+    "label": "Root",
+    "value": "C5 (branch of the root, not the trunk)"
+   }
+  ],
+  "pearl": "Rhomboid weakness lets the scapula drift laterally with subtle winging; contrast with long thoracic palsy (medial winging on wall push) and trapezius palsy (lateral winging with shoulder droop).",
+  "depth": "deep",
+  "marker": {
+   "x": 770,
+   "y": 830
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "695,730 740,780 780,850 800,900"
+  }
+ },
+ {
+  "id": "long-thoracic-nerve",
+  "name": "Long thoracic nerve (C5–C7)",
+  "category": "nerve",
+  "group": "Brachial plexus in the neck",
+  "function": "Formed from C5–C7 roots on the middle scalene; descends behind the plexus and over the 1st rib to serratus anterior, which protracts and upwardly rotates the scapula.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Motor"
+   },
+   {
+    "label": "Route",
+    "value": "C5 and C6 roots pierce middle scalene, joined by C7; descends posterior to the plexus and clavicle onto the lateral chest wall over serratus anterior"
+   },
+   {
+    "label": "Supplies",
+    "value": "Serratus anterior"
+   },
+   {
+    "label": "Roots",
+    "value": "C5–C7 (wings of heaven)"
+   }
+  ],
+  "pearl": "Injured in axillary node dissection/mastectomy, stab wounds, or heavy backpack straps: medial scapular winging when pushing against a wall and inability to abduct the arm above 90 degrees.",
+  "depth": "deep",
+  "marker": {
+   "x": 745,
+   "y": 920
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "700,760 720,840 740,920 760,1000"
+  }
+ },
+ {
+  "id": "suprascapular-nerve",
+  "name": "Suprascapular nerve (C5–C6)",
+  "category": "nerve",
+  "group": "Brachial plexus in the neck",
+  "function": "First branch of the upper trunk at Erb's point; runs posterolaterally across the posterior triangle to the suprascapular notch, supplying supraspinatus, infraspinatus, and the shoulder joint.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Mixed (motor + articular sensory)"
+   },
+   {
+    "label": "Route",
+    "value": "Upper trunk → posterior triangle deep to omohyoid and trapezius → beneath the superior transverse scapular ligament through the suprascapular notch (artery passes over)"
+   },
+   {
+    "label": "Supplies",
+    "value": "Supraspinatus, infraspinatus; glenohumeral and acromioclavicular joints"
+   },
+   {
+    "label": "Roots",
+    "value": "C5–C6"
+   }
+  ],
+  "pearl": "Entrapment at the suprascapular notch (ganglion cyst, overhead athletes) gives shoulder pain with supraspinatus and infraspinatus atrophy; a spinoglenoid notch lesion spares supraspinatus. Army over, Navy under.",
+  "depth": "deep",
+  "marker": {
+   "x": 805,
+   "y": 875
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "705,790 760,840 820,890 860,920 880,950"
+  }
+ },
+ {
+  "id": "cervical-sympathetic-trunk",
+  "name": "Cervical sympathetic trunk",
+  "category": "nerve",
+  "group": "Autonomic",
+  "function": "Chain of preganglionic fibers from T1–T4 ascending behind the carotid sheath on longus colli; carries all sympathetic outflow to the head and neck through three cervical ganglia.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sympathetic (preganglionic ascending fibers; postganglionic branches)"
+   },
+   {
+    "label": "Route",
+    "value": "From stellate ganglion up to the skull base, posterior to the carotid sheath, anterior to prevertebral fascia, longus colli, and transverse processes"
+   },
+   {
+    "label": "Ganglia",
+    "value": "Superior cervical (C2–C3), middle cervical (C6), cervicothoracic/stellate (C7–T1)"
+   },
+   {
+    "label": "Branches",
+    "value": "Gray rami communicantes to C1–C8, superior/middle/inferior cardiac nerves, carotid and vertebral plexuses"
+   },
+   {
+    "label": "Key fact",
+    "value": "No white rami in the neck: preganglionic fibers enter from T1–T4 and ascend"
+   }
+  ],
+  "pearl": "Horner syndrome (ptosis, miosis, anhidrosis) from lesions anywhere along the pathway: Pancoast tumor, carotid dissection, neck surgery/trauma, lateral medullary stroke. Cocaine/apraclonidine drops confirm it.",
+  "depth": "deep",
+  "marker": {
+   "x": 598,
+   "y": 650
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "615,500 606,600 600,700 598,800 606,880"
+  }
+ },
+ {
+  "id": "superior-cervical-ganglion",
+  "name": "Superior cervical ganglion",
+  "category": "nerve",
+  "group": "Autonomic",
+  "function": "Largest cervical sympathetic ganglion (fused C1–C4 ganglia) at the C2–C3 level behind the ICA; its postganglionic fibers reach the eye, face, and salivary glands via the carotid plexuses.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sympathetic postganglionic cell bodies (third-order neuron of the oculosympathetic pathway)"
+   },
+   {
+    "label": "Location",
+    "value": "Anterior to longus capitis, posterior to the ICA and carotid sheath, at C2–C3 near the angle of the mandible"
+   },
+   {
+    "label": "Supplies",
+    "value": "Dilator pupillae, superior tarsal (Müller) muscle, facial sweat glands and vessels, salivary glands, pineal gland"
+   },
+   {
+    "label": "Branches",
+    "value": "Internal and external carotid nerves, gray rami to C1–C4, pharyngeal branches, superior cardiac nerve"
+   }
+  ],
+  "pearl": "Third-order (postganglionic) Horner from lesions distal to the SCG (ICA dissection, cavernous sinus) spares most facial sweating because sudomotor fibers travel with the ECA; hydroxyamphetamine fails to dilate the pupil.",
+  "depth": "deep",
+  "marker": {
+   "x": 615,
+   "y": 540
+  },
+  "shape": {
+   "type": "circle",
+   "r": 14
+  }
+ },
+ {
+  "id": "middle-cervical-ganglion",
+  "name": "Middle cervical ganglion",
+  "category": "nerve",
+  "group": "Autonomic",
+  "function": "Small, inconstant ganglion at the C6 level near the inferior thyroid artery and cricoid; gives gray rami to C5–C6 and the middle cardiac nerve, and may fuse with the stellate ganglion.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sympathetic postganglionic cell bodies"
+   },
+   {
+    "label": "Location",
+    "value": "Anterior to the inferior thyroid artery at the level of the cricoid cartilage/C6 (Chassaignac's carotid tubercle)"
+   },
+   {
+    "label": "Branches",
+    "value": "Gray rami to C5–C6, middle cardiac nerve, branches to the thyroid gland and inferior thyroid artery"
+   },
+   {
+    "label": "Connections",
+    "value": "Ansa subclavia loops anterior to the subclavian artery to join the stellate ganglion"
+   }
+  ],
+  "pearl": "At risk during thyroidectomy near the inferior thyroid artery and in anterior approaches to the C5–C6 spine (postoperative Horner); the ansa subclavia encircles the subclavian artery.",
+  "depth": "deep",
+  "marker": {
+   "x": 600,
+   "y": 770
+  },
+  "shape": {
+   "type": "circle",
+   "r": 11
+  }
+ },
+ {
+  "id": "stellate-ganglion",
+  "name": "Stellate (cervicothoracic) ganglion",
+  "category": "nerve",
+  "group": "Autonomic",
+  "function": "Fusion of the inferior cervical and T1 ganglia anterior to the neck of the 1st rib and C7 transverse process, behind the vertebral artery origin; relay for sympathetics to the upper limb and head.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sympathetic (white ramus enters only from T1, sometimes T2; preganglionic fibers from T1–T4 ascend through it; postganglionic cell bodies)"
+   },
+   {
+    "label": "Location",
+    "value": "Anterior to C7 transverse process and neck of the 1st rib, posterior to the vertebral and subclavian arteries, posteromedial to anterior scalene, near the pleural cupola"
+   },
+   {
+    "label": "Branches",
+    "value": "Gray rami to C7, C8, T1; inferior cardiac nerve; vertebral nerve and plexus; ansa subclavia"
+   },
+   {
+    "label": "Supplies",
+    "value": "Upper limb vasomotor/sudomotor supply, heart, and onward fibers to the head via the trunk"
+   }
+  ],
+  "pearl": "Stellate block (at the C6 Chassaignac tubercle) for CRPS and refractory VT; Horner confirms success. Risks: pneumothorax, vertebral artery injection (seizure), hoarseness. Pancoast tumor compresses it → Horner.",
+  "depth": "deep",
+  "marker": {
+   "x": 630,
+   "y": 900
+  },
+  "shape": {
+   "type": "circle",
+   "r": 14
+  }
+ },
+ {
+  "id": "internal-carotid-plexus",
+  "name": "Internal carotid nerve and plexus (Horner's pathway)",
+  "category": "nerve",
+  "group": "Autonomic",
+  "function": "Postganglionic sympathetic fibers from the SCG ascend as the internal carotid nerve/plexus on the ICA through the carotid canal to the dilator pupillae, superior tarsal muscle, and deep petrosal nerve.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sympathetic postganglionic"
+   },
+   {
+    "label": "Route",
+    "value": "SCG → internal carotid nerve → plexus in the carotid canal → cavernous sinus → joins CN V1 (nasociliary/long ciliary nerves) and the ophthalmic artery into the orbit"
+   },
+   {
+    "label": "Supplies",
+    "value": "Dilator pupillae, superior tarsal (Müller) muscle, orbital vessels; deep petrosal nerve → vidian nerve → nasal/lacrimal vasomotor fibers"
+   },
+   {
+    "label": "Oculosympathetic pathway",
+    "value": "Hypothalamus → ciliospinal center C8–T2 → stellate → SCG → carotid plexus → eye"
+   }
+  ],
+  "pearl": "ICA dissection (neck trauma, chiropractic manipulation) causes painful Horner syndrome without facial anhidrosis plus risk of ischemic stroke, because the carotid plexus rides on the dissected vessel.",
+  "depth": "deep",
+  "marker": {
+   "x": 592,
+   "y": 440
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "615,540 602,485 592,425 586,380"
+  }
+ },
+ {
+  "id": "cervical-gray-rami-communicantes",
+  "name": "Gray rami communicantes (cervical)",
+  "category": "nerve",
+  "group": "Autonomic",
+  "function": "Unmyelinated postganglionic fibers from the three cervical ganglia to every cervical spinal nerve; distribute vasomotor, sudomotor, and pilomotor supply to neck and upper limb dermatomes.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sympathetic postganglionic"
+   },
+   {
+    "label": "Route",
+    "value": "SCG → C1–C4; middle ganglion → C5–C6; stellate → C7–C8 (and T1). From the trunk (anterior to the transverse processes, on longus colli/capitis) rami pass posterolaterally to join the ventral rami in the transverse-process grooves, where the rami lie behind the vertebral artery"
+   },
+   {
+    "label": "Supplies",
+    "value": "Sweat glands, arrector pili, and cutaneous vessels in cervical and brachial plexus territories"
+   },
+   {
+    "label": "Key fact",
+    "value": "Cervical spinal nerves have gray rami only; no white rami (preganglionic fibers enter the trunk from T1–T4)"
+   }
+  ],
+  "pearl": "Because cervical nerves lack white rami, all head and neck sympathetic preganglionic fibers exit at T1–T4: an apical lung (Pancoast) lesion interrupts the whole outflow, giving Horner with facial anhidrosis.",
+  "depth": "deep",
+  "marker": {
+   "x": 645,
+   "y": 720
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "600,700 640,712 678,722"
+  }
+ },
+ {
+  "id": "optic-chiasm",
+  "name": "Optic chiasm",
+  "category": "nerve",
+  "group": "Cranial nerves",
+  "function": "Decussation of nasal retinal fibers from both optic nerves; sits above the pituitary fossa and continues as the optic tracts, so each tract carries the contralateral visual field.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sensory (special visual); CNS white-matter tract, not a true peripheral nerve"
+   },
+   {
+    "label": "Location/route",
+    "value": "Suprasellar, above diaphragma sellae and pituitary gland, anterior to the infundibulum; lies in the floor of the third ventricle (optic recess), just below the lamina terminalis"
+   },
+   {
+    "label": "Supplies",
+    "value": "Receives both optic nerves; gives rise to right and left optic tracts to the lateral geniculate nuclei"
+   },
+   {
+    "label": "Fibers",
+    "value": "Nasal retinal fibers (temporal fields) cross; temporal retinal fibers (nasal fields) remain ipsilateral"
+   },
+   {
+    "label": "Blood supply",
+    "value": "Superior hypophyseal arteries, anterior cerebral and anterior communicating branches"
+   }
+  ],
+  "pearl": "Bitemporal hemianopia = chiasmal compression (pituitary adenoma, craniopharyngioma): check prolactin, visual fields, MRI sella. Pituitary apoplexy adds sudden headache and ophthalmoplegia.",
+  "depth": "deep",
+  "marker": {
+   "x": 478,
+   "y": 308
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "462,314 478,306 494,314"
+  }
+ },
+ {
+  "id": "trigeminal-ganglion",
+  "name": "Trigeminal (Gasserian/semilunar) ganglion",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Sensory ganglion of CN V holding cell bodies of V1–V3 primary afferents (except proprioception); lies in Meckel's cave on the petrous apex and gives rise to the three divisions.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sensory (pseudounipolar cell bodies); motor root of V3 passes beneath it without synapsing"
+   },
+   {
+    "label": "Location/route",
+    "value": "Meckel's cave (dural pouch) on trigeminal impression of petrous apex, middle cranial fossa, lateral to cavernous sinus"
+   },
+   {
+    "label": "Supplies",
+    "value": "Face, anterior scalp, cornea, oral and nasal mucosa, teeth, supratentorial dura"
+   },
+   {
+    "label": "Branches",
+    "value": "V1 ophthalmic (superior orbital fissure), V2 maxillary (foramen rotundum), V3 mandibular (foramen ovale)"
+   }
+  ],
+  "pearl": "HSV-1 latency site (cold sores); VZV reactivation gives zoster ophthalmicus (V1, Hutchinson sign). Trigeminal neuralgia refractory to carbamazepine: microvascular decompression or ganglion rhizotomy.",
+  "depth": "deep",
+  "marker": {
+   "x": 540,
+   "y": 322
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "576,334 554,326 540,322 526,326"
+  }
+ },
+ {
+  "id": "geniculate-ganglion",
+  "name": "Geniculate ganglion",
+  "category": "nerve",
+  "group": "Facial nerve branches",
+  "function": "Sensory ganglion of CN VII at the first bend (genu) of the facial canal; holds taste cell bodies for the anterior tongue and is where the greater petrosal nerve leaves the facial nerve.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sensory (taste, external ear skin); motor and parasympathetic fibers pass through without synapsing"
+   },
+   {
+    "label": "Location/route",
+    "value": "First genu of the facial canal in the petrous temporal bone, medial wall of the middle ear near the cochlea"
+   },
+   {
+    "label": "Supplies",
+    "value": "Taste from anterior 2/3 tongue (via chorda tympani) and soft palate; skin of concha and ear canal"
+   },
+   {
+    "label": "Branches",
+    "value": "Greater petrosal nerve (lacrimation, nasal/palatal glands); nerve continues to stapedius branch and chorda tympani"
+   }
+  ],
+  "pearl": "VZV reactivation here = Ramsay Hunt syndrome: ipsilateral facial palsy + vesicles in ear canal/auricle, often with hearing loss/vertigo; treat with valacyclovir + prednisone. Lesion here also drops lacrimation.",
+  "depth": "deep",
+  "marker": {
+   "x": 630,
+   "y": 335
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "634,352 630,336 618,332"
+  }
+ },
+ {
+  "id": "supratrochlear-nerve",
+  "name": "Supratrochlear nerve",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Smaller medial terminal branch of the frontal nerve (V1); exits the orbit above the trochlea to supply skin of the medial forehead, medial upper eyelid, and adjacent conjunctiva.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Sensory (general somatic afferent), branch of V1 via frontal nerve"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Leaves orbit at the superomedial angle above the trochlea of superior oblique, pierces frontalis, ascends medial forehead"
+   },
+   {
+    "label": "Supplies",
+    "value": "Medial forehead and anterior midline scalp, medial upper eyelid, conjunctiva; medial to supraorbital territory"
+   },
+   {
+    "label": "Branches",
+    "value": "Palpebral twigs and ascending frontal/scalp twigs; communicates with infratrochlear nerve"
+   }
+  ],
+  "pearl": "Forehead/anterior scalp laceration block: infiltrate supraorbital + supratrochlear nerves along the superior orbital rim medial to the pupil. Both are V1, so spared in V2/V3 zoster.",
+  "depth": "superficial",
+  "marker": {
+   "x": 304,
+   "y": 240
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "316,302 308,286 303,240 300,195"
+  }
+ },
+ {
+  "id": "short-and-long-ciliary-nerves",
+  "name": "Short and long ciliary nerves",
+  "category": "nerve",
+  "group": "Parasympathetic ganglia",
+  "function": "Short ciliary nerves carry postganglionic parasympathetics (ciliary ganglion) to sphincter pupillae and ciliary muscle; long ciliary nerves carry sympathetics to dilator pupillae plus corneal sensation.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Mixed autonomic + sensory: short = parasympathetic (+ passing sympathetic and sensory); long = sympathetic + sensory"
+   },
+   {
+    "label": "Route",
+    "value": "Short (6–10) leave ciliary ganglion; long (2–3) branch from nasociliary nerve; all pierce sclera around the optic nerve"
+   },
+   {
+    "label": "Supplies",
+    "value": "Short: sphincter pupillae (miosis), ciliary muscle (accommodation). Long: dilator pupillae (mydriasis), cornea, iris, ciliary body"
+   },
+   {
+    "label": "Fibers",
+    "value": "Parasympathetics: Edinger-Westphal → CN III → ciliary ganglion. Sympathetics: superior cervical ganglion → carotid plexus → nasociliary"
+   }
+  ],
+  "pearl": "Pupil-involving CN III palsy = compression (PCom aneurysm, uncal herniation) as parasympathetics run superficially; Adie tonic pupil = ciliary ganglion lesion, hypersensitive to dilute pilocarpine.",
+  "depth": "deep",
+  "marker": {
+   "x": 366,
+   "y": 338
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "398,330 382,334 364,336 346,332"
+  }
+ },
+ {
+  "id": "motor-branches-of-v3",
+  "name": "Motor branches of V3 (masseteric, deep temporal, pterygoid, tensor nerves)",
+  "category": "nerve",
+  "group": "Trigeminal branches",
+  "function": "Branchial motor fibers of CN V3 leaving via foramen ovale to the muscles of mastication (masseter, temporalis, medial/lateral pterygoid) plus tensor veli palatini and tensor tympani.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Motor (special visceral efferent, first pharyngeal arch); motor root bypasses the trigeminal ganglion"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Foramen ovale → infratemporal fossa; masseteric nerve crosses the mandibular notch, deep temporal nerves ascend beneath temporalis"
+   },
+   {
+    "label": "Supplies",
+    "value": "Masseter, temporalis, medial and lateral pterygoid, tensor veli palatini, tensor tympani (mylohyoid/anterior digastric via nerve to mylohyoid)"
+   },
+   {
+    "label": "Branches",
+    "value": "Masseteric, anterior and posterior deep temporal, lateral pterygoid, medial pterygoid (gives tensor nerves via otic ganglion, no synapse)"
+   }
+  ],
+  "pearl": "V3 motor lesion: jaw deviates TOWARD the lesion on opening (unopposed contralateral lateral pterygoid) with masseter/temporalis wasting. Hyperacusis points to stapedius (CN VII), not tensor tympani.",
+  "depth": "deep",
+  "marker": {
+   "x": 525,
+   "y": 418
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "518,290 530,382 544,390 522,450"
+  }
+ },
+ {
+  "id": "deep-petrosal-and-vidian-nerve",
+  "name": "Deep petrosal nerve / nerve of the pterygoid canal (Vidian nerve)",
+  "category": "nerve",
+  "group": "Autonomic",
+  "function": "Deep petrosal nerve brings postganglionic sympathetics from the internal carotid plexus; it joins the greater petrosal nerve at foramen lacerum to form the Vidian nerve, which runs to the pterygopalatine ganglion.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Autonomic: postganglionic sympathetic (deep petrosal) + preganglionic parasympathetic (greater petrosal), plus some palatal taste"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Internal carotid plexus → deep petrosal nerve → unites with greater petrosal at foramen lacerum → pterygoid (Vidian) canal → pterygopalatine fossa"
+   },
+   {
+    "label": "Supplies",
+    "value": "Lacrimal gland; mucous glands and vessels of nasal cavity, palate, nasopharynx (distributed on V2 branches and zygomatic–lacrimal communication)"
+   },
+   {
+    "label": "Branches",
+    "value": "Terminates in the pterygopalatine ganglion; sympathetic fibers pass through without synapsing"
+   }
+  ],
+  "pearl": "Vidian canal is the endoscopic landmark for the petrous internal carotid in skull base surgery; Vidian neurectomy once treated refractory vasomotor rhinitis. Dry eye + dry nose localizes proximal to the PPG.",
+  "depth": "deep",
+  "marker": {
+   "x": 497,
+   "y": 374
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "556,388 532,378 500,372 458,366"
+  }
+ },
+ {
+  "id": "cervical-spinal-nerve-roots-c1-c8",
+  "name": "Cervical spinal nerve roots (C1–C8)",
+  "category": "nerve",
+  "group": "Spinal nerve roots",
+  "function": "Eight paired mixed spinal nerves formed from dorsal and ventral roots; each exits its intervertebral foramen ABOVE the same-numbered vertebra (C8 below C7) to form the cervical and brachial plexuses.",
+  "details": [
+   {
+    "label": "Type",
+    "value": "Mixed: motor ventral root + sensory dorsal root (dorsal root ganglion sits within the foramen)"
+   },
+   {
+    "label": "Exit/route",
+    "value": "Intervertebral foramina, bordered anteriorly by the uncovertebral joint/disc and posteriorly by the facet joint; C1 above the atlas, C8 between C7 and T1"
+   },
+   {
+    "label": "Supplies",
+    "value": "C1–C4 → cervical plexus (neck skin/strap muscles, diaphragm via C3–C5); C5–C8 (+T1) → brachial plexus"
+   },
+   {
+    "label": "Key levels",
+    "value": "C5 deltoid/biceps reflex; C6 wrist extension, brachioradialis reflex, thumb; C7 triceps reflex, middle finger; C8 finger flexors, little finger"
+   }
+  ],
+  "pearl": "Cervical radiculopathy: C6–C7 disc herniation compresses the C7 root (triceps weakness, lost triceps reflex, middle finger numbness); Spurling test positive. Most resolve conservatively; MRI if progressive deficit or myelopathy.",
+  "depth": "deep",
+  "marker": {
+   "x": 714,
+   "y": 748
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "692,505 696,560 700,620 704,680 708,740 712,800 716,845 720,875"
+  }
+ }
+]

@@ -1,0 +1,2457 @@
+[
+ {
+  "id": "frontal-bone",
+  "name": "Frontal bone",
+  "category": "bone",
+  "group": "Neurocranium",
+  "function": "Forms the forehead, the roof of each orbit and the floor of the anterior cranial fossa; houses the frontal sinuses.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Parietals (coronal suture), sphenoid, ethmoid, nasal, maxilla, zygomatic, lacrimal"
+   },
+   {
+    "label": "Key features",
+    "value": "Supraorbital margin and foramen/notch, glabella, frontal eminences, orbital plates, frontal sinus"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Supraorbital foramen – supraorbital nerve (V1) and vessels"
+   },
+   {
+    "label": "Attachments",
+    "value": "Orbicularis oculi (orbital part, nasal part of frontal bone), corrugator supercilii (superciliary arch), temporalis (temporal fossa); frontalis has no bony attachment, inserting into skin via the galea"
+   }
+  ],
+  "pearl": "Anterior cranial fossa fracture: CSF rhinorrhea, raccoon eyes and anosmia from olfactory fibers torn at the cribriform plate.",
+  "depth": "superficial",
+  "marker": {
+   "x": 365,
+   "y": 175
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 295,300 L 290,280 Q 296,200 330,150 Q 400,75 470,55 L 470,270 L 440,280 L 400,292 L 380,320 L 345,300 Z"
+  }
+ },
+ {
+  "id": "parietal-bone",
+  "name": "Parietal bone",
+  "category": "bone",
+  "group": "Neurocranium",
+  "function": "Paired bones forming the roof and sides of the cranial vault; protect the cerebral hemispheres and anchor the temporalis.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Frontal (coronal), opposite parietal (sagittal), occipital (lambdoid), temporal (squamous), sphenoid"
+   },
+   {
+    "label": "Key features",
+    "value": "Parietal eminence, superior and inferior temporal lines, internal grooves for middle meningeal artery"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Parietal foramen – emissary vein to the superior sagittal sinus"
+   },
+   {
+    "label": "Attachments",
+    "value": "Temporalis (inferior temporal line), temporal fascia (superior temporal line)"
+   }
+  ],
+  "pearl": "Emissary veins through the parietal foramen link scalp veins to the superior sagittal sinus, a route for scalp infection to cause intracranial sinus thrombosis.",
+  "depth": "superficial",
+  "marker": {
+   "x": 600,
+   "y": 120
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 470,55 Q 520,38 600,48 Q 700,85 750,170 L 700,340 Q 600,300 520,290 L 470,270 Z"
+  }
+ },
+ {
+  "id": "temporal-bone",
+  "name": "Temporal bone",
+  "category": "bone",
+  "group": "Neurocranium",
+  "function": "Forms the lateral skull base and side of the vault; houses the middle and inner ear and transmits CN VII, CN VIII and the internal carotid artery.",
+  "details": [
+   {
+    "label": "Parts",
+    "value": "Squamous, tympanic, petrous (with mastoid), zygomatic process, styloid process"
+   },
+   {
+    "label": "Articulates with",
+    "value": "Parietal, occipital, sphenoid, zygomatic, mandible (TMJ)"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Internal acoustic meatus (CN VII, VIII, labyrinthine a.), carotid canal (ICA), stylomastoid foramen (CN VII), jugular foramen (shared with occipital)"
+   },
+   {
+    "label": "Attachments",
+    "value": "Temporalis, masseter (zygomatic process), SCM, splenius and longissimus capitis, digastric (mastoid), styloid muscles"
+   }
+  ],
+  "pearl": "Temporal bone fracture: hemotympanum, Battle sign, CSF otorrhea, facial palsy and hearing loss; transverse fractures injure CN VII/VIII more often than longitudinal.",
+  "depth": "superficial",
+  "marker": {
+   "x": 560,
+   "y": 310
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 470,270 Q 520,290 600,300 L 700,340 L 690,400 Q 680,450 650,460 L 630,440 L 615,400 L 600,380 L 570,355 L 410,355 L 420,340 L 480,335 Q 485,300 470,270 Z"
+  }
+ },
+ {
+  "id": "occipital-bone",
+  "name": "Occipital bone",
+  "category": "bone",
+  "group": "Neurocranium",
+  "function": "Forms the posterior and inferior skull; encloses the foramen magnum and articulates with the atlas, carrying the head on the spine.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Parietals (lambdoid), temporals, sphenoid (spheno-occipital synchondrosis at the clivus), atlas (occipital condyles)"
+   },
+   {
+    "label": "Key features",
+    "value": "External occipital protuberance, nuchal lines, occipital condyles, clivus, internal grooves for transverse sinuses"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Foramen magnum (medulla, vertebral arteries, CN XI spinal roots), hypoglossal canal (CN XII), condylar canal (emissary vein)"
+   },
+   {
+    "label": "Attachments",
+    "value": "Trapezius, SCM, splenius capitis, semispinalis capitis, suboccipital muscles, ligamentum nuchae"
+   }
+  ],
+  "pearl": "Occipital condyle fracture and atlanto-occipital dislocation follow high-energy trauma; dislocation is frequently fatal from brainstem injury.",
+  "depth": "superficial",
+  "marker": {
+   "x": 790,
+   "y": 290
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 750,170 Q 820,200 830,250 Q 838,300 810,340 Q 780,400 740,430 L 700,465 L 690,400 L 700,340 Z"
+  }
+ },
+ {
+  "id": "sphenoid-bone",
+  "name": "Sphenoid bone",
+  "category": "bone",
+  "group": "Neurocranium",
+  "function": "Butterfly-shaped keystone of the skull base joining all cranial fossae; holds the pituitary in the sella turcica and transmits CN II–VI.",
+  "details": [
+   {
+    "label": "Parts",
+    "value": "Body (sphenoid sinus, sella turcica), lesser wings, greater wings, pterygoid processes"
+   },
+   {
+    "label": "Articulates with",
+    "value": "All other cranial bones plus zygomatic, palatine and vomer"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Optic canal (CN II, ophthalmic a.), superior orbital fissure (III, IV, V1, VI, ophthalmic veins), rotundum (V2), ovale (V3), spinosum (middle meningeal a.)"
+   },
+   {
+    "label": "Attachments",
+    "value": "Temporalis, lateral and medial pterygoids, tensor veli palatini, superior constrictor (pterygoid hamulus/raphe)"
+   }
+  ],
+  "pearl": "Transsphenoidal pituitary surgery reaches the sella through the sphenoid sinus; the adjacent cavernous sinus puts the ICA and CN III–VI at risk.",
+  "depth": "deep",
+  "marker": {
+   "x": 450,
+   "y": 305
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 430,280 L 470,272 L 482,300 L 480,335 L 440,345 L 420,318 Z"
+  }
+ },
+ {
+  "id": "ethmoid-bone",
+  "name": "Ethmoid bone",
+  "category": "bone",
+  "group": "Neurocranium",
+  "function": "Fragile midline bone between the orbits forming the nasal roof, medial orbital wall and upper septum; its cribriform plate carries olfactory nerves.",
+  "details": [
+   {
+    "label": "Parts",
+    "value": "Cribriform plate, crista galli, perpendicular plate, lamina papyracea, ethmoid air cells, superior and middle conchae"
+   },
+   {
+    "label": "Articulates with",
+    "value": "Frontal, sphenoid, nasal, maxilla, lacrimal, palatine, vomer, inferior nasal concha"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Cribriform foramina – CN I filaments; anterior/posterior ethmoidal foramina – ethmoidal nerves (V1) and arteries"
+   },
+   {
+    "label": "Key relation",
+    "value": "Lamina papyracea is the paper-thin wall between ethmoid cells and the orbit"
+   }
+  ],
+  "pearl": "Ethmoid sinusitis spreads through the lamina papyracea to cause orbital cellulitis in children: proptosis, painful ophthalmoplegia, risk of cavernous sinus thrombosis.",
+  "depth": "deep",
+  "marker": {
+   "x": 325,
+   "y": 345
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 318,330 L 345,328 L 348,355 L 320,358 Z"
+  }
+ },
+ {
+  "id": "nasal-bone",
+  "name": "Nasal bone",
+  "category": "bone",
+  "group": "Viscerocranium",
+  "function": "Paired small bones forming the bridge of the nose; support the upper nasal dorsum and meet the frontal bone at the nasion.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Frontal bone, opposite nasal bone, maxilla (frontal process), ethmoid (perpendicular plate)"
+   },
+   {
+    "label": "Key features",
+    "value": "Nasion at the frontonasal suture; groove for the external nasal nerve (V1)"
+   },
+   {
+    "label": "Attachments",
+    "value": "Upper lateral nasal cartilages below; procerus and nasalis overlie it"
+   },
+   {
+    "label": "Blood supply",
+    "value": "Dorsal nasal (ophthalmic) and angular (facial) arteries"
+   }
+  ],
+  "pearl": "Most commonly fractured facial bone; always look for a septal hematoma, which must be drained to prevent cartilage necrosis and saddle-nose deformity.",
+  "depth": "superficial",
+  "marker": {
+   "x": 275,
+   "y": 335
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 295,300 L 302,322 L 272,366 L 255,360 L 285,305 Z"
+  }
+ },
+ {
+  "id": "lacrimal-bone",
+  "name": "Lacrimal bone",
+  "category": "bone",
+  "group": "Viscerocranium",
+  "function": "Smallest facial bone, in the anteromedial orbital wall; forms the lacrimal fossa for the lacrimal sac and the groove of the nasolacrimal duct.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Frontal, ethmoid, maxilla, inferior nasal concha"
+   },
+   {
+    "label": "Key features",
+    "value": "Lacrimal fossa (lacrimal sac), posterior lacrimal crest, nasolacrimal groove"
+   },
+   {
+    "label": "Related drainage",
+    "value": "Nasolacrimal duct empties into the inferior meatus beneath the inferior concha"
+   },
+   {
+    "label": "Attachments",
+    "value": "Lacrimal part of orbicularis oculi (posterior lacrimal crest), medial palpebral ligament nearby"
+   }
+  ],
+  "pearl": "Nasolacrimal duct obstruction causes epiphora and dacryocystitis (tender medial canthal swelling); treated with probing or dacryocystorhinostomy.",
+  "depth": "deep",
+  "marker": {
+   "x": 300,
+   "y": 330
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 296,318 L 309,316 L 311,338 L 298,341 Z"
+  }
+ },
+ {
+  "id": "zygomatic-bone",
+  "name": "Zygomatic bone",
+  "category": "bone",
+  "group": "Viscerocranium",
+  "function": "Cheekbone forming the lateral orbital wall and part of the orbital floor and zygomatic arch; transmits masseter forces to the skull.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Frontal, sphenoid (greater wing), temporal (zygomatic process), maxilla"
+   },
+   {
+    "label": "Key features",
+    "value": "Frontal, temporal and maxillary processes; orbital surface; malar prominence"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Zygomaticofacial and zygomaticotemporal foramina – cutaneous branches of V2"
+   },
+   {
+    "label": "Attachments",
+    "value": "Masseter, zygomaticus major and minor, temporal fascia"
+   }
+  ],
+  "pearl": "Zygomaticomaxillary complex (tripod) fracture: flattened cheek, trismus, infraorbital numbness and diplopia from orbital floor involvement.",
+  "depth": "superficial",
+  "marker": {
+   "x": 400,
+   "y": 370
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 380,320 L 410,335 L 440,350 L 410,360 L 420,380 L 405,400 L 385,395 L 370,370 L 375,340 Z"
+  }
+ },
+ {
+  "id": "maxilla",
+  "name": "Maxilla",
+  "category": "bone",
+  "group": "Viscerocranium",
+  "function": "Upper jaw forming the orbital floor, nasal floor and lateral wall, anterior hard palate and upper alveolar arch; contains the maxillary sinus.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Frontal, ethmoid, nasal, lacrimal, zygomatic, palatine, vomer, inferior concha, opposite maxilla"
+   },
+   {
+    "label": "Key features",
+    "value": "Frontal, zygomatic, palatine and alveolar processes; maxillary sinus (largest paranasal sinus) draining to the middle meatus"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Infraorbital foramen – infraorbital nerve (V2) and vessels; incisive canal – nasopalatine nerve and sphenopalatine artery branches"
+   },
+   {
+    "label": "Attachments",
+    "value": "Buccinator, levator anguli oris, levator labii superioris, nasalis, orbicularis oris"
+   }
+  ],
+  "pearl": "Le Fort fractures all pass through the pterygoid plates: I floating palate, II pyramidal through the nasal bridge, III craniofacial dysjunction with CSF leak.",
+  "depth": "superficial",
+  "marker": {
+   "x": 320,
+   "y": 440
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 300,355 L 385,355 L 400,370 L 410,400 L 390,440 L 340,470 L 300,470 L 275,455 L 255,430 L 260,400 L 270,370 Z"
+  }
+ },
+ {
+  "id": "palatine-bone",
+  "name": "Palatine bone",
+  "category": "bone",
+  "group": "Viscerocranium",
+  "function": "L-shaped bone forming the posterior hard palate, part of the lateral nasal wall and orbital floor; its perpendicular plate forms the medial wall of the pterygopalatine fossa.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Maxilla, sphenoid, ethmoid, vomer, inferior nasal concha, opposite palatine"
+   },
+   {
+    "label": "Key features",
+    "value": "Horizontal plate (posterior quarter of hard palate; maxillary palatine processes form the anterior three-quarters), perpendicular plate, orbital and sphenoidal processes, pyramidal process"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Greater palatine foramen – greater palatine nerve and artery; lesser palatine foramina – lesser palatine nerves and vessels; sphenopalatine foramen (notch closed by sphenoid body) – sphenopalatine artery and nasopalatine nerve"
+   },
+   {
+    "label": "Attachments",
+    "value": "Palatine aponeurosis (tensor/levator veli palatini), musculus uvulae (posterior nasal spine), medial pterygoid (pyramidal process)"
+   }
+  ],
+  "pearl": "The sphenopalatine foramen transmits the sphenopalatine artery, the source of posterior epistaxis that fails anterior packing and may need embolization or ligation.",
+  "depth": "deep",
+  "marker": {
+   "x": 430,
+   "y": 455
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 420,440 L 445,440 L 445,468 L 420,468 Z"
+  }
+ },
+ {
+  "id": "inferior-nasal-concha",
+  "name": "Inferior nasal concha",
+  "category": "bone",
+  "group": "Viscerocranium",
+  "function": "Separate curved bone projecting into the nasal cavity as the largest turbinate; warms and humidifies air and roofs the inferior meatus.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Maxilla, palatine, lacrimal, ethmoid"
+   },
+   {
+    "label": "Key features",
+    "value": "Covered by thick erectile mucosa with venous sinusoids; inferior meatus beneath receives the nasolacrimal duct"
+   },
+   {
+    "label": "Related",
+    "value": "Superior and middle conchae are parts of the ethmoid, not separate bones"
+   },
+   {
+    "label": "Attachments",
+    "value": "Nasal mucoperiosteum only"
+   }
+  ],
+  "pearl": "Inferior turbinate hypertrophy (allergic or vasomotor rhinitis) causes nasal obstruction; the nasolacrimal duct opens beneath it, so tears drain into the nose.",
+  "depth": "deep",
+  "marker": {
+   "x": 340,
+   "y": 405
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 320,398 L 360,400 L 358,412 L 322,412 Z"
+  }
+ },
+ {
+  "id": "vomer",
+  "name": "Vomer",
+  "category": "bone",
+  "group": "Viscerocranium",
+  "function": "Thin midline plate forming the posteroinferior nasal septum; separates the two choanae.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Sphenoid (rostrum), ethmoid (perpendicular plate), maxillae and palatines (nasal crest), septal cartilage"
+   },
+   {
+    "label": "Key features",
+    "value": "Alae clasp the sphenoid rostrum; groove for the nasopalatine nerve and sphenopalatine vessels"
+   },
+   {
+    "label": "Septum components",
+    "value": "Septal cartilage (anterior), perpendicular plate of ethmoid (superior), vomer (posteroinferior)"
+   },
+   {
+    "label": "Attachments",
+    "value": "Septal cartilage anteriorly, nasal mucosa"
+   }
+  ],
+  "pearl": "Deviated septum involving the vomer causes unilateral obstruction; septoplasty must preserve a dorsal and caudal cartilage strut to avoid saddle-nose collapse.",
+  "depth": "deep",
+  "marker": {
+   "x": 380,
+   "y": 420
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 370,395 L 395,400 L 392,440 L 372,440 Z"
+  }
+ },
+ {
+  "id": "mandible",
+  "name": "Mandible",
+  "category": "bone",
+  "group": "Viscerocranium",
+  "function": "Lower jaw, the only mobile skull bone; bears the lower teeth and articulates with the temporal bone at the TMJ for mastication and speech.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Temporal bone at the temporomandibular joints (bilateral)"
+   },
+   {
+    "label": "Key features",
+    "value": "Body, ramus, angle, condylar and coronoid processes, alveolar process, mental protuberance, mylohyoid line, lingula"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Mandibular foramen – inferior alveolar nerve, artery, vein; mental foramen – mental nerve and vessels"
+   },
+   {
+    "label": "Attachments",
+    "value": "Masseter, temporalis, medial and lateral pterygoids, mylohyoid, geniohyoid, genioglossus, digastric, buccinator, platysma"
+   }
+  ],
+  "pearl": "The mandible is a ring, so fractures are usually double (angle plus contralateral parasymphysis). Check for inferior alveolar/mental nerve numbness and malocclusion.",
+  "depth": "superficial",
+  "marker": {
+   "x": 470,
+   "y": 550
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 290,540 L 300,580 L 330,610 L 540,585 L 560,560 L 578,420 L 590,370 L 568,372 L 548,420 L 515,425 L 500,398 L 485,440 L 478,500 L 400,510 L 340,505 Z"
+  }
+ },
+ {
+  "id": "temporomandibular-joint",
+  "name": "Temporomandibular joint (TMJ)",
+  "category": "bone",
+  "group": "Mandible & TMJ",
+  "function": "Synovial hinge-and-glide joint between the mandibular condyle and temporal articular fossa; a fibrocartilage disc splits it into rotation (lower) and translation (upper) compartments.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Mandibular condyle with the mandibular (glenoid) fossa and articular eminence of the temporal bone"
+   },
+   {
+    "label": "Key features",
+    "value": "Fibrocartilage articular disc; lateral (temporomandibular), sphenomandibular and stylomandibular ligaments"
+   },
+   {
+    "label": "Innervation",
+    "value": "Auriculotemporal and masseteric nerves (V3)"
+   },
+   {
+    "label": "Movements",
+    "value": "Depression (lateral pterygoid, digastric, gravity), elevation (masseter, temporalis, medial pterygoid), protrusion, retrusion, lateral excursion"
+   }
+  ],
+  "pearl": "Anterior dislocation: wide yawning lets the condyle slip over the articular eminence; jaw locks open. Reduce with gloved thumbs pressing down then back on the molars.",
+  "depth": "superficial",
+  "marker": {
+   "x": 590,
+   "y": 345
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 572,340 Q 590,326 608,340 L 604,352 Q 590,342 576,352 Z"
+  }
+ },
+ {
+  "id": "condylar-process",
+  "name": "Condylar process",
+  "category": "bone",
+  "group": "Mandible & TMJ",
+  "function": "Posterosuperior projection of the ramus whose head articulates in the TMJ; its neck receives the lateral pterygoid and is the weakest point of the ramus.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Posterior border of the ramus; with the mouth closed the head sits in the mandibular fossa, posterior to the articular tubercle, and glides forward onto the tubercle on opening"
+   },
+   {
+    "label": "Key features",
+    "value": "Head (condyle), neck, pterygoid fovea; separated from coronoid by the mandibular notch"
+   },
+   {
+    "label": "Attachments",
+    "value": "Lateral pterygoid (pterygoid fovea and articular disc), TMJ capsule"
+   },
+   {
+    "label": "Relations",
+    "value": "Auriculotemporal nerve, superficial temporal and maxillary arteries, parotid gland, external acoustic meatus behind"
+   }
+  ],
+  "pearl": "Condylar neck fracture from a blow to the chin: ramus shortens, giving ipsilateral premature molar contact with a CONTRALATERAL open bite; chin deviates toward the fractured side on opening. Often managed closed.",
+  "depth": "superficial",
+  "marker": {
+   "x": 575,
+   "y": 385
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 568,370 L 588,366 L 592,380 L 580,400 L 570,430 L 560,430 L 565,395 Z"
+  }
+ },
+ {
+  "id": "coronoid-process",
+  "name": "Coronoid process",
+  "category": "bone",
+  "group": "Mandible & TMJ",
+  "function": "Anterior triangular projection of the ramus that receives the temporalis tendon; lies deep to the zygomatic arch.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Anterosuperior ramus, separated from the condyle by the mandibular (sigmoid) notch"
+   },
+   {
+    "label": "Key features",
+    "value": "Thin flattened process; masseteric nerve and vessels cross the notch behind it"
+   },
+   {
+    "label": "Attachments",
+    "value": "Temporalis tendon (medial and lateral surfaces)"
+   },
+   {
+    "label": "Relations",
+    "value": "Zygomatic arch and masseter laterally, buccal nerve medially"
+   }
+  ],
+  "pearl": "A depressed zygomatic arch fracture impinges on the coronoid process causing trismus; the Gillies approach elevates the arch deep to the temporal fascia.",
+  "depth": "superficial",
+  "marker": {
+   "x": 500,
+   "y": 400
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 490,400 L 500,394 L 513,420 L 506,440 L 490,440 Z"
+  }
+ },
+ {
+  "id": "mandibular-ramus",
+  "name": "Ramus of mandible",
+  "category": "bone",
+  "group": "Mandible & TMJ",
+  "function": "Vertical plate between the angle and the condyle; site of the mandibular foramen and of masseter and medial pterygoid insertion (pterygomasseteric sling).",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Posterior mandible from the angle up to the condylar and coronoid processes"
+   },
+   {
+    "label": "Key features",
+    "value": "Mandibular foramen guarded by the lingula on the medial surface, mylohyoid groove, masseteric tuberosity"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Mandibular foramen – inferior alveolar nerve, artery and vein entering the mandibular canal"
+   },
+   {
+    "label": "Attachments",
+    "value": "Masseter (lateral), medial pterygoid (medial), sphenomandibular ligament (lingula), parotid gland overlies it"
+   }
+  ],
+  "pearl": "Inferior alveolar nerve block: needle contacts the medial ramus at the mandibular foramen; aspirate to avoid intravascular injection; lingual nerve lies just anterior.",
+  "depth": "superficial",
+  "marker": {
+   "x": 555,
+   "y": 470
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 545,420 L 575,420 L 580,500 L 540,580 L 520,560 L 525,470 Z"
+  }
+ },
+ {
+  "id": "mandibular-angle",
+  "name": "Angle of mandible",
+  "category": "bone",
+  "group": "Mandible & TMJ",
+  "function": "Posteroinferior corner (gonion) where body meets ramus; gripped by the pterygomasseteric sling and crossed anteriorly by the facial vessels.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Junction of body and ramus; angle ~120° in adults, more obtuse in infants and the edentulous"
+   },
+   {
+    "label": "Attachments",
+    "value": "Masseter (lateral), medial pterygoid (medial), stylomandibular ligament, platysma"
+   },
+   {
+    "label": "Relations",
+    "value": "Facial artery and vein cross the inferior border just anterior to it at the anterior edge of masseter; marginal mandibular branch of CN VII runs along the border; parotid tail behind"
+   },
+   {
+    "label": "Key features",
+    "value": "Everted in males, inverted in females"
+   }
+  ],
+  "pearl": "With the condyle, one of the two commonest mandibular fracture sites (weakened by an impacted third molar). Incisions near the inferior border risk the marginal mandibular branch of CN VII (drooping lip).",
+  "depth": "superficial",
+  "marker": {
+   "x": 538,
+   "y": 568
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 515,555 L 540,590 L 565,560 L 550,540 L 525,540 Z"
+  }
+ },
+ {
+  "id": "mandibular-body",
+  "name": "Body of mandible",
+  "category": "bone",
+  "group": "Mandible & TMJ",
+  "function": "Horizontal horseshoe portion carrying the lower teeth; its inner surface anchors the floor-of-mouth muscles and its outer surface the lip depressors.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "From the symphysis menti to the angle on each side"
+   },
+   {
+    "label": "Key features",
+    "value": "Mental protuberance, oblique line, mylohyoid line, digastric fossa, genial tubercles, sublingual and submandibular fossae"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Mental foramen – mental nerve and vessels (below the second premolar)"
+   },
+   {
+    "label": "Attachments",
+    "value": "Mylohyoid, geniohyoid, genioglossus, anterior digastric, buccinator, depressor anguli oris, depressor labii inferioris, mentalis, platysma"
+   }
+  ],
+  "pearl": "Ludwig angina: infected 2nd/3rd molar roots lie below the mylohyoid line, so pus spreads to the submandibular space with woody floor-of-mouth swelling and airway risk.",
+  "depth": "superficial",
+  "marker": {
+   "x": 400,
+   "y": 585
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 290,540 L 300,580 L 330,610 L 520,585 L 515,540 L 400,515 L 340,510 Z"
+  }
+ },
+ {
+  "id": "alveolar-process-mandible",
+  "name": "Alveolar process of mandible",
+  "category": "bone",
+  "group": "Mandible & TMJ",
+  "function": "Tooth-bearing ridge on the upper border of the mandibular body holding the lower dentition in sockets; resorbs after tooth loss.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Superior border of the mandibular body from the incisors to the third molar"
+   },
+   {
+    "label": "Key features",
+    "value": "Sockets (alveoli) for 16 lower teeth, interalveolar septa, periodontal ligament, buccal and lingual cortical plates"
+   },
+   {
+    "label": "Innervation",
+    "value": "Inferior alveolar nerve (V3); lingual gingiva by lingual nerve; buccal gingiva by buccal and mental nerves"
+   },
+   {
+    "label": "Attachments",
+    "value": "Buccinator along the molar region externally; gingiva"
+   }
+  ],
+  "pearl": "Edentulous resorption brings the mental foramen to the crest, causing denture pain; dry socket (alveolar osteitis) follows clot loss 3–5 days after extraction.",
+  "depth": "superficial",
+  "marker": {
+   "x": 420,
+   "y": 520
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 340,505 L 520,528 L 518,541 L 340,520 Z"
+  }
+ },
+ {
+  "id": "hyoid-bone",
+  "name": "Hyoid bone",
+  "category": "bone",
+  "group": "Hyoid & larynx",
+  "function": "U-shaped bone suspended in the anterior neck at C3 by muscles and ligaments; anchors the tongue, floor of mouth and larynx and has no bony articulation.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Anterior neck at C3, in the angle between the mandible and thyroid cartilage"
+   },
+   {
+    "label": "Key features",
+    "value": "Body, greater horns, lesser horns; stylohyoid ligament to the styloid process"
+   },
+   {
+    "label": "Attachments (suprahyoid)",
+    "value": "Mylohyoid, geniohyoid, hyoglossus, digastric (via sling), stylohyoid, middle constrictor"
+   },
+   {
+    "label": "Attachments (infrahyoid)",
+    "value": "Sternohyoid, omohyoid, thyrohyoid, thyrohyoid membrane"
+   }
+  ],
+  "pearl": "Hyoid fracture is rare and strongly suggests manual strangulation. Thyroglossal duct cysts pass through or behind the hyoid and rise with tongue protrusion.",
+  "depth": "superficial",
+  "marker": {
+   "x": 420,
+   "y": 650
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 400,645 L 440,641 L 500,634 L 505,645 L 445,655 L 405,660 Z"
+  }
+ },
+ {
+  "id": "thyroid-cartilage",
+  "name": "Thyroid cartilage",
+  "category": "bone",
+  "group": "Hyoid & larynx",
+  "function": "Largest laryngeal cartilage; two laminae fused at the laryngeal prominence shield the vocal cords, which attach to its inner surface.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "C4–C5, between the hyoid above and cricoid below"
+   },
+   {
+    "label": "Key features",
+    "value": "Laryngeal prominence (Adam's apple), thyroid notch, superior and inferior horns, oblique line"
+   },
+   {
+    "label": "Attachments",
+    "value": "Thyrohyoid membrane, cricothyroid, thyrohyoid, sternothyroid, inferior constrictor, vocal ligaments, thyroepiglottic ligament"
+   },
+   {
+    "label": "Type",
+    "value": "Hyaline cartilage, ossifies with age"
+   }
+  ],
+  "pearl": "Cricothyroidotomy: from the laryngeal prominence, slide a finger down the midline to the soft dip between thyroid cartilage and cricoid arch (cricothyroid membrane). Carotid bifurcation is at its upper border.",
+  "depth": "superficial",
+  "marker": {
+   "x": 415,
+   "y": 720
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 405,690 L 470,680 L 490,700 L 480,740 L 440,755 L 410,745 L 400,720 Z"
+  }
+ },
+ {
+  "id": "cricoid-cartilage",
+  "name": "Cricoid cartilage",
+  "category": "bone",
+  "group": "Hyoid & larynx",
+  "function": "Only complete cartilage ring of the airway (signet-ring shape) at C6; supports the arytenoids and is the narrowest point of the pediatric airway.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "C6, between the thyroid cartilage and first tracheal ring"
+   },
+   {
+    "label": "Key features",
+    "value": "Narrow anterior arch, broad posterior lamina; facets for the arytenoids and inferior thyroid horns"
+   },
+   {
+    "label": "Attachments",
+    "value": "Cricothyroid, posterior and lateral cricoarytenoids, cricothyroid membrane, cricotracheal ligament, inferior constrictor"
+   },
+   {
+    "label": "C6 relations",
+    "value": "Pharynx becomes esophagus, larynx becomes trachea, carotid tubercle, vertebral artery enters transverse foramen"
+   }
+  ],
+  "pearl": "Cricoid pressure (Sellick) compresses the esophagus during rapid sequence intubation. Croup and post-intubation subglottic stenosis narrow the airway at this level.",
+  "depth": "superficial",
+  "marker": {
+   "x": 425,
+   "y": 790
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 410,775 L 470,765 L 480,790 L 465,805 L 415,805 Z"
+  }
+ },
+ {
+  "id": "epiglottis",
+  "name": "Epiglottis",
+  "category": "bone",
+  "group": "Hyoid & larynx",
+  "function": "Leaf-shaped elastic cartilage behind the tongue base that folds over the laryngeal inlet during swallowing, diverting food into the piriform recesses.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Posterior to the hyoid and tongue root; stalk (petiole) attaches inside the thyroid cartilage"
+   },
+   {
+    "label": "Key features",
+    "value": "Elastic cartilage (never ossifies); valleculae in front; aryepiglottic folds at its sides"
+   },
+   {
+    "label": "Innervation of mucosa",
+    "value": "Internal laryngeal nerve (CN X); lingual surface partly CN IX"
+   },
+   {
+    "label": "Attachments",
+    "value": "Thyroepiglottic and hyoepiglottic ligaments, median glossoepiglottic fold, aryepiglottic muscles"
+   }
+  ],
+  "pearl": "Acute epiglottitis (H. influenzae b, streptococci): drooling, tripod posture, muffled voice, thumbprint sign on lateral neck film; secure the airway before examining.",
+  "depth": "deep",
+  "marker": {
+   "x": 465,
+   "y": 680
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 455,650 Q 478,655 480,690 Q 472,702 460,696 Q 450,675 455,650 Z"
+  }
+ },
+ {
+  "id": "arytenoid-cartilages",
+  "name": "Arytenoid cartilages",
+  "category": "bone",
+  "group": "Hyoid & larynx",
+  "function": "Paired pyramidal cartilages on the cricoid lamina whose rotation and gliding abduct, adduct and tension the vocal cords.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Posterior larynx, atop the cricoid lamina"
+   },
+   {
+    "label": "Key features",
+    "value": "Vocal process (vocal ligament), muscular process (cricoarytenoid muscles), apex (corniculate cartilage)"
+   },
+   {
+    "label": "Attachments",
+    "value": "Posterior cricoarytenoid (sole abductor), lateral cricoarytenoid, transverse and oblique arytenoids, thyroarytenoid, vocalis"
+   },
+   {
+    "label": "Innervation of muscles",
+    "value": "Recurrent laryngeal nerve (CN X); cricothyroid alone by external laryngeal nerve"
+   }
+  ],
+  "pearl": "Arytenoid dislocation after intubation mimics recurrent laryngeal palsy (hoarseness, immobile cord); laryngeal EMG distinguishes it and closed reduction fixes it.",
+  "depth": "deep",
+  "marker": {
+   "x": 470,
+   "y": 760
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 462,748 L 478,748 L 482,772 L 458,772 Z"
+  }
+ },
+ {
+  "id": "tracheal-rings",
+  "name": "Tracheal rings",
+  "category": "bone",
+  "group": "Hyoid & larynx",
+  "function": "16–20 C-shaped hyaline cartilage rings keep the trachea patent; the open posterior gap is closed by the trachealis muscle against the esophagus.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "From C6 (below the cricoid) to the carina at T4–T5"
+   },
+   {
+    "label": "Key features",
+    "value": "Incomplete posteriorly; first ring is broadest; joined by annular ligaments"
+   },
+   {
+    "label": "Relations in neck",
+    "value": "Thyroid isthmus over rings 2–4, inferior thyroid veins, brachiocephalic trunk at the thoracic inlet, recurrent laryngeal nerves in the tracheoesophageal grooves"
+   },
+   {
+    "label": "Attachments",
+    "value": "Trachealis, esophagus posteriorly, pretracheal fascia"
+   }
+  ],
+  "pearl": "Tracheostomy is placed through rings 2–4 below the thyroid isthmus; cricothyroidotomy is faster in emergencies. Tracheomalacia follows prolonged intubation or goiter.",
+  "depth": "superficial",
+  "marker": {
+   "x": 440,
+   "y": 900
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 418,820 L 462,815 L 470,960 L 430,965 Z"
+  }
+ },
+ {
+  "id": "atlas-c1",
+  "name": "Atlas (C1)",
+  "category": "bone",
+  "group": "Cervical spine",
+  "function": "Ring-shaped C1 with no body or spinous process; its lateral masses carry the skull and permit nodding at the atlanto-occipital joints.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Occipital condyles above; axis (lateral facets and dens) below"
+   },
+   {
+    "label": "Key features",
+    "value": "Anterior and posterior arches, lateral masses, long transverse processes, transverse foramina, groove for the vertebral artery on the posterior arch"
+   },
+   {
+    "label": "Ligaments",
+    "value": "Transverse ligament of the atlas holds the dens against the anterior arch"
+   },
+   {
+    "label": "Attachments",
+    "value": "Rectus capitis anterior and lateralis, obliquus capitis superior and inferior, longus colli, levator scapulae"
+   }
+  ],
+  "pearl": "Jefferson (burst) fracture from axial loading splays the lateral masses on open-mouth view; unstable if the transverse ligament ruptures (lateral mass overhang >7 mm).",
+  "depth": "deep",
+  "marker": {
+   "x": 655,
+   "y": 485
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 640,470 L 700,468 L 735,475 L 735,490 L 700,492 L 640,492 Z"
+  }
+ },
+ {
+  "id": "axis-c2-dens",
+  "name": "Axis (C2) with dens",
+  "category": "bone",
+  "group": "Cervical spine",
+  "function": "C2 bears the dens (odontoid process), the pivot around which the atlas and skull rotate at the atlanto-axial joints.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Atlas (lateral masses and anterior arch via the dens), C3"
+   },
+   {
+    "label": "Key features",
+    "value": "Dens, large bifid spinous process, superior articular facets, pars interarticularis, transverse foramina"
+   },
+   {
+    "label": "Ligaments",
+    "value": "Transverse ligament of atlas, alar ligaments, apical ligament, tectorial membrane"
+   },
+   {
+    "label": "Attachments",
+    "value": "Obliquus capitis inferior, rectus capitis posterior major, longus colli, semispinalis cervicis"
+   }
+  ],
+  "pearl": "Odontoid fractures: type II (base of dens) is commonest and prone to nonunion in the elderly. Hangman fracture = bilateral C2 pars fracture from hyperextension.",
+  "depth": "deep",
+  "marker": {
+   "x": 665,
+   "y": 530
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 650,510 L 660,490 L 672,490 L 680,510 L 685,550 L 740,545 L 745,560 L 690,562 L 650,555 Z"
+  }
+ },
+ {
+  "id": "typical-cervical-vertebra",
+  "name": "Typical cervical vertebra (C3–C6)",
+  "category": "bone",
+  "group": "Cervical spine",
+  "function": "Small body, large triangular canal, bifid spinous process and transverse foramina; forms the flexible cervical column protecting the cord and vertebral arteries.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Adjacent vertebrae via intervertebral discs, uncovertebral joints (Luschka) and facet joints"
+   },
+   {
+    "label": "Key features",
+    "value": "Transverse foramen, anterior and posterior tubercles, bifid spine, uncinate processes, facets angled ~45°"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Transverse foramen – vertebral artery and vein, sympathetic plexus; intervertebral foramen – spinal nerve root"
+   },
+   {
+    "label": "Attachments",
+    "value": "Longus colli, scalenes, levator scapulae, splenius, semispinalis, multifidus"
+   }
+  ],
+  "pearl": "Cervical roots exit above the same-numbered vertebra, so a C5–C6 disc herniation compresses the C6 root: weak biceps/wrist extension, reduced biceps reflex, thumb numbness.",
+  "depth": "deep",
+  "marker": {
+   "x": 675,
+   "y": 650
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 655,635 L 695,632 L 700,665 L 745,655 L 755,668 L 700,675 L 655,672 Z"
+  }
+ },
+ {
+  "id": "vertebra-prominens-c7",
+  "name": "Vertebra prominens (C7)",
+  "category": "bone",
+  "group": "Cervical spine",
+  "function": "Transitional vertebra with a long non-bifid spinous process that is the first easily palpable midline bump at the base of the neck.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "C6 above, T1 below"
+   },
+   {
+    "label": "Key features",
+    "value": "Long non-bifid spinous process; small transverse foramen carrying only a vein (vertebral artery enters at C6)"
+   },
+   {
+    "label": "Relations",
+    "value": "Stellate ganglion anterior to the C7 transverse process/neck of 1st rib; subclavian artery; apex of lung"
+   },
+   {
+    "label": "Attachments",
+    "value": "Trapezius, rhomboid minor, splenius, serratus posterior superior, ligamentum nuchae"
+   }
+  ],
+  "pearl": "A cervical rib from C7 can cause thoracic outlet syndrome (ulnar paresthesia, hand wasting, arm claudication). Stellate ganglion injury at this level gives Horner syndrome.",
+  "depth": "deep",
+  "marker": {
+   "x": 690,
+   "y": 830
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 670,815 L 710,812 L 715,845 L 790,840 L 792,855 L 715,857 L 670,852 Z"
+  }
+ },
+ {
+  "id": "atlanto-occipital-joint",
+  "name": "Atlanto-occipital joint",
+  "category": "bone",
+  "group": "Cervical spine",
+  "function": "Paired condylar synovial joints between the occipital condyles and atlas lateral masses; allow flexion-extension (nodding 'yes') and slight lateral flexion.",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Occipital condyles and the superior articular facets of C1"
+   },
+   {
+    "label": "Key features",
+    "value": "Convex condyles in concave facets; anterior and posterior atlanto-occipital membranes"
+   },
+   {
+    "label": "Ligaments",
+    "value": "Alar ligaments and tectorial membrane limit motion; vertebral artery and C1 nerve pierce the posterior membrane"
+   },
+   {
+    "label": "Movements",
+    "value": "About 15° flexion-extension, minimal rotation"
+   }
+  ],
+  "pearl": "Atlanto-occipital dislocation (high-energy deceleration, children) is often lethal; survivors show brainstem and lower cranial nerve deficits. Check the basion–dens interval on CT.",
+  "depth": "deep",
+  "marker": {
+   "x": 668,
+   "y": 462
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 650,456 L 686,454 L 688,468 L 652,470 Z"
+  }
+ },
+ {
+  "id": "atlanto-axial-joint",
+  "name": "Atlanto-axial joint",
+  "category": "bone",
+  "group": "Cervical spine",
+  "function": "Three synovial joints (median pivot around the dens, two lateral gliding joints) that provide about half of all cervical rotation ('no' movement).",
+  "details": [
+   {
+    "label": "Articulates with",
+    "value": "Dens with the anterior arch of atlas and the transverse ligament; lateral masses of C1 on the superior facets of C2"
+   },
+   {
+    "label": "Key features",
+    "value": "Median pivot joint; no intervertebral disc between C1 and C2"
+   },
+   {
+    "label": "Ligaments",
+    "value": "Transverse ligament of atlas (prevents anterior subluxation), alar ligaments (check rotation), apical ligament"
+   },
+   {
+    "label": "Movements",
+    "value": "About 45° rotation to each side"
+   }
+  ],
+  "pearl": "Atlanto-axial instability from transverse ligament laxity in rheumatoid arthritis and Down syndrome: screen with flexion-extension films before intubation or surgery.",
+  "depth": "deep",
+  "marker": {
+   "x": 662,
+   "y": 507
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 645,500 L 682,498 L 684,512 L 647,514 Z"
+  }
+ },
+ {
+  "id": "transverse-foramina",
+  "name": "Transverse foramina (vertebral artery)",
+  "category": "bone",
+  "group": "Cervical spine",
+  "function": "Openings in the cervical transverse processes that channel the vertebral artery, vein and sympathetic fibers from C6 up to the atlas and foramen magnum.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Transverse processes of C1–C7 (C7 usually carries only the vein)"
+   },
+   {
+    "label": "Contents",
+    "value": "Vertebral artery (enters at C6), vertebral venous plexus, sympathetic plexus from the inferior cervical/stellate ganglion"
+   },
+   {
+    "label": "Course",
+    "value": "Artery ascends C6 to C1, loops over the posterior arch of atlas, pierces the dura and enters the foramen magnum"
+   },
+   {
+    "label": "Related",
+    "value": "Uncinate processes and uncovertebral osteophytes border them anteromedially"
+   }
+  ],
+  "pearl": "Vertebral artery dissection after neck manipulation or trauma: neck pain plus posterior circulation stroke (vertigo, ataxia, lateral medullary syndrome).",
+  "depth": "deep",
+  "marker": {
+   "x": 652,
+   "y": 712
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "678,830 674,770 670,710 666,650 662,590 658,530 655,470 690,455"
+  }
+ },
+ {
+  "id": "pterion",
+  "name": "Pterion",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "H-shaped junction of frontal, parietal, temporal and sphenoid bones at the thinnest part of the lateral skull; overlies the anterior branch of the middle meningeal artery.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "About 4 cm above the zygomatic arch and 3 cm behind the frontozygomatic suture"
+   },
+   {
+    "label": "Bones",
+    "value": "Frontal, parietal, squamous temporal, greater wing of sphenoid"
+   },
+   {
+    "label": "Deep relations",
+    "value": "Anterior division of the middle meningeal artery (from foramen spinosum); Broca area on the left"
+   },
+   {
+    "label": "Attachments",
+    "value": "Covered by temporalis and temporal fascia"
+   }
+  ],
+  "pearl": "A blow to the temple fractures the pterion and tears the middle meningeal artery: epidural hematoma with lucid interval and a lens-shaped CT bleed that respects sutures.",
+  "depth": "superficial",
+  "marker": {
+   "x": 470,
+   "y": 270
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 458,270 Q 458,261 470,261 Q 482,261 482,270 Q 482,279 470,279 Q 458,279 458,270 Z"
+  }
+ },
+ {
+  "id": "mastoid-process",
+  "name": "Mastoid process",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Conical projection of the temporal bone behind the ear filled with air cells; anchors the sternocleidomastoid and neck extensors.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Posteroinferior temporal bone, behind the external acoustic meatus"
+   },
+   {
+    "label": "Key features",
+    "value": "Mastoid air cells communicate with the middle ear via the antrum; mastoid notch (digastric); sigmoid sinus on its inner surface"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Mastoid foramen – emissary vein to sigmoid sinus; stylomastoid foramen (CN VII) lies anteromedially"
+   },
+   {
+    "label": "Attachments",
+    "value": "Sternocleidomastoid, splenius capitis, longissimus capitis, posterior belly of digastric"
+   }
+  ],
+  "pearl": "Mastoiditis after otitis media: postauricular tenderness and a protruding ear; may erode to sigmoid sinus thrombosis or brain abscess. CN VII lies just anterior in mastoid surgery.",
+  "depth": "superficial",
+  "marker": {
+   "x": 652,
+   "y": 432
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 630,400 L 672,405 L 675,438 L 655,456 L 638,442 Z"
+  }
+ },
+ {
+  "id": "styloid-process",
+  "name": "Styloid process",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Slender spine projecting anteroinferiorly from the temporal bone; a 2nd-arch (Reichert cartilage) derivative that anchors three muscles and two ligaments, forming the styloid apparatus.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Below the external acoustic meatus, deep to the parotid, between the ICA (medial) and ECA (lateral)"
+   },
+   {
+    "label": "Attachments",
+    "value": "Stylohyoid, styloglossus, stylopharyngeus; stylohyoid and stylomandibular ligaments"
+   },
+   {
+    "label": "Relations",
+    "value": "CN VII exits just posterior (stylomastoid foramen); CN IX, X, XI, XII and internal jugular vein lie medial"
+   },
+   {
+    "label": "Embryology",
+    "value": "Second pharyngeal arch (Reichert cartilage), with the stylohyoid ligament and lesser horn of hyoid; of its muscles only stylohyoid is 2nd arch (CN VII): stylopharyngeus is 3rd arch (CN IX), styloglossus is from occipital somites (CN XII)"
+   }
+  ],
+  "pearl": "Eagle syndrome: an elongated styloid (>3 cm) or calcified stylohyoid ligament causes throat and ear pain on swallowing or head turning and may compress the carotid.",
+  "depth": "deep",
+  "marker": {
+   "x": 600,
+   "y": 465
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 598,420 L 611,422 L 604,480 L 596,480 Z"
+  }
+ },
+ {
+  "id": "zygomatic-arch",
+  "name": "Zygomatic arch",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Bony bridge formed by the temporal process of the zygomatic bone and the zygomatic process of the temporal bone; origin of the masseter.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Lateral face from the cheekbone to the articular tubercle just in front of the ear"
+   },
+   {
+    "label": "Key features",
+    "value": "Temporal fascia attaches above, masseter below; temporalis tendon passes deep to it to the coronoid process"
+   },
+   {
+    "label": "Relations",
+    "value": "Temporal branches of CN VII and superficial temporal vessels cross it; parotid duct runs about 1 cm below it"
+   },
+   {
+    "label": "Attachments",
+    "value": "Masseter, temporal fascia, zygomaticus major (anterior end)"
+   }
+  ],
+  "pearl": "Isolated arch fracture: depressed cheek and trismus from coronoid impingement; the temporal branch of CN VII is at risk during elevation, so stay deep to the temporal fascia.",
+  "depth": "superficial",
+  "marker": {
+   "x": 490,
+   "y": 360
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 410,352 L 570,350 L 572,370 L 410,368 Z"
+  }
+ },
+ {
+  "id": "external-occipital-protuberance",
+  "name": "External occipital protuberance (inion)",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Midline bump on the occipital bone at the junction of the superior nuchal lines; attachment of the ligamentum nuchae and trapezius.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Midline posterior skull at the level of the superior nuchal lines"
+   },
+   {
+    "label": "Deep relation",
+    "value": "Internal occipital protuberance and the confluence of sinuses (torcular) lie opposite"
+   },
+   {
+    "label": "Attachments",
+    "value": "Trapezius, ligamentum nuchae; splenius capitis and SCM along the superior nuchal line"
+   },
+   {
+    "label": "Key features",
+    "value": "Marks the posterior limit of the scalp and the level of the transverse sinuses"
+   }
+  ],
+  "pearl": "Landmark for the torcular and transverse sinuses in posterior fossa craniotomy; the occipital artery and greater occipital nerve emerge 2–3 cm lateral (occipital neuralgia block).",
+  "depth": "superficial",
+  "marker": {
+   "x": 810,
+   "y": 340
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 800,325 Q 822,330 824,345 Q 816,356 800,351 Z"
+  }
+ },
+ {
+  "id": "sella-turcica",
+  "name": "Sella turcica",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Saddle-shaped depression on the sphenoid body housing the pituitary gland, roofed by the diaphragma sellae and flanked by the cavernous sinuses.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Midline of the middle cranial fossa, above the sphenoid sinus"
+   },
+   {
+    "label": "Key features",
+    "value": "Tuberculum sellae, hypophyseal fossa, dorsum sellae, anterior and posterior clinoid processes"
+   },
+   {
+    "label": "Relations",
+    "value": "Optic chiasm anterosuperior; cavernous sinus with ICA and CN III, IV, V1, V2, VI lateral; sphenoid sinus inferior"
+   },
+   {
+    "label": "Imaging",
+    "value": "Enlarged or eroded sella with pituitary macroadenoma; empty sella on MRI"
+   }
+  ],
+  "pearl": "Pituitary adenoma grows up out of the sella to compress the chiasm (bitemporal hemianopia); pituitary apoplexy gives sudden headache, visual loss and adrenal crisis.",
+  "depth": "deep",
+  "marker": {
+   "x": 515,
+   "y": 310
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 500,300 L 505,320 Q 515,329 525,320 L 530,300 L 522,306 L 508,306 Z"
+  }
+ },
+ {
+  "id": "cribriform-plate",
+  "name": "Cribriform plate",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Perforated roof of the nasal cavity (part of the ethmoid) in the anterior cranial fossa through which olfactory nerve fibers reach the olfactory bulb.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Floor of the anterior cranial fossa on either side of the crista galli"
+   },
+   {
+    "label": "Contents",
+    "value": "Olfactory nerve (CN I) filaments through its foramina; anterior ethmoidal nerve and artery at its anterior edge"
+   },
+   {
+    "label": "Relations",
+    "value": "Olfactory bulb above; superior concha and nasal septum below; orbital plates of the frontal bone lateral"
+   },
+   {
+    "label": "Key features",
+    "value": "Crista galli gives attachment to the falx cerebri"
+   }
+  ],
+  "pearl": "Anterior skull base fracture tears olfactory fibers (anosmia) and dura (CSF rhinorrhea, beta-2 transferrin positive); avoid nasogastric tubes, which can enter the cranium.",
+  "depth": "deep",
+  "marker": {
+   "x": 360,
+   "y": 300
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 340,296 L 380,296 L 382,304 L 338,304 Z"
+  }
+ },
+ {
+  "id": "optic-canal",
+  "name": "Optic canal",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Canal in the lesser wing of the sphenoid connecting the orbit to the middle cranial fossa; transmits the optic nerve and ophthalmic artery.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Orbital apex, medial to the superior orbital fissure, within the common tendinous ring"
+   },
+   {
+    "label": "Contents",
+    "value": "Optic nerve (CN II) with its meningeal sheaths and subarachnoid space; ophthalmic artery"
+   },
+   {
+    "label": "Relations",
+    "value": "Anterior clinoid process lateral; sphenoid sinus and posterior ethmoid cells medial"
+   },
+   {
+    "label": "Key features",
+    "value": "About 1 cm long; the optic nerve sheath is continuous with the dura"
+   }
+  ],
+  "pearl": "Traumatic optic neuropathy from canal fracture gives an afferent pupillary defect with a normal fundus. Dural continuity of the sheath is why raised ICP causes papilledema.",
+  "depth": "deep",
+  "marker": {
+   "x": 420,
+   "y": 325
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 408,325 Q 408,316 420,316 Q 432,316 432,325 Q 432,334 420,334 Q 408,334 408,325 Z"
+  }
+ },
+ {
+  "id": "superior-orbital-fissure",
+  "name": "Superior orbital fissure",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Gap between the greater and lesser sphenoid wings linking the orbit to the middle cranial fossa; transmits CN III, IV, V1, VI and the ophthalmic veins.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Orbital apex, lateral to the optic canal"
+   },
+   {
+    "label": "Contents",
+    "value": "CN III, IV, VI; V1 branches (lacrimal, frontal, nasociliary); superior ophthalmic vein; sympathetic fibers"
+   },
+   {
+    "label": "Key features",
+    "value": "Common tendinous ring spans its medial part; CN III, VI and nasociliary nerve pass inside the ring, CN IV, lacrimal and frontal outside"
+   },
+   {
+    "label": "Relations",
+    "value": "Cavernous sinus lies immediately posterior"
+   }
+  ],
+  "pearl": "Superior orbital fissure syndrome: ophthalmoplegia, ptosis, fixed dilated pupil and forehead numbness; add vision loss and it is orbital apex syndrome (optic canal involved).",
+  "depth": "deep",
+  "marker": {
+   "x": 440,
+   "y": 340
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 428,348 L 452,330 L 456,334 L 432,352 Z"
+  }
+ },
+ {
+  "id": "foramen-rotundum",
+  "name": "Foramen rotundum",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Round opening in the greater wing of the sphenoid leading from the middle cranial fossa to the pterygopalatine fossa; carries the maxillary nerve (V2).",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Greater wing of sphenoid, just posteroinferior to the medial end of the superior orbital fissure; medial to the foramen ovale"
+   },
+   {
+    "label": "Contents",
+    "value": "Maxillary nerve (CN V2); small emissary vein and artery of the foramen rotundum"
+   },
+   {
+    "label": "Route",
+    "value": "Cavernous sinus lateral wall → rotundum → pterygopalatine fossa → inferior orbital fissure → infraorbital groove and canal → infraorbital foramen"
+   },
+   {
+    "label": "Mnemonic",
+    "value": "Standing Room Only: Superior orbital fissure (V1), Rotundum (V2), Ovale (V3)"
+   }
+  ],
+  "pearl": "V2 sensory loss (cheek, upper lip, upper teeth, palate) with intact V1 and V3 localizes a lesion to the rotundum/pterygopalatine fossa, e.g. perineural spread of skin cancer.",
+  "depth": "deep",
+  "marker": {
+   "x": 452,
+   "y": 370
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 442,370 Q 442,362 452,362 Q 462,362 462,370 Q 462,378 452,378 Q 442,378 442,370 Z"
+  }
+ },
+ {
+  "id": "foramen-ovale",
+  "name": "Foramen ovale",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Oval opening in the greater wing of the sphenoid joining the middle cranial fossa to the infratemporal fossa; carries the mandibular nerve (V3).",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Greater wing of sphenoid, posterolateral to rotundum and anteromedial to spinosum"
+   },
+   {
+    "label": "Contents",
+    "value": "Mandibular nerve (V3), accessory meningeal artery, lesser petrosal nerve, emissary vein (OVALE mnemonic)"
+   },
+   {
+    "label": "Route",
+    "value": "Trigeminal ganglion → ovale → infratemporal fossa, where V3 splits into anterior and posterior divisions"
+   },
+   {
+    "label": "Relations",
+    "value": "Lateral pterygoid plate anterior; otic ganglion hangs just below on V3"
+   }
+  ],
+  "pearl": "Percutaneous radiofrequency rhizotomy for trigeminal neuralgia passes a needle through the foramen ovale to the Gasserian ganglion under fluoroscopic guidance.",
+  "depth": "deep",
+  "marker": {
+   "x": 530,
+   "y": 395
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 518,395 Q 518,386 530,386 Q 542,386 542,395 Q 542,404 530,404 Q 518,404 518,395 Z"
+  }
+ },
+ {
+  "id": "foramen-spinosum",
+  "name": "Foramen spinosum",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Small hole in the greater wing of the sphenoid posterolateral to the ovale; transmits the middle meningeal artery into the cranium.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Greater wing of sphenoid, just anteromedial to the spine of the sphenoid"
+   },
+   {
+    "label": "Contents",
+    "value": "Middle meningeal artery and vein; meningeal branch of V3 (nervus spinosus)"
+   },
+   {
+    "label": "Route",
+    "value": "Maxillary artery → spinosum → grooves the inner skull; anterior branch runs under the pterion"
+   },
+   {
+    "label": "Relations",
+    "value": "Sphenomandibular ligament attaches to the adjacent sphenoid spine; auriculotemporal nerve nearby"
+   }
+  ],
+  "pearl": "The middle meningeal artery entering here is the vessel torn in epidural hematoma; its embolization is now used to treat chronic subdural hematoma.",
+  "depth": "deep",
+  "marker": {
+   "x": 555,
+   "y": 405
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 547,405 Q 547,399 555,399 Q 563,399 563,405 Q 563,411 555,411 Q 547,411 547,405 Z"
+  }
+ },
+ {
+  "id": "foramen-lacerum",
+  "name": "Foramen lacerum",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Irregular cartilage-filled gap between sphenoid, temporal and occipital bones; the internal carotid artery passes over (not through) it to enter the cavernous sinus.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Skull base at the apex of the petrous temporal bone, medial to the carotid canal exit"
+   },
+   {
+    "label": "Contents",
+    "value": "Fibrocartilage plug; greater petrosal and deep petrosal nerves unite above it to form the nerve of the pterygoid canal; meningeal branch of the ascending pharyngeal artery; emissary veins (cavernous sinus to pterygoid plexus)"
+   },
+   {
+    "label": "Relations",
+    "value": "ICA runs across its superior surface from the carotid canal to the cavernous sinus"
+   },
+   {
+    "label": "Key features",
+    "value": "No major structure traverses it in life; only a meningeal branch of the ascending pharyngeal artery and small emissary veins pierce the cartilage plug. The ICA crosses its roof without passing through it"
+   }
+  ],
+  "pearl": "Nasopharyngeal carcinoma spreads through the foramen lacerum into the cavernous sinus, producing CN VI palsy (lateral rectus) and facial numbness.",
+  "depth": "deep",
+  "marker": {
+   "x": 545,
+   "y": 425
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 535,420 L 548,416 L 556,424 L 550,434 L 538,432 Z"
+  }
+ },
+ {
+  "id": "carotid-canal",
+  "name": "Carotid canal",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Passage through the petrous temporal bone carrying the internal carotid artery and its sympathetic plexus from the neck toward the cavernous sinus.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Inferior surface of the petrous temporal bone, anterior to the jugular foramen"
+   },
+   {
+    "label": "Contents",
+    "value": "Internal carotid artery, internal carotid venous plexus, sympathetic (internal carotid) plexus"
+   },
+   {
+    "label": "Route",
+    "value": "Enters vertically, turns horizontally anteromedially, exits above the foramen lacerum"
+   },
+   {
+    "label": "Relations",
+    "value": "Cochlea and middle ear posterolateral; Eustachian tube anterolateral"
+   }
+  ],
+  "pearl": "Aberrant or dehiscent ICA in the middle ear gives pulsatile tinnitus and a red retrotympanic mass; never biopsy. Petrous ICA injury in temporal bone fracture causes massive epistaxis.",
+  "depth": "deep",
+  "marker": {
+   "x": 595,
+   "y": 430
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 585,430 Q 585,422 595,422 Q 605,422 605,430 Q 605,438 595,438 Q 585,438 585,430 Z"
+  }
+ },
+ {
+  "id": "jugular-foramen",
+  "name": "Jugular foramen",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Opening between the petrous temporal and occipital bones transmitting the sigmoid sinus into the internal jugular vein along with CN IX, X and XI.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Posterior skull base, posterolateral to the carotid canal and anterolateral to the hypoglossal canal"
+   },
+   {
+    "label": "Contents",
+    "value": "Anterior: inferior petrosal sinus, CN IX; middle: CN X, XI; posterior: sigmoid sinus becoming the internal jugular vein (jugular bulb)"
+   },
+   {
+    "label": "Relations",
+    "value": "Styloid process anterolateral; hypoglossal canal medial; glomus (paraganglion) tissue on the jugular bulb"
+   },
+   {
+    "label": "Key features",
+    "value": "Usually larger on the right (dominant venous drainage)"
+   }
+  ],
+  "pearl": "Jugular foramen (Vernet) syndrome: lost gag, dysphagia, hoarseness, uvula deviating away, weak trapezius/SCM. Causes: glomus jugulare tumor, schwannoma, skull base fracture.",
+  "depth": "deep",
+  "marker": {
+   "x": 625,
+   "y": 445
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 613,445 Q 613,436 625,436 Q 637,436 637,445 Q 637,454 625,454 Q 613,454 613,445 Z"
+  }
+ },
+ {
+  "id": "internal-acoustic-meatus",
+  "name": "Internal acoustic meatus",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Canal in the petrous temporal bone opening into the posterior cranial fossa; transmits the facial and vestibulocochlear nerves and the labyrinthine artery.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Posterior surface of the petrous temporal bone, at the cerebellopontine angle"
+   },
+   {
+    "label": "Contents",
+    "value": "CN VII (anterosuperior), nervus intermedius, CN VIII (cochlear anteroinferior, vestibular posterior), labyrinthine artery (from AICA)"
+   },
+   {
+    "label": "Key features",
+    "value": "About 1 cm long; fundus divided by the falciform crest and Bill's bar"
+   },
+   {
+    "label": "Relations",
+    "value": "Cerebellopontine angle cistern medially; vestibule and cochlea laterally"
+   }
+  ],
+  "pearl": "Vestibular schwannoma widens the internal acoustic meatus: unilateral sensorineural hearing loss and tinnitus, later CN VII and V signs; bilateral tumors suggest NF2.",
+  "depth": "deep",
+  "marker": {
+   "x": 640,
+   "y": 390
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 630,390 Q 630,382 640,382 Q 650,382 650,390 Q 650,398 640,398 Q 630,398 630,390 Z"
+  }
+ },
+ {
+  "id": "stylomastoid-foramen",
+  "name": "Stylomastoid foramen",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Opening on the skull base between the styloid and mastoid processes where the facial nerve leaves the temporal bone before entering the parotid gland.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Inferior temporal bone between the styloid process (anteromedial) and mastoid process (posterolateral)"
+   },
+   {
+    "label": "Contents",
+    "value": "Facial nerve (CN VII) motor trunk; stylomastoid artery (branch of posterior auricular artery)"
+   },
+   {
+    "label": "Route",
+    "value": "CN VII then passes forward into the parotid and divides into temporal, zygomatic, buccal, marginal mandibular and cervical branches"
+   },
+   {
+    "label": "Relations",
+    "value": "Posterior belly of digastric attaches just posterior (mastoid notch); tympanomastoid suture, tragal pointer and digastric ridge are surgical landmarks"
+   }
+  ],
+  "pearl": "Lesion at or beyond the foramen (parotid tumor, parotidectomy, facial laceration): ipsilateral facial weakness with normal taste, lacrimation and no hyperacusis; Bell palsy (canal) may add dysgeusia or hyperacusis.",
+  "depth": "deep",
+  "marker": {
+   "x": 625,
+   "y": 470
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 617,470 Q 617,464 625,464 Q 633,464 633,470 Q 633,476 625,476 Q 617,476 617,470 Z"
+  }
+ },
+ {
+  "id": "hypoglossal-canal",
+  "name": "Hypoglossal canal",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Canal in the occipital bone above each occipital condyle, anterolateral to the foramen magnum; transmits the hypoglossal nerve to the tongue.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Occipital bone, anterolateral to the foramen magnum, above the anterior part of the occipital condyle"
+   },
+   {
+    "label": "Contents",
+    "value": "Hypoglossal nerve (CN XII), meningeal branch of the ascending pharyngeal artery, emissary vein"
+   },
+   {
+    "label": "Route",
+    "value": "CN XII descends between the ICA and internal jugular vein, hooks around the occipital artery and runs forward above the hyoid to the tongue"
+   },
+   {
+    "label": "Relations",
+    "value": "Jugular foramen anterolateral; condylar canal posterior"
+   }
+  ],
+  "pearl": "CN XII lesion: tongue deviates toward the weak side with atrophy and fasciculations (LMN). Causes include skull base fracture, carotid endarterectomy and nasopharyngeal carcinoma.",
+  "depth": "deep",
+  "marker": {
+   "x": 690,
+   "y": 440
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 682,440 Q 682,434 690,434 Q 698,434 698,440 Q 698,446 690,446 Q 682,446 682,440 Z"
+  }
+ },
+ {
+  "id": "foramen-magnum",
+  "name": "Foramen magnum",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Large opening in the occipital bone where the medulla becomes the spinal cord; also passes the vertebral arteries and spinal roots of the accessory nerve.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Floor of the posterior cranial fossa between the occipital condyles; basion anterior, opisthion posterior"
+   },
+   {
+    "label": "Contents",
+    "value": "Medulla and meninges, vertebral arteries, anterior and posterior spinal arteries, spinal roots of CN XI, tectorial membrane, apical and alar ligaments"
+   },
+   {
+    "label": "Relations",
+    "value": "Clivus anterior; cerebellar tonsils above; atlas below"
+   },
+   {
+    "label": "Key features",
+    "value": "About 35 mm long by 30 mm wide"
+   }
+  ],
+  "pearl": "Raised ICP herniates the cerebellar tonsils through the foramen magnum, compressing the medulla (Cushing triad, apnea). Chiari I = tonsils >5 mm below it, often with syringomyelia.",
+  "depth": "deep",
+  "marker": {
+   "x": 700,
+   "y": 462
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 678,462 Q 678,452 700,452 Q 722,452 722,462 Q 722,472 700,472 Q 678,472 678,462 Z"
+  }
+ },
+ {
+  "id": "supraorbital-foramen",
+  "name": "Supraorbital foramen",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Notch or foramen at the medial third of the supraorbital margin of the frontal bone; transmits the supraorbital nerve (V1) and vessels to the forehead.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Supraorbital margin about 2.5 cm from the midline, in the mid-pupillary line"
+   },
+   {
+    "label": "Contents",
+    "value": "Supraorbital nerve (branch of the frontal nerve, V1), supraorbital artery and vein"
+   },
+   {
+    "label": "Supplies",
+    "value": "Forehead and scalp skin to the vertex, upper eyelid, frontal sinus mucosa"
+   },
+   {
+    "label": "Alignment",
+    "value": "Supraorbital, infraorbital and mental foramina lie on a vertical line through the pupil"
+   }
+  ],
+  "pearl": "Supraorbital pressure is a standard central painful stimulus in GCS testing; a supraorbital nerve block anesthetizes forehead lacerations without distorting the wound.",
+  "depth": "superficial",
+  "marker": {
+   "x": 325,
+   "y": 285
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 313,285 Q 313,276 325,276 Q 337,276 337,285 Q 337,294 325,294 Q 313,294 313,285 Z"
+  }
+ },
+ {
+  "id": "infraorbital-foramen",
+  "name": "Infraorbital foramen",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Opening in the maxilla just below the orbital rim through which the infraorbital nerve (V2) and vessels emerge to the cheek, nose and upper lip.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Maxilla about 1 cm below the infraorbital margin, in the mid-pupillary line"
+   },
+   {
+    "label": "Contents",
+    "value": "Infraorbital nerve (terminal branch of V2), infraorbital artery and vein"
+   },
+   {
+    "label": "Supplies",
+    "value": "Lower eyelid, side of nose, cheek, upper lip (inferior palpebral, nasal, superior labial branches). The anterior superior alveolar branch to incisors and canine leaves the nerve inside the infraorbital canal, proximal to the foramen, and descends in the anterior maxillary wall (canalis sinuosus)."
+   },
+   {
+    "label": "Route",
+    "value": "V2 → foramen rotundum → pterygopalatine fossa → inferior orbital fissure → infraorbital groove and canal → foramen"
+   }
+  ],
+  "pearl": "Orbital floor (blowout) and zygomatic fractures injure the infraorbital nerve: numb cheek, upper lip and gum; check for enophthalmos and restricted upgaze (trapped inferior rectus).",
+  "depth": "superficial",
+  "marker": {
+   "x": 345,
+   "y": 375
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 333,375 Q 333,366 345,366 Q 357,366 357,375 Q 357,384 345,384 Q 333,384 333,375 Z"
+  }
+ },
+ {
+  "id": "mental-foramen",
+  "name": "Mental foramen",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Opening on the outer surface of the mandibular body below the second premolar; transmits the mental nerve and vessels to the chin and lower lip.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Lateral mandibular body midway between upper and lower borders, in the mid-pupillary line"
+   },
+   {
+    "label": "Contents",
+    "value": "Mental nerve (terminal branch of the inferior alveolar nerve, V3), mental artery and vein"
+   },
+   {
+    "label": "Supplies",
+    "value": "Skin of the chin and lower lip, labial gingiva of the anterior teeth"
+   },
+   {
+    "label": "Key features",
+    "value": "Migrates to the alveolar crest with edentulous atrophy; opens posterosuperiorly"
+   }
+  ],
+  "pearl": "Numb chin syndrome (mental neuropathy) is a red flag for mandibular metastasis or lymphoma invading the inferior alveolar/mental nerve.",
+  "depth": "superficial",
+  "marker": {
+   "x": 370,
+   "y": 560
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 358,560 Q 358,551 370,551 Q 382,551 382,560 Q 382,569 370,569 Q 358,569 358,560 Z"
+  }
+ },
+ {
+  "id": "external-acoustic-meatus",
+  "name": "External acoustic meatus",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "S-shaped canal (lateral third cartilage, medial two-thirds temporal bone) conducting sound from the auricle to the tympanic membrane.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Temporal bone (tympanic plate), about 2.5 cm long, ending at the tympanic membrane"
+   },
+   {
+    "label": "Walls & relations",
+    "value": "Anterior wall abuts the TMJ and parotid; posterior wall abuts mastoid air cells; CN VII lies posteromedial"
+   },
+   {
+    "label": "Sensory innervation",
+    "value": "Auriculotemporal nerve (V3), auricular branch of vagus (Arnold nerve), small contributions from CN VII and IX"
+   },
+   {
+    "label": "Key features",
+    "value": "Skin with ceruminous glands laterally; pull the auricle up and back to straighten it for otoscopy"
+   }
+  ],
+  "pearl": "Malignant otitis externa (Pseudomonas in diabetics) erodes through the canal floor to the skull base, causing CN VII palsy; CT shows bony destruction, needs IV antipseudomonals.",
+  "depth": "superficial",
+  "marker": {
+   "x": 605,
+   "y": 365
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 591,365 Q 591,353 605,353 Q 619,353 619,365 Q 619,377 605,377 Q 591,377 591,365 Z"
+  }
+ },
+ {
+  "id": "malleus",
+  "name": "Malleus",
+  "category": "bone",
+  "group": "Auditory ossicles",
+  "function": "Hammer-shaped first ossicle; its handle is embedded in the tympanic membrane and transmits vibration to the incus, beginning ossicular amplification of sound.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Middle ear (tympanic cavity), lateral-most ossicle"
+   },
+   {
+    "label": "Articulates with",
+    "value": "Incus (incudomalleolar joint) via its head in the epitympanum"
+   },
+   {
+    "label": "Key features",
+    "value": "Head, neck, handle (manubrium) attached to tympanic membrane; lateral and anterior processes"
+   },
+   {
+    "label": "Attachments",
+    "value": "Tensor tympani (CN V3) inserts on the handle; dampens loud sounds"
+   },
+   {
+    "label": "Otoscopic landmark",
+    "value": "Umbo and handle visible through the TM; cone of light anteroinferior"
+   }
+  ],
+  "pearl": "Loss of the normal malleus/cone-of-light landmarks on otoscopy suggests middle-ear effusion or cholesteatoma; ossicular discontinuity after trauma causes conductive hearing loss.",
+  "depth": "deep",
+  "marker": {
+   "x": 598,
+   "y": 348
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 594,336 L 604,334 L 608,342 L 603,350 L 601,364 L 595,362 L 597,350 Z"
+  }
+ },
+ {
+  "id": "incus",
+  "name": "Incus",
+  "category": "bone",
+  "group": "Auditory ossicles",
+  "function": "Anvil-shaped middle ossicle linking malleus to stapes; its long process ends in the lenticular process that articulates with the stapes head.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Middle ear, posterior to the malleus head in the epitympanum"
+   },
+   {
+    "label": "Articulates with",
+    "value": "Malleus (incudomalleolar joint) and stapes (incudostapedial joint)"
+   },
+   {
+    "label": "Key features",
+    "value": "Body, short process (posterior, in fossa incudis), long process ending in lenticular process"
+   },
+   {
+    "label": "Blood supply",
+    "value": "Long process has tenuous supply; most prone to erosion/necrosis"
+   }
+  ],
+  "pearl": "The incus is the ossicle most often dislocated in temporal bone fracture and most often eroded by cholesteatoma; suspect it in post-traumatic conductive hearing loss with an intact TM.",
+  "depth": "deep",
+  "marker": {
+   "x": 618,
+   "y": 344
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 612,334 L 624,332 L 628,342 L 622,348 L 621,360 L 616,360 L 616,348 L 610,344 Z"
+  }
+ },
+ {
+  "id": "stapes",
+  "name": "Stapes",
+  "category": "bone",
+  "group": "Auditory ossicles",
+  "function": "Stirrup-shaped innermost and smallest bone; its footplate sits in the oval window and delivers vibration to perilymph of the inner ear.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Middle ear, medial-most; footplate in the oval window (fenestra vestibuli)"
+   },
+   {
+    "label": "Articulates with",
+    "value": "Incus (incudostapedial joint); footplate held by annular ligament"
+   },
+   {
+    "label": "Key features",
+    "value": "Head, neck, anterior and posterior crura, footplate"
+   },
+   {
+    "label": "Attachments",
+    "value": "Stapedius (CN VII) on the neck; smallest skeletal muscle, protects from loud noise"
+   },
+   {
+    "label": "Nerve relation",
+    "value": "Facial nerve tympanic segment runs just above the oval window"
+   }
+  ],
+  "pearl": "Otosclerosis fixes the footplate: progressive conductive hearing loss in young adults (often pregnancy-worsened) with Carhart notch at 2 kHz; treat with stapedectomy or hearing aid.",
+  "depth": "deep",
+  "marker": {
+   "x": 638,
+   "y": 356
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 634,346 L 642,346 L 646,356 L 648,366 L 630,366 L 631,356 Z"
+  }
+ },
+ {
+  "id": "maxillary-sinus",
+  "name": "Maxillary sinus",
+  "category": "bone",
+  "group": "Paranasal sinuses",
+  "function": "Largest paranasal sinus, within the body of the maxilla; drains via the ostiomeatal complex into the middle meatus and lightens the skull while humidifying air.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Body of maxilla; roof = orbital floor, floor = alveolar process near molar roots"
+   },
+   {
+    "label": "Drains to",
+    "value": "Middle meatus via hiatus semilunaris (ostium high on medial wall, poor dependent drainage)"
+   },
+   {
+    "label": "Key features",
+    "value": "Pyramidal; infraorbital nerve runs in its roof; molar/premolar roots in its floor"
+   },
+   {
+    "label": "Innervation",
+    "value": "Superior alveolar and infraorbital branches of CN V2"
+   },
+   {
+    "label": "Fractures",
+    "value": "Involved in Le Fort I, II, III and zygomaticomaxillary complex fractures"
+   }
+  ],
+  "pearl": "Most common site of adult bacterial sinusitis (S. pneumoniae, H. influenzae, M. catarrhalis); unilateral maxillary sinusitis with foul drainage suggests odontogenic source from a molar root.",
+  "depth": "deep",
+  "marker": {
+   "x": 360,
+   "y": 415
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 320,385 L 395,380 L 406,420 L 392,452 L 335,454 L 318,420 Z"
+  }
+ },
+ {
+  "id": "frontal-sinus",
+  "name": "Frontal sinus",
+  "category": "bone",
+  "group": "Paranasal sinuses",
+  "function": "Paired sinus in the frontal bone above the orbits; drains via the frontonasal duct into the middle meatus. Absent at birth, pneumatizes during childhood.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Frontal bone, between its anterior and posterior tables, above the orbital roof"
+   },
+   {
+    "label": "Drains to",
+    "value": "Middle meatus via frontonasal duct (frontal recess)"
+   },
+   {
+    "label": "Key features",
+    "value": "Thin posterior table abuts the anterior cranial fossa and dura"
+   },
+   {
+    "label": "Innervation",
+    "value": "Supraorbital and supratrochlear nerves (CN V1)"
+   },
+   {
+    "label": "Development",
+    "value": "Not present at birth; appears ~age 6-8, adult size in adolescence"
+   }
+  ],
+  "pearl": "Frontal sinusitis can erode anteriorly (Pott puffy tumor: osteomyelitis with forehead swelling) or posteriorly causing epidural/subdural abscess or meningitis; needs CT and IV antibiotics.",
+  "depth": "deep",
+  "marker": {
+   "x": 302,
+   "y": 255
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 285,235 L 300,224 L 318,238 L 322,268 L 306,286 L 290,283 L 281,260 Z"
+  }
+ },
+ {
+  "id": "ethmoid-sinus-air-cells",
+  "name": "Ethmoid sinus (air cells)",
+  "category": "bone",
+  "group": "Paranasal sinuses",
+  "function": "Labyrinth of thin-walled air cells in the ethmoid bone between the orbits and nasal cavity; present at birth and the main sinus involved in pediatric sinusitis.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Ethmoid labyrinth, medial to the orbit, lateral to the upper nasal cavity"
+   },
+   {
+    "label": "Drains to",
+    "value": "Anterior and middle cells to middle meatus; posterior cells to superior meatus"
+   },
+   {
+    "label": "Key features",
+    "value": "Lamina papyracea (paper-thin lateral wall) separates cells from the orbit"
+   },
+   {
+    "label": "Innervation",
+    "value": "Anterior and posterior ethmoidal nerves (CN V1)"
+   },
+   {
+    "label": "Development",
+    "value": "Present at birth with the maxillary sinus"
+   }
+  ],
+  "pearl": "Ethmoid sinusitis spreads through the lamina papyracea to cause orbital cellulitis (proptosis, ophthalmoplegia, pain with eye movement) and can seed cavernous sinus thrombosis; CT and IV antibiotics.",
+  "depth": "deep",
+  "marker": {
+   "x": 326,
+   "y": 340
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 310,318 L 345,316 L 352,340 L 342,361 L 312,359 L 304,338 Z"
+  }
+ },
+ {
+  "id": "sphenoid-sinus",
+  "name": "Sphenoid sinus",
+  "category": "bone",
+  "group": "Paranasal sinuses",
+  "function": "Midline sinus within the sphenoid body beneath the sella turcica; drains into the sphenoethmoidal recess and provides the surgical corridor to the pituitary.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Body of sphenoid, directly inferior to sella turcica and pituitary"
+   },
+   {
+    "label": "Drains to",
+    "value": "Sphenoethmoidal recess, above the superior concha"
+   },
+   {
+    "label": "Key relations",
+    "value": "Optic nerve and internal carotid artery indent its lateral wall; cavernous sinus lateral"
+   },
+   {
+    "label": "Innervation",
+    "value": "Posterior ethmoidal nerve (CN V1) and orbital branches of the pterygopalatine ganglion (CN V2)"
+   },
+   {
+    "label": "Surgery",
+    "value": "Transsphenoidal hypophysectomy approach through nasal cavity and sinus"
+   }
+  ],
+  "pearl": "Transsphenoidal pituitary surgery passes through this sinus; sphenoid sinusitis presents with deep retro-orbital/vertex headache and can extend to the cavernous sinus, optic nerve, or ICA.",
+  "depth": "deep",
+  "marker": {
+   "x": 455,
+   "y": 360
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 430,335 L 470,330 L 486,355 L 476,386 L 440,389 L 424,362 Z"
+  }
+ },
+ {
+  "id": "anterior-fontanelle",
+  "name": "Anterior fontanelle",
+  "category": "bone",
+  "group": "Neurocranium",
+  "function": "Diamond-shaped membranous gap at bregma where the frontal and parietal bones meet; allows molding at birth and brain growth, and serves as a window for ICP assessment and cranial ultrasound.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Bregma: junction of coronal and sagittal sutures between the two frontal and two parietal bones"
+   },
+   {
+    "label": "Key features",
+    "value": "Largest fontanelle (~2-3 cm); normally flat and soft with a palpable pulse"
+   },
+   {
+    "label": "Closure",
+    "value": "Closes by ~18-24 months (posterior fontanelle by ~2-3 months)"
+   },
+   {
+    "label": "Clinical use",
+    "value": "Cranial ultrasound window for intraventricular hemorrhage in preterm infants"
+   }
+  ],
+  "pearl": "Bulging fontanelle = raised ICP (meningitis, hydrocephalus, abusive head trauma); sunken = dehydration. Delayed closure suggests congenital hypothyroidism, rickets, Down syndrome, or hydrocephalus.",
+  "depth": "superficial",
+  "marker": {
+   "x": 440,
+   "y": 73
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 440,60 L 458,72 L 440,86 L 422,74 Z"
+  }
+ },
+ {
+  "id": "cranial-sutures",
+  "name": "Cranial sutures (coronal, sagittal, lambdoid)",
+  "category": "bone",
+  "group": "Neurocranium",
+  "function": "Fibrous joints between calvarial bones that permit skull growth perpendicular to each suture; premature fusion restricts growth in that axis and deforms head shape.",
+  "details": [
+   {
+    "label": "Coronal suture",
+    "value": "Frontal to parietal bones; runs from bregma down to pterion on each side"
+   },
+   {
+    "label": "Sagittal suture",
+    "value": "Between the two parietal bones, from bregma to lambda along the midline"
+   },
+   {
+    "label": "Lambdoid suture",
+    "value": "Parietal bones to occipital bone, from lambda down to asterion"
+   },
+   {
+    "label": "Key landmarks",
+    "value": "Bregma (coronal + sagittal), lambda (sagittal + lambdoid), pterion, asterion"
+   },
+   {
+    "label": "Fusion",
+    "value": "Normally interdigitate and fuse in adulthood; dura tightly adherent at suture lines"
+   }
+  ],
+  "pearl": "Craniosynostosis: sagittal fusion gives scaphocephaly (long, narrow; most common); unilateral coronal gives anterior plagiocephaly, bilateral gives brachycephaly. Positional plagiocephaly has open sutures (reposition/helmet). Epidural hematoma is bounded by sutures on CT; subdural crosses them.",
+  "depth": "superficial",
+  "marker": {
+   "x": 456,
+   "y": 170
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 440,70 L 470,270 M 440,70 Q 600,20 760,160 M 760,160 L 700,400"
+  }
+ },
+ {
+  "id": "orbital-floor",
+  "name": "Orbital floor",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Thin roof of the maxillary sinus that supports the globe and inferior rectus; formed by the maxilla, zygoma, and palatine bone and carries the infraorbital groove and canal.",
+  "details": [
+   {
+    "label": "Formed by",
+    "value": "Orbital surface of maxilla (mostly), zygomatic bone, orbital process of palatine bone"
+   },
+   {
+    "label": "Location",
+    "value": "Separates orbit from maxillary sinus; slopes up toward the orbital apex"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Infraorbital groove/canal with infraorbital nerve (CN V2) and vessels; inferior orbital fissure posteriorly"
+   },
+   {
+    "label": "Key features",
+    "value": "Thinnest medial to the infraorbital canal, the usual site of blowout"
+   },
+   {
+    "label": "Attachments",
+    "value": "Inferior oblique originates from the floor just lateral to the nasolacrimal canal"
+   }
+  ],
+  "pearl": "Blowout fracture: inferior rectus/orbital fat entrapment gives diplopia on upgaze, infraorbital numbness of cheek and upper lip, enophthalmos; check for oculocardiac reflex and repair if entrapped.",
+  "depth": "deep",
+  "marker": {
+   "x": 345,
+   "y": 356
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 300,351 L 380,349 L 386,360 L 302,363 Z"
+  }
+ },
+ {
+  "id": "hard-palate",
+  "name": "Hard palate",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Bony roof of the oral cavity and floor of the nasal cavity, separating breathing from feeding and allowing suction and speech; soft palate attaches posteriorly.",
+  "details": [
+   {
+    "label": "Formed by",
+    "value": "Palatine processes of the maxillae (anterior 3/4) and horizontal plates of the palatine bones (posterior 1/4)"
+   },
+   {
+    "label": "Foramina & contents",
+    "value": "Incisive foramen (nasopalatine nerve, V2); greater palatine (greater palatine nerve/artery); lesser palatine (lesser palatine nerves)"
+   },
+   {
+    "label": "Key features",
+    "value": "Median palatine suture; torus palatinus (benign midline bony exostosis)"
+   },
+   {
+    "label": "Innervation",
+    "value": "Sensory CN V2 via nasopalatine and greater palatine nerves"
+   },
+   {
+    "label": "Blood supply",
+    "value": "Greater palatine artery (from maxillary artery)"
+   }
+  ],
+  "pearl": "Cleft palate = failure of palatine shelf fusion (feeding difficulty, otitis media, speech); evaluate for Pierre Robin or 22q11. Palatal lesions: torus (benign), Kaposi sarcoma (HIV), necrotizing sialometaplasia.",
+  "depth": "deep",
+  "marker": {
+   "x": 370,
+   "y": 460
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 290,454 L 440,451 L 446,464 L 292,469 Z"
+  }
+ },
+ {
+  "id": "cranial-fossae",
+  "name": "Cranial fossae (anterior, middle, posterior)",
+  "category": "bone",
+  "group": "Landmarks & foramina",
+  "function": "Three stepped compartments of the skull base that cradle the frontal lobes, temporal lobes/pituitary, and cerebellum/brainstem; each has characteristic foramina and fracture patterns.",
+  "details": [
+   {
+    "label": "Anterior fossa",
+    "value": "Frontal, ethmoid (cribriform plate), lesser wings of sphenoid; holds frontal lobes and olfactory bulbs"
+   },
+   {
+    "label": "Middle fossa",
+    "value": "Greater wings and body of sphenoid, petrous/squamous temporal; holds temporal lobes, pituitary; foramina rotundum, ovale, spinosum, carotid canal"
+   },
+   {
+    "label": "Posterior fossa",
+    "value": "Occipital and petrous temporal bones; cerebellum, pons, medulla; internal acoustic meatus, jugular foramen, hypoglossal canal, foramen magnum"
+   },
+   {
+    "label": "Boundaries",
+    "value": "Sphenoid ridge separates anterior/middle; petrous ridge and dorsum sellae separate middle/posterior"
+   },
+   {
+    "label": "Key features",
+    "value": "Floors step progressively lower from anterior to posterior"
+   }
+  ],
+  "pearl": "Basilar skull fracture by fossa: anterior gives raccoon eyes, CSF rhinorrhea, anosmia; middle gives Battle sign, hemotympanum, CSF otorrhea, CN VII/VIII palsy; posterior threatens lower cranial nerves. Avoid nasal tubes.",
+  "depth": "deep",
+  "marker": {
+   "x": 560,
+   "y": 320
+  },
+  "shape": {
+   "type": "path",
+   "d": "M 320,280 L 470,280 L 472,350 L 620,352 L 640,430 L 800,382 L 802,412 L 650,472 L 610,382 L 460,380 L 452,300 L 320,300 Z"
+  }
+ }
+]

@@ -1,0 +1,1271 @@
+[
+ {
+  "id": "occipital-nodes",
+  "name": "Occipital lymph nodes",
+  "category": "lymph",
+  "group": "Superficial ring (pericervical collar)",
+  "function": "Drain the posterior scalp and upper posterior neck; first filter for infections and skin cancers of the back of the head.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Over the occipital bone at the apex of the posterior triangle, near the trapezius attachment to the superior nuchal line, beside the occipital artery"
+   },
+   {
+    "label": "Drains",
+    "value": "Posterior (occipital) scalp, back of the head, skin of the upper posterior neck"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Superficial cervical nodes along the EJV and the deep cervical chain (level V)"
+   },
+   {
+    "label": "Level",
+    "value": "Outside the formal level system; clinically grouped with level V"
+   }
+  ],
+  "pearl": "Tender occipital nodes suggest posterior scalp infection (tinea capitis, pediculosis, seborrheic dermatitis); bilateral occipital and postauricular nodes with a rash are classic for rubella.",
+  "depth": "superficial",
+  "marker": {
+   "x": 790,
+   "y": 400
+  },
+  "shape": {
+   "type": "circle",
+   "r": 16
+  }
+ },
+ {
+  "id": "mastoid-retroauricular-nodes",
+  "name": "Mastoid (retroauricular) lymph nodes",
+  "category": "lymph",
+  "group": "Superficial ring (pericervical collar)",
+  "function": "Drain the posterolateral scalp, the back of the auricle and the posterior wall of the external acoustic meatus.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "On the mastoid process behind the auricle, at the insertion of sternocleidomastoid"
+   },
+   {
+    "label": "Drains",
+    "value": "Posterior surface of the auricle, posterior wall of the external acoustic meatus, temporoparietal scalp behind the ear"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Superficial cervical nodes along the EJV, then upper deep cervical nodes (level II)"
+   },
+   {
+    "label": "Level",
+    "value": "Not assigned a surgical level (retroauricular group)"
+   }
+  ],
+  "pearl": "Postauricular lymphadenopathy with a maculopapular rash that starts on the face is a classic clue for rubella; also seen with scalp infection and otitis externa.",
+  "depth": "superficial",
+  "marker": {
+   "x": 685,
+   "y": 435
+  },
+  "shape": {
+   "type": "circle",
+   "r": 14
+  }
+ },
+ {
+  "id": "preauricular-parotid-nodes",
+  "name": "Preauricular (superficial parotid) lymph nodes",
+  "category": "lymph",
+  "group": "Superficial ring (pericervical collar)",
+  "function": "Superficial parotid nodes in front of the tragus that drain the anterior auricle, lateral forehead and eyelids, lateral conjunctiva and the parotid gland.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "In front of the tragus, on or within the parotid fascia along the superficial temporal vessels"
+   },
+   {
+    "label": "Drains",
+    "value": "Anterior auricle, anterior wall of EAM, temporal scalp, lateral eyelids and lateral conjunctiva, lateral forehead, parotid gland"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Upper deep cervical nodes (level II) via the jugulodigastric node"
+   },
+   {
+    "label": "Level",
+    "value": "Parotid group, not a formal level; removed with parotidectomy"
+   }
+  ],
+  "pearl": "Preauricular node with unilateral granulomatous conjunctivitis is Parinaud oculoglandular syndrome (cat-scratch disease, tularemia); adenoviral keratoconjunctivitis also gives a tender preauricular node. First echelon for skin cancers of the temple and ear.",
+  "depth": "superficial",
+  "marker": {
+   "x": 580,
+   "y": 385
+  },
+  "shape": {
+   "type": "circle",
+   "r": 14
+  }
+ },
+ {
+  "id": "submandibular-nodes",
+  "name": "Submandibular lymph nodes",
+  "category": "lymph",
+  "group": "Superficial ring (pericervical collar)",
+  "function": "Lie along the lower border of the mandible with the submandibular gland; drain most of the face, the anterior oral cavity and the lateral tongue.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Submandibular triangle, on and around the submandibular gland near the facial artery and vein, below the mandibular body"
+   },
+   {
+    "label": "Drains",
+    "value": "Medial canthus, cheek, nose, upper lip, lateral lower lip, gums, lateral anterior two-thirds of tongue, floor of mouth, submental node efferents"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Deep cervical chain, especially the jugulodigastric and jugulo-omohyoid nodes (levels II-III)"
+   },
+   {
+    "label": "Level",
+    "value": "IB"
+   }
+  ],
+  "pearl": "First echelon for oral cavity SCC (buccal mucosa, lateral tongue, gingiva) and facial skin cancers; an enlarged node can mimic a submandibular gland mass or sialadenitis.",
+  "depth": "superficial",
+  "marker": {
+   "x": 435,
+   "y": 612
+  },
+  "shape": {
+   "type": "circle",
+   "r": 16
+  }
+ },
+ {
+  "id": "submental-nodes",
+  "name": "Submental lymph nodes",
+  "category": "lymph",
+  "group": "Superficial ring (pericervical collar)",
+  "function": "Midline nodes under the chin that drain the tip of the tongue, central lower lip, anterior floor of mouth and chin.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Submental triangle between the anterior bellies of the digastric muscles, on the mylohyoid, just below the chin"
+   },
+   {
+    "label": "Drains",
+    "value": "Tip of tongue, central lower lip, anterior floor of mouth, chin skin, lower incisor gingiva"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Submandibular nodes and directly to the jugulo-omohyoid node (level III)"
+   },
+   {
+    "label": "Level",
+    "value": "IA"
+   }
+  ],
+  "pearl": "Tip-of-tongue and midline lower-lip carcinomas drain bilaterally to submental nodes, so midline lesions need bilateral neck evaluation. A non-tender midline submental cyst that does not move with tongue protrusion is more likely a dermoid than a node (a thyroglossal duct cyst sits lower, at the hyoid, and moves).",
+  "depth": "superficial",
+  "marker": {
+   "x": 355,
+   "y": 632
+  },
+  "shape": {
+   "type": "circle",
+   "r": 14
+  }
+ },
+ {
+  "id": "facial-buccal-nodes",
+  "name": "Facial (buccal) lymph nodes",
+  "category": "lymph",
+  "group": "Superficial ring (pericervical collar)",
+  "function": "Inconstant small nodes along the facial vein on the buccinator that filter lymph from the cheek, eyelids and nose before it reaches the submandibular nodes.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Along the facial vein on the buccinator near the angle of the mouth (buccinator nodes); nasolabial, malar (infraorbital) and mandibular nodes belong to the same group"
+   },
+   {
+    "label": "Drains",
+    "value": "Cheek skin and buccal mucosa, eyelids, nose, upper lip"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Submandibular nodes (level IB)"
+   },
+   {
+    "label": "Level",
+    "value": "Not a formal neck level (facial group)"
+   }
+  ],
+  "pearl": "A firm facial node in a patient with cheek, lip or eyelid cancer should be treated as a nodal metastasis; these nodes lie above the mandible and are not removed in a standard neck dissection, so they must be addressed separately.",
+  "depth": "superficial",
+  "marker": {
+   "x": 400,
+   "y": 505
+  },
+  "shape": {
+   "type": "circle",
+   "r": 11
+  }
+ },
+ {
+  "id": "superficial-cervical-nodes",
+  "name": "Superficial cervical lymph nodes (along EJV)",
+  "category": "lymph",
+  "group": "Superficial ring (pericervical collar)",
+  "function": "Nodes along the external jugular vein on the surface of sternocleidomastoid; drain the ear lobule, parotid region and skin over the angle of the mandible.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Along the external jugular vein on the superficial surface of sternocleidomastoid, below the parotid gland"
+   },
+   {
+    "label": "Drains",
+    "value": "Lobule of the ear, skin over the angle of the mandible and lower parotid, efferents of parotid and mastoid nodes"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Deep cervical chain (levels II-III) and supraclavicular nodes"
+   },
+   {
+    "label": "Level",
+    "value": "Not a formal level; lie superficial to SCM over levels II-V"
+   }
+  ],
+  "pearl": "A tender external jugular node in a child usually reflects scalp, ear or parotid-region infection and is reactive; a hard, fixed node here in an older adult with a cutaneous SCC or melanoma of the ear is metastatic until proven otherwise.",
+  "depth": "superficial",
+  "marker": {
+   "x": 590,
+   "y": 660
+  },
+  "shape": {
+   "type": "circle",
+   "r": 13
+  }
+ },
+ {
+  "id": "anterior-cervical-superficial-nodes",
+  "name": "Anterior cervical (superficial) lymph nodes",
+  "category": "lymph",
+  "group": "Superficial ring (pericervical collar)",
+  "function": "Nodes along the anterior jugular vein in front of the infrahyoid muscles; drain the skin and superficial tissues of the anterior neck.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Along the anterior jugular vein in the superficial fascia of the anterior neck, between the hyoid and the suprasternal notch"
+   },
+   {
+    "label": "Drains",
+    "value": "Skin and superficial tissues of the anterior neck below the hyoid"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Deep cervical nodes (levels III-IV) and the deep anterior cervical (level VI) nodes"
+   },
+   {
+    "label": "Level",
+    "value": "Superficial to level VI"
+   }
+  ],
+  "pearl": "Lie in the subplatysmal plane crossed during tracheostomy and thyroidectomy; the anterior jugular veins and jugular venous arch in the suprasternal space of Burns are a bleeding hazard.",
+  "depth": "superficial",
+  "marker": {
+   "x": 412,
+   "y": 860
+  },
+  "shape": {
+   "type": "circle",
+   "r": 11
+  }
+ },
+ {
+  "id": "deep-cervical-nodes",
+  "name": "Deep cervical lymph nodes (chain along IJV)",
+  "category": "lymph",
+  "group": "Deep cervical chain",
+  "function": "The main collecting chain along the internal jugular vein under sternocleidomastoid; nearly all head and neck lymph passes through it before reaching the jugular trunk.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Along the internal jugular vein within the carotid sheath, from the skull base to the root of the neck, deep to sternocleidomastoid"
+   },
+   {
+    "label": "Drains",
+    "value": "All superficial ring nodes, retropharyngeal and anterior cervical nodes, tonsils, tongue, pharynx, larynx, thyroid"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Jugular lymph trunk, then thoracic duct (left) or right lymphatic duct; the lowest left node (Virchow, supraclavicular) can enlarge from thoracic-duct-borne abdominal cancer"
+   },
+   {
+    "label": "Level",
+    "value": "Levels II (upper), III (middle) and IV (lower)"
+   }
+  ],
+  "pearl": "Radical neck dissection removes levels I-V with the IJV, SCM and CN XI; modified radical dissection spares one or more of these. CN XI injury gives shoulder droop, inability to shrug and trouble abducting the arm above 90 degrees.",
+  "depth": "deep",
+  "marker": {
+   "x": 550,
+   "y": 660
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "558,500 552,600 546,700 538,800 528,900 520,960"
+  }
+ },
+ {
+  "id": "jugulodigastric-node",
+  "name": "Jugulodigastric (tonsillar) node",
+  "category": "lymph",
+  "group": "Deep cervical chain",
+  "function": "Largest upper deep cervical node, where the posterior belly of digastric crosses the IJV; main drainage of the palatine tonsil and posterior tongue.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Just below the angle of the mandible, at the crossing of the posterior belly of digastric over the internal jugular vein"
+   },
+   {
+    "label": "Drains",
+    "value": "Palatine tonsil, posterior third of tongue, oropharynx, efferents of submandibular and parotid nodes"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Lower deep cervical nodes (levels III-IV), then the jugular trunk"
+   },
+   {
+    "label": "Level",
+    "value": "IIA"
+   }
+  ],
+  "pearl": "Tender swelling below the angle of the jaw in tonsillitis or mono is this node. A painless hard level II node in an adult is oropharyngeal (HPV+) SCC until proven otherwise: FNA, not excision.",
+  "depth": "deep",
+  "marker": {
+   "x": 565,
+   "y": 600
+  },
+  "shape": {
+   "type": "circle",
+   "r": 15
+  }
+ },
+ {
+  "id": "jugulo-omohyoid-node",
+  "name": "Jugulo-omohyoid (tongue) node",
+  "category": "lymph",
+  "group": "Deep cervical chain",
+  "function": "Node where the omohyoid crosses the IJV; receives lymph from the whole tongue, including the tip via the submental nodes.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Just above the intermediate tendon of omohyoid where it crosses the internal jugular vein, at the level of the cricoid cartilage"
+   },
+   {
+    "label": "Drains",
+    "value": "Tongue (all parts, including the tip via submental nodes), efferents of submandibular and submental nodes"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Lower deep cervical and supraclavicular nodes, then the jugular trunk"
+   },
+   {
+    "label": "Level",
+    "value": "III (lower border; sometimes IV)"
+   }
+  ],
+  "pearl": "Tongue cancer can bypass levels I-II and seed this node directly (skip metastasis); its position at the omohyoid marks the level III/IV boundary.",
+  "depth": "deep",
+  "marker": {
+   "x": 535,
+   "y": 800
+  },
+  "shape": {
+   "type": "circle",
+   "r": 14
+  }
+ },
+ {
+  "id": "prelaryngeal-delphian-node",
+  "name": "Prelaryngeal (Delphian) node",
+  "category": "lymph",
+  "group": "Deep cervical chain",
+  "function": "Midline node on the cricothyroid membrane that drains the subglottic larynx and thyroid (isthmus, pyramidal lobe); enlargement signals laryngeal or thyroid cancer.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Anterior to the cricothyroid membrane and cricoid arch, in the midline between the sternohyoid muscles"
+   },
+   {
+    "label": "Drains",
+    "value": "Subglottic (infraglottic) larynx via the cricothyroid membrane, thyroid isthmus and pyramidal lobe; the supraglottis drains instead through the thyrohyoid membrane to levels II-III"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Pretracheal and paratracheal nodes, then lower deep cervical nodes (levels III-IV)"
+   },
+   {
+    "label": "Level",
+    "value": "VI"
+   }
+  ],
+  "pearl": "A palpable Delphian node is an ominous sign of subglottic extension of laryngeal carcinoma and of papillary thyroid cancer; it lies in the field of cricothyrotomy and tracheostomy.",
+  "depth": "deep",
+  "marker": {
+   "x": 400,
+   "y": 755
+  },
+  "shape": {
+   "type": "circle",
+   "r": 11
+  }
+ },
+ {
+  "id": "pretracheal-nodes",
+  "name": "Pretracheal lymph nodes",
+  "category": "lymph",
+  "group": "Deep cervical chain",
+  "function": "Nodes in front of the trachea below the thyroid isthmus that drain the thyroid, upper trachea and subglottic larynx.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Anterior to the trachea below the thyroid isthmus, within the pretracheal fascia down to the suprasternal notch"
+   },
+   {
+    "label": "Drains",
+    "value": "Thyroid gland, subglottic larynx, upper trachea, cervical esophagus"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Paratracheal nodes, lower deep cervical (level IV) and superior mediastinal (level VII) nodes"
+   },
+   {
+    "label": "Level",
+    "value": "VI"
+   }
+  ],
+  "pearl": "Central compartment (level VI) dissection removes pretracheal and paratracheal nodes for papillary thyroid cancer; the inferior thyroid veins run through this group and bleed during tracheostomy.",
+  "depth": "deep",
+  "marker": {
+   "x": 428,
+   "y": 915
+  },
+  "shape": {
+   "type": "circle",
+   "r": 12
+  }
+ },
+ {
+  "id": "paratracheal-nodes",
+  "name": "Paratracheal lymph nodes",
+  "category": "lymph",
+  "group": "Deep cervical chain",
+  "function": "Nodes in the tracheoesophageal groove beside the recurrent laryngeal nerve; the main first echelon for thyroid and subglottic cancer.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Tracheoesophageal groove on each side, along the recurrent laryngeal nerve and inferior thyroid artery, from the cricoid to the brachiocephalic vessels"
+   },
+   {
+    "label": "Drains",
+    "value": "Thyroid lobes, subglottic larynx, trachea, cervical esophagus, parathyroids"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Superior mediastinal (level VII) and lower deep cervical (level IV) nodes"
+   },
+   {
+    "label": "Level",
+    "value": "VI"
+   }
+  ],
+  "pearl": "Papillary thyroid cancer most often metastasizes here first; clearing these nodes risks the recurrent laryngeal nerve (hoarseness) and the inferior parathyroids (hypocalcemia).",
+  "depth": "deep",
+  "marker": {
+   "x": 478,
+   "y": 885
+  },
+  "shape": {
+   "type": "circle",
+   "r": 12
+  }
+ },
+ {
+  "id": "retropharyngeal-nodes",
+  "name": "Retropharyngeal lymph nodes",
+  "category": "lymph",
+  "group": "Deep cervical chain",
+  "function": "Deep nodes behind the pharynx in the retropharyngeal space that drain the nasopharynx, auditory tube, posterior nasal cavity and soft palate.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Retropharyngeal space between the buccopharyngeal fascia (on the constrictors) and the alar fascia at C1-C3; lateral (node of Rouviere) and medial groups; the danger space lies behind the alar fascia"
+   },
+   {
+    "label": "Drains",
+    "value": "Nasopharynx, posterior nasal cavity and paranasal sinuses, auditory tube, soft palate, posterior pharyngeal wall"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Upper deep cervical nodes (levels II-III)"
+   },
+   {
+    "label": "Level",
+    "value": "Not a formal level (retropharyngeal group); medial nodes regress in childhood, lateral nodes persist"
+   }
+  ],
+  "pearl": "Suppuration here in a toddler is a retropharyngeal abscess (drooling, neck stiffness, widened prevertebral soft tissue on lateral X-ray); first echelon for nasopharyngeal carcinoma.",
+  "depth": "deep",
+  "marker": {
+   "x": 625,
+   "y": 525
+  },
+  "shape": {
+   "type": "circle",
+   "r": 13
+  }
+ },
+ {
+  "id": "supraclavicular-virchow-nodes",
+  "name": "Supraclavicular nodes (Virchow's node, left)",
+  "category": "lymph",
+  "group": "Deep cervical chain",
+  "function": "Lowest deep cervical nodes above the clavicle; the left group receives thoracic duct lymph from the whole body below the diaphragm.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Supraclavicular fossa behind the clavicular head of SCM, lateral to the IJV, beside the thoracic duct termination (left)"
+   },
+   {
+    "label": "Drains",
+    "value": "Lower deep cervical chain and posterior triangle; left side also receives thoracic duct lymph (abdomen, pelvis, left thorax, left arm)"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Jugular trunk, thoracic duct or right lymphatic duct, venous angle"
+   },
+   {
+    "label": "Level",
+    "value": "IV (medial) and VB (lateral)"
+   }
+  ],
+  "pearl": "Virchow's node: a hard left supraclavicular node (Troisier sign) means metastatic gastric, pancreatic or other abdominal/pelvic cancer; right-sided nodes suggest lung, esophageal or breast primary.",
+  "depth": "deep",
+  "marker": {
+   "x": 640,
+   "y": 915
+  },
+  "shape": {
+   "type": "circle",
+   "r": 16
+  }
+ },
+ {
+  "id": "scalene-nodes",
+  "name": "Scalene lymph nodes",
+  "category": "lymph",
+  "group": "Deep cervical chain",
+  "function": "Lower deep cervical nodes on the anterior scalene behind the IJV; receive lower neck and apical thoracic lymph on its way to the venous angle.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "On the anterior scalene muscle in the scalene fat pad, deep to the clavicular head of SCM and behind the IJV"
+   },
+   {
+    "label": "Drains",
+    "value": "Lower deep cervical nodes, apical lung lymphatics, connections with the bronchomediastinal and subclavian trunks"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Jugular and subclavian trunks, then right lymphatic duct or thoracic duct"
+   },
+   {
+    "label": "Level",
+    "value": "IV / VB"
+   }
+  ],
+  "pearl": "Scalene node biopsy was used to stage lung cancer and diagnose sarcoidosis; the phrenic nerve on the anterior scalene and the subclavian vein are the surgical hazards.",
+  "depth": "deep",
+  "marker": {
+   "x": 590,
+   "y": 870
+  },
+  "shape": {
+   "type": "circle",
+   "r": 12
+  }
+ },
+ {
+  "id": "level-i-submental-submandibular",
+  "name": "Level I (IA submental, IB submandibular)",
+  "category": "lymph",
+  "group": "Neck levels (surgical)",
+  "function": "Submental (IA) and submandibular (IB) triangles; first echelon for the lips, oral cavity, anterior tongue and floor of mouth.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "IA: between the anterior bellies of digastric above the hyoid. IB: submandibular triangle bounded by the digastric bellies and the mandibular body"
+   },
+   {
+    "label": "Drains",
+    "value": "IA: tip of tongue, central lower lip, floor of mouth, chin. IB: oral cavity, lateral tongue, face, nose, upper lip, submandibular gland"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Levels II and III (jugulodigastric and jugulo-omohyoid nodes)"
+   },
+   {
+    "label": "Cancers draining here",
+    "value": "Oral cavity SCC, lip cancer, facial skin cancer, submandibular gland tumors"
+   },
+   {
+    "label": "Level",
+    "value": "I (IA, IB)"
+   }
+  ],
+  "pearl": "Oral tongue SCC has occult level I-III metastases even in a cN0 neck, so supraomohyoid (I-III) dissection is standard; the marginal mandibular nerve crosses level IB and must be protected.",
+  "depth": "superficial",
+  "marker": {
+   "x": 400,
+   "y": 648
+  },
+  "shape": {
+   "type": "circle",
+   "r": 22
+  }
+ },
+ {
+  "id": "level-ii-upper-jugular-nodes",
+  "name": "Level II (upper jugular, IIA/IIB)",
+  "category": "lymph",
+  "group": "Neck levels (surgical)",
+  "function": "Upper jugular nodes from the skull base to the hyoid around the upper IJV; IIA lies anterior and IIB posterior to the spinal accessory nerve.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Skull base to the hyoid/carotid bifurcation; anterior limit stylohyoid, posterior limit posterior border of SCM; contains the jugulodigastric node"
+   },
+   {
+    "label": "Drains",
+    "value": "Oropharynx (tonsil, base of tongue), oral cavity, nasopharynx, larynx, parotid, face and scalp via the superficial ring"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Level III, then IV and the jugular trunk"
+   },
+   {
+    "label": "Cancers draining here",
+    "value": "Oropharyngeal (HPV+) SCC, nasopharyngeal carcinoma, oral cavity, laryngeal, parotid and scalp cancers"
+   },
+   {
+    "label": "Level",
+    "value": "II (IIA, IIB)"
+   }
+  ],
+  "pearl": "A cystic level II node in a 40-60 year old is HPV+ oropharyngeal SCC until proven otherwise, not a branchial cleft cyst; dissecting IIB risks CN XI (shoulder droop, scapular winging).",
+  "depth": "deep",
+  "marker": {
+   "x": 580,
+   "y": 540
+  },
+  "shape": {
+   "type": "circle",
+   "r": 22
+  }
+ },
+ {
+  "id": "level-iii-middle-jugular-nodes",
+  "name": "Level III (middle jugular)",
+  "category": "lymph",
+  "group": "Neck levels (surgical)",
+  "function": "Middle jugular nodes between the hyoid and the cricoid along the IJV; includes the jugulo-omohyoid node.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Hyoid to the lower border of the cricoid, between the lateral border of sternohyoid anteriorly and the posterior border of SCM posteriorly"
+   },
+   {
+    "label": "Drains",
+    "value": "Oral cavity, oropharynx, hypopharynx, larynx, thyroid, efferents of levels I-II"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Level IV, then the jugular trunk"
+   },
+   {
+    "label": "Cancers draining here",
+    "value": "Laryngeal, hypopharyngeal, oral tongue (skip metastases), thyroid and oropharyngeal SCC"
+   },
+   {
+    "label": "Level",
+    "value": "III"
+   }
+  ],
+  "pearl": "Lower border of the cricoid marks the III/IV boundary (omohyoid in older systems); supraomohyoid dissection (I-III) suits cN0 oral cancer, while laryngeal cancer needs at least a lateral (II-IV) dissection.",
+  "depth": "deep",
+  "marker": {
+   "x": 545,
+   "y": 720
+  },
+  "shape": {
+   "type": "circle",
+   "r": 20
+  }
+ },
+ {
+  "id": "level-iv-lower-jugular-nodes",
+  "name": "Level IV (lower jugular)",
+  "category": "lymph",
+  "group": "Neck levels (surgical)",
+  "function": "Lower jugular nodes from the cricoid to the clavicle along the IJV; receive from larynx, hypopharynx, thyroid and cervical esophagus.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Lower border of the cricoid to the clavicle, anterior to the posterior border of SCM, lateral to sternohyoid; omohyoid crosses its upper part"
+   },
+   {
+    "label": "Drains",
+    "value": "Subglottic larynx, hypopharynx, thyroid, cervical esophagus, efferents of level III"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Jugular trunk, then thoracic duct (left) or right lymphatic duct"
+   },
+   {
+    "label": "Cancers draining here",
+    "value": "Thyroid, hypopharyngeal, laryngeal and cervical esophageal cancer; infradiaphragmatic cancers via the thoracic duct on the left"
+   },
+   {
+    "label": "Level",
+    "value": "IV"
+   }
+  ],
+  "pearl": "Left level IV dissection can injure the thoracic duct and cause a chyle leak (milky drain output); the phrenic nerve and transverse cervical vessels lie in its floor.",
+  "depth": "deep",
+  "marker": {
+   "x": 530,
+   "y": 890
+  },
+  "shape": {
+   "type": "circle",
+   "r": 20
+  }
+ },
+ {
+  "id": "level-v-posterior-triangle-nodes",
+  "name": "Level V (posterior triangle, VA/VB)",
+  "category": "lymph",
+  "group": "Neck levels (surgical)",
+  "function": "Posterior triangle nodes along the spinal accessory nerve (VA) and the transverse cervical and supraclavicular vessels (VB).",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Between the posterior border of SCM and the anterior border of trapezius, from apex to clavicle; VA above and VB below the cricoid plane"
+   },
+   {
+    "label": "Drains",
+    "value": "Posterior scalp and neck (occipital and mastoid nodes), nasopharynx, oropharynx, thyroid, skin of the lateral neck"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Supraclavicular nodes, then the jugular trunk"
+   },
+   {
+    "label": "Cancers draining here",
+    "value": "Nasopharyngeal carcinoma (early level II/V), posterior scalp melanoma and SCC, thyroid cancer (VB), oropharyngeal SCC"
+   },
+   {
+    "label": "Level",
+    "value": "V (VA, VB)"
+   }
+  ],
+  "pearl": "Nasopharyngeal carcinoma classically presents as a painless level II or V node in an EBV-positive patient of southern Chinese descent; CN XI crosses level V and is injured in node biopsies here.",
+  "depth": "superficial",
+  "marker": {
+   "x": 690,
+   "y": 760
+  },
+  "shape": {
+   "type": "circle",
+   "r": 22
+  }
+ },
+ {
+  "id": "level-vi-central-compartment-nodes",
+  "name": "Level VI (anterior/central compartment)",
+  "category": "lymph",
+  "group": "Neck levels (surgical)",
+  "function": "Central compartment nodes between the carotid sheaths: prelaryngeal, pretracheal and paratracheal; the first echelon for the thyroid.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Hyoid to the suprasternal notch, between the medial borders of the carotid sheaths, in front of and beside the larynx and trachea"
+   },
+   {
+    "label": "Drains",
+    "value": "Thyroid, glottic and subglottic larynx, trachea, hypopharynx, cervical esophagus, parathyroids"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Levels III-IV and superior mediastinal (level VII) nodes"
+   },
+   {
+    "label": "Cancers draining here",
+    "value": "Papillary and medullary thyroid carcinoma, subglottic laryngeal cancer, cervical esophageal cancer"
+   },
+   {
+    "label": "Level",
+    "value": "VI"
+   }
+  ],
+  "pearl": "Papillary thyroid cancer drains to level VI first; central neck dissection endangers the recurrent laryngeal nerves and parathyroids, giving hoarseness or postoperative hypocalcemia.",
+  "depth": "deep",
+  "marker": {
+   "x": 445,
+   "y": 815
+  },
+  "shape": {
+   "type": "circle",
+   "r": 22
+  }
+ },
+ {
+  "id": "level-vii-superior-mediastinal-nodes",
+  "name": "Level VII (superior mediastinal)",
+  "category": "lymph",
+  "group": "Neck levels (surgical)",
+  "function": "Superior mediastinal nodes below the suprasternal notch down to the innominate artery; the continuation of the central compartment into the chest.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Anterior superior mediastinum between the carotid arteries, from the suprasternal notch to the brachiocephalic (innominate) artery"
+   },
+   {
+    "label": "Drains",
+    "value": "Thyroid (via level VI), trachea, cervical esophagus, thymus"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Bronchomediastinal trunks, then thoracic duct or right lymphatic duct"
+   },
+   {
+    "label": "Cancers draining here",
+    "value": "Thyroid carcinoma (papillary, medullary, anaplastic), cervical esophageal and subglottic cancer"
+   },
+   {
+    "label": "Level",
+    "value": "VII"
+   }
+  ],
+  "pearl": "May need sternotomy; left brachiocephalic vein limits access. Only the left RLN (looped under the arch) is in the tracheoesophageal groove here; the right recurs at the subclavian artery and lies lateral to the groove.",
+  "depth": "deep",
+  "marker": {
+   "x": 480,
+   "y": 1050
+  },
+  "shape": {
+   "type": "circle",
+   "r": 18
+  }
+ },
+ {
+  "id": "pharyngeal-tonsil-adenoid",
+  "name": "Pharyngeal tonsil (adenoid)",
+  "category": "lymph",
+  "group": "Waldeyer's ring",
+  "function": "Lymphoid tissue in the roof and posterior wall of the nasopharynx; samples inhaled antigens and forms the superior part of Waldeyer's ring.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Posterosuperior wall of the nasopharynx under the sphenoid body and basiocciput, above the torus tubarius"
+   },
+   {
+    "label": "Drains",
+    "value": "Lymph leaves to the retropharyngeal and upper deep cervical (level II) nodes"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Retropharyngeal nodes, then level II"
+   },
+   {
+    "label": "Epithelium",
+    "value": "Pseudostratified ciliated columnar (respiratory) over lymphoid follicles; no crypts, no capsule"
+   },
+   {
+    "label": "Level",
+    "value": "Drains to level II"
+   }
+  ],
+  "pearl": "Adenoid hypertrophy in children causes mouth breathing, snoring, adenoid facies and eustachian tube obstruction with recurrent otitis media with effusion; it regresses after puberty.",
+  "depth": "deep",
+  "marker": {
+   "x": 575,
+   "y": 440
+  },
+  "shape": {
+   "type": "circle",
+   "r": 14
+  }
+ },
+ {
+  "id": "tubal-tonsils",
+  "name": "Tubal tonsils",
+  "category": "lymph",
+  "group": "Waldeyer's ring",
+  "function": "Small lymphoid aggregates around the pharyngeal opening of the auditory (eustachian) tube on the lateral nasopharyngeal wall.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Lateral nasopharynx around the torus tubarius and pharyngeal ostium of the auditory tube, behind the inferior concha"
+   },
+   {
+    "label": "Drains",
+    "value": "Lymph leaves to the retropharyngeal and upper deep cervical (level II) nodes"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Retropharyngeal nodes, then level II"
+   },
+   {
+    "label": "Level",
+    "value": "Drains to level II"
+   }
+  ],
+  "pearl": "Hypertrophy, often with the adenoid, blocks the eustachian tube orifice and causes conductive hearing loss with otitis media with effusion; regrowth after adenoidectomy may be tubal tonsil tissue.",
+  "depth": "deep",
+  "marker": {
+   "x": 548,
+   "y": 428
+  },
+  "shape": {
+   "type": "circle",
+   "r": 10
+  }
+ },
+ {
+  "id": "palatine-tonsils",
+  "name": "Palatine tonsils",
+  "category": "lymph",
+  "group": "Waldeyer's ring",
+  "function": "Paired crypt-bearing lymphoid masses in the tonsillar fossae of the oropharynx; the tonsils of tonsillitis and the most common site of oropharyngeal cancer.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Tonsillar fossa between the palatoglossal (anterior) and palatopharyngeal (posterior) arches, lateral oropharynx, medial to the superior constrictor"
+   },
+   {
+    "label": "Drains",
+    "value": "Lymph leaves mainly to the jugulodigastric node (level IIA), also level III"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Jugulodigastric node, then lower deep cervical nodes"
+   },
+   {
+    "label": "Blood supply",
+    "value": "Tonsillar branch of the facial artery (main), ascending palatine, ascending pharyngeal, lesser palatine, dorsal lingual"
+   },
+   {
+    "label": "Level",
+    "value": "Drains to level IIA"
+   }
+  ],
+  "pearl": "Peritonsillar abscess (quinsy): uvular deviation, trismus, hot-potato voice; drain it. A unilateral enlarged tonsil in an adult suggests HPV+ SCC or lymphoma; CN IX lies lateral (post-tonsillectomy otalgia).",
+  "depth": "deep",
+  "marker": {
+   "x": 515,
+   "y": 520
+  },
+  "shape": {
+   "type": "circle",
+   "r": 14
+  }
+ },
+ {
+  "id": "lingual-tonsil",
+  "name": "Lingual tonsil",
+  "category": "lymph",
+  "group": "Waldeyer's ring",
+  "function": "Lymphoid nodules in the posterior third (base) of the tongue behind the sulcus terminalis; forms the inferior part of Waldeyer's ring.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Dorsum of the posterior third of the tongue behind the circumvallate papillae, extending to the valleculae and epiglottis"
+   },
+   {
+    "label": "Drains",
+    "value": "Lymph leaves bilaterally to the jugulodigastric and jugulo-omohyoid nodes (levels II-III)"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Deep cervical nodes of both sides"
+   },
+   {
+    "label": "Innervation",
+    "value": "CN IX for general sensation and taste; CN X (internal laryngeal) near the valleculae"
+   },
+   {
+    "label": "Level",
+    "value": "Drains to levels II-III bilaterally"
+   }
+  ],
+  "pearl": "Base-of-tongue SCC drains bilaterally and presents late with a neck mass, referred otalgia (CN IX) and dysphagia; lingual tonsil hypertrophy can cause an unexpectedly difficult intubation.",
+  "depth": "deep",
+  "marker": {
+   "x": 470,
+   "y": 600
+  },
+  "shape": {
+   "type": "circle",
+   "r": 13
+  }
+ },
+ {
+  "id": "thoracic-duct",
+  "name": "Thoracic duct (termination at left venous angle)",
+  "category": "lymph",
+  "group": "Ducts & trunks",
+  "function": "Largest lymphatic vessel; carries lymph from the whole body except the right head, neck, arm and hemithorax to the junction of the left IJV and subclavian vein.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Ascends from the cisterna chyli through the posterior mediastinum, arches at C7 behind the carotid sheath over the left subclavian artery and enters the left venous angle"
+   },
+   {
+    "label": "Drains",
+    "value": "Both lower limbs, abdomen, pelvis, left thorax, left arm, left head and neck (via the left jugular, subclavian and bronchomediastinal trunks)"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Left venous angle (junction of the left internal jugular and left subclavian veins)"
+   },
+   {
+    "label": "Relations of the arch",
+    "value": "Anterior to the vertebral artery, thyrocervical trunk and phrenic nerve; posterior to the carotid sheath"
+   },
+   {
+    "label": "Level",
+    "value": "Terminates in left level IV"
+   }
+  ],
+  "pearl": "Injury during left neck dissection or central line placement causes a chylous fistula or chylothorax (milky fluid, triglyceride >110 mg/dL); gastric cancer reaches Virchow's node through this duct.",
+  "depth": "deep",
+  "marker": {
+   "x": 545,
+   "y": 995
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "560,1100 552,1030 548,975 530,950 505,965 498,985"
+  }
+ },
+ {
+  "id": "right-lymphatic-duct",
+  "name": "Right lymphatic duct",
+  "category": "lymph",
+  "group": "Ducts & trunks",
+  "function": "Short (about 1-2 cm) duct draining the right head and neck, right arm and right hemithorax into the right venous angle; often absent, with the three trunks entering the veins separately.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Root of the right side of the neck along the medial border of the anterior scalene, entering the junction of the right internal jugular and subclavian veins"
+   },
+   {
+    "label": "Drains",
+    "value": "Right jugular trunk (right head and neck), right subclavian trunk (right arm, right breast, chest wall), right bronchomediastinal trunk (right lung, most of the heart, mediastinum, upper anterior abdominal wall and diaphragmatic surface of the liver)"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Right venous angle (origin of the right brachiocephalic vein)"
+   },
+   {
+    "label": "Level",
+    "value": "Terminates in right level IV"
+   }
+  ],
+  "pearl": "Right supraclavicular nodes signal intrathoracic disease (lung, esophagus, mediastinum) or right breast cancer; unlike Virchow's node, the duct gets no infradiaphragmatic visceral lymph beyond a little from the liver.",
+  "depth": "deep",
+  "marker": {
+   "x": 495,
+   "y": 965
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "520,935 505,955 497,982"
+  }
+ },
+ {
+  "id": "jugular-lymph-trunk",
+  "name": "Jugular lymph trunk",
+  "category": "lymph",
+  "group": "Ducts & trunks",
+  "function": "Collecting vessel formed by efferents of the lower deep cervical (level IV) nodes; conveys all lymph from one side of the head and neck to the venous angle.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Alongside the lower internal jugular vein in the root of the neck, from the inferior deep cervical nodes to the venous angle"
+   },
+   {
+    "label": "Drains",
+    "value": "The whole deep cervical chain (levels I-VI) and therefore all head and neck lymph of that side; some level VI (thyroid, larynx) lymph bypasses it to superior mediastinal (level VII) nodes"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Left: thoracic duct or directly into the venous angle. Right: right lymphatic duct or directly into the venous angle"
+   },
+   {
+    "label": "Level",
+    "value": "IV"
+   }
+  ],
+  "pearl": "Final common pathway for every head and neck nodal level, so level IV (low jugular) metastasis in head and neck SCC predicts distant spread and worse prognosis; dissecting level IV on the left risks a chyle leak where the trunk meets the thoracic duct.",
+  "depth": "deep",
+  "marker": {
+   "x": 520,
+   "y": 925
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "528,880 518,930 500,982"
+  }
+ },
+ {
+  "id": "subclavian-bronchomediastinal-trunks",
+  "name": "Subclavian and bronchomediastinal trunks (venous angle confluence)",
+  "category": "lymph",
+  "group": "Ducts & trunks",
+  "function": "Subclavian trunk (upper limb, breast, chest wall) and bronchomediastinal trunk (lungs, heart, mediastinum) join the jugular trunk at the venous angle to complete the lymphatic confluence.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Subclavian trunk runs with the subclavian vein from the apical axillary nodes; bronchomediastinal trunk ascends from the tracheobronchial and parasternal nodes; both reach the venous angle behind the clavicle"
+   },
+   {
+    "label": "Drains",
+    "value": "Subclavian: upper limb, lateral breast (via axillary nodes), anterolateral thoracic wall. Bronchomediastinal: lungs, heart, mediastinum, and via parasternal (internal mammary) nodes the medial breast, anterior chest wall and anterior abdominal wall above the umbilicus"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Left: thoracic duct or left venous angle. Right: right lymphatic duct or right venous angle"
+   },
+   {
+    "label": "Level",
+    "value": "Root of neck, behind the clavicle (level IV/VB)"
+   }
+  ],
+  "pearl": "Breast and lung cancers reach supraclavicular nodes via these trunks: a supraclavicular node is N3c (stage IIIC) in breast cancer and N3 in lung cancer. Medial breast tumors drain to parasternal (internal mammary) nodes and can spread to the contralateral breast and mediastinum.",
+  "depth": "deep",
+  "marker": {
+   "x": 600,
+   "y": 985
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "720,950 640,962 560,972 500,985 490,1030 480,1100"
+  }
+ },
+ {
+  "id": "deep-parotid-intraglandular-nodes",
+  "name": "Deep parotid (intraglandular) lymph nodes",
+  "category": "lymph",
+  "group": "Superficial ring (pericervical collar)",
+  "function": "Nodes within the parotid gland deep to its fascia. Drain external/middle ear, nasopharynx, posterior nasal cavity, lateral face (shared with superficial nodes) and the gland itself; then to upper deep cervical nodes.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Within the parotid parenchyma, deep to the parotid (investing) fascia, in intimate relation to branches of CN VII and the retromandibular vein; distinct from the superficial (extraglandular) preauricular parotid nodes that lie superficial to the fascia"
+   },
+   {
+    "label": "Drains (afferents from)",
+    "value": "External acoustic meatus and middle ear (tympanic cavity), nasopharynx and posterior nasal cavity, the parotid gland itself, plus the eyelids and lateral facial (cheek/temple) skin, forehead/scalp and auricle, shared with the superficial parotid nodes (both groups act as one drainage unit). Caution: older texts (Gray's 1918 lineage) call the nodes on the lateral pharyngeal wall 'deep/subparotid' and lump intraglandular nodes with the superficial group, so eyelid/cheek drainage is sometimes listed only under 'superficial'."
+   },
+   {
+    "label": "Efferents to",
+    "value": "Upper deep cervical (jugulodigastric / level II) nodes"
+   },
+   {
+    "label": "Level",
+    "value": "Not a formal neck level (parotid basin); managed with level II"
+   }
+  ],
+  "pearl": "Cutaneous SCC or melanoma of the scalp/face/ear metastasizes here and presents as a parotid mass; facial nerve palsy with a parotid mass implies malignant infiltration, not a benign pleomorphic adenoma.",
+  "depth": "deep",
+  "marker": {
+   "x": 552,
+   "y": 492
+  },
+  "shape": {
+   "type": "circle",
+   "r": 14
+  }
+ },
+ {
+  "id": "spinal-accessory-lymph-node-chain",
+  "name": "Spinal accessory (posterior triangle) lymph node chain",
+  "category": "lymph",
+  "group": "Deep cervical chain",
+  "function": "Nodes accompanying CN XI obliquely across the posterior triangle from SCM to trapezius. Drain the occipital and mastoid nodes and posterior scalp/neck into the supraclavicular and lower deep cervical nodes.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Along the spinal accessory nerve in the posterior triangle, just deep to the investing fascia, from the posterior border of SCM (junction of upper and middle thirds) to the anterior border of trapezius"
+   },
+   {
+    "label": "Drains (afferents from)",
+    "value": "Occipital and mastoid (retroauricular) nodes, posterior scalp and neck skin, nasopharynx (via retropharyngeal nodes), lateral neck"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Transverse cervical (supraclavicular) nodes, then jugular trunk / lower deep cervical chain (level IV)"
+   },
+   {
+    "label": "Level",
+    "value": "Level V (Va above, Vb below the plane of the cricoid)"
+   }
+  ],
+  "pearl": "Nasopharyngeal carcinoma classically spreads to this chain (posterior triangle mass). Node biopsy or dissection here risks CN XI injury: shoulder droop, lateral scapular winging, weak shrug and inability to abduct the arm above 90 degrees.",
+  "depth": "deep",
+  "marker": {
+   "x": 712,
+   "y": 662
+  },
+  "shape": {
+   "type": "polyline",
+   "points": "640,500 668,560 698,628 728,698 752,768 772,830"
+  }
+ },
+ {
+  "id": "infrahyoid-nodes",
+  "name": "Infrahyoid lymph nodes",
+  "category": "lymph",
+  "group": "Deep cervical chain",
+  "function": "Small anterior deep cervical nodes lying on the thyrohyoid membrane just below the hyoid. Receive lymph from the supraglottic larynx and piriform fossa and relay it to the upper deep cervical (jugular) chain.",
+  "details": [
+   {
+    "label": "Location",
+    "value": "Anterior midline/paramedian neck on the thyrohyoid membrane, deep to the infrahyoid strap muscles, between the hyoid body and upper border of the thyroid cartilage"
+   },
+   {
+    "label": "Drains (afferents from)",
+    "value": "Supraglottic larynx (epiglottis, aryepiglottic folds, vestibule), piriform fossa (hypopharynx) and adjacent pharyngeal wall, vallecula (skin of the anterior neck drains instead to the superficial/anterior cervical nodes)"
+   },
+   {
+    "label": "Efferents to",
+    "value": "Upper and middle deep cervical (internal jugular) nodes, levels II-III"
+   },
+   {
+    "label": "Level",
+    "value": "Level VI (anterior/central compartment, which extends from the hyoid to the suprasternal notch) adjacent to the level III boundary"
+   }
+  ],
+  "pearl": "Supraglottic laryngeal cancer has rich, crossing lymphatics and metastasizes early and often bilaterally to levels II-IV; glottic cancer has sparse lymphatics, so hoarseness precedes nodal spread and early lesions are nearly node-free.",
+  "depth": "deep",
+  "marker": {
+   "x": 437,
+   "y": 686
+  },
+  "shape": {
+   "type": "circle",
+   "r": 12
+  }
+ }
+]
