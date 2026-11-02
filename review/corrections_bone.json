@@ -1,0 +1,621 @@
+{
+ "category": "bone",
+ "verified": 69,
+ "corrections": [
+  {
+   "id": "frontal-bone",
+   "field": "details:Foramina & contents",
+   "action": "replace",
+   "old": "Supraorbital foramen – supraorbital nerve (V1) and vessels",
+   "new": "Supraorbital notch/foramen – supraorbital nerve (V1) and vessels; foramen cecum (between the frontal crest and crista galli) – emissary vein to the superior sagittal sinus",
+   "ref": "Plate 18 (p. 73), Plate 20 (p. 75)",
+   "reason": "Netter labels the foramen cecum at the frontal crest and lists its emissary vein; card omits it",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "frontal-bone",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Orbicularis oculi (orbital part, nasal part of frontal bone), corrugator supercilii (superciliary arch), temporalis (temporal fossa); frontalis has no bony attachment, inserting into skin via the galea",
+   "new": "Orbicularis oculi (medial orbital margin), corrugator supercilii (medial part of the supraorbital margin), temporalis (floor of the temporal fossa); the frontal belly of occipitofrontalis arises from the epicranial aponeurosis, not bone",
+   "ref": "Muscle Tables (p. 219, 224)",
+   "reason": "Netter gives corrugator origin as medial supraorbital margin and orbicularis oculi as medial orbital margin",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "temporal-bone",
+   "field": "details:Foramina & contents",
+   "action": "replace",
+   "old": "Internal acoustic meatus (CN VII, VIII, labyrinthine a.), carotid canal (ICA), stylomastoid foramen (CN VII), jugular foramen (shared with occipital)",
+   "new": "Internal acoustic meatus – CN VII, CN VIII, labyrinthine artery; carotid canal – internal carotid artery and internal carotid plexus; stylomastoid foramen – CN VII; petrotympanic fissure – chorda tympani; hiatuses for the greater and lesser petrosal nerves; jugular foramen (with occipital) – CN IX, X, XI, inferior petrosal and sigmoid sinuses becoming the internal jugular vein",
+   "ref": "Plate 19 (p. 74), Plate 20 (p. 75)",
+   "reason": "Plates 19–20 list chorda tympani (petrotympanic fissure), petrosal hiatuses, carotid plexus and the full jugular foramen contents; card omits them",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "temporal-bone",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Temporalis, masseter (zygomatic process), SCM, splenius and longissimus capitis, digastric (mastoid), styloid muscles",
+   "new": "Temporalis (temporal fossa), masseter (zygomatic arch), sternocleidomastoid, splenius capitis and longissimus capitis (mastoid process), posterior belly of digastric (mastoid notch), stylohyoid, styloglossus and stylopharyngeus (styloid process), levator veli palatini (petrous part), occipital belly of occipitofrontalis and auricularis posterior (mastoid)",
+   "ref": "Muscle Tables (p. 219–224)",
+   "reason": "Netter muscle tables add levator veli palatini (petrous temporal), occipital belly and auricularis posterior (mastoid) as attachments",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "occipital-bone",
+   "field": "details:Foramina & contents",
+   "action": "replace",
+   "old": "Foramen magnum (medulla, vertebral arteries, CN XI spinal roots), hypoglossal canal (CN XII), condylar canal (emissary vein)",
+   "new": "Foramen magnum – medulla oblongata and meninges, vertebral arteries and venous plexus, spinal roots of CN XI; hypoglossal canal – CN XII; condylar canal (inconstant) – emissary vein and meningeal branch of the ascending pharyngeal artery; jugular foramen (with temporal) – CN IX, X, XI, sigmoid and inferior petrosal sinuses",
+   "ref": "Plate 19 (p. 74), Plate 20 (p. 75)",
+   "reason": "Plate 20 lists the meningeal branch of the ascending pharyngeal artery with the condylar canal and the jugular foramen is shared with the occipital bone",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "occipital-bone",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Trapezius, SCM, splenius capitis, semispinalis capitis, suboccipital muscles, ligamentum nuchae",
+   "new": "Trapezius (superior nuchal line and external occipital protuberance), sternocleidomastoid and splenius capitis (lateral superior nuchal line), occipital belly of occipitofrontalis, semispinalis capitis (between the nuchal lines), rectus capitis posterior major and minor and obliquus capitis superior (inferior nuchal line), longus capitis and rectus capitis anterior (basilar part), rectus capitis lateralis (jugular process), pharyngeal raphe (pharyngeal tubercle), ligamentum nuchae",
+   "ref": "Muscle Tables (p. 221–223), Back Muscle Tables (p. 270–271), Plate 75 (p. 130)",
+   "reason": "Netter tables add longus capitis, rectus capitis anterior/lateralis, occipitalis and the pharyngeal raphe at the pharyngeal tubercle",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "sphenoid-bone",
+   "field": "details:Foramina & contents",
+   "action": "replace",
+   "old": "Optic canal (CN II, ophthalmic a.), superior orbital fissure (III, IV, V1, VI, ophthalmic veins), rotundum (V2), ovale (V3), spinosum (middle meningeal a.)",
+   "new": "Optic canal – CN II, ophthalmic artery; superior orbital fissure – CN III, IV, VI, lacrimal/frontal/nasociliary branches of V1, superior ophthalmic vein; rotundum – V2; ovale – V3, accessory meningeal artery, lesser petrosal nerve; spinosum – middle meningeal artery and vein, meningeal branch of V3; pterygoid canal – nerve and artery of the pterygoid canal; sphenoidal emissary foramen (inconstant) – emissary vein",
+   "ref": "Plate 20 (p. 75), Plate 46 (p. 101)",
+   "reason": "Plate 20 lists superior ophthalmic vein only, plus accessory meningeal artery and lesser petrosal nerve at ovale and the meningeal branch of V3 at spinosum",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "sphenoid-bone",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Temporalis, lateral and medial pterygoids, tensor veli palatini, superior constrictor (pterygoid hamulus/raphe)",
+   "new": "Temporalis (greater wing in the temporal fossa), lateral pterygoid (infratemporal surface of greater wing and lateral pterygoid plate), medial pterygoid (medial surface of lateral plate), tensor veli palatini (scaphoid fossa and spine), superior constrictor (pterygoid hamulus), levator palpebrae superioris (lesser wing), superior oblique (body above the optic canal) and the four recti via the common tendinous ring; sphenomandibular ligament (spine)",
+   "ref": "Muscle Tables (p. 220–224), Plate 25 (p. 80)",
+   "reason": "Netter tables place levator palpebrae superioris, superior oblique and the recti on the sphenoid; sphenomandibular ligament arises from its spine",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "ethmoid-bone",
+   "field": "details:Parts",
+   "action": "replace",
+   "old": "Cribriform plate, crista galli, perpendicular plate, lamina papyracea, ethmoid air cells, superior and middle conchae",
+   "new": "Cribriform plate, crista galli, perpendicular plate, orbital plate (lamina papyracea), ethmoidal cells, superior and middle (and inconstant highest) nasal conchae, uncinate process",
+   "ref": "Plate 11 (p. 66), Plate 44 (p. 99), Plate 52 (p. 107)",
+   "reason": "Netter names the lateral wall the orbital plate and labels the uncinate process and highest concha as ethmoid parts",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "nasal-bone",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Upper lateral nasal cartilages below; procerus and nasalis overlie it",
+   "new": "Lateral processes of the septal nasal cartilage (upper lateral cartilages) attach to its lower border; procerus arises from fascia over its lower part",
+   "ref": "Plate 42 (p. 97), Muscle Tables (p. 222)",
+   "reason": "Netter names the upper lateral cartilage the lateral process of the septal cartilage; nasalis arises from the maxilla, not the nasal bone",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "maxilla",
+   "field": "details:Foramina & contents",
+   "action": "replace",
+   "old": "Infraorbital foramen – infraorbital nerve (V2) and vessels; incisive canal – nasopalatine nerve and sphenopalatine artery branches",
+   "new": "Infraorbital foramen – infraorbital nerve (V2) and vessels; incisive canal/fossa – nasopalatine nerve and the anastomosis of the posterior septal branch of the sphenopalatine artery with the greater palatine artery; posterior superior alveolar foramina (maxillary tuberosity) – posterior superior alveolar nerves and artery",
+   "ref": "Plate 19 (p. 74), Plate 13 (p. 68), Plate 47 (p. 102), Plate 61 (p. 116)",
+   "reason": "Plate 19 gives the incisive fossa contents as nasopalatine nerve plus sphenopalatine–greater palatine anastomosis; Plate 13 labels the posterior superior alveolar foramina",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "maxilla",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Buccinator, levator anguli oris, levator labii superioris, nasalis, orbicularis oris",
+   "new": "Buccinator (alveolar process opposite the molars), levator anguli oris (canine fossa), levator labii superioris (above the infraorbital foramen), levator labii superioris alaeque nasi (frontal process), nasalis (canine eminence), depressor septi nasi (incisive fossa), orbicularis oris (above the incisors), medial pterygoid (maxillary tuberosity), inferior oblique (orbital floor lateral to the nasolacrimal canal)",
+   "ref": "Muscle Tables (p. 219–222)",
+   "reason": "Netter tables add levator labii superioris alaeque nasi, depressor septi nasi, medial pterygoid (tuberosity) and inferior oblique to the maxilla",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "mandible",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Masseter, temporalis, medial and lateral pterygoids, mylohyoid, geniohyoid, genioglossus, digastric, buccinator, platysma",
+   "new": "Masseter (lateral ramus and coronoid), temporalis (coronoid process and ramus), medial pterygoid (medial ramus and angle), lateral pterygoid (pterygoid fovea), mylohyoid and superior constrictor (mylohyoid line), geniohyoid and genioglossus (mental spines), anterior digastric (digastric fossa), buccinator (alveolar process opposite the molars), depressor anguli oris, depressor labii inferioris, mentalis (incisive fossa), platysma; sphenomandibular ligament (lingula), stylomandibular ligament (angle)",
+   "ref": "Muscle Tables (p. 219–224), Plate 25 (p. 80)",
+   "reason": "Netter tables add superior constrictor (mylohyoid line), the lip depressors and mentalis; Plate 25 shows the sphenomandibular and stylomandibular ligaments",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "coronoid-process",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Temporalis tendon (medial and lateral surfaces)",
+   "new": "Temporalis tendon (medial and lateral surfaces); masseter also inserts on its lateral surface with the ramus",
+   "ref": "Muscle Tables (p. 221, 224), Plate 55 (p. 110)",
+   "reason": "Netter lists the masseter insertion as ramus of mandible and coronoid process",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "mandibular-ramus",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Masseter (lateral), medial pterygoid (medial), sphenomandibular ligament (lingula), parotid gland overlies it",
+   "new": "Masseter (lateral surface), medial pterygoid (medial surface below the mandibular foramen), temporalis (anterior ramus with the coronoid process), sphenomandibular ligament (lingula); parotid gland overlies it",
+   "ref": "Muscle Tables (p. 221, 224), Plate 55 (p. 110)",
+   "reason": "Netter shows the temporalis insertion extending onto the ramus; medial pterygoid is placed below the mandibular foramen",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "mandibular-body",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Mylohyoid, geniohyoid, genioglossus, anterior digastric, buccinator, depressor anguli oris, depressor labii inferioris, mentalis, platysma",
+   "new": "Mylohyoid and superior pharyngeal constrictor (mylohyoid line), geniohyoid (inferior mental spine), genioglossus (superior mental spine), anterior digastric (digastric fossa), buccinator (alveolar process opposite the molars), depressor anguli oris (oblique line), depressor labii inferioris (between symphysis and mental foramen), mentalis (incisive fossa), platysma (base of mandible)",
+   "ref": "Muscle Tables (p. 219–223), Plate 24 (p. 79)",
+   "reason": "Netter adds superior constrictor at the mylohyoid line and specifies each site on the body",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "hyoid-bone",
+   "field": "details:Attachments (suprahyoid)",
+   "action": "replace",
+   "old": "Mylohyoid, geniohyoid, hyoglossus, digastric (via sling), stylohyoid, middle constrictor",
+   "new": "Mylohyoid and geniohyoid (body), genioglossus (body), hyoglossus (body and greater horn), digastric (intermediate tendon in a fibrous loop on the body), stylohyoid (body–greater horn junction), middle constrictor (horns and stylohyoid ligament)",
+   "ref": "Muscle Tables (p. 219–221), Plate 69 (p. 124)",
+   "reason": "Netter lists genioglossus inserting on the hyoid; card omits it",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "thyroid-cartilage",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Thyrohyoid membrane, cricothyroid, thyrohyoid, sternothyroid, inferior constrictor, vocal ligaments, thyroepiglottic ligament",
+   "new": "Thyrohyoid membrane and median cricothyroid ligament; cricothyroid (inferior border and inferior horn), thyrohyoid and sternothyroid (oblique line), inferior constrictor (oblique line), stylopharyngeus (posterior border), thyroarytenoid and vocalis/vocal ligaments (inner surface), thyroepiglottic ligament",
+   "ref": "Muscle Tables (p. 219–224), Plate 90 (p. 145)",
+   "reason": "Netter tables add thyroarytenoid (posterior aspect of thyroid cartilage) and stylopharyngeus (posterior border); Plate 90 shows the median cricothyroid ligament",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cricoid-cartilage",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Cricothyroid, posterior and lateral cricoarytenoids, cricothyroid membrane, cricotracheal ligament, inferior constrictor",
+   "new": "Cricothyroid (arch), posterior cricoarytenoid (posterior lamina), lateral cricoarytenoid (arch), inferior constrictor including cricopharyngeus, median cricothyroid ligament and conus elasticus, cricotracheal ligament, longitudinal esophageal muscle (cricoid attachment)",
+   "ref": "Muscle Tables (p. 219–222), Plate 75 (p. 130), Plate 91 (p. 146)",
+   "reason": "Netter Plate 75 shows the cricoid attachment of the longitudinal esophageal muscle and cricopharyngeus; Plate 91 the conus elasticus",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "epiglottis",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Thyroepiglottic and hyoepiglottic ligaments, median glossoepiglottic fold, aryepiglottic muscles",
+   "new": "Thyroepiglottic ligament (to the inner thyroid lamina), hyoepiglottic ligament, median glossoepiglottic ligament, aryepiglottic part of the oblique arytenoid and thyroepiglottic part of thyroarytenoid in the aryepiglottic folds",
+   "ref": "Plate 90 (p. 145), Plate 91 (p. 146)",
+   "reason": "Netter names the aryepiglottic and thyroepiglottic muscle parts and the median glossoepiglottic ligament",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "atlas-c1",
+   "field": "details:Key features",
+   "action": "replace",
+   "old": "Anterior and posterior arches, lateral masses, long transverse processes, transverse foramina, groove for the vertebral artery on the posterior arch",
+   "new": "Anterior arch with anterior tubercle and a facet for the dens; posterior arch with posterior tubercle and groove for the vertebral artery; lateral masses with superior (occipital condyle) and inferior (axis) articular surfaces and a tubercle for the transverse ligament; long transverse processes with transverse foramina",
+   "ref": "Plate 26 (p. 81)",
+   "reason": "Plate 26 labels the anterior/posterior tubercles, facet for dens and tubercle for the transverse ligament, which the card omits",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "atlas-c1",
+   "field": "details:Ligaments",
+   "action": "replace",
+   "old": "Transverse ligament of the atlas holds the dens against the anterior arch",
+   "new": "Transverse ligament of the atlas (with superior and inferior longitudinal bands forming the cruciate ligament) holds the dens against the anterior arch; anterior and posterior atlanto-occipital membranes; alar ligaments and tectorial membrane pass over it to the occiput",
+   "ref": "Plate 29 (p. 84), Plate 30 (p. 85)",
+   "reason": "Plate 30 shows the cruciate ligament and Plate 29 the atlanto-occipital membranes",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "atlas-c1",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Rectus capitis anterior and lateralis, obliquus capitis superior and inferior, longus colli, levator scapulae",
+   "new": "Rectus capitis anterior (lateral mass), rectus capitis lateralis (transverse process), obliquus capitis superior and inferior (transverse process), rectus capitis posterior minor (posterior tubercle), longus colli superior oblique part (anterior tubercle), levator scapulae and splenius cervicis (transverse process)",
+   "ref": "Muscle Tables (p. 221–222), Back Muscle Tables (p. 270–271)",
+   "reason": "Netter tables give rectus capitis posterior minor (tubercle of posterior arch) and splenius cervicis (C1–C3); card omits them",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "axis-c2-dens",
+   "field": "details:Key features",
+   "action": "replace",
+   "old": "Dens, large bifid spinous process, superior articular facets, pars interarticularis, transverse foramina",
+   "new": "Dens with anterior articular facet (for the anterior arch of atlas) and posterior articular facet (for the transverse ligament), large bifid spinous process, superior articular facets for the atlas, interarticular part (pars), transverse foramina",
+   "ref": "Plate 26 (p. 81)",
+   "reason": "Plate 26 labels both dens facets and the interarticular part",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "axis-c2-dens",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Obliquus capitis inferior, rectus capitis posterior major, longus colli, semispinalis cervicis",
+   "new": "Obliquus capitis inferior and rectus capitis posterior major (spinous process), semispinalis cervicis and multifidus (spinous process), longus colli (body), levator scapulae and splenius cervicis (transverse process), scalenus medius (posterior tubercle)",
+   "ref": "Muscle Tables (p. 221–222), Back Muscle Tables (p. 270–271), Plate 182 (p. 264)",
+   "reason": "Netter tables place scalenus medius (C2–C7), levator scapulae (C1–C4) and splenius cervicis (C1–C3) on C2",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "typical-cervical-vertebra",
+   "field": "details:Key features",
+   "action": "replace",
+   "old": "Transverse foramen, anterior and posterior tubercles, bifid spine, uncinate processes, facets angled ~45°",
+   "new": "Transverse foramen; anterior and posterior tubercles with a groove for the spinal nerve between them (costal lamella in front); bifid spinous process; uncinate processes forming the uncovertebral joints; superior and inferior articular facets",
+   "ref": "Plate 27 (p. 82), Plate 28 (p. 83)",
+   "reason": "Plate 27 labels the groove for the spinal nerve and costal lamella; facet angle is not given by Netter",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "typical-cervical-vertebra",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Longus colli, scalenes, levator scapulae, splenius, semispinalis, multifidus",
+   "new": "Anterior tubercles – longus capitis, longus colli, scalenus anterior; posterior tubercles – scalenus medius and posterior, levator scapulae (C1–C4), splenius cervicis (C1–C3); transverse and articular processes – longissimus and iliocostalis cervicis, semispinalis, multifidus (C4–C7); spinous processes – semispinalis cervicis, spinalis, interspinales, ligamentum nuchae",
+   "ref": "Muscle Tables (p. 221–222), Back Muscle Tables (p. 270–271)",
+   "reason": "Netter tables specify tubercle-by-tubercle attachments and add longus capitis, iliocostalis/longissimus cervicis and spinalis",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "vertebra-prominens-c7",
+   "field": "details:Key features",
+   "action": "replace",
+   "old": "Long non-bifid spinous process; small transverse foramen carrying only a vein (vertebral artery enters at C6)",
+   "new": "Long non-bifid spinous process; small, often septated transverse foramen transmitting vertebral veins but usually not the vertebral artery (which enters at C6); inconspicuous anterior tubercle with a prominent posterior tubercle; uncinate processes",
+   "ref": "Plate 27 (p. 82)",
+   "reason": "Plate 27 notes the septated C7 foramen transmits vertebral veins, usually not the artery, and the inconspicuous anterior tubercle",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "vertebra-prominens-c7",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Trapezius, rhomboid minor, splenius, serratus posterior superior, ligamentum nuchae",
+   "new": "Spinous process – trapezius, rhomboid minor, splenius capitis, serratus posterior superior, semispinalis, interspinales and ligamentum nuchae; posterior tubercle – scalenus medius; articular processes – multifidus",
+   "ref": "Back Muscle Tables (p. 270–271), Muscle Tables (p. 222)",
+   "reason": "Netter tables add scalenus medius (posterior tubercles C2–C7) and multifidus (articular processes C4–C7)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "mastoid-process",
+   "field": "details:Foramina & contents",
+   "action": "replace",
+   "old": "Mastoid foramen – emissary vein to sigmoid sinus; stylomastoid foramen (CN VII) lies anteromedially",
+   "new": "Mastoid foramen – mastoid emissary vein to the sigmoid sinus and a meningeal (mastoid) branch of the occipital artery; mastoid canaliculus – auricular branch of the vagus; stylomastoid foramen (CN VII) lies anteromedially",
+   "ref": "Plate 19 (p. 74), Plate 20 (p. 75), Plate 10 (p. 65)",
+   "reason": "Netter lists an occipital artery branch with the mastoid emissary vein and the auricular branch of vagus in the mastoid canaliculus",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "mastoid-process",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Sternocleidomastoid, splenius capitis, longissimus capitis, posterior belly of digastric",
+   "new": "Sternocleidomastoid (lateral surface), splenius capitis, longissimus capitis, posterior belly of digastric (mastoid notch), occipital belly of occipitofrontalis, auricularis posterior (base)",
+   "ref": "Muscle Tables (p. 219, 221, 223), Back Muscle Tables (p. 270–271)",
+   "reason": "Netter tables add occipital belly and auricularis posterior to the mastoid process",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "zygomatic-arch",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Masseter, temporal fascia, zygomaticus major (anterior end)",
+   "new": "Masseter (along the arch), temporal fascia (upper border), zygomaticus major and minor (anterior end)",
+   "ref": "Muscle Tables (p. 221, 224), Plate 55 (p. 110)",
+   "reason": "Netter gives the zygomatic arch as origin of both zygomaticus major and minor",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "external-occipital-protuberance",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Trapezius, ligamentum nuchae; splenius capitis and SCM along the superior nuchal line",
+   "new": "Trapezius and ligamentum nuchae at the protuberance; along the superior nuchal line, occipital belly of occipitofrontalis (lateral two-thirds), sternocleidomastoid (lateral half) and splenius capitis (lateral third)",
+   "ref": "Muscle Tables (p. 221, 223), Back Muscle Tables (p. 271)",
+   "reason": "Netter tables add the occipital belly and give the extent of each attachment on the superior nuchal line",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "superior-orbital-fissure",
+   "field": "details:Contents",
+   "action": "replace",
+   "old": "CN III, IV, VI; V1 branches (lacrimal, frontal, nasociliary); superior ophthalmic vein; sympathetic fibers",
+   "new": "CN III, IV, VI; lacrimal, frontal and nasociliary branches of V1; superior ophthalmic vein",
+   "ref": "Plate 20 (p. 75)",
+   "reason": "Plate 20 lists exactly these; sympathetic fibers are not shown through the fissure",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "foramen-rotundum",
+   "field": "details:Contents",
+   "action": "replace",
+   "old": "Maxillary nerve (CN V2); small emissary vein and artery of the foramen rotundum",
+   "new": "Maxillary nerve (CN V2); a small arterial branch to the foramen rotundum from the cavernous internal carotid artery",
+   "ref": "Plate 20 (p. 75), Plate 148 (p. 203)",
+   "reason": "Plate 20 lists only V2; Plate 148 shows the branch to foramen rotundum from the cavernous ICA; no emissary vein is shown",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "foramen-ovale",
+   "field": "details:Contents",
+   "action": "replace",
+   "old": "Mandibular nerve (V3), accessory meningeal artery, lesser petrosal nerve, emissary vein (OVALE mnemonic)",
+   "new": "Mandibular nerve (V3), accessory meningeal artery, lesser petrosal nerve",
+   "ref": "Plate 19 (p. 74), Plate 20 (p. 75)",
+   "reason": "Plates 19–20 list these three; Netter shows the emissary vein of Vesalius through the separate sphenoidal emissary foramen, not the ovale",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "foramen-lacerum",
+   "field": "details:Contents",
+   "action": "replace",
+   "old": "Fibrocartilage plug; greater petrosal and deep petrosal nerves unite above it to form the nerve of the pterygoid canal; meningeal branch of the ascending pharyngeal artery; emissary veins (cavernous sinus to pterygoid plexus)",
+   "new": "Fibrocartilage plug in life; the greater petrosal nerve passes over it (joining the deep petrosal nerve to form the nerve of the pterygoid canal) and the internal carotid artery crosses its superior surface; no structure is shown traversing it",
+   "ref": "Plate 19 (p. 74), Plate 20 (p. 75), Plate 46 (p. 101)",
+   "reason": "Plates 19–20 list only the greater petrosal nerve passing over the foramen; the ascending pharyngeal meningeal branch and emissary veins are not shown here",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "foramen-lacerum",
+   "field": "details:Key features",
+   "action": "replace",
+   "old": "No major structure traverses it in life; only a meningeal branch of the ascending pharyngeal artery and small emissary veins pierce the cartilage plug. The ICA crosses its roof without passing through it",
+   "new": "No structure traverses it in life; the ICA crosses its roof without passing through it, and the cavernous ICA gives a recurrent artery of the foramen lacerum",
+   "ref": "Plate 20 (p. 75), Plate 148 (p. 203)",
+   "reason": "Netter does not show vessels piercing the plug; Plate 148 labels the recurrent artery of foramen lacerum",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "jugular-foramen",
+   "field": "details:Contents",
+   "action": "replace",
+   "old": "Anterior: inferior petrosal sinus, CN IX; middle: CN X, XI; posterior: sigmoid sinus becoming the internal jugular vein (jugular bulb)",
+   "new": "Anterior: inferior petrosal sinus and CN IX; middle: CN X and XI; posterior: sigmoid sinus becoming the internal jugular vein (superior bulb); posterior meningeal artery (from the ascending pharyngeal) enters with them",
+   "ref": "Plate 19 (p. 74), Plate 20 (p. 75), Plate 147 (p. 202)",
+   "reason": "Plates 19–20 list the posterior meningeal artery through the jugular foramen; card omits it",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "hypoglossal-canal",
+   "field": "details:Contents",
+   "action": "replace",
+   "old": "Hypoglossal nerve (CN XII), meningeal branch of the ascending pharyngeal artery, emissary vein",
+   "new": "Hypoglossal nerve (CN XII); the emissary vein and meningeal branch of the ascending pharyngeal artery use the adjacent condylar canal",
+   "ref": "Plate 19 (p. 74), Plate 20 (p. 75)",
+   "reason": "Plates 19–20 list only CN XII in the hypoglossal canal and assign the emissary vein and ascending pharyngeal meningeal branch to the condylar canal",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "foramen-magnum",
+   "field": "details:Contents",
+   "action": "replace",
+   "old": "Medulla and meninges, vertebral arteries, anterior and posterior spinal arteries, spinal roots of CN XI, tectorial membrane, apical and alar ligaments",
+   "new": "Medulla oblongata and meninges, vertebral arteries with their venous plexus and anterior and posterior meningeal branches, spinal roots of CN XI; the tectorial membrane and apical ligament of the dens pass up through it to the clivus",
+   "ref": "Plate 19 (p. 74), Plate 20 (p. 75), Plate 30 (p. 85)",
+   "reason": "Plate 20 lists the vertebral venous plexus and meningeal branches of the vertebral arteries; spinal arteries are not listed and the alar ligaments attach to the condyles rather than passing through",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "malleus",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Tensor tympani (CN V3) inserts on the handle; dampens loud sounds",
+   "new": "Tensor tympani (CN V3) inserts on the handle and draws it medially; superior and anterior ligaments of the malleus suspend the head and neck; handle embedded in the tympanic membrane down to the umbo",
+   "ref": "Plate 106 (p. 161), Plate BP27 (p. 235), Muscle Tables (p. 224)",
+   "reason": "Netter labels the superior and anterior ligaments of the malleus and the umbo",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "incus",
+   "field": "details:Attachments",
+   "action": "add",
+   "old": null,
+   "new": "Superior and posterior ligaments of the incus; short limb seated posteriorly in the epitympanic recess",
+   "ref": "Plate 106 (p. 161), Plate BP27 (p. 235)",
+   "reason": "Netter labels the superior and posterior ligaments of the incus; card has no attachments field",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "ethmoid-sinus-air-cells",
+   "field": "details:Drains to",
+   "action": "replace",
+   "old": "Anterior and middle cells to middle meatus; posterior cells to superior meatus",
+   "new": "Anterior cells into the semilunar hiatus and middle cells onto the ethmoidal bulla (both middle meatus); posterior cells to the superior meatus",
+   "ref": "Plate 43 (p. 98), Plate 44 (p. 99), Plate 52 (p. 107)",
+   "reason": "Netter specifies the semilunar hiatus and ethmoidal bulla as the openings within the middle meatus",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "anterior-fontanelle",
+   "field": "details:Key features",
+   "action": "replace",
+   "old": "Largest fontanelle (~2-3 cm); normally flat and soft with a palpable pulse",
+   "new": "Largest fontanelle (~2-3 cm); normally flat and soft with a palpable pulse; the other fontanelles are the posterior (at lambda) and the paired sphenoidal and mastoid; a metopic suture separates the frontal halves in the newborn",
+   "ref": "Plate 21 (p. 76)",
+   "reason": "Plate 21 labels the posterior, sphenoidal and mastoid fontanelles and the metopic suture; card omits them",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cranial-sutures",
+   "field": "details:Key landmarks",
+   "action": "replace",
+   "old": "Bregma (coronal + sagittal), lambda (sagittal + lambdoid), pterion, asterion",
+   "new": "Bregma (coronal + sagittal), lambda (sagittal + lambdoid), pterion, asterion; squamous suture (temporal–parietal); metopic suture between the frontal halves in the newborn; sutural (wormian) bones along the lambdoid",
+   "ref": "Plate 13 (p. 68), Plate 16 (p. 71), Plate 21 (p. 76)",
+   "reason": "Netter labels the squamous and metopic sutures and sutural (wormian) bones",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "hard-palate",
+   "field": "details:Foramina & contents",
+   "action": "replace",
+   "old": "Incisive foramen (nasopalatine nerve, V2); greater palatine (greater palatine nerve/artery); lesser palatine (lesser palatine nerves)",
+   "new": "Incisive fossa/canal – nasopalatine nerve with the anastomosis of the posterior septal (sphenopalatine) and greater palatine arteries; greater palatine foramen – greater palatine nerve and vessels; lesser palatine foramina – lesser palatine nerves and vessels",
+   "ref": "Plate 19 (p. 74), Plate 47 (p. 102), Plate 67 (p. 122)",
+   "reason": "Plate 19 lists vessels with each palatine foramen and the arterial anastomosis in the incisive canal",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cranial-fossae",
+   "field": "details:Middle fossa",
+   "action": "replace",
+   "old": "Greater wings and body of sphenoid, petrous/squamous temporal; holds temporal lobes, pituitary; foramina rotundum, ovale, spinosum, carotid canal",
+   "new": "Greater wings and body of sphenoid, petrous/squamous temporal; holds temporal lobes, pituitary; optic canal, superior orbital fissure, foramina rotundum, ovale, spinosum and lacerum, carotid canal, hiatuses for the greater and lesser petrosal nerves",
+   "ref": "Plate 18 (p. 73), Plate 20 (p. 75)",
+   "reason": "Plate 20 places the optic canal, superior orbital fissure, lacerum and petrosal hiatuses in the middle fossa floor",
+   "confidence": "netter-explicit"
+  }
+ ],
+ "missing": [
+  {
+   "name": "Inferior orbital fissure (orbit to pterygopalatine/infratemporal fossa)",
+   "ref": "Plate 11 (p. 66), Plate 13 (p. 68), Plate 23 (p. 78)"
+  },
+  {
+   "name": "Pterygopalatine fossa and pterygomaxillary fissure",
+   "ref": "Plate 13 (p. 68), Plate 23 (p. 78)"
+  },
+  {
+   "name": "Pterygoid process: medial and lateral plates, hamulus, pterygoid fossa, scaphoid fossa",
+   "ref": "Plate 17 (p. 72), Plate 23 (p. 78)"
+  },
+  {
+   "name": "Infratemporal fossa and infratemporal crest",
+   "ref": "Plate 13 (p. 68)"
+  },
+  {
+   "name": "Temporal fossa with superior and inferior temporal lines",
+   "ref": "Plate 13 (p. 68), Plate 22 (p. 77)"
+  },
+  {
+   "name": "Sphenopalatine foramen (as its own landmark)",
+   "ref": "Plate 13 (p. 68), Plate 15 (p. 70), Plate 44 (p. 99)"
+  },
+  {
+   "name": "Petrotympanic fissure (chorda tympani)",
+   "ref": "Plate 17 (p. 72), Plate 19 (p. 74)"
+  },
+  {
+   "name": "Inferior tympanic canaliculus (tympanic branch of CN IX) and mastoid canaliculus (auricular branch of CN X)",
+   "ref": "Plate 17 (p. 72), Plate 19 (p. 74)"
+  },
+  {
+   "name": "Condylar canal (emissary vein, meningeal branch of ascending pharyngeal artery)",
+   "ref": "Plate 17 (p. 72), Plate 20 (p. 75)"
+  },
+  {
+   "name": "Pterygoid (vidian) canal",
+   "ref": "Plate 46 (p. 101), Plate 107 (p. 162)"
+  },
+  {
+   "name": "Sphenoidal emissary foramen (of Vesalius)",
+   "ref": "Plate 20 (p. 75)"
+  },
+  {
+   "name": "Hiatuses for the greater and lesser petrosal nerves",
+   "ref": "Plate 18 (p. 73), Plate 20 (p. 75)"
+  },
+  {
+   "name": "Opening of the vestibular aqueduct (endolymphatic duct)",
+   "ref": "Plate 15 (p. 70), Plate 20 (p. 75)"
+  },
+  {
+   "name": "Foramen cecum and crista galli",
+   "ref": "Plate 18 (p. 73), Plate 20 (p. 75)"
+  },
+  {
+   "name": "Anterior and posterior ethmoidal foramina",
+   "ref": "Plate 11 (p. 66), Plate 20 (p. 75)"
+  },
+  {
+   "name": "Clivus and pharyngeal tubercle (basilar part of occipital bone)",
+   "ref": "Plate 17 (p. 72), Plate 18 (p. 73)"
+  },
+  {
+   "name": "Occipital condyles, superior/inferior nuchal lines, external occipital crest",
+   "ref": "Plate 17 (p. 72), Plate 23 (p. 78)"
+  },
+  {
+   "name": "Posterior, sphenoidal and mastoid fontanelles; metopic suture",
+   "ref": "Plate 21 (p. 76)"
+  },
+  {
+   "name": "Asterion, lambda, bregma, sutural (wormian) bones",
+   "ref": "Plate 13 (p. 68), Plate 16 (p. 71)"
+  },
+  {
+   "name": "Articular tubercle and mandibular fossa of the temporal bone",
+   "ref": "Plate 13 (p. 68), Plate 25 (p. 80)"
+  },
+  {
+   "name": "Pterygomandibular raphe",
+   "ref": "Plate 22 (p. 77), Plate 56 (p. 111)"
+  },
+  {
+   "name": "Uncovertebral joints (clefts of Luschka) and uncinate processes as their own card",
+   "ref": "Plate 27 (p. 82), Plate 28 (p. 83), Plate BP18 (p. 226)"
+  },
+  {
+   "name": "Carotid tubercle of Chassaignac (C6 anterior tubercle)",
+   "ref": "Plate 28 (p. 83), Plate 29 (p. 84)"
+  },
+  {
+   "name": "Craniocervical ligaments: cruciate, alar, apical, tectorial membrane, atlanto-occipital membranes, ligamentum nuchae",
+   "ref": "Plate 29 (p. 84), Plate 30 (p. 85)"
+  },
+  {
+   "name": "Corniculate, cuneiform and triticeal cartilages",
+   "ref": "Plate 90 (p. 145), Plate 91 (p. 146)"
+  },
+  {
+   "name": "Cricothyroid joint, median cricothyroid ligament, thyrohyoid membrane, conus elasticus",
+   "ref": "Plate 90 (p. 145), Plate 91 (p. 146)"
+  },
+  {
+   "name": "Tympanic membrane (pars tensa/flaccida, umbo), promontory, pyramidal eminence, tegmen tympani, epitympanic recess, mastoid antrum",
+   "ref": "Plate 106 (p. 161), Plate 107 (p. 162), Plate BP27 (p. 235)"
+  },
+  {
+   "name": "Oval (vestibular) and round (cochlear) windows",
+   "ref": "Plate 108 (p. 163), Plate 109 (p. 164)"
+  },
+  {
+   "name": "Bony labyrinth: cochlea, vestibule, semicircular canals, arcuate eminence",
+   "ref": "Plate 18 (p. 73), Plate 108 (p. 163), Plate 110 (p. 165)"
+  },
+  {
+   "name": "Nasal cartilages (septal, lateral process, major and minor alar)",
+   "ref": "Plate 42 (p. 97)"
+  },
+  {
+   "name": "Lateral nasal wall landmarks: superior/middle meatus, sphenoethmoidal recess, semilunar hiatus, ethmoidal bulla, uncinate process, agger nasi",
+   "ref": "Plate 43 (p. 98), Plate 44 (p. 99)"
+  },
+  {
+   "name": "Trigeminal impression, arcuate eminence, carotid groove, prechiasmatic groove",
+   "ref": "Plate 18 (p. 73)"
+  },
+  {
+   "name": "Jugular process of the occipital bone",
+   "ref": "Plate 37 (p. 92)"
+  }
+ ],
+ "notes": "All 69 cards compared against the extracted Netter 7e text (Plates 11–30, 43–52, 55–59, 61, 64, 67, 69, 75, 81, 90–93, 97–98, 105–110, 112, 115, 133–134, 139, 147–148, 154, BP17–19, BP22, BP24, BP27, clinical tables p. 216–218 and 269, muscle tables p. 219–224 and 270–271). Foramen contents were matched to Plates 19–20 strictly, so several items that are true but not drawn by Netter were removed (sympathetic fibers at the superior orbital fissure, emissary vein at the foramen ovale, emissary vein at the foramen rotundum, ascending pharyngeal meningeal branch and emissary veins at the foramen lacerum, spinal arteries and alar ligaments at the foramen magnum); the editor may prefer to keep them with a non-Netter source. Netter assigns the emissary vein and meningeal branch of the ascending pharyngeal artery to the condylar canal, not the hypoglossal canal; many other texts put the meningeal branch in the hypoglossal canal. Items retained despite not appearing on Plates 19–20 because another Netter plate shows them: stylomastoid artery with CN VII (Plates 76, 107), internal carotid venous plexus in the carotid canal (Plate 64), vertebral sympathetic plexus in the transverse foramina (Plate 141), labyrinthine artery near AICA (Plates 147, 154). No name changes needed; Netter uses 'orbital plate of ethmoid' for lamina papyracea, 'interarticular part' for pars interarticularis, 'vestibular (oval) window' and 'lateral process of septal nasal cartilage' for upper lateral cartilage, noted in the relevant new values. Netter is silent on numeric facts (pterion measurements, foramen magnum size, mandibular angle, fontanelle closure ages, frontal sinus onset age, facet angles, TMJ compartments, Le Fort/Jefferson/odontoid classifications, Eagle, Ludwig, mastoiditis, blowout mechanism details), so functions and pearls were left unchanged; the clinical tables confirm pterion fracture/MMA epidural hematoma, hangman's fracture mechanism, olfactory avulsion at the cribriform plate, cricothyrotomy landmarks, otosclerosis and orbital blowout (medial and/or inferior walls, margin intact). Netter Plate 27 footnote supports the C7 transverse foramen transmitting vertebral veins but usually not the artery. Tracheal rings, sella turcica, optic canal, carotid canal, stylomastoid foramen, supraorbital/infraorbital/mental foramina, external acoustic meatus, stapes, maxillary/frontal/sphenoid sinuses, TMJ, condylar process, mandibular angle, alveolar process, arytenoids, atlanto-occipital and atlanto-axial joints, transverse foramina, pterion, styloid process, cribriform plate, internal acoustic meatus, lacrimal, zygomatic, palatine, inferior concha, vomer, parietal, orbital floor and foramen spinosum cards agree with Netter as written."
+}

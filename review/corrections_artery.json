@@ -1,0 +1,449 @@
+{
+ "category": "artery",
+ "verified": 39,
+ "corrections": [
+  {
+   "id": "internal-carotid-artery",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "None in the neck. Intracranially: ophthalmic, posterior communicating, anterior choroidal, anterior and middle cerebral arteries.",
+   "new": "None in the neck. Petrous part: caroticotympanic artery. Cavernous part: meningohypophyseal trunk (tentorial, dorsal meningeal and inferior hypophyseal branches) and the inferolateral trunk (artery to the inferior cavernous sinus). Cerebral part: ophthalmic, superior hypophyseal, posterior communicating and anterior choroidal arteries, then the terminal anterior and middle cerebral arteries.",
+   "ref": "Plate 148 (p. 203); Plate 151 (p. 206)",
+   "reason": "Netter labels petrous and cavernous branches (caroticotympanic, meningohypophyseal trunk, inferolateral trunk) and superior hypophyseal arteries that the card omits.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "superior-thyroid-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Upper thyroid lobe, larynx above the vocal cords, infrahyoid muscles, SCM.",
+   "new": "Upper pole of the thyroid; larynx via the superior laryngeal and cricothyroid arteries (the intrinsic laryngeal muscles, including cricothyroid, are shared with the inferior thyroid artery); infrahyoid muscles (sternohyoid, sternothyroid, thyrohyoid, omohyoid); SCM; inferior pharyngeal constrictor.",
+   "ref": "Muscle tables (pp. 219-224); Plate 87 (p. 142)",
+   "reason": "Muscle tables list superior thyroid branches to the infrahyoid muscles, SCM, inferior constrictor and all intrinsic laryngeal muscles (jointly with inferior thyroid), not only 'larynx above the cords'.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "ascending-pharyngeal-artery",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Pharyngeal, inferior tympanic (through tympanic canaliculus), and meningeal branches (via jugular foramen and hypoglossal canal).",
+   "new": "Pharyngeal and tonsillar branches, prevertebral (muscular) branches, inferior tympanic artery (through the tympanic canaliculus), and posterior meningeal branches (via the jugular foramen and hypoglossal canal).",
+   "ref": "Plate 72 (p. 127); Plate 112 (p. 167); Plate 147 (p. 202); muscle tables (p. 221)",
+   "reason": "Netter labels a tonsillar branch (Plate 72), prevertebral branches (longus colli table) and names the meningeal branch 'posterior meningeal' (Plate 147).",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "lingual-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Tongue, sublingual gland, floor of mouth, palatine tonsil (dorsal lingual).",
+   "new": "Intrinsic tongue muscles (deep lingual); extrinsic tongue muscles, sublingual gland, floor of mouth, mylohyoid and geniohyoid (sublingual); palatine tonsil and pharyngeal constrictors (dorsal lingual); hyoid and infrahyoid muscles, omohyoid and sternohyoid (suprahyoid/hyoid branch).",
+   "ref": "Muscle tables (pp. 219-224); Plate 70 (p. 125); Plate 72 (p. 127)",
+   "reason": "Muscle tables credit the sublingual branch with genioglossus, hyoglossus, styloglossus, geniohyoid and mylohyoid, the deep lingual with intrinsic muscles, the hyoid branch with omohyoid/sternohyoid and dorsal lingual with the constrictors.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "facial-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Submandibular gland, tonsil, soft palate, lips, cheek, external nose; anastomoses with ophthalmic artery at the medial canthus.",
+   "new": "Submandibular gland; palatine tonsil, soft palate muscles and pharyngeal wall (ascending palatine, tonsillar); anterior belly of digastric, mylohyoid, genioglossus/hyoglossus and platysma (submental); stylohyoid; masseter and medial pterygoid; buccinator and the muscles of facial expression of the lips, nose and cheek (labial, lateral nasal, angular); anastomoses with the ophthalmic artery at the medial canthus.",
+   "ref": "Muscle tables (pp. 219-224); Plate 57 (p. 112); Plate 83 (p. 138)",
+   "reason": "Muscle tables list facial-artery branches to buccinator, masseter, medial pterygoid, stylohyoid, digastric (submental), mylohyoid, platysma, the palatal muscles (ascending palatine) and the labial/nasal/angular territories.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "occipital-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Posterior scalp, SCM, posterior neck muscles, posterior fossa dura; collateral to vertebral artery.",
+   "new": "Posterior scalp (occipitalis, descending branch), SCM, posterior belly of digastric and stylohyoid, rectus capitis lateralis and deep posterior neck muscles, mastoid and posterior fossa dura (mastoid and meningeal branches); descending branch anastomoses with the deep cervical artery (collateral to the vertebral).",
+   "ref": "Muscle tables (pp. 219-224); Plate 112 (p. 167); Plate BP23 (p. 231)",
+   "reason": "Muscle tables credit occipital-artery branches to posterior belly of digastric, stylohyoid, rectus capitis lateralis and occipitalis; Plate 112/BP23 label mastoid branch and the deep cervical anastomosis.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "posterior-auricular-artery",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Stylomastoid artery (enters stylomastoid foramen with CN VII), auricular and occipital branches.",
+   "new": "Stylomastoid artery (enters the stylomastoid foramen with CN VII; gives posterior tympanic and stapedial branches), auricular branch, occipital branch and muscular branches.",
+   "ref": "Plate 107 (p. 162); Plate 76 (p. 131); muscle tables (pp. 219-224)",
+   "reason": "Plate 107 labels the posterior tympanic and stapedial branches of the stylomastoid artery; tables name auricular, occipital and muscular branches.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "posterior-auricular-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Auricle, scalp posterior to the ear, parotid, facial nerve in its canal, tympanic cavity and mastoid air cells.",
+   "new": "Auricle and auricular muscles, scalp behind the ear (occipitalis), SCM, posterior belly of digastric, parotid, facial nerve in its canal, stapedius, tympanic cavity and mastoid air cells.",
+   "ref": "Muscle tables (pp. 219-224); Plate 107 (p. 162)",
+   "reason": "Muscle tables list posterior auricular branches to the auricular muscles, posterior belly of digastric, occipitalis, SCM (occipital branch) and stapedius.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "maxillary-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Mandible and lower teeth, maxilla and upper teeth, muscles of mastication, dura, nasal cavity, palate, middle ear.",
+   "new": "Mandible and lower teeth (inferior alveolar), maxilla and upper teeth (superior alveolar), muscles of mastication (deep temporal, masseteric, pterygoid branches), buccinator (buccal), dura (middle and accessory meningeal), external and middle ear including tensor tympani and stapedius (deep auricular, anterior tympanic, superior tympanic), nasal cavity (sphenopalatine), hard and soft palate and tonsil (descending/greater and lesser palatine).",
+   "ref": "Plate 57 (p. 112); muscle tables (pp. 219-224)",
+   "reason": "Muscle tables assign buccinator (buccal branch), tensor tympani (superior tympanic branch of middle meningeal), stapedius and the soft-palate muscles (descending palatine) to maxillary branches; the card's list is less specific.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "superficial-temporal-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Parotid, TMJ, auricle, temporalis, lateral scalp and forehead.",
+   "new": "Parotid, TMJ, auricle and auricular muscles (parietal branch), masseter (transverse facial), temporalis (middle temporal), orbicularis oculi and corrugator supercilii (zygomatic branches), frontalis and the lateral scalp and forehead (frontal branch).",
+   "ref": "Muscle tables (pp. 219-224); Plate 10 (p. 65)",
+   "reason": "Muscle tables credit the STA with the auricular muscles, masseter (via transverse facial), orbicularis oculi, corrugator supercilii and frontalis in addition to temporalis and scalp.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "middle-meningeal-artery",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Frontal (anterior) branch deep to pterion; parietal (posterior) branch; petrosal branch to facial nerve; superior tympanic; orbital anastomotic branch.",
+   "new": "Frontal (anterior) branch deep to the pterion; parietal (posterior) branch; superficial petrosal branch (runs with the greater petrosal nerve to the facial nerve); superior tympanic branch (to tensor tympani); orbital anastomotic branch to the lacrimal artery (recurrent meningeal).",
+   "ref": "Plate 112 (p. 167); Plate 107 (p. 162); muscle tables (p. 224)",
+   "reason": "Netter names the petrosal vessel 'superficial petrosal artery' with the greater petrosal nerve and the 'superior tympanic branch of middle meningeal' to tensor tympani; the orbital link is the recurrent meningeal branch of the lacrimal artery.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "middle-meningeal-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Dura mater and bone of the middle cranial fossa and calvaria (not the brain).",
+   "new": "Dura mater and bone of the middle cranial fossa and calvaria (not the brain); tensor tympani (superior tympanic branch) and stapedius; facial nerve in the facial canal (superficial petrosal branch).",
+   "ref": "Muscle tables (pp. 223-224); Plate 107 (p. 162)",
+   "reason": "Muscle tables list the middle meningeal (superior tympanic branch) as blood supply of tensor tympani and stapedius.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "inferior-alveolar-artery",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Mylohyoid (before entering the canal), dental branches, incisive branch, mental artery.",
+   "new": "Lingual branch (near its origin, to the tongue mucosa), mylohyoid branch (before entering the canal, with the nerve to mylohyoid), dental branches, incisive branch, mental branch (exits the mental foramen).",
+   "ref": "Plate 83 (p. 138); Plate 25 (p. 80); Plate 57 (p. 112)",
+   "reason": "Plate 83 labels 'Inferior alveolar artery and lingual branch'; Netter also names the mylohyoid and mental branches.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "infraorbital-artery",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Orbital branches (to inferior rectus/oblique and the lacrimal sac), anterior superior alveolar arteries (to upper anterior teeth), and terminal facial branches.",
+   "new": "Orbital branches (to inferior rectus/inferior oblique and the lacrimal sac), middle and anterior superior alveolar arteries (descend in the maxillary sinus wall to the premolar and anterior teeth), and terminal facial branches to the lower eyelid, nose and upper lip.",
+   "ref": "Plate 57 (p. 112); Plate 63 (p. 118)",
+   "reason": "Netter labels posterior, middle and anterior superior alveolar arteries, with the anterior and middle arising from the infraorbital (Plate 63); the card omits the middle superior alveolar.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "infraorbital-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Lower eyelid, lacrimal sac, side of nose, upper lip, cheek, maxillary sinus mucosa, upper incisors and canines.",
+   "new": "Lower eyelid, lacrimal sac, side of the nose, upper lip, cheek, maxillary sinus mucosa, upper premolars (middle superior alveolar) and incisors and canines (anterior superior alveolar).",
+   "ref": "Plate 63 (p. 118); Plate 57 (p. 112)",
+   "reason": "Adds the premolar territory of the middle superior alveolar artery that Netter shows arising from the infraorbital.",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "labial-arteries",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Superior labial: septal branch to the anterior nasal septum (Kiesselbach plexus) and alar branch; both give mucosal and muscular branches.",
+   "new": "Superior labial: nasal septal branch to the anterior nasal septum (Kiesselbach plexus). Alar branches to the nose come from the lateral nasal branch of the facial artery, not from the superior labial. Both labial arteries give muscular and mucosal branches.",
+   "ref": "Plate 47 (p. 102); Plate 42 (p. 97)",
+   "reason": "Plate 47 labels 'Alar branches of lateral nasal branch (of facial artery)' and 'Nasal septal branch of superior labial branch'; the card attributes the alar branch to the superior labial.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "labial-arteries",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Upper and lower lips, labial glands and mucosa, anterior nasal septum and ala.",
+   "new": "Upper and lower lips: orbicularis oris, levator labii superioris and levator anguli oris, risorius (superior labial); depressor anguli oris, depressor labii inferioris, mentalis (inferior labial); labial glands and mucosa; nasalis, depressor septi and the anterior nasal septum (superior labial septal branch).",
+   "ref": "Muscle tables (pp. 219-224); Plate 47 (p. 102)",
+   "reason": "Muscle tables assign the lip elevators, risorius, nasalis and depressor septi to the superior labial and the lip depressors and mentalis to the inferior labial artery; ala is supplied by the lateral nasal branch.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "angular-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Medial cheek, lower eyelid, lacrimal sac and dorsum of the nose.",
+   "new": "Medial cheek, levator labii superioris and levator labii superioris alaeque nasi, procerus, lower eyelid, lacrimal sac and dorsum/root of the nose.",
+   "ref": "Muscle tables (pp. 220, 222); Plate 99 (p. 154)",
+   "reason": "Muscle tables list angular branches of the facial artery as supply of procerus and the levator labii superioris muscles.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "vertebral-artery",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Spinal and muscular branches in the neck; intracranially: anterior spinal artery, posterior spinal artery (often from PICA), posterior inferior cerebellar artery (PICA), meningeal branches.",
+   "new": "Cervical part: spinal (segmental medullary) and muscular branches to the prevertebral and suboccipital muscles. Intracranial part: anterior and posterior meningeal branches, posterior inferior cerebellar artery (PICA), posterior spinal artery (from the vertebral or from PICA) and anterior spinal artery, which unites with its fellow before the vertebrals form the basilar.",
+   "ref": "Plate 154 (p. 209); Plate 149 (p. 204); Plate 112 (p. 167); muscle tables (p. 221)",
+   "reason": "Netter labels both anterior and posterior meningeal branches of the vertebral, shows the posterior spinal artery arising from the vertebral (Plate 154) and labels segmental medullary and muscular branches.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "vertebral-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Medulla, cerebellum, cervical spinal cord and deep neck muscles; posterior circulation via the basilar.",
+   "new": "Medulla, cerebellum (PICA), cervical spinal cord (spinal and segmental medullary branches), prevertebral and suboccipital neck muscles (longus colli/capitis, recti capitis), and posterior fossa dura (meningeal branches); posterior circulation via the basilar.",
+   "ref": "Muscle tables (p. 221-222); Plate 112 (p. 167)",
+   "reason": "Muscle tables list muscular branches of the vertebral artery to longus capitis, longus colli, rectus capitis anterior and lateralis; Plate 112 labels its meningeal branches.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "thyrocervical-trunk",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Thyroid, larynx, trachea, esophagus, neck muscles, scapular region.",
+   "new": "Thyroid and parathyroids, larynx, trachea, esophagus and pharynx (inferior thyroid); scalene and prevertebral muscles (ascending cervical); SCM and platysma (suprascapular); trapezius, levator scapulae and rhomboids (transverse cervical); scapular region.",
+   "ref": "Muscle tables (pp. 221-223); Plate 40 (p. 95); Plate BP23 (p. 231)",
+   "reason": "Muscle tables assign the scalenes and longus muscles to the ascending cervical branch and SCM/platysma to the suprascapular artery.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "inferior-thyroid-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Lower thyroid lobe, both parathyroid glands (superior and inferior), larynx below the vocal cords, trachea, esophagus, pharynx.",
+   "new": "Lower thyroid lobe, both parathyroid glands (superior and inferior), larynx via the inferior laryngeal artery (the intrinsic laryngeal muscles, including cricothyroid, are shared with the superior thyroid artery), trachea, esophagus, pharynx; via the ascending cervical artery the scalenes, longus colli/capitis and other prevertebral muscles.",
+   "ref": "Muscle tables (pp. 219-224); Plate 89 (p. 144); Plate 92 (p. 147); Clinical table 2.2 (p. 217)",
+   "reason": "Muscle tables list superior and inferior thyroid arteries jointly for every intrinsic laryngeal muscle, and the ascending cervical branch for scalenus anterior/medius/posterior and longus muscles; the clinical table stresses parathyroid supply.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "transverse-cervical-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Trapezius, levator scapulae, rhomboids, skin of the posterior triangle; part of the scapular anastomosis.",
+   "new": "Trapezius (superficial branch, with CN XI), levator scapulae and rhomboids (deep branch/dorsal scapular), scalenus posterior (superficial branch), skin of the posterior triangle; part of the scapular anastomosis.",
+   "ref": "Muscle tables (p. 222); Plate BP23 (p. 231)",
+   "reason": "Muscle table lists the superficial branch of the transverse cervical artery as supply of scalenus posterior.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "suprascapular-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Supraspinatus, infraspinatus, shoulder joint, clavicle and scapula.",
+   "new": "Supraspinatus and infraspinatus, shoulder and acromioclavicular joints, clavicle and scapula; in the neck, muscular branches to SCM and platysma.",
+   "ref": "Muscle tables (pp. 222-223); Plate BP23 (p. 231)",
+   "reason": "Muscle tables list the suprascapular artery as blood supply of platysma and (muscular branch) of SCM.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "ophthalmic-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Retina, choroid, extraocular muscles, lacrimal gland, eyelids, forehead and scalp, ethmoid cells, anterior nasal septum and dura of the anterior fossa.",
+   "new": "Retina (central retinal), choroid, iris and ciliary body including the ciliary, sphincter and dilator pupillae muscles (posterior and anterior ciliary), all extraocular muscles and levator palpebrae superioris (muscular branches), lacrimal gland, eyelids, forehead and scalp, ethmoid cells, frontal sinus and anterior nasal cavity (ethmoidal), and dura of the anterior fossa (anterior meningeal).",
+   "ref": "Muscle tables (pp. 219-224); Plate 99 (p. 154); Plate 104 (p. 159)",
+   "reason": "Muscle tables list the ophthalmic artery as blood supply of every extraocular muscle, levator palpebrae superioris and the intrinsic eye muscles (ciliary, sphincter and dilator pupillae).",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "circle-of-willis",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Anterior cerebral (medial frontal/parietal, leg area), middle cerebral (lateral hemisphere, face/arm area, Broca and Wernicke), posterior cerebral (occipital, medial temporal), lenticulostriate and thalamoperforating perforators.",
+   "new": "Anterior cerebral (medial frontal/parietal, leg area; gives the recurrent artery of Heubner and anteromedial central perforators), middle cerebral (lateral hemisphere, face/arm area, Broca and Wernicke; anterolateral central/lenticulostriate perforators), posterior cerebral (occipital, medial temporal; thalamoperforating and posteromedial central perforators, posterior choroidal arteries), anterior choroidal, and superior/inferior hypophyseal and hypothalamic branches.",
+   "ref": "Plate 151 (p. 206); Plate 150 (p. 205); Plate 154 (p. 209)",
+   "reason": "Plate 151 labels the recurrent artery of Heubner, anteromedial/anterolateral/posteromedial central arteries, anterior choroidal, thalamoperforating and hypophyseal arteries as circle branches; the card lists only lenticulostriate and thalamoperforating.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "posterior-communicating-artery",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Anterior thalamoperforating arteries to the anterior/medial thalamus, hypothalamus, optic tract and posterior limb of the internal capsule; premammillary (tuberothalamic) artery.",
+   "new": "Posteromedial central (perforating) arteries to the hypothalamus, optic tract and anterior/medial thalamus, including the thalamotuberal (premammillary) artery; the thalamoperforating arteries proper arise from the P1 segment of the posterior cerebral artery.",
+   "ref": "Plate 151 (p. 206); Plate 154 (p. 209)",
+   "reason": "Netter names the PComm perforator the 'thalamotuberal artery' and labels the thalamoperforating artery on P1, not on the PComm.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "anterior-communicating-artery",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Small perforators (subcallosal / median callosal arteries) to the optic chiasm, lamina terminalis, anterior hypothalamus, columns of the fornix, septum pellucidum and genu/rostrum of the corpus callosum.",
+   "new": "Anteromedial central (perforating) arteries to the optic chiasm, lamina terminalis, anterior hypothalamus, columns of the fornix, septum pellucidum and genu/rostrum of the corpus callosum (subcallosal/median callosal branches).",
+   "ref": "Plate 151 (p. 206)",
+   "reason": "Netter's name for the perforators from the AComm/A1 region is 'anteromedial central (perforating) arteries'.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "tonsillar-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Palatine tonsil (main supply) and the lower tonsillar bed. Minor contributors: ascending palatine, ascending pharyngeal, dorsal lingual and lesser palatine (from descending palatine) arteries.",
+   "new": "Palatine tonsil (main supply) and the lower tonsillar bed; with the ascending palatine, the superior and middle pharyngeal constrictors and stylopharyngeus. Minor tonsillar contributors: ascending palatine, ascending pharyngeal, dorsal lingual and lesser palatine (from descending palatine) arteries.",
+   "ref": "Plate 72 (p. 127); muscle tables (pp. 221, 223)",
+   "reason": "Muscle tables list 'ascending palatine and tonsillar branches of facial artery' as supply of the superior and middle constrictors and stylopharyngeus.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "greater-palatine-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Hard palate, palatal gingiva and periosteum; contributes to Kiesselbach plexus on the anterior nasal septum via the incisive canal.",
+   "new": "Hard palate mucosa, palatal gingiva, periosteum and palatine glands; via the lesser palatine arteries the soft palate muscles (levator and tensor veli palatini, musculus uvulae, palatopharyngeus, palatoglossus) and tonsil; contributes to Kiesselbach plexus on the anterior nasal septum via the incisive canal.",
+   "ref": "Muscle tables (pp. 220-224); Plate 72 (p. 127); Plate 47 (p. 102)",
+   "reason": "Muscle tables list the descending palatine artery (branch of maxillary) as blood supply of levator/tensor veli palatini, musculus uvulae, palatopharyngeus and palatoglossus.",
+   "confidence": "netter-explicit"
+  }
+ ],
+ "missing": [
+  {
+   "name": "Anterior cerebral artery (A1/A2, pericallosal, callosomarginal, recurrent artery of Heubner)",
+   "ref": "Plates 150-153 (pp. 205-208)"
+  },
+  {
+   "name": "Middle cerebral artery (lenticulostriate, cortical branches)",
+   "ref": "Plates 150-153 (pp. 205-208)"
+  },
+  {
+   "name": "Posterior cerebral artery (P1/P2, calcarine, parietooccipital, posterior choroidal)",
+   "ref": "Plates 150-154 (pp. 205-209)"
+  },
+  {
+   "name": "Posterior inferior cerebellar artery (PICA)",
+   "ref": "Plates 150, 154 (pp. 205, 209)"
+  },
+  {
+   "name": "Anterior inferior cerebellar artery (AICA)",
+   "ref": "Plates 150-154 (pp. 205-209)"
+  },
+  {
+   "name": "Superior cerebellar artery",
+   "ref": "Plates 150, 151, 154 (pp. 205, 206, 209)"
+  },
+  {
+   "name": "Labyrinthine (internal acoustic) artery",
+   "ref": "Plates 147, 150, 154 (pp. 202, 205, 209)"
+  },
+  {
+   "name": "Anterior choroidal artery",
+   "ref": "Plates 148, 150, 151 (pp. 203, 205, 206)"
+  },
+  {
+   "name": "Anterior and posterior spinal arteries",
+   "ref": "Plates 149, 150, 154 (pp. 204, 205, 209)"
+  },
+  {
+   "name": "Meningohypophyseal trunk / inferolateral trunk / caroticotympanic artery (ICA petrous and cavernous branches)",
+   "ref": "Plate 148 (p. 203); Plate 112 (p. 167)"
+  },
+  {
+   "name": "Superior and inferior hypophyseal arteries",
+   "ref": "Plates 148, 151, BP30 (pp. 203, 206, 238)"
+  },
+  {
+   "name": "Brachiocephalic trunk",
+   "ref": "Plates 40, 147, 149 (pp. 95, 202, 204)"
+  },
+  {
+   "name": "Ascending cervical artery",
+   "ref": "Plates 40, 83, 88, 89 (pp. 95, 138, 143, 144); muscle tables (p. 221-222)"
+  },
+  {
+   "name": "Dorsal scapular artery",
+   "ref": "Plates 39, 40, BP23 (pp. 94, 95, 231)"
+  },
+  {
+   "name": "Deep cervical artery and supreme intercostal artery",
+   "ref": "Plates 147, 149, BP23 (pp. 202, 204, 231)"
+  },
+  {
+   "name": "Ascending palatine artery",
+   "ref": "Plates 57, 72, 83 (pp. 112, 127, 138)"
+  },
+  {
+   "name": "Submental artery",
+   "ref": "Plates 57, 83 (pp. 112, 138); muscle tables (p. 219-222)"
+  },
+  {
+   "name": "Lateral nasal artery (with alar branches)",
+   "ref": "Plates 42, 47 (pp. 97, 102)"
+  },
+  {
+   "name": "Descending palatine artery / lesser palatine arteries",
+   "ref": "Plates 57, 63, 72 (pp. 112, 118, 127)"
+  },
+  {
+   "name": "Posterior superior alveolar artery",
+   "ref": "Plates 57, 60, 63 (pp. 112, 115, 118)"
+  },
+  {
+   "name": "Buccal, masseteric, deep temporal and pterygoid arteries (2nd-part maxillary branches)",
+   "ref": "Plates 57, 58 (pp. 112, 113)"
+  },
+  {
+   "name": "Accessory meningeal artery",
+   "ref": "Plates 57, 112 (pp. 112, 167)"
+  },
+  {
+   "name": "Deep auricular and anterior tympanic arteries",
+   "ref": "Plates 57, 58, 107 (pp. 112, 113, 162)"
+  },
+  {
+   "name": "Artery of pterygoid canal and pharyngeal artery (3rd-part maxillary branches)",
+   "ref": "Plates 57, 63, 148 (pp. 112, 118, 203)"
+  },
+  {
+   "name": "Stylomastoid artery",
+   "ref": "Plates 76, 107 (pp. 131, 162)"
+  },
+  {
+   "name": "Inferior tympanic artery",
+   "ref": "Plates 64, 107 (pp. 119, 162)"
+  },
+  {
+   "name": "Lacrimal artery (recurrent meningeal, zygomatic, lateral palpebral branches)",
+   "ref": "Plates 99, 112, 149 (pp. 154, 167, 204)"
+  },
+  {
+   "name": "Posterior ethmoidal artery",
+   "ref": "Plates 47, 99, 112 (pp. 102, 154, 167)"
+  },
+  {
+   "name": "Long and short posterior ciliary arteries, anterior ciliary arteries",
+   "ref": "Plates 99, 103, 104 (pp. 154, 158, 159)"
+  },
+  {
+   "name": "External (dorsal) nasal artery",
+   "ref": "Plates 10, 42, 99 (pp. 65, 97, 154)"
+  },
+  {
+   "name": "Middle temporal, zygomaticoorbital and anterior auricular arteries (STA branches)",
+   "ref": "Plate 10 (p. 65)"
+  },
+  {
+   "name": "Sublingual, deep lingual, dorsal lingual and suprahyoid arteries (lingual branches)",
+   "ref": "Plates 69, 70 (pp. 124, 125)"
+  },
+  {
+   "name": "Superior laryngeal, cricothyroid and infrahyoid arteries (superior thyroid branches; superior laryngeal is folded into the superior thyroid card)",
+   "ref": "Plates 83, 87, 92 (pp. 138, 142, 147)"
+  },
+  {
+   "name": "Inferior laryngeal artery",
+   "ref": "Plate 92 (p. 147)"
+  },
+  {
+   "name": "Mental and mylohyoid branches of the inferior alveolar artery",
+   "ref": "Plates 25, 57, 83 (pp. 80, 112, 138)"
+  }
+ ],
+ "notes": "Netter 7e plates are label-only, so positional claims (anterior/medial/posterior surface of the ECA, vertebral levels, mm distances, percentages such as fetal PComm or cilioretinal artery frequency, linguofacial trunk) could not be checked and were left unchanged when not contradicted. Netter does not label 'Kiesselbach plexus', 'thyroid ima artery', 'nasopalatine artery', 'glandular branches' or 'cilioretinal artery' anywhere in the Head & Neck section; those cards/fields were left as written (clinical table 2.2 does confirm the anterior ethmoidal-sphenopalatine-facial anastomosis in the nasal vestibule as the epistaxis site). Netter name variants worth knowing but not forced on the cards: 'External (dorsal) nasal artery' (card: dorsal nasal), 'Internal thoracic (mammary) artery', 'Greater (descending) palatine artery', 'Labyrinthine (internal acoustic) artery', 'Carotid sinus nerve (of Hering)'. All 'Supplies' corrections were built from the muscle tables' BLOOD SUPPLY column (pp. 219-224) and are additive; existing non-muscle territories were kept. Netter's muscle tables credit the mylohyoid muscle to the sublingual and submental arteries (not the mylohyoid branch of the inferior alveolar), but Plates 25/69/83 label a mylohyoid branch of the inferior alveolar artery, so the inferior alveolar 'Supplies' field was left alone. No card name needed changing. The largest content gap is that no intracranial vessel other than the basilar, circle, AComm and PComm has its own card (see 'missing')."
+}

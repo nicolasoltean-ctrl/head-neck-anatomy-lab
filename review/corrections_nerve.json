@@ -1,0 +1,323 @@
+{
+ "category": "nerve",
+ "verified": 78,
+ "corrections": [
+  {
+   "id": "cn-vii-facial-nerve",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Greater petrosal, nerve to stapedius, chorda tympani (intracanal); posterior auricular; temporal, zygomatic, buccal, marginal mandibular, cervical",
+   "new": "Greater petrosal, nerve to stapedius, chorda tympani (intracanal); posterior auricular (auricular and occipital branches), digastric and stylohyoid branches; temporofacial and cervicofacial divisions in parotid -> temporal, zygomatic, buccal, marginal mandibular, cervical",
+   "ref": "Plate 54 (p. 109); Plate 134 (p. 189)",
+   "reason": "Netter labels digastric and stylohyoid branches and the temporofacial/cervicofacial divisions; card omits them",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cn-vii-facial-nerve",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Facial expression muscles, stapedius, posterior digastric, stylohyoid; taste ant. 2/3 tongue; lacrimal, nasal, submandibular, sublingual glands",
+   "new": "Muscles of facial expression incl. occipitalis and auricular muscles, stapedius, posterior digastric, stylohyoid; taste ant. 2/3 tongue and sensory/taste soft palate; lacrimal, nasal, palatine, submandibular, sublingual glands",
+   "ref": "Plate 129 (p. 184); Plate 146 (p. 201)",
+   "reason": "Plate 129 lists occipitalis, auricularis and 'sensory soft palate' (greater petrosal taste pathway on Plate 146)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cn-ix-glossopharyngeal-nerve",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Tympanic (Jacobson), carotid sinus (Hering), pharyngeal, stylopharyngeal, tonsillar, lingual",
+   "new": "Tympanic (Jacobson) -> tympanic plexus (tubal branch) -> lesser petrosal; communicating branches to auricular branch of X and to VII; carotid sinus (Hering); pharyngeal (to pharyngeal plexus); stylopharyngeal; tonsillar; lingual",
+   "ref": "Plate 136 (p. 191)",
+   "reason": "Schema also labels lesser petrosal, tubal branch and communicating branches to X (auricular) and VII",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cn-ix-glossopharyngeal-nerve",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Stylopharyngeus; posterior 1/3 tongue, oropharynx, tonsil, middle ear; carotid sinus/body; parotid via otic ganglion",
+   "new": "Stylopharyngeus; taste + general sensation posterior 1/3 tongue, oropharynx, tonsil, middle ear and auditory tube; carotid sinus/body; parotid via otic ganglion",
+   "ref": "Plate 136 (p. 191); Plate 129 (p. 184)",
+   "reason": "Tubal branch to auditory tube and taste of posterior 1/3 are shown on schema",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cn-x-vagus-nerve",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Auricular (Arnold), pharyngeal, superior laryngeal, recurrent laryngeal, cardiac, pulmonary, esophageal",
+   "new": "Meningeal, auricular (Arnold), pharyngeal, communicating branch to carotid sinus nerve, superior laryngeal (internal/external), superior and inferior cervical cardiac, recurrent laryngeal, thoracic cardiac, pulmonary, esophageal; anterior/posterior vagal trunks to abdomen",
+   "ref": "Plate 137 (p. 192)",
+   "reason": "Schema labels meningeal branch, communicating branch to carotid sinus nerve, and the named cardiac branches; card omits them",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cn-xii-hypoglossal-nerve",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Lingual branches; superior root of ansa cervicalis (C1 fibers), nerve to thyrohyoid and geniohyoid (C1)",
+   "new": "Meningeal branch; lingual branches; superior root of ansa cervicalis (C1 fibers); nerves to thyrohyoid and geniohyoid (C1)",
+   "ref": "Plate 139 (p. 194)",
+   "reason": "Schema labels a meningeal branch of CN XII; card omits it",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "nasociliary-nerve",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Sensory root to ciliary ganglion, long ciliary, posterior & anterior ethmoidal (-> external nasal), infratrochlear",
+   "new": "Branch (sensory root) to ciliary ganglion, long ciliary, posterior ethmoidal, anterior ethmoidal (internal nasal [medial/lateral] and external nasal branches), infratrochlear",
+   "ref": "Plate 133 (p. 188); Plate 46 (p. 101)",
+   "reason": "Netter labels internal nasal branches of anterior ethmoidal nerve in addition to the external nasal branch",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "lacrimal-nerve",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Communicating branch with zygomaticotemporal nerve",
+   "new": "Palpebral branch (lateral upper eyelid skin/conjunctiva); communicating branch with zygomaticotemporal nerve",
+   "ref": "Plate 9 (p. 64); Plate 61 (p. 116)",
+   "reason": "Netter labels 'palpebral branch of lacrimal nerve' on Plates 9 and 61",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "maxillary-division-v2",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Meningeal, zygomatic, pterygopalatine (nasopalatine, greater/lesser palatine, pharyngeal), posterior superior alveolar, infraorbital",
+   "new": "Meningeal; zygomatic (zygomaticotemporal, zygomaticofacial); branches to pterygopalatine ganglion (posterior superior lateral/medial nasal, nasopalatine, greater/lesser palatine, pharyngeal); posterior superior alveolar; infraorbital (middle/anterior superior alveolar)",
+   "ref": "Plate 133 (p. 188); Plate 61 (p. 116)",
+   "reason": "Schema labels posterior superior lateral and medial nasal branches and the zygomatic/infraorbital sub-branches",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "mandibular-division-v3",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Meningeal, n. to medial pterygoid, masseteric, deep temporal, n. to lateral pterygoid, buccal, auriculotemporal, lingual, inferior alveolar (-> n. to mylohyoid)",
+   "new": "Meningeal; nerves to medial pterygoid, tensor veli palatini and tensor tympani (via otic ganglion); anterior division: masseteric, deep temporal, n. to lateral pterygoid, buccal; posterior division: auriculotemporal, lingual, inferior alveolar (-> n. to mylohyoid)",
+   "ref": "Plate 59 (p. 114); Plate 133 (p. 188)",
+   "reason": "Nerves to tensor veli palatini and tensor tympani are labeled separately on Plates 59/133; Plate 59 groups branches into anterior and posterior divisions",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "facial-temporal-branch",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Frontalis, orbicularis oculi (upper part), corrugator supercilii, auricularis anterior/superior",
+   "new": "Frontal belly of occipitofrontalis, orbicularis oculi (upper part), corrugator supercilii, procerus, auricularis anterior/superior",
+   "ref": "Muscle Tables 2.4, 2.7 (pp. 219, 222)",
+   "reason": "Netter innervation column: procerus = temporal and zygomatic branches; card omits procerus",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "facial-zygomatic-branch",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Orbicularis oculi (lower and lateral), parts of zygomaticus and nasalis",
+   "new": "Orbicularis oculi (lower and lateral); with buccal branches: zygomaticus major/minor, levator labii superioris (+ alaeque nasi), levator anguli oris, nasalis, depressor septi nasi, risorius, orbicularis oris; with temporal: corrugator supercilii, procerus",
+   "ref": "Muscle Tables 2.4-2.9 (pp. 219-224)",
+   "reason": "Netter innervation column assigns these muscles to 'zygomatic and buccal' (or 'zygomatic and temporal') branches",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "facial-buccal-branch",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Buccinator, orbicularis oris, zygomaticus major/minor, levator labii superioris, levator anguli oris, nasalis, risorius",
+   "new": "Buccinator, orbicularis oris, zygomaticus major/minor, levator labii superioris (+ alaeque nasi), levator anguli oris, nasalis, depressor septi nasi, risorius; shares depressor anguli oris and depressor labii inferioris with marginal mandibular",
+   "ref": "Muscle Tables 2.4-2.9 (pp. 219-224)",
+   "reason": "Innervation column lists buccal branches for LLSAN, depressor septi nasi, depressor anguli oris and depressor labii inferioris",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "facial-marginal-mandibular-branch",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Depressor anguli oris, depressor labii inferioris, mentalis, risorius (part)",
+   "new": "Depressor anguli oris, depressor labii inferioris (both shared with buccal branches), mentalis, orbicularis oris (lower part)",
+   "ref": "Muscle Tables 2.4, 2.6, 2.7 (pp. 219, 221, 222)",
+   "reason": "Netter gives risorius to zygomatic and buccal branches (not mandibular); orbicularis oris receives mandibular branches",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "posterior-auricular-nerve",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Occipitalis, auricularis posterior, intrinsic auricular muscles",
+   "new": "Occipital belly of occipitofrontalis; auricularis posterior, anterior and superior (the latter two shared with temporal branches)",
+   "ref": "Muscle Table 2.4, 2.6 (pp. 219, 221); Plate 134 (p. 189)",
+   "reason": "Innervation column: auricularis anterior/posterior/superior = posterior auricular and temporal branches; occipital belly = posterior auricular nerve",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "greater-petrosal-nerve",
+   "field": "details:Exit/route",
+   "action": "replace",
+   "old": "Geniculate ganglion -> hiatus of facial canal -> foramen lacerum -> joins deep petrosal (sympathetic) as nerve of pterygoid canal (Vidian) -> pterygopalatine ganglion",
+   "new": "Geniculate ganglion -> hiatus for greater petrosal nerve (middle cranial fossa floor) -> passes over (not through) foramen lacerum -> joins deep petrosal (sympathetic) as nerve of pterygoid canal (Vidian) -> pterygopalatine ganglion",
+   "ref": "Plate 19 (p. 74); Plate 20 (p. 75)",
+   "reason": "Netter explicitly labels 'Greater petrosal nerve (passes over foramen)' at foramen lacerum",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "tympanic-nerve-lesser-petrosal",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Tympanic plexus, lesser petrosal nerve, caroticotympanic communications",
+   "new": "Tympanic plexus on promontory (joined by caroticotympanic nerves from internal carotid plexus), tubal branch to auditory tube, lesser petrosal nerve",
+   "ref": "Plate 136 (p. 191); Plate 106 (p. 161)",
+   "reason": "Schema labels tubal branch of tympanic plexus; caroticotympanic nerves come from the carotid plexus",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "pharyngeal-branch-of-vagus",
+   "field": "details:Type",
+   "action": "replace",
+   "old": "Branchial motor (vagus; fibers partly from cranial root of XI)",
+   "new": "Branchial motor (vagus; fibers partly from cranial root of XI) + sensory to lower pharynx",
+   "ref": "Plate 137 (p. 192)",
+   "reason": "Schema: 'Pharyngeal branch of vagus nerve (motor to muscles of palate and pharynx; sensory to lower pharynx)'",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "pterygopalatine-ganglion",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Lacrimal gland (via zygomatic -> lacrimal nerve); nasal, palatine, pharyngeal glands (via V2 branches)",
+   "new": "Lacrimal gland (via zygomatic -> lacrimal nerve); glands of nasal cavity, maxillary sinus, palate and nasopharynx (via posterior superior nasal, nasopalatine, greater/lesser palatine and pharyngeal branches)",
+   "ref": "Plate 62 (p. 117); Plate 46 (p. 101); Plate 144 (p. 199)",
+   "reason": "Plate 62 names maxillary sinus glands and the ganglion's named branches",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cervical-plexus",
+   "field": "details:Motor branches",
+   "action": "replace",
+   "old": "Ansa cervicalis, phrenic nerve, C1 fibers via CN XII, branches to prevertebral and scalene muscles",
+   "new": "Ansa cervicalis, phrenic nerve, C1 fibers via CN XII (thyrohyoid, geniohyoid), nerves to rectus capitis anterior/lateralis, longus capitis and colli, levator scapulae and middle scalene; C4/C5 contribution to brachial plexus (prefixed)",
+   "ref": "Plate 140 (p. 195); Plate 40 (p. 95)",
+   "reason": "Schema labels nerves to levator scapulae and middle scalene and a contribution to the brachial plexus",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "brachial-plexus-roots-trunks",
+   "field": "details:Trunks",
+   "action": "replace",
+   "old": "Upper (C5–C6), middle (C7), lower (C8–T1); each divides into anterior and posterior divisions behind the clavicle",
+   "new": "Superior/upper (C5–C6), middle (C7), inferior/lower (C8–T1); each divides into anterior and posterior divisions behind the clavicle",
+   "ref": "Plate 82 (p. 137)",
+   "reason": "Netter 7th ed. labels 'superior, middle, inferior trunks'",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cervical-sympathetic-trunk",
+   "field": "details:Ganglia",
+   "action": "replace",
+   "old": "Superior cervical (C2–C3), middle cervical (C6), cervicothoracic/stellate (C7–T1)",
+   "new": "Superior cervical (C2–C3), middle cervical (C6), vertebral ganglion (on vertebral artery), cervicothoracic/stellate (C7–T1)",
+   "ref": "Plate 141 (p. 196)",
+   "reason": "Netter labels a vertebral ganglion between the middle and cervicothoracic ganglia",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cervical-sympathetic-trunk",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Gray rami communicantes to C1–C8, superior/middle/inferior cardiac nerves, carotid and vertebral plexuses",
+   "new": "Gray rami communicantes to C1–C8; internal carotid nerve (internal carotid plexus), external carotid plexus, jugular nerve; superior, middle and inferior cervical cardiac nerves; vertebral plexus; ansa subclavia",
+   "ref": "Plate 141 (p. 196)",
+   "reason": "Plate 141 labels internal carotid nerve, jugular nerve, cervical cardiac nerves, vertebral plexus and ansa subclavia",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "superior-cervical-ganglion",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Internal and external carotid nerves, gray rami to C1–C4, pharyngeal branches, superior cardiac nerve",
+   "new": "Internal carotid nerve (-> internal carotid plexus), external carotid nerves/plexus, jugular nerve, gray rami to C1–C4, pharyngeal branches to pharyngeal plexus, superior cervical cardiac nerve",
+   "ref": "Plate 141 (p. 196); Plate 40 (p. 95)",
+   "reason": "Netter labels the jugular nerve and 'superior cervical cardiac nerve'; Plate 40 confirms gray rami to C1–C4",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "internal-carotid-plexus",
+   "field": "details:Branches",
+   "action": "add",
+   "old": null,
+   "new": "Deep petrosal nerve (-> Vidian nerve), caroticotympanic nerves (-> tympanic plexus), sympathetic root of ciliary ganglion, cavernous plexus fibers to CN III/IV/VI and V1 (long ciliary nerves)",
+   "ref": "Plate 134 (p. 189); Plate 136 (p. 191); Plate 143 (p. 198); Plate 132 (p. 187)",
+   "reason": "Named branches of the plexus labeled on schemas; card has no Branches field",
+   "confidence": "netter-explicit"
+  }
+ ],
+ "missing": [
+  {
+   "name": "Infratrochlear nerve (from nasociliary)",
+   "ref": "Plates 9, 61, 97, 133 (pp. 64, 116, 152, 188)"
+  },
+  {
+   "name": "Anterior ethmoidal nerve (internal and external nasal branches)",
+   "ref": "Plates 9, 46, 48, 133 (pp. 64, 101, 103, 188)"
+  },
+  {
+   "name": "Posterior ethmoidal nerve",
+   "ref": "Plates 61, 97, 133 (pp. 116, 152, 188)"
+  },
+  {
+   "name": "Nasopalatine nerve",
+   "ref": "Plates 46, 48, 63, 66 (pp. 101, 103, 118, 121)"
+  },
+  {
+   "name": "Greater and lesser palatine nerves",
+   "ref": "Plates 46, 48, 63, 66, 67 (pp. 101, 103, 118, 121, 122)"
+  },
+  {
+   "name": "Superior alveolar nerves (posterior, middle, anterior)",
+   "ref": "Plates 61, 63, 66 (pp. 116, 118, 121)"
+  },
+  {
+   "name": "Pharyngeal branch of pterygopalatine ganglion",
+   "ref": "Plate 46 (p. 101); Plate BP25 (p. 233)"
+  },
+  {
+   "name": "Intermediate nerve (of Wrisberg)",
+   "ref": "Plates 134, 142, 146 (pp. 189, 197, 201)"
+  },
+  {
+   "name": "Caroticotympanic nerves (from internal carotid plexus)",
+   "ref": "Plates 107, 134, 136 (pp. 162, 189, 191)"
+  },
+  {
+   "name": "Jugular nerve (superior cervical ganglion)",
+   "ref": "Plate 141 (p. 196)"
+  },
+  {
+   "name": "Cervical cardiac nerves (sympathetic) and cervical cardiac branches of vagus",
+   "ref": "Plates 137, 141 (pp. 192, 196)"
+  },
+  {
+   "name": "Vertebral ganglion and vertebral plexus",
+   "ref": "Plate 141 (p. 196)"
+  },
+  {
+   "name": "Superior and inferior (jugular/nodose) ganglia of CN IX and CN X",
+   "ref": "Plates 76, 136, 137, 146 (pp. 131, 191, 192, 201)"
+  },
+  {
+   "name": "Meningeal branch of mandibular nerve (nervus spinosus, foramen spinosum)",
+   "ref": "Plates 19, 20, 59, 97 (pp. 74, 75, 114, 152)"
+  },
+  {
+   "name": "Posterior cutaneous branches of posterior rami C4–C7",
+   "ref": "Plate 9 (p. 64); Plates 183–184 (pp. 265–266)"
+  },
+  {
+   "name": "Nerve to subclavius",
+   "ref": "Muscle Table 2.8 (p. 223)"
+  }
+ ],
+ "notes": "All 78 cards compared against Plates 9, 19-20, 38-40, 46, 48, 54, 59-64, 66, 76, 82, 92, 97, 106-107, 127-146, Plates 170/183/184 (back) and Muscle Tables 2.4-2.9 / 3.x. Motor 'Supplies' lists for CN III/IV/VI/V3, VII, IX, X (pharyngeal plexus), XI, XII, ansa cervicalis, SLN/RLN, nerve to mylohyoid, suboccipital nerve and dorsal scapular nerve agree with Netter's innervation column. Foramina for CN I-XII, chorda tympani (petrotympanic fissure), auricular branch of X (mastoid canaliculus) and tympanic nerve (inferior tympanic canaliculus) agree with Plates 19-20. Not corrected but worth knowing: (1) CN XI card says spinal root C1-C5; Plate 138 labels only C1-C4 spinal nerves beside the root and gives no explicit upper-limit statement, so left as is. (2) Cervical sympathetic cards say preganglionic outflow T1-T4; Netter schemas show T1-T2 (Plates 143-145), T1-T3 (Plate 62) and cite lateral horn 'T1-5' - no single explicit figure, so left. (3) Netter uses 'posterior ramus' rather than 'dorsal ramus' and 'anterior/posterior division' of V3 rather than 'trunk'; these are synonyms and were not flagged except where branch content changed. (4) Netter has no head/neck plate for the long thoracic, suprascapular or dorsal scapular nerve courses (upper-limb section not supplied); only the levator scapulae/rhomboid innervation entries in Table 3.3 were checked and agree. (5) Pearls were checked against Clinical Tables 2.1-2.3 (CN I avulsion, CN XI node biopsy, RLN, Bell palsy, uvula/tongue deviation, cavernous sinus) with no conflicts found. (6) Netter 7th ed. names used by the cards (tympanic nerve of Jacobson, carotid sinus nerve of Hering, nerve to mylohyoid muscle, auriculotemporal nerve, 3rd occipital nerve) match; the eponym 'Arnold' for the auricular branch of X is not used by Netter but is not contradicted."
+}

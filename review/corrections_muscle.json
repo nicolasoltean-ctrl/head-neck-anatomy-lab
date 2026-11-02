@@ -1,0 +1,1145 @@
+{
+ "category": "muscle",
+ "verified": 79,
+ "corrections": [
+  {
+   "id": "occipitofrontalis",
+   "field": "details:Origin",
+   "action": "replace",
+   "old": "Frontal belly: galea aponeurotica. Occipital belly: lateral two-thirds of superior nuchal line and mastoid part of temporal bone",
+   "new": "Frontal belly: epicranial aponeurosis (galea) at the level of the coronal suture. Occipital belly: lateral two-thirds of superior nuchal line and mastoid process",
+   "ref": "Muscle Table p. 219 / p. 221",
+   "reason": "Netter term is 'epicranial aponeurosis'; frontal belly arises at level of coronal suture",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "occipitofrontalis",
+   "field": "details:Insertion",
+   "action": "replace",
+   "old": "Frontal belly: skin of eyebrows and root of nose (blends with orbicularis oculi/procerus). Occipital belly: galea aponeurotica",
+   "new": "Frontal belly: skin of the forehead and eyebrows (blends with orbicularis oculi/procerus). Occipital belly: epicranial aponeurosis",
+   "ref": "Muscle Table p. 219 / p. 221",
+   "reason": "Netter: frontal belly into skin of frontal region; 'epicranial aponeurosis' terminology",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "occipitofrontalis",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Frontal belly: frontal branch of superficial temporal artery. Occipital belly: occipital branch of posterior auricular artery and descending branch of occipital artery",
+   "ref": "Muscle Table p. 219 / p. 221",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "orbicularis-oculi",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Facial and superficial temporal arteries",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "corrugator-supercilii",
+   "field": "details:Origin",
+   "action": "replace",
+   "old": "Medial end of the superciliary arch of the frontal bone",
+   "new": "Medial part of the supraorbital margin of the frontal bone (superciliary arch)",
+   "ref": "Muscle Table p. 219",
+   "reason": "Netter: medial part of supraorbital margin",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "corrugator-supercilii",
+   "field": "details:Insertion",
+   "action": "replace",
+   "old": "Skin of the middle of the eyebrow",
+   "new": "Skin of the medial half of the eyebrow",
+   "ref": "Muscle Table p. 219",
+   "reason": "Netter: skin of medial half of eyebrow (card said middle of eyebrow)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "corrugator-supercilii",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Temporal branch of CN VII",
+   "new": "Zygomatic and temporal branches of CN VII",
+   "ref": "Muscle Table p. 219",
+   "reason": "Netter lists zygomatic and temporal branches",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "corrugator-supercilii",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Zygomatic and anterior branches of superficial temporal artery",
+   "ref": "Muscle Table p. 219",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "procerus",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Angular and lateral nasal branches of facial artery",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "nasalis",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Buccal branches of CN VII",
+   "new": "Zygomatic and buccal branches of CN VII",
+   "ref": "Muscle Table p. 221",
+   "reason": "Netter lists zygomatic and buccal branches",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "nasalis",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior labial, septal and lateral nasal branches of facial artery",
+   "ref": "Muscle Table p. 221",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "levator-labii-superioris",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Buccal branches of CN VII",
+   "new": "Zygomatic and buccal branches of CN VII",
+   "ref": "Muscle Table p. 220",
+   "reason": "Netter lists zygomatic and buccal branches",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "levator-labii-superioris",
+   "field": "details:Action",
+   "action": "replace",
+   "old": "Raises the upper lip; deepens the nasolabial furrow",
+   "new": "Raises the upper lip and dilates the nares; deepens the nasolabial furrow",
+   "ref": "Muscle Table p. 220",
+   "reason": "Netter main actions: elevates upper lip, dilates nares",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "levator-labii-superioris",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior labial artery and angular branches of facial artery",
+   "ref": "Muscle Table p. 220",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "levator-labii-superioris-alaeque-nasi",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior labial artery and angular branches of facial artery",
+   "ref": "Muscle Table p. 220",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "zygomaticus-major",
+   "field": "details:Origin",
+   "action": "replace",
+   "old": "Zygomatic bone, anterior to the zygomaticotemporal suture",
+   "new": "Zygomatic bone (anterior part of the zygomatic arch), in front of the zygomaticotemporal suture",
+   "ref": "Muscle Table p. 224",
+   "reason": "Netter table gives origin as 'zygomatic arch'; wording reconciled",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "zygomaticus-major",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior labial artery of facial artery",
+   "ref": "Muscle Table p. 224",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "zygomaticus-minor",
+   "field": "details:Origin",
+   "action": "replace",
+   "old": "Zygomatic bone, just behind the zygomaticomaxillary suture (anteromedial to zygomaticus major)",
+   "new": "Zygomatic bone (anterior part of the zygomatic arch), just behind the zygomaticomaxillary suture",
+   "ref": "Muscle Table p. 224",
+   "reason": "Netter table gives origin as 'zygomatic arch'; wording reconciled",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "zygomaticus-minor",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Buccal branches of CN VII",
+   "new": "Zygomatic and buccal branches of CN VII",
+   "ref": "Muscle Table p. 224",
+   "reason": "Netter lists zygomatic and buccal branches",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "zygomaticus-minor",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior labial artery of facial artery",
+   "ref": "Muscle Table p. 224",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "levator-anguli-oris",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Buccal branches of CN VII",
+   "new": "Zygomatic and buccal branches of CN VII",
+   "ref": "Muscle Table p. 220",
+   "reason": "Netter lists zygomatic and buccal branches",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "levator-anguli-oris",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior labial artery of facial artery",
+   "ref": "Muscle Table p. 220",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "risorius",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Buccal branches of CN VII",
+   "new": "Zygomatic and buccal branches of CN VII",
+   "ref": "Muscle Table p. 222",
+   "reason": "Netter table lists zygomatic and buccal branches",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "risorius",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior labial artery of facial artery",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "buccinator",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Muscular branches of facial artery and buccal branch of maxillary artery",
+   "ref": "Muscle Table p. 219",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "orbicularis-oris",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Buccal and marginal mandibular branches of CN VII",
+   "new": "Zygomatic, buccal and marginal mandibular branches of CN VII",
+   "ref": "Muscle Table p. 222",
+   "reason": "Netter adds zygomatic branches",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "orbicularis-oris",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior and inferior labial branches of facial artery",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "depressor-anguli-oris",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Marginal mandibular branch of CN VII",
+   "new": "Marginal mandibular and buccal branches of CN VII",
+   "ref": "Muscle Table p. 219",
+   "reason": "Netter: mandibular and buccal branches",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "depressor-anguli-oris",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Inferior labial artery of facial artery",
+   "ref": "Muscle Table p. 219",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "depressor-labii-inferioris",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Marginal mandibular branch of CN VII",
+   "new": "Marginal mandibular and buccal branches of CN VII",
+   "ref": "Muscle Table p. 219",
+   "reason": "Netter: mandibular and buccal branches",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "depressor-labii-inferioris",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Inferior labial artery of facial artery",
+   "ref": "Muscle Table p. 219",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "mentalis",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Inferior labial artery of facial artery",
+   "ref": "Muscle Table p. 221",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "platysma",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Submental and suprascapular arteries",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "auricular-muscles",
+   "field": "details:Origin",
+   "action": "replace",
+   "old": "Anterior: temporal fascia. Superior: galea aponeurotica (epicranial aponeurosis). Posterior: mastoid process",
+   "new": "Anterior and superior: temporal fascia and epicranial aponeurosis. Posterior: base of mastoid process",
+   "ref": "Muscle Table p. 219",
+   "reason": "Netter gives temporal fascia plus epicranial aponeurosis for both anterior and superior",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "auricular-muscles",
+   "field": "details:Insertion",
+   "action": "replace",
+   "old": "Auricular cartilage (helix, eminence of the concha)",
+   "new": "Anterior: medial surface of helix. Superior: upper part of medial surface of auricle. Posterior: lower part of cranial surface of auricle",
+   "ref": "Muscle Table p. 219",
+   "reason": "Netter gives distinct insertions per muscle",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "auricular-muscles",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Auricular branch of posterior auricular artery and parietal branch of superficial temporal artery",
+   "ref": "Muscle Table p. 219",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "masseter",
+   "field": "details:Action",
+   "action": "replace",
+   "old": "Elevates the mandible; superficial fibers protrude",
+   "new": "Elevates and protrudes the mandible (superficial fibers); deep fibers retract it",
+   "ref": "Muscle Table p. 221",
+   "reason": "Netter: deep fibers retract mandible",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "masseter",
+   "field": "details:Blood supply",
+   "action": "replace",
+   "old": "Masseteric branch of the maxillary artery",
+   "new": "Masseteric branch of the maxillary artery, transverse facial artery and masseteric branches of the facial artery",
+   "ref": "Muscle Table p. 221",
+   "reason": "Netter lists transverse facial and facial-artery branches as well",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "medial-pterygoid",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Branches of facial and maxillary arteries",
+   "ref": "Muscle Table p. 221",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "lateral-pterygoid",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Muscular (pterygoid) branches of maxillary artery",
+   "ref": "Muscle Table p. 220",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "superior-rectus",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ophthalmic artery",
+   "ref": "Muscle Table p. 223",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "inferior-rectus",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ophthalmic artery",
+   "ref": "Muscle Table p. 220",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "medial-rectus",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ophthalmic artery",
+   "ref": "Muscle Table p. 221",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "lateral-rectus",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ophthalmic artery",
+   "ref": "Muscle Table p. 220",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "superior-oblique",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ophthalmic artery",
+   "ref": "Muscle Table p. 223",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "inferior-oblique",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ophthalmic artery",
+   "ref": "Muscle Table p. 220",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "levator-palpebrae-superioris",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ophthalmic artery",
+   "ref": "Muscle Table p. 220",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "levator-palpebrae-superioris",
+   "field": "details:Origin",
+   "action": "replace",
+   "old": "Lesser wing of the sphenoid, above the optic canal and annulus of Zinn",
+   "new": "Lesser wing of the sphenoid, above and anterior to the optic canal (outside the annulus of Zinn)",
+   "ref": "Muscle Table p. 220",
+   "reason": "Netter: lesser wing of sphenoid anterior to optic canal",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "superior-tarsal-muscle",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ophthalmic artery (via the levator palpebrae superioris / orbital branches)",
+   "ref": "Muscle Table p. 220 (levator row); Plate 94 (p. 149)",
+   "reason": "Netter has no table row for the superior tarsal muscle; all orbital muscles in the table are supplied by the ophthalmic artery",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "stapedius",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Posterior auricular, anterior tympanic and middle meningeal arteries",
+   "ref": "Muscle Table p. 223",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "tensor-tympani",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Nerve to medial pterygoid from V3, passing through the otic ganglion without synapsing",
+   "new": "Nerve to tensor tympani from CN V3 (branch of the nerve to medial pterygoid, passing through the otic ganglion without synapsing)",
+   "ref": "Muscle Table p. 224; Plate 133 (p. 188)",
+   "reason": "Netter labels a 'nerve to tensor tympani' from the mandibular nerve",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "tensor-tympani",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior tympanic branch of the middle meningeal artery (maxillary)",
+   "ref": "Muscle Table p. 224",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "digastric",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Anterior belly: branches of submental artery. Posterior belly: muscular branches of posterior auricular and occipital arteries",
+   "ref": "Muscle Table p. 219",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "mylohyoid",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Sublingual branch of lingual artery and submental branch of facial artery",
+   "ref": "Muscle Table p. 221",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "geniohyoid",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Sublingual branch of lingual artery",
+   "ref": "Muscle Table p. 220",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "stylohyoid",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Muscular branches of facial and occipital arteries",
+   "ref": "Muscle Table p. 223",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "sternohyoid",
+   "field": "details:Insertion",
+   "action": "replace",
+   "old": "Body of hyoid",
+   "new": "Medial part of the lower border of the body of the hyoid",
+   "ref": "Muscle Table p. 223",
+   "reason": "Netter specifies medial part of lower border of body of hyoid",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "sternohyoid",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Sternocleidomastoid and hyoid branches of superior thyroid artery; hyoid branch of lingual artery",
+   "ref": "Muscle Table p. 223",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "omohyoid",
+   "field": "details:Origin",
+   "action": "replace",
+   "old": "Inferior belly: superior border of scapula near suprascapular notch",
+   "new": "Inferior belly: upper border of scapula near the suprascapular notch and the superior transverse scapular ligament",
+   "ref": "Muscle Table p. 222",
+   "reason": "Netter adds the superior transverse scapular ligament",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "omohyoid",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Hyoid branch of lingual artery and sternocleidomastoid branch of superior thyroid artery",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "sternothyroid",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Cricothyroid branch of superior thyroid artery",
+   "ref": "Muscle Table p. 223",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "thyrohyoid",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Hyoid branch of superior thyroid artery",
+   "ref": "Muscle Table p. 224",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "sternocleidomastoid",
+   "field": "details:Blood supply",
+   "action": "replace",
+   "old": "Occipital, superior thyroid and posterior auricular arteries",
+   "new": "Sternocleidomastoid branches of superior thyroid and occipital arteries, muscular branch of suprascapular artery, occipital branch of posterior auricular artery",
+   "ref": "Muscle Table p. 223",
+   "reason": "Netter also lists the suprascapular artery",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "trapezius",
+   "field": "details:Blood supply",
+   "action": "replace",
+   "old": "Transverse cervical artery (superficial branch)",
+   "new": "Transverse cervical artery; dorsal perforating branches of posterior intercostal arteries",
+   "ref": "Back Muscle Table p. 271",
+   "reason": "Netter adds posterior intercostal perforators",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "anterior-scalene",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Anterior rami C4–C6",
+   "new": "Anterior rami of cervical nerves C5–C8",
+   "ref": "Muscle Table p. 222",
+   "reason": "Netter table: anterior rami C5–C8 (card had C4–C6)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "anterior-scalene",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ascending cervical branch of inferior thyroid artery",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "middle-scalene",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Anterior rami C3–C8",
+   "new": "Anterior rami of cervical nerves C3–C7",
+   "ref": "Muscle Table p. 222",
+   "reason": "Netter table: anterior rami C3–C7 (card had C3–C8)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "middle-scalene",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Muscular branches of ascending cervical artery",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "posterior-scalene",
+   "field": "details:Origin",
+   "action": "replace",
+   "old": "Posterior tubercles of transverse processes C5–C7",
+   "new": "Posterior tubercles of transverse processes C4–C6",
+   "ref": "Muscle Table p. 222",
+   "reason": "Netter table: C4–C6 (card had C5–C7)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "posterior-scalene",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Anterior rami C6–C8",
+   "new": "Anterior rami of cervical nerves C5–C8",
+   "ref": "Muscle Table p. 222",
+   "reason": "Netter table: anterior rami C5–C8 (card had C6–C8)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "posterior-scalene",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Muscular branches of ascending cervical artery (inferior thyroid) and superficial branch of transverse cervical artery",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "splenius-capitis",
+   "field": "details:Origin",
+   "action": "replace",
+   "old": "Lower ligamentum nuchae and spinous processes C7–T3",
+   "new": "Lower nuchal ligament and spinous processes C7–T4",
+   "ref": "Back Muscle Table p. 271",
+   "reason": "Netter table: spinous processes C7–T4 (card had C7–T3)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "splenius-capitis",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Descending branch of occipital artery and deep cervical artery",
+   "ref": "Back Muscle Table p. 271",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "levator-scapulae",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Dorsal scapular, transverse cervical and ascending cervical arteries",
+   "ref": "Back Muscle Table p. 270",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "longus-colli",
+   "field": "details:Insertion",
+   "action": "replace",
+   "old": "Vertical: bodies C2–C4. Inferior oblique: anterior tubercles of transverse processes C5–C6. Superior oblique: anterior tubercle of atlas",
+   "new": "Vertical: bodies C2–C4. Inferior oblique: anterior tubercles of transverse processes C3–C6. Superior oblique: tubercle of anterior arch of atlas",
+   "ref": "Muscle Table p. 221",
+   "reason": "Netter table gives inferior oblique insertion as anterior tubercles of C3–C6 (card had C5–C6; other texts give C5–C6, editor may wish to flag)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "longus-colli",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Anterior rami C2–C6",
+   "new": "Anterior rami C2–C8",
+   "ref": "Muscle Table p. 221",
+   "reason": "Netter table: anterior primary rami C2–C8 (card had C2–C6)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "longus-colli",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Prevertebral branches of ascending pharyngeal artery; muscular branches of ascending cervical and vertebral arteries",
+   "ref": "Muscle Table p. 221",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "longus-capitis",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ascending cervical branch of inferior thyroid artery, ascending pharyngeal artery and muscular branches of vertebral artery",
+   "ref": "Muscle Table p. 221",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "rectus-capitis-anterior-lateralis",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Muscular branches of vertebral and ascending pharyngeal arteries (lateralis also from occipital artery)",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "suboccipital-muscles",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Vertebral artery and descending branch of occipital artery",
+   "ref": "Back Muscle Table p. 270–271",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "semispinalis-capitis",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Occipital, deep cervical and vertebral arteries",
+   "ref": "Back Muscle Table p. 271",
+   "reason": "Netter gives a single semispinalis row; cervical portions supplied by occipital, deep cervical and vertebral arteries",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "longissimus-capitis",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Occipital, deep cervical and vertebral arteries",
+   "ref": "Back Muscle Table p. 270",
+   "reason": "Netter erector spinae row: cervical portions supplied by occipital, deep cervical and vertebral arteries",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "splenius-cervicis",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Descending branch of occipital artery and deep cervical artery",
+   "ref": "Back Muscle Table p. 271",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "semispinalis-cervicis",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Occipital, deep cervical and vertebral arteries",
+   "ref": "Back Muscle Table p. 271",
+   "reason": "Netter gives a single semispinalis row; cervical portions supplied by occipital, deep cervical and vertebral arteries",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "superior-pharyngeal-constrictor",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ascending pharyngeal artery, ascending palatine and tonsillar branches of facial artery, dorsal lingual branches of lingual artery",
+   "ref": "Muscle Table p. 223",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "middle-pharyngeal-constrictor",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ascending pharyngeal artery, ascending palatine and tonsillar branches of facial artery, dorsal lingual branches of lingual artery",
+   "ref": "Muscle Table p. 221",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "inferior-pharyngeal-constrictor",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ascending pharyngeal artery and branches of superior thyroid artery",
+   "ref": "Muscle Table p. 220",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "stylopharyngeus",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ascending pharyngeal artery, ascending palatine and tonsillar branches of facial artery, dorsal lingual branches of lingual artery",
+   "ref": "Muscle Table p. 223",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "palatopharyngeus",
+   "field": "details:Action",
+   "action": "replace",
+   "old": "Elevates pharynx and larynx; depresses soft palate toward tongue; approximates palatopharyngeal arches to close oropharyngeal isthmus",
+   "new": "Elevates pharynx and larynx (pulls the pharyngeal walls superiorly, anteriorly and medially) and tenses the soft palate; approximates palatopharyngeal arches to close oropharyngeal isthmus",
+   "ref": "Muscle Table p. 222",
+   "reason": "Netter main actions: tenses soft palate; pulls pharyngeal walls superiorly, anteriorly, medially (card said depresses soft palate)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "palatopharyngeus",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ascending palatine branch of facial artery and descending palatine branch of maxillary artery",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "salpingopharyngeus",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Pharyngeal branch of ascending pharyngeal artery",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "genioglossus",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Sublingual and submental arteries",
+   "ref": "Muscle Table p. 219",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "hyoglossus",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Sublingual and submental arteries",
+   "ref": "Muscle Table p. 220",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "styloglossus",
+   "field": "details:Origin",
+   "action": "replace",
+   "old": "Anterolateral aspect of styloid process and stylomandibular ligament",
+   "new": "Anterolateral aspect of styloid process and the stylohyoid ligament",
+   "ref": "Muscle Table p. 223",
+   "reason": "Netter: styloid process and stylohyoid ligament (card said stylomandibular ligament)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "styloglossus",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Sublingual artery",
+   "ref": "Muscle Table p. 223",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "palatoglossus",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ascending pharyngeal artery and palatine branches of facial and maxillary arteries",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "intrinsic-tongue-muscles",
+   "field": "details:Blood supply",
+   "action": "replace",
+   "old": "Deep lingual artery (branch of lingual artery)",
+   "new": "Deep lingual branch of lingual artery and branches of facial artery",
+   "ref": "Muscle Table p. 220 / p. 223–224",
+   "reason": "Netter adds branches from the facial artery",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "levator-veli-palatini",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ascending palatine branch of facial artery and descending palatine branch of maxillary artery",
+   "ref": "Muscle Table p. 220",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "tensor-veli-palatini",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ascending palatine branch of facial artery and descending palatine branch of maxillary artery",
+   "ref": "Muscle Table p. 224",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "musculus-uvulae",
+   "field": "details:Action",
+   "action": "replace",
+   "old": "Shortens and elevates uvula; adds bulk to the dorsum of the soft palate for nasopharyngeal seal",
+   "new": "Shortens, elevates and retracts the uvula; adds bulk to the dorsum of the soft palate for nasopharyngeal seal",
+   "ref": "Muscle Table p. 221",
+   "reason": "Netter main actions include retraction of the uvula",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "musculus-uvulae",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Ascending palatine branch of facial artery and descending palatine branch of maxillary artery",
+   "ref": "Muscle Table p. 221",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cricothyroid",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior and inferior thyroid arteries",
+   "ref": "Muscle Table p. 219",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "posterior-cricoarytenoid",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior and inferior thyroid arteries",
+   "ref": "Muscle Table p. 222",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "lateral-cricoarytenoid",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior and inferior thyroid arteries",
+   "ref": "Muscle Table p. 220",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "thyroarytenoid",
+   "field": "details:Insertion",
+   "action": "replace",
+   "old": "Anterolateral surface and vocal process of arytenoid; vocalis fibers insert along vocal ligament",
+   "new": "Muscular process and anterolateral surface of the arytenoid cartilage; vocalis fibers run from the vocal process along the vocal ligament",
+   "ref": "Muscle Table p. 224",
+   "reason": "Netter: thyroarytenoid to muscular process of arytenoid; vocalis from vocal process to vocal ligament",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "thyroarytenoid",
+   "field": "details:Action",
+   "action": "replace",
+   "old": "Shortens and relaxes vocal folds (lowers pitch); adducts; vocalis adjusts tension locally",
+   "new": "Shortens and relaxes vocal folds (lowers pitch) and acts as a sphincter of the laryngeal vestibule; vocalis tenses the anterior and relaxes the posterior part of the vocal ligament for fine pitch control",
+   "ref": "Muscle Table p. 224; Plate 93 (p. 148)",
+   "reason": "Netter: thyroarytenoid is also sphincter of vestibule; vocalis tenses anterior / relaxes posterior vocal ligament",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "thyroarytenoid",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior and inferior thyroid arteries",
+   "ref": "Muscle Table p. 224",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "transverse-oblique-arytenoids",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior and inferior thyroid arteries",
+   "ref": "Muscle Table p. 224",
+   "reason": "Blood supply from Netter muscle table (card lacked it)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "aryepiglottic-muscle",
+   "field": "name",
+   "action": "replace",
+   "old": "Aryepiglottic muscle",
+   "new": "Aryepiglottic muscle (aryepiglottic part of oblique arytenoid)",
+   "ref": "Plate 91 (p. 146)",
+   "reason": "Netter labels it 'aryepiglottic part of oblique arytenoid muscle'",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "aryepiglottic-muscle",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior and inferior thyroid arteries",
+   "ref": "Muscle Table p. 224 (transverse and oblique arytenoid row); Plate 91 (p. 146)",
+   "reason": "Netter has no separate row; it is the aryepiglottic part of the oblique arytenoid, which the table supplies from superior and inferior thyroid arteries",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "thyroepiglottic-muscle",
+   "field": "name",
+   "action": "replace",
+   "old": "Thyroepiglottic muscle",
+   "new": "Thyroepiglottic muscle (thyroepiglottic part of thyroarytenoid)",
+   "ref": "Plate 91 (p. 146)",
+   "reason": "Netter labels it 'thyroepiglottic part of thyroarytenoid muscle'",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "thyroepiglottic-muscle",
+   "field": "details:Blood supply",
+   "action": "add",
+   "old": null,
+   "new": "Superior and inferior thyroid arteries",
+   "ref": "Muscle Table p. 224 (thyroarytenoid row); Plate 91 (p. 146)",
+   "reason": "Netter has no separate row; it is the thyroepiglottic part of thyroarytenoid, which the table supplies from superior and inferior thyroid arteries",
+   "confidence": "netter-inferred"
+  }
+ ],
+ "missing": [
+  {
+   "name": "Depressor septi nasi",
+   "ref": "Muscle Table p. 219; Plate 31 (p. 86); Plate 134 (p. 189)"
+  },
+  {
+   "name": "Vocalis (separate Netter table row; currently folded into the thyroarytenoid card)",
+   "ref": "Muscle Table p. 224; Plates 91–93 (p. 146–148)"
+  },
+  {
+   "name": "Subclavius (listed in the Head & Neck muscle table, group 'Shoulder')",
+   "ref": "Muscle Table p. 223"
+  },
+  {
+   "name": "Petropharyngeus (accessory muscle bundle from petrous temporal bone)",
+   "ref": "Plate 75 (p. 130)"
+  }
+ ],
+ "notes": "All 79 cards compared with Netter 7e H&N muscle tables (p. 219-224), Back muscle tables (p. 270-271) and plates 31-37, 55-56, 67, 70-71, 75-81, 91-94, 96, 101, 107, 133-140. Blood supply added for 71 cards; the 8 existing blood-supply values were checked and 4 expanded (masseter, SCM, trapezius, intrinsic tongue). Netter has no table rows for superior tarsal, aryepiglottic, thyroepiglottic, semispinalis capitis/cervicis or longissimus capitis specifically; their blood supply entries are marked netter-inferred (from the levator palpebrae, arytenoid/thyroarytenoid, generic semispinalis and erector spinae rows). Netter's longus colli inferior-oblique insertion (anterior tubercles C3-C6) and scalene segmental levels (anterior and posterior C5-C8, middle C3-C7) differ from Gray's; corrections follow Netter per instructions but the editor may wish to keep a note. Zygomaticus major/minor origins are given by Netter simply as 'zygomatic arch'; proposed wording keeps the card's detail while matching Netter. Netter's thyroarytenoid row lists 'sphincter of vestibule' as an action; the thyroepiglottic card's long contested-action text was left unchanged because Netter gives no separate action for that part, but the editor may want to trim its in-text citations. Netter groups the auricular muscles as 'External ear' and palatoglossus as 'Palatal' (card groups left alone). Pearls were checked against the clinical tables (p. 216-218): genioglossus, levator veli palatini/uvula, superior tarsal and CN XI pearls agree; no pearl corrections. Grouped cards cover Netter's separate rows for auricularis anterior/superior/posterior, rectus capitis posterior major/minor and obliquus capitis superior/inferior, and the four intrinsic lingual muscles, so those are not listed as missing."
+}

@@ -1,0 +1,197 @@
+{
+  "category": "lymph",
+  "verified": 35,
+  "corrections": [
+    {
+      "id": "mastoid-retroauricular-nodes",
+      "field": "name",
+      "action": "replace",
+      "old": "Mastoid (retroauricular) lymph nodes",
+      "new": "Mastoid nodes (retroauricular)",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Netter labels this group 'Mastoid nodes'; retroauricular kept as the synonym",
+      "confidence": "netter-explicit"
+    },
+    {
+      "id": "preauricular-parotid-nodes",
+      "field": "name",
+      "action": "replace",
+      "old": "Preauricular (superficial parotid) lymph nodes",
+      "new": "Superficial parotid nodes (preauricular)",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Netter's label is 'Superficial parotid nodes' (deep parotid nodes noted as deep to and within the gland)",
+      "confidence": "netter-explicit"
+    },
+    {
+      "id": "preauricular-parotid-nodes",
+      "field": "details:Efferents to",
+      "action": "replace",
+      "old": "Upper deep cervical nodes (level II) via the jugulodigastric node",
+      "new": "Superior deep lateral cervical nodes (level II), including the jugulodigastric node",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Netter names the upper IJV chain 'superior deep lateral cervical nodes'; level kept",
+      "confidence": "netter-inferred"
+    },
+    {
+      "id": "facial-buccal-nodes",
+      "field": "name",
+      "action": "replace",
+      "old": "Facial (buccal) lymph nodes",
+      "new": "Facial nodes (nasolabial, buccinator, mandibular)",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Netter labels the group 'Facial nodes' with three named subgroups: nasolabial, buccinator, mandibular",
+      "confidence": "netter-explicit"
+    },
+    {
+      "id": "facial-buccal-nodes",
+      "field": "details:Location",
+      "action": "replace",
+      "old": "Along the facial vein on the buccinator near the angle of the mouth (buccinator nodes); nasolabial, malar (infraorbital) and mandibular nodes belong to the same group",
+      "new": "Along the facial vein: nasolabial nodes beside the nose, buccinator nodes on the buccinator near the angle of the mouth, and mandibular nodes where the facial vessels cross the lower border of the mandible",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Netter's facial nodes are nasolabial, buccinator and mandibular; no malar/infraorbital subgroup is shown",
+      "confidence": "netter-explicit"
+    },
+    {
+      "id": "superficial-cervical-nodes",
+      "field": "name",
+      "action": "replace",
+      "old": "Superficial cervical lymph nodes (along EJV)",
+      "new": "Superficial lateral cervical nodes (along EJV)",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Netter's label is 'Superficial lateral cervical node' on the EJV over sternocleidomastoid",
+      "confidence": "netter-explicit"
+    },
+    {
+      "id": "anterior-cervical-superficial-nodes",
+      "field": "name",
+      "action": "replace",
+      "old": "Anterior cervical (superficial) lymph nodes",
+      "new": "Anterior cervical nodes (superficial, along AJV)",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Netter labels the group 'Anterior cervical nodes' along the anterior jugular vein",
+      "confidence": "netter-explicit"
+    },
+    {
+      "id": "anterior-cervical-superficial-nodes",
+      "field": "details:Efferents to",
+      "action": "replace",
+      "old": "Deep cervical nodes (levels III-IV) and the deep anterior cervical (level VI) nodes",
+      "new": "Inferior deep lateral cervical nodes (levels III-IV) and the pretracheal and thyroid nodes deep to the infrahyoid muscles (level VI)",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Netter names the deep anterior group 'pretracheal and thyroid nodes (deep to infrahyoid muscles)'",
+      "confidence": "netter-inferred"
+    },
+    {
+      "id": "occipital-nodes",
+      "field": "details:Efferents to",
+      "action": "replace",
+      "old": "Superficial cervical nodes along the EJV and the deep cervical chain (level V)",
+      "new": "Accessory nodes along CN XI in the posterior triangle (level V), then supraclavicular and inferior deep lateral cervical nodes; some to the superficial lateral cervical nodes along the EJV",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Netter shows 'Accessory nodes' along CN XI and 'Supraclavicular nodes' as the posterior-triangle pathway; the deep cervical (IJV) chain is not level V",
+      "confidence": "netter-inferred"
+    },
+    {
+      "id": "deep-cervical-nodes",
+      "field": "name",
+      "action": "replace",
+      "old": "Deep cervical lymph nodes (chain along IJV)",
+      "new": "Deep lateral cervical nodes (superior and inferior, chain along IJV)",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Netter divides the IJV chain into 'superior deep lateral cervical nodes' and 'inferior deep lateral cervical node'",
+      "confidence": "netter-explicit"
+    },
+    {
+      "id": "deep-cervical-nodes",
+      "field": "details:Level",
+      "action": "replace",
+      "old": "Levels II (upper), III (middle) and IV (lower)",
+      "new": "Levels II (upper), III (middle) and IV (lower); superior deep lateral cervical nodes (with the jugulodigastric node) correspond to II-III and inferior deep lateral cervical nodes (with the juguloomohyoid and supraclavicular nodes) to III-IV",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Adds Netter's superior/inferior grouping and its named member nodes to the level mapping",
+      "confidence": "netter-inferred"
+    },
+    {
+      "id": "jugulo-omohyoid-node",
+      "field": "name",
+      "action": "replace",
+      "old": "Jugulo-omohyoid (tongue) node",
+      "new": "Juguloomohyoid (tongue) node",
+      "ref": "Plate 85 (p. 140); Plate 86 (p. 141)",
+      "reason": "Netter spells it 'Juguloomohyoid node' (no hyphen)",
+      "confidence": "netter-explicit"
+    },
+    {
+      "id": "supraclavicular-virchow-nodes",
+      "field": "pearl",
+      "action": "replace",
+      "old": "Virchow's node: a hard left supraclavicular node (Troisier sign) means metastatic gastric, pancreatic or other abdominal/pelvic cancer; right-sided nodes suggest lung, esophageal or breast primary.",
+      "new": "The supraclavicular nodes, especially on the left, are the signal or sentinel nodes of Virchow or Troisier: when enlarged and palpable they may be the first evidence of visceral malignancy. A hard left node (Troisier sign) classically means gastric, pancreatic or other abdominal/pelvic cancer; right-sided nodes suggest lung, esophageal or breast primary.",
+      "ref": "Plate 85 footnote (p. 140)",
+      "reason": "Incorporates Netter's footnote wording: the group (or a single node), especially left, is the signal/sentinel node of Virchow or Troisier, first presumptive evidence of visceral malignancy",
+      "confidence": "netter-explicit"
+    },
+    {
+      "id": "spinal-accessory-lymph-node-chain",
+      "field": "name",
+      "action": "replace",
+      "old": "Spinal accessory (posterior triangle) lymph node chain",
+      "new": "Accessory nodes (spinal accessory chain, posterior triangle)",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Netter labels the nodes along CN XI 'Accessory nodes'",
+      "confidence": "netter-explicit"
+    },
+    {
+      "id": "spinal-accessory-lymph-node-chain",
+      "field": "details:Efferents to",
+      "action": "replace",
+      "old": "Transverse cervical (supraclavicular) nodes, then jugular trunk / lower deep cervical chain (level IV)",
+      "new": "Supraclavicular nodes, then the inferior deep lateral cervical nodes and jugular trunk (level IV)",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Netter labels the lower posterior-triangle group 'Supraclavicular nodes' and the lowest IJV node 'inferior deep lateral cervical node'",
+      "confidence": "netter-inferred"
+    },
+    {
+      "id": "deep-parotid-intraglandular-nodes",
+      "field": "details:Drains (afferents from)",
+      "action": "replace",
+      "old": "External acoustic meatus and middle ear (tympanic cavity), nasopharynx and posterior nasal cavity, the parotid gland itself, plus the eyelids and lateral facial (cheek/temple) skin, forehead/scalp and auricle, shared with the superficial parotid nodes (both groups act as one drainage unit). Caution: older texts (Gray's 1918 lineage) call the nodes on the lateral pharyngeal wall 'deep/subparotid' and lump intraglandular nodes with the superficial group, so eyelid/cheek drainage is sometimes listed only under 'superficial'.",
+      "new": "External acoustic meatus and middle ear, nasopharynx and posterior nasal cavity, the parotid gland itself, plus the eyelids, lateral face (cheek, temple), forehead, scalp and auricle shared with the superficial parotid nodes; the two groups act as one parotid drainage unit",
+      "ref": "Plate 85 (p. 140)",
+      "reason": "Netter shows deep parotid nodes only as 'deep to and within parotid gland' alongside the superficial parotid nodes; the textbook-history caution is not Netter content and breaks the card register",
+      "confidence": "netter-inferred"
+    },
+    {
+      "id": "lingual-tonsil",
+      "field": "details:Epithelium",
+      "action": "add",
+      "old": null,
+      "new": "Mucosa of the root of the tongue dips into crypts surrounded by lymph follicles; ducts of the mucous lingual glands open into the crypts",
+      "ref": "Plate 71 (p. 126)",
+      "reason": "Netter's tongue stereogram labels crypt, lymph follicles, mucous glands and gland duct in the lingual tonsil region; other Waldeyer cards carry an Epithelium field",
+      "confidence": "netter-explicit"
+    },
+    {
+      "id": "palatine-tonsils",
+      "field": "details:Location",
+      "action": "replace",
+      "old": "Tonsillar fossa between the palatoglossal (anterior) and palatopharyngeal (posterior) arches, lateral oropharynx, medial to the superior constrictor",
+      "new": "Tonsillar fossa between the palatoglossal (anterior) and palatopharyngeal (posterior) arches in the lateral oropharynx, with the supratonsillar fossa above and the triangular fold below; lies medial to the superior pharyngeal constrictor, where CN IX and the tonsillar branch of the facial artery reach it",
+      "ref": "Plate 72 (p. 127)",
+      "reason": "Netter's Fauces plate labels supratonsillar fossa, triangular fold, superior constrictor and the CN IX tonsillar branch as the tonsil's relations",
+      "confidence": "netter-explicit"
+    }
+  ],
+  "missing": [
+    {
+      "name": "Thyroid nodes (on the thyroid gland, grouped with pretracheal nodes deep to the infrahyoid muscles)",
+      "ref": "Plate 85 (p. 140)"
+    },
+    {
+      "name": "Inferior deep lateral cervical node (lowest IJV node feeding the jugular trunk; only covered inside the deep-cervical, level IV and supraclavicular cards)",
+      "ref": "Plate 85 (p. 140)"
+    }
+  ],
+  "notes": "Netter's extracted text gives plate labels only, so drainage arrows on Plates 85-86 could not be read; corrections marked netter-inferred rely on labeled node names and their plate positions. Plate 86 tongue drainage as labeled (submental, submandibular, jugulodigastric, superior deep lateral cervical, juguloomohyoid nodes) and pharynx drainage (retropharyngeal, jugulodigastric, juguloomohyoid, superior deep lateral cervical) agree with the submental, submandibular, jugulodigastric, juguloomohyoid, retropharyngeal, palatine/lingual/pharyngeal tonsil and level I-III cards; no change needed. Palatine tonsil blood supply matches all five tonsillar branches on Plate 72 (lesser palatine, ascending pharyngeal, ascending palatine, facial, dorsal lingual). Pretracheal nodes match Plate 87 ('Pretracheal lymph nodes' below the isthmus). Thoracic duct termination at the IJV-subclavian junction is confirmed by Table 2.3 (p. 218) and Plate 195; right lymphatic duct near the IJV from apical axillary nodes on Plate 191; jugular trunk labeled on Plate 85. Netter 7e does not label the following, so those cards were left unchanged and cannot be verified against it: prelaryngeal (Delphian), paratracheal, scalene, infrahyoid nodes, tubal tonsils, surgical levels I-VII and all epithelium statements except the lingual tonsil crypts. Netter uses 'nodes' rather than 'lymph nodes' in labels and spells 'juguloomohyoid' without a hyphen; the remaining 'jugulo-omohyoid' spellings in detail text (submandibular, submental, level I, level III, lingual tonsil cards) could be harmonized if the name change is accepted. Netter's Virchow footnote applies to the supraclavicular group of either side, 'especially on the left', and says only 'malignant disease in the viscera'; the card's organ list is conventional, not Netter."
+}

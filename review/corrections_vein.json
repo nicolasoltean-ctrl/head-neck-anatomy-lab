@@ -1,0 +1,257 @@
+{
+ "category": "vein",
+ "verified": 37,
+ "corrections": [
+  {
+   "id": "anterior-jugular-vein",
+   "field": "details:Formed by / tributaries",
+   "action": "replace",
+   "old": "Submental and superficial submandibular veins near the hyoid",
+   "new": "Submental and superficial submandibular veins near the hyoid; receives a communicating vein from the facial / common facial vein (or retromandibular vein) in the upper neck",
+   "ref": "Plate 38 (p. 93); Plate 84 (p. 139)",
+   "reason": "Netter labels a 'Communicating vein' running from the facial/retromandibular vein to the anterior jugular vein (Plate 38) and 'Communication to anterior jugular vein' from the facial vein (Plate 84); the card omits this tributary.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "facial-vein",
+   "field": "details:Formed by / tributaries",
+   "action": "replace",
+   "old": "Begins as the angular vein at the medial canthus; receives deep facial vein (from pterygoid plexus), superior and inferior labial, external nasal and submental veins",
+   "new": "Begins as the angular vein at the medial canthus; receives deep facial vein (from pterygoid plexus), infraorbital, external nasal, superior and inferior labial, mental, external palatine and submental veins",
+   "ref": "Plate 84 (p. 139); Plate 10 (p. 65)",
+   "reason": "Plate 84 labels infraorbital, mental and external palatine veins joining the facial vein in addition to the tributaries already listed.",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "angular-vein",
+   "field": "details:Drains into",
+   "action": "replace",
+   "old": "Continues as the facial vein; connects to the superior ophthalmic vein through the orbit",
+   "new": "Continues as the facial vein at the inferior orbital margin; connects to the superior ophthalmic vein through the nasofrontal vein at the medial orbit",
+   "ref": "Plate 84 (p. 139); Plate 99 (p. 154); Plate 10 (p. 65)",
+   "reason": "Netter names the angular-to-superior ophthalmic connection the nasofrontal vein on three plates; the card leaves it unnamed.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "ophthalmic-veins",
+   "field": "details:Formed by / tributaries",
+   "action": "replace",
+   "old": "Superior: from the angular vein at the medial canthus, receives vorticose, central retinal and ethmoidal veins. Inferior: plexus on the orbital floor",
+   "new": "Superior: begins at the medial orbit as the continuation of the nasofrontal vein from the angular vein; receives vorticose, central retinal and anterior/posterior ethmoidal veins. Inferior: plexus on the orbital floor",
+   "ref": "Plate 99 (p. 154); Plate 84 (p. 139); Plate 20 (p. 75)",
+   "reason": "Plate 99 shows the superior ophthalmic vein arising from the nasofrontal vein (continuation of the angular vein) and receiving the vorticose veins; Plate 20 labels anterior and posterior ethmoidal veins.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "supraorbital-supratrochlear-veins",
+   "field": "details:Drains into",
+   "action": "replace",
+   "old": "Unite at the medial canthus to form the angular vein",
+   "new": "Unite at the medial canthus to form the angular vein; the nasofrontal vein links this junction to the superior ophthalmic vein",
+   "ref": "Plate 84 (p. 139); Plate 99 (p. 154)",
+   "reason": "Netter labels the nasofrontal vein at the supraorbital/supratrochlear-angular junction as the named route into the superior ophthalmic vein.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "pterygoid-venous-plexus",
+   "field": "details:Formed by / tributaries",
+   "action": "replace",
+   "old": "Veins accompanying maxillary artery branches: sphenopalatine, deep temporal, pterygoid, masseteric, buccal, inferior alveolar, middle meningeal, palatine",
+   "new": "Veins accompanying maxillary artery branches: sphenopalatine, deep temporal, pterygoid, masseteric, buccal, inferior alveolar, posterior superior alveolar, infraorbital, middle meningeal, palatine",
+   "ref": "Plate 84 (p. 139); Plate 111 (p. 166)",
+   "reason": "Plate 84 labels posterior superior alveolar veins, infraorbital vein, palatine vein and inferior alveolar vein feeding the pterygoid plexus; Plate 111 labels the middle meningeal vein.",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "pterygoid-venous-plexus",
+   "field": "details:Drains into",
+   "action": "replace",
+   "old": "Maxillary vein (to retromandibular vein); communicates with facial vein via deep facial vein, with cavernous sinus via emissary veins of foramen ovale and with inferior ophthalmic vein",
+   "new": "Maxillary vein(s) (to retromandibular vein); communicates with facial vein via deep facial vein, with cavernous sinus via the sphenoidal emissary vein (of Vesalius) and emissary veins of foramen ovale, and with the inferior ophthalmic vein",
+   "ref": "Plate 84 (p. 139); Plate 20 (p. 75); Plate 99 (p. 154)",
+   "reason": "Netter's labeled plexus-to-cavernous sinus channel is the 'Emissary vein (of Vesalius) communicating with cavernous sinus' through the sphenoidal emissary foramen; the card names only the foramen ovale route. Netter also labels 'Maxillary veins' (plural).",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "occipital-vein",
+   "field": "details:Formed by / tributaries",
+   "action": "replace",
+   "old": "Scalp venous plexus over the occiput; receives the parietal emissary and occipital diploic veins",
+   "new": "Scalp venous plexus over the occiput; receives the occipital emissary vein, the parietal emissary vein and the occipital diploic vein",
+   "ref": "Plate 111 (p. 166); Plate 10 (p. 65)",
+   "reason": "Plate 111 labels a distinct occipital emissary vein beside the occipital diploic vein; the card omits it from the tributaries although its own pearl relies on it.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "lingual-vein",
+   "field": "details:Course",
+   "action": "replace",
+   "old": "Deep lingual vein runs back on the underside of the tongue, visible through the mucosa, then with the hypoglossal nerve (vena comitans nervi hypoglossi) over hyoglossus",
+   "new": "Deep lingual vein runs back on the underside of the tongue, visible through the mucosa, then with the hypoglossal nerve as the vena comitans nervi hypoglossi on the surface of hyoglossus; the dorsal lingual vein courses medial to hyoglossus with the lingual artery",
+   "ref": "Plate 84 (p. 139); Plate 70 (p. 125); Plate 68 (p. 123)",
+   "reason": "Plate 84 explicitly labels the 'Dorsal lingual vein coursing medial to hyoglossus muscle', distinguishing it from the vena comitans of the hypoglossal nerve; the card gives only the vena comitans course.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "vertebral-vein",
+   "field": "details:Course",
+   "action": "replace",
+   "old": "Descends as a plexus around the vertebral artery through the transverse foramina of C1-C6, then as a single vein anterior to the first part of the subclavian artery",
+   "new": "Descends as a plexus around the vertebral artery through the transverse foramina of C1-C6 (the C7 transverse foramen transmits vertebral veins but usually not the artery), then as a single vein anterior to the first part of the subclavian artery",
+   "ref": "Plate 27 (p. 82); Plate 19 (p. 74)",
+   "reason": "Netter's footnote on Plate 27 states the foramina transversaria of C7 transmit vertebral veins but usually not the vertebral artery; the card's C1-C6 statement omits this.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cavernous-sinus",
+   "field": "details:Formed by / tributaries",
+   "action": "replace",
+   "old": "Superior and inferior ophthalmic veins, superficial middle cerebral vein, sphenoparietal sinus, central retinal vein; connects to pterygoid plexus via emissary veins of foramen ovale",
+   "new": "Superior and inferior ophthalmic veins, superficial middle cerebral vein (via sphenoparietal sinus), central retinal vein, efferent hypophyseal veins; connects to pterygoid plexus via the sphenoidal emissary vein (of Vesalius) and emissary veins of foramen ovale",
+   "ref": "Plate 84 (p. 139); Plate 115 (p. 170); Plate 156 (p. 211); Plate BP30 (p. 238)",
+   "reason": "Netter labels the emissary vein of Vesalius as the plexus-cavernous connection (Plate 84), shows the superficial middle cerebral vein 'draining to sphenoparietal sinus' (Plate 156), and labels efferent hypophyseal veins to the cavernous sinus (BP30).",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "superior-sagittal-sinus",
+   "field": "details:Formed by / tributaries",
+   "action": "replace",
+   "old": "Superior cerebral (bridging) veins, diploic and parietal emissary veins; lateral venous lacunae containing arachnoid granulations",
+   "new": "Superior cerebral (bridging) veins, frontal diploic vein, parietal emissary veins and an emissary vein through the foramen cecum; lateral venous lacunae (of Trolard) containing arachnoid granulations",
+   "ref": "Plate 111 (p. 166); Plate 20 (p. 75); Plate 113 (p. 168)",
+   "reason": "Plate 20 labels an 'Emissary vein to superior sagittal sinus' through the foramen cecum, and Plate 111 names the lateral lacuna (of Trolard) and frontal diploic vein; the card omits the foramen cecum emissary.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "transverse-sigmoid-sinuses",
+   "field": "details:Formed by / tributaries",
+   "action": "replace",
+   "old": "Transverse: from the confluence, receives superior petrosal sinus, inferior cerebral and cerebellar veins. Sigmoid: continuation of transverse, receives mastoid and condylar emissary veins",
+   "new": "Transverse: from the confluence, receives superior petrosal sinus, inferior cerebral veins, inferior anastomotic vein (of Labbé) and inferior cerebellar veins. Sigmoid: continuation of transverse, receives mastoid and condylar emissary veins",
+   "ref": "Plate 113 (p. 168); Plate 156 (p. 211); Plate 115 (p. 170); Plate 20 (p. 75)",
+   "reason": "Netter labels the inferior anastomotic vein (of Labbé) running from the superficial middle cerebral vein toward the transverse sinus on Plates 113 and 156; it is absent from every card.",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "straight-sinus-great-cerebral-vein",
+   "field": "details:Formed by / tributaries",
+   "action": "replace",
+   "old": "Great cerebral vein = union of the two internal cerebral veins, receiving the basal veins of Rosenthal; straight sinus = great cerebral vein + inferior sagittal sinus",
+   "new": "Great cerebral vein = union of the two internal cerebral veins, receiving the basal veins of Rosenthal, dorsal vein of the corpus callosum, internal occipital veins and superior vermian vein; straight sinus = great cerebral vein + inferior sagittal sinus",
+   "ref": "Plate 155 (p. 210); Plate 157 (p. 212); Plate 156 (p. 211)",
+   "reason": "Plates 155 and 157 label the dorsal vein of corpus callosum, internal occipital vein and superior vermian vein converging on the great cerebral vein; Plate 156 confirms internal cerebral + basal veins.",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "emissary-veins",
+   "field": "details:Formed by / tributaries",
+   "action": "replace",
+   "old": "Parietal (scalp to superior sagittal sinus), mastoid (posterior auricular to sigmoid sinus), condylar (suboccipital plexus to sigmoid sinus), foramen ovale (pterygoid plexus to cavernous sinus), occipital",
+   "new": "Parietal (scalp to superior sagittal sinus), foramen cecum (nasal/frontal veins to superior sagittal sinus), mastoid (posterior auricular to sigmoid sinus), condylar (suboccipital plexus to sigmoid sinus), sphenoidal emissary vein of Vesalius and foramen ovale (pterygoid plexus to cavernous sinus), occipital (occipital vein to confluence region)",
+   "ref": "Plate 20 (p. 75); Plate 84 (p. 139); Plate 111 (p. 166); Plate 19 (p. 74)",
+   "reason": "Netter explicitly labels the emissary vein of Vesalius (sphenoidal emissary foramen) to the cavernous sinus and an emissary vein through the foramen cecum to the superior sagittal sinus; both are missing from the card.",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "emissary-veins",
+   "field": "details:Course",
+   "action": "replace",
+   "old": "Pass through the parietal foramen, mastoid foramen, condylar canal, foramen ovale, foramen lacerum and foramen cecum",
+   "new": "Pass through the parietal foramen, mastoid foramen, condylar canal, sphenoidal emissary foramen (of Vesalius), foramen ovale, foramen lacerum and foramen cecum",
+   "ref": "Plate 20 (p. 75); Plate 84 (p. 139)",
+   "reason": "Plate 20 labels the sphenoidal emissary foramen (of Vesalius) (inconstant) among the cranial base foramina transmitting an emissary vein; the card omits it.",
+   "confidence": "netter-explicit"
+  }
+ ],
+ "missing": [
+  {
+   "name": "Sphenoparietal sinus",
+   "ref": "Plate 114 (p. 169); Plate 115 (p. 170); Plate 156 (p. 211)"
+  },
+  {
+   "name": "Occipital sinus",
+   "ref": "Plate 114 (p. 169); Plate 155 (p. 210)"
+  },
+  {
+   "name": "Basilar venous plexus",
+   "ref": "Plate 114 (p. 169); Plate 115 (p. 170)"
+  },
+  {
+   "name": "Anterior and posterior intercavernous sinuses",
+   "ref": "Plate 114 (p. 169); Plate 115 (p. 170)"
+  },
+  {
+   "name": "Superficial middle cerebral vein",
+   "ref": "Plate 111 (p. 166); Plate 113 (p. 168); Plate 115 (p. 170); Plate 156 (p. 211)"
+  },
+  {
+   "name": "Superior anastomotic vein (of Trolard) and inferior anastomotic vein (of Labbé)",
+   "ref": "Plate 113 (p. 168); Plate 156 (p. 211)"
+  },
+  {
+   "name": "Inferior cerebral veins",
+   "ref": "Plate 113 (p. 168); Plate 115 (p. 170); Plate 156 (p. 211)"
+  },
+  {
+   "name": "Internal cerebral veins and basal vein (of Rosenthal) (covered only inside the straight sinus card)",
+   "ref": "Plate 155 (p. 210); Plate 156 (p. 211); Plate 157 (p. 212)"
+  },
+  {
+   "name": "Petrosal vein (draining to superior petrosal sinus) (mentioned only inside the superior petrosal sinus card)",
+   "ref": "Plate 115 (p. 170); Plate 155 (p. 210)"
+  },
+  {
+   "name": "Middle meningeal veins",
+   "ref": "Plate 111 (p. 166); Plate 113 (p. 168); Plate 20 (p. 75)"
+  },
+  {
+   "name": "Nasofrontal vein",
+   "ref": "Plate 10 (p. 65); Plate 84 (p. 139); Plate 99 (p. 154)"
+  },
+  {
+   "name": "Sphenoidal emissary vein (of Vesalius)",
+   "ref": "Plate 84 (p. 139); Plate 20 (p. 75)"
+  },
+  {
+   "name": "Transverse facial vein",
+   "ref": "Plate 10 (p. 65); Plate 84 (p. 139)"
+  },
+  {
+   "name": "Middle temporal vein",
+   "ref": "Plate 10 (p. 65)"
+  },
+  {
+   "name": "Submental vein",
+   "ref": "Plate 38 (p. 93); Plate 84 (p. 139)"
+  },
+  {
+   "name": "Superior laryngeal vein",
+   "ref": "Plate 84 (p. 139)"
+  },
+  {
+   "name": "Communicating vein (facial/retromandibular to anterior jugular)",
+   "ref": "Plate 38 (p. 93); Plate 84 (p. 139)"
+  },
+  {
+   "name": "Pharyngeal venous plexus",
+   "ref": "Plate 76 (p. 131)"
+  },
+  {
+   "name": "Infraorbital, external nasal, superior and inferior labial, mental, external palatine, palatine, posterior superior alveolar and inferior alveolar veins (facial/pterygoid tributaries)",
+   "ref": "Plate 84 (p. 139); Plate 10 (p. 65)"
+  },
+  {
+   "name": "Vorticose veins",
+   "ref": "Plate 99 (p. 154)"
+  },
+  {
+   "name": "Sublingual, deep lingual and dorsal lingual veins; vena comitans of hypoglossal nerve (covered inside the lingual vein card)",
+   "ref": "Plate 70 (p. 125); Plate 84 (p. 139)"
+  },
+  {
+   "name": "Efferent hypophyseal veins to cavernous sinus",
+   "ref": "Plate BP30 (p. 238)"
+  }
+ ],
+ "notes": "All 37 cards checked against Plates 10, 19-20, 27, 38-40, 54, 68, 70, 76, 84-89, 92, 99, 111, 113-115, 120, 155-157, BP30-31 and the clinical tables (p. 217-218). No name changes needed: Netter calls the retromandibular divisions 'anterior and posterior branches' (Plates 39, 84) and 'divisions' (Plate 54), uses 'Maxillary veins' (plural) on Plate 84, and labels bridging veins as 'Superior cerebral veins (bridging veins)' (Plate 113), all compatible with the cards. The core terminations were all confirmed: retromandibular = superficial temporal + maxillary (Plates 84, 99); common facial = facial + anterior branch of retromandibular, also receiving the lingual vein ('Common trunk for facial, retromandibular, and lingual veins', Plate 70); EJV = posterior auricular + posterior branch of retromandibular (Plate 39), ending in the subclavian vein (Plates 84, 87); superior and middle thyroid veins to IJV and inferior thyroid veins to the (left) brachiocephalic vein (Plates 84, 87, 88); superior ophthalmic vein to cavernous sinus and inferior ophthalmic to cavernous sinus and pterygoid plexus (Plate 99); sigmoid sinus is the 'continuation of transverse sinus' to the jugular foramen and superior bulb of IJV (Plates 19, 115); petrosal vein drains to superior petrosal sinus (Plate 155); the cavernous sinus coronal section (Plate 115) confirms CN III, IV, V1, V2 in the wall with VI and the ICA inside. Netter does not name a 'venous angle', 'jugular venous arch', 'posterior external jugular vein', 'deep cervical vein', 'thyroid ima artery', 'Lemierre', 'Batson' flow reversal, IPSS or any valve, so those card statements were left untouched (no conflict, Netter silent). Clinical tables agree with the pearls: IJV/subclavian for central venous catheter; IJV preferred for JVP because it is in line with the SVC, EJV usable as a substitute (could be added to the EJV pearl if desired); pterygoid plexus as route of infection spread between face, orbit and sinuses; superior cerebral veins torn at the SSS causing subdural hematoma; cavernous sinus the most common site of dural sinus thrombosis and site of post-traumatic carotid-cavernous fistula; scalp vessels do not retract in the dense connective tissue layer. Two corrections (facial vein and pterygoid plexus tributaries, transverse sinus vein of Labbe, great cerebral vein tributaries) are 'netter-inferred' because the extracted text labels the veins adjacent to the parent vessel on the plate but the drawn connections cannot be read from text alone; verify on the plate image before applying. The most useful new cards would be the sphenoparietal sinus, occipital sinus, basilar plexus and the superficial middle cerebral vein with the veins of Trolard and Labbe, all of which Netter labels on the dural sinus plates but which have no card."
+}
