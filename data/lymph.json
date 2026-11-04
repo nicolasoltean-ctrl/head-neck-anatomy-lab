@@ -1271,5 +1271,67 @@
       "type": "circle",
       "r": 12
     }
+  },
+  {
+    "id": "thyroid-nodes",
+    "name": "Thyroid lymph nodes",
+    "category": "lymph",
+    "group": "Deep cervical chain",
+    "function": "Small nodes lying on the thyroid gland itself, grouped by Netter with the pretracheal nodes deep to the infrahyoid muscles; the first filter for the thyroid lobes before the central and lateral neck.",
+    "details": [
+      {
+        "label": "Location",
+        "value": "On the anterior and lateral surfaces of the thyroid lobes and isthmus, deep to the infrahyoid (strap) muscles, continuous below with the pretracheal nodes (Netter Plate 85)"
+      },
+      {
+        "label": "Drains",
+        "value": "Thyroid gland; adjacent larynx and trachea"
+      },
+      {
+        "label": "Efferents to",
+        "value": "Pretracheal and paratracheal nodes (level VI), then along the superior and inferior thyroid vessels to the superior and inferior deep lateral cervical nodes and the jugular trunk; some pass directly to the inferior deep lateral cervical node"
+      },
+      {
+        "label": "Level",
+        "value": "VI (central compartment)"
+      }
+    ],
+    "pearl": "Papillary thyroid carcinoma spreads by lymphatics to these and the central (level VI) nodes before the lateral neck, so central neck dissection accompanies thyroidectomy when nodes are involved; follicular carcinoma spreads by blood instead. Medullary carcinoma also spreads early to central nodes.",
+    "depth": "deep",
+    "marker": {
+      "x": 550,
+      "y": 660
+    }
+  },
+  {
+    "id": "inferior-deep-lateral-cervical-node",
+    "name": "Inferior deep lateral cervical node",
+    "category": "lymph",
+    "group": "Deep cervical chain",
+    "function": "Lowest node of the deep cervical chain on the internal jugular vein just above the venous angle; the final collecting station of the head and neck that feeds the jugular lymph trunk.",
+    "details": [
+      {
+        "label": "Location",
+        "value": "On the lower internal jugular vein at the root of the neck, behind the clavicular head of sternocleidomastoid and beside the supraclavicular nodes (Netter Plate 85)"
+      },
+      {
+        "label": "Drains",
+        "value": "Efferents of the superior deep lateral cervical nodes, juguloomohyoid node, accessory and supraclavicular nodes, thyroid, pretracheal and anterior cervical nodes; thus the whole head and neck, plus upper-limb and thoracic nodes via the supraclavicular group"
+      },
+      {
+        "label": "Efferents to",
+        "value": "Jugular lymph trunk, which empties into the thoracic duct on the left and the right lymphatic duct or venous angle on the right"
+      },
+      {
+        "label": "Level",
+        "value": "IV"
+      }
+    ],
+    "pearl": "A firm level IV or supraclavicular node is the classic distant sign of cancer below the clavicles (Virchow node on the left: gastric, pancreatic, lung) because the jugular trunk and thoracic duct meet here. In head and neck cancer, a positive level IV node without upper-level disease suggests a thyroid, laryngeal or hypopharyngeal primary.",
+    "depth": "deep",
+    "marker": {
+      "x": 550,
+      "y": 660
+    }
   }
 ]

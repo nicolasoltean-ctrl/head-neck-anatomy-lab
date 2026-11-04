@@ -1499,5 +1499,1160 @@
       "type": "polyline",
       "points": "422,392 412,428 402,462 372,463 336,460 302,456"
     }
+  },
+  {
+    "id": "anterior-cerebral-artery",
+    "name": "Anterior cerebral artery (A1, A2, pericallosal, callosomarginal)",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Smaller terminal branch of the internal carotid that runs medially above the optic nerve, joins its partner through the anterior communicating artery and then curls over the corpus callosum to supply the medial surface of the frontal and parietal lobes.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Terminal division of the internal carotid artery lateral to the optic chiasm (Netter Plate 148)."
+      },
+      {
+        "label": "Course",
+        "value": "A1 segment runs medially above the optic nerve to the anterior communicating artery; A2 segment ascends in the longitudinal fissure in front of the lamina terminalis and continues over the genu and body of the corpus callosum as the pericallosal artery."
+      },
+      {
+        "label": "Branches",
+        "value": "Anteromedial central (perforating) arteries and the long medial striate artery (recurrent artery of Heubner) from A1–proximal A2; medial frontobasal (orbitofrontal), frontopolar, callosomarginal (anterior, intermediate and posterior medial frontal branches, paracentral), pericallosal and precuneal branches."
+      },
+      {
+        "label": "Supplies",
+        "value": "Medial surface of the frontal and parietal lobes to the parieto-occipital sulcus, the paracentral lobule (leg and foot area of the motor and sensory cortex), the anterior corpus callosum, and via Heubner's artery the head of the caudate, anterior limb of the internal capsule and anterior putamen."
+      },
+      {
+        "label": "Relations",
+        "value": "Crosses the optic nerve and chiasm; the anterior communicating artery joins the two A1 segments above the chiasm."
+      }
+    ],
+    "pearl": "ACA stroke: contralateral leg-predominant weakness and sensory loss with urinary incontinence, abulia and sometimes a grasp reflex; bilateral ACA infarction after AComm aneurysm rupture or vasospasm causes akinetic mutism. Heubner's artery occlusion gives face and arm weakness from the internal capsule.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "middle-cerebral-artery",
+    "name": "Middle cerebral artery (M1–M4, lenticulostriate and cortical branches)",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Larger terminal branch of the internal carotid that runs laterally in the sylvian fissure and supplies most of the lateral hemisphere, the insula and the deep gray matter; the artery most often occluded in ischemic stroke.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Direct continuation of the internal carotid artery lateral to the optic chiasm (Netter Plates 148, 150)."
+      },
+      {
+        "label": "Course",
+        "value": "M1 (sphenoidal) segment runs laterally below the anterior perforated substance to the limen insulae; M2 (insular) branches fan over the insula; M3 (opercular) branches run under the frontal, parietal and temporal opercula; M4 cortical branches emerge from the lateral sulcus onto the convexity (Netter Plates 152, 153)."
+      },
+      {
+        "label": "Branches",
+        "value": "Anterolateral central (lenticulostriate) arteries from M1; lateral frontobasal (orbitofrontal), prefrontal, arteries of the precentral, central and postcentral sulcus (anterior parietal), posterior parietal, artery to the angular gyrus, and anterior, middle and posterior temporal branches."
+      },
+      {
+        "label": "Supplies",
+        "value": "Lateral frontal, parietal and temporal cortex including the face and arm areas of the motor and sensory strips, Broca and Wernicke areas (left), the insula and auditory cortex; lenticulostriate branches supply the putamen, globus pallidus, caudate body and the genu and posterior limb of the internal capsule."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies in the lateral (sylvian) sulcus deep to the temporalis and pterion; the superficial middle cerebral vein accompanies it."
+      }
+    ],
+    "pearl": "MCA stroke: contralateral face and arm weakness and sensory loss, gaze deviation toward the lesion, homonymous hemianopia, aphasia if dominant (Broca: superior division; Wernicke: inferior division) or neglect if non-dominant. Lenticulostriate occlusion from hypertension causes lacunar pure motor stroke or Charcot–Bouchard microaneurysm bleeds into the putamen. M1 occlusion is the classic thrombectomy target (dense MCA sign).",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "posterior-cerebral-artery",
+    "name": "Posterior cerebral artery (P1, P2, calcarine, parieto-occipital, choroidal branches)",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Terminal branch of the basilar artery that winds around the midbrain to supply the occipital lobe, the inferomedial temporal lobe, the thalamus and the midbrain; connected to the internal carotid by the posterior communicating artery.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Terminal division of the basilar artery at the upper border of the pons (Netter Plates 150, 151); embryologically a carotid branch, so a fetal-type PCA from the internal carotid is a common variant."
+      },
+      {
+        "label": "Course",
+        "value": "P1 segment runs laterally from the basilar bifurcation to the junction with the posterior communicating artery; P2 segment curves around the cerebral crus above the tentorium and the oculomotor nerve; P3/P4 continue on the inferior surface of the temporal and occipital lobes to the calcarine sulcus."
+      },
+      {
+        "label": "Branches",
+        "value": "Thalamoperforating (posteromedial central) arteries from P1; thalamogeniculate arteries and posterior medial and lateral choroidal arteries from P2; anterior and posterior temporal (occipitotemporal) branches; parieto-occipital and calcarine branches; dorsal branch to the corpus callosum (posterior pericallosal)."
+      },
+      {
+        "label": "Supplies",
+        "value": "Occipital lobe including the primary visual cortex (calcarine), the medial and inferior temporal lobe including the hippocampus and parahippocampal gyrus, the thalamus, subthalamus and cerebral peduncle of the midbrain, the choroid plexus of the 3rd and lateral ventricles and the splenium."
+      },
+      {
+        "label": "Relations",
+        "value": "Oculomotor nerve passes between the posterior cerebral and superior cerebellar arteries; the posterior communicating artery joins P1 to the internal carotid; the basal vein accompanies P2 around the midbrain."
+      }
+    ],
+    "pearl": "PCA stroke: contralateral homonymous hemianopia with macular sparing (the occipital pole gets MCA collaterals), alexia without agraphia on the left, prosopagnosia and memory loss from hippocampal involvement; thalamic branches give contralateral sensory loss and thalamic pain. 'Top of the basilar' occlusion causes bilateral PCA infarcts with cortical blindness (Anton syndrome). Uncal herniation compresses the PCA against the tentorium, giving an occipital infarct.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "posterior-inferior-cerebellar-artery",
+    "name": "Posterior inferior cerebellar artery (PICA)",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Largest branch of the vertebral artery; winds around the medulla to supply its posterolateral part, the inferior cerebellar surface, the tonsil and the choroid plexus of the 4th ventricle.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Intracranial (V4) part of the vertebral artery below the vertebrobasilar junction (Netter Plates 150, 154)."
+      },
+      {
+        "label": "Course",
+        "value": "Passes backward around the lateral medulla between the rootlets of CN IX–XI, loops over the cerebellar tonsil (caudal loop) and runs up the inferior vermis and hemisphere."
+      },
+      {
+        "label": "Branches",
+        "value": "Medullary branches to the lateral medulla, choroidal branch to the 4th ventricle, cerebellar tonsillar branch, inferior vermian artery and lateral hemispheric branches."
+      },
+      {
+        "label": "Supplies",
+        "value": "Lateral (dorsolateral) medulla: spinal trigeminal nucleus and tract, nucleus ambiguus, vestibular nuclei, spinothalamic tract, descending sympathetic fibers, inferior cerebellar peduncle; inferior surface of the cerebellum, tonsil and inferior vermis; choroid plexus of the 4th ventricle."
+      },
+      {
+        "label": "Relations",
+        "value": "Accompanied by CN IX, X and XI as they leave the medulla; the posterior spinal artery often arises from it."
+      }
+    ],
+    "pearl": "Lateral medullary (Wallenberg) syndrome from PICA or vertebral occlusion: ipsilateral facial pain and temperature loss, contralateral body pain and temperature loss, dysphagia and hoarseness (nucleus ambiguus), vertigo, nystagmus, ipsilateral Horner syndrome and ataxia, with no weakness. Vertebral dissection after neck manipulation is a classic cause in young adults. Cerebellar PICA infarcts swell and can compress the 4th ventricle (hydrocephalus) and tonsils.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "anterior-inferior-cerebellar-artery",
+    "name": "Anterior inferior cerebellar artery (AICA)",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Branch of the lower basilar artery that runs laterally across the pons toward the cerebellopontine angle and internal acoustic meatus, supplying the lateral pons, the middle cerebellar peduncle, the anteroinferior cerebellum and usually the inner ear via the labyrinthine artery.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Lower third of the basilar artery just above the vertebrobasilar junction (Netter Plates 150–154)."
+      },
+      {
+        "label": "Course",
+        "value": "Runs posterolaterally around the pons in the cerebellopontine angle, looping near or into the internal acoustic meatus between CN VII and VIII, then onto the anteroinferior (petrosal) surface of the cerebellum."
+      },
+      {
+        "label": "Branches",
+        "value": "Labyrinthine (internal acoustic) artery in most people, pontine branches, branches to the middle cerebellar peduncle, flocculus and anteroinferior hemisphere; anastomoses with PICA and the superior cerebellar artery."
+      },
+      {
+        "label": "Supplies",
+        "value": "Lateral caudal pons (facial nucleus and nerve, vestibular and cochlear nuclei, spinal trigeminal nucleus, spinothalamic tract), middle cerebellar peduncle, flocculus and anterior inferior cerebellum, and the inner ear through the labyrinthine artery."
+      },
+      {
+        "label": "Relations",
+        "value": "Closely related to the facial and vestibulocochlear nerves at the cerebellopontine angle; CN VI emerges medial to it at the pontomedullary junction."
+      }
+    ],
+    "pearl": "Lateral pontine (AICA) syndrome: ipsilateral facial paralysis (facial nucleus), ipsilateral deafness and vertigo (cochlear and vestibular nuclei or labyrinthine artery), ipsilateral facial sensory loss and ataxia, contralateral body pain and temperature loss and ipsilateral Horner syndrome. 'Facial droop means AICA's pooped.' Sudden unilateral sensorineural deafness with vertigo in a vascular patient is an AICA territory event.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "superior-cerebellar-artery",
+    "name": "Superior cerebellar artery",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Last branch of the basilar artery before its bifurcation; runs below the oculomotor nerve around the midbrain to supply the superior cerebellum, the superior cerebellar peduncle and the upper pons.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Basilar artery just below the posterior cerebral arteries, at the upper border of the pons (Netter Plates 150, 151, 154)."
+      },
+      {
+        "label": "Course",
+        "value": "Passes laterally around the cerebral peduncle below the tentorium and the oculomotor and trochlear nerves, then onto the superior (tentorial) surface of the cerebellum."
+      },
+      {
+        "label": "Branches",
+        "value": "Lateral (marginal) branch to the hemisphere, superior vermian branch, branches to the superior cerebellar peduncle, dentate nucleus, upper pons and inferior colliculus."
+      },
+      {
+        "label": "Supplies",
+        "value": "Superior cerebellar hemisphere and vermis, dentate nucleus, superior and middle cerebellar peduncles, dorsolateral upper pons and lower midbrain including the spinothalamic tract and the inferior colliculus."
+      },
+      {
+        "label": "Relations",
+        "value": "CN III emerges between the superior cerebellar and posterior cerebral arteries; CN IV runs below it around the midbrain; the trigeminal root lies lateral and below."
+      }
+    ],
+    "pearl": "Superior cerebellar artery territory stroke: ipsilateral limb ataxia, intention tremor and dysarthria with contralateral pain and temperature loss, usually without the vertigo and deafness of the AICA syndrome. An aberrant loop of the SCA compressing the trigeminal root entry zone is the usual cause of classic trigeminal neuralgia, treated by microvascular decompression; a PCA/SCA aneurysm can compress CN III.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "labyrinthine-artery",
+    "name": "Labyrinthine (internal acoustic) artery",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Long slender artery that enters the internal acoustic meatus with the facial and vestibulocochlear nerves and is the only arterial supply of the membranous labyrinth, so its occlusion silences the inner ear.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Usually the anterior inferior cerebellar artery, sometimes directly from the basilar artery (Netter Plates 147, 150, 154 show it beside AICA and the basilar)."
+      },
+      {
+        "label": "Course",
+        "value": "Runs laterally in the cerebellopontine angle with CN VII and CN VIII through the internal acoustic meatus (Netter Plate 20) into the petrous temporal bone."
+      },
+      {
+        "label": "Branches",
+        "value": "Anterior vestibular, common cochlear and vestibulocochlear branches ending in the cochlea and vestibular labyrinth (Netter Plate 107 shows it entering the labyrinth)."
+      },
+      {
+        "label": "Supplies",
+        "value": "Cochlea (spiral organ via the modiolus), vestibule, semicircular ducts and the nerves in the meatus; the bony labyrinth itself receives twigs from the stylomastoid and tympanic arteries."
+      },
+      {
+        "label": "Relations",
+        "value": "End artery with no collateral from the external carotid for the membranous labyrinth; accompanied by the labyrinthine veins to the inferior petrosal sinus."
+      }
+    ],
+    "pearl": "An end artery: thrombosis or embolism causes sudden unilateral sensorineural hearing loss with vertigo ('labyrinthine infarction'), one of the vascular causes to consider in an older patient with sudden deafness. Compression in the internal acoustic meatus by a vestibular schwannoma contributes to the progressive hearing loss of acoustic neuroma.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "anterior-choroidal-artery",
+    "name": "Anterior choroidal artery",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Small but critical branch of the internal carotid that runs backward along the optic tract to the temporal horn, supplying the posterior limb of the internal capsule, the optic tract and lateral geniculate body, the hippocampus and the choroid plexus of the lateral ventricle.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Supraclinoid internal carotid artery distal to the posterior communicating artery, just before the terminal bifurcation (Netter Plates 148, 150, 151)."
+      },
+      {
+        "label": "Course",
+        "value": "Runs posterolaterally along the optic tract and around the cerebral peduncle, between the uncus and the crus cerebri, to enter the choroidal fissure of the temporal horn."
+      },
+      {
+        "label": "Branches",
+        "value": "Perforators to the posterior limb and retrolenticular part of the internal capsule, globus pallidus, optic tract, lateral geniculate body, cerebral peduncle, uncus and hippocampus; terminal choroidal branches to the choroid plexus of the lateral ventricle (anastomosing with the posterior lateral choroidal artery)."
+      },
+      {
+        "label": "Supplies",
+        "value": "Posterior limb of the internal capsule (corticospinal and thalamocortical fibers), optic tract and lateral geniculate body (visual pathway), medial temporal lobe and hippocampus, medial globus pallidus, cerebral peduncle, choroid plexus."
+      },
+      {
+        "label": "Relations",
+        "value": "Optic tract above and medial; uncus lateral; posterior communicating artery arises just proximal to it."
+      }
+    ],
+    "pearl": "Anterior choroidal artery infarction gives the triad of contralateral hemiplegia (posterior limb of internal capsule), hemisensory loss and homonymous hemianopia (optic tract/lateral geniculate), often with sparing of language and cognition. It is vulnerable during aneurysm clipping of the internal carotid and in uncal herniation.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "anterior-and-posterior-spinal-arteries",
+    "name": "Anterior and posterior spinal arteries",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Longitudinal arteries of the spinal cord that begin as branches of the vertebral arteries in the posterior cranial fossa: the single anterior spinal artery in the anterior median fissure supplies the anterior two-thirds of the cord and the medial medulla, the paired posterior spinal arteries supply the posterior columns.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Anterior spinal artery: a branch from each vertebral artery near the vertebrobasilar junction, the two uniting in the midline on the medulla (Netter Plates 150, 152, 154). Posterior spinal arteries: from the vertebral artery or the posterior inferior cerebellar artery of each side."
+      },
+      {
+        "label": "Course",
+        "value": "Anterior spinal artery descends through the foramen magnum in the anterior median fissure of the medulla and cord; posterior spinal arteries descend on the posterolateral cord beside the dorsal root entry zones. Both are reinforced along the cord by segmental (radicular) arteries, the largest being the artery of Adamkiewicz."
+      },
+      {
+        "label": "Branches",
+        "value": "Sulcal (central) branches of the anterior spinal artery into the anterior median fissure; pial (vasocorona) anastomoses between anterior and posterior systems; medullary branches to the pyramids, medial lemniscus and hypoglossal nucleus."
+      },
+      {
+        "label": "Supplies",
+        "value": "Anterior spinal: medial medulla (pyramid, medial lemniscus, hypoglossal nerve and nucleus) and the anterior two-thirds of the cord (anterior horns, corticospinal and spinothalamic tracts). Posterior spinal: posterior columns and posterior horns."
+      },
+      {
+        "label": "Relations",
+        "value": "Vertebral arteries and the medulla pass through the foramen magnum together; the anterior spinal artery lies in front of the pyramids."
+      }
+    ],
+    "pearl": "Medial medullary syndrome (anterior spinal artery): contralateral hemiparesis and loss of proprioception/vibration with ipsilateral tongue deviation. Anterior spinal artery syndrome of the cord (aortic surgery, dissection, hypotension): bilateral flaccid then spastic paralysis and loss of pain and temperature below the lesion with preserved vibration and proprioception, because the posterior spinal arteries are spared.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "internal-carotid-petrous-and-cavernous-branches",
+    "name": "Petrous and cavernous branches of the internal carotid (caroticotympanic, meningohypophyseal and inferolateral trunks)",
+    "category": "artery",
+    "group": "Carotid system",
+    "function": "Small branches the internal carotid gives inside the temporal bone and cavernous sinus, before the ophthalmic artery; they supply the middle ear, the dura of the clivus and tentorium, the posterior pituitary and the cavernous sinus nerves, and form the internal-to-external carotid anastomoses used by collateral flow and by tumors.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Petrous part: caroticotympanic artery and the vidian (pterygoid canal) branch. Cavernous part: meningohypophyseal trunk, artery to the inferior cavernous sinus (inferolateral trunk) and small branches to the foramina rotundum, ovale and spinosum and the superior orbital fissure; a recurrent artery of the foramen lacerum (Netter Plate 148)."
+      },
+      {
+        "label": "Course",
+        "value": "The caroticotympanic artery passes through the carotid canal wall into the tympanic cavity (Netter Plate 107); the meningohypophyseal trunk arises from the posterior bend of the cavernous carotid; the inferolateral trunk crosses the abducens nerve laterally."
+      },
+      {
+        "label": "Branches",
+        "value": "Meningohypophyseal trunk: tentorial (Bernasconi–Cassinari) artery, dorsal meningeal artery to the clivus and abducens nerve, inferior hypophyseal artery. Inferolateral trunk: branches to CN III, IV, VI and the gasserian ganglion, anastomosing through the foramina with the middle and accessory meningeal and ophthalmic arteries."
+      },
+      {
+        "label": "Supplies",
+        "value": "Middle ear mucosa (with the tympanic arteries), dura of the clivus, tentorium and cavernous sinus walls, posterior lobe of the pituitary, cavernous sinus cranial nerves and the trigeminal ganglion."
+      },
+      {
+        "label": "Relations",
+        "value": "Within the cavernous sinus the carotid is accompanied by CN VI and sympathetic fibers; these branches anastomose with the external carotid system through the foramen lacerum, rotundum, ovale and spinosum (Netter Plate 148 'internal to external carotid artery anastomosis')."
+      }
+    ],
+    "pearl": "These are the feeders of cavernous sinus dural arteriovenous fistulas and of tentorial meningiomas (enlarged tentorial artery on angiography), and the routes by which the external carotid supplies the brain when the proximal internal carotid is occluded. A cavernous carotid aneurysm compresses CN VI and III rather than bleeding into the subarachnoid space.",
+    "depth": "deep",
+    "marker": {
+      "x": 500,
+      "y": 690
+    }
+  },
+  {
+    "id": "hypophyseal-arteries",
+    "name": "Superior and inferior hypophyseal arteries",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Pituitary arteries: the superior hypophyseal arteries from the supraclinoid internal carotid feed the hypothalamic median eminence and stalk and so the portal system of the anterior lobe, while the inferior hypophyseal arteries from the cavernous carotid supply the posterior lobe directly.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Superior hypophyseal arteries: supraclinoid (cerebral) part of the internal carotid and posterior communicating artery, medial to the optic nerve (Netter Plates 148, 151). Inferior hypophyseal artery: meningohypophyseal trunk of the cavernous internal carotid."
+      },
+      {
+        "label": "Course",
+        "value": "Superior branches run medially below the optic chiasm to the infundibulum and tuber cinereum; inferior branches pass medially through the cavernous sinus to the posterior lobe and capsule."
+      },
+      {
+        "label": "Branches",
+        "value": "Superior: capillary plexus of the median eminence and upper stalk that drains into the long hypophyseal portal veins; branches to the optic chiasm and optic nerve. Inferior: capillary plexus of the neurohypophysis and lower stalk, short portal veins, capsular branches."
+      },
+      {
+        "label": "Supplies",
+        "value": "Anterior lobe indirectly through the hypophyseal portal veins (carrying hypothalamic releasing hormones), the stalk, optic chiasm and optic nerves; posterior lobe directly."
+      },
+      {
+        "label": "Relations",
+        "value": "Optic chiasm immediately above the superior arteries; cavernous sinus and the efferent hypophyseal veins around the gland (Netter Plate BP30)."
+      }
+    ],
+    "pearl": "The anterior pituitary has no direct arterial supply of its own, which makes it vulnerable: postpartum hypotension infarcts the hyperplastic gland (Sheehan syndrome: failure of lactation, amenorrhea, hypothyroidism, adrenal insufficiency), and pituitary apoplexy is hemorrhagic infarction of an adenoma with sudden headache, visual loss and adrenal crisis. The posterior lobe, supplied directly, is usually spared in Sheehan syndrome.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "brachiocephalic-trunk",
+    "name": "Brachiocephalic trunk",
+    "category": "artery",
+    "group": "Subclavian & vertebral",
+    "function": "First and largest branch of the aortic arch; ascends to the right behind the manubrium and divides behind the right sternoclavicular joint into the right common carotid and right subclavian arteries. There is no left brachiocephalic artery.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Aortic arch, behind the manubrium (Netter Plates 40, 147, 149, BP23)."
+      },
+      {
+        "label": "Course",
+        "value": "Runs upward and to the right in front of the trachea and behind the left brachiocephalic vein and the sternohyoid and sternothyroid muscles to the upper border of the right sternoclavicular joint."
+      },
+      {
+        "label": "Branches",
+        "value": "Right common carotid artery and right subclavian artery; occasionally a thyroid ima artery to the thyroid isthmus."
+      },
+      {
+        "label": "Supplies",
+        "value": "Right side of the head and neck and the right upper limb through its two terminal branches."
+      },
+      {
+        "label": "Relations",
+        "value": "Trachea posterior and left, left brachiocephalic vein crossing in front, right brachiocephalic vein and vagus lateral, thymus in front in children."
+      }
+    ],
+    "pearl": "A tracheostomy placed too low, or a cuffed tube eroding the anterior tracheal wall, can create a tracheo-innominate fistula with massive hemoptysis (overinflate the cuff and compress the artery against the sternum). Takayasu arteritis and atherosclerosis of the trunk cause an absent right radial pulse and right-sided ischemic symptoms; the right subclavian steal starts here.",
+    "depth": "deep",
+    "marker": {
+      "x": 480,
+      "y": 860
+    }
+  },
+  {
+    "id": "ascending-cervical-artery",
+    "name": "Ascending cervical artery",
+    "category": "artery",
+    "group": "Subclavian & vertebral",
+    "function": "Small branch of the inferior thyroid artery that climbs the prevertebral muscles medial to the phrenic nerve, supplying the deep neck muscles and sending spinal branches into the intervertebral foramina.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Inferior thyroid artery as it turns medially, or directly from the thyrocervical trunk (Netter Plates 40, 83, BP23)."
+      },
+      {
+        "label": "Course",
+        "value": "Ascends on the anterior tubercles of the cervical transverse processes between the anterior scalene and longus capitis, parallel and medial to the phrenic nerve."
+      },
+      {
+        "label": "Branches",
+        "value": "Muscular branches to the longus colli, longus capitis and scalene muscles; spinal branches through the intervertebral foramina to the vertebral bodies, meninges and cord, anastomosing with the vertebral and deep cervical arteries."
+      },
+      {
+        "label": "Supplies",
+        "value": "Prevertebral and scalene muscles (Netter muscle tables p221–222), cervical vertebrae and the spinal cord via radicular branches."
+      },
+      {
+        "label": "Relations",
+        "value": "Phrenic nerve runs lateral to it on the anterior scalene; the sympathetic trunk and middle cervical ganglion lie medial on the longus colli."
+      }
+    ],
+    "pearl": "A landmark for the phrenic nerve on the anterior scalene during neck dissection and anterior cervical spine surgery, and a collateral route to the cervical cord and vertebral artery when the vertebral artery is occluded; its radicular branches can be the source of a cervical epidural hematoma or a feeder of a spinal dural fistula.",
+    "depth": "deep",
+    "marker": {
+      "x": 480,
+      "y": 860
+    }
+  },
+  {
+    "id": "dorsal-scapular-artery",
+    "name": "Dorsal scapular artery",
+    "category": "artery",
+    "group": "Subclavian & vertebral",
+    "function": "Artery to the rhomboids and levator scapulae that runs along the medial border of the scapula; it arises either as the deep branch of the transverse cervical artery or directly from the third part of the subclavian artery, passing through the brachial plexus.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Second or third part of the subclavian artery in most people, passing between the trunks of the brachial plexus; in about 30% it shares a common origin with the superficial cervical artery from the transverse cervical artery, as its deep branch (Netter Plate BP23)."
+      },
+      {
+        "label": "Course",
+        "value": "Runs posteriorly through the brachial plexus and under the levator scapulae to the superior angle of the scapula, then descends along the medial border deep to the rhomboids with the dorsal scapular nerve (Netter Plates 39, 40)."
+      },
+      {
+        "label": "Branches",
+        "value": "Muscular branches to the rhomboids, levator scapulae and trapezius; anastomoses with the suprascapular, circumflex scapular and posterior intercostal arteries around the scapula."
+      },
+      {
+        "label": "Supplies",
+        "value": "Rhomboid major and minor, levator scapulae and the lower trapezius; contributes to the scapular anastomosis."
+      },
+      {
+        "label": "Relations",
+        "value": "Travels with the dorsal scapular nerve (C5); the superficial branch of the transverse cervical artery supplies the trapezius above it."
+      }
+    ],
+    "pearl": "Part of the scapular anastomosis (with the suprascapular and circumflex scapular arteries) that keeps the arm perfused when the axillary artery is blocked between the thyrocervical trunk and the subscapular artery. It runs with the dorsal scapular nerve, so both are at risk in posterior triangle surgery and in a middle scalene hematoma.",
+    "depth": "deep",
+    "marker": {
+      "x": 480,
+      "y": 860
+    }
+  },
+  {
+    "id": "deep-cervical-and-supreme-intercostal-arteries",
+    "name": "Deep cervical and supreme intercostal arteries (costocervical trunk)",
+    "category": "artery",
+    "group": "Subclavian & vertebral",
+    "function": "The two branches of the costocervical trunk: the deep cervical artery ascends in the back of the neck between the semispinalis muscles, the supreme (highest) intercostal artery descends over the neck of the first rib to supply the first two intercostal spaces.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Costocervical trunk from the posterior surface of the subclavian artery (second part on the right, first part on the left), which divides over the pleural cupola (Netter Plates 147, 149, BP23)."
+      },
+      {
+        "label": "Course",
+        "value": "Deep cervical artery passes backward above the neck of the first rib, between the transverse process of C7 and the first rib, and ascends between semispinalis capitis and semispinalis cervicis; the supreme intercostal artery descends in front of the necks of the first and second ribs."
+      },
+      {
+        "label": "Branches",
+        "value": "Deep cervical: muscular branches and spinal branches into the intervertebral foramina, anastomosing with the descending branch of the occipital artery and the vertebral artery. Supreme intercostal: first and second posterior intercostal arteries."
+      },
+      {
+        "label": "Supplies",
+        "value": "Deep posterior neck muscles (semispinalis, splenius, suboccipital muscles), cervical vertebrae and spinal cord branches; upper two intercostal spaces, their muscles and the upper thoracic cord."
+      },
+      {
+        "label": "Relations",
+        "value": "Sympathetic trunk and stellate ganglion lie medial to the supreme intercostal artery on the neck of the first rib; the deep cervical artery is the posterior counterpart of the vertebral artery."
+      }
+    ],
+    "pearl": "The deep cervical and occipital arteries form the main collateral to the vertebral artery when the subclavian or proximal vertebral is occluded (subclavian steal). The supreme intercostal artery and stellate ganglion sit on the neck of the first rib, where they are at risk in first-rib resection for thoracic outlet syndrome and in Pancoast tumors.",
+    "depth": "deep",
+    "marker": {
+      "x": 480,
+      "y": 860
+    }
+  },
+  {
+    "id": "ascending-palatine-artery",
+    "name": "Ascending palatine artery",
+    "category": "artery",
+    "group": "External carotid branches",
+    "function": "First branch of the facial artery in the neck; climbs between the styloglossus and stylopharyngeus on the pharyngeal wall to supply the soft palate, palatine tonsil and auditory tube.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Facial artery near its origin from the external carotid, in the carotid triangle (Netter Plates 57, 72, 83)."
+      },
+      {
+        "label": "Course",
+        "value": "Ascends on the lateral pharyngeal wall between the styloglossus and stylopharyngeus, then crosses over the upper border of the superior pharyngeal constrictor to reach the soft palate; a branch passes with the levator veli palatini."
+      },
+      {
+        "label": "Branches",
+        "value": "Tonsillar branches to the palatine tonsil (one of the five tonsillar sources on Netter Plate 72), branches to the soft palate anastomosing with the lesser palatine artery, branches to the auditory tube and superior constrictor, glandular branches."
+      },
+      {
+        "label": "Supplies",
+        "value": "Soft palate and palatal muscles (levator veli palatini, musculus uvulae, palatopharyngeus), palatine tonsil, upper pharynx and auditory tube (Netter muscle tables)."
+      },
+      {
+        "label": "Relations",
+        "value": "Runs with the ascending pharyngeal artery and the pharyngeal plexus on the constrictors; the internal carotid lies posterolateral."
+      }
+    ],
+    "pearl": "One of the vessels that bleeds after tonsillectomy (with the tonsillar branch and the lesser palatine artery); secondary hemorrhage at 5–10 days is from slough separating over these vessels. Peritonsillar abscess drainage stays medial to avoid the internal carotid behind the ascending palatine territory.",
+    "depth": "deep",
+    "marker": {
+      "x": 400,
+      "y": 548
+    }
+  },
+  {
+    "id": "submental-artery",
+    "name": "Submental artery",
+    "category": "artery",
+    "group": "External carotid branches",
+    "function": "Largest cervical branch of the facial artery; runs forward on the mylohyoid beneath the chin, supplying the submandibular gland, the floor-of-mouth muscles and the chin, and anastomosing with the inferior alveolar and mental arteries.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Facial artery as it leaves the submandibular gland, just before it curls over the mandible (Netter Plates 57, 83)."
+      },
+      {
+        "label": "Course",
+        "value": "Runs forward on the inferior surface of the mylohyoid, below the body of the mandible, deep to the anterior belly of digastric, to the chin."
+      },
+      {
+        "label": "Branches",
+        "value": "Muscular branches to mylohyoid and the anterior belly of digastric, glandular branches to the submandibular gland, a superficial branch to the chin skin and a deep branch that pierces the mylohyoid to anastomose with the sublingual artery; terminal branches join the mental and inferior labial arteries."
+      },
+      {
+        "label": "Supplies",
+        "value": "Anterior belly of digastric, mylohyoid, submandibular gland, skin of the chin and submental region, and with the sublingual artery the floor of the mouth and platysma (Netter muscle tables p219–222)."
+      },
+      {
+        "label": "Relations",
+        "value": "Submental vein and lymph nodes accompany it; the nerve to mylohyoid runs with it on the muscle."
+      }
+    ],
+    "pearl": "The submental artery is the pedicle of the submental island flap used to reconstruct the floor of mouth and lower face, and it is ligated in level I neck dissection. In Ludwig angina the submental space it supplies becomes board-hard, and its bleeding complicates drainage.",
+    "depth": "deep",
+    "marker": {
+      "x": 400,
+      "y": 548
+    }
+  },
+  {
+    "id": "lateral-nasal-artery",
+    "name": "Lateral nasal artery (with alar branches)",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "Branch of the facial artery to the ala and dorsum of the nose, given off beside the ala before the facial artery ends as the angular artery; its alar branches anastomose with the external nasal and septal arteries.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Facial artery at the level of the ala of the nose (Netter Plates 42, 47)."
+      },
+      {
+        "label": "Course",
+        "value": "Runs medially across the ala and up the side of the nose beneath the nasalis muscle."
+      },
+      {
+        "label": "Branches",
+        "value": "Alar branches to the ala, nasal tip and columella, anastomosing with the external (dorsal) nasal branch of the ophthalmic artery, the nasal septal branch of the superior labial artery and the anterior ethmoidal artery (Netter Plate 47)."
+      },
+      {
+        "label": "Supplies",
+        "value": "Skin and cartilage of the ala and lower dorsum of the nose, nasal vestibule and the nasalis and levator labii superioris alaeque nasi muscles."
+      },
+      {
+        "label": "Relations",
+        "value": "Angular artery continues from it to the medial canthus; the external nasal vein and nasalis overlie it."
+      }
+    ],
+    "pearl": "The lateral nasal and superior labial branches of the facial artery are part of the anastomosis in the nasal vestibule (with anterior ethmoidal and sphenopalatine branches) that is the usual site of anterior epistaxis (Netter Table 2.2). Alar necrosis after filler injection or a prolonged nasal cannula follows occlusion of these alar branches.",
+    "depth": "deep",
+    "marker": {
+      "x": 520,
+      "y": 392
+    }
+  },
+  {
+    "id": "descending-palatine-artery",
+    "name": "Descending (greater) palatine artery and lesser palatine arteries",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "Branch of the third part of the maxillary artery that descends in the greater palatine canal and divides into the greater palatine artery to the hard palate and the lesser palatine arteries to the soft palate and tonsil.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Third (pterygopalatine) part of the maxillary artery in the pterygopalatine fossa (Netter Plates 57, 63, 72)."
+      },
+      {
+        "label": "Course",
+        "value": "Descends in the greater palatine canal with the greater and lesser palatine nerves; the greater palatine artery emerges through the greater palatine foramen medial to the third molar and runs forward in a groove to the incisive canal, the lesser palatine arteries leave through the lesser palatine foramina in the pyramidal process."
+      },
+      {
+        "label": "Branches",
+        "value": "Greater palatine artery (see its own card): branches to the hard palate mucosa, palatal gingiva and the anastomosis with the sphenopalatine artery in the incisive canal; lesser palatine arteries to the soft palate and palatine tonsil; posterior inferior nasal branches through the perpendicular plate to the inferior concha."
+      },
+      {
+        "label": "Supplies",
+        "value": "Hard palate and palatal gingiva, soft palate and uvula (with the ascending palatine artery), palatine tonsil (one of its five tonsillar sources), inferior meatus mucosa (Netter muscle tables: musculus uvulae and palatal muscles)."
+      },
+      {
+        "label": "Relations",
+        "value": "Maxillary sinus lateral to the canal; the greater palatine nerve accompanies it."
+      }
+    ],
+    "pearl": "The greater palatine foramen is the injection site for a greater palatine block and for transpalatal control of posterior epistaxis; the lesser palatine arteries bleed after tonsillectomy and adenoidectomy. The palatal flap for cleft repair is raised on the greater palatine pedicle, which must be spared.",
+    "depth": "deep",
+    "marker": {
+      "x": 520,
+      "y": 392
+    }
+  },
+  {
+    "id": "posterior-superior-alveolar-artery",
+    "name": "Posterior superior alveolar artery",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "Branch of the third part of the maxillary artery that descends on the maxillary tuberosity and enters the posterior superior alveolar foramina to supply the molars, premolars, gingiva and the lining of the maxillary sinus.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Maxillary artery as it enters the pterygopalatine fossa, often by a common trunk with the infraorbital artery (Netter Plates 57, 60, 63)."
+      },
+      {
+        "label": "Course",
+        "value": "Descends on the infratemporal surface of the maxilla with the posterior superior alveolar nerve; branches enter the posterior superior alveolar foramina above the tuberosity, others continue down to the gingiva."
+      },
+      {
+        "label": "Branches",
+        "value": "Dental branches to the molar and premolar roots, alveolar branches to the bone and gingiva, and branches to the mucosa of the maxillary sinus that anastomose with the infraorbital artery's anterior and middle superior alveolar branches."
+      },
+      {
+        "label": "Supplies",
+        "value": "Maxillary molars and premolars, their periodontium and buccal gingiva, the posterolateral wall and mucosa of the maxillary sinus."
+      },
+      {
+        "label": "Relations",
+        "value": "Pterygoid venous plexus and buccal fat pad lie lateral; the sinus wall is thin here."
+      }
+    ],
+    "pearl": "The posterior superior alveolar block is placed at the maxillary tuberosity; advancing too far pierces the pterygoid plexus and this artery, giving a rapidly expanding cheek hematoma. The artery also bleeds in Le Fort I osteotomy and in sinus-lift bone grafts, where it crosses the lateral sinus wall.",
+    "depth": "deep",
+    "marker": {
+      "x": 520,
+      "y": 392
+    }
+  },
+  {
+    "id": "muscular-branches-of-maxillary-artery",
+    "name": "Deep temporal, masseteric, pterygoid and buccal arteries (2nd-part maxillary branches)",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "Branches of the second (pterygoid) part of the maxillary artery that supply the muscles of mastication and the cheek, each travelling with the corresponding branch of the mandibular nerve.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Second part of the maxillary artery as it crosses the lateral pterygoid muscle in the infratemporal fossa (Netter Plates 57, 58)."
+      },
+      {
+        "label": "Course",
+        "value": "Anterior and posterior deep temporal arteries ascend between temporalis and the skull; the masseteric artery passes laterally through the mandibular notch with the masseteric nerve; the pterygoid arteries are short branches to the medial and lateral pterygoids; the buccal artery runs forward with the buccal nerve onto the buccinator."
+      },
+      {
+        "label": "Branches",
+        "value": "Deep temporal arteries anastomose with the middle temporal (superficial temporal) and lacrimal arteries; the masseteric artery joins the transverse facial artery; the buccal artery anastomoses with the facial and infraorbital arteries."
+      },
+      {
+        "label": "Supplies",
+        "value": "Temporalis (deep temporal), masseter (masseteric), medial and lateral pterygoids (pterygoid), buccinator and cheek mucosa and skin (buccal) — the blood-supply column of the mastication rows in Netter's muscle tables."
+      },
+      {
+        "label": "Relations",
+        "value": "Each artery accompanies the nerve of the same name from the anterior division of V3; the pterygoid venous plexus surrounds them."
+      }
+    ],
+    "pearl": "Hemorrhage and trismus after mandibular ramus fractures or sagittal split osteotomy come from these muscular branches in the masticator space. The deep temporal arteries supply the temporalis flap used for orbital and palate reconstruction; the buccal artery pedicle supports buccal fat pad flaps for oroantral fistula closure.",
+    "depth": "deep",
+    "marker": {
+      "x": 520,
+      "y": 392
+    }
+  },
+  {
+    "id": "accessory-meningeal-artery",
+    "name": "Accessory meningeal artery",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "Small branch of the maxillary (or middle meningeal) artery that enters the skull through the foramen ovale to supply the trigeminal ganglion and the dura of the middle cranial fossa, after giving most of its branches to the pterygoid muscles and tensor veli palatini outside the skull.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "First part of the maxillary artery or the middle meningeal artery near its origin (Netter Plates 57, 60, 112)."
+      },
+      {
+        "label": "Course",
+        "value": "Ascends medial to the lateral pterygoid and passes through the foramen ovale with the mandibular nerve and the lesser petrosal nerve (Netter Plates 19, 20)."
+      },
+      {
+        "label": "Branches",
+        "value": "Extracranial branches to the medial and lateral pterygoids, tensor veli palatini, auditory tube and the otic ganglion region; intracranial branches to the trigeminal ganglion, the dura around the cavernous sinus and the floor of the middle cranial fossa."
+      },
+      {
+        "label": "Supplies",
+        "value": "Pterygoid muscles and tensor veli palatini (the larger part of its territory), trigeminal ganglion and adjacent dura; anastomoses with the cavernous branches of the internal carotid."
+      },
+      {
+        "label": "Relations",
+        "value": "Foramen ovale contents: V3, accessory meningeal artery, lesser petrosal nerve and emissary veins."
+      }
+    ],
+    "pearl": "Its dural branches explain why a meningioma or dural arteriovenous fistula of the middle fossa may be fed through the foramen ovale, and why embolization of the maxillary artery for epistaxis must avoid reflux through accessory meningeal to internal carotid anastomoses (risk of cranial nerve palsy or stroke).",
+    "depth": "deep",
+    "marker": {
+      "x": 520,
+      "y": 392
+    }
+  },
+  {
+    "id": "deep-auricular-and-anterior-tympanic-arteries",
+    "name": "Deep auricular and anterior tympanic arteries",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "The first two branches of the maxillary artery, arising behind the temporomandibular joint: the deep auricular artery pierces the floor of the external acoustic meatus to supply the meatus and the outer tympanic membrane, the anterior tympanic artery passes through the petrotympanic fissure to the middle ear.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "First (mandibular) part of the maxillary artery behind the neck of the mandible, often by a common stem (Netter Plates 57, 58, 107)."
+      },
+      {
+        "label": "Course",
+        "value": "Deep auricular: ascends in the parotid behind the TMJ and pierces the cartilaginous or bony wall of the external acoustic meatus. Anterior tympanic: runs up behind the TMJ and enters the tympanic cavity through the petrotympanic fissure with the chorda tympani."
+      },
+      {
+        "label": "Branches",
+        "value": "Deep auricular: twigs to the TMJ capsule, meatal skin and the outer layer of the tympanic membrane. Anterior tympanic: branches to the tympanic membrane (arteries of the mallear stria) and the marginal arterial rete on the membrane, anastomosing with the stylomastoid, caroticotympanic and superior tympanic arteries (Netter Plate 107)."
+      },
+      {
+        "label": "Supplies",
+        "value": "External acoustic meatus and outer tympanic membrane, temporomandibular joint, and the mucosa and ossicles of the anterior tympanic cavity."
+      },
+      {
+        "label": "Relations",
+        "value": "Auriculotemporal nerve and superficial temporal vessels lie lateral; the chorda tympani shares the petrotympanic fissure."
+      }
+    ],
+    "pearl": "Together with the stylomastoid branch these form the vascular ring of the tympanic membrane seen as the 'marginal rete'; their engorgement gives the injected drum of early otitis media and brisk bleeding from meatal lacerations. The deep auricular artery can be injured in TMJ arthroscopy.",
+    "depth": "deep",
+    "marker": {
+      "x": 520,
+      "y": 392
+    }
+  },
+  {
+    "id": "artery-of-pterygoid-canal-and-pharyngeal-artery",
+    "name": "Artery of the pterygoid canal and pharyngeal artery (3rd-part maxillary branches)",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "Two small posterior branches of the third part of the maxillary artery: the artery of the pterygoid canal (vidian artery) runs back through the canal to the auditory tube and nasopharynx, the pharyngeal artery through the pharyngeal (palatovaginal) canal to the roof of the nasopharynx and sphenoid sinus.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Third part of the maxillary artery in the pterygopalatine fossa (Netter Plates 57, 63); the vidian artery can also arise from the petrous internal carotid, which it meets in the canal (Netter Plate 148)."
+      },
+      {
+        "label": "Course",
+        "value": "Artery of the pterygoid canal passes backward through the pterygoid canal with the vidian nerve to the region of the foramen lacerum; the pharyngeal artery runs backward through the pharyngeal canal between the sphenoid body and the palatine bone."
+      },
+      {
+        "label": "Branches",
+        "value": "Vidian: branches to the auditory tube, upper pharynx and tympanic cavity, anastomosing with the petrous internal carotid (an internal-to-external carotid anastomosis). Pharyngeal: branches to the sphenoid sinus, auditory tube and nasopharyngeal roof."
+      },
+      {
+        "label": "Supplies",
+        "value": "Mucosa of the nasopharynx, auditory tube, sphenoid sinus and the pterygopalatine ganglion region."
+      },
+      {
+        "label": "Relations",
+        "value": "Nerve of the pterygoid canal accompanies the vidian artery; the sphenopalatine artery leaves the fossa medially just above."
+      }
+    ],
+    "pearl": "The vidian artery is a feeder of juvenile nasopharyngeal angiofibroma and a dangerous collateral between the maxillary and internal carotid arteries during embolization for epistaxis; identifying the vidian canal guides endoscopic surgeons to the petrous carotid at the foramen lacerum.",
+    "depth": "deep",
+    "marker": {
+      "x": 520,
+      "y": 392
+    }
+  },
+  {
+    "id": "stylomastoid-artery",
+    "name": "Stylomastoid artery",
+    "category": "artery",
+    "group": "External carotid branches",
+    "function": "Branch of the posterior auricular (sometimes occipital) artery that enters the stylomastoid foramen alongside the facial nerve and runs up the facial canal to supply the nerve, the stapedius, the mastoid air cells and the posterior tympanic cavity.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Posterior auricular artery just below the stylomastoid foramen (Netter Plates 76, 107)."
+      },
+      {
+        "label": "Course",
+        "value": "Ascends through the stylomastoid foramen with the facial nerve, within the facial canal, to the posterior wall of the middle ear."
+      },
+      {
+        "label": "Branches",
+        "value": "Posterior tympanic artery to the tympanic membrane and marginal rete, stapedial branch to the stapedius muscle and stapes, mastoid branches to the mastoid antrum and cells, and branches to the facial nerve and semicircular canals (Netter Plate 107)."
+      },
+      {
+        "label": "Supplies",
+        "value": "Facial nerve in its vertical and tympanic segments, stapedius, posterior tympanic membrane and cavity, mastoid air cells, part of the bony labyrinth."
+      },
+      {
+        "label": "Relations",
+        "value": "Facial nerve, chorda tympani origin and the pyramidal eminence lie beside it in the canal; the petrosal branch of the middle meningeal artery supplies the upper facial canal."
+      }
+    ],
+    "pearl": "The facial nerve's blood supply in the narrow facial canal comes from this artery and the petrosal branch of the middle meningeal: ischemia and oedema in the labyrinthine segment underlie Bell palsy, and the stylomastoid foramen is where the nerve is identified in parotid surgery. The artery bleeds during mastoidectomy near the facial ridge.",
+    "depth": "deep",
+    "marker": {
+      "x": 400,
+      "y": 548
+    }
+  },
+  {
+    "id": "lacrimal-artery",
+    "name": "Lacrimal artery",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Early branch of the ophthalmic artery that runs along the upper border of the lateral rectus to the lacrimal gland, continuing to the lateral eyelids and conjunctiva; its recurrent meningeal branch anastomoses with the middle meningeal artery through the superior orbital fissure.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Ophthalmic artery just after it enters the orbit, lateral to the optic nerve (Netter Plates 99, 112)."
+      },
+      {
+        "label": "Course",
+        "value": "Passes forward with the lacrimal nerve along the upper border of the lateral rectus to the lacrimal gland, then pierces the orbital septum to the lateral eyelids."
+      },
+      {
+        "label": "Branches",
+        "value": "Glandular branches to the lacrimal gland; superior and inferior lateral palpebral arteries forming the palpebral arcades with the medial palpebral arteries; zygomatic branches (zygomaticofacial and zygomaticotemporal) to the cheek and temple; recurrent meningeal branch back through the superior orbital fissure to the dura (Netter Plate 112); muscular branches to lateral rectus and the anterior ciliary arteries."
+      },
+      {
+        "label": "Supplies",
+        "value": "Lacrimal gland, lateral parts of both eyelids and conjunctiva, lateral rectus, skin over the zygoma and temple, dura of the middle cranial fossa."
+      },
+      {
+        "label": "Relations",
+        "value": "Lacrimal nerve (V1) runs with it; the recurrent meningeal anastomosis is a route for the external carotid to feed the orbit when the ophthalmic artery is occluded."
+      }
+    ],
+    "pearl": "The recurrent meningeal branch is an internal–external carotid anastomosis through the superior orbital fissure, a collateral in carotid occlusion and an embolization hazard in middle meningeal artery embolization for chronic subdural hematoma. Lacrimal gland tumors and dacryoadenitis are supplied by it.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "posterior-ethmoidal-artery",
+    "name": "Posterior ethmoidal artery",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Small branch of the ophthalmic artery that leaves the orbit through the posterior ethmoidal foramen to supply the posterior ethmoidal cells, the sphenoid sinus, the dura of the anterior cranial fossa and the upper posterior nasal septum.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Ophthalmic artery on the medial side of the orbit, proximal to the anterior ethmoidal artery (Netter Plates 47, 99, 112)."
+      },
+      {
+        "label": "Course",
+        "value": "Passes medially between the superior oblique and medial rectus to the posterior ethmoidal foramen (Netter Plate 20), through the posterior ethmoidal canal into the anterior cranial fossa beside the cribriform plate, then down into the nasal cavity."
+      },
+      {
+        "label": "Branches",
+        "value": "Branches to the posterior ethmoidal cells and sphenoidal sinus, meningeal branches to the anterior fossa dura, septal and lateral nasal branches to the superior part of the septum and superior concha (Netter Plate 47)."
+      },
+      {
+        "label": "Supplies",
+        "value": "Posterior ethmoidal and sphenoid sinus mucosa, posterosuperior nasal septum and lateral wall, dura of the anterior cranial fossa."
+      },
+      {
+        "label": "Relations",
+        "value": "Optic canal lies just behind the posterior ethmoidal foramen; the posterior ethmoidal nerve and vein accompany it."
+      }
+    ],
+    "pearl": "The posterior ethmoidal foramen is the surgeon's warning line a few millimetres in front of the optic nerve on the medial orbital wall; the artery is ligated after the anterior ethmoidal in refractory superior epistaxis, taking care not to injure the optic nerve. With the anterior ethmoidal it supplies the olfactory region, the bleeding site in anterior fossa fractures.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "ciliary-arteries",
+    "name": "Long and short posterior ciliary arteries and anterior ciliary arteries",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Branches of the ophthalmic artery to the eyeball itself: the short posterior ciliary arteries supply the choroid and optic nerve head, the long posterior ciliary arteries run forward to the ciliary body and iris, and the anterior ciliary arteries reach the iris and conjunctiva along the rectus tendons.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Posterior ciliary arteries from the ophthalmic artery as it crosses the optic nerve (Netter Plate 99); anterior ciliary arteries from the muscular branches to the four recti (Netter Plate 104)."
+      },
+      {
+        "label": "Course",
+        "value": "Short posterior ciliary (10–20) pierce the sclera around the optic nerve into the choroid; two long posterior ciliary arteries pierce the sclera on either side of the nerve and run forward in the suprachoroidal space to the ciliary body; anterior ciliary arteries travel on the recti, pierce the sclera near the limbus and send recurrent branches back into the choroid."
+      },
+      {
+        "label": "Branches",
+        "value": "Short posterior ciliary: choriocapillaris, circle of Zinn–Haller around the optic disc. Long posterior and anterior ciliary: major arterial circle of the iris, minor arterial circle, ciliary muscle and processes, episcleral and conjunctival branches."
+      },
+      {
+        "label": "Supplies",
+        "value": "Choroid and outer retina (photoreceptors), prelaminar optic nerve head, ciliary body and muscle, iris including sphincter and dilator pupillae, sclera, episclera and conjunctiva (Netter muscle tables: ciliary muscle and pupillary muscles by the ophthalmic artery)."
+      },
+      {
+        "label": "Relations",
+        "value": "Short and long ciliary nerves accompany the posterior ciliary arteries; the vorticose veins drain the same choroid."
+      }
+    ],
+    "pearl": "Giant cell arteritis causes anterior ischemic optic neuropathy by occluding the short posterior ciliary arteries (pale swollen disc, sudden painless vision loss; start high-dose steroids before biopsy). Detaching more than two recti at once in strabismus surgery removes their anterior ciliary arteries and causes anterior segment ischemia. Central retinal artery occlusion spares the choroid, giving the cherry-red macula over an intact choroidal circulation.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "external-dorsal-nasal-artery",
+    "name": "External (dorsal) nasal artery",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "One of the two terminal branches of the ophthalmic artery; leaves the orbit above the medial palpebral ligament to supply the root and dorsum of the nose and the lacrimal sac, anastomosing with the angular artery of the facial system.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Terminal division of the ophthalmic artery at the medial orbital margin, with the supratrochlear artery (Netter Plates 10, 42, 99)."
+      },
+      {
+        "label": "Course",
+        "value": "Pierces the orbital septum above the medial palpebral ligament, gives a branch to the lacrimal sac and runs down the side of the nasal dorsum with the external nasal branch of the anterior ethmoidal nerve."
+      },
+      {
+        "label": "Branches",
+        "value": "Branch to the lacrimal sac, branches to the nasal dorsum and root, anastomosis with the angular artery (facial) and with the lateral nasal and anterior ethmoidal arteries."
+      },
+      {
+        "label": "Supplies",
+        "value": "Skin of the root and dorsum of the nose, lacrimal sac, and the medial canthal region."
+      },
+      {
+        "label": "Relations",
+        "value": "Angular vein and artery lie beside it at the medial canthus; this is one of the marked internal–external carotid anastomoses on Netter Plate 99."
+      }
+    ],
+    "pearl": "The dorsal nasal–angular anastomosis is why retrograde flow fills the ophthalmic artery when the internal carotid is occluded (and why a facial pulse can be felt at the medial canthus), and why filler injected into the nasal dorsum or glabella can reach the ophthalmic and central retinal arteries, causing blindness.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "branches-of-lingual-artery",
+    "name": "Branches of the lingual artery (suprahyoid, dorsal lingual, sublingual, deep lingual)",
+    "category": "artery",
+    "group": "External carotid branches",
+    "function": "The four named branches of the lingual artery along its course under the hyoglossus: the suprahyoid branch to the hyoid muscles, the dorsal lingual arteries to the back of the tongue and tonsil, the sublingual artery to the floor of the mouth and sublingual gland, and the deep lingual artery, its terminal part in the tongue tip.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Lingual artery: first part above the hyoid (suprahyoid branch), second part deep to hyoglossus (dorsal lingual arteries), third part at the anterior border of hyoglossus (sublingual and deep lingual arteries) (Netter Plates 69, 70)."
+      },
+      {
+        "label": "Course",
+        "value": "Suprahyoid branch runs along the upper border of the hyoid; dorsal lingual arteries ascend medial to hyoglossus to the dorsum and tonsil; the sublingual artery runs forward above the mylohyoid between genioglossus and the sublingual gland; the deep lingual artery runs under the ventral tongue mucosa beside the frenulum to the tip, where it anastomoses with its fellow."
+      },
+      {
+        "label": "Branches",
+        "value": "Dorsal lingual: branches to the lingual tonsil, palatine tonsil, soft palate and epiglottis (a tonsillar source on Netter Plate 72). Sublingual: branches to the sublingual gland, mylohyoid, floor of mouth and gingiva, anastomosing with the submental artery through mylohyoid."
+      },
+      {
+        "label": "Supplies",
+        "value": "Hyoid muscles, intrinsic and extrinsic tongue muscles (Netter muscle tables credit genioglossus, hyoglossus, styloglossus and the intrinsic muscles to the lingual artery), lingual tonsil, sublingual gland, mylohyoid and the floor of the mouth."
+      },
+      {
+        "label": "Relations",
+        "value": "The hypoglossal nerve and its vena comitans run superficial (lateral) to hyoglossus while the lingual artery passes deep to it; the lingual veins accompany each branch."
+      }
+    ],
+    "pearl": "The deep lingual artery is visible under the thin ventral mucosa, so a tongue laceration or a biopsy of the ventral tongue bleeds briskly; tongue-base bleeding after tonsillectomy or in base-of-tongue cancer may need lingual artery ligation at the greater horn of the hyoid, where the hypoglossal nerve must be spared. Sublingual branches supply ranulas and bleed in floor-of-mouth surgery.",
+    "depth": "deep",
+    "marker": {
+      "x": 400,
+      "y": 548
+    }
+  },
+  {
+    "id": "superior-laryngeal-and-cricothyroid-arteries",
+    "name": "Superior laryngeal, cricothyroid and infrahyoid arteries (superior thyroid branches)",
+    "category": "artery",
+    "group": "External carotid branches",
+    "function": "Branches of the superior thyroid artery to the larynx: the superior laryngeal artery pierces the thyrohyoid membrane with the internal laryngeal nerve to supply the supraglottic larynx, the cricothyroid artery crosses the median cricothyroid ligament, and the infrahyoid branch runs along the hyoid.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Superior thyroid artery in the carotid triangle, below the greater horn of the hyoid (Netter Plates 83, 87, 92)."
+      },
+      {
+        "label": "Course",
+        "value": "Superior laryngeal artery runs medially deep to thyrohyoid and pierces the thyrohyoid membrane with the internal branch of the superior laryngeal nerve; the cricothyroid artery runs along the upper border of the cricothyroid muscle across the median cricothyroid ligament; the infrahyoid branch runs along the lower border of the hyoid."
+      },
+      {
+        "label": "Branches",
+        "value": "Superior laryngeal: branches to the epiglottis, aryepiglottic folds, vestibular folds, piriform recess and the laryngeal muscles above the folds, anastomosing with the inferior laryngeal artery. Cricothyroid: anastomoses with its fellow in front of the ligament and supplies cricothyroid and the subglottis. Infrahyoid: infrahyoid muscles and hyoid."
+      },
+      {
+        "label": "Supplies",
+        "value": "Supraglottic and glottic larynx including the thyroarytenoid, vocalis, arytenoid and aryepiglottic muscles (Netter muscle tables: superior and inferior thyroid arteries), the cricothyroid muscle, the infrahyoid strap muscles."
+      },
+      {
+        "label": "Relations",
+        "value": "External laryngeal nerve runs with the superior thyroid artery and must be separated from it before ligation; the cricothyroid artery crosses the cricothyrotomy site."
+      }
+    ],
+    "pearl": "In cricothyrotomy the cricothyroid arteries cross the upper part of the median cricothyroid ligament, so the incision is kept low and horizontal. Laryngeal cancer surgery and supraglottic laryngectomy ligate the superior laryngeal pedicle at the thyrohyoid membrane; the external laryngeal nerve hugs the superior thyroid artery, so ligate the artery on the thyroid capsule to protect high-pitch voice.",
+    "depth": "deep",
+    "marker": {
+      "x": 400,
+      "y": 548
+    }
+  },
+  {
+    "id": "inferior-laryngeal-artery",
+    "name": "Inferior laryngeal artery",
+    "category": "artery",
+    "group": "Subclavian & vertebral",
+    "function": "Branch of the inferior thyroid artery that ascends with the recurrent laryngeal nerve behind the cricothyroid joint to supply the subglottic larynx and the laryngeal muscles, anastomosing with the superior laryngeal artery.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Inferior thyroid artery (thyrocervical trunk) near the lower pole of the thyroid (Netter Plate 92)."
+      },
+      {
+        "label": "Course",
+        "value": "Ascends in the tracheoesophageal groove with the recurrent laryngeal nerve, passes deep to the inferior pharyngeal constrictor behind the cricothyroid joint and enters the larynx below the cricoid."
+      },
+      {
+        "label": "Branches",
+        "value": "Branches to the posterior and lateral cricoarytenoid, thyroarytenoid and arytenoid muscles, the subglottic mucosa and the upper trachea; anastomoses with the superior laryngeal and cricothyroid arteries."
+      },
+      {
+        "label": "Supplies",
+        "value": "Infraglottic larynx, posterior laryngeal muscles and the mucosa below the vocal folds (Netter muscle tables list the inferior thyroid artery for the intrinsic laryngeal muscles)."
+      },
+      {
+        "label": "Relations",
+        "value": "Recurrent laryngeal nerve accompanies it; both cross the inferior thyroid artery near the thyroid lobe, where the nerve may pass in front of, behind or between the artery's branches."
+      }
+    ],
+    "pearl": "The recurrent laryngeal nerve travels with this artery, so in thyroidectomy the inferior thyroid artery branches are ligated individually on the capsule, not in bulk, to protect the nerve and the parathyroid supply (Netter Table 2.2). Subglottic edema (croup, post-intubation) is in this artery's territory, the narrowest part of the pediatric airway.",
+    "depth": "deep",
+    "marker": {
+      "x": 480,
+      "y": 860
+    }
+  },
+  {
+    "id": "mental-and-mylohyoid-branches-of-inferior-alveolar-artery",
+    "name": "Mental and mylohyoid branches of the inferior alveolar artery",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "The two branches of the inferior alveolar artery outside the mandibular canal: the mylohyoid branch leaves before the mandibular foramen to run with the nerve to mylohyoid on the floor of the mouth, and the mental branch exits the mental foramen with the mental nerve to the chin and lower lip.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Inferior alveolar artery (first part of the maxillary artery): the mylohyoid branch arises just above the mandibular foramen, the mental branch is the terminal branch leaving the mandibular canal at the mental foramen (Netter Plates 25, 57, 69, 83)."
+      },
+      {
+        "label": "Course",
+        "value": "Mylohyoid branch pierces the sphenomandibular ligament, runs in the mylohyoid groove of the mandible with the nerve to mylohyoid and spreads on the inferior surface of the mylohyoid; the mental branch emerges below the premolars and fans into the chin."
+      },
+      {
+        "label": "Branches",
+        "value": "Mylohyoid: muscular branches to mylohyoid and the anterior belly of digastric, anastomosing with the submental artery. Mental: branches to the chin skin, lower lip and labial gingiva, anastomosing with the inferior labial and submental arteries; the incisive branch continues in the bone to the incisors."
+      },
+      {
+        "label": "Supplies",
+        "value": "Mylohyoid and anterior digastric (with the submental and sublingual arteries, Netter muscle tables), skin and mucosa of the chin and lower lip, labial gingiva of the incisors and canines."
+      },
+      {
+        "label": "Relations",
+        "value": "Nerve to mylohyoid and mental nerve accompany each branch; the mental foramen lies below the second premolar in line with the supraorbital and infraorbital foramina."
+      }
+    ],
+    "pearl": "The mental foramen is the landmark for the mental nerve block and the structure to avoid in genioplasty and implant placement; a severely resorbed edentulous mandible brings the foramen and vessels to the alveolar crest. Bleeding from the mylohyoid branch and lingual perforation during implant drilling can cause a floor-of-mouth hematoma that threatens the airway.",
+    "depth": "deep",
+    "marker": {
+      "x": 520,
+      "y": 392
+    }
   }
 ]

@@ -3243,5 +3243,118 @@
       "type": "path",
       "d": "M 306,296 L 316,294 L 318,302 L 318,338 L 316,346 L 306,344 L 304,338 L 304,302 Z"
     }
+  },
+  {
+    "id": "depressor-septi-nasi",
+    "name": "Depressor septi nasi",
+    "category": "muscle",
+    "group": "Facial expression",
+    "function": "Small muscle of the upper lip and nose that pulls the nasal septum and tip downward and narrows the nostril; active in sniffing and during a broad smile.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Incisive fossa of the maxilla"
+      },
+      {
+        "label": "Insertion",
+        "value": "Nasal septum and posterior part of the ala of the nose"
+      },
+      {
+        "label": "Innervation",
+        "value": "Zygomatic and buccal branches of the facial nerve (CN VII)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Superior labial artery of the facial artery"
+      },
+      {
+        "label": "Action",
+        "value": "Narrows the nostril and draws the septum downward"
+      }
+    ],
+    "pearl": "Overactivity drops the nasal tip and shortens the upper lip when smiling, a target for rhinoplasty; in Bell palsy it is paralysed with the rest of the mid-face muscles, so the nostril on that side no longer flares with inspiration.",
+    "depth": "superficial",
+    "marker": {
+      "x": 370,
+      "y": 165
+    }
+  },
+  {
+    "id": "vocalis",
+    "name": "Vocalis",
+    "category": "muscle",
+    "group": "Larynx",
+    "function": "Medial bundle of the thyroarytenoid lying beside the vocal ligament; it fine-tunes pitch by tensing the anterior part and relaxing the posterior part of the vocal ligament, so segments of the fold can vibrate differently.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Vocal process of the arytenoid cartilage"
+      },
+      {
+        "label": "Insertion",
+        "value": "Vocal ligament (and the angle of the thyroid cartilage along with it)"
+      },
+      {
+        "label": "Innervation",
+        "value": "Recurrent laryngeal nerve (CN X)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Superior and inferior thyroid arteries"
+      },
+      {
+        "label": "Action",
+        "value": "Tenses the anterior vocal ligament and relaxes the posterior vocal ligament for fine control of pitch and vocal quality"
+      },
+      {
+        "label": "Relations",
+        "value": "Forms the body of the vocal fold under the lamina propria and epithelium; lateral to it the main thyroarytenoid and the conus elasticus below"
+      }
+    ],
+    "pearl": "The vocal fold has a soft cover (epithelium and superficial lamina propria, Reinke space) over the stiff vocalis body; nodules, polyps and Reinke oedema (smokers) sit in the cover. Recurrent laryngeal palsy leaves the fold in the paramedian position with a breathy voice.",
+    "depth": "deep",
+    "marker": {
+      "x": 435,
+      "y": 765
+    }
+  },
+  {
+    "id": "subclavius",
+    "name": "Subclavius",
+    "category": "muscle",
+    "group": "Neck",
+    "function": "Small muscle under the clavicle running from the first rib to the middle third of the clavicle; it anchors and depresses the clavicle and cushions the subclavian vessels and brachial plexus beneath a fractured clavicle.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Upper border of the first rib and its costal cartilage"
+      },
+      {
+        "label": "Insertion",
+        "value": "Inferior surface of the middle third of the clavicle (subclavian groove)"
+      },
+      {
+        "label": "Innervation",
+        "value": "Nerve to subclavius (C5–C6, from the upper trunk of the brachial plexus)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Clavicular branch of the thoracoacromial artery"
+      },
+      {
+        "label": "Action",
+        "value": "Anchors and depresses the clavicle, steadying it during shoulder movement"
+      },
+      {
+        "label": "Relations",
+        "value": "Subclavian vein lies directly below and behind it, then the subclavian artery and trunks of the brachial plexus; the costoclavicular ligament is medial"
+      }
+    ],
+    "pearl": "In a midshaft clavicle fracture the subclavius pads the subclavian vein and artery against the sharp fragments, so neurovascular injury is uncommon. Its hypertrophy or a cervical rib narrows the costoclavicular space (thoracic outlet syndrome); it lies in the path of subclavian vein cannulation.",
+    "depth": "deep",
+    "marker": {
+      "x": 600,
+      "y": 700
+    }
   }
 ]

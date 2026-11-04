@@ -2780,5 +2780,377 @@
       "type": "polyline",
       "points": "692,505 696,560 700,620 704,680 708,740 712,800 716,845 720,875"
     }
+  },
+  {
+    "id": "infratrochlear-nerve",
+    "name": "Infratrochlear nerve",
+    "category": "nerve",
+    "group": "Trigeminal branches",
+    "function": "Terminal cutaneous branch of the nasociliary nerve (V1) that leaves the orbit below the trochlea of the superior oblique to supply the medial eyelids, lacrimal sac and the root of the nose.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "General sensory"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Nasociliary nerve on the medial orbital wall -> runs forward along the upper border of medial rectus -> exits the orbit below the trochlea, above the medial palpebral ligament"
+      },
+      {
+        "label": "Supplies",
+        "value": "Skin and conjunctiva of the medial parts of both eyelids, lacrimal sac and caruncle, skin of the root and upper bridge of the nose"
+      },
+      {
+        "label": "Branches",
+        "value": "Palpebral and nasal twigs; communicates with the supratrochlear nerve (frontal nerve)"
+      }
+    ],
+    "pearl": "With the external nasal branch of the anterior ethmoidal nerve it carries V1 sensation of the nasal bridge and medial canthus, so numbness here after a nasoethmoid or medial orbital fracture points to a nasociliary-branch injury rather than an infraorbital (V2) injury.",
+    "depth": "superficial",
+    "marker": {
+      "x": 335,
+      "y": 240
+    }
+  },
+  {
+    "id": "anterior-ethmoidal-nerve",
+    "name": "Anterior ethmoidal nerve",
+    "category": "nerve",
+    "group": "Trigeminal branches",
+    "function": "Continuation of the nasociliary nerve (V1) that leaves the orbit through the anterior ethmoidal foramen, crosses the anterior cranial fossa and descends through the cribriform plate to supply the anterior nasal cavity and the tip of the nose.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "General sensory (with sympathetic fibers from the internal carotid plexus)"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Anterior ethmoidal foramen (with the anterior ethmoidal artery and vein) -> anterior cranial fossa on the cribriform plate -> nasal slit beside the crista galli -> nasal cavity -> emerges between the nasal bone and the lateral process of the septal cartilage as the external nasal nerve"
+      },
+      {
+        "label": "Supplies",
+        "value": "Anterior ethmoidal cells and frontal sinus mucosa; anterosuperior nasal septum (medial internal nasal branches) and anterior lateral nasal wall (lateral internal nasal branches); skin of the dorsum, tip and ala of the nose (external nasal branch)"
+      },
+      {
+        "label": "Branches",
+        "value": "Anterior meningeal twigs to the dura of the anterior fossa, internal nasal branches (medial and lateral), external nasal branch"
+      }
+    ],
+    "pearl": "Anterior cranial fossa fractures through the cribriform plate injure this nerve with the olfactory fila, so anosmia and CSF rhinorrhea can come with numbness of the nasal tip; its internal nasal branches are the main sensory supply of Kiesselbach's area, which is why anterior nasal packing and cautery for epistaxis need topical anesthesia of the anterior septum.",
+    "depth": "deep",
+    "marker": {
+      "x": 345,
+      "y": 340
+    }
+  },
+  {
+    "id": "posterior-ethmoidal-nerve",
+    "name": "Posterior ethmoidal nerve",
+    "category": "nerve",
+    "group": "Trigeminal branches",
+    "function": "Small, inconstant branch of the nasociliary nerve (V1) that passes through the posterior ethmoidal foramen to supply the posterior ethmoidal cells and the sphenoidal sinus.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "General sensory"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Leaves the nasociliary nerve on the medial orbital wall -> posterior ethmoidal foramen (with the posterior ethmoidal artery and vein) -> mucosa of the posterior ethmoidal cells and sphenoidal sinus"
+      },
+      {
+        "label": "Supplies",
+        "value": "Mucous membrane of the posterior ethmoidal air cells and the sphenoidal sinus"
+      },
+      {
+        "label": "Branches",
+        "value": "Mucosal twigs only; does not reach the nasal cavity proper"
+      }
+    ],
+    "pearl": "Pain from sphenoid and posterior ethmoid sinusitis is referred through V1 to the vertex, retro-orbital region and occiput rather than to the cheek, and the posterior ethmoidal foramen lies only a few millimetres in front of the optic canal, the landmark that limits dissection of the medial orbital wall.",
+    "depth": "deep",
+    "marker": {
+      "x": 345,
+      "y": 340
+    }
+  },
+  {
+    "id": "nasopalatine-nerve",
+    "name": "Nasopalatine nerve",
+    "category": "nerve",
+    "group": "Trigeminal branches",
+    "function": "Longest branch of the pterygopalatine ganglion (V2) that crosses the roof of the nasal cavity, runs down the septum and descends through the incisive canal to supply the anterior hard palate behind the incisors.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "General sensory (V2) with postganglionic parasympathetic secretomotor and sympathetic fibers from the pterygopalatine ganglion"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Pterygopalatine fossa -> sphenopalatine foramen into the nasal cavity -> across the roof below the sphenoid sinus -> forward and downward in a groove on the vomer and septal cartilage -> incisive canal and incisive fossa to the palate"
+      },
+      {
+        "label": "Supplies",
+        "value": "Mucosa of the posteroinferior nasal septum; mucoperiosteum of the anterior hard palate (premaxilla) and gingiva lingual to the incisors and canines"
+      },
+      {
+        "label": "Branches",
+        "value": "Septal branches; communicates with the greater palatine nerve in the incisive canal (Netter Plate 63)"
+      }
+    ],
+    "pearl": "A nasopalatine block through the incisive papilla anesthetizes the palatal gingiva of the six anterior teeth; nasopalatine duct (incisive canal) cysts are the most common non-odontogenic cyst of the jaws, a heart-shaped midline lucency between the maxillary central incisors with vital teeth.",
+    "depth": "deep",
+    "marker": {
+      "x": 452,
+      "y": 400
+    }
+  },
+  {
+    "id": "greater-and-lesser-palatine-nerves",
+    "name": "Greater and lesser palatine nerves",
+    "category": "nerve",
+    "group": "Trigeminal branches",
+    "function": "Descending branches of the pterygopalatine ganglion (V2) that pass through the palatine canals: the greater palatine nerve supplies the hard palate, the lesser palatine nerves the soft palate and tonsil.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "General sensory (V2) with parasympathetic secretomotor fibers to palatine glands; the lesser palatine nerves also carry taste fibers from the soft palate that travel via the greater petrosal nerve to CN VII"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Pterygopalatine fossa -> greater palatine canal between the maxilla and the perpendicular plate of the palatine bone -> greater palatine foramen (medial to the 3rd molar) for the greater nerve and lesser palatine foramina in the pyramidal process for the lesser nerves"
+      },
+      {
+        "label": "Supplies",
+        "value": "Greater: mucoperiosteum of the hard palate and palatal gingiva back to the canine, plus posterior inferior lateral nasal branches to the inferior meatus and concha. Lesser: soft palate, uvula and palatine tonsil"
+      },
+      {
+        "label": "Branches",
+        "value": "Posterior inferior lateral nasal branches (greater), tonsillar branches (lesser); communication with the nasopalatine nerve in the incisive canal"
+      }
+    ],
+    "pearl": "The greater palatine foramen is the landmark for a greater palatine block (palatal mucosa of the molars and premolars) and for injecting the descending palatine artery in posterior epistaxis; it also carries the artery that is harvested with a palatal flap for cleft palate repair. Pain referred to the ear from the soft palate and tonsil travels on lesser palatine and glossopharyngeal fibers.",
+    "depth": "deep",
+    "marker": {
+      "x": 452,
+      "y": 400
+    }
+  },
+  {
+    "id": "superior-alveolar-nerves",
+    "name": "Superior alveolar nerves (posterior, middle, anterior)",
+    "category": "nerve",
+    "group": "Trigeminal branches",
+    "function": "Three branches of the maxillary nerve and its infraorbital continuation that form the superior dental plexus in the wall of the maxillary sinus and supply the maxillary teeth, gingiva and sinus mucosa.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "General sensory"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Posterior: leaves V2 in the pterygopalatine fossa and enters the posterior superior alveolar foramina on the maxillary tuberosity. Middle (inconstant) and anterior: leave the infraorbital nerve in the infraorbital groove/canal and run in canals in the lateral and anterior walls of the maxillary sinus"
+      },
+      {
+        "label": "Supplies",
+        "value": "Posterior: maxillary molars (except the mesiobuccal root of the 1st molar), adjacent buccal gingiva, maxillary sinus mucosa. Middle: premolars and the mesiobuccal root of the 1st molar. Anterior: incisors and canine; a nasal branch to the anterior inferior nasal wall and floor"
+      },
+      {
+        "label": "Branches",
+        "value": "Dental and gingival branches via the superior dental plexus (Netter Plate 63); the plexus also communicates with the greater palatine and nasopalatine nerves"
+      }
+    ],
+    "pearl": "Maxillary sinusitis and sinus carcinoma present as diffuse upper-tooth pain because these nerves run in the sinus wall, and conversely molar root infection perforates into the sinus. A posterior superior alveolar block numbs the molars but risks a pterygoid-plexus hematoma, and a Le Fort or orbital floor fracture causes numbness of the upper teeth through the infraorbital trunk.",
+    "depth": "deep",
+    "marker": {
+      "x": 345,
+      "y": 392
+    }
+  },
+  {
+    "id": "intermediate-nerve",
+    "name": "Intermediate nerve (of Wrisberg)",
+    "category": "nerve",
+    "group": "Facial nerve branches",
+    "function": "Smaller, sensory and parasympathetic root of the facial nerve that leaves the brainstem between CN VII motor root and CN VIII, carrying taste, cutaneous sensation and preganglionic secretomotor fibers that become the greater petrosal nerve and chorda tympani.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "Special sensory (taste, geniculate ganglion), general sensory (external ear), preganglionic parasympathetic (superior salivatory nucleus)"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Pontomedullary junction (cerebellopontine angle) between the facial motor root and the vestibulocochlear nerve -> internal acoustic meatus -> joins the motor root at the geniculate ganglion in the facial canal"
+      },
+      {
+        "label": "Supplies",
+        "value": "Taste from the anterior 2/3 of the tongue and soft palate; lacrimal, nasal, palatine, submandibular and sublingual glands; skin of the concha and posterior external acoustic meatus"
+      },
+      {
+        "label": "Branches",
+        "value": "Greater petrosal nerve (at the geniculate ganglion) and chorda tympani; its cell bodies sit in the geniculate ganglion and project to the nuclei of the solitary tract"
+      }
+    ],
+    "pearl": "Herpes zoster of the geniculate ganglion (Ramsay Hunt syndrome) reactivates in this nerve's sensory territory: vesicles in the ear canal and on the auricle, facial palsy, loss of taste on the anterior tongue and often vertigo or hearing loss from adjacent CN VIII; treat with antivirals plus steroids. Its intracanalicular course explains why an acoustic neuroma or CPA surgery can cause dry eye and taste loss before facial weakness.",
+    "depth": "deep",
+    "marker": {
+      "x": 570,
+      "y": 420
+    }
+  },
+  {
+    "id": "caroticotympanic-nerves",
+    "name": "Caroticotympanic nerves",
+    "category": "nerve",
+    "group": "Autonomic",
+    "function": "Postganglionic sympathetic twigs from the internal carotid plexus that pass through the wall of the carotid canal into the middle ear to join the tympanic plexus.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "Postganglionic sympathetic (superior cervical ganglion)"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Internal carotid plexus in the carotid canal -> caroticotympanic canaliculi in the bone between the carotid canal and the tympanic cavity (with the caroticotympanic artery) -> tympanic plexus on the promontory"
+      },
+      {
+        "label": "Supplies",
+        "value": "Vasomotor fibers to the mucosa of the tympanic cavity, mastoid air cells and auditory tube; they travel with the tympanic plexus and lesser petrosal nerve toward the otic ganglion and parotid"
+      },
+      {
+        "label": "Branches",
+        "value": "Superior and inferior caroticotympanic nerves joining the tympanic nerve of CN IX (Jacobson) and the lesser petrosal nerve"
+      }
+    ],
+    "pearl": "They are a reminder that the tympanic plexus mixes CN IX parasympathetic fibers with sympathetics: Frey syndrome after parotidectomy is gustatory sweating from misdirected parotid parasympathetic fibers (lesser petrosal pathway) growing into sweat-gland sympathetic territory, and a glomus tympanicum paraganglioma arises on the promontory along this plexus, giving pulsatile tinnitus and a red retrotympanic mass.",
+    "depth": "deep",
+    "marker": {
+      "x": 615,
+      "y": 540
+    }
+  },
+  {
+    "id": "cervical-cardiac-nerves",
+    "name": "Cervical cardiac nerves (sympathetic) and cervical cardiac branches of vagus",
+    "category": "nerve",
+    "group": "Autonomic",
+    "function": "Autonomic nerves that descend from the neck into the thorax to form the cardiac plexus: superior, middle and inferior cervical cardiac nerves from the three cervical sympathetic ganglia, and superior and inferior cervical cardiac branches from the vagus.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "Sympathetic: postganglionic from the superior, middle and cervicothoracic (stellate) ganglia (preganglionic cell bodies T1-T4/5), plus visceral afferents for cardiac pain. Vagal: preganglionic parasympathetic and visceral afferents"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Sympathetic cardiac nerves descend behind the carotid sheath and in front of or beside the subclavian artery into the superior mediastinum; the vagal cardiac branches leave the vagus in the neck (superior) and near the recurrent laryngeal nerve at the root of the neck (inferior)"
+      },
+      {
+        "label": "Supplies",
+        "value": "Cardiac plexus (superficial and deep) on the aortic arch and tracheal bifurcation: sinoatrial and atrioventricular nodes, myocardium and coronary arteries. Sympathetic fibers increase rate, conduction and contractility; vagal fibers slow rate and AV conduction"
+      },
+      {
+        "label": "Branches",
+        "value": "Superior, middle and inferior cervical cardiac nerves; superior and inferior cervical cardiac branches of the vagus; thoracic cardiac branches below (Netter Plate 141)"
+      }
+    ],
+    "pearl": "Cardiac pain afferents run with the sympathetic cardiac nerves to T1-T5, so angina refers to the left arm and jaw and the vagal afferents that go with the superior cardiac branch can give the epigastric/neck pain of an inferior MI. Left stellate ganglion block or cardiac sympathetic denervation treats refractory ventricular arrhythmia and long-QT syndrome; vagal cardiac branches are the efferent limb of carotid sinus massage and the Valsalva maneuver.",
+    "depth": "deep",
+    "marker": {
+      "x": 598,
+      "y": 650
+    }
+  },
+  {
+    "id": "ganglia-of-cn-ix-and-cn-x",
+    "name": "Superior and inferior ganglia of CN IX and CN X",
+    "category": "nerve",
+    "group": "Glossopharyngeal/Vagus branches",
+    "function": "Sensory ganglia on the glossopharyngeal and vagus nerves at the jugular foramen: a small superior ganglion of each inside the foramen and a larger inferior ganglion just below it (the petrosal ganglion of IX, the nodose ganglion of X).",
+    "details": [
+      {
+        "label": "Type",
+        "value": "Pseudounipolar sensory cell bodies: general somatic sensory (superior ganglia; ear and meninges), visceral sensory and taste (inferior ganglia). No synapses occur here"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Both nerves pass through the middle (pars vascularis/nervosa) compartment of the jugular foramen with CN XI; the superior ganglia lie within the foramen, the inferior ganglia 1-2 cm below it in front of the internal jugular vein"
+      },
+      {
+        "label": "Supplies",
+        "value": "Inferior ganglion of IX: carotid sinus and body, pharynx, tonsil, posterior 1/3 tongue taste, middle ear (tympanic nerve). Inferior ganglion of X: pharynx, larynx (superior laryngeal nerve), thoracic and abdominal viscera, taste from the epiglottis. Superior ganglia: auricular branch of the vagus (Arnold) and the meningeal branches to the posterior fossa dura"
+      },
+      {
+        "label": "Branches",
+        "value": "From the ganglia or just beyond them: tympanic nerve (IX), carotid sinus nerve (IX), meningeal and auricular branches (X), pharyngeal branch and superior laryngeal nerve (X); communications between IX, X and the superior cervical ganglion"
+      }
+    ],
+    "pearl": "Central processes of these ganglia end in the nucleus of the solitary tract (visceral/taste) and spinal trigeminal nucleus (somatic), which is why ear pain is a referred symptom of pharyngeal and laryngeal cancer and why coughing on ear-canal stimulation (Arnold reflex) occurs. A glomus jugulare paraganglioma or jugular foramen tumor compressing the ganglia produces the jugular foramen (Vernet) syndrome: loss of gag and posterior-tongue taste, dysphagia, hoarseness and ipsilateral palate droop, with CN XI weakness.",
+    "depth": "deep",
+    "marker": {
+      "x": 590,
+      "y": 610
+    }
+  },
+  {
+    "id": "meningeal-branch-of-mandibular-nerve",
+    "name": "Meningeal branch of mandibular nerve (nervus spinosus)",
+    "category": "nerve",
+    "group": "Trigeminal branches",
+    "function": "Recurrent sensory branch of the mandibular nerve that re-enters the skull through the foramen spinosum with the middle meningeal artery to supply the dura of the middle cranial fossa and the mastoid air cells.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "General sensory (with sympathetic fibers from the middle meningeal plexus)"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Arises from the trunk of V3 just below the foramen ovale -> ascends through the foramen spinosum with the middle meningeal artery and veins -> divides with the frontal and parietal branches of the artery"
+      },
+      {
+        "label": "Supplies",
+        "value": "Dura mater of the middle cranial fossa and the lateral convexity along the middle meningeal artery; mucosa of the mastoid air cells (posterior branch); the dura of the anterior fossa is supplied by V1 (tentorial/ethmoidal) and the posterior fossa by C2-C3 and CN X"
+      },
+      {
+        "label": "Branches",
+        "value": "Anterior branch with the frontal branch of the middle meningeal artery, posterior branch with the parietal branch (Netter Plates 59, 97)"
+      }
+    ],
+    "pearl": "Dural pain is carried by trigeminal meningeal branches, so supratentorial dural irritation (meningitis, epidural hematoma stretching the dura, dural traction in low-pressure headache) presents as frontotemporal headache in V1-V3 territory, whereas posterior fossa lesions give occipital and neck pain; the brain parenchyma itself is insensate.",
+    "depth": "deep",
+    "marker": {
+      "x": 530,
+      "y": 395
+    }
+  },
+  {
+    "id": "nerve-to-subclavius",
+    "name": "Nerve to subclavius (C5-C6)",
+    "category": "nerve",
+    "group": "Brachial plexus in the neck",
+    "function": "Small motor branch of the upper trunk of the brachial plexus that descends in front of the plexus and the subclavian vessels to supply the subclavius muscle; it often gives an accessory phrenic nerve.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "Somatic motor (C5, C6); carries proprioceptive fibers"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Leaves the anterior surface of the upper trunk (or the C5-C6 junction) in the posterior triangle -> descends in front of the subclavian artery and the 3rd part of the plexus, behind the clavicle -> enters the superior surface of subclavius"
+      },
+      {
+        "label": "Supplies",
+        "value": "Subclavius (from the 1st rib and its cartilage to the inferior surface of the middle third of the clavicle), which anchors and depresses the clavicle (Netter Muscle Table 2.8)"
+      },
+      {
+        "label": "Branches",
+        "value": "Accessory phrenic nerve (in up to half of people) that joins the phrenic nerve in front of the subclavian vein, carrying C5 fibers to the diaphragm"
+      }
+    ],
+    "pearl": "The subclavius and its nerve lie directly behind the middle third of the clavicle and cushion the subclavian vessels and plexus in a midshaft clavicle fracture. Because the accessory phrenic nerve usually passes in front of the subclavian vein, it can be injured during subclavian central line placement or first-rib resection, and a phrenic block at the C5 root level may miss it, leaving residual diaphragm function.",
+    "depth": "deep",
+    "marker": {
+      "x": 720,
+      "y": 820
+    }
   }
 ]
