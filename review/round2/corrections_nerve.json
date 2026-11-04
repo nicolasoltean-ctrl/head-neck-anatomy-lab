@@ -1,0 +1,18 @@
+{
+ "category": "nerve",
+ "verified": 78,
+ "corrections": [
+  {
+   "id": "tympanic-nerve-lesser-petrosal",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Mucosa of middle ear, mastoid air cells, Eustachian tube (sensory); parotid gland (secretomotor)",
+   "new": "Mucosa of middle ear, mastoid air cells, auditory tube (sensory); parotid gland (secretomotor)",
+   "ref": "Netter 7e plate labels use \"auditory tube\" (Plates 19, 94, 105); consistency with cn-ix-glossopharyngeal-nerve, salpingopharyngeus, tensor-tympani",
+   "reason": "Terminology: only card that calls the tube \"Eustachian tube\" without the Netter name",
+   "confidence": "netter-explicit"
+  }
+ ],
+ "missing": [],
+ "notes": "All 78 nerve cards checked: every Supplies claim matches muscle Innervation (facial branches, V3 motor branches, pharyngeal plexus, laryngeal nerves, ansa/C1, CN III/IV/VI, sympathetics) and every Exit/route matches bone foramina cards and Netter Plates 19-20. Only a terminology fix needed."
+}

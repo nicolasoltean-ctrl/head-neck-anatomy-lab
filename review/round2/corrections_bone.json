@@ -1,0 +1,58 @@
+{
+ "category": "bone",
+ "verified": 69,
+ "corrections": [
+  {
+   "id": "occipital-bone",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Trapezius (superior nuchal line and external occipital protuberance), sternocleidomastoid and splenius capitis (lateral superior nuchal line), occipital belly of occipitofrontalis, semispinalis capitis (between the nuchal lines), rectus capitis posterior major and minor and obliquus capitis superior (inferior nuchal line), longus capitis and rectus capitis anterior (basilar part), rectus capitis lateralis (jugular process), pharyngeal raphe (pharyngeal tubercle), ligamentum nuchae",
+   "new": "Trapezius (superior nuchal line and external occipital protuberance), sternocleidomastoid and splenius capitis (lateral superior nuchal line), occipital belly of occipitofrontalis, semispinalis capitis and obliquus capitis superior (between the nuchal lines), rectus capitis posterior major and minor (inferior nuchal line), longus capitis and rectus capitis anterior (basilar part), rectus capitis lateralis (jugular process), pharyngeal raphe (pharyngeal tubercle), ligamentum nuchae",
+   "ref": "Netter back Table 3.3 (p270): obliquus capitis superior inserts on occipital bone, rectus capitis posterior major/minor on the inferior nuchal line; consistency with suboccipital-muscles Insertion",
+   "reason": "Bone card put obliquus capitis superior on the inferior nuchal line while the muscle card has it between the nuchal lines",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "temporal-bone",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Temporalis (temporal fossa), masseter (zygomatic arch), sternocleidomastoid, splenius capitis and longissimus capitis (mastoid process), posterior belly of digastric (mastoid notch), stylohyoid, styloglossus and stylopharyngeus (styloid process), levator veli palatini (petrous part), occipital belly of occipitofrontalis and auricularis posterior (mastoid)",
+   "new": "Temporalis (temporal fossa), masseter (zygomatic arch), sternocleidomastoid, splenius capitis and longissimus capitis (mastoid process), posterior belly of digastric (mastoid notch), stylohyoid, styloglossus and stylopharyngeus (styloid process), levator veli palatini (petrous part), stapedius (pyramidal eminence), occipital belly of occipitofrontalis and auricularis posterior (mastoid)",
+   "ref": "Netter Table 2.8 (p223): stapedius - pyramidal eminence of temporal bone; consistency with stapedius Origin",
+   "reason": "stapedius originates from the temporal bone (pyramidal eminence) but was missing from the bone attachments",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "maxilla",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Buccinator (alveolar process opposite the molars), levator anguli oris (canine fossa), levator labii superioris (above the infraorbital foramen), levator labii superioris alaeque nasi (frontal process), nasalis (canine eminence), depressor septi nasi (incisive fossa), orbicularis oris (above the incisors), medial pterygoid (maxillary tuberosity), inferior oblique (orbital floor lateral to the nasolacrimal canal)",
+   "new": "Buccinator (alveolar process opposite the molars), levator anguli oris (canine fossa), levator labii superioris (above the infraorbital foramen), levator labii superioris alaeque nasi (frontal process), orbicularis oculi (frontal process at the medial orbital margin), nasalis (canine eminence), depressor septi nasi (incisive fossa), orbicularis oris (above the incisors), medial pterygoid (maxillary tuberosity), inferior oblique (orbital floor lateral to the nasolacrimal canal)",
+   "ref": "Netter Table 2.7 (p222): orbicularis oculi origin - medial orbital margin, palpebral ligament, lacrimal bone; consistency with orbicularis-oculi Origin (frontal process of maxilla)",
+   "reason": "orbicularis-oculi Origin names the frontal process of the maxilla but the maxilla card did not list it",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "palatine-bone",
+   "field": "details:Attachments",
+   "action": "replace",
+   "old": "Palatine aponeurosis (tensor/levator veli palatini), musculus uvulae (posterior nasal spine), medial pterygoid (pyramidal process)",
+   "new": "Palatine aponeurosis (tensor/levator veli palatini, palatoglossus), palatopharyngeus (posterior border of hard palate and aponeurosis), musculus uvulae (posterior nasal spine), medial pterygoid (pyramidal process)",
+   "ref": "Netter Table 2.7 (p222): palatopharyngeus origin - hard palate, superior palatine aponeurosis; palatoglossus - palatine aponeurosis; consistency with palatopharyngeus / palatoglossus Origin",
+   "reason": "palatopharyngeus (hard palate) and palatoglossus (aponeurosis) attach here per Netter and their muscle cards but were absent",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "carotid-canal",
+   "field": "details:Relations",
+   "action": "replace",
+   "old": "Cochlea and middle ear posterolateral; Eustachian tube anterolateral",
+   "new": "Cochlea and middle ear posterolateral; auditory tube anterolateral",
+   "ref": "Netter 7e plate labels use \"auditory tube\" (Plates 19, 94, 105); consistency with other cards",
+   "reason": "Terminology: \"Eustachian tube\" used without the Netter name",
+   "confidence": "netter-explicit"
+  }
+ ],
+ "missing": [],
+ "notes": "All 69 bone cards checked: Attachments vs muscle Origin/Insertion (both directions) and Foramina/Contents vs nerve, artery and vein routes against Netter Plates 19-20. No bone card lists a muscle whose Netter attachment is elsewhere; four attachment gaps and one terminology fix."
+}

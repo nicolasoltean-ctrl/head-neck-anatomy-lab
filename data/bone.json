@@ -90,7 +90,7 @@
       },
       {
         "label": "Attachments",
-        "value": "Temporalis (temporal fossa), masseter (zygomatic arch), sternocleidomastoid, splenius capitis and longissimus capitis (mastoid process), posterior belly of digastric (mastoid notch), stylohyoid, styloglossus and stylopharyngeus (styloid process), levator veli palatini (petrous part), occipital belly of occipitofrontalis and auricularis posterior (mastoid)"
+        "value": "Temporalis (temporal fossa), masseter (zygomatic arch), sternocleidomastoid, splenius capitis and longissimus capitis (mastoid process), posterior belly of digastric (mastoid notch), stylohyoid, styloglossus and stylopharyngeus (styloid process), levator veli palatini (petrous part), stapedius (pyramidal eminence), occipital belly of occipitofrontalis and auricularis posterior (mastoid)"
       }
     ],
     "pearl": "Temporal bone fracture: hemotympanum, Battle sign, CSF otorrhea, facial palsy and hearing loss; transverse fractures injure CN VII/VIII more often than longitudinal.",
@@ -125,7 +125,7 @@
       },
       {
         "label": "Attachments",
-        "value": "Trapezius (superior nuchal line and external occipital protuberance), sternocleidomastoid and splenius capitis (lateral superior nuchal line), occipital belly of occipitofrontalis, semispinalis capitis (between the nuchal lines), rectus capitis posterior major and minor and obliquus capitis superior (inferior nuchal line), longus capitis and rectus capitis anterior (basilar part), rectus capitis lateralis (jugular process), pharyngeal raphe (pharyngeal tubercle), ligamentum nuchae"
+        "value": "Trapezius (superior nuchal line and external occipital protuberance), sternocleidomastoid and splenius capitis (lateral superior nuchal line), occipital belly of occipitofrontalis, semispinalis capitis and obliquus capitis superior (between the nuchal lines), rectus capitis posterior major and minor (inferior nuchal line), longus capitis and rectus capitis anterior (basilar part), rectus capitis lateralis (jugular process), pharyngeal raphe (pharyngeal tubercle), ligamentum nuchae"
       }
     ],
     "pearl": "Occipital condyle fracture and atlanto-occipital dislocation follow high-energy trauma; dislocation is frequently fatal from brainstem injury.",
@@ -335,7 +335,7 @@
       },
       {
         "label": "Attachments",
-        "value": "Buccinator (alveolar process opposite the molars), levator anguli oris (canine fossa), levator labii superioris (above the infraorbital foramen), levator labii superioris alaeque nasi (frontal process), nasalis (canine eminence), depressor septi nasi (incisive fossa), orbicularis oris (above the incisors), medial pterygoid (maxillary tuberosity), inferior oblique (orbital floor lateral to the nasolacrimal canal)"
+        "value": "Buccinator (alveolar process opposite the molars), levator anguli oris (canine fossa), levator labii superioris (above the infraorbital foramen), levator labii superioris alaeque nasi (frontal process), orbicularis oculi (frontal process at the medial orbital margin), nasalis (canine eminence), depressor septi nasi (incisive fossa), orbicularis oris (above the incisors), medial pterygoid (maxillary tuberosity), inferior oblique (orbital floor lateral to the nasolacrimal canal)"
       }
     ],
     "pearl": "Le Fort fractures all pass through the pterygoid plates: I floating palate, II pyramidal through the nasal bridge, III craniofacial dysjunction with CSF leak.",
@@ -370,7 +370,7 @@
       },
       {
         "label": "Attachments",
-        "value": "Palatine aponeurosis (tensor/levator veli palatini), musculus uvulae (posterior nasal spine), medial pterygoid (pyramidal process)"
+        "value": "Palatine aponeurosis (tensor/levator veli palatini, palatoglossus), palatopharyngeus (posterior border of hard palate and aponeurosis), musculus uvulae (posterior nasal spine), medial pterygoid (pyramidal process)"
       }
     ],
     "pearl": "The sphenopalatine foramen transmits the sphenopalatine artery, the source of posterior epistaxis that fails anterior packing and may need embolization or ligation.",
@@ -1665,7 +1665,7 @@
       },
       {
         "label": "Relations",
-        "value": "Cochlea and middle ear posterolateral; Eustachian tube anterolateral"
+        "value": "Cochlea and middle ear posterolateral; auditory tube anterolateral"
       }
     ],
     "pearl": "Aberrant or dehiscent ICA in the middle ear gives pulsatile tinnitus and a red retrotympanic mass; never biopsy. Petrous ICA injury in temporal bone fracture causes massive epistaxis.",

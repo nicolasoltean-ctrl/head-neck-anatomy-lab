@@ -1,0 +1,28 @@
+{
+ "category": "vein",
+ "verified": 37,
+ "corrections": [
+  {
+   "id": "emissary-veins",
+   "field": "details:Course",
+   "action": "replace",
+   "old": "Pass through the parietal foramen, mastoid foramen, condylar canal, sphenoidal emissary foramen (of Vesalius), foramen ovale, foramen lacerum and foramen cecum",
+   "new": "Pass through the parietal foramen, mastoid foramen, condylar canal, sphenoidal emissary foramen (of Vesalius), foramen ovale and foramen cecum",
+   "ref": "Netter Plate 20 (p75): foramen lacerum transmits nothing (greater petrosal nerve passes over it); consistency with foramen-lacerum bone card",
+   "reason": "Course listed the foramen lacerum although the bone card (per Netter) states no structure traverses it",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "maxillary-vein",
+   "field": "pearl",
+   "action": "replace",
+   "old": "Drains the pterygoid plexus, linked to the cavernous sinus via emissary veins (foramen ovale, foramen lacerum), so facial/dental infection can cause cavernous sinus thrombosis; torn by displaced condylar neck fractures.",
+   "new": "Drains the pterygoid plexus, linked to the cavernous sinus via emissary veins (foramen ovale, sphenoidal emissary foramen), so facial/dental infection can cause cavernous sinus thrombosis; torn by displaced condylar neck fractures.",
+   "ref": "Netter Plate 20 (p75); consistency with foramen-lacerum, pterygoid-venous-plexus and cavernous-sinus cards",
+   "reason": "Pearl cited a foramen lacerum emissary vein; the other vein cards and the bone card name the sphenoidal emissary foramen and foramen ovale",
+   "confidence": "netter-explicit"
+  }
+ ],
+ "missing": [],
+ "notes": "All 37 vein cards checked: every \"Drains into\" has the matching tributary on the parent card (IJV, EJV, subclavian, brachiocephalic, facial/common facial, retromandibular, cavernous, transverse/sigmoid, confluence, straight sinus) and emissary routes match bone foramina. Only the foramen lacerum references conflict."
+}

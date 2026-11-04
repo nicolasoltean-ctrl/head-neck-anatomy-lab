@@ -443,7 +443,7 @@
         "value": "Lies with the maxillary artery deep (medial) to the mandibular neck; auriculotemporal nerve nearby"
       }
     ],
-    "pearl": "Drains the pterygoid plexus, linked to the cavernous sinus via emissary veins (foramen ovale, foramen lacerum), so facial/dental infection can cause cavernous sinus thrombosis; torn by displaced condylar neck fractures.",
+    "pearl": "Drains the pterygoid plexus, linked to the cavernous sinus via emissary veins (foramen ovale, sphenoidal emissary foramen), so facial/dental infection can cause cavernous sinus thrombosis; torn by displaced condylar neck fractures.",
     "depth": "deep",
     "marker": {
       "x": 535,
@@ -1062,7 +1062,7 @@
       },
       {
         "label": "Course",
-        "value": "Pass through the parietal foramen, mastoid foramen, condylar canal, sphenoidal emissary foramen (of Vesalius), foramen ovale, foramen lacerum and foramen cecum"
+        "value": "Pass through the parietal foramen, mastoid foramen, condylar canal, sphenoidal emissary foramen (of Vesalius), foramen ovale and foramen cecum"
       },
       {
         "label": "Drains into",

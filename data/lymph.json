@@ -121,7 +121,7 @@
       },
       {
         "label": "Efferents to",
-        "value": "Deep cervical chain, especially the jugulodigastric and jugulo-omohyoid nodes (levels II-III)"
+        "value": "Deep cervical chain, especially the jugulodigastric and juguloomohyoid nodes (levels II-III)"
       },
       {
         "label": "Level",
@@ -156,7 +156,7 @@
       },
       {
         "label": "Efferents to",
-        "value": "Submandibular nodes and directly to the jugulo-omohyoid node (level III)"
+        "value": "Submandibular nodes and directly to the juguloomohyoid node (level III)"
       },
       {
         "label": "Level",
@@ -611,7 +611,7 @@
       },
       {
         "label": "Efferents to",
-        "value": "Levels II and III (jugulodigastric and jugulo-omohyoid nodes)"
+        "value": "Levels II and III (jugulodigastric and juguloomohyoid nodes)"
       },
       {
         "label": "Cancers draining here",
@@ -677,7 +677,7 @@
     "name": "Level III (middle jugular)",
     "category": "lymph",
     "group": "Neck levels (surgical)",
-    "function": "Middle jugular nodes between the hyoid and the cricoid along the IJV; includes the jugulo-omohyoid node.",
+    "function": "Middle jugular nodes between the hyoid and the cricoid along the IJV; includes the juguloomohyoid node.",
     "details": [
       {
         "label": "Location",
@@ -993,7 +993,7 @@
       },
       {
         "label": "Drains",
-        "value": "Lymph leaves bilaterally to the jugulodigastric and jugulo-omohyoid nodes (levels II-III)"
+        "value": "Lymph leaves bilaterally to the jugulodigastric and juguloomohyoid nodes (levels II-III)"
       },
       {
         "label": "Efferents to",

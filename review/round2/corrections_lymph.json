@@ -1,0 +1,58 @@
+{
+ "category": "lymph",
+ "verified": 35,
+ "corrections": [
+  {
+   "id": "submandibular-nodes",
+   "field": "details:Efferents to",
+   "action": "replace",
+   "old": "Deep cervical chain, especially the jugulodigastric and jugulo-omohyoid nodes (levels II-III)",
+   "new": "Deep cervical chain, especially the jugulodigastric and juguloomohyoid nodes (levels II-III)",
+   "ref": "Netter Plates 85-86 (p140-141): \"Juguloomohyoid node\"; consistency with jugulo-omohyoid-node card name",
+   "reason": "Terminology: node spelled jugulo-omohyoid here but Juguloomohyoid on its own card and in Netter",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "submental-nodes",
+   "field": "details:Efferents to",
+   "action": "replace",
+   "old": "Submandibular nodes and directly to the jugulo-omohyoid node (level III)",
+   "new": "Submandibular nodes and directly to the juguloomohyoid node (level III)",
+   "ref": "Netter Plates 85-86 (p140-141): \"Juguloomohyoid node\"; consistency with jugulo-omohyoid-node card name",
+   "reason": "Terminology: node spelled jugulo-omohyoid here but Juguloomohyoid on its own card and in Netter",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "level-i-submental-submandibular",
+   "field": "details:Efferents to",
+   "action": "replace",
+   "old": "Levels II and III (jugulodigastric and jugulo-omohyoid nodes)",
+   "new": "Levels II and III (jugulodigastric and juguloomohyoid nodes)",
+   "ref": "Netter Plates 85-86 (p140-141): \"Juguloomohyoid node\"; consistency with jugulo-omohyoid-node card name",
+   "reason": "Terminology: node spelled jugulo-omohyoid here but Juguloomohyoid on its own card and in Netter",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "level-iii-middle-jugular-nodes",
+   "field": "function",
+   "action": "replace",
+   "old": "Middle jugular nodes between the hyoid and the cricoid along the IJV; includes the jugulo-omohyoid node.",
+   "new": "Middle jugular nodes between the hyoid and the cricoid along the IJV; includes the juguloomohyoid node.",
+   "ref": "Netter Plates 85-86 (p140-141): \"Juguloomohyoid node\"; consistency with jugulo-omohyoid-node card name",
+   "reason": "Terminology: node spelled jugulo-omohyoid here but Juguloomohyoid on its own card and in Netter",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "lingual-tonsil",
+   "field": "details:Drains",
+   "action": "replace",
+   "old": "Lymph leaves bilaterally to the jugulodigastric and jugulo-omohyoid nodes (levels II-III)",
+   "new": "Lymph leaves bilaterally to the jugulodigastric and juguloomohyoid nodes (levels II-III)",
+   "ref": "Netter Plates 85-86 (p140-141): \"Juguloomohyoid node\"; consistency with jugulo-omohyoid-node card name",
+   "reason": "Terminology: node spelled jugulo-omohyoid here but Juguloomohyoid on its own card and in Netter",
+   "confidence": "netter-explicit"
+  }
+ ],
+ "missing": [],
+ "notes": "All 35 lymph cards checked: every \"Efferents to\" target card lists the sending group (or its region) in Drains; levels I-VII chain, Waldeyer ring, ducts and trunks agree. Only a spelling inconsistency."
+}

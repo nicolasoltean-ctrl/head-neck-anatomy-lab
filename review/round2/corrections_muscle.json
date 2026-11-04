@@ -1,0 +1,28 @@
+{
+ "category": "muscle",
+ "verified": 79,
+ "corrections": [
+  {
+   "id": "auricular-muscles",
+   "field": "details:Innervation",
+   "action": "replace",
+   "old": "Anterior and superior: temporal branches of CN VII. Posterior: posterior auricular branch of CN VII",
+   "new": "Temporal and posterior auricular branches of CN VII (anterior and superior mainly temporal, posterior mainly posterior auricular)",
+   "ref": "Netter Table 2.4 (p219): auricularis anterior/posterior/superior all \"Posterior auricular and temporal branches of facial nerve\"; consistency with posterior-auricular-nerve",
+   "reason": "Muscle card assigned anterior/superior to temporal only; Netter lists both branches for all three and the posterior-auricular-nerve card claims anterior and superior too",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "mylohyoid",
+   "field": "details:Blood supply",
+   "action": "replace",
+   "old": "Sublingual branch of lingual artery and submental branch of facial artery",
+   "new": "Sublingual branch of lingual artery and submental branch of facial artery; mylohyoid branch of inferior alveolar artery",
+   "ref": "Netter Plates 25, 69 (mylohyoid branch of inferior alveolar artery); consistency with inferior-alveolar-artery Supplies",
+   "reason": "inferior-alveolar-artery card lists mylohyoid in Supplies but the muscle card omitted its mylohyoid branch",
+   "confidence": "netter-inferred"
+  }
+ ],
+ "missing": [],
+ "notes": "All 79 muscle cards cross-checked against nerve Supplies, artery Supplies and bone Attachments; innervation and blood supply agree with Netter Tables 2.4-2.9 and back Tables for neck extensors. Only two cross-card gaps found."
+}

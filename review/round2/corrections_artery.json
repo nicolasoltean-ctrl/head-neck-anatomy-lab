@@ -1,0 +1,38 @@
+{
+ "category": "artery",
+ "verified": 39,
+ "corrections": [
+  {
+   "id": "ascending-pharyngeal-artery",
+   "field": "details:Branches",
+   "action": "replace",
+   "old": "Pharyngeal and tonsillar branches, prevertebral (muscular) branches, inferior tympanic artery (through the tympanic canaliculus), and posterior meningeal branches (via the jugular foramen and hypoglossal canal).",
+   "new": "Pharyngeal and tonsillar branches, prevertebral (muscular) branches, inferior tympanic artery (through the tympanic canaliculus), and posterior meningeal branches (via the jugular foramen and condylar canal).",
+   "ref": "Netter Plate 20 (p75): condylar canal - emissary vein and meningeal branch of ascending pharyngeal artery; hypoglossal canal - CN XII only; consistency with hypoglossal-canal and occipital-bone cards",
+   "reason": "Card routed the meningeal branch through the hypoglossal canal; Netter and the bone cards put it in the condylar canal",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "labial-arteries",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Upper and lower lips: orbicularis oris, levator labii superioris and levator anguli oris, risorius (superior labial); depressor anguli oris, depressor labii inferioris, mentalis (inferior labial); labial glands and mucosa; nasalis, depressor septi and the anterior nasal septum (superior labial septal branch).",
+   "new": "Upper and lower lips: orbicularis oris, levator labii superioris and levator anguli oris, zygomaticus major and minor, risorius (superior labial); depressor anguli oris, depressor labii inferioris, mentalis (inferior labial); labial glands and mucosa; nasalis, depressor septi and the anterior nasal septum (superior labial septal branch).",
+   "ref": "Netter Table 2.9 (p224): zygomaticus major and minor - superior labial artery of facial artery; consistency with zygomaticus-major / zygomaticus-minor Blood supply",
+   "reason": "Both zygomaticus cards name the superior labial artery but the labial-arteries card did not list them",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "facial-artery",
+   "field": "details:Supplies",
+   "action": "replace",
+   "old": "Submandibular gland; palatine tonsil, soft palate muscles and pharyngeal wall (ascending palatine, tonsillar); anterior belly of digastric, mylohyoid, genioglossus/hyoglossus and platysma (submental); stylohyoid; masseter and medial pterygoid; buccinator and the muscles of facial expression of the lips, nose and cheek (labial, lateral nasal, angular); anastomoses with the ophthalmic artery at the medial canthus.",
+   "new": "Submandibular gland; palatine tonsil, soft palate muscles and pharyngeal wall (ascending palatine, tonsillar); anterior belly of digastric, mylohyoid, genioglossus/hyoglossus and platysma (submental); stylohyoid; masseter and medial pterygoid; buccinator and the muscles of facial expression of the lips, nose and cheek (labial, lateral nasal, angular); orbicularis oculi (angular, with the superficial temporal artery); anastomoses with the ophthalmic artery at the medial canthus.",
+   "ref": "Netter Table 2.7 (p222): orbicularis oculi - facial and superficial temporal arteries; consistency with orbicularis-oculi Blood supply",
+   "reason": "orbicularis-oculi names the facial artery but the facial-artery Supplies covered only lips, nose and cheek",
+   "confidence": "netter-explicit"
+  }
+ ],
+ "missing": [],
+ "notes": "All 39 artery cards checked against muscle Blood supply (both directions), branch/parent Origin-Branches pairs (ECA, maxillary, facial, STA, subclavian, thyrocervical, ICA, ophthalmic) and foramina. Branch/parent agreement is complete; three Supplies/route fixes."
+}
