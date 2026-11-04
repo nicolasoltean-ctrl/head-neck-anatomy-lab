@@ -98,6 +98,7 @@ header.top .count { margin-left: auto; font-family: var(--font-mono); font-size:
 .index button.row { display: flex; width: 100%; text-align: left; gap: 8px; align-items: center; padding: 4px 12px 4px 14px; border: 0; background: transparent; cursor: pointer; font-size: 14px; border-left: 3px solid transparent; }
 .index button.row:hover { background: var(--bg-3); }
 .index button.row[aria-current="true"] { border-left-color: var(--c); background: color-mix(in srgb, var(--c) 12%, var(--bg-2)); font-weight: 500; }
+.index button.row.virtual { color: var(--fg-2); }
 .index button.row .m { margin-left: auto; font-family: var(--font-mono); font-size: 10px; color: var(--fg-3); letter-spacing: .04em; }
 .index .empty { padding: 14px 12px; color: var(--fg-3); font-size: 14px; }
 .detail { padding: 14px 16px 16px; }
@@ -244,6 +245,12 @@ for (const e of entries) {
 }
 const entryById = new Map(entries.map(e => [e.id, e]));
 const labelOfId = new Map(entries.map(e => [e.id, e.system + ':' + e.label]));
+/* Cards whose structure has no mesh in the Z-Anatomy model: listed in the index under their system and asked in the function quiz, never highlighted. */
+const VTIER = { muscle: 2, artery: 3, vein: 3, nerve: 3, lymph: 3, bone: 5 };
+const matchedCards = new Set([...labels.values()].map(L => L.card).filter(Boolean));
+for (const c of DATA) if (!matchedCards.has(c.id) && SYS[c.category]) labels.set('card:' + c.id, { key: 'card:' + c.id, label: c.name, system: c.category, tier: VTIER[c.category] ?? 3, card: c.id, ids: [], group: c.group || '', virtual: true });
+const modelLabelCount = [...labels.values()].filter(L => !L.virtual).length;
+const cardOnlyCount = labels.size - modelLabelCount;
 
 const state = {
   systems: Object.assign(Object.fromEntries(ORDER.map(s => [s, s !== 'cns'])), store.get('systems', {})),
@@ -414,7 +421,7 @@ function applyVisibility() {
 }
 function updateCounts() {
   const visibleLabels = new Set(); meshes.forEach(m => { if (m.visible && m.material !== ghosts[m.userData.system]) visibleLabels.add(labelOfId.get(m.userData.id)); });
-  document.getElementById('count').textContent = `${visibleLabels.size} structures in view · ${labels.size} in model`;
+  document.getElementById('count').textContent = `${visibleLabels.size} structures in view · ${modelLabelCount} in model · ${cardOnlyCount} card-only`;
 }
 
 /* ---------- Picking & hover ---------- */
@@ -477,7 +484,7 @@ function renderIndex() {
     const groups = [...new Set(items.map(L => L.group || ''))];
     for (const g of groups) {
       if (g) html += `<h4><button class="grp" data-grp="${esc(g)}">${esc(g)}</button></h4>`;
-      for (const L of items.filter(L => (L.group || '') === g)) html += `<button class="row" data-key="${esc(L.key)}" style="--c:${SYS[s].color}" aria-current="${L.key === state.selected}">${esc(L.label)}<span class="m">${L.ids.length > 1 ? 'L+R' : ''}${L.card ? (L.ids.length > 1 ? ' · ' : '') + 'card' : ''}</span></button>`;
+      for (const L of items.filter(L => (L.group || '') === g)) html += `<button class="row${L.virtual ? ' virtual' : ''}" data-key="${esc(L.key)}" style="--c:${SYS[s].color}" aria-current="${L.key === state.selected}">${esc(L.label)}<span class="m">${L.virtual ? 'card only' : (L.ids.length > 1 ? 'L+R' : '') + (L.card ? (L.ids.length > 1 ? ' · ' : '') + 'card' : '')}</span></button>`;
     }
   }
   idx.innerHTML = html || `<div class="empty">No structures match “${esc(state.query)}” in the active systems.</div>`;
@@ -493,21 +500,22 @@ document.getElementById('q').addEventListener('input', e => setQuery(e.target.va
 document.getElementById('clear-q').onclick = () => setQuery('');
 
 function select(key, fromList) {
-  state.selected = key && labels.has(key) ? key : null; if (!state.selected) state.isolate = false;
+  state.selected = key && labels.has(key) ? key : null; if (!state.selected || labels.get(state.selected).virtual) state.isolate = false;
   applyVisibility(); renderDetail();
   const idx = document.getElementById('index'); idx.querySelectorAll('button.row').forEach(b => b.setAttribute('aria-current', String(b.dataset.key === state.selected)));
   const row = idx.querySelector(`button.row[data-key="${CSS.escape(state.selected || '')}"]`); if (row && !fromList) row.scrollIntoView({ block: 'nearest' });
-  if (state.selected) { const L = labels.get(state.selected); if (L.tier < state.peel) { /* structure is peeled away: bring peel back to it */ setPeel(L.tier); } loadSystem(L.system); }
+  if (state.selected) { const L = labels.get(state.selected); if (!L.virtual && L.tier < state.peel) { /* structure is peeled away: bring peel back to it */ setPeel(L.tier); } loadSystem(L.system); }
 }
 function renderDetail() {
   const d = document.getElementById('detail'); const L = state.selected && labels.get(state.selected);
   if (!L) { d.innerHTML = `<div class="placeholder"><div class="eyebrow">Specimen card</div><h2>Pick a structure</h2><p>Click any structure on the model, or choose from the index. Use Peel to remove layers from the skin inward, Side to view one half, and Cut to slice the model. Ghost keeps a transparent skin envelope while you peel; turn it off to hide the skin entirely.</p></div>`; return; }
   const s = SYS[L.system]; const c = L.card && cardById.get(L.card);
-  let html = `<div class="eyebrow" style="--c:${s.color}"><span class="cat">${s.label}</span><span>·</span><span>${TIERS[L.tier]}</span>${L.ids.length > 1 ? '<span>·</span><span>paired</span>' : ''}</div><h2>${esc(L.label)}</h2>`;
+  let html = `<div class="eyebrow" style="--c:${s.color}"><span class="cat">${s.label}</span><span>·</span><span>${L.virtual ? 'not shown on the model' : TIERS[L.tier]}</span>${L.ids.length > 1 ? '<span>·</span><span>paired</span>' : ''}</div><h2>${esc(L.label)}</h2>`;
+  if (L.virtual) html += `<p class="nocard">The Z-Anatomy model has no mesh for this structure, so it cannot be highlighted or clicked; the card is from Netter.</p>`;
   if (c) {
     html += `${c.name.toLowerCase() !== L.label.toLowerCase() ? `<div class="eyebrow" style="margin-bottom:6px">Card: ${esc(c.name)} · ${esc(c.group)}</div>` : ''}<p class="fn">${esc(c.function)}</p><dl>${(c.details || []).map(x => `<dt>${esc(x.label)}</dt><dd>${esc(x.value)}</dd>`).join('')}</dl>${c.pearl ? `<div class="pearl"><b>Step 2 pearl</b>${esc(c.pearl)}</div>` : ''}`;
   } else html += `<p class="nocard">Shown for anatomical context. This structure has no specimen card yet; the name and system come from the Z-Anatomy model.</p>`;
-  html += `<div class="acts"><button id="isolate" aria-pressed="${state.isolate}">Isolate</button><button id="focus">Center view</button><button id="deselect">Clear</button></div>`;
+  html += L.virtual ? `<div class="acts"><button id="deselect">Clear</button></div>` : `<div class="acts"><button id="isolate" aria-pressed="${state.isolate}">Isolate</button><button id="focus">Center view</button><button id="deselect">Clear</button></div>`;
   d.innerHTML = html;
 }
 document.getElementById('detail').addEventListener('click', e => {
@@ -542,7 +550,7 @@ document.getElementById('mode-explore').onclick = () => setMode('explore'); docu
 
 /* ---------- Quiz ---------- */
 const TYPES = { name: 'Name it', find: 'Find it', function: 'Function' };
-function quizPool() { const pool = visibleLabels().filter(L => L.tier >= state.peel && L.ids.some(id => meshes.has(id))); return state.quiz && state.quiz.type === 'function' ? pool.filter(L => L.card) : pool; }
+function quizPool() { const vis = visibleLabels(); if (state.quiz && state.quiz.type === 'function') return vis.filter(L => L.card && (L.virtual || (L.tier >= state.peel && L.ids.some(id => meshes.has(id))))); return vis.filter(L => !L.virtual && L.tier >= state.peel && L.ids.some(id => meshes.has(id))); }
 function resetQuizPool() { if (state.quiz) { state.quiz.q = null; clearQuizMarks(); renderQuiz(); } }
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function newQuestion() {
@@ -580,7 +588,7 @@ function renderQuiz() {
   let body = '';
   if (pool.length < 4) body = `<p class="warn">Fewer than four structures are in view. Turn on more systems, lower the peel, or clear the filter.</p>`;
   else if (!qz.q) {
-    const desc = { name: 'A structure is highlighted on the model. Pick its name.', find: 'You are given a name. Click the matching structure on the model (hover names are hidden).', function: 'You are given a function. Pick the structure it describes (uses structures with a specimen card).' }[qz.type];
+    const desc = { name: 'A structure is highlighted on the model. Pick its name.', find: 'You are given a name. Click the matching structure on the model (hover names are hidden).', function: 'You are given a function. Pick the structure it describes (uses every structure with a specimen card, including card-only ones).' }[qz.type];
     body = `<div class="setup"><p>${desc} Questions come from what is currently in view: the active systems, the peel depth and the filter.</p><button class="btn primary" id="start">Start</button></div>`;
   } else {
     const q = qz.q, t = q.target, s = SYS[t.system]; const c = t.card && cardById.get(t.card);
