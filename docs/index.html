@@ -93,6 +93,10 @@ header.top .count { margin-left: auto; font-family: var(--font-mono); font-size:
 .ctl { display: grid; grid-template-columns: 92px minmax(0, 1fr) auto; gap: 10px; align-items: center; font-size: 13px; }
 .ctl label { color: var(--fg-2); font-weight: 500; }
 .ctl input[type="range"] { width: 100%; accent-color: var(--accent); margin: 0; }
+.swatches { display: flex; gap: 7px; flex-wrap: wrap; }
+.swatches button { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--line); background: var(--sw); cursor: pointer; padding: 0; }
+.swatches button:hover { border-color: var(--fg-2); }
+.swatches button[aria-pressed="true"] { border-color: var(--fg); box-shadow: 0 0 0 2px var(--bg) inset; }
 .ctl .val { font-family: var(--font-mono); font-size: 12px; color: var(--fg-2); min-width: 150px; text-align: right; font-variant-numeric: tabular-nums; }
 .ctl .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 @media (max-width: 560px) { .ctl { grid-template-columns: 1fr; gap: 4px; } .ctl .val { text-align: left; } }
@@ -200,6 +204,11 @@ header.top .count { margin-left: auto; font-family: var(--font-mono); font-size:
           <div class="row"><span class="val" id="peel-val"></span><button class="icon-btn" id="ghost" aria-pressed="true" title="Keep a transparent skin envelope while peeling">Ghost</button></div>
         </div>
         <div class="ctl">
+          <label id="tone-label">Skin tone</label>
+          <div class="swatches" id="tones" role="group" aria-labelledby="tone-label"></div>
+          <span class="val" id="tone-val"></span>
+        </div>
+        <div class="ctl">
           <label for="cut">Cut</label>
           <input type="range" id="cut" min="0" max="100" step="1" value="0" aria-label="Clipping cut">
           <div class="row"><div class="seg" role="group" aria-label="Cut plane"><button data-cut="sag" aria-pressed="true">Sagittal</button><button data-cut="cor" aria-pressed="false">Coronal</button><button data-cut="ax" aria-pressed="false">Axial</button></div></div>
@@ -246,6 +255,11 @@ const SYS = {
   cns:     { label: 'Brain & eye', color: 'var(--c-cns)',    hex: [0xd9a9b8, 0xe6bfcb] },
 };
 const ORDER = ['skin', 'muscle', 'bone', 'artery', 'vein', 'nerve', 'lymph', 'viscera', 'cns'];
+/* Skin tones for the model surface (light-mode base colours; dark mode uses a slightly deeper variant). */
+const TONES = [
+  { name: 'Very light', hex: 0xf3dfcf }, { name: 'Light', hex: 0xe3b48e }, { name: 'Light-medium', hex: 0xd7a27a },
+  { name: 'Medium', hex: 0xbf8a62 }, { name: 'Medium-deep', hex: 0x9c6a48 }, { name: 'Deep', hex: 0x6f4a33 }, { name: 'Very deep', hex: 0x4b3326 },
+];
 const TIERS = ['Skin surface', 'Fascia & superficial muscles', 'Deep muscles', 'Vessels, nerves & nodes', 'Glands & viscera', 'Bone, cartilage & joints', 'Brain & eye'];
 const cardById = new Map(DATA.map(s => [s.id, s]));
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -271,7 +285,7 @@ const cardOnlyCount = labels.size - modelLabelCount;
 
 const state = {
   systems: Object.assign(Object.fromEntries(ORDER.map(s => [s, s !== 'cns'])), store.get('systems', {})),
-  peel: 0, ghost: true, side: 'both', cutAxis: 'sag', cut: 0, spin: false,
+  peel: 0, ghost: true, side: 'both', cutAxis: 'sag', cut: 0, spin: false, tone: Math.min(TONES.length - 1, Math.max(0, store.get('tone', 1) | 0)),
   selected: null, isolate: false, query: '', mode: 'explore', quiz: null,
   stats: store.get('stats', { correct: 0, total: 0, best: 0 }),
 };
@@ -296,8 +310,9 @@ const materials = {}; const ghosts = {}; let selMat;
 function buildMaterials() {
   const dark = isDark();
   for (const s of ORDER) {
-    const hex = SYS[s].hex[dark ? 1 : 0];
-    materials[s] = new THREE.MeshPhongMaterial({ color: hex, shininess: s === 'skin' ? 8 : 22, specular: 0x222222, side: THREE.DoubleSide });
+    let hex = SYS[s].hex[dark ? 1 : 0];
+    if (s === 'skin') { const c = new THREE.Color(TONES[state.tone].hex); if (dark) c.multiplyScalar(0.82); hex = c.getHex(); }
+    materials[s] = new THREE.MeshPhongMaterial({ color: hex, shininess: s === 'skin' ? 6 : 22, specular: s === 'skin' ? 0x1c1a18 : 0x222222, side: THREE.DoubleSide });
     ghosts[s] = new THREE.MeshPhongMaterial({ color: hex, transparent: true, opacity: 0.1, depthWrite: false, side: THREE.DoubleSide, shininess: 5 });
   }
   selMat = new THREE.MeshPhongMaterial({ color: dark ? 0x7fd0ea : 0x1f6f8b, emissive: dark ? 0x1b5868 : 0x0b3a4a, shininess: 30, side: THREE.DoubleSide });
@@ -386,6 +401,49 @@ function parseMesh(buf, off, len) {
   g.computeVertexNormals(); g.computeBoundingSphere();
   return g;
 }
+/* The model's skin is 98 separate regions, each shaded on its own, so their shared edges draw as dark seams.
+   Snap coincident boundary vertices of neighbouring patches to one position, average their normals, and push the
+   surface outward a fraction of a millimetre so thin skin no longer lets the facial muscles poke through. */
+function weldSkin() {
+  const cell = 0.0012, tol2 = 0.0015 * 0.0015, lift = 0.0006, mid = 0.0015;
+  const skin = [...meshes.values()].filter(m => m.userData.system === 'skin');
+  // mirrored patches come with reversed winding, so their computed normals point inward; flip those first or welding cancels the normals at the midline
+  for (const m of skin) {
+    // signed-volume test: sum of (centroid - head centre) . (area-weighted face normal) is positive for outward winding, whether the patch is an open sheet or a thin closed shell
+    const g = m.geometry, p = g.attributes.position.array, ix = g.index.array; let dot = 0;
+    for (let t = 0; t < ix.length; t += 3) {
+      const a = ix[t] * 3, b = ix[t + 1] * 3, c = ix[t + 2] * 3;
+      const ux = p[b] - p[a], uy = p[b + 1] - p[a + 1], uz = p[b + 2] - p[a + 2], vx = p[c] - p[a], vy = p[c + 1] - p[a + 1], vz = p[c + 2] - p[a + 2];
+      const fx = uy * vz - uz * vy, fy = uz * vx - ux * vz, fz = ux * vy - uy * vx;
+      const cx = (p[a] + p[b] + p[c]) / 3 - center.x, cyRaw = (p[a + 1] + p[b + 1] + p[c + 1]) / 3, cy = cyRaw < center.y ? 0 : cyRaw - center.y, cz = (p[a + 2] + p[b + 2] + p[c + 2]) / 3 - center.z;
+      dot += fx * cx + fy * cy + fz * cz;
+    }
+    if (dot < 0) { for (let t = 0; t < ix.length; t += 3) { const tmp = ix[t + 1]; ix[t + 1] = ix[t + 2]; ix[t + 2] = tmp; } g.index.needsUpdate = true; g.computeVertexNormals(); }
+  }
+  const cells = new Map(); const key = (x, y, z) => x + ',' + y + ',' + z;
+  for (const m of skin) { const p = m.geometry.attributes.position.array; for (let i = 0; i < p.length; i += 3) { const k = key(Math.round(p[i] / cell), Math.round(p[i + 1] / cell), Math.round(p[i + 2] / cell)); let a = cells.get(k); if (!a) cells.set(k, a = []); a.push(m, i); } }
+  const done = new Set(); const sum = [0, 0, 0], nsum = [0, 0, 0];
+  for (const [k, a] of cells) {
+    const [cx, cy, cz] = k.split(',').map(Number);
+    for (let j = 0; j < a.length; j += 2) {
+      const m0 = a[j], i0 = a[j + 1]; if (done.has(m0.id + ':' + i0)) continue;
+      const p0 = m0.geometry.attributes.position.array; const group = [];
+      for (let dx = -1; dx <= 1; dx++) for (let dy = -1; dy <= 1; dy++) for (let dz = -1; dz <= 1; dz++) {
+        const b = cells.get(key(cx + dx, cy + dy, cz + dz)); if (!b) continue;
+        for (let t = 0; t < b.length; t += 2) { const m = b[t], i = b[t + 1]; if (done.has(m.id + ':' + i)) continue; const p = m.geometry.attributes.position.array; const d = (p[i] - p0[i0]) ** 2 + (p[i + 1] - p0[i0 + 1]) ** 2 + (p[i + 2] - p0[i0 + 2]) ** 2; if (d <= tol2) group.push(m, i); }
+      }
+      if (group.length <= 2) { done.add(m0.id + ':' + i0); continue; }
+      sum[0] = sum[1] = sum[2] = 0; nsum[0] = nsum[1] = nsum[2] = 0;
+      for (let t = 0; t < group.length; t += 2) { const p = group[t].geometry.attributes.position.array, n = group[t].geometry.attributes.normal.array, i = group[t + 1]; sum[0] += p[i]; sum[1] += p[i + 1]; sum[2] += p[i + 2]; nsum[0] += n[i]; nsum[1] += n[i + 1]; nsum[2] += n[i + 2]; }
+      const cnt = group.length / 2, nl = Math.hypot(nsum[0], nsum[1], nsum[2]) || 1;
+      for (let t = 0; t < group.length; t += 2) { const g = group[t].geometry, i = group[t + 1]; const p = g.attributes.position.array, n = g.attributes.normal.array; p[i] = sum[0] / cnt; p[i + 1] = sum[1] / cnt; p[i + 2] = sum[2] / cnt; n[i] = nsum[0] / nl; n[i + 1] = nsum[1] / nl; n[i + 2] = nsum[2] / nl; done.add(group[t].id + ':' + i); }
+    }
+  }
+  for (const m of skin) { const p = m.geometry.attributes.position.array, n = m.geometry.attributes.normal.array;
+    // the left and right halves sample the midline differently, so their edge vertices find no partner: by symmetry the surface normal there has no sideways component
+    for (let i = 0; i < p.length; i += 3) if (Math.abs(p[i]) < mid) { const l = Math.hypot(n[i + 1], n[i + 2]); if (l > 0.2) { n[i] = 0; n[i + 1] /= l; n[i + 2] /= l; } }
+    for (let i = 0; i < p.length; i++) p[i] += n[i] * lift; m.geometry.attributes.position.needsUpdate = true; m.geometry.attributes.normal.needsUpdate = true; m.geometry.computeBoundingSphere(); }
+}
 async function loadSystem(sys) {
   if (loaded.has(sys) || !MAN.packs[sys]) return; if (loading.has(sys)) return loading.get(sys);
   const pack = MAN.packs[sys];
@@ -404,6 +462,7 @@ async function loadSystem(sys) {
       } catch (err) { console.warn('mesh', e.id, err); }
       if (++i % 40 === 0) { setLoad(`Loading ${SYS[sys].label.toLowerCase()}… ${i}/${pack.meshes.length}`, i / pack.meshes.length * 100); await new Promise(r => setTimeout(r, 0)); }
     }
+    if (sys === 'skin') weldSkin();
     loaded.add(sys); loading.delete(sys); applyVisibility(); updateCounts();
     if (![...loading.keys()].length) setLoad(null);
   })();
@@ -485,6 +544,12 @@ const peelEl = document.getElementById('peel');
 function setPeel(v) { state.peel = +v; peelEl.value = v; document.getElementById('peel-val').textContent = TIERS[state.peel]; applyVisibility(); updateCounts(); }
 peelEl.addEventListener('input', e => setPeel(e.target.value));
 document.getElementById('ghost').onclick = e => { state.ghost = !state.ghost; e.currentTarget.setAttribute('aria-pressed', String(state.ghost)); applyVisibility(); };
+function renderTones() {
+  document.getElementById('tones').innerHTML = TONES.map((t, i) => `<button data-tone="${i}" aria-pressed="${i === state.tone}" title="${esc(t.name)}" aria-label="${esc(t.name)}" style="--sw:#${t.hex.toString(16).padStart(6, '0')}"></button>`).join('');
+  document.getElementById('tone-val').textContent = TONES[state.tone].name;
+}
+document.getElementById('tones').addEventListener('click', e => { const b = e.target.closest('[data-tone]'); if (!b) return; state.tone = +b.dataset.tone; store.set('tone', state.tone); renderTones(); buildMaterials(); });
+renderTones();
 document.getElementById('cut').addEventListener('input', e => { state.cut = +e.target.value; applyCut(); });
 document.querySelectorAll('[data-cut]').forEach(b => b.onclick = () => { state.cutAxis = b.dataset.cut; document.querySelectorAll('[data-cut]').forEach(x => x.setAttribute('aria-pressed', String(x === b))); applyCut(); });
 document.querySelectorAll('[data-side]').forEach(b => b.onclick = () => { state.side = b.dataset.side; document.querySelectorAll('[data-side]').forEach(x => x.setAttribute('aria-pressed', String(x === b))); applyVisibility(); updateCounts(); });
