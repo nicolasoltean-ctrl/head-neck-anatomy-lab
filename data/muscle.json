@@ -25,6 +25,10 @@
       {
         "label": "Action",
         "value": "Elevates eyebrows, wrinkles forehead (surprise); occipitalis retracts scalp"
+      },
+      {
+        "label": "Divisions",
+        "value": "Frontal belly (epicranial aponeurosis to skin of forehead and eyebrows; temporal branches of CN VII); epicranial aponeurosis (galea aponeurotica, the intermediate tendon joining the two bellies); occipital belly (lateral two-thirds of superior nuchal line and mastoid process to the aponeurosis; posterior auricular nerve)"
       }
     ],
     "pearl": "Forehead sparing separates an upper motor neuron (stroke) facial palsy from Bell palsy: the frontalis region of the facial nucleus receives bilateral cortical input.",
@@ -64,6 +68,10 @@
       {
         "label": "Action",
         "value": "Closes eyelids (palpebral part: blink; orbital part: forceful closure); aids lacrimal drainage"
+      },
+      {
+        "label": "Divisions",
+        "value": "Orbital part (thick ring around the orbital margin; forceful closure); palpebral part (thin fibers within the eyelids, in front of the tarsi; gentle blink)"
       }
     ],
     "pearl": "CN VII palsy causes lagophthalmos (incomplete eye closure) with exposure keratitis; test by squeezing eyes shut against resistance. Bell phenomenon (protective upward globe roll) is seen through the open lid.",
@@ -181,6 +189,10 @@
       {
         "label": "Action",
         "value": "Compressor naris narrows the nostril; dilator naris flares it"
+      },
+      {
+        "label": "Divisions",
+        "value": "Transverse part (compressor naris; maxilla to aponeurosis over the nasal dorsum); alar part (dilator naris; maxilla to the ala, opens the nostril)"
       }
     ],
     "pearl": "Nasal flaring from the alar part is a sign of increased work of breathing, especially in infants with bronchiolitis or pneumonia.",
@@ -688,6 +700,10 @@
       {
         "label": "Action",
         "value": "Draw the auricle forward, upward and backward (vestigial)"
+      },
+      {
+        "label": "Divisions",
+        "value": "Auricularis anterior (temporal fascia and epicranial aponeurosis to front of helix); auricularis superior (temporal fascia and epicranial aponeurosis to upper auricle); auricularis posterior (base of mastoid process to lower cranial surface of auricle)"
       }
     ],
     "pearl": "The posterior auricular nerve is the first branch of CN VII after it exits the stylomastoid foramen; its loss is clinically silent, so ear movement is not part of the facial nerve exam. Facial palsy is graded on brow, eye closure and mouth.",
@@ -727,6 +743,10 @@
       {
         "label": "Blood supply",
         "value": "Masseteric branch of the maxillary artery, transverse facial artery and masseteric branches of the facial artery"
+      },
+      {
+        "label": "Divisions",
+        "value": "Superficial part (larger; anterior zygomatic arch, fibers run down and back to the angle and lower ramus; elevates and protrudes); deep part (smaller; medial surface and posterior arch, vertical fibers to the upper ramus and coronoid process; elevates and retracts)"
       }
     ],
     "pearl": "Jaw clenching tests V3 motor function; a lower motor neuron V3 lesion causes masseter wasting. Spread of a molar infection into the masticator space causes trismus.",
@@ -844,6 +864,10 @@
       {
         "label": "Action",
         "value": "Protrudes and depresses mandible (with suprahyoids); unilateral action deviates jaw to the opposite side"
+      },
+      {
+        "label": "Divisions",
+        "value": "Superior head (infratemporal surface of greater wing of sphenoid; to TMJ capsule and articular disc); inferior head (lateral surface of lateral pterygoid plate; to pterygoid fovea of the condylar neck)"
       }
     ],
     "pearl": "In a unilateral V3 lesion the jaw deviates toward the weak side on opening. A condyle pulled anterior to the articular eminence is an anterior TMJ dislocation, reduced with downward-backward pressure.",
@@ -1117,6 +1141,10 @@
       {
         "label": "Action",
         "value": "Raises the upper eyelid"
+      },
+      {
+        "label": "Divisions",
+        "value": "Levator palpebrae superioris proper (striated; CN III superior division; to superior tarsus and lid skin); superior tarsal (Müller's) muscle (smooth-muscle layer from its deep surface to the upper edge of the superior tarsus; sympathetic)"
       }
     ],
     "pearl": "Complete ptosis = CN III palsy; mild ptosis = Horner syndrome (superior tarsal); fatigable ptosis = myasthenia gravis; aponeurotic dehiscence = involutional ptosis of aging.",
@@ -1277,6 +1305,10 @@
       {
         "label": "Relations",
         "value": "Posterior belly crosses superficial to ICA, IJV, CN X, XI, XII"
+      },
+      {
+        "label": "Divisions",
+        "value": "Anterior belly (digastric fossa of mandible; nerve to mylohyoid, CN V3); intermediate tendon (slung to the body of the hyoid); posterior belly (mastoid notch of temporal bone; facial nerve)"
       }
     ],
     "pearl": "Different embryologic arches explain dual innervation: anterior belly (1st arch, V3) vs posterior belly (2nd arch, VII). Posterior belly is the surgical landmark for CN XII and the carotid.",
@@ -1492,6 +1524,10 @@
       {
         "label": "Relations",
         "value": "Superior belly divides anterior triangle into carotid and muscular triangles; inferior belly divides posterior triangle into occipital and supraclavicular (subclavian) triangles"
+      },
+      {
+        "label": "Divisions",
+        "value": "Inferior belly (upper border of scapula and superior transverse scapular ligament to the intermediate tendon; crosses the posterior triangle); intermediate tendon (held to the clavicle by a fascial sling, deep to sternocleidomastoid); superior belly (intermediate tendon to body of hyoid; borders the carotid and muscular triangles)"
       }
     ],
     "pearl": "Classic intraoperative landmark for the level III/IV junction (current AAO-HNS/AJCC levels use the inferior border of the cricoid instead); inferior belly lies just above the subclavian vessels and brachial plexus.",
@@ -1617,6 +1653,10 @@
       {
         "label": "Blood supply",
         "value": "Sternocleidomastoid branches of superior thyroid and occipital arteries, muscular branch of suprascapular artery, occipital branch of posterior auricular artery"
+      },
+      {
+        "label": "Divisions",
+        "value": "Sternal head (rounded tendon from the anterior surface of the manubrium); clavicular head (flat, from the upper surface of the medial third of the clavicle); the lesser supraclavicular fossa lies between them"
       }
     ],
     "pearl": "Congenital torticollis: fibrosis/shortening of one SCM tilts the head toward the lesion and rotates the chin away. CN XI emerges from the posterior border at the junction of its upper and middle thirds and is at risk in posterior-triangle lymph node biopsy.",
@@ -1656,6 +1696,10 @@
       {
         "label": "Blood supply",
         "value": "Transverse cervical artery; dorsal perforating branches of posterior intercostal arteries"
+      },
+      {
+        "label": "Divisions",
+        "value": "Descending (upper) part (occiput and nuchal ligament to lateral third of clavicle; elevates scapula); transverse (middle) part (C7 to upper thoracic spinous processes to acromion and spine of scapula; retracts); ascending (lower) part (lower thoracic spinous processes to the medial spine of scapula; depresses)"
       }
     ],
     "pearl": "CN XI injury in the posterior triangle (lymph node biopsy, neck dissection) causes shoulder droop, weak shrug, impaired abduction above the shoulder and lateral scapular winging; SCM is spared if the injury is distal.",
@@ -1914,6 +1958,10 @@
       {
         "label": "Relations",
         "value": "Covered by prevertebral fascia, which forms the posterior wall of the retropharyngeal space; cervical sympathetic trunk lies on it, posterior to the carotid sheath"
+      },
+      {
+        "label": "Divisions",
+        "value": "Superior oblique portion (anterior tubercles of C3–C5 transverse processes to the anterior tubercle of the atlas); vertical portion (bodies C5–T3 to bodies C2–C4); inferior oblique portion (bodies T1–T3 to anterior tubercles of C3–C6 transverse processes)"
       }
     ],
     "pearl": "Acute calcific tendinitis of longus colli (hydroxyapatite in the superior oblique fibers at C1–C2) mimics retropharyngeal abscess: acute neck pain, odynophagia, prevertebral swelling. CT shows amorphous calcification anterior to C1–C2 with prevertebral fluid but no rim-enhancing collection; treat with NSAIDs, not drainage.",
@@ -2000,6 +2048,10 @@
       {
         "label": "Relations",
         "value": "Rectus capitis lateralis lies just posterior to the internal jugular vein exiting the jugular foramen"
+      },
+      {
+        "label": "Divisions",
+        "value": "Rectus capitis anterior (lateral mass of atlas to basilar occipital bone in front of the foramen magnum; flexes head); rectus capitis lateralis (transverse process of atlas to jugular process of occipital bone; lateral flexion)"
       }
     ],
     "pearl": "Rectus capitis lateralis is the landmark separating the IJV (anterior) from the vertebral artery (posterior) at the skull base; it is a surgical guide in approaches to the jugular foramen.",
@@ -2043,6 +2095,10 @@
       {
         "label": "Triangle contents",
         "value": "Vertebral artery (3rd part) in groove on posterior arch of atlas, suboccipital nerve (C1), suboccipital venous plexus"
+      },
+      {
+        "label": "Divisions",
+        "value": "Rectus capitis posterior major (spine of axis to inferior nuchal line); rectus capitis posterior minor (posterior tubercle of atlas to medial inferior nuchal line); obliquus capitis superior (transverse process of atlas to occipital bone); obliquus capitis inferior (spine of axis to transverse process of atlas). The triangle is bounded by rectus major and the two obliques"
       }
     ],
     "pearl": "Vertebral artery loops through the suboccipital triangle before piercing the dura; vertebral artery dissection here (chiropractic manipulation, trauma) causes occipital headache and lateral medullary (Wallenberg) signs.",
@@ -2258,6 +2314,10 @@
       {
         "label": "Gaps",
         "value": "Above its upper border (sinus of Morgagni): auditory tube and levator veli palatini. Between superior and middle: stylopharyngeus and CN IX"
+      },
+      {
+        "label": "Divisions",
+        "value": "Pterygopharyngeal part (from pterygoid hamulus); buccopharyngeal part (from pterygomandibular raphe, continuous with buccinator); mylopharyngeal part (from posterior mylohyoid line of mandible); glossopharyngeal part (from the side of the tongue)"
       }
     ],
     "pearl": "Nasopharyngeal carcinoma (EBV-associated) arises in the fossa of Rosenmuller above the superior constrictor; presents with unilateral serous otitis media, epistaxis and level II/V neck nodes.",
@@ -2301,6 +2361,10 @@
       {
         "label": "Gaps",
         "value": "Between middle and inferior constrictor: internal laryngeal nerve and superior laryngeal artery (through thyrohyoid membrane)"
+      },
+      {
+        "label": "Divisions",
+        "value": "Chondropharyngeal part (from lesser horn of hyoid and stylohyoid ligament); ceratopharyngeal part (from greater horn of hyoid)"
       }
     ],
     "pearl": "Each constrictor overlaps the one above from outside, so a bolus is pushed down; gaps between them transmit nerves and vessels, and are routes for pharyngeal abscess or tumor spread into the parapharyngeal space.",
@@ -2344,6 +2408,10 @@
       {
         "label": "Gaps",
         "value": "Below inferior border: recurrent laryngeal nerve and inferior laryngeal artery. Killian's dehiscence between thyropharyngeus and cricopharyngeus"
+      },
+      {
+        "label": "Divisions",
+        "value": "Thyropharyngeal part (thyropharyngeus; oblique line of thyroid cartilage, oblique fibers to the pharyngeal raphe; propulsive); cricopharyngeal part (cricopharyngeus; cricoid cartilage, horizontal fibers continuous with circular esophageal muscle; upper esophageal sphincter)"
       }
     ],
     "pearl": "Zenker diverticulum: false (pulsion) diverticulum through Killian's dehiscence from cricopharyngeal spasm; elderly dysphagia, halitosis, regurgitated undigested food; barium swallow to diagnose, avoid blind NG tube.",
@@ -2684,6 +2752,10 @@
       {
         "label": "Blood supply",
         "value": "Deep lingual branch of lingual artery and branches of facial artery"
+      },
+      {
+        "label": "Divisions",
+        "value": "Superior longitudinal (under the dorsal mucosa; shortens tongue, curls tip and sides up); inferior longitudinal (under surface between genioglossus and hyoglossus; curls tip down); transverse (from the median fibrous septum to the sides; narrows and elongates); vertical (dorsum to undersurface of the forepart; flattens and broadens)"
       }
     ],
     "pearl": "Bulbar (LMN) palsy such as ALS causes tongue atrophy and fasciculations from intrinsic and extrinsic muscle denervation, whereas pseudobulbar (UMN) palsy gives a spastic, slow tongue without wasting.",
@@ -2856,6 +2928,10 @@
       {
         "label": "Relations",
         "value": "Superior thyroid artery runs with the external laryngeal nerve near its upper pole attachment"
+      },
+      {
+        "label": "Divisions",
+        "value": "Straight part (anterior, nearly vertical fibers to the lower border of the thyroid lamina); oblique part (posterior fibers running back to the inferior horn of the thyroid cartilage)"
       }
     ],
     "pearl": "External laryngeal nerve injury (superior thyroid artery ligation at thyroidectomy) paralyzes cricothyroid: lost high pitch and vocal fatigue, normal-looking cord on laryngoscopy. Cricothyrotomy is via its membrane.",
@@ -2985,6 +3061,10 @@
       {
         "label": "Relations",
         "value": "Lateral to vocal ligament; upper fibers extend to epiglottis as thyroepiglottic part"
+      },
+      {
+        "label": "Divisions",
+        "value": "Thyroarytenoid proper (external part; lateral to the vocal fold, to the muscular process of the arytenoid); vocalis (medial fibers along the vocal ligament); thyroepiglottic part (upper fibers continuing to the epiglottis and aryepiglottic fold)"
       }
     ],
     "pearl": "True vocal fold: stratified squamous epithelium over vocalis; smoking and alcohol cause laryngeal SCC, presenting early with hoarseness. Hoarseness >2–4 wk (sooner in smokers or with red flags) needs laryngoscopy.",
@@ -3028,6 +3108,10 @@
       {
         "label": "Relations",
         "value": "Covered posteriorly by laryngopharyngeal mucosa"
+      },
+      {
+        "label": "Divisions",
+        "value": "Transverse arytenoid (single unpaired muscle bridging the posterior surfaces of both arytenoids); oblique arytenoids (paired crossing bundles from one muscular process to the opposite apex); aryepiglottic part of oblique arytenoid (fibers continuing into the aryepiglottic fold)"
       }
     ],
     "pearl": "Both RLNs supply the unpaired transverse arytenoid, so unilateral RLN palsy still allows partial posterior glottic closure. Paramedian cord: breathy voice, weak cough, possible aspiration; bilateral palsy: stridor.",
@@ -3231,6 +3315,10 @@
       {
         "label": "Blood supply",
         "value": "Anterior and long posterior ciliary arteries (major arterial circle)"
+      },
+      {
+        "label": "Divisions",
+        "value": "Meridional (longitudinal) fibers (outer; scleral spur to choroid, open the trabecular meshwork); circular fibers (inner sphincter ring; slacken the zonular fibers for accommodation)"
       }
     ],
     "pearl": "Pilocarpine contracts it to open the trabecular meshwork (open-angle glaucoma); in acute angle closure it works mainly via miosis pulling the iris off the angle. Cycloplegics (atropine, cyclopentolate) paralyze it: blurred near vision. Presbyopia is lens stiffening, not muscle weakness; CN III palsy adds loss of accommodation.",
@@ -3352,6 +3440,1296 @@
     ],
     "pearl": "In a midshaft clavicle fracture the subclavius pads the subclavian vein and artery against the sharp fragments, so neurovascular injury is uncommon. Its hypertrophy or a cervical rib narrows the costoclavicular space (thoracic outlet syndrome); it lies in the path of subclavian vein cannulation.",
     "depth": "deep",
+    "marker": {
+      "x": 600,
+      "y": 700
+    }
+  },
+  {
+    "id": "frontal-belly-of-occipitofrontalis",
+    "name": "Frontal belly of occipitofrontalis (frontalis)",
+    "category": "muscle",
+    "group": "Facial expression",
+    "function": "Anterior belly of the scalp muscle; it has no bony attachment and raises the eyebrows and wrinkles the forehead horizontally.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Epicranial aponeurosis at the level of the coronal suture"
+      },
+      {
+        "label": "Insertion",
+        "value": "Skin of the frontal region and eyebrows (blending with procerus, corrugator supercilii and orbicularis oculi)"
+      },
+      {
+        "label": "Innervation",
+        "value": "Temporal branches of CN VII"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Frontal branch of superficial temporal artery (with supraorbital and supratrochlear arteries)"
+      },
+      {
+        "label": "Action",
+        "value": "Raises the eyebrows and wrinkles the skin of the forehead horizontally"
+      }
+    ],
+    "pearl": "Forehead sparing marks an upper motor neuron facial palsy, because the part of the facial nucleus supplying frontalis receives bilateral cortical input; in Bell palsy the forehead cannot wrinkle.",
+    "depth": "superficial",
+    "marker": {
+      "x": 370,
+      "y": 165
+    }
+  },
+  {
+    "id": "occipital-belly-of-occipitofrontalis",
+    "name": "Occipital belly of occipitofrontalis (occipitalis)",
+    "category": "muscle",
+    "group": "Facial expression",
+    "function": "Posterior belly of the scalp muscle; it pulls the scalp backward and anchors the epicranial aponeurosis so the frontal belly can lift the brows.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Lateral two-thirds of the superior nuchal line and the mastoid process"
+      },
+      {
+        "label": "Insertion",
+        "value": "Epicranial aponeurosis and skin of the occipital region"
+      },
+      {
+        "label": "Innervation",
+        "value": "Posterior auricular nerve (branch of CN VII)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Occipital branch of posterior auricular artery and descending branch of occipital artery"
+      },
+      {
+        "label": "Action",
+        "value": "Moves the scalp backward and fixes the epicranial aponeurosis"
+      }
+    ],
+    "pearl": "The posterior auricular nerve leaves CN VII just below the stylomastoid foramen, so the occipital belly is spared by lesions of the facial nerve within the parotid gland.",
+    "depth": "superficial",
+    "marker": {
+      "x": 370,
+      "y": 165
+    }
+  },
+  {
+    "id": "epicranial-aponeurosis",
+    "name": "Epicranial aponeurosis (galea aponeurotica)",
+    "category": "muscle",
+    "group": "Facial expression",
+    "function": "Tough tendinous sheet over the calvaria that joins the frontal and occipital bellies of occipitofrontalis and forms the third layer of the scalp.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Occipital bellies of occipitofrontalis posteriorly; superior nuchal line and external occipital protuberance between them"
+      },
+      {
+        "label": "Insertion",
+        "value": "Frontal bellies of occipitofrontalis anteriorly; continuous laterally with the temporal fascia, where auricularis anterior and superior arise"
+      },
+      {
+        "label": "Innervation",
+        "value": "None of its own (its muscle bellies are supplied by CN VII)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Scalp arteries run in the dense connective tissue superficial to it"
+      },
+      {
+        "label": "Action",
+        "value": "Transmits the pull of the frontal and occipital bellies; moves with the skin as one unit over the loose areolar layer"
+      }
+    ],
+    "pearl": "A scalp wound that divides the aponeurosis coronally gapes widely because the two bellies pull the edges apart; the loose areolar layer beneath it is the danger area, through which blood and infection spread to the eyelids and via emissary veins to the cranial cavity.",
+    "depth": "superficial",
+    "marker": {
+      "x": 370,
+      "y": 165
+    }
+  },
+  {
+    "id": "orbicularis-oculi-orbital-part",
+    "name": "Orbital part of orbicularis oculi",
+    "category": "muscle",
+    "group": "Facial expression",
+    "function": "Thick outer ring of the eyelid sphincter that surrounds the orbital margin and screws the eyes tightly shut.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Medial orbital margin (nasal part of frontal bone, frontal process of maxilla) and medial palpebral ligament"
+      },
+      {
+        "label": "Insertion",
+        "value": "Fibers loop around the orbit without interruption and return to the medial palpebral ligament; skin around the orbit"
+      },
+      {
+        "label": "Innervation",
+        "value": "Temporal and zygomatic branches of CN VII"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Facial and superficial temporal arteries"
+      },
+      {
+        "label": "Action",
+        "value": "Forceful (voluntary) closure of the eyelids; draws the brow and cheek skin toward the eye"
+      }
+    ],
+    "pearl": "Squeezing the eyes shut against resistance tests it; its contraction produces the lateral 'crow's feet' wrinkles treated with botulinum toxin.",
+    "depth": "superficial",
+    "marker": {
+      "x": 296,
+      "y": 350
+    }
+  },
+  {
+    "id": "orbicularis-oculi-palpebral-part",
+    "name": "Palpebral part of orbicularis oculi",
+    "category": "muscle",
+    "group": "Facial expression",
+    "function": "Thin inner part of the eyelid sphincter lying within the lids in front of the orbital septum and tarsi; closes the lids gently in blinking and sleep.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Medial palpebral ligament"
+      },
+      {
+        "label": "Insertion",
+        "value": "Lateral palpebral ligament (raphe), arching across both eyelids anterior to the tarsi"
+      },
+      {
+        "label": "Innervation",
+        "value": "Zygomatic (and temporal) branches of CN VII"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Facial and superficial temporal arteries"
+      },
+      {
+        "label": "Action",
+        "value": "Gentle and reflex closure of the eyelids (blink); spreads the tear film and holds the lower lid against the globe"
+      }
+    ],
+    "pearl": "Paralysis in CN VII palsy causes lagophthalmos with exposure keratitis, and the unsupported lower lid falls away from the globe (paralytic ectropion) so tears spill over (epiphora).",
+    "depth": "superficial",
+    "marker": {
+      "x": 296,
+      "y": 350
+    }
+  },
+  {
+    "id": "masseter-superficial-part",
+    "name": "Superficial part of masseter",
+    "category": "muscle",
+    "group": "Mastication",
+    "function": "Larger, anterior part of masseter whose fibers slope downward and backward; it elevates the mandible and helps protrude it.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Zygomatic arch: maxillary process of the zygomatic bone and anterior two-thirds of the lower border of the arch"
+      },
+      {
+        "label": "Insertion",
+        "value": "Angle and lower lateral surface of the ramus of the mandible"
+      },
+      {
+        "label": "Innervation",
+        "value": "Masseteric nerve (CN V3, anterior division)"
+      },
+      {
+        "label": "Action",
+        "value": "Elevates and protrudes the mandible"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Transverse facial artery; masseteric branch of maxillary artery and branches of facial artery"
+      }
+    ],
+    "pearl": "Palpated over the angle of the mandible during jaw clenching to test the motor root of CN V; the parotid duct crosses its surface and turns medially at its anterior border.",
+    "depth": "superficial",
+    "marker": {
+      "x": 505,
+      "y": 478
+    }
+  },
+  {
+    "id": "masseter-deep-part",
+    "name": "Deep part of masseter",
+    "category": "muscle",
+    "group": "Mastication",
+    "function": "Smaller, posterior part of masseter with vertical fibers hidden by the superficial part; it elevates the mandible and its fibers retract it.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Zygomatic arch: medial surface and posterior third of the lower border"
+      },
+      {
+        "label": "Insertion",
+        "value": "Upper lateral surface of the ramus and the coronoid process of the mandible"
+      },
+      {
+        "label": "Innervation",
+        "value": "Masseteric nerve (CN V3, anterior division), entering its deep surface through the mandibular notch"
+      },
+      {
+        "label": "Action",
+        "value": "Elevates the mandible; deep fibers retract it"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Masseteric branch of maxillary artery; transverse facial artery"
+      }
+    ],
+    "pearl": "The masseteric nerve and artery reach the muscle through the mandibular notch on its deep surface, so the superficial surface can be dissected without denervating it.",
+    "depth": "deep",
+    "marker": {
+      "x": 505,
+      "y": 478
+    }
+  },
+  {
+    "id": "lateral-pterygoid-superior-head",
+    "name": "Superior head of lateral pterygoid",
+    "category": "muscle",
+    "group": "Mastication",
+    "function": "Smaller upper head of lateral pterygoid; it attaches to the capsule and articular disc of the temporomandibular joint and controls the disc as the jaw closes.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Infratemporal surface (and crest) of the greater wing of the sphenoid bone"
+      },
+      {
+        "label": "Insertion",
+        "value": "Capsule and articular disc of the temporomandibular joint, and the pterygoid fovea"
+      },
+      {
+        "label": "Innervation",
+        "value": "Mandibular nerve (CN V3), nerve to lateral pterygoid"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Muscular (pterygoid) branches of maxillary artery"
+      },
+      {
+        "label": "Action",
+        "value": "Draws the articular disc forward with the condyle in protrusion and steadies the disc as it returns during closing"
+      }
+    ],
+    "pearl": "Spasm or incoordination of this head is implicated in anterior disc displacement, producing the click of temporomandibular joint dysfunction.",
+    "depth": "deep",
+    "marker": {
+      "x": 530,
+      "y": 396
+    }
+  },
+  {
+    "id": "lateral-pterygoid-inferior-head",
+    "name": "Inferior head of lateral pterygoid",
+    "category": "muscle",
+    "group": "Mastication",
+    "function": "Larger lower head of lateral pterygoid; it pulls the condyle forward onto the articular tubercle to protrude the mandible and open the mouth.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Lateral surface of the lateral pterygoid plate"
+      },
+      {
+        "label": "Insertion",
+        "value": "Pterygoid fovea on the neck of the condylar process of the mandible"
+      },
+      {
+        "label": "Innervation",
+        "value": "Mandibular nerve (CN V3), nerve to lateral pterygoid"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Muscular (pterygoid) branches of maxillary artery"
+      },
+      {
+        "label": "Action",
+        "value": "Bilaterally protrudes the mandible and opens the mouth; unilaterally swings the jaw to the opposite side for grinding"
+      }
+    ],
+    "pearl": "With a unilateral CN V3 lesion the jaw deviates toward the paralyzed side on opening, pushed across by the intact opposite muscle; the buccal nerve emerges between the two heads and the maxillary artery usually passes between or superficial to them.",
+    "depth": "deep",
+    "marker": {
+      "x": 530,
+      "y": 396
+    }
+  },
+  {
+    "id": "anterior-belly-of-digastric",
+    "name": "Anterior belly of digastric",
+    "category": "muscle",
+    "group": "Suprahyoid",
+    "function": "First pharyngeal arch belly of digastric in the floor of the mouth; with the mylohyoid it depresses the mandible and raises the hyoid, and it separates the submental from the submandibular triangle.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Digastric fossa of the mandible"
+      },
+      {
+        "label": "Insertion",
+        "value": "Intermediate tendon, slung to the body of the hyoid bone"
+      },
+      {
+        "label": "Innervation",
+        "value": "Nerve to mylohyoid (from the inferior alveolar nerve, CN V3)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Branches of the submental artery"
+      },
+      {
+        "label": "Action",
+        "value": "Raises the hyoid bone and base of the tongue; opens the mouth by lowering the mandible when the hyoid is fixed"
+      },
+      {
+        "label": "Relations",
+        "value": "Lies on mylohyoid; the two anterior bellies and the hyoid bound the submental triangle; forms the anterior boundary of the submandibular triangle"
+      }
+    ],
+    "pearl": "The two bellies have different nerves because of different arch origins: anterior belly from the 1st arch (CN V3 via nerve to mylohyoid), posterior belly from the 2nd arch (CN VII).",
+    "depth": "superficial",
+    "marker": {
+      "x": 480,
+      "y": 610
+    }
+  },
+  {
+    "id": "posterior-belly-of-digastric",
+    "name": "Posterior belly of digastric",
+    "category": "muscle",
+    "group": "Suprahyoid",
+    "function": "Second pharyngeal arch belly of digastric running from the mastoid to the hyoid; it elevates and retracts the hyoid and is the key surgical landmark of the upper neck.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Mastoid notch of the temporal bone"
+      },
+      {
+        "label": "Insertion",
+        "value": "Intermediate tendon, slung to the body of the hyoid bone (it pierces the stylohyoid tendon)"
+      },
+      {
+        "label": "Innervation",
+        "value": "Facial nerve (digastric branch, given off just below the stylomastoid foramen)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Muscular branches of the posterior auricular and occipital arteries"
+      },
+      {
+        "label": "Action",
+        "value": "Elevates and steadies the hyoid bone during swallowing; assists in opening the mouth"
+      },
+      {
+        "label": "Relations",
+        "value": "Crosses superficial to the internal jugular vein, internal and external carotid arteries, and CN X, XI and XII; forms the posterior boundary of the submandibular triangle and the upper boundary of the carotid triangle"
+      }
+    ],
+    "pearl": "Surgeons call it the 'resident's friend': everything important in the upper neck (internal jugular vein, carotids, CN X, XI, XII) lies deep to it, and in parotid surgery the facial nerve trunk is found just above its upper border.",
+    "depth": "deep",
+    "marker": {
+      "x": 480,
+      "y": 610
+    }
+  },
+  {
+    "id": "cricothyroid-straight-part",
+    "name": "Straight part of cricothyroid",
+    "category": "muscle",
+    "group": "Larynx",
+    "function": "Anterior, nearly vertical part of cricothyroid; it pulls the thyroid cartilage down toward the cricoid arch, tilting it forward to lengthen and tense the vocal ligaments.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Anterolateral surface of the arch of the cricoid cartilage"
+      },
+      {
+        "label": "Insertion",
+        "value": "Inferior border of the lamina of the thyroid cartilage"
+      },
+      {
+        "label": "Innervation",
+        "value": "External branch of the superior laryngeal nerve (CN X)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Superior and inferior thyroid arteries (cricothyroid branch of superior thyroid)"
+      },
+      {
+        "label": "Action",
+        "value": "Tilts the thyroid cartilage forward and down at the cricothyroid joints, lengthening and tensing the vocal ligaments (raises pitch)"
+      },
+      {
+        "label": "Relations",
+        "value": "The two straight parts flank the median cricothyroid ligament, the site of emergency cricothyrotomy"
+      }
+    ],
+    "pearl": "External laryngeal nerve injury during ligation of the superior thyroid artery paralyzes cricothyroid: a weak, easily fatigued voice that cannot reach high pitch.",
+    "depth": "deep",
+    "marker": {
+      "x": 435,
+      "y": 765
+    }
+  },
+  {
+    "id": "cricothyroid-oblique-part",
+    "name": "Oblique part of cricothyroid",
+    "category": "muscle",
+    "group": "Larynx",
+    "function": "Posterior part of cricothyroid whose fibers run backward to the inferior horn; it draws the thyroid cartilage forward on the cricoid, lengthening and tensing the vocal ligaments.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Anterolateral surface of the arch of the cricoid cartilage (behind the straight part)"
+      },
+      {
+        "label": "Insertion",
+        "value": "Inferior horn of the thyroid cartilage and adjacent lower border of the lamina"
+      },
+      {
+        "label": "Innervation",
+        "value": "External branch of the superior laryngeal nerve (CN X)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Superior and inferior thyroid arteries"
+      },
+      {
+        "label": "Action",
+        "value": "Glides the thyroid cartilage forward on the cricoid at the cricothyroid joints, lengthening and tensing the vocal ligaments"
+      },
+      {
+        "label": "Relations",
+        "value": "Lies just in front of the cricothyroid joint, behind which the recurrent laryngeal nerve enters the larynx; overlapped by sternothyroid"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 435,
+      "y": 765
+    }
+  },
+  {
+    "id": "transverse-arytenoid",
+    "name": "Transverse arytenoid",
+    "category": "muscle",
+    "group": "Larynx",
+    "function": "The only unpaired intrinsic laryngeal muscle; it bridges the two arytenoid cartilages and pulls them together to close the posterior, intercartilaginous part of the rima glottidis.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Posterior surface and lateral border of one arytenoid cartilage"
+      },
+      {
+        "label": "Insertion",
+        "value": "Corresponding surface of the opposite arytenoid cartilage"
+      },
+      {
+        "label": "Innervation",
+        "value": "Recurrent laryngeal nerve (both sides)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Superior and inferior thyroid arteries (laryngeal branches)"
+      },
+      {
+        "label": "Action",
+        "value": "Adducts the arytenoid cartilages, closing the intercartilaginous portion of the rima glottidis"
+      },
+      {
+        "label": "Relations",
+        "value": "Deep to the oblique arytenoids; covered posteriorly by the mucosa of the laryngopharynx"
+      }
+    ],
+    "pearl": "Because it is a single midline muscle supplied from both sides, it keeps working after a unilateral recurrent laryngeal nerve lesion.",
+    "depth": "deep",
+    "marker": {
+      "x": 495,
+      "y": 760
+    }
+  },
+  {
+    "id": "oblique-arytenoid",
+    "name": "Oblique arytenoid",
+    "category": "muscle",
+    "group": "Larynx",
+    "function": "Paired bundles that cross like an X on the back of the transverse arytenoid; they adduct the arytenoids and continue into the aryepiglottic folds as the sphincter of the laryngeal inlet.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Muscular process (posterior surface) of one arytenoid cartilage"
+      },
+      {
+        "label": "Insertion",
+        "value": "Apex of the opposite arytenoid cartilage; some fibers continue as the aryepiglottic part to the epiglottis"
+      },
+      {
+        "label": "Innervation",
+        "value": "Recurrent laryngeal nerve"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Superior and inferior thyroid arteries (laryngeal branches)"
+      },
+      {
+        "label": "Action",
+        "value": "Adducts the arytenoid cartilages, closing the intercartilaginous part of the rima glottidis; with the aryepiglottic part narrows the laryngeal inlet"
+      },
+      {
+        "label": "Relations",
+        "value": "Superficial (posterior) to the transverse arytenoid"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 495,
+      "y": 760
+    }
+  },
+  {
+    "id": "cricopharyngeus",
+    "name": "Cricopharyngeus (cricopharyngeal part of inferior pharyngeal constrictor)",
+    "category": "muscle",
+    "group": "Pharynx",
+    "function": "Lowest, horizontal part of the inferior constrictor that loops around the pharyngoesophageal junction as the upper esophageal sphincter; tonically closed and relaxing only as the bolus arrives.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Side of the cricoid cartilage"
+      },
+      {
+        "label": "Insertion",
+        "value": "Encircles the pharyngoesophageal junction to the opposite side of the cricoid without a raphe; blends below with the circular esophageal muscle"
+      },
+      {
+        "label": "Innervation",
+        "value": "Vagus nerve via the pharyngeal plexus, with branches from the recurrent laryngeal nerve"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Ascending pharyngeal artery and branches of the superior thyroid artery (with the inferior thyroid artery)"
+      },
+      {
+        "label": "Action",
+        "value": "Upper esophageal sphincter: tonically contracted between swallows to keep air out of the esophagus and prevent reflux; relaxes during swallowing"
+      },
+      {
+        "label": "Gaps",
+        "value": "Above it, between its fibers and the thyropharyngeal part: Killian dehiscence. Below it: the V-shaped area (of Laimer) of sparse longitudinal esophageal muscle. The recurrent laryngeal nerve passes deep to its lower border"
+      }
+    ],
+    "pearl": "Failure of cricopharyngeal relaxation raises hypopharyngeal pressure and pushes mucosa out through Killian dehiscence (Zenker diverticulum); it is also the narrowest part of the gut tube, where swallowed foreign bodies lodge and endoscopes perforate.",
+    "depth": "deep",
+    "marker": {
+      "x": 590,
+      "y": 760
+    }
+  },
+  {
+    "id": "superior-longitudinal-muscle-of-tongue",
+    "name": "Superior longitudinal muscle of tongue",
+    "category": "muscle",
+    "group": "Tongue",
+    "function": "Intrinsic tongue muscle running the length of the dorsum just under the mucosa; shortens the tongue and curls its tip and edges upward.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Submucous fibers at the back of the tongue"
+      },
+      {
+        "label": "Insertion",
+        "value": "Apex of the tongue; unites with the muscle of the opposite side"
+      },
+      {
+        "label": "Innervation",
+        "value": "Hypoglossal nerve (CN XII)"
+      },
+      {
+        "label": "Action",
+        "value": "Shortens the tongue and turns the tip and sides upward"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Deep lingual branch of lingual artery; branches from facial artery"
+      },
+      {
+        "label": "Relations",
+        "value": "Thin sheet immediately beneath the mucosa of the dorsum"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 420,
+      "y": 500
+    }
+  },
+  {
+    "id": "inferior-longitudinal-muscle-of-tongue",
+    "name": "Inferior longitudinal muscle of tongue",
+    "category": "muscle",
+    "group": "Tongue",
+    "function": "Intrinsic tongue muscle running along the under surface; shortens the tongue and curls its tip downward.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Under surface of the tongue between genioglossus and hyoglossus"
+      },
+      {
+        "label": "Insertion",
+        "value": "Apex of the tongue, blending with styloglossus"
+      },
+      {
+        "label": "Innervation",
+        "value": "Hypoglossal nerve (CN XII)"
+      },
+      {
+        "label": "Action",
+        "value": "Shortens the tongue and turns the tip and sides downward"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Deep lingual branch of lingual artery; branches from facial artery"
+      },
+      {
+        "label": "Relations",
+        "value": "Narrow band close to the inferior surface, lateral to genioglossus and medial to hyoglossus; the deep lingual artery runs along it"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 420,
+      "y": 500
+    }
+  },
+  {
+    "id": "transverse-muscle-of-tongue",
+    "name": "Transverse muscle of tongue",
+    "category": "muscle",
+    "group": "Tongue",
+    "function": "Intrinsic tongue muscle running from the midline septum to the lateral margins; narrows and lengthens the tongue.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Median fibrous septum of the tongue"
+      },
+      {
+        "label": "Insertion",
+        "value": "Dorsum and sides of the tongue"
+      },
+      {
+        "label": "Innervation",
+        "value": "Hypoglossal nerve (CN XII)"
+      },
+      {
+        "label": "Action",
+        "value": "Narrows and elongates the tongue (with the vertical muscle, protrudes it)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Deep lingual branch of lingual artery; branches from facial artery"
+      },
+      {
+        "label": "Relations",
+        "value": "Fibers interweave with the vertical muscle between the superior and inferior longitudinal muscles"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 420,
+      "y": 500
+    }
+  },
+  {
+    "id": "vertical-muscle-of-tongue",
+    "name": "Vertical muscle of tongue",
+    "category": "muscle",
+    "group": "Tongue",
+    "function": "Intrinsic tongue muscle running from the dorsum to the under surface at the borders of the forepart; flattens and widens the tongue.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Mucous membrane on the dorsum of the forepart of the tongue"
+      },
+      {
+        "label": "Insertion",
+        "value": "Fibers extend from the dorsum to the undersurface of the tongue"
+      },
+      {
+        "label": "Innervation",
+        "value": "Hypoglossal nerve (CN XII)"
+      },
+      {
+        "label": "Action",
+        "value": "Flattens and broadens the tongue"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Deep lingual branch of lingual artery; branches from facial artery"
+      },
+      {
+        "label": "Relations",
+        "value": "Confined to the borders of the forepart of the tongue; interweaves with the transverse muscle"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 420,
+      "y": 500
+    }
+  },
+  {
+    "id": "rectus-capitis-posterior-major",
+    "name": "Rectus capitis posterior major",
+    "category": "muscle",
+    "group": "Neck",
+    "function": "Larger of the two posterior recti; extends the head and rotates it to the same side, and forms the superomedial side of the suboccipital triangle.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Spinous process of the axis (C2)"
+      },
+      {
+        "label": "Insertion",
+        "value": "Lateral part of the inferior nuchal line of the occipital bone"
+      },
+      {
+        "label": "Innervation",
+        "value": "Suboccipital nerve (posterior ramus of C1)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Vertebral artery and descending branch of occipital artery"
+      },
+      {
+        "label": "Action",
+        "value": "Extends the head and rotates it to the same side"
+      },
+      {
+        "label": "Relations",
+        "value": "Superomedial boundary of the suboccipital triangle; lateral to rectus capitis posterior minor, deep to semispinalis capitis"
+      }
+    ],
+    "pearl": "The suboccipital triangle it bounds contains the horizontal segment of the vertebral artery and the suboccipital nerve on the posterior arch of the atlas.",
+    "depth": "deep",
+    "marker": {
+      "x": 760,
+      "y": 470
+    }
+  },
+  {
+    "id": "rectus-capitis-posterior-minor",
+    "name": "Rectus capitis posterior minor",
+    "category": "muscle",
+    "group": "Neck",
+    "function": "Small medial suboccipital muscle from the atlas to the occiput; extends the head at the atlanto-occipital joint. It is not a boundary of the suboccipital triangle.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Tubercle of the posterior arch of the atlas (C1)"
+      },
+      {
+        "label": "Insertion",
+        "value": "Medial part of the inferior nuchal line of the occipital bone"
+      },
+      {
+        "label": "Innervation",
+        "value": "Suboccipital nerve (posterior ramus of C1)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Vertebral artery and descending branch of occipital artery"
+      },
+      {
+        "label": "Action",
+        "value": "Extends the head"
+      },
+      {
+        "label": "Relations",
+        "value": "Medial and deep to rectus capitis posterior major; overlies the posterior atlanto-occipital membrane"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 760,
+      "y": 470
+    }
+  },
+  {
+    "id": "obliquus-capitis-superior",
+    "name": "Obliquus capitis superior",
+    "category": "muscle",
+    "group": "Neck",
+    "function": "Suboccipital muscle from the atlas up to the occiput; extends the head and bends it to the same side, and forms the superolateral side of the suboccipital triangle.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Transverse process of the atlas (C1)"
+      },
+      {
+        "label": "Insertion",
+        "value": "Occipital bone between the superior and inferior nuchal lines"
+      },
+      {
+        "label": "Innervation",
+        "value": "Suboccipital nerve (posterior ramus of C1)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Vertebral artery and descending branch of occipital artery"
+      },
+      {
+        "label": "Action",
+        "value": "Extends the head and bends it laterally"
+      },
+      {
+        "label": "Relations",
+        "value": "Superolateral boundary of the suboccipital triangle"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 760,
+      "y": 470
+    }
+  },
+  {
+    "id": "obliquus-capitis-inferior",
+    "name": "Obliquus capitis inferior",
+    "category": "muscle",
+    "group": "Neck",
+    "function": "Only suboccipital muscle that does not reach the skull; it runs from the axis to the atlas and rotates the atlas, turning the face to the same side.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Spinous process of the axis (C2)"
+      },
+      {
+        "label": "Insertion",
+        "value": "Transverse process of the atlas (C1)"
+      },
+      {
+        "label": "Innervation",
+        "value": "Suboccipital nerve (posterior ramus of C1)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Vertebral artery and descending branch of occipital artery"
+      },
+      {
+        "label": "Action",
+        "value": "Rotates the atlas (and head) to turn the face to the same side"
+      },
+      {
+        "label": "Relations",
+        "value": "Inferior boundary of the suboccipital triangle; the greater occipital nerve (C2) hooks around its lower border and ascends across it"
+      }
+    ],
+    "pearl": "The greater occipital nerve winds around its inferior border, a landmark for nerve blocks and a site of entrapment in occipital neuralgia.",
+    "depth": "deep",
+    "marker": {
+      "x": 760,
+      "y": 470
+    }
+  },
+  {
+    "id": "rectus-capitis-anterior",
+    "name": "Rectus capitis anterior",
+    "category": "muscle",
+    "group": "Neck",
+    "function": "Short prevertebral muscle from the atlas to the base of the skull, deep to longus capitis; flexes the head at the atlanto-occipital joint.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Anterior surface of the lateral mass of the atlas"
+      },
+      {
+        "label": "Insertion",
+        "value": "Base (basilar part) of the occipital bone in front of the foramen magnum and occipital condyle"
+      },
+      {
+        "label": "Innervation",
+        "value": "Anterior rami of C1–C2"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Muscular branches of the vertebral artery; ascending pharyngeal artery"
+      },
+      {
+        "label": "Action",
+        "value": "Flexes the head (nodding) and stabilizes the atlanto-occipital joint"
+      },
+      {
+        "label": "Relations",
+        "value": "Deep to the upper part of longus capitis; anterior to the atlanto-occipital joint"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 705,
+      "y": 465
+    }
+  },
+  {
+    "id": "rectus-capitis-lateralis",
+    "name": "Rectus capitis lateralis",
+    "category": "muscle",
+    "group": "Neck",
+    "function": "Short muscle from the transverse process of the atlas to the jugular process of the occipital bone; bends the head to the same side.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Upper surface of the transverse process of the atlas"
+      },
+      {
+        "label": "Insertion",
+        "value": "Inferior surface of the jugular process of the occipital bone"
+      },
+      {
+        "label": "Innervation",
+        "value": "Anterior rami of C1–C2"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Muscular branches of the vertebral artery, occipital artery and ascending pharyngeal artery"
+      },
+      {
+        "label": "Action",
+        "value": "Flexes the head laterally to the same side; stabilizes the atlanto-occipital joint"
+      },
+      {
+        "label": "Relations",
+        "value": "Lies immediately behind the internal jugular vein as it leaves the jugular foramen; the anterior ramus of C1 emerges medial to it"
+      }
+    ],
+    "pearl": "It lies directly behind the jugular foramen and is detached in far-lateral approaches to expose the jugular bulb.",
+    "depth": "deep",
+    "marker": {
+      "x": 705,
+      "y": 465
+    }
+  },
+  {
+    "id": "longissimus-cervicis",
+    "name": "Longissimus cervicis",
+    "category": "muscle",
+    "group": "Neck",
+    "function": "Cervical portion of the longissimus (intermediate) column of erector spinae; extends the neck and bends it to the same side.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Transverse processes of the upper thoracic vertebrae (T1–T5)"
+      },
+      {
+        "label": "Insertion",
+        "value": "Posterior tubercles of the transverse processes of C2–C6"
+      },
+      {
+        "label": "Innervation",
+        "value": "Posterior rami of lower cervical and upper thoracic spinal nerves"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Occipital, deep cervical and vertebral arteries"
+      },
+      {
+        "label": "Action",
+        "value": "Bilaterally extends the cervical spine; unilaterally bends it to the same side"
+      },
+      {
+        "label": "Relations",
+        "value": "Lateral to semispinalis cervicis and medial to iliocostalis cervicis; longissimus capitis lies on its medial side; deep to splenius cervicis"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 705,
+      "y": 630
+    }
+  },
+  {
+    "id": "spinalis-cervicis",
+    "name": "Spinalis cervicis",
+    "category": "muscle",
+    "group": "Neck",
+    "function": "Thin, inconstant cervical portion of the spinalis (medial) column of erector spinae, running between spinous processes beside the nuchal ligament; extends the neck.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Lower nuchal ligament and spinous processes of C7 (and upper thoracic vertebrae)"
+      },
+      {
+        "label": "Insertion",
+        "value": "Spinous process of the axis (sometimes C3–C4)"
+      },
+      {
+        "label": "Innervation",
+        "value": "Posterior rami of cervical spinal nerves"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Occipital, deep cervical and vertebral arteries"
+      },
+      {
+        "label": "Action",
+        "value": "Extends the cervical spine"
+      },
+      {
+        "label": "Relations",
+        "value": "Most medial erector spinae column, alongside the nuchal ligament; often blended with semispinalis cervicis"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 735,
+      "y": 700
+    }
+  },
+  {
+    "id": "multifidus-cervicis",
+    "name": "Multifidus (cervical part)",
+    "category": "muscle",
+    "group": "Neck",
+    "function": "Deep transversospinalis fascicles filling the groove beside the cervical spinous processes; they stabilize the cervical segments during movement.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Articular processes of C4–C7"
+      },
+      {
+        "label": "Insertion",
+        "value": "Spinous processes of the vertebrae above, spanning two to four segments (up to the axis)"
+      },
+      {
+        "label": "Innervation",
+        "value": "Posterior rami of cervical spinal nerves (medial branches)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Occipital, deep cervical and vertebral arteries"
+      },
+      {
+        "label": "Action",
+        "value": "Stabilizes the cervical spine; assists extension and rotation to the opposite side"
+      },
+      {
+        "label": "Relations",
+        "value": "Deep to semispinalis cervicis; superficial to the rotatores cervicis"
+      }
+    ],
+    "pearl": "Multifidus atrophies with fatty infiltration after whiplash injury and in chronic neck pain, visible on MRI.",
+    "depth": "deep",
+    "marker": {
+      "x": 735,
+      "y": 700
+    }
+  },
+  {
+    "id": "interspinales-cervicis",
+    "name": "Interspinales cervicis",
+    "category": "muscle",
+    "group": "Neck",
+    "function": "Short paired segmental muscles joining adjacent cervical spinous processes on each side of the interspinous ligament; aid extension of the neck.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Spinous process of a cervical vertebra (C3–T1)"
+      },
+      {
+        "label": "Insertion",
+        "value": "Spinous process of the adjacent vertebra above (C2–C7)"
+      },
+      {
+        "label": "Innervation",
+        "value": "Posterior rami of cervical spinal nerves"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Occipital, deep cervical and vertebral arteries"
+      },
+      {
+        "label": "Action",
+        "value": "Aid in extension of the cervical vertebral column; segmental stabilizers"
+      },
+      {
+        "label": "Relations",
+        "value": "Paired, one on each side of the interspinous ligament between the bifid cervical spinous processes; best developed in the neck"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 735,
+      "y": 700
+    }
+  },
+  {
+    "id": "common-tendinous-ring",
+    "name": "Common tendinous ring (of Zinn)",
+    "category": "muscle",
+    "group": "Extraocular",
+    "function": "Fibrous ring at the apex of the orbit surrounding the optic canal and the medial part of the superior orbital fissure; common origin of the four rectus muscles.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Periosteum of the body and lesser wing of the sphenoid around the optic canal, bridging the medial part of the superior orbital fissure"
+      },
+      {
+        "label": "Insertion",
+        "value": "Gives origin to the superior, medial, inferior and lateral rectus muscles"
+      },
+      {
+        "label": "Innervation",
+        "value": "Nerves passing through the ring: optic nerve (CN II), superior and inferior branches of the oculomotor nerve (CN III), nasociliary nerve (CN V1), abducent nerve (CN VI)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Ophthalmic artery passes through the ring with the optic nerve in the optic canal"
+      },
+      {
+        "label": "Action",
+        "value": "Fixed anchor for the four recti, which form the muscular cone of the orbit"
+      },
+      {
+        "label": "Divisions",
+        "value": "Structures outside the ring (through the lateral part of the superior orbital fissure): lacrimal nerve, frontal nerve, trochlear nerve (CN IV), superior ophthalmic vein. Levator palpebrae superioris and superior oblique arise above and medial to the ring; inferior oblique arises from the anterior orbital floor"
+      }
+    ],
+    "pearl": "Orbital apex syndrome: a lesion at the ring causes ophthalmoplegia (CN III, IV, VI), V1 sensory loss and visual loss (CN II); because the recti attach to the optic nerve sheath here, eye movement is painful in optic neuritis.",
+    "depth": "deep",
+    "marker": {
+      "x": 368,
+      "y": 292
+    }
+  },
+  {
+    "id": "tarsi-of-eyelids",
+    "name": "Superior and inferior tarsi (tarsal plates)",
+    "category": "muscle",
+    "group": "Extraocular",
+    "function": "Dense fibrous plates that stiffen the eyelids, contain the tarsal (meibomian) glands, and receive the lid elevators.",
+    "details": [
+      {
+        "label": "Divisions",
+        "value": "Superior tarsus (larger, about 10 mm high; receives levator palpebrae superioris and the superior tarsal muscle); inferior tarsus (smaller, about 5 mm high; in the lower lid)"
+      },
+      {
+        "label": "Origin",
+        "value": "Anchored to the orbital margins by the medial and lateral palpebral ligaments; continuous peripherally with the orbital septum"
+      },
+      {
+        "label": "Insertion",
+        "value": "Levator palpebrae superioris inserts on the anterior surface, and the superior tarsal (Müller's) muscle on the upper edge, of the superior tarsus"
+      },
+      {
+        "label": "Innervation",
+        "value": "Sensory: V1 branches (upper lid) and infraorbital nerve, V2 (lower lid)"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Palpebral arcades from the medial and lateral palpebral arteries (ophthalmic and lacrimal arteries)"
+      },
+      {
+        "label": "Action",
+        "value": "Give the lids shape and firmness; tarsal glands open at the lid margin and secrete the lipid layer of the tear film"
+      }
+    ],
+    "pearl": "A chalazion is a painless granulomatous lump from a blocked tarsal (meibomian) gland within the tarsus, in contrast to the painful stye (hordeolum) of a lash follicle gland at the lid margin.",
+    "depth": "superficial",
+    "marker": {
+      "x": 310,
+      "y": 304
+    }
+  },
+  {
+    "id": "temporal-fascia",
+    "name": "Temporal fascia",
+    "category": "muscle",
+    "group": "Mastication",
+    "function": "Strong fascial sheet covering temporalis from the superior temporal line to the zygomatic arch; gives origin to the superficial fibers of the muscle.",
+    "details": [
+      {
+        "label": "Divisions",
+        "value": "Superficial layer (attaches to the lateral margin of the upper border of the zygomatic arch); deep layer (attaches to the medial margin); a fat pad lies between them above the arch"
+      },
+      {
+        "label": "Origin",
+        "value": "Superior temporal line of the frontal and parietal bones"
+      },
+      {
+        "label": "Insertion",
+        "value": "Upper border of the zygomatic arch, after splitting into superficial and deep layers"
+      },
+      {
+        "label": "Innervation",
+        "value": "Not applicable (overlying skin: auriculotemporal and zygomaticotemporal nerves)"
+      },
+      {
+        "label": "Action",
+        "value": "Roofs the temporal fossa and gives origin to temporalis; resists the downward pull of masseter on the zygomatic arch"
+      },
+      {
+        "label": "Blood supply",
+        "value": "Middle temporal artery (from superficial temporal artery) pierces it; superficial temporal vessels lie on its surface"
+      }
+    ],
+    "pearl": "The temporal branch of the facial nerve crosses the zygomatic arch superficial to this fascia, so surgeons elevate flaps deep to its superficial layer to protect the nerve (Gillies approach to a depressed zygomatic arch runs beneath it).",
+    "depth": "superficial",
+    "marker": {
+      "x": 545,
+      "y": 222
+    }
+  },
+  {
+    "id": "investing-layer-of-deep-cervical-fascia",
+    "name": "Superficial (investing) layer of deep cervical fascia",
+    "category": "muscle",
+    "group": "Neck",
+    "function": "Outermost layer of deep cervical fascia, encircling the whole neck deep to platysma and splitting to enclose sternocleidomastoid and trapezius; it roofs the anterior and posterior triangles.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Above: superior nuchal line, mastoid process, zygomatic arch, lower border of the mandible and hyoid bone; behind: nuchal ligament and cervical spinous processes"
+      },
+      {
+        "label": "Insertion",
+        "value": "Below: manubrium, clavicle, acromion and spine of scapula; above the manubrium it splits to enclose the suprasternal space (of Burns)"
+      },
+      {
+        "label": "Innervation",
+        "value": "Pierced by the cutaneous branches of the cervical plexus at the posterior border of sternocleidomastoid"
+      },
+      {
+        "label": "Blood supply",
+        "value": "External and anterior jugular veins run on or pierce it"
+      },
+      {
+        "label": "Action",
+        "value": "Encloses and compartmentalizes the neck; limits the superficial spread of infection"
+      },
+      {
+        "label": "Relations",
+        "value": "Splits to enclose sternocleidomastoid and trapezius and the submandibular and parotid glands (parotid and masseteric fascia); the pretracheal layer, carotid sheath and prevertebral layer lie deep to it"
+      }
+    ],
+    "pearl": "The accessory nerve crosses the posterior triangle just deep to this layer, so it is at risk in lymph node biopsy; the external jugular vein pierces the fascia above the clavicle and is held open there, permitting air embolism if cut.",
+    "depth": "superficial",
     "marker": {
       "x": 600,
       "y": 700

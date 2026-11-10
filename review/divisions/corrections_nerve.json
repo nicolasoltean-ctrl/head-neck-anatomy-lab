@@ -1,0 +1,148 @@
+{
+ "category": "nerve",
+ "verified": 90,
+ "corrections": [
+  {
+   "id": "cn-i-olfactory-nerve",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Olfactory nerves (about 20 fila from the olfactory mucosa through the cribriform plate); olfactory bulb (first synapse, on mitral and tufted cells); olfactory tract; medial olfactory stria (to the septal area) and lateral olfactory stria (to the piriform cortex and uncus)",
+   "ref": "Plate 130 (p. 185); Plate 46 (p. 101)",
+   "reason": "Card names bulb and tract but not the medial and lateral olfactory striae Netter labels",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "cn-v-trigeminal-nerve",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Sensory root (large, lateral pons to the trigeminal ganglion); motor root (small, runs under the ganglion to join V3 only); trigeminal (semilunar) ganglion; ophthalmic nerve V1 (sensory, superior orbital fissure); maxillary nerve V2 (sensory, foramen rotundum); mandibular nerve V3 (sensory + motor, foramen ovale; anterior and posterior divisions)",
+   "ref": "Plate 59 (p. 114); Plate 133 (p. 188); Plate 142 (p. 197)",
+   "reason": "Sensory root and motor root are labelled by Netter and absent from the card",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "trigeminal-ganglion",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Sensory root (central processes entering the pons); motor root (passes deep to the ganglion without synapsing, joins V3); three peripheral divisions leaving its convex border: ophthalmic V1, maxillary V2, mandibular V3",
+   "ref": "Plate 59 (p. 114); Plate 142 (p. 197)",
+   "reason": "Sensory root absent from the card",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cn-vii-facial-nerve",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Roots: motor root (facial nerve proper) and intermediate nerve (taste, parasympathetic, somatic sensory), joined in the internal acoustic meatus. Geniculate ganglion at the genu. Intratemporal branches: greater petrosal nerve, nerve to stapedius, chorda tympani. After the stylomastoid foramen: posterior auricular nerve (auricular and occipital branches), digastric and stylohyoid branches. In the parotid: temporofacial division (temporal, zygomatic and upper buccal branches) and cervicofacial division (lower buccal, marginal mandibular and cervical branches)",
+   "ref": "Plate 54 (p. 109); Plate 134 (p. 189); Plate 135 (p. 190)",
+   "reason": "Motor root, intermediate nerve and geniculate ganglion are not named on the card",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cn-viii-vestibulocochlear-nerve",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Vestibular nerve (cell bodies in the vestibular ganglion in the internal acoustic meatus): superior division from the utricle and the ampullae of the superior (anterior) and lateral semicircular ducts; inferior division from the saccule and the ampulla of the posterior semicircular duct. Cochlear nerve (cell bodies in the cochlear [spiral] ganglion) from the spiral organ, ending in the anterior and posterior cochlear nuclei",
+   "ref": "Plate 135 (p. 190)",
+   "reason": "Card names the divisions but not the ampullary/utricular/saccular territory of each vestibular division",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cn-ix-glossopharyngeal-nerve",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Superior ganglion (small, in the jugular foramen) and inferior (petrosal) ganglion (larger, just below it; visceral sensory and taste cell bodies). Branches in order: tympanic nerve (to tympanic plexus and lesser petrosal nerve), communicating branches (to auricular branch of vagus and to facial nerve), carotid sinus nerve, pharyngeal branches (to pharyngeal plexus), stylopharyngeal branch (its only muscle), tonsillar branches, lingual branches (posterior 1/3 of tongue)",
+   "ref": "Plate 136 (p. 191); Plate 146 (p. 201)",
+   "reason": "Superior and inferior ganglia are not named on the card",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "cn-x-vagus-nerve",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Superior (jugular) ganglion (in the jugular foramen; somatic sensory; meningeal and auricular branches) and inferior (nodose) ganglion (below the foramen; visceral sensory and taste; joined by the cranial root of CN XI). Cervical part: pharyngeal branch, communicating branch to the carotid sinus nerve, superior laryngeal nerve (internal and external branches), superior and inferior cervical cardiac branches. Right recurrent laryngeal nerve (loops under the right subclavian artery) and left recurrent laryngeal nerve (loops under the aortic arch). Thoracic and abdominal parts: thoracic cardiac branches, pulmonary and esophageal plexuses, anterior and posterior vagal trunks",
+   "ref": "Plate 137 (p. 192); Plate 76 (p. 131); Plate 138 (p. 193)",
+   "reason": "Superior and inferior ganglia and the right/left recurrent laryngeal nerves are not named on the card",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "ciliary-ganglion",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Roots: parasympathetic (oculomotor) root from the inferior division of CN III (the only fibers that synapse); sensory root (branch to ciliary ganglion) from the nasociliary nerve; sympathetic root from the internal carotid plexus. Branches: short ciliary nerves to the eyeball",
+   "ref": "Plate 97 (p. 152); Plate 132 (p. 187); Plate 143 (p. 198)",
+   "reason": "Netter labels three named roots; the card does not use the root names",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "pterygopalatine-ganglion",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Roots: parasympathetic root = greater petrosal nerve (CN VII, synapses here); sympathetic root = deep petrosal nerve (from internal carotid plexus); both arrive as the nerve of the pterygoid canal; sensory root = branches to the pterygopalatine ganglion from the maxillary nerve. Branches: posterior superior lateral and medial nasal branches, nasopalatine nerve, greater and lesser palatine nerves (descending palatine nerves), pharyngeal branch; secretomotor fibers to the lacrimal gland via the zygomatic nerve",
+   "ref": "Plate 46 (p. 101); Plate 61 (p. 116); Plate 133 (p. 188); Plate 144 (p. 199)",
+   "reason": "Roots and the named branch set are not grouped on the card",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "otic-ganglion",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Roots: parasympathetic root = lesser petrosal nerve (from the tympanic nerve and plexus of CN IX; synapses here); sympathetic root from the plexus on the middle meningeal artery; motor fibers of the nerve to medial pterygoid pass through to the nerves to tensor veli palatini and tensor tympani. Branches: postganglionic fibers join the auriculotemporal nerve to the parotid gland; communication with the chorda tympani",
+   "ref": "Plate 59 (p. 114); Plate 133 (p. 188); Plate 145 (p. 200)",
+   "reason": "Card does not name the roots as such",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "submandibular-ganglion",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Roots: parasympathetic root from the chorda tympani carried by the lingual nerve (synapses here); sympathetic root from the plexus on the facial artery; sensory fibers from the lingual nerve. Branches: glandular branches to the submandibular gland and, by rejoining the lingual nerve, to the sublingual gland",
+   "ref": "Plate 144 (p. 199); Plate 59 (p. 114)",
+   "reason": "Card does not name the roots as such",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "cervical-spinal-nerve-roots-c1-c8",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Rootlets of the posterior and anterior roots; posterior (sensory) root with the posterior root (spinal) ganglion; anterior (motor) root; spinal nerve (short mixed trunk in the intervertebral foramen); meningeal branch (recurrent, to dura and ligaments); posterior ramus (medial and lateral branches to deep back muscles, facet joints and skin); anterior ramus (C1-C4 cervical plexus, C5-T1 brachial plexus); gray rami communicantes from the cervical sympathetic ganglia",
+   "ref": "Plate 174 (p. 256); Plate 175 (p. 257); Plate 40 (p. 95)",
+   "reason": "Rootlets, spinal ganglion, meningeal branch and the anterior/posterior rami are labelled by Netter and missing from the card",
+   "confidence": "netter-explicit"
+  }
+ ],
+ "missing": [
+  "Sensory root of trigeminal nerve",
+  "Motor root of trigeminal nerve",
+  "Anterior division of mandibular nerve (V3)",
+  "Posterior division of mandibular nerve (V3)",
+  "Superior division of oculomotor nerve",
+  "Inferior division of oculomotor nerve",
+  "Vestibular nerve",
+  "Cochlear nerve",
+  "Temporofacial division of facial nerve",
+  "Cervicofacial division of facial nerve",
+  "Digastric and stylohyoid branches of facial nerve",
+  "Cranial root of accessory nerve",
+  "Spinal root of accessory nerve",
+  "Vertebral ganglion",
+  "Ansa subclavia",
+  "Zygomaticotemporal nerve",
+  "Zygomaticofacial nerve",
+  "External nasal branch of anterior ethmoidal nerve",
+  "Posterior cutaneous branches of posterior rami of C4-C8"
+ ],
+ "notes": "Examined all 90 nerve cards against Plates 9, 38-40, 46, 48, 54, 59, 61, 63-64, 66, 76, 82, 92, 97, 130-146 and back Plates 174-175, 183-184. Cards NOT given a Divisions row because every division Netter names is already on the card under another label (integrator may relabel if a uniform 'Divisions' row is wanted): CN III (superior/inferior divisions in Branches), V1, V2, V3 (anterior/posterior divisions in Branches), CN XI (cranial/spinal roots), CN XII, nasociliary, frontal, supraorbital (medial/lateral), zygomatic, auriculotemporal, inferior alveolar, superior laryngeal (internal/external), recurrent laryngeal (right/left in text), posterior auricular (auricular/occipital), supraclavicular (medial/intermediate/lateral), ansa cervicalis (superior/inferior roots have their own rows), cervical plexus (cutaneous/motor rows), brachial plexus (Roots and Trunks rows), cervical sympathetic trunk (Ganglia row), ganglia of IX/X. Netter does not label: anterior/posterior branches of the recurrent laryngeal nerve or an 'inferior laryngeal nerve'; superior/inferior branches of the internal laryngeal nerve; which terminal facial branches come from each parotid division (new division cards use standard teaching, Plate 54 only names the two divisions); individual brachial plexus trunks beyond '(superior, middle, inferior trunks)' on Plate 82 (divisions/cords are in the upper limb section, outside these extracts). Left alone. CN II: optic nerve, chiasm, tract, lateral geniculate body and optic radiation (Plate 131) are stations of the visual pathway, not divisions of the nerve; no Divisions row added. Model labels for brainstem nuclei (motor nucleus of facial nerve, nuclei of III/IV/VI/XI/XII, accessory nucleus of oculomotor nerve, posterior nucleus of vagus) are left on their parent nerve cards: Netter shows them on Plates 127-128 as CNS nuclei, not nerve divisions, and no nucleus cards exist in this category. Existing combined cards were not split (motor branches of V3; greater and lesser palatine; superior alveolar; short and long ciliary; tympanic/lesser petrosal; deep petrosal/Vidian; ganglia of IX and X). Housekeeping, not corrected here: several existing cards carry in-text citations such as '(Netter Plate 63)' in Branches (nasopalatine-nerve, superior-alveolar-nerves, cervical-cardiac-nerves, meningeal-branch-of-mandibular-nerve). New cards have no 'shape' field; markers are copied from the nearest related card."
+}

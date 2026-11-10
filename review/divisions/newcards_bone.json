@@ -1,0 +1,1318 @@
+{
+ "cards": [
+  {
+   "id": "squamous-part-of-temporal-bone",
+   "name": "Squamous part of temporal bone",
+   "category": "bone",
+   "group": "Neurocranium",
+   "function": "Thin, fan-shaped plate forming the lower lateral wall of the cranial vault and part of the middle cranial fossa; it carries the zygomatic process and the socket of the temporomandibular joint.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Side of the skull above the external acoustic meatus, overlapped by the parietal bone at the squamous suture and meeting the greater wing of the sphenoid in front"
+    },
+    {
+     "label": "Key features",
+     "value": "Zygomatic process, articular tubercle, mandibular fossa, supramastoid crest, groove for the posterior deep temporal artery; inner surface grooved by the middle meningeal vessels"
+    },
+    {
+     "label": "Attachments",
+     "value": "Temporalis (floor of the temporal fossa), temporal fascia (supramastoid crest and zygomatic process), masseter (zygomatic process), capsule and lateral ligament of the TMJ (articular tubercle)"
+    },
+    {
+     "label": "Relations",
+     "value": "Temporal lobe and middle meningeal vessels medially; superficial temporal vessels and auriculotemporal nerve laterally"
+    }
+   ],
+   "pearl": "A blow to the thin squamous temporal bone can tear the middle meningeal artery and cause an epidural hematoma: lucid interval, then a lens-shaped bleed on CT.",
+   "depth": "superficial",
+   "marker": {
+    "x": 560,
+    "y": 310
+   }
+  },
+  {
+   "id": "petrous-part-of-temporal-bone",
+   "name": "Petrous part of temporal bone",
+   "category": "bone",
+   "group": "Neurocranium",
+   "function": "Dense pyramid of bone wedged between the sphenoid and occipital bones in the skull base; it houses the inner ear, the facial canal and the carotid canal, and its ridge separates the middle from the posterior cranial fossa. The mastoid process is its postnatal downgrowth.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Runs anteromedially from the mastoid region to the foramen lacerum; anterior surface in the middle cranial fossa, posterior surface in the posterior cranial fossa, inferior surface on the external cranial base"
+    },
+    {
+     "label": "Key features",
+     "value": "Arcuate eminence, trigeminal impression, grooves for the greater and lesser petrosal nerves, groove for the superior petrosal sinus along its ridge, internal acoustic meatus, opening of the vestibular aqueduct, groove for the sigmoid sinus, jugular fossa, external opening of the carotid canal, mastoid process and mastoid notch, groove for the occipital artery"
+    },
+    {
+     "label": "Foramina & contents",
+     "value": "Internal acoustic meatus – CN VII, CN VIII, labyrinthine artery; carotid canal – internal carotid artery and plexus; stylomastoid foramen – CN VII; mastoid canaliculus – auricular branch of CN X; inferior tympanic canaliculus – tympanic nerve (CN IX)"
+    },
+    {
+     "label": "Attachments",
+     "value": "Tentorium cerebelli (petrous ridge), levator veli palatini (inferior surface), cartilage of the auditory tube (groove between petrous part and greater wing)"
+    }
+   ],
+   "pearl": "Petrous apicitis complicating otitis media gives Gradenigo syndrome: ear discharge, deep facial (trigeminal) pain and abducens palsy.",
+   "depth": "deep",
+   "marker": {
+    "x": 560,
+    "y": 310
+   }
+  },
+  {
+   "id": "tympanic-part-of-temporal-bone",
+   "name": "Tympanic part of temporal bone",
+   "category": "bone",
+   "group": "Neurocranium",
+   "function": "Curved plate of bone below the squamous part that forms the anterior wall, floor and part of the posterior wall of the bony external acoustic meatus and sheathes the root of the styloid process.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Between the mandibular fossa in front and the mastoid process behind; separated from the mandibular fossa by the petrotympanic fissure"
+    },
+    {
+     "label": "Key features",
+     "value": "Bony external acoustic meatus; tympanic sulcus for the tympanic membrane; at birth it is only an incomplete ring, so the bony meatus is absent and the tympanic membrane lies near the surface"
+    },
+    {
+     "label": "Foramina & contents",
+     "value": "Petrotympanic fissure – chorda tympani and anterior tympanic artery"
+    },
+    {
+     "label": "Relations",
+     "value": "Head of the mandible and parotid gland anteriorly; styloid process and stylomastoid foramen (CN VII) posteroinferiorly"
+    }
+   ],
+   "pearl": "In the newborn the bony meatus and mastoid process are absent, so the facial nerve leaves the stylomastoid foramen close to the surface and can be injured by forceps or a postauricular incision.",
+   "depth": "superficial",
+   "marker": {
+    "x": 605,
+    "y": 365
+   }
+  },
+  {
+   "id": "greater-wing-of-sphenoid",
+   "name": "Greater wing of sphenoid bone",
+   "category": "bone",
+   "group": "Neurocranium",
+   "function": "Large lateral wing of the sphenoid that forms the floor of the middle cranial fossa, the lateral wall of the orbit and the roof of the infratemporal fossa; it transmits the maxillary and mandibular nerves and the middle meningeal artery.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Cerebral surface (middle cranial fossa, temporal lobe); orbital surface (lateral wall of orbit); temporal surface (temporal fossa, pterion); infratemporal surface below the infratemporal crest (roof of infratemporal fossa); spine of the sphenoid posteriorly"
+    },
+    {
+     "label": "Foramina & contents",
+     "value": "Foramen rotundum – V2; foramen ovale – V3, accessory meningeal artery, lesser petrosal nerve; foramen spinosum – middle meningeal vessels and meningeal branch of V3; sphenoidal emissary foramen (inconstant)"
+    },
+    {
+     "label": "Attachments",
+     "value": "Temporalis (temporal surface), upper head of lateral pterygoid (infratemporal surface and crest), sphenomandibular ligament and tensor veli palatini (spine)"
+    },
+    {
+     "label": "Relations",
+     "value": "Bounds the superior orbital fissure (with the lesser wing) and the inferior orbital fissure (with the maxilla); meets frontal, parietal and temporal bones at the pterion"
+    }
+   ],
+   "pearl": "The greater wing is the thin floor of the pterion: fracture here tears the frontal branch of the middle meningeal artery and causes an epidural hematoma.",
+   "depth": "deep",
+   "marker": {
+    "x": 450,
+    "y": 305
+   }
+  },
+  {
+   "id": "lesser-wing-of-sphenoid",
+   "name": "Lesser wing of sphenoid bone",
+   "category": "bone",
+   "group": "Neurocranium",
+   "function": "Thin triangular plate projecting laterally from the front of the sphenoid body; it forms the posterior edge of the anterior cranial fossa and the roof of the orbital apex, and encloses the optic canal.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Above the superior orbital fissure, between the orbital part of the frontal bone in front and the greater wing below"
+    },
+    {
+     "label": "Key features",
+     "value": "Anterior clinoid process at its medial end; optic canal between its two roots; orbital surface forming the posterior orbital roof; sharp posterior border (sphenoid ridge) fitting the lateral sulcus of the brain"
+    },
+    {
+     "label": "Foramina & contents",
+     "value": "Optic canal – optic nerve (CN II) and ophthalmic artery; superior orbital fissure (between lesser and greater wings) – CN III, IV, VI, branches of V1, superior ophthalmic vein"
+    },
+    {
+     "label": "Attachments",
+     "value": "Free edge of the tentorium cerebelli (anterior clinoid process); levator palpebrae superioris and the common tendinous ring near the optic canal"
+    }
+   ],
+   "pearl": "A sphenoid wing meningioma causes painless proptosis and progressive visual loss by narrowing the optic canal and superior orbital fissure.",
+   "depth": "deep",
+   "marker": {
+    "x": 420,
+    "y": 325
+   }
+  },
+  {
+   "id": "perpendicular-plate-of-ethmoid",
+   "name": "Perpendicular plate of ethmoid bone",
+   "category": "bone",
+   "group": "Neurocranium",
+   "function": "Thin midline plate hanging from the cribriform plate that forms the upper part of the bony nasal septum.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Midline of the nasal cavity, continuous above with the crista galli"
+    },
+    {
+     "label": "Articulates with",
+     "value": "Frontal bone (nasal spine) and nasal bones in front, crest and body of the sphenoid behind, vomer posteroinferiorly, septal nasal cartilage anteroinferiorly"
+    },
+    {
+     "label": "Key features",
+     "value": "Upper edge grooved by olfactory nerve filaments descending from the cribriform plate"
+    },
+    {
+     "label": "Relations",
+     "value": "Olfactory mucosa on its upper part; anterior ethmoidal nerve and vessels and the posterior septal branches of the sphenopalatine artery supply its mucosa"
+    }
+   ],
+   "pearl": "Twisting the perpendicular plate during septal surgery or nasal trauma can crack the cribriform plate and cause CSF rhinorrhea and anosmia.",
+   "depth": "deep",
+   "marker": {
+    "x": 380,
+    "y": 420
+   }
+  },
+  {
+   "id": "orbital-plate-of-ethmoid",
+   "name": "Orbital plate of ethmoid bone (lamina papyracea)",
+   "category": "bone",
+   "group": "Neurocranium",
+   "function": "Paper-thin lateral wall of the ethmoidal labyrinth that forms most of the medial wall of the orbit and separates the orbit from the ethmoidal cells.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Medial orbital wall, between the lacrimal bone in front and the body of the sphenoid behind, below the orbital part of the frontal bone and above the orbital surface of the maxilla"
+    },
+    {
+     "label": "Foramina & contents",
+     "value": "Anterior and posterior ethmoidal foramina in the fronto-ethmoidal suture – anterior and posterior ethmoidal nerves and vessels"
+    },
+    {
+     "label": "Key features",
+     "value": "Thinnest wall of the orbit; ethmoidal cells lie directly behind it"
+    },
+    {
+     "label": "Relations",
+     "value": "Medial rectus and superior oblique laterally; ethmoidal cells medially; optic canal just behind the posterior ethmoidal foramen"
+    }
+   ],
+   "pearl": "Ethmoid sinusitis spreads through the orbital plate to cause orbital cellulitis, and a medial-wall blowout fracture lets air into the orbit (orbital emphysema after nose blowing).",
+   "depth": "deep",
+   "marker": {
+    "x": 325,
+    "y": 345
+   }
+  },
+  {
+   "id": "superior-and-middle-nasal-conchae",
+   "name": "Superior and middle nasal conchae (and highest nasal concha)",
+   "category": "bone",
+   "group": "Viscerocranium",
+   "function": "Scroll-like projections of the ethmoidal labyrinth on the lateral nasal wall that increase mucosal surface area and roof the superior and middle meatuses; unlike the inferior concha they are parts of the ethmoid bone, not separate bones.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Highest nasal concha (inconstant, above the superior); superior nasal concha (roofs the superior meatus, sphenoethmoidal recess above it); middle nasal concha (roofs the middle meatus, covers the ethmoidal bulla, uncinate process and semilunar hiatus)"
+    },
+    {
+     "label": "Location",
+     "value": "Upper lateral wall of the nasal cavity, above the inferior nasal concha and below the cribriform plate"
+    },
+    {
+     "label": "Key features",
+     "value": "Superior meatus receives the posterior ethmoidal cells; middle meatus receives the frontal sinus, anterior and middle ethmoidal cells and maxillary sinus; sphenopalatine foramen opens behind the middle concha"
+    },
+    {
+     "label": "Relations",
+     "value": "Olfactory mucosa covers the superior concha; posterior lateral nasal branches of the sphenopalatine artery and of V2 supply the conchae"
+    }
+   ],
+   "pearl": "A pneumatized middle concha (concha bullosa) or nasal polyps arising from the middle meatus block the osteomeatal unit and cause recurrent frontal, maxillary and anterior ethmoid sinusitis.",
+   "depth": "deep",
+   "marker": {
+    "x": 340,
+    "y": 405
+   }
+  },
+  {
+   "id": "alveolar-process-of-maxilla",
+   "name": "Alveolar process of maxilla",
+   "category": "bone",
+   "group": "Viscerocranium",
+   "function": "Thick horseshoe-shaped ridge of the maxilla that carries the sockets of the upper teeth and forms the floor of the maxillary sinus.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Inferior border of the body of the maxilla, from the intermaxillary suture to the tuberosity of the maxilla behind the last molar"
+    },
+    {
+     "label": "Key features",
+     "value": "Sockets for the 16 upper teeth; tuberosity of the maxilla with the posterior superior alveolar foramina on the infratemporal surface above it; roots of the molars and premolars project toward the maxillary sinus"
+    },
+    {
+     "label": "Innervation",
+     "value": "Anterior, middle and posterior superior alveolar nerves (V2) to the teeth; buccal gingiva by the superior alveolar and infraorbital nerves, palatal gingiva by the greater palatine and nasopalatine nerves"
+    },
+    {
+     "label": "Attachments",
+     "value": "Buccinator (outer surface opposite the molars), upper lip muscles near the incisive fossa"
+    }
+   ],
+   "pearl": "Extraction of an upper molar can open the sinus floor and leave an oroantral fistula; upper molar root infection is the usual cause of unilateral odontogenic maxillary sinusitis.",
+   "depth": "superficial",
+   "marker": {
+    "x": 320,
+    "y": 440
+   }
+  },
+  {
+   "id": "frontal-process-of-maxilla",
+   "name": "Frontal process of maxilla",
+   "category": "bone",
+   "group": "Viscerocranium",
+   "function": "Strong upward projection of the maxilla between the nasal and lacrimal bones; it forms the medial orbital margin and the side of the bony nose.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Medial to the orbit, lateral to the nasal bone"
+    },
+    {
+     "label": "Articulates with",
+     "value": "Frontal bone above, nasal bone in front, lacrimal bone behind"
+    },
+    {
+     "label": "Key features",
+     "value": "Anterior lacrimal crest bounding the fossa for the lacrimal sac in front; forms part of the lateral wall of the nasal cavity (agger nasi region)"
+    },
+    {
+     "label": "Attachments",
+     "value": "Medial palpebral ligament and orbicularis oculi (anterior lacrimal crest), levator labii superioris alaeque nasi"
+    }
+   ],
+   "pearl": "Naso-orbito-ethmoid fractures detach the fragment of the frontal process bearing the medial palpebral ligament, producing telecanthus and nasolacrimal obstruction.",
+   "depth": "superficial",
+   "marker": {
+    "x": 275,
+    "y": 335
+   }
+  },
+  {
+   "id": "zygomatic-process-of-maxilla",
+   "name": "Zygomatic process of maxilla",
+   "category": "bone",
+   "group": "Viscerocranium",
+   "function": "Short, stout lateral projection of the maxilla that joins the zygomatic bone and transmits chewing forces from the molars to the cheek buttress.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Lateral side of the body of the maxilla above the first molar, separating its anterior and infratemporal surfaces"
+    },
+    {
+     "label": "Articulates with",
+     "value": "Maxillary process of the zygomatic bone (zygomaticomaxillary suture)"
+    },
+    {
+     "label": "Key features",
+     "value": "Forms the lateral part of the infraorbital margin and the zygomatic recess of the maxillary sinus extends into it"
+    },
+    {
+     "label": "Relations",
+     "value": "Infraorbital foramen medially; masseter and zygomaticus muscles arise just lateral on the zygomatic bone"
+    }
+   ],
+   "pearl": "The zygomaticomaxillary suture is one of the fracture lines of the zygomaticomaxillary complex (tripod) fracture, which often injures the infraorbital nerve and numbs the cheek and upper lip.",
+   "depth": "superficial",
+   "marker": {
+    "x": 400,
+    "y": 370
+   }
+  },
+  {
+   "id": "palatine-process-of-maxilla",
+   "name": "Palatine process of maxilla",
+   "category": "bone",
+   "group": "Viscerocranium",
+   "function": "Horizontal shelf of the maxilla that meets its fellow in the midline to form the anterior three-quarters of the hard palate and the floor of the nasal cavity.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Projects medially from the body of the maxilla above the alveolar process; joins the opposite process at the intermaxillary suture and the horizontal plate of the palatine bone at the palatomaxillary suture"
+    },
+    {
+     "label": "Key features",
+     "value": "Incisive fossa and incisive canal behind the central incisors; nasal crest on its upper surface for the vomer, ending in front as the anterior nasal spine"
+    },
+    {
+     "label": "Foramina & contents",
+     "value": "Incisive canal – nasopalatine nerve and the terminal branch of the greater palatine artery meeting the posterior septal branch of the sphenopalatine artery"
+    },
+    {
+     "label": "Relations",
+     "value": "Greater palatine nerve and vessels run forward in a groove on its oral surface; inferior nasal meatus above"
+    }
+   ],
+   "pearl": "Failure of the palatine shelves to fuse with each other and with the primary palate produces cleft palate, with feeding difficulty, nasal speech and recurrent otitis media.",
+   "depth": "deep",
+   "marker": {
+    "x": 370,
+    "y": 460
+   }
+  },
+  {
+   "id": "horizontal-plate-of-palatine-bone",
+   "name": "Horizontal plate of palatine bone",
+   "category": "bone",
+   "group": "Viscerocranium",
+   "function": "Flat plate of the palatine bone forming the posterior quarter of the hard palate and the back of the nasal floor; its free posterior edge anchors the soft palate.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Behind the palatine process of the maxilla (palatomaxillary suture), meeting the opposite plate in the midline"
+    },
+    {
+     "label": "Key features",
+     "value": "Posterior nasal spine in the midline; nasal crest on the upper surface for the vomer; greater palatine foramen at its lateral edge, lesser palatine foramina just behind in the pyramidal process"
+    },
+    {
+     "label": "Foramina & contents",
+     "value": "Greater palatine foramen – greater palatine nerve and vessels; lesser palatine foramina – lesser palatine nerves and vessels"
+    },
+    {
+     "label": "Attachments",
+     "value": "Palatine aponeurosis (posterior border), musculus uvulae (posterior nasal spine)"
+    }
+   ],
+   "pearl": "A greater palatine nerve block is placed at the greater palatine foramen, medial to the upper second or third molar at the lateral edge of the horizontal plate.",
+   "depth": "deep",
+   "marker": {
+    "x": 370,
+    "y": 460
+   }
+  },
+  {
+   "id": "perpendicular-plate-of-palatine-bone",
+   "name": "Perpendicular plate of palatine bone",
+   "category": "bone",
+   "group": "Viscerocranium",
+   "function": "Thin vertical plate of the palatine bone forming the posterior part of the lateral nasal wall and the medial wall of the pterygopalatine fossa.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Orbital process (upper anterior; reaches the orbital floor); sphenoidal process (upper posterior; under the body of the sphenoid); the notch between them is closed by the sphenoid to form the sphenopalatine foramen; pyramidal process at its junction with the horizontal plate"
+    },
+    {
+     "label": "Location",
+     "value": "Between the maxilla in front and the medial pterygoid plate behind"
+    },
+    {
+     "label": "Foramina & contents",
+     "value": "Sphenopalatine foramen – sphenopalatine artery and posterior superior nasal nerves; greater palatine canal (with the maxilla) – greater and lesser palatine nerves and descending palatine vessels"
+    },
+    {
+     "label": "Relations",
+     "value": "Pterygopalatine ganglion and maxillary artery on its lateral side; middle and inferior nasal conchae attach to its medial surface"
+    }
+   ],
+   "pearl": "The sphenopalatine artery crosses the top of this plate into the nose; endoscopic ligation at the sphenopalatine foramen controls refractory posterior epistaxis.",
+   "depth": "deep",
+   "marker": {
+    "x": 430,
+    "y": 455
+   }
+  },
+  {
+   "id": "permanent-teeth",
+   "name": "Permanent teeth (dental arches)",
+   "category": "bone",
+   "group": "Viscerocranium",
+   "function": "Thirty-two teeth set in the alveolar processes of the maxillae and mandible, eight per quadrant; they cut, tear and grind food and are supplied by the alveolar branches of the maxillary and mandibular nerves.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Per quadrant, from the midline: central incisor, lateral incisor, canine, 1st and 2nd premolars, 1st, 2nd and 3rd molars. Parts of each tooth: crown, neck, root. Tissues: enamel, dentine, dental pulp, cement, periodontium"
+    },
+    {
+     "label": "Key features",
+     "value": "Deciduous dentition has 20 teeth (two incisors, one canine, two molars per quadrant); first permanent tooth is the 1st molar in the 6th year, last the 3rd molar at 17–25 years; root canals open at apical foramina"
+    },
+    {
+     "label": "Innervation",
+     "value": "Upper teeth: anterior, middle and posterior superior alveolar nerves (V2); lower teeth: inferior alveolar nerve (V3) and its incisive branch"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Superior alveolar arteries (posterior from the maxillary, anterior and middle from the infraorbital) and inferior alveolar artery"
+    }
+   ],
+   "pearl": "Dental caries reaching the pulp causes pulpitis and then a periapical abscess; lower molar infections can track below the mylohyoid line into the submandibular space (Ludwig angina).",
+   "depth": "superficial",
+   "marker": {
+    "x": 320,
+    "y": 440
+   }
+  },
+  {
+   "id": "incisor-teeth",
+   "name": "Incisors (central and lateral)",
+   "category": "bone",
+   "group": "Viscerocranium",
+   "function": "Chisel-edged front teeth, two per quadrant, with a single root; they cut food and support the lips for speech.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Central (medial) incisor; lateral incisor; four upper (maxillary) and four lower (mandibular)"
+    },
+    {
+     "label": "Key features",
+     "value": "Single conical root; permanent central incisors erupt in the 7th year and lateral incisors in the 8th; deciduous lower central incisors are the first teeth to appear, at 6–9 months"
+    },
+    {
+     "label": "Innervation",
+     "value": "Upper: anterior superior alveolar nerve (V2), palatal gingiva by the nasopalatine nerve; lower: incisive branch of the inferior alveolar nerve (V3), labial gingiva by the mental nerve"
+    },
+    {
+     "label": "Relations",
+     "value": "Incisive fossa lies behind the upper central incisors; mental spines lie behind the lower incisors"
+    }
+   ],
+   "pearl": "Notched, peg-shaped permanent incisors (Hutchinson teeth) are a late sign of congenital syphilis; an avulsed permanent incisor should be replanted within the hour.",
+   "depth": "superficial",
+   "marker": {
+    "x": 320,
+    "y": 440
+   }
+  },
+  {
+   "id": "canine-teeth",
+   "name": "Canines (cuspids)",
+   "category": "bone",
+   "group": "Viscerocranium",
+   "function": "Single pointed tooth at each corner of the dental arch with the longest root of any tooth; it pierces and tears food and guides the jaw in lateral movement.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Third tooth from the midline in each quadrant, between the lateral incisor and the 1st premolar"
+    },
+    {
+     "label": "Key features",
+     "value": "Single cusp and one long root raising the canine eminence on the alveolar process; permanent canines erupt in the 11th–12th year, deciduous canines at 16–20 months"
+    },
+    {
+     "label": "Innervation",
+     "value": "Upper: anterior superior alveolar nerve (V2); lower: inferior alveolar nerve (V3)"
+    },
+    {
+     "label": "Relations",
+     "value": "Root of the upper canine reaches toward the canine fossa below the infraorbital foramen; levator anguli oris arises above it"
+    }
+   ],
+   "pearl": "The upper canine is, after the third molars, the most commonly impacted tooth; infection from its long root can spread to the canine space and present as swelling beside the nose that closes the eye.",
+   "depth": "superficial",
+   "marker": {
+    "x": 320,
+    "y": 440
+   }
+  },
+  {
+   "id": "premolar-teeth",
+   "name": "Premolars (1st and 2nd)",
+   "category": "bone",
+   "group": "Viscerocranium",
+   "function": "Two bicuspid teeth in each quadrant between the canine and the molars; they crush food and have no deciduous predecessors of the same form, replacing the deciduous molars.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "1st premolar; 2nd premolar; upper and lower in each quadrant"
+    },
+    {
+     "label": "Key features",
+     "value": "Two cusps; usually one root (upper 1st premolar often two); erupt in the 9th year (1st) and 10th year (2nd)"
+    },
+    {
+     "label": "Innervation",
+     "value": "Upper: middle superior alveolar nerve (V2), sometimes posterior or anterior when it is absent; lower: inferior alveolar nerve (V3)"
+    },
+    {
+     "label": "Relations",
+     "value": "Mental foramen lies below the lower 2nd premolar; roots of the upper premolars lie close to the floor of the maxillary sinus"
+    }
+   ],
+   "pearl": "The mental foramen below the lower second premolar is the landmark for a mental nerve block and must be protected when plating a mandibular body fracture.",
+   "depth": "superficial",
+   "marker": {
+    "x": 370,
+    "y": 560
+   }
+  },
+  {
+   "id": "molar-teeth",
+   "name": "Molars (1st, 2nd and 3rd)",
+   "category": "bone",
+   "group": "Viscerocranium",
+   "function": "Three broad multi-cusped grinding teeth at the back of each quadrant; the first is the earliest permanent tooth and the third (wisdom tooth) the last and most variable.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "1st molar (6th year); 2nd molar (12th–13th year); 3rd molar (17th–25th year); upper molars usually have three roots, lower molars two"
+    },
+    {
+     "label": "Location",
+     "value": "Posterior alveolar process, the upper molars below the maxillary sinus and in front of the tuberosity of the maxilla, the lower molars in front of the retromolar fossa"
+    },
+    {
+     "label": "Innervation",
+     "value": "Upper: posterior superior alveolar nerve (V2), with the middle superior alveolar nerve to part of the 1st molar; lower: inferior alveolar nerve (V3); buccal gingiva of the lower molars by the buccal nerve"
+    },
+    {
+     "label": "Relations",
+     "value": "Parotid duct opens opposite the upper 2nd molar; lingual nerve lies against the mandible beside the lower 3rd molar; roots of the lower 2nd and 3rd molars lie below the mylohyoid line"
+    }
+   ],
+   "pearl": "Lower third molar extraction endangers the lingual nerve (loss of taste and sensation on the anterior tongue) and the inferior alveolar nerve; infection from lower molar roots spreads to the submandibular space.",
+   "depth": "superficial",
+   "marker": {
+    "x": 420,
+    "y": 520
+   }
+  },
+  {
+   "id": "articular-disc-of-tmj",
+   "name": "Articular disc of temporomandibular joint",
+   "category": "bone",
+   "group": "Mandible & TMJ",
+   "function": "Oval fibrocartilage plate between the head of the mandible and the temporal bone that divides the joint into an upper gliding compartment and a lower hinge compartment.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Between the mandibular fossa and articular tubercle above and the head of the condylar process below, fused to the joint capsule at its edges"
+    },
+    {
+     "label": "Key features",
+     "value": "Thin avascular centre with thicker anterior and posterior bands; slides forward with the condyle onto the articular tubercle when the jaws open widely"
+    },
+    {
+     "label": "Attachments",
+     "value": "Joint capsule all round; upper head of lateral pterygoid anteriorly; vascular retrodiscal tissue posteriorly"
+    },
+    {
+     "label": "Innervation",
+     "value": "Auriculotemporal nerve (V3) to the capsule and periphery of the disc"
+    }
+   ],
+   "pearl": "Anterior disc displacement gives a click on opening when the disc reduces, and a painful closed lock with limited opening when it does not.",
+   "depth": "superficial",
+   "marker": {
+    "x": 590,
+    "y": 345
+   }
+  },
+  {
+   "id": "tmj-capsule-and-lateral-ligament",
+   "name": "Joint capsule and lateral ligament of temporomandibular joint",
+   "category": "bone",
+   "group": "Mandible & TMJ",
+   "function": "Loose fibrous capsule enclosing the temporomandibular joint, thickened on its outer side as the lateral ligament, the only true ligament of the joint, which prevents backward displacement of the condyle.",
+   "details": [
+    {
+     "label": "Attachments",
+     "value": "Capsule: margins of the mandibular fossa and articular tubercle above, neck of the mandible below. Lateral ligament: articular tubercle and root of the zygomatic process, running down and back to the lateral and posterior neck of the mandible"
+    },
+    {
+     "label": "Key features",
+     "value": "Capsule is lax above the disc (gliding) and tight below it (hinge); the lateral ligament limits posterior and inferior movement of the condyle"
+    },
+    {
+     "label": "Innervation",
+     "value": "Auriculotemporal nerve, with twigs from the masseteric and deep temporal nerves (V3)"
+    },
+    {
+     "label": "Relations",
+     "value": "Parotid gland, superficial temporal vessels and auriculotemporal nerve behind; temporal and zygomatic branches of CN VII cross lateral to it"
+    }
+   ],
+   "pearl": "Because the capsule is weakest in front, the condyle dislocates anteriorly over the articular tubercle with a wide yawn and the jaw locks open.",
+   "depth": "superficial",
+   "marker": {
+    "x": 590,
+    "y": 345
+   }
+  },
+  {
+   "id": "sphenomandibular-ligament",
+   "name": "Sphenomandibular ligament",
+   "category": "bone",
+   "group": "Mandible & TMJ",
+   "function": "Flat band from the spine of the sphenoid to the lingula of the mandible, a remnant of the first-arch (Meckel) cartilage; it is the pivot about which the mandible swings and the medial guide for the inferior alveolar nerve.",
+   "details": [
+    {
+     "label": "Attachments",
+     "value": "Spine of the sphenoid bone above; lingula and lower margin of the mandibular foramen below"
+    },
+    {
+     "label": "Key features",
+     "value": "Stays equally taut throughout opening and closing, so the mandible rotates about an axis near the mandibular foramen"
+    },
+    {
+     "label": "Relations",
+     "value": "Inferior alveolar nerve and vessels pass between it and the ramus to enter the mandibular foramen; maxillary artery and auriculotemporal nerve pass between it and the neck of the mandible; lingual nerve, medial pterygoid and chorda tympani lie medial; the mylohyoid nerve and vessels pierce it"
+    },
+    {
+     "label": "Embryology",
+     "value": "Perichondrium of Meckel cartilage (first pharyngeal arch)"
+    }
+   ],
+   "pearl": "For an inferior alveolar nerve block the anesthetic is placed in the pterygomandibular space lateral to this ligament, just above the lingula.",
+   "depth": "deep",
+   "marker": {
+    "x": 555,
+    "y": 470
+   }
+  },
+  {
+   "id": "stylomandibular-ligament",
+   "name": "Stylomandibular ligament",
+   "category": "bone",
+   "group": "Mandible & TMJ",
+   "function": "Thickened band of the deep cervical fascia running from the styloid process to the angle of the mandible; it separates the parotid from the submandibular gland and limits excessive protrusion of the jaw.",
+   "details": [
+    {
+     "label": "Attachments",
+     "value": "Tip of the styloid process above; angle and posterior border of the ramus of the mandible below"
+    },
+    {
+     "label": "Key features",
+     "value": "A specialization of the parotid sheath (investing layer of deep cervical fascia) rather than a true joint ligament; slack when the jaws are closed, taut on protrusion"
+    },
+    {
+     "label": "Relations",
+     "value": "Parotid gland in front and above, submandibular gland below and medial; external carotid artery passes deep to it to enter the parotid"
+    },
+    {
+     "label": "Function",
+     "value": "Accessory ligament of the temporomandibular joint"
+    }
+   ],
+   "pearl": "",
+   "depth": "superficial",
+   "marker": {
+    "x": 538,
+    "y": 568
+   }
+  },
+  {
+   "id": "stylohyoid-ligament",
+   "name": "Stylohyoid ligament",
+   "category": "bone",
+   "group": "Hyoid & larynx",
+   "function": "Fibrous cord from the tip of the styloid process to the lesser horn of the hyoid, a second-arch derivative that suspends the hyoid from the skull base.",
+   "details": [
+    {
+     "label": "Attachments",
+     "value": "Tip of the styloid process above; lesser horn of the hyoid bone below; the middle pharyngeal constrictor arises from its lower end"
+    },
+    {
+     "label": "Key features",
+     "value": "May be partly or completely ossified"
+    },
+    {
+     "label": "Relations",
+     "value": "Lies between the external and internal carotid arteries; glossopharyngeal nerve and stylopharyngeus pass deep to it toward the pharynx; lingual artery and hypoglossal nerve cross below it"
+    },
+    {
+     "label": "Embryology",
+     "value": "Second pharyngeal arch (Reichert) cartilage, with the styloid process, stapes and lesser horn of the hyoid"
+    }
+   ],
+   "pearl": "A calcified stylohyoid ligament or elongated styloid process causes Eagle syndrome: throat and ear pain on swallowing or turning the head.",
+   "depth": "deep",
+   "marker": {
+    "x": 600,
+    "y": 465
+   }
+  },
+  {
+   "id": "body-of-hyoid-bone",
+   "name": "Body of hyoid bone",
+   "category": "bone",
+   "group": "Hyoid & larynx",
+   "function": "Central quadrilateral bar of the hyoid lying at the C3 level; it anchors the floor of the mouth and tongue above and the infrahyoid strap muscles below.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Midline of the anterior neck between the chin and the laryngeal prominence, joined to the greater and lesser horns at each end"
+    },
+    {
+     "label": "Attachments (suprahyoid)",
+     "value": "Geniohyoid and mylohyoid (anterior surface), genioglossus (lowest fibres), hyoglossus (lateral part), fibrous loop for the intermediate tendon of digastric and insertion of stylohyoid (junction with the greater horn)"
+    },
+    {
+     "label": "Attachments (infrahyoid)",
+     "value": "Sternohyoid (medial lower border), omohyoid (lateral lower border), thyrohyoid (with the greater horn); thyrohyoid membrane and hyoepiglottic ligament (posterior surface)"
+    },
+    {
+     "label": "Embryology",
+     "value": "Upper part from the second arch, lower part from the third arch"
+    }
+   ],
+   "pearl": "A thyroglossal duct cyst is tethered to the body of the hyoid and rises with tongue protrusion; the Sistrunk operation removes the central body with the cyst to prevent recurrence.",
+   "depth": "superficial",
+   "marker": {
+    "x": 420,
+    "y": 650
+   }
+  },
+  {
+   "id": "greater-horn-of-hyoid-bone",
+   "name": "Greater horn of hyoid bone",
+   "category": "bone",
+   "group": "Hyoid & larynx",
+   "function": "Long posterior limb of the hyoid projecting back from each end of the body; it is the palpable lateral landmark of the hyoid and a key guide to the lingual artery and superior laryngeal nerve.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Runs posterosuperiorly from the body at the C3 level, ending in a tubercle that gives attachment to the lateral thyrohyoid ligament"
+    },
+    {
+     "label": "Attachments",
+     "value": "Hyoglossus (upper surface), middle pharyngeal constrictor (upper border), thyrohyoid (lower border), thyrohyoid membrane and lateral thyrohyoid ligament (tip)"
+    },
+    {
+     "label": "Relations",
+     "value": "Lingual artery loops above it and passes deep to hyoglossus; hypoglossal nerve crosses superficial to hyoglossus just above it; internal branch of the superior laryngeal nerve pierces the thyrohyoid membrane just below it"
+    },
+    {
+     "label": "Embryology",
+     "value": "Third pharyngeal arch"
+    }
+   ],
+   "pearl": "Fracture of a greater horn in an adult strongly suggests manual strangulation; the tip of the horn is the landmark for a superior laryngeal nerve block.",
+   "depth": "superficial",
+   "marker": {
+    "x": 420,
+    "y": 650
+   }
+  },
+  {
+   "id": "lesser-horn-of-hyoid-bone",
+   "name": "Lesser horn of hyoid bone",
+   "category": "bone",
+   "group": "Hyoid & larynx",
+   "function": "Small conical projection at the junction of the body and greater horn of the hyoid that receives the stylohyoid ligament.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Projects upward and backward from the body–greater horn junction"
+    },
+    {
+     "label": "Attachments",
+     "value": "Stylohyoid ligament (tip), middle pharyngeal constrictor (with the greater horn and the ligament)"
+    },
+    {
+     "label": "Key features",
+     "value": "Joined to the body by fibrous tissue, often by a small synovial joint, and may remain cartilaginous into adult life"
+    },
+    {
+     "label": "Embryology",
+     "value": "Second pharyngeal arch (Reichert cartilage), with the stylohyoid ligament and styloid process"
+    }
+   ],
+   "pearl": "",
+   "depth": "superficial",
+   "marker": {
+    "x": 420,
+    "y": 650
+   }
+  },
+  {
+   "id": "thyroid-cartilage-lamina",
+   "name": "Lamina of thyroid cartilage",
+   "category": "bone",
+   "group": "Hyoid & larynx",
+   "function": "One of the two quadrilateral plates of the thyroid cartilage that meet in the midline at the laryngeal prominence and shield the vocal folds.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Anterolateral wall of the larynx at C4–C5; the two laminae fuse anteriorly below the superior thyroid notch and are open posteriorly"
+    },
+    {
+     "label": "Key features",
+     "value": "Oblique line on the outer surface; laryngeal prominence and superior thyroid notch in the midline; posterior border prolonged into the superior and inferior horns; the angle between the laminae is more acute in men"
+    },
+    {
+     "label": "Attachments",
+     "value": "Sternothyroid, thyrohyoid and the thyropharyngeal part of the inferior constrictor (oblique line); thyrohyoid membrane (upper border); cricothyroid (lower border and inferior horn); thyroepiglottic ligament, vocal ligaments, thyroarytenoid and vocalis (inner surface near the midline)"
+    },
+    {
+     "label": "Relations",
+     "value": "Lobes of the thyroid gland and the superior thyroid vessels lie on its outer surface; piriform recess lies between its inner surface and the aryepiglottic fold"
+    }
+   ],
+   "pearl": "The vocal folds attach to the inner midline of the laminae about halfway down, so a blow that fractures the thyroid cartilage produces hoarseness, subcutaneous emphysema and airway compromise.",
+   "depth": "superficial",
+   "marker": {
+    "x": 415,
+    "y": 720
+   }
+  },
+  {
+   "id": "horns-of-thyroid-cartilage",
+   "name": "Superior and inferior horns of thyroid cartilage",
+   "category": "bone",
+   "group": "Hyoid & larynx",
+   "function": "Upward and downward prolongations of the posterior border of each thyroid lamina; the superior horn suspends the larynx from the hyoid and the inferior horn forms the cricothyroid joint.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Superior horn (long; joined to the tip of the greater horn of the hyoid by the lateral thyrohyoid ligament, which contains the triticeal cartilage); inferior horn (short; medial facet articulates with the side of the cricoid at the cricothyroid joint)"
+    },
+    {
+     "label": "Attachments",
+     "value": "Lateral thyrohyoid ligament and stylopharyngeus/palatopharyngeus fibres (posterior border and superior horn); cricothyroid muscle (inferior horn)"
+    },
+    {
+     "label": "Relations",
+     "value": "Recurrent laryngeal nerve enters the larynx immediately behind the cricothyroid joint, deep to the lower border of the inferior constrictor; superior laryngeal vessels and internal laryngeal nerve pierce the thyrohyoid membrane in front of the superior horn"
+    },
+    {
+     "label": "Movements",
+     "value": "At the cricothyroid joints the thyroid cartilage tilts forward on the cricoid, lengthening and tensing the vocal ligaments"
+    }
+   ],
+   "pearl": "The inferior horn is the surgical landmark for the recurrent laryngeal nerve, which enters the larynx just behind the cricothyroid joint and is most at risk there during thyroidectomy.",
+   "depth": "superficial",
+   "marker": {
+    "x": 415,
+    "y": 720
+   }
+  },
+  {
+   "id": "arch-of-cricoid-cartilage",
+   "name": "Arch of cricoid cartilage",
+   "category": "bone",
+   "group": "Hyoid & larynx",
+   "function": "Narrow anterior band of the signet-ring-shaped cricoid, palpable below the laryngeal prominence at C6; it is the lower boundary of the cricothyroid interval used for emergency airway access.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Anterior and lateral part of the cricoid, between the median cricothyroid ligament above and the first tracheal ring below"
+    },
+    {
+     "label": "Attachments",
+     "value": "Median cricothyroid ligament and conus elasticus (upper border), cricothyroid muscle (outer surface), cricotracheal ligament (lower border), cricopharyngeal part of the inferior constrictor (side)"
+    },
+    {
+     "label": "Key features",
+     "value": "5–7 mm tall in front, deepening posteriorly toward the lamina; bears a facet on each side for the inferior horn of the thyroid cartilage"
+    },
+    {
+     "label": "Relations",
+     "value": "Isthmus of the thyroid gland lies just below it over the 2nd–4th tracheal rings"
+    }
+   ],
+   "pearl": "In cricothyrotomy the airway is entered through the median cricothyroid ligament just above the cricoid arch; in children under about 8 years the cricoid ring is the narrowest part of the airway.",
+   "depth": "superficial",
+   "marker": {
+    "x": 425,
+    "y": 790
+   }
+  },
+  {
+   "id": "lamina-of-cricoid-cartilage",
+   "name": "Lamina of cricoid cartilage",
+   "category": "bone",
+   "group": "Hyoid & larynx",
+   "function": "Broad quadrilateral posterior plate of the cricoid that carries the arytenoid cartilages and forms the rigid back wall of the lower larynx.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Posterior larynx at C6, between the thyroid laminae, directly in front of the laryngopharynx and the start of the esophagus"
+    },
+    {
+     "label": "Key features",
+     "value": "Arytenoid articular surfaces on the sloping upper border; median ridge on the posterior surface with a depression on each side"
+    },
+    {
+     "label": "Attachments",
+     "value": "Posterior cricoarytenoid muscles (posterior surface depressions), longitudinal muscle of the esophagus by the cricoesophageal tendon (median ridge), capsules of the cricoarytenoid joints"
+    },
+    {
+     "label": "Relations",
+     "value": "Recurrent laryngeal nerves ascend on each side behind the cricothyroid joints; cricopharyngeus encircles the pharyngoesophageal junction behind it"
+    }
+   ],
+   "pearl": "Backward pressure on the cricoid (Sellick maneuver) uses the complete ring and broad lamina to compress the esophagus against the C6 vertebral body.",
+   "depth": "deep",
+   "marker": {
+    "x": 425,
+    "y": 790
+   }
+  },
+  {
+   "id": "anterior-arch-of-atlas",
+   "name": "Anterior arch of atlas",
+   "category": "bone",
+   "group": "Cervical spine",
+   "function": "Short curved bar joining the two lateral masses of the atlas in front; it articulates with the dens to form the front of the median atlanto-axial pivot joint.",
+   "details": [
+    {
+     "label": "Key features",
+     "value": "Anterior tubercle in the midline; articular facet for the dens on its posterior surface"
+    },
+    {
+     "label": "Articulates with",
+     "value": "Anterior articular facet of the dens (median atlanto-axial joint)"
+    },
+    {
+     "label": "Attachments",
+     "value": "Anterior longitudinal ligament and longus colli (anterior tubercle), anterior atlanto-occipital membrane (upper border)"
+    },
+    {
+     "label": "Relations",
+     "value": "Nasopharynx and prevertebral muscles in front; dens and transverse ligament of the atlas behind"
+    }
+   ],
+   "pearl": "On a lateral cervical film the gap between the anterior arch and the dens should not exceed 3 mm in adults (5 mm in children); widening means transverse ligament laxity or rupture, as in rheumatoid arthritis or Down syndrome.",
+   "depth": "deep",
+   "marker": {
+    "x": 655,
+    "y": 485
+   }
+  },
+  {
+   "id": "posterior-arch-of-atlas",
+   "name": "Posterior arch of atlas",
+   "category": "bone",
+   "group": "Cervical spine",
+   "function": "Longer curved bar joining the lateral masses of the atlas behind; it replaces a spinous process with a small tubercle and is grooved above by the vertebral artery.",
+   "details": [
+    {
+     "label": "Key features",
+     "value": "Posterior tubercle in the midline; groove for the vertebral artery on the upper surface just behind each lateral mass"
+    },
+    {
+     "label": "Attachments",
+     "value": "Rectus capitis posterior minor and nuchal ligament (posterior tubercle), posterior atlanto-occipital membrane (upper border)"
+    },
+    {
+     "label": "Relations",
+     "value": "Vertebral artery and the C1 (suboccipital) nerve lie in the groove, in the floor of the suboccipital triangle; the C2 nerve emerges below the arch"
+    },
+    {
+     "label": "Articulates with",
+     "value": "None directly; bounds the vertebral foramen behind the spinal cord"
+    }
+   ],
+   "pearl": "The vertebral artery on the posterior arch is at risk in suboccipital surgery and in posterior C1 fixation; a bony bridge over the groove (arcuate foramen) is a common variant.",
+   "depth": "deep",
+   "marker": {
+    "x": 655,
+    "y": 485
+   }
+  },
+  {
+   "id": "lateral-mass-of-atlas",
+   "name": "Lateral mass of atlas",
+   "category": "bone",
+   "group": "Cervical spine",
+   "function": "Thick weight-bearing pillar on each side of the atlas that transmits the weight of the head from the occipital condyle to the axis.",
+   "details": [
+    {
+     "label": "Key features",
+     "value": "Concave, kidney-shaped superior articular surface for the occipital condyle; flat circular inferior articular surface for the axis; tubercle for the transverse ligament of the atlas on its medial side; transverse process with transverse foramen projecting laterally"
+    },
+    {
+     "label": "Articulates with",
+     "value": "Occipital condyle (atlanto-occipital joint: flexion–extension) and superior articular facet of the axis (lateral atlanto-axial joint: rotation)"
+    },
+    {
+     "label": "Attachments",
+     "value": "Transverse ligament of the atlas (medial tubercle); rectus capitis anterior (front); rectus capitis lateralis, obliquus capitis superior and inferior, levator scapulae and splenius cervicis (transverse process)"
+    },
+    {
+     "label": "Relations",
+     "value": "Vertebral artery ascends through the transverse foramen and turns medially behind the lateral mass; C1 anterior ramus passes round its lateral side"
+    }
+   ],
+   "pearl": "Axial loading (diving) bursts the atlas ring at its thin arches (Jefferson fracture); on an open-mouth view the lateral masses overhang the axis, and combined overhang over 7 mm implies transverse ligament rupture.",
+   "depth": "deep",
+   "marker": {
+    "x": 668,
+    "y": 462
+   }
+  },
+  {
+   "id": "dens-of-axis",
+   "name": "Dens (odontoid process) of axis",
+   "category": "bone",
+   "group": "Cervical spine",
+   "function": "Tooth-like peg projecting up from the body of the axis; it represents the body of the atlas and is the pivot around which the atlas and head rotate.",
+   "details": [
+    {
+     "label": "Key features",
+     "value": "Anterior articular facet for the anterior arch of the atlas; posterior articular facet for the transverse ligament of the atlas; pointed apex"
+    },
+    {
+     "label": "Articulates with",
+     "value": "Anterior arch of the atlas in front and transverse ligament behind (median atlanto-axial joint)"
+    },
+    {
+     "label": "Ligaments",
+     "value": "Apical ligament (apex to the anterior margin of the foramen magnum), alar ligaments (sides of the dens to the occipital condyles), cruciate ligament behind, tectorial membrane behind that"
+    },
+    {
+     "label": "Relations",
+     "value": "Lies in the anterior third of the atlas ring with the spinal cord occupying the middle third; medulla and upper cord immediately behind"
+    }
+   ],
+   "pearl": "Dens fractures follow falls in the elderly; a fracture through its base (type II) has a poor blood supply and often fails to unite, and posterior displacement threatens the cord.",
+   "depth": "deep",
+   "marker": {
+    "x": 665,
+    "y": 530
+   }
+  },
+  {
+   "id": "cervical-vertebral-arch",
+   "name": "Cervical vertebral arch (pedicles, laminae, spinous process)",
+   "category": "bone",
+   "group": "Cervical spine",
+   "function": "Bony ring behind the vertebral body that encloses the large triangular vertebral foramen and protects the cervical enlargement of the spinal cord.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Pedicle (short, joins body to the articular pillar; forms roof and floor of the intervertebral foramina); lamina (thin plate from articular pillar to the midline); spinous process (short and bifid at C2–C6, long and non-bifid at C7)"
+    },
+    {
+     "label": "Key features",
+     "value": "Vertebral foramen is large and triangular in the cervical region; superior and inferior vertebral notches on the pedicles"
+    },
+    {
+     "label": "Attachments",
+     "value": "Ligamenta flava (laminae); nuchal ligament and interspinous ligaments (spinous processes); semispinalis cervicis, multifidus, spinalis and interspinales (spinous processes)"
+    },
+    {
+     "label": "Relations",
+     "value": "Spinal cord and meninges within; spinal nerves leave above the pedicle of the same-numbered vertebra (C8 below C7)"
+    }
+   ],
+   "pearl": "A clay-shoveler fracture is an avulsion of the C7 (or C6) spinous process; decompressive laminectomy removes the laminae and spinous processes for cervical spondylotic myelopathy.",
+   "depth": "deep",
+   "marker": {
+    "x": 675,
+    "y": 650
+   }
+  },
+  {
+   "id": "cervical-articular-processes-and-facet-joints",
+   "name": "Cervical articular processes and facet (zygapophysial) joints",
+   "category": "bone",
+   "group": "Cervical spine",
+   "function": "Superior and inferior articular processes form a column (articular pillar) at the junction of pedicle and lamina on each side; their flat oblique facets make the synovial zygapophysial joints that guide neck movement.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Superior articular process and facet (faces up and back); inferior articular process and facet (faces down and forward)"
+    },
+    {
+     "label": "Location",
+     "value": "From C2–C3 down to C7–T1, behind the transverse processes; the C1–C2 lateral atlanto-axial joints lie further forward"
+    },
+    {
+     "label": "Key features",
+     "value": "Facets slope about 45 degrees, permitting flexion, extension, lateral flexion and rotation; each joint forms the posterior wall of an intervertebral foramen"
+    },
+    {
+     "label": "Innervation",
+     "value": "Medial branches of the posterior rami of the cervical spinal nerves"
+    }
+   ],
+   "pearl": "Flexion–rotation injury can lock an inferior facet in front of the one below (jumped facet); unilateral dislocation shifts the body less than half its width, bilateral dislocation more than half and usually damages the cord.",
+   "depth": "deep",
+   "marker": {
+    "x": 675,
+    "y": 650
+   }
+  },
+  {
+   "id": "cervical-transverse-process",
+   "name": "Cervical transverse process (anterior and posterior tubercles)",
+   "category": "bone",
+   "group": "Cervical spine",
+   "function": "Short lateral process of a cervical vertebra pierced by the transverse foramen; its two tubercles anchor the scalene and prevertebral muscles and its gutter carries the emerging spinal nerve.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Anterior tubercle (costal element; largest at C6 as the carotid tubercle, inconspicuous at C7); posterior tubercle (true transverse element); costal lamella joining them in front of the groove; groove for the spinal nerve; transverse foramen medially"
+    },
+    {
+     "label": "Attachments",
+     "value": "Anterior tubercles: scalenus anterior, longus capitis, longus colli; posterior tubercles: scalenus medius and posterior, levator scapulae, splenius cervicis, longissimus and iliocostalis cervicis"
+    },
+    {
+     "label": "Contents",
+     "value": "Transverse foramen – vertebral artery (C6 upward), vertebral veins and sympathetic plexus"
+    },
+    {
+     "label": "Relations",
+     "value": "Anterior ramus of the spinal nerve passes laterally behind the vertebral artery in the groove; roots of the brachial plexus emerge between the tubercles, between scalenus anterior and medius"
+    }
+   ],
+   "pearl": "An enlarged costal element of C7 forms a cervical rib, which can compress the lower trunk of the brachial plexus and the subclavian artery (thoracic outlet syndrome).",
+   "depth": "deep",
+   "marker": {
+    "x": 652,
+    "y": 712
+   }
+  },
+  {
+   "id": "cervical-intervertebral-discs",
+   "name": "Cervical intervertebral discs (anulus fibrosus and nucleus pulposus)",
+   "category": "bone",
+   "group": "Cervical spine",
+   "function": "Fibrocartilaginous joints between adjacent vertebral bodies from C2–C3 to C7–T1; they bear load, absorb shock and allow movement. There is no disc between the occiput and atlas or between the atlas and axis.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Anulus fibrosus (outer concentric lamellae of fibrocartilage binding the bodies); nucleus pulposus (gelatinous core, remnant of the notochord)"
+    },
+    {
+     "label": "Location",
+     "value": "Between the vertebral bodies of C2–C3, C3–C4, C4–C5, C5–C6, C6–C7 and C7–T1; thicker in front, contributing to cervical lordosis"
+    },
+    {
+     "label": "Relations",
+     "value": "Uncovertebral joints at the posterolateral margins; anterior longitudinal ligament in front; posterior longitudinal ligament and spinal cord behind; intervertebral foramen and spinal nerve posterolaterally"
+    },
+    {
+     "label": "Key features",
+     "value": "Avascular in the adult, nourished by diffusion through the vertebral end plates; only the outer anulus is innervated"
+    }
+   ],
+   "pearl": "Cervical disc herniation is most common at C5–C6 and C6–C7 and compresses the root numbered for the lower vertebra (C6 and C7 respectively); central herniation causes myelopathy.",
+   "depth": "deep",
+   "marker": {
+    "x": 655,
+    "y": 485
+   }
+  },
+  {
+   "id": "t1-vertebra",
+   "name": "T1 vertebra",
+   "category": "bone",
+   "group": "Cervical spine",
+   "function": "First thoracic vertebra, transitional between the neck and thorax; it carries the first rib, forms the back of the thoracic inlet and its spine is usually as prominent as that of C7.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Body (cervical-like, with uncinate processes; complete superior costal facet for the head of the 1st rib and an inferior demifacet for the 2nd); pedicles; laminae; transverse processes with transverse costal facets for the tubercle of the 1st rib; superior and inferior articular processes; long, nearly horizontal spinous process"
+    },
+    {
+     "label": "Articulates with",
+     "value": "C7 above and T2 below (discs and facet joints); head and tubercle of the 1st rib"
+    },
+    {
+     "label": "Relations",
+     "value": "Stellate (cervicothoracic) ganglion lies in front of the neck of the 1st rib beside the body; T1 anterior ramus crosses the neck of the 1st rib to join the brachial plexus; apex of the lung and subclavian vessels anterolaterally"
+    },
+    {
+     "label": "Attachments",
+     "value": "Longus colli (body); trapezius, rhomboid minor, serratus posterior superior and splenius (spinous process)"
+    }
+   ],
+   "pearl": "An apical (Pancoast) lung tumor invades the structures beside T1, giving shoulder and ulnar-side arm pain from the lower trunk and Horner syndrome from the stellate ganglion.",
+   "depth": "deep",
+   "marker": {
+    "x": 690,
+    "y": 830
+   }
+  },
+  {
+   "id": "clavicle",
+   "name": "Clavicle",
+   "category": "bone",
+   "group": "Landmarks & foramina",
+   "function": "S-shaped strut connecting the sternum to the scapula; it forms the anterior boundary of the root of the neck and the base of the posterior triangle and gives origin to sternocleidomastoid and trapezius.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Sternal (medial) end – sternoclavicular joint; shaft – medial two-thirds convex forward, lateral third concave forward; acromial (lateral) end – acromioclavicular joint"
+    },
+    {
+     "label": "Location",
+     "value": "Subcutaneous along its whole length at the junction of neck and thorax, above the 1st rib"
+    },
+    {
+     "label": "Attachments",
+     "value": "Clavicular head of sternocleidomastoid (upper surface of the medial third), sternohyoid (medial end), trapezius (lateral third), subclavius (inferior surface of the middle third), investing layer of deep cervical fascia and the omohyoid fascial sling; pectoralis major and deltoid in front"
+    },
+    {
+     "label": "Relations",
+     "value": "Subclavian vessels and trunks of the brachial plexus pass behind its middle third; supraclavicular nerves cross it; external jugular vein pierces the fascia just above it"
+    }
+   ],
+   "pearl": "The clavicle usually fractures at the junction of its middle and lateral thirds: sternocleidomastoid pulls the medial fragment up while the arm's weight drops the lateral fragment; subclavius protects the subclavian vessels.",
+   "depth": "superficial",
+   "marker": {
+    "x": 440,
+    "y": 900
+   }
+  }
+ ],
+ "refs": {
+  "squamous-part-of-temporal-bone": "Plate 13 (p. 68); Plate 15 (p. 70); Plate 18 (p. 73)",
+  "petrous-part-of-temporal-bone": "Plate 15 (p. 70); Plate 17 (p. 72); Plate 18 (p. 73); Plate 110 (p. 165)",
+  "tympanic-part-of-temporal-bone": "Plate 21 (p. 76); Plate 17 (p. 72)",
+  "greater-wing-of-sphenoid": "Plate 11 (p. 66); Plate 13 (p. 68); Plate 17 (p. 72); Plate 18 (p. 73)",
+  "lesser-wing-of-sphenoid": "Plate 11 (p. 66); Plate 15 (p. 70); Plate 18 (p. 73)",
+  "perpendicular-plate-of-ethmoid": "Plate 11 (p. 66); Plate 15 (p. 70); Plate 45 (p. 100)",
+  "orbital-plate-of-ethmoid": "Plate 11 (p. 66); Plate 13 (p. 68); Plate 21 (p. 76)",
+  "superior-and-middle-nasal-conchae": "Plate 15 (p. 70); Plate 43 (p. 98); Plate 44 (p. 99); Plate 52 (p. 107)",
+  "alveolar-process-of-maxilla": "Plate 11 (p. 66); Plate 13 (p. 68); Plate 23 (p. 78); Plate 50 (p. 105)",
+  "frontal-process-of-maxilla": "Plate 11 (p. 66); Plate 13 (p. 68); Plate 42 (p. 97); Plate 44 (p. 99)",
+  "zygomatic-process-of-maxilla": "Plate 11 (p. 66); Plate 17 (p. 72); Plate 50 (p. 105)",
+  "palatine-process-of-maxilla": "Plate 15 (p. 70); Plate 17 (p. 72); Plate 43 (p. 98); Plate 45 (p. 100)",
+  "horizontal-plate-of-palatine-bone": "Plate 15 (p. 70); Plate 17 (p. 72); Plate 23 (p. 78); Plate 73 (p. 128)",
+  "perpendicular-plate-of-palatine-bone": "Plate 15 (p. 70); Plate 44 (p. 99); Plate 45 (p. 100)",
+  "permanent-teeth": "Plate 73 (p. 128); Plate 74 (p. 129)",
+  "incisor-teeth": "Plate 73 (p. 128); Plate 74 (p. 129)",
+  "canine-teeth": "Plate 73 (p. 128); Plate 74 (p. 129)",
+  "premolar-teeth": "Plate 73 (p. 128); Plate 74 (p. 129)",
+  "molar-teeth": "Plate 73 (p. 128); Plate 74 (p. 129)",
+  "articular-disc-of-tmj": "Plate 25 (p. 80)",
+  "tmj-capsule-and-lateral-ligament": "Plate 25 (p. 80)",
+  "sphenomandibular-ligament": "Plate 25 (p. 80)",
+  "stylomandibular-ligament": "Plate 22 (p. 77); Plate 25 (p. 80)",
+  "stylohyoid-ligament": "Plate 22 (p. 77)",
+  "body-of-hyoid-bone": "Plate 22 (p. 77); Plate 90 (p. 145); Muscle table p. 220–223",
+  "greater-horn-of-hyoid-bone": "Plate 22 (p. 77); Plate 90 (p. 145)",
+  "lesser-horn-of-hyoid-bone": "Plate 22 (p. 77)",
+  "thyroid-cartilage-lamina": "Plate 90 (p. 145)",
+  "horns-of-thyroid-cartilage": "Plate 90 (p. 145)",
+  "arch-of-cricoid-cartilage": "Plate 90 (p. 145)",
+  "lamina-of-cricoid-cartilage": "Plate 90 (p. 145)",
+  "anterior-arch-of-atlas": "Plate 26 (p. 81); Plate 28 (p. 83)",
+  "posterior-arch-of-atlas": "Plate 26 (p. 81)",
+  "lateral-mass-of-atlas": "Plate 26 (p. 81); Plate 28 (p. 83)",
+  "dens-of-axis": "Plate 26 (p. 81); Plate 28 (p. 83); Plate 30 (p. 85)",
+  "cervical-vertebral-arch": "Plate 26 (p. 81); Plate 27 (p. 82); Plate BP34 (p. 273)",
+  "cervical-articular-processes-and-facet-joints": "Plate 27 (p. 82); Plate 28 (p. 83); Plate 29 (p. 84)",
+  "cervical-transverse-process": "Plate 27 (p. 82); Plate 28 (p. 83)",
+  "cervical-intervertebral-discs": "Plate 28 (p. 83); Plate BP34 (p. 273); Plate BP35 (p. 274)",
+  "t1-vertebra": "Plate 22 (p. 77); Plate 28 (p. 83); Plate 162 (p. 244); Plate 163 (p. 245)",
+  "clavicle": "Plates 32, 34, 36 (p. 87, 89, 91); Muscle tables p. 222–223; Plate BP34 (p. 273)"
+ }
+}

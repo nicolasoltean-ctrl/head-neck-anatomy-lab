@@ -21,6 +21,10 @@
       {
         "label": "Relations",
         "value": "Deep cervical lymph node chain along its length; ansa cervicalis on its anterior surface; accessory nerve crosses it near the posterior belly of digastric"
+      },
+      {
+        "label": "Divisions",
+        "value": "Superior bulb (in the jugular fossa, receives the sigmoid sinus); inferior bulb (dilation above the union with the subclavian vein, valve above it)"
       }
     ],
     "pearl": "Central line: insert at apex of the triangle between the SCM heads, aiming toward the ipsilateral nipple; IJV lies lateral to the carotid. Lemierre syndrome = septic IJV thrombophlebitis (Fusobacterium) after pharyngitis.",
@@ -196,6 +200,10 @@
       {
         "label": "Relations",
         "value": "Left brachiocephalic vein lies anterior to the brachiocephalic trunk and left common carotid; thymus and manubrium anterior"
+      },
+      {
+        "label": "Divisions",
+        "value": "Right brachiocephalic vein (short, vertical); left brachiocephalic vein (long, crosses behind the manubrium, receives the inferior thyroid veins)"
       }
     ],
     "pearl": "The left brachiocephalic vein may lie above the sternal notch in children, placing it at risk during tracheostomy. It is compressed by mediastinal masses in SVC syndrome.",
@@ -336,6 +344,10 @@
       {
         "label": "Relations",
         "value": "No valves, so blood flows either way depending on pressure"
+      },
+      {
+        "label": "Divisions",
+        "value": "Superior ophthalmic vein (roof of orbit, through the superior orbital fissure to the cavernous sinus); inferior ophthalmic vein (floor of orbit, to the cavernous sinus and pterygoid plexus)"
       }
     ],
     "pearl": "Carotid-cavernous fistula causes arterialized flow into the superior ophthalmic vein: pulsatile proptosis, chemosis, orbital bruit. A dilated superior ophthalmic vein on CT/MRI is the classic sign.",
@@ -476,6 +488,10 @@
       {
         "label": "Relations",
         "value": "Parotid gland layers from superficial to deep: facial nerve, retromandibular vein, external carotid artery"
+      },
+      {
+        "label": "Divisions",
+        "value": "Anterior division (branch): joins the facial vein to form the common facial vein; posterior division (branch): joins the posterior auricular vein to form the external jugular vein"
       }
     ],
     "pearl": "Surgical landmark in parotidectomy: the facial nerve lies just superficial to the retromandibular vein, so the vein marks the plane separating the superficial from the deep lobe of the gland.",
@@ -546,6 +562,10 @@
       {
         "label": "Relations",
         "value": "Lies with the auriculotemporal nerve behind the superficial temporal artery; anastomoses freely with supraorbital and posterior auricular veins"
+      },
+      {
+        "label": "Divisions",
+        "value": "Frontal branch (forehead and anterior scalp); parietal branch (vertex and lateral scalp)"
       }
     ],
     "pearl": "Scalp lacerations over the temple bleed heavily because the richly anastomotic veins and arteries are held open by the dense connective tissue layer; direct pressure and suturing stop it.",
@@ -686,6 +706,10 @@
       {
         "label": "Relations",
         "value": "Accompany the supratrochlear and supraorbital nerves and arteries"
+      },
+      {
+        "label": "Divisions",
+        "value": "Supratrochlear vein (medial forehead, descends near the midline); supraorbital vein (lateral forehead, passes the supraorbital margin)"
       }
     ],
     "pearl": "Forehead cellulitis or an infected scalp wound can reach the cavernous sinus through the supraorbital-superior ophthalmic connection; the frontal diploic vein links them to the bone and dural sinuses.",
@@ -826,6 +850,10 @@
       {
         "label": "Relations",
         "value": "Deep cervical vein joins it; lies anterior to the vertebral artery in the lower neck"
+      },
+      {
+        "label": "Divisions",
+        "value": "Venous plexus around the vertebral artery (in the transverse foramina); vertebral vein proper (single trunk below C6); anterior vertebral vein (with the ascending cervical artery); accessory vertebral vein (through the C7 transverse foramen); deep cervical vein (from the suboccipital region, joins near termination)"
       }
     ],
     "pearl": "Part of Batson's valveless vertebral venous plexus, linked to the intracranial sinuses via the condylar emissary vein: retrograde flow with raised intrathoracic or abdominal pressure lets prostate and breast cancer seed the vertebrae and skull base, and lets infection spread to the spine or dural sinuses.",
@@ -861,6 +889,10 @@
       {
         "label": "Relations",
         "value": "No valves, so flow reverses with raised intrathoracic or intra-abdominal pressure (coughing, straining, Valsalva)"
+      },
+      {
+        "label": "Divisions",
+        "value": "Internal vertebral (epidural) venous plexus (anterior and posterior, inside the vertebral canal); external vertebral venous plexus (anterior on the bodies, posterior on the arches); basivertebral veins (from the vertebral bodies into the anterior internal plexus); intervertebral veins (through the intervertebral foramina to the vertebral and segmental veins)"
       }
     ],
     "pearl": "Batson plexus explains hematogenous spread of prostate (and breast) cancer to the vertebral bodies and skull without lung metastases, and spread of pelvic/urinary infection to the spine (vertebral osteomyelitis, epidural abscess).",
@@ -966,6 +998,10 @@
       {
         "label": "Relations",
         "value": "Right transverse sinus is usually the larger, continuing the superior sagittal sinus; sigmoid sinus lies just behind the mastoid air cells and the facial nerve canal"
+      },
+      {
+        "label": "Divisions",
+        "value": "Transverse sinus (in the attached margin of the tentorium cerebelli, from the confluence to the petrous base); sigmoid sinus (continuation of the transverse sinus, S-shaped groove to the jugular foramen)"
       }
     ],
     "pearl": "Mastoiditis or otitis media can erode into the sigmoid sinus causing septic lateral sinus thrombosis (Griesinger sign: mastoid edema). The sinus is at risk in mastoidectomy and posterior fossa craniotomy.",
@@ -1036,6 +1072,10 @@
       {
         "label": "Relations",
         "value": "Great cerebral vein lies in the quadrigeminal cistern above the pineal gland and superior colliculi"
+      },
+      {
+        "label": "Divisions",
+        "value": "Great cerebral vein (of Galen) (short midline trunk formed by the two internal cerebral veins, receives the basal veins); straight sinus (in the junction of falx cerebri and tentorium cerebelli, formed by the great cerebral vein and inferior sagittal sinus)"
       }
     ],
     "pearl": "Vein of Galen malformation in neonates causes high-output heart failure, cranial bruit and hydrocephalus. Deep cerebral venous thrombosis causes bilateral thalamic edema with depressed consciousness.",
@@ -1071,6 +1111,10 @@
       {
         "label": "Relations",
         "value": "Connect the loose areolar (danger) layer of the scalp to the sinuses"
+      },
+      {
+        "label": "Divisions",
+        "value": "Parietal emissary vein (parietal foramen, to superior sagittal sinus); mastoid emissary vein (mastoid foramen, to sigmoid sinus); occipital emissary vein (near the external occipital protuberance, to the confluence of sinuses); condylar emissary vein (condylar canal, to sigmoid sinus); sphenoidal emissary vein of Vesalius (sphenoidal emissary foramen, cavernous sinus to pterygoid plexus); emissary vein of the foramen cecum (to superior sagittal sinus)"
       }
     ],
     "pearl": "Infection in the loose connective tissue layer of the scalp spreads via emissary veins to the dural sinuses and meninges (osteomyelitis, sinus thrombosis, meningitis); hence the scalp 'danger area'.",
@@ -1106,6 +1150,10 @@
       {
         "label": "Relations",
         "value": "Become prominent on skull X-ray as branching lucencies; connect with emissary veins"
+      },
+      {
+        "label": "Divisions",
+        "value": "Frontal diploic vein (to supraorbital vein and superior sagittal sinus); anterior temporal diploic vein (to sphenoparietal sinus and deep temporal veins); posterior temporal diploic vein (to transverse sinus); occipital diploic vein (to occipital vein or transverse sinus)"
       }
     ],
     "pearl": "Osteomyelitis of the frontal bone from sinusitis (Pott puffy tumor) spreads via diploic veins to cause subperiosteal abscess, epidural abscess and superior sagittal sinus thrombosis.",
@@ -1409,6 +1457,10 @@
       {
         "label": "Relations",
         "value": "Immediately above and around the pituitary gland, below the optic chiasm; crossed during transsphenoidal surgery"
+      },
+      {
+        "label": "Divisions",
+        "value": "Anterior intercavernous sinus (in front of the infundibulum); posterior intercavernous sinus (behind the infundibulum, continuous with the basilar venous plexus)"
       }
     ],
     "pearl": "Because the two cavernous sinuses communicate through these channels, septic thrombosis that starts on one side (danger triangle, sinusitis) commonly becomes bilateral within days; the anterior intercavernous sinus is the usual source of venous bleeding when the dura of the sella is opened in transsphenoidal pituitary surgery.",
@@ -1471,6 +1523,10 @@
       {
         "label": "Relations",
         "value": "Usually one is dominant; the vein of Labbé is typically the larger on the dominant (left) hemisphere"
+      },
+      {
+        "label": "Divisions",
+        "value": "Superior anastomotic vein (of Trolard) (superficial middle cerebral vein to superior sagittal sinus); inferior anastomotic vein (of Labbé) (superficial middle cerebral vein to transverse sinus)"
       }
     ],
     "pearl": "The vein of Labbé is the main venous outflow of the temporal lobe: sacrificing it during temporal craniotomy or thrombosing it with transverse sinus thrombosis causes temporal lobe venous infarction with aphasia (left) and hemorrhage; bridging veins like these tear in subdural hematoma.",
@@ -1502,6 +1558,10 @@
       {
         "label": "Relations",
         "value": "Internal cerebral veins lie above the thalamus and below the fornix; the basal vein accompanies the posterior cerebral artery around the midbrain"
+      },
+      {
+        "label": "Divisions",
+        "value": "Internal cerebral vein (right and left, in the roof of the 3rd ventricle; formed by the superior thalamostriate, superior choroid and septum pellucidum veins); basal vein (of Rosenthal) (around the cerebral crus; formed by the anterior cerebral, deep middle cerebral and inferior thalamostriate veins)"
       }
     ],
     "pearl": "Deep cerebral venous thrombosis (internal cerebral veins, vein of Galen, straight sinus) causes bilateral thalamic edema with coma, decreased consciousness and no lateralizing signs; look for the hyperdense vein and thalamic hypodensity on CT in a hypercoagulable or postpartum patient. A vein of Galen malformation presents in neonates with high-output heart failure and a cranial bruit.",
@@ -1750,6 +1810,10 @@
       {
         "label": "Relations",
         "value": "Pituitary hormones therefore enter the systemic circulation through the cavernous and inferior petrosal sinuses"
+      },
+      {
+        "label": "Divisions",
+        "value": "Primary plexus of the hypophyseal portal system (infundibulum and median eminence); portal veins of hypophysis (down the stalk); secondary plexus of the hypophyseal portal system (anterior lobe); capillary plexus of the infundibular process (posterior lobe); efferent hypophyseal veins (to the cavernous sinus)"
       }
     ],
     "pearl": "Inferior petrosal sinus sampling after CRH stimulation reads this venous outflow: a central-to-peripheral ACTH gradient (>2 basal or >3 after CRH) confirms Cushing disease and distinguishes it from ectopic ACTH when the MRI is equivocal. Pituitary stalk transection (trauma, surgery) interrupts the portal veins and causes anterior hypopituitarism with hyperprolactinemia.",
@@ -1757,6 +1821,661 @@
     "marker": {
       "x": 470,
       "y": 330
+    }
+  },
+  {
+    "id": "anterior-division-of-retromandibular-vein",
+    "name": "Anterior division (branch) of retromandibular vein",
+    "category": "vein",
+    "group": "Facial & deep face",
+    "function": "Anterior of the two terminal branches of the retromandibular vein; it carries blood from the superficial temporal and maxillary territories forward to the facial vein and so into the internal jugular vein.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Arises where the retromandibular vein divides at the lower pole of the parotid gland, near the angle of the mandible"
+      },
+      {
+        "label": "Course",
+        "value": "Runs forward and downward below the angle of the mandible, superficial to the external carotid artery"
+      },
+      {
+        "label": "Drains into",
+        "value": "Joins the facial vein to form the common facial vein, which ends in the internal jugular vein"
+      },
+      {
+        "label": "Relations",
+        "value": "Emerges from the lower pole of the parotid; lies near the marginal mandibular and cervical branches of the facial nerve and the submandibular gland"
+      }
+    ],
+    "pearl": "The divisions decide where parotid and scalp blood ends up: anterior division to the internal jugular system, posterior division to the external jugular vein.",
+    "depth": "deep",
+    "marker": {
+      "x": 575,
+      "y": 480
+    }
+  },
+  {
+    "id": "posterior-division-of-retromandibular-vein",
+    "name": "Posterior division (branch) of retromandibular vein",
+    "category": "vein",
+    "group": "Facial & deep face",
+    "function": "Posterior of the two terminal branches of the retromandibular vein; it unites with the posterior auricular vein to form the external jugular vein.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Arises where the retromandibular vein divides at the lower pole of the parotid gland, near the angle of the mandible"
+      },
+      {
+        "label": "Course",
+        "value": "Passes backward and downward from the parotid onto the surface of the sternocleidomastoid muscle"
+      },
+      {
+        "label": "Drains into",
+        "value": "Joins the posterior auricular vein to form the external jugular vein"
+      },
+      {
+        "label": "Relations",
+        "value": "Lower pole of the parotid gland, angle of the mandible, great auricular nerve on sternocleidomastoid"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 575,
+      "y": 480
+    }
+  },
+  {
+    "id": "superior-bulb-of-internal-jugular-vein",
+    "name": "Superior bulb of internal jugular vein",
+    "category": "vein",
+    "group": "Jugular system",
+    "function": "Dilated beginning of the internal jugular vein in the jugular fossa, where it receives the sigmoid sinus; it lies directly beneath the floor of the middle ear.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Continuation of the sigmoid sinus at the jugular foramen; the inferior petrosal sinus joins at or just below it"
+      },
+      {
+        "label": "Course",
+        "value": "Occupies the jugular fossa of the temporal bone in the posterior part of the jugular foramen, then continues down as the internal jugular vein in the carotid sheath"
+      },
+      {
+        "label": "Drains into",
+        "value": "Internal jugular vein"
+      },
+      {
+        "label": "Relations",
+        "value": "Floor of the tympanic cavity above; CN IX, X and XI leave the jugular foramen anteromedial to it; internal carotid artery in front"
+      }
+    ],
+    "pearl": "A high or dehiscent jugular bulb appears as a blue mass behind the tympanic membrane and causes pulsatile tinnitus; glomus jugulare tumors arise in its wall and can produce jugular foramen syndrome (CN IX, X, XI palsies).",
+    "depth": "deep",
+    "marker": {
+      "x": 540,
+      "y": 405
+    }
+  },
+  {
+    "id": "inferior-bulb-of-internal-jugular-vein",
+    "name": "Inferior bulb of internal jugular vein",
+    "category": "vein",
+    "group": "Jugular system",
+    "function": "Dilation at the lower end of the internal jugular vein just above its union with the subclavian vein; a bicuspid valve above it limits reflux of blood toward the head.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Lower end of the internal jugular vein; the external jugular and vertebral veins end close by"
+      },
+      {
+        "label": "Course",
+        "value": "Lies deep to the interval between the sternal and clavicular heads of sternocleidomastoid (lesser supraclavicular fossa), behind the medial end of the clavicle"
+      },
+      {
+        "label": "Drains into",
+        "value": "Joins the subclavian vein at the venous angle to form the brachiocephalic vein"
+      },
+      {
+        "label": "Relations",
+        "value": "Common carotid artery and vagus nerve medial; cervical pleura and first part of the subclavian artery behind; thoracic duct (left) or right lymphatic duct enters at the angle"
+      }
+    ],
+    "pearl": "Target of the low (central) approach to internal jugular catheterization between the two heads of sternocleidomastoid; the nearby pleura and, on the left, the thoracic duct are at risk.",
+    "depth": "deep",
+    "marker": {
+      "x": 500,
+      "y": 975
+    }
+  },
+  {
+    "id": "superior-labial-vein",
+    "name": "Superior labial vein",
+    "category": "vein",
+    "group": "Facial & deep face",
+    "function": "Drains the upper lip and adjacent nasal septum and ala into the facial vein.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Venous network of the upper lip; communicates across the midline and with the external nasal veins"
+      },
+      {
+        "label": "Course",
+        "value": "Runs laterally in the upper lip with the superior labial artery, between orbicularis oris and the mucosa"
+      },
+      {
+        "label": "Drains into",
+        "value": "Facial vein near the angle of the mouth"
+      },
+      {
+        "label": "Relations",
+        "value": "Superior labial artery, orbicularis oris, labial glands"
+      }
+    ],
+    "pearl": "Lies in the danger triangle of the face: infection of the upper lip and nose can reach the cavernous sinus through the valveless facial, angular and ophthalmic veins.",
+    "depth": "superficial",
+    "marker": {
+      "x": 370,
+      "y": 520
+    }
+  },
+  {
+    "id": "inferior-labial-vein",
+    "name": "Inferior labial vein",
+    "category": "vein",
+    "group": "Facial & deep face",
+    "function": "Drains the lower lip into the facial vein.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Venous network of the lower lip; communicates with the mental vein and the vein of the opposite side"
+      },
+      {
+        "label": "Course",
+        "value": "Runs laterally in the lower lip with the inferior labial artery"
+      },
+      {
+        "label": "Drains into",
+        "value": "Facial vein below the angle of the mouth"
+      },
+      {
+        "label": "Relations",
+        "value": "Inferior labial artery, orbicularis oris, depressor anguli oris"
+      }
+    ],
+    "pearl": "",
+    "depth": "superficial",
+    "marker": {
+      "x": 370,
+      "y": 520
+    }
+  },
+  {
+    "id": "external-palatine-vein",
+    "name": "External palatine (paratonsillar) vein",
+    "category": "vein",
+    "group": "Facial & deep face",
+    "function": "Drains the soft palate and the tonsillar bed downward across the lateral surface of the palatine tonsil to the facial vein or pharyngeal venous plexus.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Veins of the soft palate and palatine tonsil"
+      },
+      {
+        "label": "Course",
+        "value": "Descends from the soft palate on the lateral surface of the tonsillar capsule, then pierces the superior pharyngeal constrictor"
+      },
+      {
+        "label": "Drains into",
+        "value": "Facial vein (or the pharyngeal venous plexus)"
+      },
+      {
+        "label": "Relations",
+        "value": "Tonsillar bed (superior constrictor), palatine tonsil, tonsillar branch of the facial artery"
+      }
+    ],
+    "pearl": "The usual source of venous bleeding after tonsillectomy, because it runs in the tonsillar bed just lateral to the capsule.",
+    "depth": "deep",
+    "marker": {
+      "x": 425,
+      "y": 455
+    }
+  },
+  {
+    "id": "superior-ophthalmic-vein",
+    "name": "Superior ophthalmic vein",
+    "category": "vein",
+    "group": "Facial & deep face",
+    "function": "Main vein of the orbit: drains the eyeball, upper orbit and eyelids backward into the cavernous sinus and communicates in front with the angular vein, linking the face to the intracranial sinuses.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Begins at the medial angle of the orbit from the nasofrontal vein (from the supraorbital, supratrochlear and angular veins); receives the superior vorticose veins, central retinal vein, lacrimal and ethmoidal veins"
+      },
+      {
+        "label": "Course",
+        "value": "Runs backward with the ophthalmic artery beneath the superior rectus, crosses above the optic nerve and leaves through the superior orbital fissure"
+      },
+      {
+        "label": "Drains into",
+        "value": "Cavernous sinus"
+      },
+      {
+        "label": "Relations",
+        "value": "Valveless; passes through the superior orbital fissure outside (above) the common tendinous ring"
+      }
+    ],
+    "pearl": "A dilated superior ophthalmic vein on CT or MRI with pulsatile proptosis, chemosis and an orbital bruit indicates a carotid-cavernous fistula; the vein also carries facial infection to the cavernous sinus.",
+    "depth": "deep",
+    "marker": {
+      "x": 390,
+      "y": 318
+    }
+  },
+  {
+    "id": "inferior-ophthalmic-vein",
+    "name": "Inferior ophthalmic vein",
+    "category": "vein",
+    "group": "Facial & deep face",
+    "function": "Drains the floor of the orbit, the inferior extraocular muscles and the lower part of the eyeball to the cavernous sinus, with a communication to the pterygoid venous plexus.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Venous network on the floor and medial wall of the orbit; receives the inferior vorticose veins and veins of the inferior rectus, inferior oblique and lower eyelid"
+      },
+      {
+        "label": "Course",
+        "value": "Runs backward on the inferior rectus along the floor of the orbit"
+      },
+      {
+        "label": "Drains into",
+        "value": "Cavernous sinus, directly or by joining the superior ophthalmic vein; a branch passes through the inferior orbital fissure to the pterygoid plexus"
+      },
+      {
+        "label": "Relations",
+        "value": "Valveless; inferior rectus, infraorbital vessels and nerve, inferior orbital fissure"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 390,
+      "y": 318
+    }
+  },
+  {
+    "id": "central-retinal-vein",
+    "name": "Central retinal vein",
+    "category": "vein",
+    "group": "Facial & deep face",
+    "function": "Sole venous drainage of the inner retina: the retinal venules converge on the optic disc and leave the eye within the optic nerve.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Superior and inferior nasal, temporal and macular retinal venules, uniting at the optic disc"
+      },
+      {
+        "label": "Course",
+        "value": "Runs in the optic nerve alongside the central retinal artery, then leaves the nerve behind the eyeball and crosses the subarachnoid space"
+      },
+      {
+        "label": "Drains into",
+        "value": "Superior ophthalmic vein or directly into the cavernous sinus"
+      },
+      {
+        "label": "Relations",
+        "value": "Central retinal artery within the optic nerve and lamina cribrosa of the sclera"
+      }
+    ],
+    "pearl": "Central retinal vein occlusion causes sudden painless monocular vision loss with diffuse retinal hemorrhages, dilated tortuous veins and disc edema (blood and thunder fundus); raised intracranial pressure compresses the vein and abolishes venous pulsation, contributing to papilledema.",
+    "depth": "deep",
+    "marker": {
+      "x": 390,
+      "y": 318
+    }
+  },
+  {
+    "id": "deep-cervical-vein",
+    "name": "Deep cervical vein",
+    "category": "vein",
+    "group": "Thyroid & vertebral",
+    "function": "Drains the suboccipital region and the deep muscles of the back of the neck, accompanying the deep cervical artery down to the vertebral vein.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Suboccipital venous plexus, occipital vein and veins of the deep posterior neck muscles; communicates with the venous plexus around the vertebral artery"
+      },
+      {
+        "label": "Course",
+        "value": "Descends between semispinalis capitis and semispinalis cervicis, then passes forward between the C7 transverse process and the neck of the first rib"
+      },
+      {
+        "label": "Drains into",
+        "value": "Lower end of the vertebral vein (or the brachiocephalic vein)"
+      },
+      {
+        "label": "Relations",
+        "value": "Deep cervical artery, semispinalis muscles, costocervical trunk"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 700,
+      "y": 760
+    }
+  },
+  {
+    "id": "transverse-sinus",
+    "name": "Transverse sinus",
+    "category": "vein",
+    "group": "Dural sinuses & emissary",
+    "function": "Paired dural sinus that carries blood from the confluence of sinuses laterally along the occipital bone to the sigmoid sinus; the right usually continues the superior sagittal sinus and the left the straight sinus.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Begins at the confluence of sinuses; receives the superior petrosal sinus, inferior cerebral veins, inferior anastomotic vein (of Labbé), inferior cerebellar veins and diploic veins"
+      },
+      {
+        "label": "Course",
+        "value": "Runs laterally and forward in the attached margin of the tentorium cerebelli, in the groove for the transverse sinus of the occipital bone, to the base of the petrous temporal bone"
+      },
+      {
+        "label": "Drains into",
+        "value": "Continues as the sigmoid sinus where the superior petrosal sinus joins"
+      },
+      {
+        "label": "Relations",
+        "value": "Tentorium cerebelli; occipital lobe above and cerebellum below; the right sinus is usually the larger"
+      }
+    ],
+    "pearl": "Transverse sinus thrombosis (often from otitis media or mastoiditis, or in hypercoagulable states) presents with headache and papilledema and can cause temporal lobe venous infarction through the vein of Labbé; a hypoplastic left sinus is a common normal variant on MR venography.",
+    "depth": "deep",
+    "marker": {
+      "x": 720,
+      "y": 380
+    }
+  },
+  {
+    "id": "sigmoid-sinus",
+    "name": "Sigmoid sinus",
+    "category": "vein",
+    "group": "Dural sinuses & emissary",
+    "function": "S-shaped continuation of the transverse sinus that descends behind the mastoid to the jugular foramen, where it becomes the internal jugular vein; the final common pathway for most intracranial venous blood.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Continuation of the transverse sinus; receives the mastoid and condylar emissary veins"
+      },
+      {
+        "label": "Course",
+        "value": "Curves downward and medially in the sigmoid groove of the temporal and occipital bones, then turns forward to the posterior part of the jugular foramen"
+      },
+      {
+        "label": "Drains into",
+        "value": "Superior bulb of the internal jugular vein"
+      },
+      {
+        "label": "Relations",
+        "value": "Mastoid air cells and mastoid antrum laterally (thin plate of bone between); cerebellum medially; facial canal in front"
+      }
+    ],
+    "pearl": "Mastoiditis or chronic otitis media can erode into the sinus and cause septic sigmoid (lateral) sinus thrombosis: spiking fevers, headache and edema over the mastoid from thrombosis of the mastoid emissary vein (Griesinger sign). The sinus is at risk in mastoidectomy.",
+    "depth": "deep",
+    "marker": {
+      "x": 720,
+      "y": 380
+    }
+  },
+  {
+    "id": "parietal-emissary-vein",
+    "name": "Parietal emissary vein",
+    "category": "vein",
+    "group": "Dural sinuses & emissary",
+    "function": "Valveless vein passing through the parietal foramen to connect the veins of the scalp with the superior sagittal sinus.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Scalp veins near the vertex (tributaries of the superficial temporal and occipital veins)"
+      },
+      {
+        "label": "Course",
+        "value": "Passes through the parietal foramen beside the sagittal suture, just in front of lambda"
+      },
+      {
+        "label": "Drains into",
+        "value": "Superior sagittal sinus (flow may run in either direction)"
+      },
+      {
+        "label": "Relations",
+        "value": "Loose areolar tissue layer of the scalp, parietal bone, sagittal suture"
+      }
+    ],
+    "pearl": "Scalp infection in the loose areolar (danger) layer can spread through it to the superior sagittal sinus, causing sinus thrombosis or meningitis.",
+    "depth": "deep",
+    "marker": {
+      "x": 580,
+      "y": 75
+    }
+  },
+  {
+    "id": "mastoid-emissary-vein",
+    "name": "Mastoid emissary vein",
+    "category": "vein",
+    "group": "Dural sinuses & emissary",
+    "function": "Valveless vein passing through the mastoid foramen to connect the sigmoid sinus with the veins behind the ear.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Sigmoid sinus"
+      },
+      {
+        "label": "Course",
+        "value": "Passes through the mastoid foramen behind the mastoid process, accompanied by a meningeal branch of the occipital artery"
+      },
+      {
+        "label": "Drains into",
+        "value": "Posterior auricular vein or occipital vein (flow may run in either direction)"
+      },
+      {
+        "label": "Relations",
+        "value": "Mastoid process, occipitomastoid suture, occipital artery"
+      }
+    ],
+    "pearl": "Edema and tenderness over the mastoid from thrombosis of this vein (Griesinger sign) points to septic sigmoid sinus thrombosis complicating mastoiditis; it bleeds briskly in retrosigmoid craniotomy.",
+    "depth": "deep",
+    "marker": {
+      "x": 650,
+      "y": 410
+    }
+  },
+  {
+    "id": "occipital-emissary-vein",
+    "name": "Occipital emissary vein",
+    "category": "vein",
+    "group": "Dural sinuses & emissary",
+    "function": "Inconstant valveless vein through the occipital bone near the external occipital protuberance, connecting the confluence of sinuses with the occipital vein.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Confluence of sinuses; also receives the occipital diploic vein"
+      },
+      {
+        "label": "Course",
+        "value": "Passes through a small foramen in the squamous part of the occipital bone at the external occipital protuberance"
+      },
+      {
+        "label": "Drains into",
+        "value": "Occipital vein (flow may run in either direction)"
+      },
+      {
+        "label": "Relations",
+        "value": "External occipital protuberance, occipital artery, greater occipital nerve"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 815,
+      "y": 345
+    }
+  },
+  {
+    "id": "condylar-emissary-vein",
+    "name": "Condylar emissary vein",
+    "category": "vein",
+    "group": "Dural sinuses & emissary",
+    "function": "Inconstant valveless vein passing through the condylar canal to connect the sigmoid sinus with the suboccipital and vertebral venous plexuses.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Lower end of the sigmoid sinus (or superior bulb of the internal jugular vein)"
+      },
+      {
+        "label": "Course",
+        "value": "Passes through the condylar canal, which opens in the condylar fossa behind the occipital condyle"
+      },
+      {
+        "label": "Drains into",
+        "value": "Suboccipital venous plexus, venous plexus around the vertebral artery and deep cervical vein"
+      },
+      {
+        "label": "Relations",
+        "value": "Occipital condyle, atlantooccipital joint, vertebral artery; a meningeal branch of the ascending pharyngeal artery shares the canal"
+      }
+    ],
+    "pearl": "Links the dural sinuses to the valveless vertebral venous plexus, an alternative outflow of the brain in the upright position and a route for spread of infection or tumor.",
+    "depth": "deep",
+    "marker": {
+      "x": 700,
+      "y": 760
+    }
+  },
+  {
+    "id": "petrosal-vein",
+    "name": "Petrosal vein",
+    "category": "vein",
+    "group": "Dural sinuses & emissary",
+    "function": "Short, large vein in the cerebellopontine angle that collects the veins of the pons and the anterior cerebellum and empties into the superior petrosal sinus.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Transverse and lateral pontine veins, anterior pontomesencephalic vein, vein of the lateral recess of the 4th ventricle and cerebellar hemispheric veins"
+      },
+      {
+        "label": "Course",
+        "value": "Runs forward and laterally in the cerebellopontine angle cistern to the petrous ridge"
+      },
+      {
+        "label": "Drains into",
+        "value": "Superior petrosal sinus"
+      },
+      {
+        "label": "Relations",
+        "value": "Trigeminal nerve root just medial and below; facial and vestibulocochlear nerves behind; tentorium cerebelli above"
+      }
+    ],
+    "pearl": "Encountered next to the trigeminal root in microvascular decompression for trigeminal neuralgia and in cerebellopontine angle surgery; sacrificing it can cause venous infarction of the cerebellum or brainstem.",
+    "depth": "deep",
+    "marker": {
+      "x": 560,
+      "y": 345
+    }
+  },
+  {
+    "id": "inferior-cerebral-veins",
+    "name": "Inferior cerebral veins",
+    "category": "vein",
+    "group": "Dural sinuses & emissary",
+    "function": "Superficial veins draining the inferior surface of the hemisphere and the lower lateral cortex into the dural sinuses at the base of the skull.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Cortical veins of the orbital surface of the frontal lobe and the inferior surfaces of the temporal and occipital lobes; lie beneath the arachnoid"
+      },
+      {
+        "label": "Course",
+        "value": "Run across the inferior surface of the hemisphere toward the nearest basal sinus"
+      },
+      {
+        "label": "Drains into",
+        "value": "Transverse, superior petrosal, cavernous and sphenoparietal sinuses; some join the basal vein (of Rosenthal) or the superficial middle cerebral vein"
+      },
+      {
+        "label": "Relations",
+        "value": "Tentorium cerebelli and floor of the anterior and middle cranial fossae"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 470,
+      "y": 330
+    }
+  },
+  {
+    "id": "deep-middle-cerebral-vein",
+    "name": "Deep middle cerebral vein",
+    "category": "vein",
+    "group": "Dural sinuses & emissary",
+    "function": "Drains the insula and the deep part of the lateral sulcus and is one of the roots of the basal vein (of Rosenthal).",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Insular veins in the floor of the lateral (sylvian) sulcus"
+      },
+      {
+        "label": "Course",
+        "value": "Runs medially in the depth of the lateral sulcus with the middle cerebral artery to the anterior perforated substance"
+      },
+      {
+        "label": "Drains into",
+        "value": "Joins the anterior cerebral vein and inferior thalamostriate veins to form the basal vein (of Rosenthal)"
+      },
+      {
+        "label": "Relations",
+        "value": "Insula, middle cerebral artery, optic tract and uncus"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 470,
+      "y": 330
+    }
+  },
+  {
+    "id": "veins-of-posterior-cranial-fossa",
+    "name": "Veins of posterior cranial fossa (cerebellar and brain stem veins)",
+    "category": "vein",
+    "group": "Dural sinuses & emissary",
+    "function": "Veins of the cerebellum and brain stem, which leave the posterior fossa in three directions: upward to the great cerebral vein, forward to the petrosal vein and superior petrosal sinus, and backward to the straight and transverse sinuses.",
+    "details": [
+      {
+        "label": "Formed by / tributaries",
+        "value": "Cortical veins of the cerebellar vermis and hemispheres and the surface veins of the midbrain, pons and medulla, continuous below with the anterior and posterior spinal veins"
+      },
+      {
+        "label": "Course",
+        "value": "Lie on the surfaces of the cerebellum and brain stem in the subarachnoid cisterns; they do not follow the arteries"
+      },
+      {
+        "label": "Drains into",
+        "value": "Great cerebral vein (of Galen) and basal vein; petrosal vein to the superior petrosal sinus; straight sinus, transverse sinuses and confluence of sinuses"
+      },
+      {
+        "label": "Relations",
+        "value": "Tentorium cerebelli above, falx cerebelli and occipital sinus behind, cranial nerves V to XII in the cisterns"
+      },
+      {
+        "label": "Divisions",
+        "value": "Superior group (to the great cerebral vein and basal vein): precentral cerebellar vein, superior vermian vein with preculminate and intraculminate veins, superior cerebellar vein, posterior and lateral mesencephalic veins; anterior group (to the petrosal vein and superior petrosal sinus): anterior pontomesencephalic vein, transverse and lateral pontine veins, anteromedian medullary vein, vein of the lateral recess of the 4th ventricle; posterior group (to the straight and transverse sinuses): inferior vermian vein, inferior cerebellar hemispheric veins, superior and inferior retrotonsillar veins"
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 690,
+      "y": 280
     }
   }
 ]

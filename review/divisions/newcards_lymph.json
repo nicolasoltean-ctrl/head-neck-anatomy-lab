@@ -1,0 +1,138 @@
+{
+ "cards": [
+  {
+   "id": "superior-deep-lateral-cervical-nodes",
+   "name": "Superior deep lateral cervical nodes",
+   "category": "lymph",
+   "group": "Deep cervical chain",
+   "function": "Upper half of the deep cervical chain along the internal jugular vein, from the skull base to the omohyoid crossing; the first deep station for the tonsil, tongue, pharynx and the superficial ring of the head.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Along the upper internal jugular vein deep to sternocleidomastoid, from below the posterior belly of digastric and the skull base down to the juguloomohyoid node, with the accessory nerve crossing the top of the group"
+    },
+    {
+     "label": "Divisions",
+     "value": "Jugulodigastric node (largest, where the posterior belly of digastric crosses the vein); remaining superior deep lateral nodes along the vein down to the juguloomohyoid node"
+    },
+    {
+     "label": "Drains",
+     "value": "Palatine tonsil, tongue and pharynx (with the retropharyngeal nodes), and efferents of the parotid, mastoid, occipital, facial, submandibular and submental nodes"
+    },
+    {
+     "label": "Efferents to",
+     "value": "Juguloomohyoid node and inferior deep lateral cervical nodes, then the jugular trunk"
+    },
+    {
+     "label": "Level",
+     "value": "II and upper III (level terms are surgical, not atlas labels)"
+    }
+   ],
+   "pearl": "These are the nodes palpated along the anterior border of sternocleidomastoid during a neck examination; a persistent firm upper jugular node in an adult warrants a search for an oropharyngeal, nasopharyngeal or oral primary.",
+   "depth": "deep",
+   "marker": {
+    "x": 580,
+    "y": 540
+   }
+  },
+  {
+   "id": "nasolabial-nodes",
+   "name": "Nasolabial nodes (facial nodes)",
+   "category": "lymph",
+   "group": "Superficial ring (pericervical collar)",
+   "function": "Uppermost subgroup of the facial nodes, beside the nose along the facial vessels; filters lymph from the nose, medial cheek and upper lip on its way to the submandibular nodes.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "In the nasolabial groove beside the ala of the nose, along the facial vein, above the buccinator nodes"
+    },
+    {
+     "label": "Drains",
+     "value": "Side of the nose, medial cheek, upper lip, medial eyelids"
+    },
+    {
+     "label": "Efferents to",
+     "value": "Buccinator and mandibular nodes, then the submandibular nodes (level IB)"
+    },
+    {
+     "label": "Level",
+     "value": "Not a formal neck level (facial group)"
+    }
+   ],
+   "pearl": "A nodule in the nasolabial fold near a nasal or cheek skin cancer may be a facial node metastasis, which lies outside a standard neck dissection field.",
+   "depth": "superficial",
+   "marker": {
+    "x": 400,
+    "y": 505
+   }
+  },
+  {
+   "id": "buccinator-nodes",
+   "name": "Buccinator nodes (facial nodes)",
+   "category": "lymph",
+   "group": "Superficial ring (pericervical collar)",
+   "function": "Middle subgroup of the facial nodes, on the buccinator muscle along the facial vein; filters lymph from the cheek before it reaches the submandibular nodes.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "On the surface of the buccinator near the angle of the mouth, along the facial vein, between the nasolabial and mandibular nodes"
+    },
+    {
+     "label": "Drains",
+     "value": "Skin and mucosa of the cheek, lateral lips, lower eyelid; efferents of the nasolabial nodes"
+    },
+    {
+     "label": "Efferents to",
+     "value": "Mandibular nodes and the submandibular nodes (level IB)"
+    },
+    {
+     "label": "Level",
+     "value": "Not a formal neck level (facial group)"
+    }
+   ],
+   "pearl": "An enlarged buccinator node presents as a mobile lump in the cheek and can be mistaken for a parotid duct stone, an accessory parotid tumor or a minor salivary gland tumor.",
+   "depth": "superficial",
+   "marker": {
+    "x": 400,
+    "y": 505
+   }
+  },
+  {
+   "id": "mandibular-nodes",
+   "name": "Mandibular nodes (facial nodes)",
+   "category": "lymph",
+   "group": "Superficial ring (pericervical collar)",
+   "function": "Lowest subgroup of the facial nodes, on the outer surface of the mandible where the facial vessels cross its lower border; the last facial station before the submandibular nodes.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "On the lateral surface of the body of the mandible at the anterior border of masseter, beside the facial artery and vein, above the submandibular nodes"
+    },
+    {
+     "label": "Drains",
+     "value": "Cheek and lower face; efferents of the nasolabial and buccinator nodes"
+    },
+    {
+     "label": "Efferents to",
+     "value": "Submandibular nodes (level IB)"
+    },
+    {
+     "label": "Level",
+     "value": "Not a formal neck level (facial group); lies just above level IB"
+    }
+   ],
+   "pearl": "These nodes lie next to the marginal mandibular branch of the facial nerve, which is at risk when they are removed with the facial vessels during level IB dissection (lower lip weakness).",
+   "depth": "superficial",
+   "marker": {
+    "x": 400,
+    "y": 505
+   }
+  }
+ ],
+ "refs": {
+  "superior-deep-lateral-cervical-nodes": "Plate 85 (p. 140), Plate 86 (p. 141)",
+  "nasolabial-nodes": "Plate 85 (p. 140)",
+  "buccinator-nodes": "Plate 85 (p. 140)",
+  "mandibular-nodes": "Plate 85 (p. 140)"
+ }
+}

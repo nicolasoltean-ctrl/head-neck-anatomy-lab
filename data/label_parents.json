@@ -1,0 +1,78 @@
+{
+ "bone": {
+  "Articular disc of temporomandibular joint": "temporomandibular-joint",
+  "Articular capsule of temporomandibular joint": "temporomandibular-joint",
+  "Lateral temporomandibular ligament": "temporomandibular-joint",
+  "Sphenomandibular ligament": "temporomandibular-joint",
+  "Stylomandibular ligament": "temporomandibular-joint"
+ },
+ "muscle": {
+  "Anterior belly of digastric muscle": "digastric",
+  "Posterior belly of digastric muscle": "digastric",
+  "Deep part of masseter": "masseter",
+  "Superficial part of masseter": "masseter",
+  "Frontalis muscle": "occipitofrontalis",
+  "Occipitalis muscle": "occipitofrontalis",
+  "Epicranial aponeurosis": "occipitofrontalis",
+  "Inferior head of lateral pterygoid muscle": "lateral-pterygoid",
+  "Superior head of lateral pterygoid muscle": "lateral-pterygoid",
+  "Orbital part of orbicularis oculi": "orbicularis-oculi",
+  "Palpebral part of orbicularis oculi": "orbicularis-oculi",
+  "Oblique part of cricothyroid muscle": "cricothyroid",
+  "Straight part of cricothyroid muscle": "cricothyroid",
+  "Obliquus inferior capitis muscle": "suboccipital-muscles",
+  "Obliquus superior capitis muscle": "suboccipital-muscles",
+  "Rectus posterior major capitis muscle": "suboccipital-muscles",
+  "Rectus posterior minor capitis muscle": "suboccipital-muscles",
+  "Rectus anterior capitis muscle": "rectus-capitis-anterior-lateralis",
+  "Rectus lateralis capitis muscle": "rectus-capitis-anterior-lateralis",
+  "Transverse arytenoid muscle": "transverse-oblique-arytenoids"
+ },
+ "nerve": {
+  "Anterior division of mandibular nerve": "mandibular-division-v3",
+  "Posterior division of mandibular nerve": "mandibular-division-v3",
+  "Motor root of trigeminal nerve": "cn-v-trigeminal-nerve",
+  "Sensory root of trigeminal nerve": "cn-v-trigeminal-nerve",
+  "Cochlear nerve": "cn-viii-vestibulocochlear-nerve",
+  "Vestibular nerve": "cn-viii-vestibulocochlear-nerve"
+ },
+ "lymph": {
+  "Nasolabial node": "facial-buccal-nodes",
+  "Bucinator node": "facial-buccal-nodes"
+ },
+ "artery": {
+  "Temporal branches of middle cerebral artery": "middle-cerebral-artery",
+  "Temporo-occipital branch": "middle-cerebral-artery",
+  "Artery of central sulcus": "middle-cerebral-artery",
+  "Artery of precentral sulcus": "middle-cerebral-artery",
+  "Postcentral arterial branch": "middle-cerebral-artery",
+  "Posterior parietal artery": "middle-cerebral-artery",
+  "Branch to angular gyrus": "middle-cerebral-artery",
+  "Lateral frontobasal artery": "middle-cerebral-artery",
+  "Prefrontal artery": "middle-cerebral-artery",
+  "Proximal lateral striate branches": "middle-cerebral-artery",
+  "Distal lateral striate branches": "middle-cerebral-artery",
+  "Callosomarginal artery": "anterior-cerebral-artery",
+  "Frontal branches of callosomarginal artery": "anterior-cerebral-artery",
+  "Pericallosal artery": "anterior-cerebral-artery",
+  "Orbitofrontal branches of anterior cerebral artery": "anterior-cerebral-artery",
+  "Frontal branch of superficial temporal artery": "superficial-temporal-artery",
+  "Lateral occipital artery": "posterior-cerebral-artery",
+  "Medial occipital artery": "posterior-cerebral-artery",
+  "Parieto-occipital artery": "posterior-cerebral-artery",
+  "Lateral pontine branches of basilar artery": "basilar-artery",
+  "Medial pontine branches of basilar artery": "basilar-artery",
+  "Posterior lateral nasal branches of sphenopalatine artery.": "sphenopalatine-artery",
+  "Posterior septal branches of sphenopalatine artery": "sphenopalatine-artery"
+ },
+ "vein": {
+  "Anterior division of retromandibular vein": "retromandibular-vein",
+  "Posterior division of retromandibular vein": "retromandibular-vein",
+  "Superior labial vein": "facial-vein",
+  "Inferior labial veins": "facial-vein",
+  "Superior ophthalmic vein": "ophthalmic-veins",
+  "Inferior ophthalmic vein": "ophthalmic-veins",
+  "Transverse sinus": "transverse-sigmoid-sinuses",
+  "Sigmoid sinus": "transverse-sigmoid-sinuses"
+ }
+}

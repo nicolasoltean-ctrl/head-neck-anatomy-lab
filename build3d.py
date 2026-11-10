@@ -71,7 +71,15 @@ MANUAL = {
     "Anterior intercavernous sinus": ("intercavernous sinuses", "vein"), "Posterior intercavernous sinus": ("intercavernous sinuses", "vein"),
 }
 
+# explicit Z-Anatomy label -> card id map from the Netter divisions audit (data/label_map.json); it wins over name matching.
+LABEL_MAP = json.load(open(here / "data" / "label_map.json")) if (here / "data" / "label_map.json").exists() else {}
+# part mesh -> whole-structure card it used to sit on (data/label_parents.json), so the whole stays selectable as the sum of its parts
+LABEL_PARENTS = json.load(open(here / "data" / "label_parents.json")) if (here / "data" / "label_parents.json").exists() else {}
+parents = {(sysname, label): cid for sysname, d in LABEL_PARENTS.items() for label, cid in d.items()}
 def match_label(label, system):
+    mapped = LABEL_MAP.get(system, {}).get(label)
+    return mapped if mapped and mapped in card_by_id else match_label_auto(label, system)
+def match_label_auto(label, system):
     if label in MANUAL:
         cid = find_card(MANUAL[label][0], MANUAL[label][1])
         if cid: return cid
@@ -106,7 +114,7 @@ for sysname in systems:
             card = match_label(m["label"], sysname); labels_seen[(sysname, m["label"])] = card
             if card: matched += 1
         group = card_by_id[card]["group"] if card else ""
-        recs.append({"id": m["id"], "label": m["label"], "side": m["side"], "tier": m["tier"], "off": off, "len": len(data), "tris": m["tris"], "card": card, "group": group, "bbox": m["bbox"]})
+        recs.append({"id": m["id"], "label": m["label"], "side": m["side"], "tier": m["tier"], "off": off, "len": len(data), "tris": m["tris"], "card": card, "group": group, "bbox": m["bbox"], **({"parent": parents[(sysname, m["label"])]} if (sysname, m["label"]) in parents else {})})
     (packs_dir / f"{sysname}.pack").write_bytes(out)
     manifest["packs"][sysname] = {"file": f"packs/{sysname}.pack", "bytes": len(out), "meshes": recs}
     print(f"{sysname}: {len(recs)} meshes, {len(out)//1024} KB")

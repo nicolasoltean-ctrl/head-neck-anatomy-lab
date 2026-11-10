@@ -1,0 +1,128 @@
+{
+ "category": "bone",
+ "verified": 102,
+ "corrections": [
+  {
+   "id": "frontal-bone",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Squamous part (forehead; frontal sinus, glabella, supraorbital notch/foramen); orbital part (orbital surface roofs the orbit, superior surface floors the anterior cranial fossa); nasal part with the nasal spine (joins nasal bones and perpendicular plate of ethmoid)",
+   "ref": "Plate 11 (p. 66); Plate 18 (p. 73); Plate 21 (p. 76); Plate 44 (p. 99)",
+   "reason": "Netter labels squamous part, orbital part/surface and nasal spine; card lists only features",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "occipital-bone",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Basilar part (clivus and pharyngeal tubercle, in front of the foramen magnum); lateral (condylar) parts (occipital condyles, hypoglossal and condylar canals, jugular process); squamous part (behind the foramen magnum; external and internal occipital protuberances, nuchal lines, grooves for the dural sinuses)",
+   "ref": "Plate 15 (p. 70); Plate 17 (p. 72); Plate 18 (p. 73)",
+   "reason": "Netter labels the basilar part and condyle separately; the card names no parts",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "maxilla",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Body (contains the maxillary sinus; orbital, nasal, anterior and infratemporal surfaces, tuberosity); frontal process (to frontal, nasal and lacrimal bones); zygomatic process (to zygomatic bone); palatine process (anterior three-quarters of hard palate, incisive canal); alveolar process (sockets of the upper teeth)",
+   "ref": "Plate 11 (p. 66); Plate 13 (p. 68); Plate 15 (p. 70); Plate 17 (p. 72)",
+   "reason": "Netter labels the orbital, nasal and infratemporal surfaces and tuberosity in addition to the four processes; card lacks the body and its surfaces",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "mandibular-body",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Alveolar part (crest; sockets and interalveolar septa for the lower teeth); base of mandible (thick inferior border; mental protuberance and tubercles, digastric fossa)",
+   "ref": "Plate 24 (p. 79)",
+   "reason": "Netter labels 'Alveolar part (crest)' and 'Base of mandible' as the two parts of the body",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "thyroid-cartilage",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Right and left laminae (meet at the laryngeal prominence below the superior thyroid notch; oblique line on each); superior horns (lateral thyrohyoid ligaments to the hyoid); inferior horns (cricothyroid joints with the cricoid)",
+   "ref": "Plate 90 (p. 145)",
+   "reason": "Netter labels 'Thyroid cartilage lamina'; card lists horns and notch but not the laminae",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "axis-c2-dens",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Dens (anterior and posterior articular facets); body; pedicles; interarticular part (pars) between the superior articular facet and the inferior articular process; superior articular facets for the atlas; inferior articular processes and facets for C3; transverse processes with transverse foramina; laminae; bifid spinous process",
+   "ref": "Plate 26 (p. 81)",
+   "reason": "Netter labels body, pedicle and inferior articular process/facet for C3, which the card omits",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "typical-cervical-vertebra",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Body (small, with uncinate processes on its upper lateral margins); pedicles; laminae; transverse processes (anterior and posterior tubercles, costal lamella, groove for spinal nerve, transverse foramen); superior and inferior articular processes and facets; bifid spinous process; large triangular vertebral foramen",
+   "ref": "Plate 27 (p. 82)",
+   "reason": "Netter labels vertebral body, pedicle, lamina and vertebral foramen, which the card omits",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "vertebra-prominens-c7",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Body (uncinate processes above; inferior articular facet for T1 below); pedicles; laminae; transverse processes (prominent posterior tubercle, inconspicuous anterior tubercle, costal lamella, septated transverse foramen, groove for C7 spinal nerve); superior and inferior articular processes and facets; long non-bifid spinous process",
+   "ref": "Plate 27 (p. 82)",
+   "reason": "Netter labels body, pedicle, lamina, costal lamella and articular processes on C7; card omits them",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "maxillary-sinus",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Recesses: infraorbital recess (toward the orbital floor), zygomatic recess (into the zygomatic process), alveolar recess (down into the alveolar process over the molar roots)",
+   "ref": "Plate 50 (p. 105); Plate BP22 (p. 230)",
+   "reason": "Netter labels three recesses of the maxillary sinus; none on the card",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "inferior-nasal-concha",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Ethmoidal process (rises to meet the uncinate process of the ethmoid, narrowing the maxillary hiatus); lacrimal process (to the lacrimal bone, completing the nasolacrimal canal); maxillary process (to the medial wall of the maxillary sinus)",
+   "ref": "Plate 44 (p. 99)",
+   "reason": "Netter labels the ethmoidal process of the inferior nasal concha; lacrimal and maxillary processes added from standard anatomy",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "incus",
+   "field": "details:Key features",
+   "action": "replace",
+   "old": "Body, short process (posterior, in fossa incudis), long process ending in lenticular process",
+   "new": "Body, short limb (short process; posterior, in the fossa incudis), long limb (long process) ending in the lenticular process",
+   "ref": "Plate 106 (p. 161)",
+   "reason": "Netter's terms are 'short limb' and 'long limb' of incus",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "thyrohyoid-membrane",
+   "field": "details:Key features",
+   "action": "replace",
+   "old": "Median thyrohyoid ligament anteriorly; lateral thyrohyoid ligaments posteriorly containing the triticeal cartilage; a foramen on each side for the superior laryngeal vessels and the internal branch of the superior laryngeal nerve (Netter Plate 91)",
+   "new": "Median thyrohyoid ligament anteriorly; lateral thyrohyoid ligaments posteriorly containing the triticeal cartilage; a foramen on each side for the superior laryngeal vessels and the internal branch of the superior laryngeal nerve",
+   "ref": "Plate 91 (p. 146)",
+   "reason": "Remove in-text citation from card text",
+   "confidence": "netter-explicit"
+  }
+ ],
+ "missing": [],
+ "notes": "Model for this system holds whole bones only, so most division cards have no mesh. Already complete under another label, so no Divisions detail proposed (per task rule): temporal-bone (Parts), sphenoid-bone (Parts), ethmoid-bone (Parts), zygomatic-bone, palatine-bone, mandible, condylar-process, hyoid-bone, cricoid-cartilage, arytenoid-cartilages, atlas-c1, malleus, stapes (Key features), ethmoid-sinus-air-cells (anterior/middle/posterior cells under 'Drains to'), cranial-fossae, cranial-sutures, bony-labyrinth, nasal-cartilages, tympanic-membrane, thyrohyoid-membrane, pterygoid-process, sella-turcica, hard-palate (own labels). If a uniform 'Divisions' row is wanted on those cards it can be copied from their Parts/Key features text. Netter does not label: squamous or lateral parts of the occipital bone by name (only 'Basilar part' and 'Condyle'; marked netter-inferred), angles of the parietal bone other than the mastoid angle, compartments of the jugular foramen or TMJ, quadrangular membrane, pterygospinous ligament, cricopharyngeal ligament, head/neck/limbs of the stapes (only 'Footplate'), or parts of the clavicle and T1 within the head-and-neck plates (clavicle and T1 cards use the muscle tables, Plate 163 and standard anatomy). Model labels left on their current parent: Quadrangular membrane (epiglottis), Pterygospinous ligament (pterygoid-process), Median/Lateral thyrohyoid ligament (thyrohyoid-membrane), Lateral process of nasal septal cartilage (nasal-cartilages). Cricopharyngeal ligament is not in Netter; mapped to the proposed lamina-of-cricoid-cartilage card as its nearest attachment. Clavicle is placed in group 'Landmarks & foramina' because the file has no shoulder-girdle group."
+}

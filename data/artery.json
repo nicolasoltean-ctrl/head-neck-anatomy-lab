@@ -25,6 +25,10 @@
       {
         "label": "Relations",
         "value": "Ansa cervicalis on the sheath; sympathetic trunk posterior (outside the sheath); omohyoid crosses it at C6, where it can be compressed against the carotid tubercle (Chassaignac) of C6."
+      },
+      {
+        "label": "Divisions",
+        "value": "Right common carotid artery (from the brachiocephalic trunk behind the right sternoclavicular joint); left common carotid artery (directly from the aortic arch, so it has a thoracic part). Each ends at the carotid bifurcation as the internal carotid artery (to brain and orbit) and external carotid artery (to face, scalp and neck)."
       }
     ],
     "pearl": "Palpate the carotid pulse at the thyroid cartilage, medial to SCM, one side at a time. Bruit with TIA/amaurosis fugax: carotid duplex; symptomatic 70-99% stenosis gets endarterectomy within 2 weeks. For IJ central lines the vein lies lateral to the pulse.",
@@ -99,6 +103,10 @@
       {
         "label": "Relations",
         "value": "CN IX, X, XI, XII and the sympathetic plexus lie near its cervical course; the styloid process and its muscles separate it (deep) from the external carotid and parotid (superficial)."
+      },
+      {
+        "label": "Divisions",
+        "value": "Cervical part (bifurcation to carotid canal; no branches). Petrous part (in the carotid canal of the temporal bone; caroticotympanic artery, artery of pterygoid canal). Cavernous part (in the cavernous sinus; meningohypophyseal trunk with tentorial, dorsal meningeal and inferior hypophyseal branches, artery to inferior cavernous sinus/inferolateral trunk, recurrent artery of foramen lacerum, branches to foramen rotundum, ovale and spinosum, meningeal and cavernous branches). Cerebral part (above the anterior clinoid; ophthalmic, superior hypophyseal, posterior communicating and anterior choroidal arteries, ending as anterior and middle cerebral arteries)."
       }
     ],
     "pearl": "Carotid dissection (trauma, chiropractic manipulation, fibromuscular dysplasia): unilateral neck pain, partial Horner syndrome (ptosis, miosis, no anhidrosis) and ipsilateral stroke or amaurosis fugax; diagnose with CT/MR angiography, treat with antithrombotics.",
@@ -399,6 +407,10 @@
       {
         "label": "Relations",
         "value": "Runs with the mandibular nerve branches; the 2nd part lies superficial or deep to lateral pterygoid."
+      },
+      {
+        "label": "Divisions",
+        "value": "Mandibular (1st) part, behind the neck of the mandible: deep auricular, anterior tympanic, middle meningeal, accessory meningeal, inferior alveolar (with mylohyoid branch). Pterygoid (2nd) part, on or deep to lateral pterygoid: anterior and posterior deep temporal, masseteric, medial and lateral pterygoid, buccal. Pterygopalatine (3rd) part, in the pterygopalatine fossa: posterior superior alveolar, infraorbital (with middle and anterior superior alveolar), descending palatine (greater and lesser palatine), artery of pterygoid canal, pharyngeal, sphenopalatine (posterior lateral nasal and posterior septal branches)."
       }
     ],
     "pearl": "Middle meningeal artery torn by a pterion fracture causes epidural hematoma (lucid interval, lens-shaped bleed). Sphenopalatine artery is the target for embolization or ligation in intractable posterior epistaxis.",
@@ -438,6 +450,10 @@
       {
         "label": "Relations",
         "value": "Auriculotemporal nerve runs posterior to the artery; temporal branches of CN VII cross the zygomatic arch anterior to it."
+      },
+      {
+        "label": "Divisions",
+        "value": "Frontal (anterior) branch: runs forward over the temple to the forehead, anastomoses with supraorbital and supratrochlear arteries. Parietal (posterior) branch: runs up and back over the parietal scalp, anastomoses with posterior auricular and occipital arteries. Collateral branches before the division: transverse facial, middle temporal, zygomatico-orbital and anterior auricular arteries."
       }
     ],
     "pearl": "Giant cell (temporal) arteritis: age >50, headache, jaw claudication, tender pulseless STA, high ESR; start high-dose steroids immediately to prevent blindness, then temporal artery biopsy.",
@@ -477,6 +493,10 @@
       {
         "label": "Relations",
         "value": "Lies in the outer periosteal (endosteal) layer of the dura, grooving the inner table of the skull; the cranial epidural space is only a potential space, made real when the artery tears. Accompanied by middle meningeal veins and the meningeal branch of V3."
+      },
+      {
+        "label": "Divisions",
+        "value": "Frontal (anterior) branch: crosses the greater wing of the sphenoid deep to the pterion, supplies anterior dura and calvaria. Parietal (posterior) branch: curves back over the squamous temporal and parietal bone, supplies posterior dura and calvaria."
       }
     ],
     "pearl": "Epidural hematoma: temporal bone fracture at the pterion tears the MMA; lucid interval then rapid deterioration, lens-shaped (biconvex) hematoma on CT that does not cross sutures; emergent craniotomy.",
@@ -555,6 +575,10 @@
       {
         "label": "Relations",
         "value": "Enters the nose just behind the posterior end of the middle turbinate, the landmark for endoscopic sphenopalatine artery ligation."
+      },
+      {
+        "label": "Divisions",
+        "value": "Posterior lateral nasal branches (to the conchae, meatuses and sinuses of the lateral wall); posterior septal branches (across the sphenoid face to the septum, anastomosing with the greater palatine artery in the incisive canal)."
       }
     ],
     "pearl": "Posterior epistaxis (older, hypertensive, anticoagulated patients) usually arises from the sphenopalatine artery: blood runs down the throat, anterior packing fails, and it needs posterior packing (admit, monitor airway), endoscopic ligation or embolization.",
@@ -785,6 +809,10 @@
       {
         "label": "Relations",
         "value": "Subclavian vein lies anterior to anterior scalene (artery behind it); phrenic nerve descends on anterior scalene; brachial plexus trunks lie posterolateral to the 3rd part; pleural dome and stellate ganglion lie below."
+      },
+      {
+        "label": "Divisions",
+        "value": "Right subclavian (from the brachiocephalic trunk) and left subclavian (from the aortic arch). Each has three parts by its relation to the anterior scalene. 1st part (medial to the muscle): vertebral artery, internal thoracic artery, thyrocervical trunk. 2nd part (behind the muscle): costocervical trunk. 3rd part (lateral to the muscle, to the outer border of the 1st rib): dorsal scapular artery when it does not arise from the transverse cervical."
       }
     ],
     "pearl": "Subclavian steal: proximal subclavian stenosis reverses vertebral flow with arm exercise, giving arm claudication, vertebrobasilar symptoms (dizziness, syncope) and a >15 mmHg interarm BP difference. Subclavian line: arterial puncture is non-compressible behind the clavicle; pneumothorax is the other key complication.",
@@ -824,6 +852,10 @@
       {
         "label": "Relations",
         "value": "Lies anterior to the cervical ventral rami within the foramina; the C7 transverse foramen is usually bypassed; accompanied by a vertebral venous plexus and sympathetic fibers."
+      },
+      {
+        "label": "Divisions",
+        "value": "Prevertebral part (V1): subclavian to the transverse foramen of C6. Cervical part (V2): through the transverse foramina of C6 to C1; segmental medullary and muscular branches. Atlantic part (V3, horizontal segment): in the groove on the posterior arch of the atlas within the suboccipital triangle. Intracranial part (V4): through the foramen magnum; anterior and posterior meningeal branches, posterior spinal, posterior inferior cerebellar and anterior spinal arteries, then joins its fellow as the basilar."
       }
     ],
     "pearl": "Vertebral artery dissection (neck trauma, chiropractic manipulation): neck/occipital pain then lateral medullary (Wallenberg) syndrome or PICA stroke; diagnose with CTA/MRA, treat with antithrombotics.",
@@ -941,6 +973,10 @@
       {
         "label": "Relations",
         "value": "Passes anterior to the brachial plexus trunks and above the suprascapular artery; accessory nerve (CN XI) accompanies the superficial branch deep to trapezius."
+      },
+      {
+        "label": "Divisions",
+        "value": "Superficial branch (superficial cervical artery): deep to trapezius with the accessory nerve. Deep branch (dorsal scapular artery): deep to levator scapulae and the rhomboids along the medial border of the scapula; arises with the superficial branch in about 30%, otherwise directly from the subclavian."
       }
     ],
     "pearl": "Accessory nerve and transverse cervical vessels run together under trapezius; cervical lymph node biopsy in the posterior triangle risks CN XI injury (shoulder droop, weak shrug).",
@@ -1509,7 +1545,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Terminal division of the internal carotid artery lateral to the optic chiasm (Netter Plate 148)."
+        "value": "Terminal division of the internal carotid artery lateral to the optic chiasm."
       },
       {
         "label": "Course",
@@ -1526,6 +1562,10 @@
       {
         "label": "Relations",
         "value": "Crosses the optic nerve and chiasm; the anterior communicating artery joins the two A1 segments above the chiasm."
+      },
+      {
+        "label": "Divisions",
+        "value": "A1 (precommunicating) segment: internal carotid to anterior communicating artery; anteromedial central arteries. A2 (postcommunicating) segment: in the longitudinal fissure; long medial striate artery (recurrent artery of Heubner), medial frontobasal (orbitofrontal) artery, frontopolar artery. Terminal trunks: callosomarginal artery (anterior, intermediate and posterior medial frontal branches, cingular branches, paracentral artery) and pericallosal artery (precuneal artery, terminal branches to the medial parietal lobe)."
       }
     ],
     "pearl": "ACA stroke: contralateral leg-predominant weakness and sensory loss with urinary incontinence, abulia and sometimes a grasp reflex; bilateral ACA infarction after AComm aneurysm rupture or vasospasm causes akinetic mutism. Heubner's artery occlusion gives face and arm weakness from the internal capsule.",
@@ -1544,11 +1584,11 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Direct continuation of the internal carotid artery lateral to the optic chiasm (Netter Plates 148, 150)."
+        "value": "Direct continuation of the internal carotid artery lateral to the optic chiasm."
       },
       {
         "label": "Course",
-        "value": "M1 (sphenoidal) segment runs laterally below the anterior perforated substance to the limen insulae; M2 (insular) branches fan over the insula; M3 (opercular) branches run under the frontal, parietal and temporal opercula; M4 cortical branches emerge from the lateral sulcus onto the convexity (Netter Plates 152, 153)."
+        "value": "M1 (sphenoidal) segment runs laterally below the anterior perforated substance to the limen insulae; M2 (insular) branches fan over the insula; M3 (opercular) branches run under the frontal, parietal and temporal opercula; M4 cortical branches emerge from the lateral sulcus onto the convexity."
       },
       {
         "label": "Branches",
@@ -1561,6 +1601,10 @@
       {
         "label": "Relations",
         "value": "Lies in the lateral (sylvian) sulcus deep to the temporalis and pterion; the superficial middle cerebral vein accompanies it."
+      },
+      {
+        "label": "Divisions",
+        "value": "M1 (sphenoidal) segment: anterolateral central (lenticulostriate) arteries. M2 (insular) segment: superior and inferior trunks over the insula. M3 (opercular) and M4 (cortical) segments, giving in order: lateral frontobasal (orbitofrontal) artery, prefrontal artery, artery of precentral sulcus, artery of central sulcus, artery of postcentral sulcus (anterior parietal), posterior parietal artery, artery to angular gyrus, and anterior, middle and posterior temporal branches (with the polar temporal artery)."
       }
     ],
     "pearl": "MCA stroke: contralateral face and arm weakness and sensory loss, gaze deviation toward the lesion, homonymous hemianopia, aphasia if dominant (Broca: superior division; Wernicke: inferior division) or neglect if non-dominant. Lenticulostriate occlusion from hypertension causes lacunar pure motor stroke or Charcot–Bouchard microaneurysm bleeds into the putamen. M1 occlusion is the classic thrombectomy target (dense MCA sign).",
@@ -1579,7 +1623,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Terminal division of the basilar artery at the upper border of the pons (Netter Plates 150, 151); embryologically a carotid branch, so a fetal-type PCA from the internal carotid is a common variant."
+        "value": "Terminal division of the basilar artery at the upper border of the pons; embryologically a carotid branch, so a fetal-type PCA from the internal carotid is a common variant."
       },
       {
         "label": "Course",
@@ -1596,6 +1640,10 @@
       {
         "label": "Relations",
         "value": "Oculomotor nerve passes between the posterior cerebral and superior cerebellar arteries; the posterior communicating artery joins P1 to the internal carotid; the basal vein accompanies P2 around the midbrain."
+      },
+      {
+        "label": "Divisions",
+        "value": "P1 (precommunicating) segment: basilar bifurcation to the posterior communicating artery; thalamoperforating (posteromedial central) arteries. P2 (postcommunicating) segment: around the cerebral crus; thalamogeniculate arteries, posterior medial and posterior lateral choroidal arteries. Cortical branches: anterior and posterior temporal and occipitotemporal branches (lateral occipital artery), and the medial occipital artery giving the dorsal branch to corpus callosum (posterior pericallosal), parieto-occipital branch and calcarine branch."
       }
     ],
     "pearl": "PCA stroke: contralateral homonymous hemianopia with macular sparing (the occipital pole gets MCA collaterals), alexia without agraphia on the left, prosopagnosia and memory loss from hippocampal involvement; thalamic branches give contralateral sensory loss and thalamic pain. 'Top of the basilar' occlusion causes bilateral PCA infarcts with cortical blindness (Anton syndrome). Uncal herniation compresses the PCA against the tentorium, giving an occipital infarct.",
@@ -1614,7 +1662,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Intracranial (V4) part of the vertebral artery below the vertebrobasilar junction (Netter Plates 150, 154)."
+        "value": "Intracranial (V4) part of the vertebral artery below the vertebrobasilar junction."
       },
       {
         "label": "Course",
@@ -1649,7 +1697,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Lower third of the basilar artery just above the vertebrobasilar junction (Netter Plates 150–154)."
+        "value": "Lower third of the basilar artery just above the vertebrobasilar junction."
       },
       {
         "label": "Course",
@@ -1684,7 +1732,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Basilar artery just below the posterior cerebral arteries, at the upper border of the pons (Netter Plates 150, 151, 154)."
+        "value": "Basilar artery just below the posterior cerebral arteries, at the upper border of the pons."
       },
       {
         "label": "Course",
@@ -1719,15 +1767,15 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Usually the anterior inferior cerebellar artery, sometimes directly from the basilar artery (Netter Plates 147, 150, 154 show it beside AICA and the basilar)."
+        "value": "Usually the anterior inferior cerebellar artery, sometimes directly from the basilar artery."
       },
       {
         "label": "Course",
-        "value": "Runs laterally in the cerebellopontine angle with CN VII and CN VIII through the internal acoustic meatus (Netter Plate 20) into the petrous temporal bone."
+        "value": "Runs laterally in the cerebellopontine angle with CN VII and CN VIII through the internal acoustic meatus into the petrous temporal bone."
       },
       {
         "label": "Branches",
-        "value": "Anterior vestibular, common cochlear and vestibulocochlear branches ending in the cochlea and vestibular labyrinth (Netter Plate 107 shows it entering the labyrinth)."
+        "value": "Anterior vestibular, common cochlear and vestibulocochlear branches ending in the cochlea and vestibular labyrinth."
       },
       {
         "label": "Supplies",
@@ -1754,7 +1802,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Supraclinoid internal carotid artery distal to the posterior communicating artery, just before the terminal bifurcation (Netter Plates 148, 150, 151)."
+        "value": "Supraclinoid internal carotid artery distal to the posterior communicating artery, just before the terminal bifurcation."
       },
       {
         "label": "Course",
@@ -1789,7 +1837,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Anterior spinal artery: a branch from each vertebral artery near the vertebrobasilar junction, the two uniting in the midline on the medulla (Netter Plates 150, 152, 154). Posterior spinal arteries: from the vertebral artery or the posterior inferior cerebellar artery of each side."
+        "value": "Anterior spinal artery: a branch from each vertebral artery near the vertebrobasilar junction, the two uniting in the midline on the medulla. Posterior spinal arteries: from the vertebral artery or the posterior inferior cerebellar artery of each side."
       },
       {
         "label": "Course",
@@ -1824,11 +1872,11 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Petrous part: caroticotympanic artery and the vidian (pterygoid canal) branch. Cavernous part: meningohypophyseal trunk, artery to the inferior cavernous sinus (inferolateral trunk) and small branches to the foramina rotundum, ovale and spinosum and the superior orbital fissure; a recurrent artery of the foramen lacerum (Netter Plate 148)."
+        "value": "Petrous part: caroticotympanic artery and the vidian (pterygoid canal) branch. Cavernous part: meningohypophyseal trunk, artery to the inferior cavernous sinus (inferolateral trunk) and small branches to the foramina rotundum, ovale and spinosum and the superior orbital fissure; a recurrent artery of the foramen lacerum."
       },
       {
         "label": "Course",
-        "value": "The caroticotympanic artery passes through the carotid canal wall into the tympanic cavity (Netter Plate 107); the meningohypophyseal trunk arises from the posterior bend of the cavernous carotid; the inferolateral trunk crosses the abducens nerve laterally."
+        "value": "The caroticotympanic artery passes through the carotid canal wall into the tympanic cavity; the meningohypophyseal trunk arises from the posterior bend of the cavernous carotid; the inferolateral trunk crosses the abducens nerve laterally."
       },
       {
         "label": "Branches",
@@ -1840,7 +1888,7 @@
       },
       {
         "label": "Relations",
-        "value": "Within the cavernous sinus the carotid is accompanied by CN VI and sympathetic fibers; these branches anastomose with the external carotid system through the foramen lacerum, rotundum, ovale and spinosum (Netter Plate 148 'internal to external carotid artery anastomosis')."
+        "value": "Within the cavernous sinus the carotid is accompanied by CN VI and sympathetic fibers; these branches anastomose with the external carotid system through the foramen lacerum, rotundum, ovale and spinosum."
       }
     ],
     "pearl": "These are the feeders of cavernous sinus dural arteriovenous fistulas and of tentorial meningiomas (enlarged tentorial artery on angiography), and the routes by which the external carotid supplies the brain when the proximal internal carotid is occluded. A cavernous carotid aneurysm compresses CN VI and III rather than bleeding into the subarachnoid space.",
@@ -1859,7 +1907,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Superior hypophyseal arteries: supraclinoid (cerebral) part of the internal carotid and posterior communicating artery, medial to the optic nerve (Netter Plates 148, 151). Inferior hypophyseal artery: meningohypophyseal trunk of the cavernous internal carotid."
+        "value": "Superior hypophyseal arteries: supraclinoid (cerebral) part of the internal carotid and posterior communicating artery, medial to the optic nerve. Inferior hypophyseal artery: meningohypophyseal trunk of the cavernous internal carotid."
       },
       {
         "label": "Course",
@@ -1875,7 +1923,7 @@
       },
       {
         "label": "Relations",
-        "value": "Optic chiasm immediately above the superior arteries; cavernous sinus and the efferent hypophyseal veins around the gland (Netter Plate BP30)."
+        "value": "Optic chiasm immediately above the superior arteries; cavernous sinus and the efferent hypophyseal veins around the gland."
       }
     ],
     "pearl": "The anterior pituitary has no direct arterial supply of its own, which makes it vulnerable: postpartum hypotension infarcts the hyperplastic gland (Sheehan syndrome: failure of lactation, amenorrhea, hypothyroidism, adrenal insufficiency), and pituitary apoplexy is hemorrhagic infarction of an adenoma with sudden headache, visual loss and adrenal crisis. The posterior lobe, supplied directly, is usually spared in Sheehan syndrome.",
@@ -1894,7 +1942,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Aortic arch, behind the manubrium (Netter Plates 40, 147, 149, BP23)."
+        "value": "Aortic arch, behind the manubrium."
       },
       {
         "label": "Course",
@@ -1929,7 +1977,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Inferior thyroid artery as it turns medially, or directly from the thyrocervical trunk (Netter Plates 40, 83, BP23)."
+        "value": "Inferior thyroid artery as it turns medially, or directly from the thyrocervical trunk."
       },
       {
         "label": "Course",
@@ -1964,11 +2012,11 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Second or third part of the subclavian artery in most people, passing between the trunks of the brachial plexus; in about 30% it shares a common origin with the superficial cervical artery from the transverse cervical artery, as its deep branch (Netter Plate BP23)."
+        "value": "Second or third part of the subclavian artery in most people, passing between the trunks of the brachial plexus; in about 30% it shares a common origin with the superficial cervical artery from the transverse cervical artery, as its deep branch."
       },
       {
         "label": "Course",
-        "value": "Runs posteriorly through the brachial plexus and under the levator scapulae to the superior angle of the scapula, then descends along the medial border deep to the rhomboids with the dorsal scapular nerve (Netter Plates 39, 40)."
+        "value": "Runs posteriorly through the brachial plexus and under the levator scapulae to the superior angle of the scapula, then descends along the medial border deep to the rhomboids with the dorsal scapular nerve."
       },
       {
         "label": "Branches",
@@ -1999,7 +2047,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Costocervical trunk from the posterior surface of the subclavian artery (second part on the right, first part on the left), which divides over the pleural cupola (Netter Plates 147, 149, BP23)."
+        "value": "Costocervical trunk from the posterior surface of the subclavian artery (second part on the right, first part on the left), which divides over the pleural cupola."
       },
       {
         "label": "Course",
@@ -2034,7 +2082,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Facial artery near its origin from the external carotid, in the carotid triangle (Netter Plates 57, 72, 83)."
+        "value": "Facial artery near its origin from the external carotid, in the carotid triangle."
       },
       {
         "label": "Course",
@@ -2069,7 +2117,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Facial artery as it leaves the submandibular gland, just before it curls over the mandible (Netter Plates 57, 83)."
+        "value": "Facial artery as it leaves the submandibular gland, just before it curls over the mandible."
       },
       {
         "label": "Course",
@@ -2104,7 +2152,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Facial artery at the level of the ala of the nose (Netter Plates 42, 47)."
+        "value": "Facial artery at the level of the ala of the nose."
       },
       {
         "label": "Course",
@@ -2112,7 +2160,7 @@
       },
       {
         "label": "Branches",
-        "value": "Alar branches to the ala, nasal tip and columella, anastomosing with the external (dorsal) nasal branch of the ophthalmic artery, the nasal septal branch of the superior labial artery and the anterior ethmoidal artery (Netter Plate 47)."
+        "value": "Alar branches to the ala, nasal tip and columella, anastomosing with the external (dorsal) nasal branch of the ophthalmic artery, the nasal septal branch of the superior labial artery and the anterior ethmoidal artery."
       },
       {
         "label": "Supplies",
@@ -2139,7 +2187,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Third (pterygopalatine) part of the maxillary artery in the pterygopalatine fossa (Netter Plates 57, 63, 72)."
+        "value": "Third (pterygopalatine) part of the maxillary artery in the pterygopalatine fossa."
       },
       {
         "label": "Course",
@@ -2174,7 +2222,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Maxillary artery as it enters the pterygopalatine fossa, often by a common trunk with the infraorbital artery (Netter Plates 57, 60, 63)."
+        "value": "Maxillary artery as it enters the pterygopalatine fossa, often by a common trunk with the infraorbital artery."
       },
       {
         "label": "Course",
@@ -2209,7 +2257,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Second part of the maxillary artery as it crosses the lateral pterygoid muscle in the infratemporal fossa (Netter Plates 57, 58)."
+        "value": "Second part of the maxillary artery as it crosses the lateral pterygoid muscle in the infratemporal fossa."
       },
       {
         "label": "Course",
@@ -2244,11 +2292,11 @@
     "details": [
       {
         "label": "Origin",
-        "value": "First part of the maxillary artery or the middle meningeal artery near its origin (Netter Plates 57, 60, 112)."
+        "value": "First part of the maxillary artery or the middle meningeal artery near its origin."
       },
       {
         "label": "Course",
-        "value": "Ascends medial to the lateral pterygoid and passes through the foramen ovale with the mandibular nerve and the lesser petrosal nerve (Netter Plates 19, 20)."
+        "value": "Ascends medial to the lateral pterygoid and passes through the foramen ovale with the mandibular nerve and the lesser petrosal nerve."
       },
       {
         "label": "Branches",
@@ -2279,7 +2327,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "First (mandibular) part of the maxillary artery behind the neck of the mandible, often by a common stem (Netter Plates 57, 58, 107)."
+        "value": "First (mandibular) part of the maxillary artery behind the neck of the mandible, often by a common stem."
       },
       {
         "label": "Course",
@@ -2287,7 +2335,7 @@
       },
       {
         "label": "Branches",
-        "value": "Deep auricular: twigs to the TMJ capsule, meatal skin and the outer layer of the tympanic membrane. Anterior tympanic: branches to the tympanic membrane (arteries of the mallear stria) and the marginal arterial rete on the membrane, anastomosing with the stylomastoid, caroticotympanic and superior tympanic arteries (Netter Plate 107)."
+        "value": "Deep auricular: twigs to the TMJ capsule, meatal skin and the outer layer of the tympanic membrane. Anterior tympanic: branches to the tympanic membrane (arteries of the mallear stria) and the marginal arterial rete on the membrane, anastomosing with the stylomastoid, caroticotympanic and superior tympanic arteries."
       },
       {
         "label": "Supplies",
@@ -2314,7 +2362,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Third part of the maxillary artery in the pterygopalatine fossa (Netter Plates 57, 63); the vidian artery can also arise from the petrous internal carotid, which it meets in the canal (Netter Plate 148)."
+        "value": "Third part of the maxillary artery in the pterygopalatine fossa; the vidian artery can also arise from the petrous internal carotid, which it meets in the canal."
       },
       {
         "label": "Course",
@@ -2349,7 +2397,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Posterior auricular artery just below the stylomastoid foramen (Netter Plates 76, 107)."
+        "value": "Posterior auricular artery just below the stylomastoid foramen."
       },
       {
         "label": "Course",
@@ -2357,7 +2405,7 @@
       },
       {
         "label": "Branches",
-        "value": "Posterior tympanic artery to the tympanic membrane and marginal rete, stapedial branch to the stapedius muscle and stapes, mastoid branches to the mastoid antrum and cells, and branches to the facial nerve and semicircular canals (Netter Plate 107)."
+        "value": "Posterior tympanic artery to the tympanic membrane and marginal rete, stapedial branch to the stapedius muscle and stapes, mastoid branches to the mastoid antrum and cells, and branches to the facial nerve and semicircular canals."
       },
       {
         "label": "Supplies",
@@ -2384,7 +2432,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Ophthalmic artery just after it enters the orbit, lateral to the optic nerve (Netter Plates 99, 112)."
+        "value": "Ophthalmic artery just after it enters the orbit, lateral to the optic nerve."
       },
       {
         "label": "Course",
@@ -2392,7 +2440,7 @@
       },
       {
         "label": "Branches",
-        "value": "Glandular branches to the lacrimal gland; superior and inferior lateral palpebral arteries forming the palpebral arcades with the medial palpebral arteries; zygomatic branches (zygomaticofacial and zygomaticotemporal) to the cheek and temple; recurrent meningeal branch back through the superior orbital fissure to the dura (Netter Plate 112); muscular branches to lateral rectus and the anterior ciliary arteries."
+        "value": "Glandular branches to the lacrimal gland; superior and inferior lateral palpebral arteries forming the palpebral arcades with the medial palpebral arteries; zygomatic branches (zygomaticofacial and zygomaticotemporal) to the cheek and temple; recurrent meningeal branch back through the superior orbital fissure to the dura; muscular branches to lateral rectus and the anterior ciliary arteries."
       },
       {
         "label": "Supplies",
@@ -2419,15 +2467,15 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Ophthalmic artery on the medial side of the orbit, proximal to the anterior ethmoidal artery (Netter Plates 47, 99, 112)."
+        "value": "Ophthalmic artery on the medial side of the orbit, proximal to the anterior ethmoidal artery."
       },
       {
         "label": "Course",
-        "value": "Passes medially between the superior oblique and medial rectus to the posterior ethmoidal foramen (Netter Plate 20), through the posterior ethmoidal canal into the anterior cranial fossa beside the cribriform plate, then down into the nasal cavity."
+        "value": "Passes medially between the superior oblique and medial rectus to the posterior ethmoidal foramen, through the posterior ethmoidal canal into the anterior cranial fossa beside the cribriform plate, then down into the nasal cavity."
       },
       {
         "label": "Branches",
-        "value": "Branches to the posterior ethmoidal cells and sphenoidal sinus, meningeal branches to the anterior fossa dura, septal and lateral nasal branches to the superior part of the septum and superior concha (Netter Plate 47)."
+        "value": "Branches to the posterior ethmoidal cells and sphenoidal sinus, meningeal branches to the anterior fossa dura, septal and lateral nasal branches to the superior part of the septum and superior concha."
       },
       {
         "label": "Supplies",
@@ -2454,7 +2502,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Posterior ciliary arteries from the ophthalmic artery as it crosses the optic nerve (Netter Plate 99); anterior ciliary arteries from the muscular branches to the four recti (Netter Plate 104)."
+        "value": "Posterior ciliary arteries from the ophthalmic artery as it crosses the optic nerve; anterior ciliary arteries from the muscular branches to the four recti."
       },
       {
         "label": "Course",
@@ -2489,7 +2537,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Terminal division of the ophthalmic artery at the medial orbital margin, with the supratrochlear artery (Netter Plates 10, 42, 99)."
+        "value": "Terminal division of the ophthalmic artery at the medial orbital margin, with the supratrochlear artery."
       },
       {
         "label": "Course",
@@ -2524,7 +2572,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Lingual artery: first part above the hyoid (suprahyoid branch), second part deep to hyoglossus (dorsal lingual arteries), third part at the anterior border of hyoglossus (sublingual and deep lingual arteries) (Netter Plates 69, 70)."
+        "value": "Lingual artery: first part above the hyoid (suprahyoid branch), second part deep to hyoglossus (dorsal lingual arteries), third part at the anterior border of hyoglossus (sublingual and deep lingual arteries)."
       },
       {
         "label": "Course",
@@ -2559,7 +2607,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Superior thyroid artery in the carotid triangle, below the greater horn of the hyoid (Netter Plates 83, 87, 92)."
+        "value": "Superior thyroid artery in the carotid triangle, below the greater horn of the hyoid."
       },
       {
         "label": "Course",
@@ -2594,7 +2642,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Inferior thyroid artery (thyrocervical trunk) near the lower pole of the thyroid (Netter Plate 92)."
+        "value": "Inferior thyroid artery (thyrocervical trunk) near the lower pole of the thyroid."
       },
       {
         "label": "Course",
@@ -2629,7 +2677,7 @@
     "details": [
       {
         "label": "Origin",
-        "value": "Inferior alveolar artery (first part of the maxillary artery): the mylohyoid branch arises just above the mandibular foramen, the mental branch is the terminal branch leaving the mandibular canal at the mental foramen (Netter Plates 25, 57, 69, 83)."
+        "value": "Inferior alveolar artery (first part of the maxillary artery): the mylohyoid branch arises just above the mandibular foramen, the mental branch is the terminal branch leaving the mandibular canal at the mental foramen."
       },
       {
         "label": "Course",
@@ -2653,6 +2701,1442 @@
     "marker": {
       "x": 520,
       "y": 392
+    }
+  },
+  {
+    "id": "internal-carotid-cervical-part",
+    "name": "Cervical part of internal carotid artery",
+    "category": "artery",
+    "group": "Carotid system",
+    "function": "First part of the internal carotid, carrying blood from the carotid bifurcation to the skull base without giving any branch.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Carotid bifurcation at the upper border of the thyroid cartilage (C4)."
+      },
+      {
+        "label": "Course",
+        "value": "Ascends in the carotid sheath, first lateral then posteromedial to the external carotid, to the external opening of the carotid canal."
+      },
+      {
+        "label": "Branches",
+        "value": "None in the neck."
+      },
+      {
+        "label": "Supplies",
+        "value": "No cervical structures; all flow continues to the brain and orbit."
+      },
+      {
+        "label": "Relations",
+        "value": "Internal jugular vein lateral, vagus nerve posterolateral, sympathetic trunk behind; crossed laterally by the hypoglossal nerve, occipital artery and posterior belly of digastric; styloid muscles and glossopharyngeal nerve pass between it and the external carotid."
+      }
+    ],
+    "pearl": "Atherosclerotic plaque at its origin is the classic source of emboli causing amaurosis fugax and anterior-circulation TIA or stroke; cervical dissection gives neck pain with a painful Horner syndrome.",
+    "depth": "deep",
+    "marker": {
+      "x": 580,
+      "y": 520
+    }
+  },
+  {
+    "id": "internal-carotid-petrous-part",
+    "name": "Petrous part of internal carotid artery",
+    "category": "artery",
+    "group": "Carotid system",
+    "function": "Second part of the internal carotid, running through the carotid canal of the temporal bone.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Continuation of the cervical part at the external opening of the carotid canal."
+      },
+      {
+        "label": "Course",
+        "value": "Ascends, then bends anteromedially in the carotid canal in front of the tympanic cavity and cochlea, and passes above the cartilage filling the foramen lacerum to enter the cavernous sinus."
+      },
+      {
+        "label": "Branches",
+        "value": "Caroticotympanic artery (to the tympanic cavity) and artery of the pterygoid canal (an internal-to-external carotid anastomosis)."
+      },
+      {
+        "label": "Supplies",
+        "value": "Tympanic cavity; anastomotic supply toward the pterygopalatine fossa."
+      },
+      {
+        "label": "Relations",
+        "value": "Surrounded by the internal carotid sympathetic plexus and a venous plexus; the auditory tube and tensor tympani lie anterolateral, the trigeminal ganglion above its roof."
+      }
+    ],
+    "pearl": "A thin or dehiscent bony wall lets carotid pulsation be heard as pulsatile tinnitus and puts the artery at risk in middle-ear surgery.",
+    "depth": "deep",
+    "marker": {
+      "x": 500,
+      "y": 690
+    }
+  },
+  {
+    "id": "internal-carotid-cavernous-part",
+    "name": "Cavernous part of internal carotid artery",
+    "category": "artery",
+    "group": "Carotid system",
+    "function": "Third part of the internal carotid, forming the S-shaped carotid siphon inside the cavernous sinus and supplying the pituitary, nearby dura and cranial nerves.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Continuation of the petrous part above the foramen lacerum."
+      },
+      {
+        "label": "Course",
+        "value": "Runs forward in the carotid sulcus on the side of the sphenoid body within the cavernous sinus, then turns up medial to the anterior clinoid process to pierce the dural roof."
+      },
+      {
+        "label": "Branches",
+        "value": "Meningohypophyseal trunk (tentorial branch, dorsal meningeal artery, inferior hypophyseal artery); artery to the inferior cavernous sinus (inferolateral trunk) with a branch to the superior orbital fissure; recurrent artery of foramen lacerum; branches to foramen rotundum, foramen ovale and foramen spinosum; meningeal and cavernous branches."
+      },
+      {
+        "label": "Supplies",
+        "value": "Neurohypophysis, dura of the tentorium and clivus, trigeminal ganglion and the nerves in the cavernous sinus wall."
+      },
+      {
+        "label": "Relations",
+        "value": "Abducens nerve lies directly lateral to it inside the sinus; oculomotor, trochlear, ophthalmic and maxillary nerves lie in the lateral wall; the hypophysis is medial."
+      }
+    ],
+    "pearl": "Rupture here produces a carotid-cavernous fistula with pulsating exophthalmos, chemosis, an orbital bruit and ophthalmoplegia.",
+    "depth": "deep",
+    "marker": {
+      "x": 500,
+      "y": 690
+    }
+  },
+  {
+    "id": "internal-carotid-cerebral-part",
+    "name": "Cerebral part of internal carotid artery",
+    "category": "artery",
+    "group": "Carotid system",
+    "function": "Terminal, intradural part of the internal carotid that gives the ophthalmic artery and the anterior circulation of the brain.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Continuation of the cavernous part after it pierces the dura medial to the anterior clinoid process."
+      },
+      {
+        "label": "Course",
+        "value": "Runs back and up below the optic nerve, lateral to the optic chiasm, to the anterior perforated substance where it divides."
+      },
+      {
+        "label": "Branches",
+        "value": "Ophthalmic artery, superior hypophyseal arteries, posterior communicating artery, anterior choroidal artery; terminal anterior cerebral and middle cerebral arteries."
+      },
+      {
+        "label": "Supplies",
+        "value": "Orbit and retina, pituitary stalk and adenohypophysis (via the portal system), optic chiasm and tract, internal capsule, and most of the cerebral hemisphere."
+      },
+      {
+        "label": "Relations",
+        "value": "Optic nerve above and medial, oculomotor nerve lateral, anterior clinoid process lateral."
+      }
+    ],
+    "pearl": "An aneurysm at the origin of the posterior communicating artery compresses the oculomotor nerve, giving a painful third-nerve palsy with a dilated pupil.",
+    "depth": "deep",
+    "marker": {
+      "x": 580,
+      "y": 520
+    }
+  },
+  {
+    "id": "maxillary-artery-mandibular-part",
+    "name": "Mandibular (first) part of maxillary artery",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "First part of the maxillary artery, whose branches all enter bone to supply the ear, the dura and the mandibular teeth.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Larger terminal branch of the external carotid in the parotid gland behind the neck of the mandible."
+      },
+      {
+        "label": "Course",
+        "value": "Runs horizontally forward between the neck of the mandible and the sphenomandibular ligament, along the lower border of lateral pterygoid."
+      },
+      {
+        "label": "Branches",
+        "value": "Deep auricular artery, anterior tympanic artery, middle meningeal artery, accessory meningeal artery, inferior alveolar artery (with its mylohyoid branch)."
+      },
+      {
+        "label": "Supplies",
+        "value": "External acoustic meatus and tympanic membrane, TMJ, dura and calvaria, mandible, lower teeth and chin."
+      },
+      {
+        "label": "Relations",
+        "value": "Auriculotemporal nerve lies above; its two roots encircle the middle meningeal artery; maxillary veins accompany it."
+      }
+    ],
+    "pearl": "Every branch of this part passes through a foramen or canal, a useful rule for recalling them.",
+    "depth": "deep",
+    "marker": {
+      "x": 520,
+      "y": 392
+    }
+  },
+  {
+    "id": "maxillary-artery-pterygoid-part",
+    "name": "Pterygoid (second) part of maxillary artery",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "Second part of the maxillary artery, whose branches are all muscular and supply the muscles of mastication and the buccinator region.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Continuation of the mandibular part at the lower border of lateral pterygoid."
+      },
+      {
+        "label": "Course",
+        "value": "Runs obliquely forward and up, superficial or deep to the lower head of lateral pterygoid, toward the pterygomaxillary fissure."
+      },
+      {
+        "label": "Branches",
+        "value": "Anterior and posterior deep temporal arteries, masseteric artery, medial and lateral pterygoid arteries, buccal artery."
+      },
+      {
+        "label": "Supplies",
+        "value": "Temporalis, masseter, medial and lateral pterygoids, buccinator and cheek."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies within the pterygoid venous plexus; the buccal, lingual and inferior alveolar nerves are close to it."
+      }
+    ],
+    "pearl": "Bleeding from this part and the surrounding pterygoid plexus causes the hematoma that can follow a posterior superior alveolar nerve block.",
+    "depth": "deep",
+    "marker": {
+      "x": 520,
+      "y": 392
+    }
+  },
+  {
+    "id": "maxillary-artery-pterygopalatine-part",
+    "name": "Pterygopalatine (third) part of maxillary artery",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "Third part of the maxillary artery, distributing with the branches of the maxillary nerve to the nasal cavity, palate, upper teeth and face.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Continuation of the pterygoid part as it passes between the two heads of lateral pterygoid."
+      },
+      {
+        "label": "Course",
+        "value": "Enters the pterygopalatine fossa through the pterygomaxillary fissure and breaks up in front of the pterygopalatine ganglion."
+      },
+      {
+        "label": "Branches",
+        "value": "Posterior superior alveolar artery, infraorbital artery (with middle and anterior superior alveolar arteries), descending palatine artery (greater and lesser palatine arteries), artery of the pterygoid canal, pharyngeal artery, sphenopalatine artery (terminal)."
+      },
+      {
+        "label": "Supplies",
+        "value": "Maxillary teeth and sinus, lower eyelid and cheek, hard and soft palate, nasopharynx, nasal septum and lateral nasal wall."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies anterior to the pterygopalatine ganglion and the maxillary nerve in the fossa."
+      }
+    ],
+    "pearl": "Its sphenopalatine terminal branch is the vessel clipped or embolized for refractory posterior epistaxis.",
+    "depth": "deep",
+    "marker": {
+      "x": 325,
+      "y": 405
+    }
+  },
+  {
+    "id": "subclavian-artery-first-part",
+    "name": "First part of subclavian artery",
+    "category": "artery",
+    "group": "Subclavian & vertebral",
+    "function": "Segment of the subclavian medial to the anterior scalene that gives the vertebral, internal thoracic and thyrocervical vessels.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Right: brachiocephalic trunk behind the sternoclavicular joint. Left: aortic arch."
+      },
+      {
+        "label": "Course",
+        "value": "Arches up and laterally over the cervical pleura to the medial border of the anterior scalene."
+      },
+      {
+        "label": "Branches",
+        "value": "Vertebral artery, internal thoracic artery, thyrocervical trunk (inferior thyroid, transverse cervical, suprascapular arteries)."
+      },
+      {
+        "label": "Supplies",
+        "value": "Brain stem and cerebellum, anterior chest wall, thyroid gland, root of the neck and scapular region."
+      },
+      {
+        "label": "Relations",
+        "value": "Crossed anteriorly by the vagus and phrenic nerves and the internal jugular and vertebral veins; the ansa subclavia loops around it; the right recurrent laryngeal nerve hooks beneath it; the thoracic duct crosses the left one."
+      }
+    ],
+    "pearl": "Stenosis proximal to the vertebral origin causes subclavian steal: arm exercise reverses vertebral flow and produces vertebrobasilar symptoms with a lower blood pressure in that arm.",
+    "depth": "deep",
+    "marker": {
+      "x": 650,
+      "y": 925
+    }
+  },
+  {
+    "id": "subclavian-artery-second-part",
+    "name": "Second part of subclavian artery",
+    "category": "artery",
+    "group": "Subclavian & vertebral",
+    "function": "Short highest segment of the subclavian lying behind the anterior scalene, giving the costocervical trunk.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Continuation of the first part at the medial border of the anterior scalene."
+      },
+      {
+        "label": "Course",
+        "value": "Forms the summit of the arch behind the anterior scalene, on the cervical pleura and suprapleural membrane."
+      },
+      {
+        "label": "Branches",
+        "value": "Costocervical trunk (deep cervical and supreme intercostal arteries)."
+      },
+      {
+        "label": "Supplies",
+        "value": "Deep muscles of the back of the neck and the first two intercostal spaces."
+      },
+      {
+        "label": "Relations",
+        "value": "Anterior scalene in front separates it from the subclavian vein and phrenic nerve; middle scalene and the lower trunk of the brachial plexus lie behind."
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 715,
+      "y": 955
+    }
+  },
+  {
+    "id": "subclavian-artery-third-part",
+    "name": "Third part of subclavian artery",
+    "category": "artery",
+    "group": "Subclavian & vertebral",
+    "function": "Most superficial segment of the subclavian, crossing the first rib in the posterior triangle to become the axillary artery.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Continuation of the second part at the lateral border of the anterior scalene."
+      },
+      {
+        "label": "Course",
+        "value": "Runs down and laterally across the posterior triangle and the upper surface of the first rib to its outer border."
+      },
+      {
+        "label": "Branches",
+        "value": "Dorsal scapular artery when it is not the deep branch of the transverse cervical artery; often no branch."
+      },
+      {
+        "label": "Supplies",
+        "value": "Rhomboids and levator scapulae through the dorsal scapular artery; continues as the upper limb supply."
+      },
+      {
+        "label": "Relations",
+        "value": "Trunks of the brachial plexus lie above and behind, the lower trunk directly behind on the first rib; subclavian vein in front and below; crossed by the suprascapular vessels."
+      }
+    ],
+    "pearl": "Its pulse is felt, and it can be compressed against the first rib, in the angle between the clavicle and the posterior border of sternocleidomastoid; a cervical rib or tight scalene interval compresses it here in thoracic outlet syndrome.",
+    "depth": "intermediate",
+    "marker": {
+      "x": 650,
+      "y": 925
+    }
+  },
+  {
+    "id": "vertebral-artery-prevertebral-part",
+    "name": "Prevertebral part of vertebral artery (V1)",
+    "category": "artery",
+    "group": "Subclavian & vertebral",
+    "function": "First part of the vertebral artery, from its subclavian origin to the transverse foramen of C6.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Posterosuperior aspect of the first part of the subclavian artery."
+      },
+      {
+        "label": "Course",
+        "value": "Ascends in the angle between longus colli and the anterior scalene to enter the transverse foramen of C6."
+      },
+      {
+        "label": "Branches",
+        "value": "Usually none."
+      },
+      {
+        "label": "Supplies",
+        "value": "No territory of its own; carries flow toward the hindbrain."
+      },
+      {
+        "label": "Relations",
+        "value": "Behind the common carotid artery and vertebral vein; crossed by the inferior thyroid artery (and the thoracic duct on the left); the cervicothoracic (stellate) ganglion lies behind it."
+      }
+    ],
+    "pearl": "Its origin is the commonest site of vertebral atherosclerosis.",
+    "depth": "deep",
+    "marker": {
+      "x": 700,
+      "y": 640
+    }
+  },
+  {
+    "id": "vertebral-artery-cervical-part",
+    "name": "Cervical part of vertebral artery (V2)",
+    "category": "artery",
+    "group": "Subclavian & vertebral",
+    "function": "Second part of the vertebral artery, ascending through the cervical transverse foramina and reinforcing the supply of the cervical cord.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Continuation of the prevertebral part at the transverse foramen of C6."
+      },
+      {
+        "label": "Course",
+        "value": "Ascends through the transverse foramina of C6 to C1, in front of the anterior rami of the cervical nerves, with the vertebral venous plexus and sympathetic vertebral plexus."
+      },
+      {
+        "label": "Branches",
+        "value": "Segmental medullary (spinal) branches through the intervertebral foramina; muscular branches to the deep neck muscles."
+      },
+      {
+        "label": "Supplies",
+        "value": "Cervical spinal cord and meninges, vertebrae and deep cervical muscles."
+      },
+      {
+        "label": "Relations",
+        "value": "Uncovertebral joints lie medial; the C7 transverse foramen carries vertebral veins but usually not the artery."
+      }
+    ],
+    "pearl": "Uncovertebral osteophytes or neck rotation can compress the artery within the transverse foramina, causing vertebrobasilar insufficiency.",
+    "depth": "deep",
+    "marker": {
+      "x": 700,
+      "y": 640
+    }
+  },
+  {
+    "id": "vertebral-artery-atlantic-part",
+    "name": "Atlantic part of vertebral artery (V3, horizontal segment)",
+    "category": "artery",
+    "group": "Subclavian & vertebral",
+    "function": "Third part of the vertebral artery, curving behind the lateral mass of the atlas in the suboccipital triangle.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Continuation of the cervical part as it leaves the transverse foramen of the atlas."
+      },
+      {
+        "label": "Course",
+        "value": "Winds posteromedially in the groove for the vertebral artery on the posterior arch of the atlas, then pierces the posterior atlanto-occipital membrane and dura."
+      },
+      {
+        "label": "Branches",
+        "value": "Muscular branches to the suboccipital muscles, anastomosing with the descending branch of the occipital artery and the deep cervical artery."
+      },
+      {
+        "label": "Supplies",
+        "value": "Suboccipital muscles."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies in the floor of the suboccipital triangle with the suboccipital nerve (posterior ramus of C1) between it and the posterior arch of the atlas."
+      }
+    ],
+    "pearl": "This mobile loop is the usual site of vertebral artery dissection after sudden neck rotation or manipulation, a cause of posterior-circulation stroke in young adults.",
+    "depth": "deep",
+    "marker": {
+      "x": 700,
+      "y": 640
+    }
+  },
+  {
+    "id": "vertebral-artery-intracranial-part",
+    "name": "Intracranial part of vertebral artery (V4)",
+    "category": "artery",
+    "group": "Subclavian & vertebral",
+    "function": "Fourth, intradural part of the vertebral artery, supplying the medulla, upper cord and inferior cerebellum before forming the basilar artery.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Continuation of the atlantic part after it pierces the dura."
+      },
+      {
+        "label": "Course",
+        "value": "Passes through the foramen magnum and runs up and medially in front of the medulla to the lower border of the pons, where it joins its fellow."
+      },
+      {
+        "label": "Branches",
+        "value": "Anterior and posterior meningeal branches, posterior spinal artery, posterior inferior cerebellar artery, anterior spinal artery."
+      },
+      {
+        "label": "Supplies",
+        "value": "Medulla, upper cervical cord, inferior cerebellum and dura of the posterior cranial fossa."
+      },
+      {
+        "label": "Relations",
+        "value": "Rootlets of the hypoglossal nerve lie behind it; the first denticulate ligament and the spinal accessory root are posterior."
+      }
+    ],
+    "pearl": "Occlusion of this part, more often than of PICA itself, produces the lateral medullary (Wallenberg) syndrome.",
+    "depth": "deep",
+    "marker": {
+      "x": 700,
+      "y": 640
+    }
+  },
+  {
+    "id": "aortic-arch",
+    "name": "Aortic arch",
+    "category": "artery",
+    "group": "Subclavian & vertebral",
+    "function": "Arch of the aorta in the superior mediastinum, giving the three great vessels that supply the head, neck and upper limbs.",
+    "details": [
+      {
+        "label": "Divisions",
+        "value": "Branches from right to left: brachiocephalic trunk, left common carotid artery, left subclavian artery. The aorta itself is labelled as ascending aorta, arch and descending aorta."
+      },
+      {
+        "label": "Origin",
+        "value": "Continuation of the ascending aorta behind the right second sternocostal joint."
+      },
+      {
+        "label": "Course",
+        "value": "Arches up, back and to the left over the root of the left lung, in front of and then to the left of the trachea, to the left side of T4."
+      },
+      {
+        "label": "Branches",
+        "value": "In order: brachiocephalic trunk (to right common carotid and right subclavian), left common carotid artery, left subclavian artery; occasionally a thyroid ima artery."
+      },
+      {
+        "label": "Supplies",
+        "value": "Head, neck and both upper limbs through its three branches."
+      },
+      {
+        "label": "Relations",
+        "value": "Left brachiocephalic vein crosses in front of its branches; left vagus and phrenic nerves cross its left side; the left recurrent laryngeal nerve hooks under it beside the ligamentum arteriosum."
+      }
+    ],
+    "pearl": "An arch aneurysm can stretch the left recurrent laryngeal nerve and present with hoarseness.",
+    "depth": "deep",
+    "marker": {
+      "x": 480,
+      "y": 860
+    }
+  },
+  {
+    "id": "frontal-branch-of-superficial-temporal-artery",
+    "name": "Frontal branch of superficial temporal artery",
+    "category": "artery",
+    "group": "External carotid branches",
+    "function": "Anterior terminal branch of the superficial temporal artery, supplying the temple and lateral forehead.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Division of the superficial temporal artery on the temporal fascia about 2-3 cm above the zygomatic arch."
+      },
+      {
+        "label": "Course",
+        "value": "Runs tortuously forward and up across the temple toward the forehead in the superficial fascia."
+      },
+      {
+        "label": "Branches",
+        "value": "Cutaneous and muscular twigs; anastomoses with the supraorbital and supratrochlear arteries and with its fellow."
+      },
+      {
+        "label": "Supplies",
+        "value": "Skin, frontalis and pericranium of the lateral forehead and anterior temple."
+      },
+      {
+        "label": "Relations",
+        "value": "Runs with the temporal branches of the facial nerve and branches of the auriculotemporal nerve; the anastomosis with the supraorbital artery links external and internal carotid territories."
+      }
+    ],
+    "pearl": "This is the visible, tortuous temple vessel that is tender and nodular in giant cell arteritis and is the usual site of temporal artery biopsy.",
+    "depth": "superficial",
+    "marker": {
+      "x": 578,
+      "y": 300
+    }
+  },
+  {
+    "id": "parietal-branch-of-superficial-temporal-artery",
+    "name": "Parietal branch of superficial temporal artery",
+    "category": "artery",
+    "group": "External carotid branches",
+    "function": "Posterior terminal branch of the superficial temporal artery, supplying the parietal scalp.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Division of the superficial temporal artery above the zygomatic arch."
+      },
+      {
+        "label": "Course",
+        "value": "Ascends and curves backward over the temporal fascia and the side of the head."
+      },
+      {
+        "label": "Branches",
+        "value": "Cutaneous twigs; anastomoses with its fellow across the vertex and with the posterior auricular and occipital arteries."
+      },
+      {
+        "label": "Supplies",
+        "value": "Skin and aponeurosis of the temporal and parietal scalp."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies in the dense connective tissue layer of the scalp with the auriculotemporal nerve."
+      }
+    ],
+    "pearl": "Scalp arteries are held open by the dense connective tissue layer and anastomose freely, so scalp lacerations bleed briskly from both cut ends.",
+    "depth": "superficial",
+    "marker": {
+      "x": 578,
+      "y": 300
+    }
+  },
+  {
+    "id": "frontal-branch-of-middle-meningeal-artery",
+    "name": "Frontal (anterior) branch of middle meningeal artery",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "Larger anterior division of the middle meningeal artery, supplying the anterior dura and inner table of the skull.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Division of the middle meningeal artery on the floor of the middle cranial fossa."
+      },
+      {
+        "label": "Course",
+        "value": "Crosses the greater wing of the sphenoid, grooving or tunnelling the bone deep to the pterion, then ascends toward the vertex over the frontal and anterior parietal regions."
+      },
+      {
+        "label": "Branches",
+        "value": "Branches to the dura, diploe and inner table; orbital (anastomotic) branch joining the recurrent meningeal branch of the lacrimal artery."
+      },
+      {
+        "label": "Supplies",
+        "value": "Dura and calvaria of the anterior and middle cranial fossae and frontoparietal convexity."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies between the dura and the bone immediately deep to the pterion, overlying the precentral region of the brain."
+      }
+    ],
+    "pearl": "A fracture through the pterion tears this branch, producing an epidural hematoma with a lucid interval and a biconvex collection on CT.",
+    "depth": "deep",
+    "marker": {
+      "x": 490,
+      "y": 290
+    }
+  },
+  {
+    "id": "parietal-branch-of-middle-meningeal-artery",
+    "name": "Parietal (posterior) branch of middle meningeal artery",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "Posterior division of the middle meningeal artery, supplying the posterior dura and calvaria.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Division of the middle meningeal artery on the floor of the middle cranial fossa."
+      },
+      {
+        "label": "Course",
+        "value": "Curves backward over the squamous part of the temporal bone and the parietal bone toward the lambda."
+      },
+      {
+        "label": "Branches",
+        "value": "Branches to the dura, diploe and inner table; anastomoses with the mastoid branch of the occipital artery and its fellow."
+      },
+      {
+        "label": "Supplies",
+        "value": "Dura and calvaria of the posterior parietal and occipital convexity."
+      },
+      {
+        "label": "Relations",
+        "value": "Runs extradurally in grooves on the squamous temporal and parietal bones."
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 490,
+      "y": 290
+    }
+  },
+  {
+    "id": "posterior-lateral-nasal-branches-of-sphenopalatine-artery",
+    "name": "Posterior lateral nasal branches of sphenopalatine artery",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "Branches of the sphenopalatine artery that supply most of the lateral wall of the nasal cavity.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Sphenopalatine artery as it enters the nasal cavity through the sphenopalatine foramen."
+      },
+      {
+        "label": "Course",
+        "value": "Run forward over the middle and inferior nasal conchae and their meatuses."
+      },
+      {
+        "label": "Branches",
+        "value": "Branches to the conchae and meatuses and to the maxillary, ethmoidal and sphenoidal sinuses; anastomose with the anterior lateral nasal branches of the anterior ethmoidal artery and the lateral nasal branch of the facial artery."
+      },
+      {
+        "label": "Supplies",
+        "value": "Mucosa of the lateral nasal wall, conchae and paranasal sinuses."
+      },
+      {
+        "label": "Relations",
+        "value": "Accompany the posterior superior lateral nasal nerves from the pterygopalatine ganglion."
+      }
+    ],
+    "pearl": "They are the usual source of posterior epistaxis, controlled by endoscopic sphenopalatine artery ligation behind the middle concha.",
+    "depth": "deep",
+    "marker": {
+      "x": 325,
+      "y": 405
+    }
+  },
+  {
+    "id": "posterior-septal-branches-of-sphenopalatine-artery",
+    "name": "Posterior septal branches of sphenopalatine artery",
+    "category": "artery",
+    "group": "Maxillary & facial branches",
+    "function": "Terminal branches of the sphenopalatine artery that supply the nasal septum and join the anterior septal anastomosis.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Sphenopalatine artery at the sphenopalatine foramen."
+      },
+      {
+        "label": "Course",
+        "value": "Cross the roof of the nasal cavity on the anterior face of the sphenoid body to the septum, then run down and forward in a groove on the vomer to the incisive canal."
+      },
+      {
+        "label": "Branches",
+        "value": "Septal twigs; anastomose with the greater palatine artery in the incisive canal, the septal branch of the superior labial artery and the anterior ethmoidal artery."
+      },
+      {
+        "label": "Supplies",
+        "value": "Posterior and inferior nasal septum; contribute to Kiesselbach plexus."
+      },
+      {
+        "label": "Relations",
+        "value": "Run with the nasopalatine nerve."
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 325,
+      "y": 405
+    }
+  },
+  {
+    "id": "palpebral-arteries",
+    "name": "Medial and lateral palpebral arteries (palpebral arterial arches)",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Arteries of the eyelids, forming superior and inferior arterial arches between the ophthalmic and lacrimal arteries.",
+    "details": [
+      {
+        "label": "Divisions",
+        "value": "Superior medial palpebral artery and inferior medial palpebral artery (from ophthalmic); superior lateral palpebral artery and inferior lateral palpebral artery (from lacrimal); joined as the superior and inferior palpebral arterial arches."
+      },
+      {
+        "label": "Origin",
+        "value": "Medial palpebral arteries (superior and inferior) from the ophthalmic artery below the trochlea; lateral palpebral arteries (superior and inferior) from the lacrimal artery."
+      },
+      {
+        "label": "Course",
+        "value": "Enter the lids at the medial and lateral angles and run toward each other between orbicularis oculi and the tarsal plates."
+      },
+      {
+        "label": "Branches",
+        "value": "Superior and inferior palpebral arterial arches; twigs to conjunctiva and nasolacrimal duct; anastomoses with the angular, transverse facial, zygomatico-orbital and supraorbital arteries."
+      },
+      {
+        "label": "Supplies",
+        "value": "Eyelids, tarsal glands, palpebral conjunctiva."
+      },
+      {
+        "label": "Relations",
+        "value": "Lie on the anterior surface of the tarsi deep to orbicularis oculi."
+      }
+    ],
+    "pearl": "The lids are a meeting point of external and internal carotid territories, so they heal quickly and bleed freely.",
+    "depth": "superficial",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "recurrent-artery-of-heubner",
+    "name": "Long medial striate artery (recurrent artery of Heubner)",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Largest perforating branch of the anterior cerebral artery, supplying the anterior deep structures of the hemisphere.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Anterior cerebral artery at or just beyond the anterior communicating artery (proximal A2 or distal A1)."
+      },
+      {
+        "label": "Course",
+        "value": "Doubles back laterally along the A1 segment to enter the anterior perforated substance."
+      },
+      {
+        "label": "Branches",
+        "value": "Perforating branches only."
+      },
+      {
+        "label": "Supplies",
+        "value": "Head of the caudate nucleus, anterior putamen and anterior limb of the internal capsule."
+      },
+      {
+        "label": "Relations",
+        "value": "Runs above the A1 segment and optic nerve, close to the anterior communicating artery."
+      }
+    ],
+    "pearl": "Occlusion, for example during clipping of an anterior communicating aneurysm, gives contralateral face and arm weakness with dysarthria.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "medial-frontobasal-artery",
+    "name": "Medial frontobasal (medial orbitofrontal) artery",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "First cortical branch of the anterior cerebral artery, supplying the medial orbital surface of the frontal lobe.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "A2 segment of the anterior cerebral artery just beyond the anterior communicating artery."
+      },
+      {
+        "label": "Course",
+        "value": "Runs forward along the gyrus rectus and medial orbital surface."
+      },
+      {
+        "label": "Branches",
+        "value": "Cortical twigs."
+      },
+      {
+        "label": "Supplies",
+        "value": "Gyrus rectus, medial orbital gyri, olfactory bulb and tract."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies on the floor of the anterior cranial fossa beside the olfactory tract."
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "callosomarginal-artery",
+    "name": "Callosomarginal artery",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Major branch of the anterior cerebral artery running in the cingulate sulcus to the medial frontal lobe and paracentral lobule.",
+    "details": [
+      {
+        "label": "Divisions",
+        "value": "Anterior medial frontal branch, intermediate medial frontal branch, posterior medial frontal branch, cingular branches, paracentral artery."
+      },
+      {
+        "label": "Origin",
+        "value": "Anterior cerebral artery (A2) near the genu of the corpus callosum."
+      },
+      {
+        "label": "Course",
+        "value": "Runs backward in the cingulate sulcus above the cingulate gyrus."
+      },
+      {
+        "label": "Branches",
+        "value": "Anterior, intermediate and posterior medial frontal branches, cingular branches, paracentral artery."
+      },
+      {
+        "label": "Supplies",
+        "value": "Medial surface of the superior frontal gyrus, cingulate gyrus, and the paracentral lobule (leg and foot motor and sensory cortex)."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies beside the falx cerebri, above the pericallosal artery."
+      }
+    ],
+    "pearl": "Infarction of its paracentral territory causes contralateral leg weakness and sensory loss with urinary incontinence; subfalcine herniation can compress it against the falx.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "pericallosal-artery",
+    "name": "Pericallosal artery",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Continuation of the anterior cerebral artery over the corpus callosum to the medial parietal lobe.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Anterior cerebral artery beyond the origin of the callosomarginal artery."
+      },
+      {
+        "label": "Course",
+        "value": "Runs backward in the callosal sulcus on the body of the corpus callosum toward the splenium."
+      },
+      {
+        "label": "Branches",
+        "value": "Branches to the corpus callosum, precuneal artery, terminal cortical branches reaching the superolateral surface."
+      },
+      {
+        "label": "Supplies",
+        "value": "Corpus callosum (genu and body), cingulate gyrus, precuneus."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies under the free edge of the falx cerebri; anastomoses with the dorsal branch to corpus callosum of the posterior cerebral artery at the splenium."
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "lenticulostriate-arteries",
+    "name": "Anterolateral central (lenticulostriate) arteries",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Small end-arteries from the stem of the middle cerebral artery that supply the basal ganglia and internal capsule.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "M1 segment of the middle cerebral artery (proximal medial and distal lateral groups)."
+      },
+      {
+        "label": "Course",
+        "value": "Ascend at right angles through the anterior perforated substance into the hemisphere."
+      },
+      {
+        "label": "Branches",
+        "value": "Perforating end-arteries without significant anastomoses."
+      },
+      {
+        "label": "Supplies",
+        "value": "Putamen, globus pallidus, body of the caudate nucleus and the genu and posterior limb of the internal capsule."
+      },
+      {
+        "label": "Relations",
+        "value": "Enter the brain lateral to the optic tract; the long medial striate artery enters medial to them."
+      }
+    ],
+    "pearl": "Hypertensive lipohyalinosis and Charcot-Bouchard microaneurysms of these vessels cause lacunar infarcts (pure motor stroke) and putaminal hemorrhage.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "lateral-frontobasal-artery",
+    "name": "Lateral frontobasal (lateral orbitofrontal) artery",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Cortical branch of the middle cerebral artery to the lateral orbital surface and inferior frontal gyrus.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Middle cerebral artery (superior division) in the lateral sulcus."
+      },
+      {
+        "label": "Course",
+        "value": "Runs forward and up over the lateral orbital surface of the frontal lobe."
+      },
+      {
+        "label": "Branches",
+        "value": "Cortical twigs."
+      },
+      {
+        "label": "Supplies",
+        "value": "Lateral orbital gyri and the orbital part of the inferior frontal gyrus."
+      },
+      {
+        "label": "Relations",
+        "value": "Emerges from the anterior ramus of the lateral sulcus."
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "prefrontal-artery",
+    "name": "Prefrontal artery",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Cortical branch of the middle cerebral artery to the lateral prefrontal cortex.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Middle cerebral artery (superior division) in the lateral sulcus."
+      },
+      {
+        "label": "Course",
+        "value": "Fans upward over the triangular and opercular parts of the inferior frontal gyrus and the middle frontal gyrus."
+      },
+      {
+        "label": "Branches",
+        "value": "Cortical twigs."
+      },
+      {
+        "label": "Supplies",
+        "value": "Inferior and middle frontal gyri, including Broca's area in the dominant hemisphere and the frontal eye field."
+      },
+      {
+        "label": "Relations",
+        "value": "Emerges from the lateral sulcus over the frontal operculum."
+      }
+    ],
+    "pearl": "Occlusion in the dominant hemisphere produces Broca (nonfluent) aphasia; involvement of the frontal eye field deviates the eyes toward the lesion.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "artery-of-precentral-sulcus",
+    "name": "Artery of precentral sulcus",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Cortical branch of the middle cerebral artery running in the precentral sulcus.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Middle cerebral artery (superior division) in the lateral sulcus."
+      },
+      {
+        "label": "Course",
+        "value": "Ascends in the precentral sulcus."
+      },
+      {
+        "label": "Branches",
+        "value": "Cortical twigs to the adjoining gyri."
+      },
+      {
+        "label": "Supplies",
+        "value": "Posterior parts of the middle and inferior frontal gyri and the lower precentral gyrus (premotor cortex and face and arm motor cortex)."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies in front of the artery of the central sulcus."
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "artery-of-central-sulcus",
+    "name": "Artery of central sulcus",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Cortical branch of the middle cerebral artery running in the central sulcus to the primary motor and sensory cortex.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Middle cerebral artery (superior division) in the lateral sulcus."
+      },
+      {
+        "label": "Course",
+        "value": "Ascends in the central sulcus toward the superior margin of the hemisphere."
+      },
+      {
+        "label": "Branches",
+        "value": "Cortical twigs to the precentral and postcentral gyri."
+      },
+      {
+        "label": "Supplies",
+        "value": "Precentral and postcentral gyri for the face and upper limb."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies between the arteries of the precentral and postcentral sulci; its territory meets the anterior cerebral territory near the superior margin."
+      }
+    ],
+    "pearl": "Occlusion causes contralateral weakness and sensory loss of the face and arm with relative sparing of the leg.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "artery-of-postcentral-sulcus",
+    "name": "Artery of postcentral sulcus (anterior parietal artery)",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Cortical branch of the middle cerebral artery running in the postcentral sulcus.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Middle cerebral artery in the lateral sulcus."
+      },
+      {
+        "label": "Course",
+        "value": "Ascends in the postcentral sulcus and then back along the intraparietal sulcus."
+      },
+      {
+        "label": "Branches",
+        "value": "Cortical twigs."
+      },
+      {
+        "label": "Supplies",
+        "value": "Postcentral gyrus (face and arm somatosensory cortex) and anterior part of the parietal lobules."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies behind the artery of the central sulcus."
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "posterior-parietal-artery",
+    "name": "Posterior parietal artery",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Cortical branch of the middle cerebral artery to the posterior parietal lobe.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Middle cerebral artery (inferior or superior division) at the posterior end of the lateral sulcus."
+      },
+      {
+        "label": "Course",
+        "value": "Emerges from the posterior ramus of the lateral sulcus and runs up and back over the supramarginal gyrus."
+      },
+      {
+        "label": "Branches",
+        "value": "Cortical twigs."
+      },
+      {
+        "label": "Supplies",
+        "value": "Supramarginal gyrus and inferior and superior parietal lobules."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies between the artery of the postcentral sulcus and the artery to the angular gyrus."
+      }
+    ],
+    "pearl": "Infarction of the non-dominant parietal lobe causes contralateral hemispatial neglect.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "artery-to-angular-gyrus",
+    "name": "Artery to angular gyrus",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Terminal cortical branch of the middle cerebral artery, supplying the angular gyrus.",
+    "details": [
+      {
+        "label": "Origin",
+        "value": "Terminal part of the middle cerebral artery at the posterior end of the lateral sulcus."
+      },
+      {
+        "label": "Course",
+        "value": "Runs back over the superior temporal gyrus to the angular gyrus."
+      },
+      {
+        "label": "Branches",
+        "value": "Cortical twigs."
+      },
+      {
+        "label": "Supplies",
+        "value": "Angular gyrus and adjoining parts of the supramarginal gyrus and lateral occipital cortex."
+      },
+      {
+        "label": "Relations",
+        "value": "Its territory borders the posterior cerebral territory in the posterior watershed zone."
+      }
+    ],
+    "pearl": "Dominant angular gyrus infarction gives Gerstmann syndrome: agraphia, acalculia, finger agnosia and left-right disorientation.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "temporal-branches-of-middle-cerebral-artery",
+    "name": "Temporal branches of middle cerebral artery (anterior, middle and posterior)",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Cortical branches of the inferior division of the middle cerebral artery, supplying the lateral temporal lobe.",
+    "details": [
+      {
+        "label": "Divisions",
+        "value": "Polar temporal artery (temporal pole), anterior temporal artery, middle temporal artery, posterior temporal artery (continuing as the temporo-occipital branch)."
+      },
+      {
+        "label": "Origin",
+        "value": "Middle cerebral artery (inferior division) in the lateral sulcus."
+      },
+      {
+        "label": "Course",
+        "value": "Descend out of the lateral sulcus over the superior and middle temporal gyri; the posterior branch continues toward the occipital lobe as the temporo-occipital branch."
+      },
+      {
+        "label": "Branches",
+        "value": "Cortical twigs."
+      },
+      {
+        "label": "Supplies",
+        "value": "Temporal pole and the superior and middle temporal gyri, including the primary auditory cortex and Wernicke's area in the dominant hemisphere."
+      },
+      {
+        "label": "Relations",
+        "value": "Emerge under the temporal operculum."
+      }
+    ],
+    "pearl": "Dominant inferior-division occlusion causes Wernicke (fluent) aphasia, often with a contralateral superior quadrantanopia.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "thalamoperforating-and-thalamogeniculate-arteries",
+    "name": "Thalamoperforating and thalamogeniculate arteries",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Perforating branches of the posterior cerebral artery that supply the thalamus and upper midbrain.",
+    "details": [
+      {
+        "label": "Divisions",
+        "value": "Thalamoperforating arteries (from P1, through the posterior perforated substance); thalamogeniculate arteries (from P2, to the posterolateral thalamus and geniculate bodies)."
+      },
+      {
+        "label": "Origin",
+        "value": "Thalamoperforating (posteromedial central) arteries from the P1 segment; thalamogeniculate arteries from the P2 segment."
+      },
+      {
+        "label": "Course",
+        "value": "Thalamoperforating arteries enter the posterior perforated substance in the interpeduncular fossa; thalamogeniculate arteries enter the brain around the geniculate bodies."
+      },
+      {
+        "label": "Branches",
+        "value": "Perforating end-arteries."
+      },
+      {
+        "label": "Supplies",
+        "value": "Medial and anterior thalamus, subthalamus and paramedian midbrain (thalamoperforating); ventral posterior and lateral thalamus and geniculate bodies (thalamogeniculate)."
+      },
+      {
+        "label": "Relations",
+        "value": "The oculomotor nerve emerges among the thalamoperforating vessels in the interpeduncular fossa."
+      }
+    ],
+    "pearl": "Thalamogeniculate infarction causes contralateral hemisensory loss followed by thalamic pain (Dejerine-Roussy syndrome).",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "posterior-choroidal-arteries",
+    "name": "Posterior medial and posterior lateral choroidal arteries",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Branches of the posterior cerebral artery supplying the choroid plexuses of the third and lateral ventricles.",
+    "details": [
+      {
+        "label": "Divisions",
+        "value": "Posterior medial choroidal artery (to choroid plexus of the 3rd ventricle); posterior lateral choroidal artery (to choroid plexus of the lateral ventricle)."
+      },
+      {
+        "label": "Origin",
+        "value": "P2 segment of the posterior cerebral artery."
+      },
+      {
+        "label": "Course",
+        "value": "Posterior medial choroidal artery curves around the midbrain to the roof of the third ventricle; posterior lateral choroidal artery passes over the pulvinar through the choroidal fissure into the lateral ventricle."
+      },
+      {
+        "label": "Branches",
+        "value": "Twigs to the tectum, pineal region, pulvinar, lateral geniculate body and fornix."
+      },
+      {
+        "label": "Supplies",
+        "value": "Choroid plexus of the third ventricle (medial); choroid plexus of the lateral ventricle, pulvinar and lateral geniculate body (lateral)."
+      },
+      {
+        "label": "Relations",
+        "value": "The posterior lateral choroidal artery anastomoses with the anterior choroidal artery in the choroid plexus of the lateral ventricle."
+      }
+    ],
+    "pearl": "",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "medial-occipital-artery",
+    "name": "Medial occipital artery (parieto-occipital and calcarine branches)",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Medial terminal division of the posterior cerebral artery, supplying the primary visual cortex.",
+    "details": [
+      {
+        "label": "Divisions",
+        "value": "Dorsal branch to corpus callosum (posterior pericallosal artery), parieto-occipital branch (in the parieto-occipital sulcus), calcarine branch (in the calcarine sulcus), occipitotemporal branches."
+      },
+      {
+        "label": "Origin",
+        "value": "Terminal division of the posterior cerebral artery behind the midbrain."
+      },
+      {
+        "label": "Course",
+        "value": "Runs backward on the medial surface of the occipital lobe toward the calcarine and parieto-occipital sulci."
+      },
+      {
+        "label": "Branches",
+        "value": "Dorsal branch to corpus callosum (posterior pericallosal artery), parieto-occipital branch, calcarine branch, occipitotemporal branches."
+      },
+      {
+        "label": "Supplies",
+        "value": "Splenium of the corpus callosum, cuneus, precuneus, lingual gyrus and the primary visual cortex on the banks of the calcarine sulcus."
+      },
+      {
+        "label": "Relations",
+        "value": "Lies under the splenium beside the great cerebral vein and the free edge of the tentorium."
+      }
+    ],
+    "pearl": "Occlusion gives contralateral homonymous hemianopia with macular sparing, because the occipital pole also receives middle cerebral collaterals.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "temporal-branches-of-posterior-cerebral-artery",
+    "name": "Temporal branches of posterior cerebral artery (lateral occipital artery)",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Lateral terminal division of the posterior cerebral artery, supplying the inferior surface of the temporal and occipital lobes.",
+    "details": [
+      {
+        "label": "Divisions",
+        "value": "Anterior temporal artery, posterior temporal artery, occipitotemporal branches."
+      },
+      {
+        "label": "Origin",
+        "value": "Terminal division of the posterior cerebral artery behind the midbrain."
+      },
+      {
+        "label": "Course",
+        "value": "Run laterally and backward across the parahippocampal and occipitotemporal gyri on the tentorial surface of the hemisphere."
+      },
+      {
+        "label": "Branches",
+        "value": "Anterior temporal artery, posterior temporal artery, occipitotemporal branches."
+      },
+      {
+        "label": "Supplies",
+        "value": "Uncus, hippocampus and parahippocampal gyrus, and the medial and lateral occipitotemporal (fusiform) gyri."
+      },
+      {
+        "label": "Relations",
+        "value": "Lie on the tentorium cerebelli; the artery is compressed against the tentorial edge in uncal herniation."
+      }
+    ],
+    "pearl": "Bilateral or dominant inferior temporal infarction causes memory impairment, and fusiform involvement causes prosopagnosia.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
+    }
+  },
+  {
+    "id": "pontine-arteries",
+    "name": "Pontine arteries",
+    "category": "artery",
+    "group": "Ophthalmic & intracranial",
+    "function": "Numerous small branches of the basilar artery that supply the pons.",
+    "details": [
+      {
+        "label": "Divisions",
+        "value": "Medial (paramedian) pontine branches; lateral (short and long circumferential) pontine branches."
+      },
+      {
+        "label": "Origin",
+        "value": "Both sides of the basilar artery along the basilar sulcus."
+      },
+      {
+        "label": "Course",
+        "value": "Paramedian (medial) branches enter the pons beside the midline; short and long circumferential (lateral) branches wind around its sides."
+      },
+      {
+        "label": "Branches",
+        "value": "Perforating end-arteries."
+      },
+      {
+        "label": "Supplies",
+        "value": "Corticospinal and corticobulbar tracts, pontine nuclei, medial lemniscus, abducens nucleus and fibres, and the lateral pontine tegmentum."
+      },
+      {
+        "label": "Relations",
+        "value": "The abducens nerve emerges at the lower border of the pons between them."
+      }
+    ],
+    "pearl": "Bilateral paramedian pontine infarction from basilar thrombosis causes locked-in syndrome; lacunar occlusion of one perforator causes pure motor hemiparesis or ataxic hemiparesis.",
+    "depth": "deep",
+    "marker": {
+      "x": 630,
+      "y": 400
     }
   }
 ]

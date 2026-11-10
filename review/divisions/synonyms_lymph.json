@@ -1,0 +1,8 @@
+{
+ "Nasolabial node": "nasolabial-nodes",
+ "Bucinator node": "buccinator-nodes",
+ "Mandibular node": "mandibular-nodes",
+ "Lateral superior jugular node": "superior-deep-lateral-cervical-nodes",
+ "Anterior inferior jugular nodes": "inferior-deep-lateral-cervical-node",
+ "Superficial anterior cervical nodes": "anterior-cervical-superficial-nodes"
+}

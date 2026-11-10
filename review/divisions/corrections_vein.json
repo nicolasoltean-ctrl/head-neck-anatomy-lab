@@ -1,0 +1,190 @@
+{
+ "category": "vein",
+ "verified": 52,
+ "corrections": [
+  {
+   "id": "internal-jugular-vein",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Superior bulb (in the jugular fossa, receives the sigmoid sinus); inferior bulb (dilation above the union with the subclavian vein, valve above it)",
+   "ref": "Plate 88 (p. 143) / Plate 179 (p. 261)",
+   "reason": "Netter labels both bulbs; card only mentions them in passing under two different labels",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "retromandibular-vein",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Anterior division (branch): joins the facial vein to form the common facial vein; posterior division (branch): joins the posterior auricular vein to form the external jugular vein",
+   "ref": "Plate 39 (p. 94) / Plate 84 (p. 139)",
+   "reason": "Netter labels anterior and posterior branches; marks them under an explicit Divisions label (restates Drains into)",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "brachiocephalic-veins",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Right brachiocephalic vein (short, vertical); left brachiocephalic vein (long, crosses behind the manubrium, receives the inferior thyroid veins)",
+   "ref": "Plate 87 (p. 142) / Plate 84 (p. 139) / Plate 179 (p. 261)",
+   "reason": "Right and left veins labelled separately in Netter",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "superficial-temporal-vein",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Frontal branch (forehead and anterior scalp); parietal branch (vertex and lateral scalp)",
+   "ref": "Plate 10 (p. 65)",
+   "reason": "Netter labels frontal and parietal branches of the superficial temporal artery and vein",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "supraorbital-supratrochlear-veins",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Supratrochlear vein (medial forehead, descends near the midline); supraorbital vein (lateral forehead, passes the supraorbital margin)",
+   "ref": "Plate 84 (p. 139) / Plate 99 (p. 154)",
+   "reason": "Combined card; the two veins are labelled separately in Netter",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "ophthalmic-veins",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Superior ophthalmic vein (roof of orbit, through the superior orbital fissure to the cavernous sinus); inferior ophthalmic vein (floor of orbit, to the cavernous sinus and pterygoid plexus)",
+   "ref": "Plate 99 (p. 154) / Plate 115 (p. 170)",
+   "reason": "Combined card; the two veins are labelled separately in Netter and are separate meshes in the model",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "vertebral-vein",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Venous plexus around the vertebral artery (in the transverse foramina); vertebral vein proper (single trunk below C6); anterior vertebral vein (with the ascending cervical artery); accessory vertebral vein (through the C7 transverse foramen); deep cervical vein (from the suboccipital region, joins near termination)",
+   "ref": "Plate 179 (p. 261) / Plate 27 (p. 82)",
+   "reason": "Netter labels the plexus around the artery and the anterior and accessory vertebral veins, which the card does not name",
+   "confidence": "netter-inferred"
+  },
+  {
+   "id": "vertebral-venous-plexus",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Internal vertebral (epidural) venous plexus (anterior and posterior, inside the vertebral canal); external vertebral venous plexus (anterior on the bodies, posterior on the arches); basivertebral veins (from the vertebral bodies into the anterior internal plexus); intervertebral veins (through the intervertebral foramina to the vertebral and segmental veins)",
+   "ref": "Plate 178 (p. 260) / Plate 179 (p. 261) / Plate 114 (p. 169)",
+   "reason": "Netter labels internal and external plexuses with basivertebral and intervertebral veins; intervertebral veins absent from card",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "transverse-sigmoid-sinuses",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Transverse sinus (in the attached margin of the tentorium cerebelli, from the confluence to the petrous base); sigmoid sinus (continuation of the transverse sinus, S-shaped groove to the jugular foramen)",
+   "ref": "Plate 114 (p. 169) / Plate 115 (p. 170)",
+   "reason": "Combined card; Netter labels the sigmoid sinus as the continuation of the transverse sinus and the model has both meshes",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "straight-sinus-great-cerebral-vein",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Great cerebral vein (of Galen) (short midline trunk formed by the two internal cerebral veins, receives the basal veins); straight sinus (in the junction of falx cerebri and tentorium cerebelli, formed by the great cerebral vein and inferior sagittal sinus)",
+   "ref": "Plate 114 (p. 169) / Plate 155 (p. 210) / Plate 156 (p. 211)",
+   "reason": "Combined card; the two structures are labelled separately in Netter",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "emissary-veins",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Parietal emissary vein (parietal foramen, to superior sagittal sinus); mastoid emissary vein (mastoid foramen, to sigmoid sinus); occipital emissary vein (near the external occipital protuberance, to the confluence of sinuses); condylar emissary vein (condylar canal, to sigmoid sinus); sphenoidal emissary vein of Vesalius (sphenoidal emissary foramen, cavernous sinus to pterygoid plexus); emissary vein of the foramen cecum (to superior sagittal sinus)",
+   "ref": "Plate 111 (p. 166) / Plate 20 (p. 75) / Plate 179 (p. 261) / Plate 84 (p. 139)",
+   "reason": "Group card; marks each Netter-named emissary vein with its foramen and sinus under an explicit Divisions label",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "diploic-veins",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Frontal diploic vein (to supraorbital vein and superior sagittal sinus); anterior temporal diploic vein (to sphenoparietal sinus and deep temporal veins); posterior temporal diploic vein (to transverse sinus); occipital diploic vein (to occipital vein or transverse sinus)",
+   "ref": "Plate 111 (p. 166)",
+   "reason": "Group card; Netter names four diploic veins, card gives their drainage only collectively",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "intercavernous-sinuses",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Anterior intercavernous sinus (in front of the infundibulum); posterior intercavernous sinus (behind the infundibulum, continuous with the basilar venous plexus)",
+   "ref": "Plate 114 (p. 169) / Plate 115 (p. 170)",
+   "reason": "Combined card; Netter labels anterior and posterior sinuses and the model has both meshes",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "anastomotic-veins-of-trolard-and-labbe",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Superior anastomotic vein (of Trolard) (superficial middle cerebral vein to superior sagittal sinus); inferior anastomotic vein (of Labbé) (superficial middle cerebral vein to transverse sinus)",
+   "ref": "Plate 113 (p. 168) / Plate 156 (p. 211)",
+   "reason": "Combined card; the two veins are labelled separately in Netter",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "internal-cerebral-veins-and-basal-vein",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Internal cerebral vein (right and left, in the roof of the 3rd ventricle; formed by the superior thalamostriate, superior choroid and septum pellucidum veins); basal vein (of Rosenthal) (around the cerebral crus; formed by the anterior cerebral, deep middle cerebral and inferior thalamostriate veins)",
+   "ref": "Plate 156 (p. 211) / Plate 157 (p. 212) / Plate 155 (p. 210)",
+   "reason": "Combined card; the two veins are labelled separately in Netter",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "efferent-hypophyseal-veins",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Primary plexus of the hypophyseal portal system (infundibulum and median eminence); portal veins of hypophysis (down the stalk); secondary plexus of the hypophyseal portal system (anterior lobe); capillary plexus of the infundibular process (posterior lobe); efferent hypophyseal veins (to the cavernous sinus)",
+   "ref": "Plate BP30 (p. 238) / Plate 151 (p. 206)",
+   "reason": "Netter labels each component of the hypophyseal venous system; marks them in order of flow",
+   "confidence": "netter-explicit"
+  }
+ ],
+ "missing": [
+  "Anterior division (branch) of retromandibular vein",
+  "Posterior division (branch) of retromandibular vein",
+  "Superior bulb of internal jugular vein",
+  "Inferior bulb of internal jugular vein",
+  "Superior labial vein",
+  "Inferior labial vein",
+  "External palatine (paratonsillar) vein",
+  "Superior ophthalmic vein",
+  "Inferior ophthalmic vein",
+  "Central retinal vein",
+  "Deep cervical vein",
+  "Transverse sinus",
+  "Sigmoid sinus",
+  "Parietal emissary vein",
+  "Mastoid emissary vein",
+  "Occipital emissary vein",
+  "Condylar emissary vein",
+  "Petrosal vein",
+  "Inferior cerebral veins",
+  "Deep middle cerebral vein",
+  "Veins of posterior cranial fossa (cerebellar and brain stem veins)"
+ ],
+ "notes": "All 52 vein cards examined against Plates 10, 38-40, 76, 84, 87-88, 99, 103, 111, 113-115, 155-157, 159, BP30-31 and back Plates 178-179. The existing cards already carried nearly every Netter-named part in running text; the 16 Divisions details mostly make those parts explicit under one label. Restatements of text already on the card (droppable if redundancy is unwanted): retromandibular-vein, brachiocephalic-veins, superficial-temporal-vein, supraorbital-supratrochlear-veins, ophthalmic-veins, transverse-sigmoid-sinuses, straight-sinus-great-cerebral-vein, intercavernous-sinuses, anastomotic-veins-of-trolard-and-labbe, emissary-veins. Adds with new content: internal-jugular-vein, vertebral-vein, vertebral-venous-plexus, diploic-veins, internal-cerebral-veins-and-basal-vein, efferent-hypophyseal-veins. No factual errors found. Combined cards split into component cards only where the model has separate meshes and the parts are separately tested (transverse/sigmoid sinus, superior/inferior ophthalmic vein, retromandibular divisions); the parent combined cards remain as overview cards and the integrator may prefer to retire or keep them. Intercavernous sinuses, straight sinus/great cerebral vein, Trolard/Labbe and internal cerebral/basal vein kept as combined cards with Divisions. No Divisions for cards whose Netter labels are tributaries rather than parts (facial, lingual, pterygoid plexus, thyroid veins, cavernous sinus, superior sagittal sinus etc.); those tributaries are already listed under 'Formed by / tributaries'. Not labelled in Netter head and neck plates and left alone: jugular venous arch (Netter shows only 'communicating vein' and 'termination of anterior jugular vein'), marginal sinus, suboccipital venous plexus, transverse cervical and suprascapular veins, sublingual vein as a separate label (only 'sublingual artery and vein'), right/left split of the subclavian vein (side only, not a division). Netter-labelled minor tributaries not given their own cards (already named on parent cards): transverse facial, middle temporal, external nasal, infraorbital, mental, inferior alveolar, posterior superior alveolar, palatine, zygomaticofacial/zygomaticotemporal veins, vena comitans of hypoglossal nerve, dorsal and deep lingual veins, subependymal veins of Plate 157. New cards carry no 'shape' field."
+}

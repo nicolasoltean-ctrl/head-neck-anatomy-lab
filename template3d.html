@@ -234,7 +234,7 @@ header.top .btn { padding: 6px 13px; font-size: 13px; }
     <div class="intro-head">
       <div class="brand"><span class="mark" aria-hidden="true"></span><span class="brand-name">Head and Neck Simulator</span></div>
       <h2 id="intro-title">Set up your session</h2>
-      <p class="lede">A rotatable 3D head and neck with 564 structures you can peel from skin to brain, and 435 cards checked against Netter. Choose how to begin; you can change everything later.</p>
+      <p class="lede">A rotatable 3D head and neck with 564 structures you can peel from skin to brain, and <span id="intro-n">594</span> cards checked against Netter. Choose how to begin; you can change everything later.</p>
     </div>
     <div class="grp"><h3>How do you want to study?</h3><div class="opts-grid" id="intro-study"></div></div>
     <div class="grp"><h3>Where do you want to start?</h3><div class="opts-grid" id="intro-start"></div></div>
@@ -359,6 +359,8 @@ const labelOfId = new Map(entries.map(e => [e.id, e.system + ':' + e.label]));
 const VTIER = { muscle: 2, artery: 3, vein: 3, nerve: 3, lymph: 3, bone: 5 };
 const matchedCards = new Set([...labels.values()].map(L => L.card).filter(Boolean));
 for (const c of DATA) if (!matchedCards.has(c.id) && SYS[c.category]) labels.set('card:' + c.id, { key: 'card:' + c.id, label: c.name, system: c.category, tier: VTIER[c.category] ?? 3, card: c.id, ids: [], group: c.group || '', virtual: true });
+/* A part mesh (e.g. the orbital part of orbicularis oculi) carries its own card and names its whole structure as parent: the parent's label gains those pieces, so choosing the whole from the index selects every part. */
+for (const e of entries) if (e.parent) { const L = [...labels.values()].find(L => L.card === e.parent); if (L) { L.ids.push(e.id); L.parts = true; if (L.virtual) { L.virtual = false; L.system = e.system; L.tier = e.tier; } else L.tier = Math.min(L.tier, e.tier); } }
 const modelLabelCount = [...labels.values()].filter(L => !L.virtual).length;
 const cardOnlyCount = labels.size - modelLabelCount;
 
@@ -664,7 +666,7 @@ function renderIndex() {
     const groups = [...new Set(items.map(L => L.group || ''))];
     for (const g of groups) {
       if (g) html += `<h4><button class="grp" data-grp="${esc(g)}">${esc(g)}</button></h4>`;
-      for (const L of items.filter(L => (L.group || '') === g)) html += `<button class="row${L.virtual ? ' virtual' : ''}" data-key="${esc(L.key)}" style="--c:${SYS[s].color}" aria-current="${L.key === state.selected || L.ids.some(id => sel.has(id))}">${esc(L.label)}<span class="m">${L.ids.some(id => hiddenIds.has(id)) ? 'hidden · ' : L.ids.some(id => ghostIds.has(id)) ? 'ghost · ' : ''}${L.virtual ? 'card only' : (L.ids.length > 1 ? 'L+R' : '') + (L.card ? (L.ids.length > 1 ? ' · ' : '') + 'card' : '')}</span></button>`;
+      for (const L of items.filter(L => (L.group || '') === g)) html += `<button class="row${L.virtual ? ' virtual' : ''}" data-key="${esc(L.key)}" style="--c:${SYS[s].color}" aria-current="${L.key === state.selected || L.ids.some(id => sel.has(id))}">${esc(L.label)}<span class="m">${L.ids.some(id => hiddenIds.has(id)) ? 'hidden · ' : L.ids.some(id => ghostIds.has(id)) ? 'ghost · ' : ''}${L.virtual ? 'card only' : (L.parts ? 'parts' : L.ids.length > 1 ? 'L+R' : '') + (L.card ? (L.ids.length > 1 ? ' · ' : '') + 'card' : '')}</span></button>`;
     }
   }
   idx.innerHTML = html || `<div class="empty">No structures match “${esc(state.query)}” in the active systems.</div>`;
@@ -891,6 +893,7 @@ const STARTS = [
 const introEl = document.getElementById('intro');
 const intro = Object.assign({ study: 'explore', start: 'surface', skip: false }, store.get('intro', {}));
 function renderIntro() {
+  document.getElementById('intro-n').textContent = DATA.length;
   const opt = (kind, o, cur) => `<button class="opt" data-${kind}="${o.id}" aria-pressed="${o.id === cur}"><b>${esc(o.label)}</b><span>${esc(o.desc)}</span></button>`;
   document.getElementById('intro-study').innerHTML = STUDY.map(o => opt('study', o, intro.study)).join('');
   document.getElementById('intro-start').innerHTML = STARTS.map(o => opt('start', o, intro.start)).join('');

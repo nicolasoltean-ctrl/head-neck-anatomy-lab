@@ -1,0 +1,43 @@
+{
+ "category": "lymph",
+ "verified": 37,
+ "corrections": [
+  {
+   "id": "deep-cervical-nodes",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Superior deep lateral cervical nodes (upper internal jugular vein, including the jugulodigastric node); inferior deep lateral cervical nodes (lower internal jugular vein to the jugular trunk, with the juguloomohyoid node at the omohyoid crossing)",
+   "ref": "Plate 85 (p. 140) / Plate 86 (p. 141)",
+   "reason": "Netter labels the chain as superior and inferior deep lateral cervical nodes with the jugulodigastric and juguloomohyoid nodes; card had these only inside the Level text",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "facial-buccal-nodes",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Nasolabial nodes (beside the nose); buccinator nodes (on the buccinator); mandibular nodes (on the mandible at the facial vessels)",
+   "ref": "Plate 85 (p. 140)",
+   "reason": "Netter lists three subgroups under Facial nodes; card names them only in its title and Location, so mark them explicitly as divisions",
+   "confidence": "netter-explicit"
+  },
+  {
+   "id": "preauricular-parotid-nodes",
+   "field": "details:Divisions",
+   "action": "add",
+   "old": null,
+   "new": "Superficial parotid nodes (on the parotid fascia in front of the ear); deep parotid nodes (deep to and within the parotid gland)",
+   "ref": "Plate 85 (p. 140)",
+   "reason": "Netter labels the parotid group as superficial parotid nodes with deep parotid nodes deep to and within the gland; this card did not name the deep division",
+   "confidence": "netter-explicit"
+  }
+ ],
+ "missing": [
+  "Superior deep lateral cervical nodes",
+  "Nasolabial nodes (facial nodes)",
+  "Buccinator nodes (facial nodes)",
+  "Mandibular nodes (facial nodes)"
+ ],
+ "notes": "All 37 cards checked against Plates 85, 86, 72, 77, 87 and the clinical table (p. 216-218). Every node group Netter labels already had a card except the superior deep lateral cervical nodes and the three facial subgroups, which are proposed as new cards. The facial-buccal-nodes Divisions detail restates subgroups already in that card's name and Location; drop it if redundancy is unwanted. Not labeled by Netter and left unchanged: neck levels I-VII and sublevels IA/IB, IIA/IIB, VA/VB; prelaryngeal (Delphian), paratracheal, infrahyoid and scalene nodes; lateral/medial retropharyngeal subgroups; pre-auricular, infra-auricular and intraglandular parotid subgroups; lingual nodes; tubal tonsil (Netter shows only torus tubarius); the pharyngeal lymphoid ring as a named whole; right lymphatic duct, subclavian and bronchomediastinal trunks (head and neck plates label only the jugular trunk and thoracic duct). Cards thyroid-nodes and inferior-deep-lateral-cervical-node contain '(Netter Plate 85)' inside their Location text, a citation inside card text; not changed here. New cards carry no 'shape' field and reuse the parent card's marker, so the three facial subgroup markers coincide with facial-buccal-nodes and should be nudged on the diagram."
+}
