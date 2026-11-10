@@ -1340,6 +1340,26 @@
 "polys": 276
 },
 {
+"name": "Descending part of trapezius muscle.l",
+"id": "descending-part-of-trapezius-muscle-l",
+"label": "Descending part of trapezius muscle",
+"side": "l",
+"system": "muscle",
+"tier": 2,
+"kind": "MESH",
+"polys": 6760
+},
+{
+"name": "Descending part of trapezius muscle.r",
+"id": "descending-part-of-trapezius-muscle-r",
+"label": "Descending part of trapezius muscle",
+"side": "r",
+"system": "muscle",
+"tier": 2,
+"kind": "MESH",
+"polys": 6760
+},
+{
 "name": "Eminentia conchae.l",
 "id": "eminentia-conchae-l",
 "label": "Eminentia conchae",
@@ -1598,6 +1618,26 @@
 "tier": 1,
 "kind": "MESH",
 "polys": 5874
+},
+{
+"name": "Ganglia of sympathetic trunk.l",
+"id": "ganglia-of-sympathetic-trunk-l",
+"label": "Ganglia of sympathetic trunk",
+"side": "l",
+"system": "nerve",
+"tier": 3,
+"kind": "MESH",
+"polys": 864
+},
+{
+"name": "Ganglia of sympathetic trunk.r",
+"id": "ganglia-of-sympathetic-trunk-r",
+"label": "Ganglia of sympathetic trunk",
+"side": "r",
+"system": "nerve",
+"tier": 3,
+"kind": "MESH",
+"polys": 864
 },
 {
 "name": "Genioglossus muscle.l",
@@ -3288,6 +3328,26 @@
 "tier": 0,
 "kind": "MESH",
 "polys": 20
+},
+{
+"name": "Maxilla.l",
+"id": "maxilla-l",
+"label": "Maxilla",
+"side": "l",
+"system": "bone",
+"tier": 5,
+"kind": "MESH",
+"polys": 4798
+},
+{
+"name": "Maxilla.r",
+"id": "maxilla-r",
+"label": "Maxilla",
+"side": "r",
+"system": "bone",
+"tier": 5,
+"kind": "MESH",
+"polys": 4798
 },
 {
 "name": "Medial geniculate body.l",
@@ -5540,6 +5600,16 @@
 "polys": 288
 },
 {
+"name": "Prevertebral nodes",
+"id": "prevertebral-nodes",
+"label": "Prevertebral nodes",
+"side": "m",
+"system": "lymph",
+"tier": 3,
+"kind": "MESH",
+"polys": 960
+},
+{
 "name": "Putamen.l",
 "id": "putamen-l",
 "label": "Putamen",
@@ -5828,6 +5898,26 @@
 "tier": 2,
 "kind": "MESH",
 "polys": 5262
+},
+{
+"name": "Splenius colli muscle.l",
+"id": "splenius-colli-muscle-l",
+"label": "Splenius colli muscle",
+"side": "l",
+"system": "muscle",
+"tier": 2,
+"kind": "MESH",
+"polys": 4314
+},
+{
+"name": "Splenius colli muscle.r",
+"id": "splenius-colli-muscle-r",
+"label": "Splenius colli muscle",
+"side": "r",
+"system": "muscle",
+"tier": 2,
+"kind": "MESH",
+"polys": 4314
 },
 {
 "name": "Stapes.l",
@@ -7760,6 +7850,26 @@
 "polys": 720
 },
 {
+"name": "Accessory nerve (XI).l",
+"id": "accessory-nerve-xi-l",
+"label": "Accessory nerve (XI)",
+"side": "l",
+"system": "nerve",
+"tier": 3,
+"kind": "CURVE",
+"polys": 7752
+},
+{
+"name": "Accessory nerve (XI).r",
+"id": "accessory-nerve-xi-r",
+"label": "Accessory nerve (XI)",
+"side": "r",
+"system": "nerve",
+"tier": 3,
+"kind": "CURVE",
+"polys": 7752
+},
+{
 "name": "Angular artery.l",
 "id": "angular-artery-l",
 "label": "Angular artery",
@@ -8940,6 +9050,66 @@
 "polys": 576
 },
 {
+"name": "Maxillary artery.l",
+"id": "maxillary-artery-l",
+"label": "Maxillary artery",
+"side": "l",
+"system": "artery",
+"tier": 3,
+"kind": "CURVE",
+"polys": 4752
+},
+{
+"name": "Maxillary artery.r",
+"id": "maxillary-artery-r",
+"label": "Maxillary artery",
+"side": "r",
+"system": "artery",
+"tier": 3,
+"kind": "CURVE",
+"polys": 4752
+},
+{
+"name": "Maxillary nerve.l",
+"id": "maxillary-nerve-l",
+"label": "Maxillary nerve",
+"side": "l",
+"system": "nerve",
+"tier": 3,
+"kind": "CURVE",
+"polys": 3988
+},
+{
+"name": "Maxillary nerve.r",
+"id": "maxillary-nerve-r",
+"label": "Maxillary nerve",
+"side": "r",
+"system": "nerve",
+"tier": 3,
+"kind": "CURVE",
+"polys": 3988
+},
+{
+"name": "Maxillary veins.l",
+"id": "maxillary-veins-l",
+"label": "Maxillary veins",
+"side": "l",
+"system": "vein",
+"tier": 3,
+"kind": "CURVE",
+"polys": 1440
+},
+{
+"name": "Maxillary veins.r",
+"id": "maxillary-veins-r",
+"label": "Maxillary veins",
+"side": "r",
+"system": "vein",
+"tier": 3,
+"kind": "CURVE",
+"polys": 1440
+},
+{
 "name": "Medial occipital artery.l",
 "id": "medial-occipital-artery-l",
 "label": "Medial occipital artery",
@@ -8978,6 +9148,26 @@
 "tier": 3,
 "kind": "CURVE",
 "polys": 1152
+},
+{
+"name": "Meningeal branch of maxillary nerve.l",
+"id": "meningeal-branch-of-maxillary-nerve-l",
+"label": "Meningeal branch of maxillary nerve",
+"side": "l",
+"system": "nerve",
+"tier": 3,
+"kind": "CURVE",
+"polys": 3084
+},
+{
+"name": "Meningeal branch of maxillary nerve.r",
+"id": "meningeal-branch-of-maxillary-nerve-r",
+"label": "Meningeal branch of maxillary nerve",
+"side": "r",
+"system": "nerve",
+"tier": 3,
+"kind": "CURVE",
+"polys": 3084
 },
 {
 "name": "Mental branch of inferior alveolar artery.l",
@@ -10110,6 +10300,46 @@
 "polys": 2880
 },
 {
+"name": "Sympathetic nerves.l",
+"id": "sympathetic-nerves-l",
+"label": "Sympathetic nerves",
+"side": "l",
+"system": "nerve",
+"tier": 3,
+"kind": "CURVE",
+"polys": 12240
+},
+{
+"name": "Sympathetic nerves.r",
+"id": "sympathetic-nerves-r",
+"label": "Sympathetic nerves",
+"side": "r",
+"system": "nerve",
+"tier": 3,
+"kind": "CURVE",
+"polys": 12240
+},
+{
+"name": "Sympathetic trunk.l",
+"id": "sympathetic-trunk-l",
+"label": "Sympathetic trunk",
+"side": "l",
+"system": "nerve",
+"tier": 3,
+"kind": "CURVE",
+"polys": 12672
+},
+{
+"name": "Sympathetic trunk.r",
+"id": "sympathetic-trunk-r",
+"label": "Sympathetic trunk",
+"side": "r",
+"system": "nerve",
+"tier": 3,
+"kind": "CURVE",
+"polys": 12672
+},
+{
 "name": "Temporal branches of middle cerebral artery.l",
 "id": "temporal-branches-of-middle-cerebral-artery-l",
 "label": "Temporal branches of middle cerebral artery",
@@ -10278,6 +10508,16 @@
 "tier": 3,
 "kind": "CURVE",
 "polys": 7340
+},
+{
+"name": "Vagus nerve (X).r",
+"id": "vagus-nerve-x-r",
+"label": "Vagus nerve (X)",
+"side": "r",
+"system": "nerve",
+"tier": 3,
+"kind": "CURVE",
+"polys": 23172
 },
 {
 "name": "Vertebral artery.l",

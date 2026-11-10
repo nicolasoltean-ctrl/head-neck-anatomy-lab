@@ -39,7 +39,8 @@
   "Lower first premolar": "premolar-teeth",
   "Lower second premolar": "premolar-teeth",
   "Lower first molar tooth": "molar-teeth",
-  "Lower second molar tooth": "molar-teeth"
+  "Lower second molar tooth": "molar-teeth",
+  "Maxilla": "maxilla"
  },
  "muscle": {
   "Anterior belly of digastric muscle": "anterior-belly-of-digastric",
@@ -70,7 +71,9 @@
   "Multifidus colli muscle": "multifidus-cervicis",
   "Spinalis colli muscle": "spinalis-cervicis",
   "Superficial investing cervical fascia": "investing-layer-of-deep-cervical-fascia",
-  "Superficial layer of temporal fascia": "temporal-fascia"
+  "Superficial layer of temporal fascia": "temporal-fascia",
+  "Splenius colli muscle": "splenius-cervicis",
+  "Descending part of trapezius muscle": "trapezius"
  },
  "nerve": {
   "Anterior division of mandibular nerve": "anterior-division-of-mandibular-nerve",
@@ -78,7 +81,13 @@
   "Motor root of trigeminal nerve": "motor-root-of-trigeminal-nerve",
   "Sensory root of trigeminal nerve": "sensory-root-of-trigeminal-nerve",
   "Cochlear nerve": "cochlear-nerve",
-  "Vestibular nerve": "vestibular-nerve"
+  "Vestibular nerve": "vestibular-nerve",
+  "Accessory nerve (XI)": "cn-xi-accessory-nerve",
+  "Maxillary nerve": "maxillary-division-v2",
+  "Meningeal branch of maxillary nerve": "meningeal-branch-of-maxillary-nerve",
+  "Sympathetic trunk": "cervical-sympathetic-trunk",
+  "Sympathetic nerves": "cervical-sympathetic-trunk",
+  "Ganglia of sympathetic trunk": "cervical-sympathetic-trunk"
  },
  "lymph": {
   "Nasolabial node": "nasolabial-nodes",
@@ -86,7 +95,8 @@
   "Mandibular node": "mandibular-nodes",
   "Lateral superior jugular node": "superior-deep-lateral-cervical-nodes",
   "Anterior inferior jugular nodes": "inferior-deep-lateral-cervical-node",
-  "Superficial anterior cervical nodes": "anterior-cervical-superficial-nodes"
+  "Superficial anterior cervical nodes": "anterior-cervical-superficial-nodes",
+  "Prevertebral nodes": "prevertebral-nodes"
  },
  "artery": {
   "Accessory branch of middle meningeal artery": "accessory-meningeal-artery",
@@ -115,7 +125,8 @@
   "Lateral pontine branches of basilar artery": "pontine-arteries",
   "Medial pontine branches of basilar artery": "pontine-arteries",
   "Posterior lateral nasal branches of sphenopalatine artery.": "posterior-lateral-nasal-branches-of-sphenopalatine-artery",
-  "Posterior septal branches of sphenopalatine artery": "posterior-septal-branches-of-sphenopalatine-artery"
+  "Posterior septal branches of sphenopalatine artery": "posterior-septal-branches-of-sphenopalatine-artery",
+  "Maxillary artery": "maxillary-artery"
  },
  "vein": {
   "Anterior division of retromandibular vein": "anterior-division-of-retromandibular-vein",
@@ -125,7 +136,8 @@
   "Superior ophthalmic vein": "superior-ophthalmic-vein",
   "Inferior ophthalmic vein": "inferior-ophthalmic-vein",
   "Transverse sinus": "transverse-sinus",
-  "Sigmoid sinus": "sigmoid-sinus"
+  "Sigmoid sinus": "sigmoid-sinus",
+  "Maxillary veins": "maxillary-vein"
  },
  "viscera": {
   "(Accessory parotid gland)": "parotid-gland",

@@ -4,7 +4,7 @@ meshes = json.load(open(f"{S}/zanatomy_objects.json"))["objects"]
 curves = json.load(open(f"{S}/zanatomy_curves.json"))
 objs = [dict(o, kind="MESH") for o in meshes if o["type"] == "MESH" and o.get("bbox") and o.get("verts", 0) > 2] + [dict(o, kind="CURVE") for o in curves if o["bbox"] and o["mesh_polys"] > 0]
 
-EXCL = re.compile(r"lung|bronch|aorta|vena cava|azygos|intercostal|humer|axilla|brachial (artery|vein)|radial nerve|ulnar nerve|median nerve|musculocutaneous|thoraco|pectoral|deltoid|teres|infraspinatus|supraspinatus|subscapular|biceps|triceps|coracobrachial|serratus|rhomboid|latissimus|scapula|glenoid|glenohumeral|acromi|coraco|clavipectoral|cephalic vein|circumflex|subclavius|thymus|pleura|oesophag|esophag|thoracic (aorta|vert|duct)|vertebra T[2-9]|disc T|pulposus T|rib$|rib\b|costal|levatores|iliocostalis|longissimus thoracis|spinalis thoracis|semispinalis thoracis|multifidus thoracis|interspinales thoracis|rotatores|investing abdominal|cross section|reference|median line|planes?$|line$|\.g$|^\?|abduction|adduction|rotation|circumduction|caudal|cranial$|frontal$|occipital$|supreme intercostal|posterior intercostal|superior intercostal|hemi-azygos|segmental|central canal|medulla-path|zonular fibers-curve|ciliary body-curve|brachial plexus|antebrachial|cutaneous nerve|thoracodorsal|long thoracic|dorsal scapular|suprascapular|lateral thoracic|subscapular|axillary|hairs|eyelashes|eyebrow|ligamentum arteriosum|parasternal|prepericardial|tracheobronchial|intrapulmonary|juxta-oesophageal|brachiocephalic nodes|brachial nodes|infraclavicular|intercostal nodes|posterior axillary|paratracheal thoracic|mediastinal|interscapular|scapular region|pectoral region|presternal|infraclavicular fossa|deltopectoral|lateral region of thorax|vertebral region|deltoid region|mamillary|midclavicular|sternal line|parasternal line|paravertebral|nerve to subclavius|subclavian nerve|first rib|second rib|third rib|fourth rib|fifth rib|manubrium|sternum|costoclavicular|interclavicular|sternoclavicular|conoid|trapezoid ligament|supraspinous|interspinous|intertransverse|ligamenta flava|longitudinal ligament|nuchal", re.I)
+EXCL = re.compile(r"lung|bronch|aorta|vena cava|azygos|intercostal|humer|(?<!m)axilla|brachial (artery|vein)|radial nerve|ulnar nerve|median nerve|musculocutaneous|thoraco|pectoral|deltoid|teres|infraspinatus|supraspinatus|subscapular|biceps|triceps|coracobrachial|serratus|rhomboid|latissimus|scapula|glenoid|glenohumeral|acromi|coraco|clavipectoral|cephalic vein|circumflex|subclavius|thymus|pleura|oesophag|esophag|thoracic (aorta|vert|duct)|vertebra T[2-9]|disc T|pulposus T|rib$|rib\b|costal|levatores|iliocostalis|longissimus thoracis|spinalis thoracis|semispinalis thoracis|multifidus thoracis|interspinales thoracis|rotatores|investing abdominal|cross section|reference|median line|planes?$|line$|\.g$|^\?|abduction|adduction|rotation|circumduction|caudal|cranial$|frontal$|occipital$|supreme intercostal|posterior intercostal|superior intercostal|hemi-azygos|segmental|central canal|medulla-path|zonular fibers-curve|ciliary body-curve|brachial plexus|antebrachial|cutaneous nerve|thoracodorsal|long thoracic|dorsal scapular|suprascapular|lateral thoracic|subscapular|(?<!m)axillary|hairs|eyelashes|eyebrow|ligamentum arteriosum|parasternal|prepericardial|tracheobronchial|intrapulmonary|juxta-oesophageal|brachiocephalic nodes|brachial nodes|infraclavicular|intercostal nodes|posterior axillary|paratracheal thoracic|mediastinal|interscapular|scapular region|pectoral region|presternal|infraclavicular fossa|deltopectoral|lateral region of thorax|vertebral region|deltoid region|mamillary|midclavicular|sternal line|parasternal line|paravertebral|nerve to subclavius|subclavian nerve|first rib|second rib|third rib|fourth rib|fifth rib|manubrium|sternum|costoclavicular|interclavicular|sternoclavicular|conoid|trapezoid ligament|supraspinous|interspinous|intertransverse|ligamenta flava|longitudinal ligament|nuchal", re.I)
 BRAIN = re.compile(r"gyrus|gyri|sulcus|sulci|lobule|vermis|cerebell|cerebr|thalam|hippocamp|amygdal|caudate|putamen|pallidus|lentiform|fornix|commissure|ventricle|aqueduct|colliculus|pons|medulla|midbrain|peduncle|nucleus|tract|fasciculus|olive|pyramid|corpus callosum|septum|stria|habenula|mamillary body|hypothalamus|geniculate|capsule|white matter|choroid|falx|tentorium|cuneus|precuneus|insula|lat_fis|temporal plane|temporal pole|occipital pole|culmen|declive|folium|tuber|uvula of vermis|nodule|flocculus|lingula|pyramis|tonsil of cerebellum|central lobule|biventral|semilunar|quadrangular|wing of central|spinal cord|spinal dura|horn of spinal|intermediate substance|reticular|spinotectal|dura|pituitary|hypophysis|pineal|optic chiasm|optic tract|interpeduncular|substantia|red nucleus|olfactory bulb", re.I)
 EYE_EAR = re.compile(r"eyeball|cornea|iris|lens|retina|sclera|vitreous|zonular|lacrimal|nasolacrimal|cochlea|vestibule|tympanic|auditory tube|tarsus|conjunctiva|meridians|equator|axis of eyeball|segment of eyeball|chamber|suspensory ligament of eyeball|ampulla", re.I)
 
@@ -40,11 +40,26 @@ def tier_of(sys_, o):
     if sys_ == "cns": return 6
     return 4
 
+# Long curves/meshes that are genuinely head & neck structures (CN XI, the cervical
+# sympathetic chain and its ganglia, splenius cervicis, the descending part of trapezius,
+# prevertebral nodes, the right vagus) but whose whole-object bounding box dips below the
+# neck cutoff because the source curve continues down into the thorax. Matched by exact
+# base name (side-stripped), bypassing the z/lateral region filters below.
+Z_OVERRIDE = {
+    "Accessory nerve (XI)", "Vagus nerve (X)", "Sympathetic trunk", "Sympathetic nerves",
+    "Ganglia of sympathetic trunk", "Prevertebral nodes", "Splenius colli muscle",
+    "Descending part of trapezius muscle",
+}
+def z_override(name):
+    import re as _re
+    return _re.sub(r"\.(l|r)$", "", name) in Z_OVERRIDE
+
 sel = []; skipped = collections.Counter(); seen = set()
 for o in objs:
     b = o["bbox"]; n = o["name"]
-    if b[5] < 1.36 or b[2] < 1.30: skipped["below-neck"] += 1; continue
-    if min(abs(b[0]), abs(b[3])) > 0.16 and not (b[0] < 0 < b[3]): skipped["lateral-arm"] += 1; continue
+    if not z_override(n):
+        if b[5] < 1.36 or b[2] < 1.30: skipped["below-neck"] += 1; continue
+        if min(abs(b[0]), abs(b[3])) > 0.16 and not (b[0] < 0 < b[3]): skipped["lateral-arm"] += 1; continue
     if re.search(r"\.(j|el|er|ol|or|o\d+[lr]|e\d+[lr]|i)$", n): skipped["marker"] += 1; continue
     if EXCL.search(n): skipped["excluded-name"] += 1; continue
     s = system_of(o)

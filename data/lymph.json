@@ -1473,5 +1473,32 @@
       "x": 400,
       "y": 505
     }
+  },
+  {
+    "id": "prevertebral-nodes",
+    "name": "Prevertebral lymph nodes",
+    "category": "lymph",
+    "group": "Deep cervical chain",
+    "depth": "deep",
+    "marker": {
+      "x": 625,
+      "y": 525
+    },
+    "function": "A small node group lying on the prevertebral fascia anterior to the cervical vertebral column, receiving drainage from deep neck structures before it reaches the deep cervical chain.",
+    "details": [
+      {
+        "label": "Location",
+        "value": "On the prevertebral fascia, anterior to the cervical spine and posterior to the carotid sheath and retropharyngeal space"
+      },
+      {
+        "label": "Drains",
+        "value": "Deep structures of the posterior neck and craniovertebral region"
+      },
+      {
+        "label": "Efferents to",
+        "value": "Deep cervical (lateral cervical) lymph nodes"
+      }
+    ],
+    "pearl": ""
   }
 ]

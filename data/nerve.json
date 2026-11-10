@@ -3793,5 +3793,63 @@
       "x": 785,
       "y": 460
     }
+  },
+  {
+    "id": "cervicothoracic-stellate-ganglion",
+    "name": "Cervicothoracic (stellate) ganglion",
+    "category": "nerve",
+    "group": "Autonomic",
+    "depth": "deep",
+    "marker": {
+      "x": 600,
+      "y": 770
+    },
+    "function": "The fusion of the inferior cervical and first thoracic sympathetic ganglia, giving postganglionic sympathetic fibers to the head, neck, upper limb and heart via gray rami and the vertebral and cardiac nerves.",
+    "details": [
+      {
+        "label": "Location",
+        "value": "Anterior to the neck of the first rib and the transverse process of C7, posterior to the vertebral artery origin and the dome of the pleura"
+      },
+      {
+        "label": "Divisions",
+        "value": "Fusion of the inferior cervical ganglion with the first (and sometimes second) thoracic ganglion"
+      },
+      {
+        "label": "Branches",
+        "value": "Gray rami communicantes to C7 and C8 spinal nerves, the vertebral nerve (ascends with the vertebral artery), and inferior cardiac branches"
+      },
+      {
+        "label": "Relations",
+        "value": "Subclavian artery and its first part, vertebral artery origin, apex of the lung and cervical pleura below"
+      }
+    ],
+    "pearl": "Injury during first-rib resection, apical lung tumor invasion (Pancoast tumor), or a misplaced stellate ganglion block can produce Horner syndrome (ptosis, miosis, anhidrosis) from loss of sympathetic outflow to the head and neck."
+  },
+  {
+    "id": "meningeal-branch-of-maxillary-nerve",
+    "name": "Meningeal branch of maxillary nerve",
+    "category": "nerve",
+    "group": "Trigeminal branches",
+    "depth": "deep",
+    "marker": {
+      "x": 530,
+      "y": 395
+    },
+    "function": "A small recurrent sensory branch of CN V2 that re-enters the middle cranial fossa to supply dura mater, running alongside the middle meningeal artery.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "Sensory (general somatic afferent)"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Arises from the maxillary nerve just after it leaves foramen rotundum, then passes back through foramen spinosum with the middle meningeal artery"
+      },
+      {
+        "label": "Supplies",
+        "value": "Dura mater of the middle cranial fossa"
+      }
+    ],
+    "pearl": "Along with the mandibular nerve's own meningeal branch (nervus spinosus), it explains why middle cranial fossa dural pain can be referred to the maxillary or mandibular distribution."
   }
 ]
