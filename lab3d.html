@@ -2,29 +2,30 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: dissection bench. 3D stage on the left with peel/side/cut controls under it; reading panel (search, index, specimen card, quiz) on the right; stacks on phones. */
+/* Palette: white surfaces on a blue-tinted ground, one blue accent, green reserved for Confirm and correct answers; anatomy keeps its own system colours.
+   Layout: dissection bench. 3D stage on the left with peel/side/cut controls under it; reading panel (search, index, specimen card, quiz) on the right; stacks on phones. */
 :root {
-  --bg: #eef0f3; --bg-2: #ffffff; --bg-3: #e2e6eb; --fg: #1b2330; --fg-2: #4e5a6a; --fg-3: #7c8797; --line: #cdd3db;
-  --accent: #1f6f8b; --accent-fg: #ffffff; --good: #2d7d46; --bad: #b23a3a;
+  --bg: #f3f6fb; --bg-2: #ffffff; --bg-3: #e9eff9; --fg: #0e1c36; --fg-2: #465779; --fg-3: #7a89a8; --line: #dbe3f0;
+  --accent: #1e5eea; --accent-fg: #ffffff; --accent-soft: #e8efff; --confirm: #0f9d58; --confirm-fg: #ffffff; --good: #16864d; --bad: #c23b3b;
   --c-skin: #c98f6a; --c-bone: #a8832e; --c-muscle: #a8463c; --c-nerve: #b48a00; --c-lymph: #2f8a5b; --c-artery: #d1232a; --c-vein: #2f5fbf; --c-viscera: #9a5a8a; --c-cns: #b0708a;
-  --stage-bg: #e9ecf0;
+  --stage-bg: #eaf0fa;
   --font-display: "Manrope", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
-  --radius: 6px; --shadow: 0 1px 2px rgba(20, 30, 45, .08), 0 4px 14px rgba(20, 30, 45, .06);
+  --radius: 12px; --shadow: 0 1px 2px rgba(16, 40, 90, .05), 0 8px 24px rgba(16, 40, 90, .07);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #12161c; --bg-2: #1a2028; --bg-3: #232b35; --fg: #e8ecf1; --fg-2: #aab4c1; --fg-3: #76818f; --line: #313b47;
-    --accent: #5fb3cf; --accent-fg: #0f1419; --good: #5fcf8f; --bad: #ef7c7c;
+    --bg: #0a1120; --bg-2: #111a2d; --bg-3: #1a2540; --fg: #eaf0fc; --fg-2: #a8b6d3; --fg-3: #7083a8; --line: #24324f;
+    --accent: #6c9dff; --accent-fg: #071028; --accent-soft: #18274a; --confirm: #35c27d; --confirm-fg: #04170d; --good: #5fcf8f; --bad: #ef7c7c;
     --c-skin: #e0a884; --c-bone: #e0bf6c; --c-muscle: #e8907f; --c-nerve: #f2cc4f; --c-lymph: #63d195; --c-artery: #ff6b6b; --c-vein: #6f9bff; --c-viscera: #d08fc0; --c-cns: #e0a0b8;
-    --stage-bg: #0e1218; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
+    --stage-bg: #0b1322; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #12161c; --bg-2: #1a2028; --bg-3: #232b35; --fg: #e8ecf1; --fg-2: #aab4c1; --fg-3: #76818f; --line: #313b47;
-  --accent: #5fb3cf; --accent-fg: #0f1419; --good: #5fcf8f; --bad: #ef7c7c;
+  --bg: #0a1120; --bg-2: #111a2d; --bg-3: #1a2540; --fg: #eaf0fc; --fg-2: #a8b6d3; --fg-3: #7083a8; --line: #24324f;
+  --accent: #6c9dff; --accent-fg: #071028; --accent-soft: #18274a; --confirm: #35c27d; --confirm-fg: #04170d; --good: #5fcf8f; --bad: #ef7c7c;
   --c-skin: #e0a884; --c-bone: #e0bf6c; --c-muscle: #e8907f; --c-nerve: #f2cc4f; --c-lymph: #63d195; --c-artery: #ff6b6b; --c-vein: #6f9bff; --c-viscera: #d08fc0; --c-cns: #e0a0b8;
-  --stage-bg: #0e1218; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
+  --stage-bg: #0b1322; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -162,13 +163,93 @@ header.top .count { margin-left: auto; font-family: var(--font-mono); font-size:
 .quiz .warn { color: var(--bad); font-size: 13px; }
 .foot + .foot { margin-top: -6px; }
 .foot { margin-top: 18px; font-size: 12.5px; color: var(--fg-3); max-width: 80ch; }
+
+/* ---------- App bar, pills and surfaces ---------- */
+[hidden] { display: none !important; }
+header.top { align-items: center; gap: 10px 16px; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; box-shadow: var(--shadow); }
+.brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.brand .mark { width: 30px; height: 30px; border-radius: 9px; flex: none; position: relative; background: linear-gradient(140deg, var(--accent), color-mix(in srgb, var(--accent) 55%, #7fd4ff)); }
+.brand .mark::after { content: ""; position: absolute; inset: 7px 9px 8px; border: 2px solid #fff; border-radius: 50% 50% 44% 44%; }
+.brand .brand-name { font-family: var(--font-display); font-weight: 700; font-size: 15px; letter-spacing: -.01em; }
+header.top h1 { font-size: 20px; }
+header.top .count { font-size: 11.5px; min-width: 0; text-align: right; }
+header.top .btn { padding: 6px 13px; font-size: 13px; }
+.seg { border-radius: 999px; padding: 3px; gap: 2px; background: var(--bg-3); border-color: transparent; }
+.seg button { border-radius: 999px; padding: 5px 13px; }
+.seg button + button { border-left: 0; }
+.seg button[aria-pressed="true"] { box-shadow: 0 1px 3px rgba(16, 40, 90, .25); }
+.icon-btn { border-radius: 9px; }
+.chip { padding: 6px 12px; }
+.chip[aria-pressed="true"] { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: var(--accent-soft); }
+.stage { border-radius: 18px; }
+.stage .views button { background: color-mix(in srgb, var(--bg-2) 86%, transparent); }
+.controls { padding: 14px 16px; gap: 12px; box-shadow: var(--shadow); }
+.tip { border-radius: 8px; background: var(--fg); }
+.search input { border-radius: 999px; background: var(--bg-3); border-color: transparent; padding: 8px 14px; }
+.index button.row[aria-current="true"] { border-left-color: var(--accent); background: var(--accent-soft); }
+.btn { border-radius: 999px; background: var(--bg-2); }
+.btn:hover:not(:disabled) { border-color: var(--accent); }
+.btn.primary:hover { filter: brightness(1.06); }
+.btn:disabled { opacity: .45; cursor: default; }
+.btn.confirm, .pop button.confirm { background: var(--confirm); color: var(--confirm-fg); border-color: var(--confirm); font-weight: 600; }
+.btn.big { padding: 12px 30px; font-size: 16px; font-weight: 600; }
+
+/* ---------- Action menu beside the cursor ---------- */
+.pop { position: absolute; z-index: 4; width: 214px; background: var(--bg-2); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 12px 32px rgba(16, 40, 90, .2); padding: 8px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; }
+.pop-title { font-weight: 600; font-size: 12.5px; padding: 2px 6px 0; color: var(--fg-2); overflow-wrap: anywhere; }
+.pop-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+.pop button { padding: 7px 8px; border: 1px solid var(--line); border-radius: 9px; background: var(--bg); cursor: pointer; font-size: 13px; font-weight: 500; }
+.pop button:hover { border-color: var(--accent); background: var(--accent-soft); }
+.pop button[aria-pressed="true"] { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+.pop button.wide { grid-column: 1 / -1; }
+.pop button.confirm { padding: 10px 8px; font-size: 14px; }
+.pop button.confirm:hover { background: var(--confirm); filter: brightness(1.07); border-color: var(--confirm); }
+
+/* ---------- Intro screen ---------- */
+.intro { position: fixed; inset: 0; z-index: 30; overflow: auto; background: linear-gradient(180deg, var(--accent-soft), var(--bg) 46%); padding: max(28px, env(safe-area-inset-top, 0px)) 16px 32px; }
+.intro-card { max-width: 880px; margin: 0 auto; background: var(--bg-2); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); padding: clamp(18px, 4vw, 34px); display: flex; flex-direction: column; gap: 24px; }
+.intro-head { display: flex; flex-direction: column; gap: 10px; }
+.intro h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(26px, 5vw, 36px); letter-spacing: -.03em; line-height: 1.1; margin: 6px 0 0; text-wrap: balance; }
+.intro .lede { margin: 0; color: var(--fg-2); font-size: 15.5px; max-width: 64ch; }
+.intro .grp { display: flex; flex-direction: column; gap: 10px; }
+.intro h3 { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--fg-3); }
+.opts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
+@media (min-width: 700px) { #intro-start { grid-template-columns: repeat(3, 1fr); } }
+.opt { text-align: left; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 14px; background: var(--bg); cursor: pointer; display: flex; flex-direction: column; gap: 3px; transition: border-color .15s, background .15s; }
+.opt b { font-size: 15px; font-weight: 600; }
+.opt span { font-size: 13px; color: var(--fg-2); line-height: 1.4; }
+.opt:hover { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
+.opt[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 16%, transparent); }
+.tone-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.tone-row .swatches button { width: 28px; height: 28px; }
+.tone-row .val { font-size: 13px; color: var(--fg-2); }
+.intro-foot { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 18px; }
+.intro .skip { display: inline-flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--fg-2); cursor: pointer; }
+.intro .skip input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
+<div class="intro" id="intro" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+  <div class="intro-card">
+    <div class="intro-head">
+      <div class="brand"><span class="mark" aria-hidden="true"></span><span class="brand-name">Head and Neck Simulator</span></div>
+      <h2 id="intro-title">Set up your session</h2>
+      <p class="lede">A rotatable 3D head and neck with 564 structures you can peel from skin to brain, and 435 cards checked against Netter. Choose how to begin; you can change everything later.</p>
+    </div>
+    <div class="grp"><h3>How do you want to study?</h3><div class="opts-grid" id="intro-study"></div></div>
+    <div class="grp"><h3>Where do you want to start?</h3><div class="opts-grid" id="intro-start"></div></div>
+    <div class="grp"><h3>Skin tone</h3><div class="tone-row"><div class="swatches" id="intro-tones" role="group" aria-label="Skin tone"></div><span class="val" id="intro-tone-val"></span></div></div>
+    <div class="intro-foot">
+      <label class="skip"><input type="checkbox" id="intro-skip"> Skip this screen next time</label>
+      <button class="btn primary big" id="intro-go">Start</button>
+    </div>
+  </div>
+</div>
 <div class="wrap">
   <header class="top">
-    <h1>Head and Neck Simulator<span class="tag">3D</span></h1>
-    <span class="sub">Drag to rotate, scroll to zoom. Peel from skin to brain, then click any structure.</span>
+    <div class="brand"><span class="mark" aria-hidden="true"></span><h1>Head and Neck Simulator<span class="tag">3D</span></h1></div>
+    <div class="seg" role="group" aria-label="Mode"><button id="mode-explore" aria-pressed="true">Explore</button><button id="mode-quiz" aria-pressed="false">Quiz</button></div>
+    <button class="btn" id="open-intro" title="Choose a study mode and starting layer">Start screen</button>
     <span class="count" id="count"></span>
   </header>
 
@@ -188,6 +269,7 @@ header.top .count { margin-left: auto; font-family: var(--font-mono); font-size:
         </div>
         <div class="load" id="load"><div id="load-text">Loading skin…</div><progress id="load-bar" max="100" value="0"></progress></div>
         <div class="tip" id="tip"></div>
+        <div class="pop" id="pop" role="menu" aria-label="Actions for the selection" hidden></div>
         <div class="hint">drag rotate · right-drag or shift-drag pan · scroll zoom · click to select · shift-click adds</div>
       </div>
       <div class="controls">
@@ -214,7 +296,6 @@ header.top .count { margin-left: auto; font-family: var(--font-mono); font-size:
         <div class="ctl">
           <label>Side</label>
           <div class="row"><div class="seg" role="group" aria-label="Side"><button data-side="both" aria-pressed="true">Both</button><button data-side="r" aria-pressed="false">Right only</button><button data-side="l" aria-pressed="false">Left only</button></div></div>
-          <div class="row"><div class="seg" role="group" aria-label="Mode"><button id="mode-explore" aria-pressed="true">Explore</button><button id="mode-quiz" aria-pressed="false">Quiz</button></div></div>
         </div>
       </div>
     </section>
@@ -285,12 +366,13 @@ const sel = new Set(), hiddenIds = new Set(), ghostIds = new Set(); // per-piece
 const state = {
   systems: Object.assign(Object.fromEntries(ORDER.map(s => [s, s !== 'cns'])), store.get('systems', {})),
   peel: 0, ghost: true, side: 'both', cutAxis: 'sag', cut: 0, spin: false, tone: Math.min(TONES.length - 1, Math.max(0, store.get('tone', 1) | 0)),
-  selected: null, isolate: false, query: '', mode: 'explore', quiz: null,
+  selected: null, isolate: false, query: '', mode: 'explore', quiz: null, pop: null,
   stats: store.get('stats', { correct: 0, total: 0, best: 0 }),
 };
 
 /* ---------- Three.js scene ---------- */
 const canvas = document.getElementById('gl');
+const stageEl = document.getElementById('stage'), popEl = document.getElementById('pop');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'high-performance' });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
 renderer.outputEncoding = THREE.sRGBEncoding;
@@ -315,8 +397,8 @@ function buildMaterials() {
     ghosts[s] = new THREE.MeshPhongMaterial({ color: hex, transparent: true, opacity: 0.1, depthWrite: false, side: THREE.DoubleSide, shininess: 5 });
     pieceGhosts[s] = new THREE.MeshPhongMaterial({ color: hex, transparent: true, opacity: 0.22, depthWrite: false, side: THREE.DoubleSide, shininess: 5 });
   }
-  selGhostMat = new THREE.MeshPhongMaterial({ color: dark ? 0x7fd0ea : 0x1f6f8b, transparent: true, opacity: 0.38, depthWrite: false, side: THREE.DoubleSide });
-  selMat = new THREE.MeshPhongMaterial({ color: dark ? 0x7fd0ea : 0x1f6f8b, emissive: dark ? 0x1b5868 : 0x0b3a4a, shininess: 30, side: THREE.DoubleSide });
+  selGhostMat = new THREE.MeshPhongMaterial({ color: dark ? 0x8ccbff : 0x1e9bff, transparent: true, opacity: 0.38, depthWrite: false, side: THREE.DoubleSide });
+  selMat = new THREE.MeshPhongMaterial({ color: dark ? 0x8ccbff : 0x1e9bff, emissive: dark ? 0x15407a : 0x0a3a7a, shininess: 30, side: THREE.DoubleSide });
   goodMat = new THREE.MeshPhongMaterial({ color: 0x3fbf6f, emissive: 0x0f4a26, side: THREE.DoubleSide });
   badMat = new THREE.MeshPhongMaterial({ color: 0xd95050, emissive: 0x4a1010, side: THREE.DoubleSide });
   renderer.setClearColor(new THREE.Color(getComputedStyle(document.documentElement).getPropertyValue('--stage-bg').trim() || (dark ? '#0e1218' : '#e9ecf0')));
@@ -331,6 +413,7 @@ const loaded = new Set(); const loading = new Map();
 const orbit = { theta: 0.35, phi: 1.35, dist: radius * 3.4, target: center.clone(), panX: 0, panY: 0 };
 let needsRender = true;
 function updateCamera() {
+  if (state.pop) { state.pop = null; popEl.hidden = true; }
   const { theta, phi, dist, target } = orbit;
   const sp = Math.sin(phi);
   camera.position.set(target.x + dist * sp * Math.sin(theta), target.y + dist * Math.cos(phi), target.z + dist * sp * Math.cos(theta));
@@ -338,6 +421,7 @@ function updateCamera() {
   needsRender = true;
 }
 function resize() {
+  if (state.pop) { state.pop = null; popEl.hidden = true; }
   const r = canvas.parentElement.getBoundingClientRect();
   const w = Math.max(1, Math.round(r.width)), h = Math.max(1, Math.round(r.height));
   renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); needsRender = true;
@@ -487,7 +571,7 @@ function applyVisibility() {
     let mat; u.ghosted = false;
     if (!on) { m.visible = false; return; }
     if (u.quizMark === 'good') mat = goodMat; else if (u.quizMark === 'bad') mat = badMat;
-    else if (isSel && !(state.mode === 'quiz' && state.quiz && state.quiz.q && !state.quiz.q.answered && state.quiz.type === 'find')) { mat = pg ? selGhostMat : selMat; u.ghosted = pg; }
+    else if (isSel) { mat = pg ? selGhostMat : selMat; u.ghosted = pg; }
     else if (peeled) { if (!state.ghost || u.tier !== 0) { m.visible = false; return; } mat = ghosts[u.system]; u.ghosted = true; }
     else if (iso) { mat = ghosts[u.system]; u.ghosted = true; }
     else if (pg) { mat = pieceGhosts[u.system]; u.ghosted = true; }
@@ -523,7 +607,14 @@ function showTip(m, e) {
   const u = m.userData; tip.innerHTML = `${esc(u.label)}${u.side !== 'm' ? `<small>${u.side === 'l' ? 'LEFT' : 'RIGHT'}</small>` : ''}`;
   const r = canvas.parentElement.getBoundingClientRect(); tip.style.left = (e.clientX - r.left) + 'px'; tip.style.top = (e.clientY - r.top) + 'px'; tip.classList.add('on'); canvas.style.cursor = 'pointer';
 }
-function pick(e) { const m = castAt(e); if (state.mode === 'explore') { const add = e.shiftKey || e.metaKey || e.ctrlKey; if (!m) { if (!add) select(null); return; } select(labelOfId.get(m.userData.id), false, { ids: [m.userData.id], add }); return; } if (m) quizClick(labelOfId.get(m.userData.id)); }
+const findOpen = () => state.mode === 'quiz' && !!state.quiz && state.quiz.type === 'find' && !!state.quiz.q && !state.quiz.q.answered;
+function pick(e) {
+  if (state.mode !== 'explore' && !findOpen()) return; // name and function quizzes are answered in the panel
+  const m = castAt(e); const add = e.shiftKey || e.metaKey || e.ctrlKey;
+  if (!m) { if (!add) select(null); return; }
+  const r = stageEl.getBoundingClientRect(); const pop = { x: e.clientX - r.left, y: e.clientY - r.top };
+  select(labelOfId.get(m.userData.id), false, { ids: [m.userData.id], add, pop });
+}
 
 /* ---------- Clipping ---------- */
 let clipPlane = null;
@@ -542,6 +633,11 @@ function applyCut() {
 const sysbar = document.getElementById('systems');
 sysbar.innerHTML = ORDER.map(s => `<button class="chip" data-sys="${s}" style="--c:${SYS[s].color}" aria-pressed="${state.systems[s]}"><span class="dot"></span>${SYS[s].label}<span class="n">${MAN.packs[s] ? MAN.packs[s].meshes.length : 0}</span></button>`).join('');
 sysbar.addEventListener('click', e => { const b = e.target.closest('[data-sys]'); if (!b) return; const s = b.dataset.sys; state.systems[s] = !state.systems[s]; b.setAttribute('aria-pressed', String(state.systems[s])); store.set('systems', state.systems); if (state.systems[s]) loadSystem(s); applyVisibility(); updateCounts(); renderIndex(); if (state.mode === 'quiz') resetQuizPool(); });
+function setSystems(list) {
+  for (const k of ORDER) state.systems[k] = list.includes(k); store.set('systems', state.systems);
+  sysbar.querySelectorAll('[data-sys]').forEach(b => b.setAttribute('aria-pressed', String(state.systems[b.dataset.sys])));
+  list.forEach(k => loadSystem(k)); applyVisibility(); updateCounts(); renderIndex();
+}
 const peelEl = document.getElementById('peel');
 function setPeel(v) { state.peel = +v; peelEl.value = v; document.getElementById('peel-val').textContent = TIERS[state.peel]; applyVisibility(); updateCounts(); }
 peelEl.addEventListener('input', e => setPeel(e.target.value));
@@ -595,14 +691,16 @@ function select(key, fromList, opts) {
     if (!all) state.selected = key; else { const rest = [...sel]; state.selected = rest.length ? labelOfId.get(rest[rest.length - 1]) : null; }
   }
   if (!sel.size) state.isolate = false;
+  state.pop = !sel.size ? null : (opts.pop || projectSel());
   applyVisibility(); updateCounts(); renderDetail(); renderMods();
+  if (findOpen()) renderQuiz();
   const idx = document.getElementById('index'); idx.querySelectorAll('button.row').forEach(b => { const Lr = labels.get(b.dataset.key); b.setAttribute('aria-current', String(b.dataset.key === state.selected || !!(Lr && Lr.ids.some(id => sel.has(id))))); });
   const row = idx.querySelector(`button.row[data-key="${CSS.escape(state.selected || '')}"]`); if (row && !fromList) row.scrollIntoView({ block: 'nearest' });
   if (state.selected) { const L = labels.get(state.selected); if (!L.virtual && L.tier < state.peel) { /* structure is peeled away: bring peel back to it */ setPeel(L.tier); } loadSystem(L.system); }
 }
 function renderDetail() {
   const d = document.getElementById('detail'); const L = state.selected && labels.get(state.selected);
-  if (!L) { d.innerHTML = `<div class="placeholder"><div class="eyebrow">Specimen card</div><h2>Pick a structure</h2><p>Click any structure on the model, or choose from the index. Use Peel to remove layers from the skin inward, Side to view one half, and Cut to slice the model. Ghost keeps a transparent skin envelope while you peel; turn it off to hide the skin entirely.</p></div>`; return; }
+  if (!L) { renderPop(); d.innerHTML = `<div class="placeholder"><div class="eyebrow">Specimen card</div><h2>Pick a structure</h2><p>Click any structure on the model, or choose from the index. Use Peel to remove layers from the skin inward, Side to view one half, and Cut to slice the model. Ghost keeps a transparent skin envelope while you peel; turn it off to hide the skin entirely.</p></div>`; return; }
   const s = SYS[L.system]; const c = L.card && cardById.get(L.card);
   let html = `<div class="eyebrow" style="--c:${s.color}"><span class="cat">${s.label}</span><span>·</span><span>${L.virtual ? 'not shown on the model' : TIERS[L.tier]}</span>${L.ids.length > 1 ? `<span>·</span><span>${L.ids.every(id => sel.has(id)) ? 'both sides' : L.ids.filter(id => sel.has(id)).map(id => entryById.get(id).side === 'l' ? 'left' : entryById.get(id).side === 'r' ? 'right' : 'midline').join(' + ') || 'paired'}</span>` : ''}</div><h2>${esc(L.label)}</h2>`;
   const selLabels = [...new Set([...sel].map(id => labelOfId.get(id)))];
@@ -611,8 +709,8 @@ function renderDetail() {
   if (c) {
     html += `${c.name.toLowerCase() !== L.label.toLowerCase() ? `<div class="eyebrow" style="margin-bottom:6px">Card: ${esc(c.name)} · ${esc(c.group)}</div>` : ''}<p class="fn">${esc(c.function)}</p><dl>${(c.details || []).map(x => `<dt>${esc(x.label)}</dt><dd>${esc(x.value)}</dd>`).join('')}</dl>${c.pearl ? `<div class="pearl"><b>Step 2 pearl</b>${esc(c.pearl)}</div>` : ''}`;
   } else html += `<p class="nocard">Shown for anatomical context. This structure has no specimen card yet; the name and system come from the Z-Anatomy model.</p>`;
-  html += L.virtual ? `<div class="acts"><button id="deselect">Clear</button></div>` : `<div class="acts"><button id="p-hide" aria-pressed="${sel.size > 0 && [...sel].every(id => hiddenIds.has(id))}" title="Remove the selected pieces from view (H)">Hide${sel.size > 1 ? ' ' + sel.size : ''}</button><button id="p-ghost" aria-pressed="${sel.size > 0 && [...sel].every(id => ghostIds.has(id))}" title="Make the selected pieces transparent and click-through (G)">Ghost${sel.size > 1 ? ' ' + sel.size : ''}</button><button id="isolate" aria-pressed="${state.isolate}" title="Ghost everything except the selection (I)">Isolate</button>${L.ids.length > 1 && !L.ids.every(id => sel.has(id)) ? '<button id="p-both">Select both sides</button>' : ''}<button id="focus">Center view</button><button id="deselect">Clear</button></div><p class="hintline">Shift-click the model or the index to add pieces to the selection.</p>`;
-  d.innerHTML = html;
+  html += L.virtual ? `<div class="acts"><button id="deselect">Clear</button></div>` : `<p class="hintline">Hide, Ghost, Isolate and the other actions are in the menu beside the structure. Shift-click the model or the index to add pieces to the selection.</p>`;
+  d.innerHTML = html; renderPop();
 }
 document.getElementById('detail').addEventListener('click', e => {
   const t = e.target.closest('button'); if (!t) return;
@@ -626,7 +724,7 @@ document.getElementById('detail').addEventListener('click', e => {
 });
 function toggleIsolate() { if (!sel.size) return; state.isolate = !state.isolate; applyVisibility(); updateCounts(); renderDetail(); }
 function togglePieces(set) { if (!sel.size) return; const all = [...sel].every(id => set.has(id)); sel.forEach(id => all ? set.delete(id) : set.add(id)); piecesChanged(); }
-function piecesChanged() { applyVisibility(); updateCounts(); renderIndex(); renderDetail(); renderMods(); if (state.mode === 'quiz') resetQuizPool(); }
+function piecesChanged() { applyVisibility(); updateCounts(); renderIndex(); renderDetail(); renderMods(); if (state.mode === 'quiz' && !findOpen()) resetQuizPool(); }
 function pieceName(id) { const e = entryById.get(id); return e.label + (e.side === 'l' ? ' (L)' : e.side === 'r' ? ' (R)' : ''); }
 function renderMods() {
   const el = document.getElementById('mods'); const chip = (id, kind) => `<button class="chip-x" data-restore="${esc(id)}" data-kind="${kind}" title="Restore ${esc(pieceName(id))}">${esc(pieceName(id))}<span aria-hidden="true">×</span></button>`;
@@ -638,6 +736,36 @@ function renderMods() {
 }
 document.getElementById('mods').addEventListener('click', e => { const b = e.target.closest('[data-restore]'); if (!b) return; (b.dataset.kind === 'h' ? hiddenIds : ghostIds).delete(b.dataset.restore); piecesChanged(); });
 document.getElementById('mods-reset').onclick = () => { hiddenIds.clear(); ghostIds.clear(); state.isolate = false; piecesChanged(); };
+/* Action menu beside the cursor (or beside the structure when it was chosen from the index). In an open Find question it also carries Confirm. */
+function projectSel() {
+  const box = new THREE.Box3(); let any = false;
+  for (const id of sel) { const m = meshes.get(id); if (m && m.geometry.boundingSphere) { box.expandByPoint(m.geometry.boundingSphere.center); any = true; } }
+  if (!any) return null; const v = box.getCenter(new THREE.Vector3()).project(camera);
+  return { x: (v.x + 1) / 2 * canvas.clientWidth, y: (1 - v.y) / 2 * canvas.clientHeight };
+}
+function renderPop() {
+  const fq = findOpen();
+  if (!state.pop || !sel.size || (state.mode === 'quiz' && !fq)) { popEl.hidden = true; return; }
+  const L = labels.get(state.selected); const ids = [...sel]; const n = ids.length > 1 ? ' ' + ids.length : '';
+  const on = set => ids.every(id => set.has(id));
+  let html = fq ? `<div class="pop-title">Your pick${ids.length > 1 ? ' (last piece selected)' : ''}</div><button class="confirm" data-act="confirm">Confirm answer</button>`
+                : `<div class="pop-title">${esc(ids.length > 1 ? ids.length + ' pieces selected' : pieceName(ids[0]))}</div>`;
+  html += `<div class="pop-grid"><button data-act="hide" aria-pressed="${on(hiddenIds)}">Hide${n}</button><button data-act="ghost" aria-pressed="${on(ghostIds)}">Ghost${n}</button><button data-act="isolate" aria-pressed="${state.isolate}">Isolate</button><button data-act="focus">Center view</button>${L && L.ids.length > 1 && !L.ids.every(id => sel.has(id)) ? '<button data-act="both" class="wide">Select both sides</button>' : ''}<button data-act="clear" class="wide">Clear</button></div>`;
+  popEl.innerHTML = html; popEl.hidden = false;
+  const sw = stageEl.clientWidth, sh = stageEl.clientHeight, pw = popEl.offsetWidth, ph = popEl.offsetHeight;
+  let x = state.pop.x + 14, y = state.pop.y + 10; if (x + pw > sw - 8) x = state.pop.x - pw - 14; if (y + ph > sh - 8) y = sh - ph - 8;
+  popEl.style.left = Math.max(8, x) + 'px'; popEl.style.top = Math.max(8, y) + 'px';
+}
+popEl.addEventListener('click', e => {
+  const b = e.target.closest('[data-act]'); if (!b) return; const a = b.dataset.act; const keep = state.pop;
+  if (a === 'confirm') { if (state.selected) answer(state.selected); }
+  else if (a === 'hide') { togglePieces(hiddenIds); state.pop = null; renderPop(); }
+  else if (a === 'ghost') togglePieces(ghostIds);
+  else if (a === 'isolate') toggleIsolate();
+  else if (a === 'both') { const L = labels.get(state.selected); if (L) select(L.key, true, { ids: L.ids.filter(id => !sel.has(id)), add: true, pop: keep }); }
+  else if (a === 'focus') { focusSelected(); state.pop = projectSel(); renderPop(); }
+  else if (a === 'clear') select(null);
+});
 function centerOn(L) {
   // move the orbit target to the structure without changing zoom, so a highlighted target is on screen
   const box = new THREE.Box3(); let any = false;
@@ -679,7 +807,7 @@ function newQuestion() {
   qz.q = { target, options: shuffle([target, ...ds]), answered: false, picked: null, correct: false };
   clearQuizMarks();
   if (qz.type === 'name') { state.selected = target.key; sel.clear(); target.ids.forEach(id => sel.add(id)); applyVisibility(); centerOn(target); }
-  else { state.selected = null; sel.clear(); applyVisibility(); }
+  else { state.selected = null; sel.clear(); state.pop = null; renderPop(); applyVisibility(); }
   renderQuiz();
 }
 function clearQuizMarks() { meshes.forEach(m => { m.userData.quizMark = null; }); applyVisibility(); }
@@ -691,7 +819,7 @@ function answer(key) {
   state.stats.total++; if (q.correct) state.stats.correct++; state.stats.best = Math.max(state.stats.best, qz.streak); store.set('stats', state.stats);
   for (const id of q.target.ids) { const m = meshes.get(id); if (m) m.userData.quizMark = 'good'; }
   if (!q.correct && key && labels.has(key)) for (const id of labels.get(key).ids) { const m = meshes.get(id); if (m) m.userData.quizMark = 'bad'; }
-  state.selected = null; sel.clear(); applyVisibility(); renderQuiz();
+  state.selected = null; sel.clear(); state.pop = null; renderPop(); applyVisibility(); renderQuiz();
 }
 function maskName(text, L) { const words = L.label.replace(/\(.*?\)/g, '').split(/[\s\-–\/,]+/).filter(w => w.length > 3); let out = text; for (const w of words) out = out.replace(new RegExp(w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), '▒▒▒'); return out; }
 function renderQuiz() {
@@ -702,12 +830,12 @@ function renderQuiz() {
   let body = '';
   if (pool.length < 4) body = `<p class="warn">Fewer than four structures are in view. Turn on more systems, lower the peel, or clear the filter.</p>`;
   else if (!qz.q) {
-    const desc = { name: 'A structure is highlighted on the model. Pick its name.', find: 'You are given a name. Click the matching structure on the model (hover names are hidden).', function: 'You are given a function. Pick the structure it describes (uses every structure with a specimen card, including card-only ones).' }[qz.type];
+    const desc = { name: 'A structure is highlighted on the model. Pick its name.', find: 'You are given a name. Select the matching structure on the model, then press Confirm (hover names are hidden).', function: 'You are given a function. Pick the structure it describes (uses every structure with a specimen card, including card-only ones).' }[qz.type];
     body = `<div class="setup"><p>${desc} Questions come from what is currently in view: the active systems, the peel depth and the filter.</p><button class="btn primary" id="start">Start</button></div>`;
   } else {
     const q = qz.q, t = q.target, s = SYS[t.system]; const c = t.card && cardById.get(t.card);
     if (qz.type === 'name') { body += `<h2 class="q">Which structure is highlighted?</h2>` + optsHtml(q); }
-    else if (qz.type === 'find') { body += `<h2 class="q">Find: ${esc(t.label)}</h2><div class="stem" style="--c:${s.color}">${s.label} · ${TIERS[t.tier]}</div>` + (q.answered ? '' : `<p class="explain">Click the structure on the model.</p>`); }
+    else if (qz.type === 'find') { body += `<h2 class="q">Find: ${esc(t.label)}</h2><div class="stem" style="--c:${s.color}">${s.label} · ${TIERS[t.tier]}</div>` + (q.answered ? '' : `<p class="explain">Select a structure on the model, then press Confirm. Your first click is not final: you can change your pick, or hide and ghost pieces that are in the way.</p><div class="actions"><button class="btn confirm" id="confirm" ${state.selected && sel.size ? '' : 'disabled'}>Confirm answer</button></div>`); }
     else { body += `<h2 class="q">Which structure does this describe?</h2><div class="stem">${esc(maskName(c ? c.function : '', t))}<br><span style="color:var(--fg-3);font-size:13px">${s.label}</span></div>` + optsHtml(q); }
     if (q.answered) {
       const picked = q.picked && labels.get(q.picked);
@@ -725,6 +853,7 @@ document.getElementById('quiz-ui').addEventListener('click', e => {
   const t = e.target.closest('button'); if (!t) return;
   if (t.dataset.type) { state.quiz.type = t.dataset.type; state.quiz.q = null; clearQuizMarks(); renderQuiz(); }
   else if (t.id === 'start' || t.id === 'next') newQuestion();
+  else if (t.id === 'confirm') { if (state.selected) answer(state.selected); }
   else if (t.dataset.ans) answer(t.dataset.ans);
   else if (t.dataset.open) { setMode('explore'); select(t.dataset.open); }
 });
@@ -732,6 +861,7 @@ document.addEventListener('keydown', e => {
   if (e.target && /^(INPUT|TEXTAREA)$/.test(e.target.tagName)) return;
   if (state.mode === 'explore' && !e.metaKey && !e.ctrlKey && !e.altKey) { const k = e.key.toLowerCase(); if (k === 'h') togglePieces(hiddenIds); else if (k === 'g') togglePieces(ghostIds); else if (k === 'i') toggleIsolate(); else if (e.key === 'Escape') select(null); return; }
   if (state.mode !== 'quiz' || !state.quiz) return; const q = state.quiz.q;
+  if (e.key === 'Enter' && findOpen() && state.selected && sel.size) { answer(state.selected); return; }
   if (e.key === 'Enter' && (!q || q.answered)) { newQuestion(); return; }
   const i = 'abcd'.indexOf(e.key.toLowerCase()); if (i >= 0 && q && !q.answered && state.quiz.type !== 'find' && q.options[i]) answer(q.options[i].key);
 });
@@ -743,11 +873,53 @@ function frame() {
   if (needsRender) { renderer.render(scene, camera); needsRender = false; }
 }
 
+/* ---------- Intro screen: choose how to study and where to start ---------- */
+const STUDY = [
+  { id: 'explore', label: 'Explore freely', desc: 'Rotate, peel and select any structure to read its card.' },
+  { id: 'name', label: 'Quiz: name it', desc: 'A structure lights up. Choose its name.' },
+  { id: 'find', label: 'Quiz: find it', desc: 'You get a name. Select the structure and confirm.' },
+  { id: 'function', label: 'Quiz: function', desc: 'Match a function to the structure it describes.' },
+];
+const STARTS = [
+  { id: 'surface', label: 'Surface', desc: 'Skin regions and landmarks, everything beneath intact.', peel: 0, systems: ['skin', 'muscle', 'bone', 'artery', 'vein', 'nerve', 'lymph', 'viscera'] },
+  { id: 'muscle', label: 'Muscles', desc: 'Skin ghosted, facial and neck muscles on bone.', peel: 1, systems: ['skin', 'muscle', 'bone'] },
+  { id: 'neuro', label: 'Vessels and nerves', desc: 'Arteries, veins, nerves and nodes over the skeleton.', peel: 3, systems: ['skin', 'bone', 'artery', 'vein', 'nerve', 'lymph'] },
+  { id: 'viscera', label: 'Glands and airway', desc: 'Salivary and thyroid glands, larynx, pharynx.', peel: 4, systems: ['skin', 'bone', 'viscera'] },
+  { id: 'bone', label: 'Skeleton', desc: 'Skull, mandible, hyoid and cervical spine.', peel: 5, systems: ['skin', 'bone'] },
+  { id: 'cns', label: 'Brain and eye', desc: 'Brain, brainstem and globe inside a ghosted head.', peel: 6, systems: ['skin', 'cns'] },
+];
+const introEl = document.getElementById('intro');
+const intro = Object.assign({ study: 'explore', start: 'surface', skip: false }, store.get('intro', {}));
+function renderIntro() {
+  const opt = (kind, o, cur) => `<button class="opt" data-${kind}="${o.id}" aria-pressed="${o.id === cur}"><b>${esc(o.label)}</b><span>${esc(o.desc)}</span></button>`;
+  document.getElementById('intro-study').innerHTML = STUDY.map(o => opt('study', o, intro.study)).join('');
+  document.getElementById('intro-start').innerHTML = STARTS.map(o => opt('start', o, intro.start)).join('');
+  document.getElementById('intro-tones').innerHTML = TONES.map((t, i) => `<button data-tone="${i}" aria-pressed="${i === state.tone}" title="${esc(t.name)}" aria-label="${esc(t.name)}" style="--sw:#${t.hex.toString(16).padStart(6, '0')}"></button>`).join('');
+  document.getElementById('intro-tone-val').textContent = TONES[state.tone].name;
+  document.getElementById('intro-skip').checked = !!intro.skip;
+}
+function openIntro() { renderIntro(); introEl.hidden = false; document.getElementById('intro-go').focus(); }
+introEl.addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.study) { intro.study = b.dataset.study; renderIntro(); }
+  else if (b.dataset.start) { intro.start = b.dataset.start; renderIntro(); }
+  else if (b.dataset.tone) { state.tone = +b.dataset.tone; store.set('tone', state.tone); renderTones(); buildMaterials(); renderIntro(); }
+  else if (b.id === 'intro-go') {
+    intro.skip = document.getElementById('intro-skip').checked; store.set('intro', intro);
+    const st = STARTS.find(o => o.id === intro.start) || STARTS[0];
+    hiddenIds.clear(); ghostIds.clear(); setQuery(''); setSystems(st.systems); setPeel(st.peel); renderMods();
+    if (intro.study === 'explore') setMode('explore'); else { setMode('quiz'); state.quiz.type = intro.study; state.quiz.q = null; clearQuizMarks(); renderQuiz(); }
+    introEl.hidden = true; resize(); needsRender = true;
+  }
+});
+document.getElementById('open-intro').onclick = openIntro;
+
 /* ---------- Boot ---------- */
 buildMaterials();
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', buildMaterials);
 new MutationObserver(buildMaterials).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 resize(); setView('front'); setPeel(0); applyCut(); computeFilter(); renderIndex(); renderDetail(); renderMods(); frame();
+if (intro.skip || location.hash.length > 1) introEl.hidden = true; else renderIntro();
 (async () => {
   try {
     for (const s of ['skin', 'muscle', 'bone', 'artery', 'vein', 'nerve', 'lymph', 'viscera', 'cns']) { if (state.systems[s]) await loadSystem(s); }
