@@ -174,6 +174,10 @@ site = here / "docs"; site.mkdir(parents=True, exist_ok=True)
 (site / "index.html").write_text(standalone)
 (site / "robots.txt").write_text("User-agent: *\nAllow: /\n")
 (site / "404.html").write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Not found</title><style>body{font:16px system-ui;padding:40px;max-width:40ch}</style></head><body><h1>Page not found</h1><p>The 3D lab lives at <a href="/">the home page</a>.</p></body></html>\n')
-if (site / "packs").exists(): shutil.rmtree(site / "packs")
-shutil.copytree(packs_dir, site / "packs")
+# update pack files in place and only when they changed: deleting and recreating the folder makes OneDrive rename it to "packs 2"
+(site / "packs").mkdir(exist_ok=True)
+for f in sorted(packs_dir.iterdir()):
+    dst = site / "packs" / f.name
+    data = f.read_bytes()
+    if not dst.exists() or dst.read_bytes() != data: dst.write_bytes(data)
 print("standalone ->", site / "index.html")

@@ -117,6 +117,16 @@ header.top .count { margin-left: auto; font-family: var(--font-mono); font-size:
 .detail .pearl { border-left: 3px solid var(--accent); background: color-mix(in srgb, var(--accent) 9%, var(--bg-2)); padding: 8px 12px; border-radius: 0 var(--radius) var(--radius) 0; font-size: 14px; }
 .detail .pearl b { display: block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
 .detail .nocard { color: var(--fg-2); font-size: 14px; }
+.mods { display: flex; flex-direction: column; gap: 6px; min-width: 0; font-size: 12.5px; }
+.mods .none { color: var(--fg-3); }
+.modrow { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; max-height: 84px; overflow: auto; }
+.modrow .k { font-family: var(--font-mono); font-size: 11px; color: var(--fg-3); margin-right: 2px; }
+.chip-x { display: inline-flex; gap: 6px; align-items: center; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); cursor: pointer; font-size: 12px; color: inherit; }
+.chip-x:hover { border-color: var(--fg-2); }
+.chip-x span { color: var(--fg-3); }
+.detail .multi { font-size: 13px; color: var(--fg-2); margin: 0 0 8px; }
+.detail .multi button { border: 0; background: none; padding: 0; color: var(--accent); cursor: pointer; text-decoration: underline; font-size: 13px; }
+.detail .hintline { font-size: 12px; color: var(--fg-3); margin: 8px 0 0; }
 .detail .acts { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
 .detail .acts button { padding: 6px 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); cursor: pointer; font-size: 13px; }
 .detail .acts button[aria-pressed="true"] { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
@@ -178,7 +188,7 @@ header.top .count { margin-left: auto; font-family: var(--font-mono); font-size:
         </div>
         <div class="load" id="load"><div id="load-text">Loading skin…</div><progress id="load-bar" max="100" value="0"></progress></div>
         <div class="tip" id="tip"></div>
-        <div class="hint">drag rotate · right-drag or shift-drag pan · scroll zoom · click to identify</div>
+        <div class="hint">drag rotate · right-drag or shift-drag pan · scroll zoom · click to select · shift-click adds</div>
       </div>
       <div class="controls">
         <div class="ctl">
@@ -195,6 +205,11 @@ header.top .count { margin-left: auto; font-family: var(--font-mono); font-size:
           <label for="cut">Cut</label>
           <input type="range" id="cut" min="0" max="100" step="1" value="0" aria-label="Clipping cut">
           <div class="row"><div class="seg" role="group" aria-label="Cut plane"><button data-cut="sag" aria-pressed="true">Sagittal</button><button data-cut="cor" aria-pressed="false">Coronal</button><button data-cut="ax" aria-pressed="false">Axial</button></div></div>
+        </div>
+        <div class="ctl">
+          <label>Pieces</label>
+          <div class="mods" id="mods"></div>
+          <button class="icon-btn" id="mods-reset" hidden title="Show every hidden piece and un-ghost every ghosted piece">Restore all</button>
         </div>
         <div class="ctl">
           <label>Side</label>
@@ -266,6 +281,7 @@ for (const c of DATA) if (!matchedCards.has(c.id) && SYS[c.category]) labels.set
 const modelLabelCount = [...labels.values()].filter(L => !L.virtual).length;
 const cardOnlyCount = labels.size - modelLabelCount;
 
+const sel = new Set(), hiddenIds = new Set(), ghostIds = new Set(); // per-piece (mesh id) selection, hide and ghost
 const state = {
   systems: Object.assign(Object.fromEntries(ORDER.map(s => [s, s !== 'cns'])), store.get('systems', {})),
   peel: 0, ghost: true, side: 'both', cutAxis: 'sag', cut: 0, spin: false, tone: Math.min(TONES.length - 1, Math.max(0, store.get('tone', 1) | 0)),
@@ -289,7 +305,7 @@ const rim = new THREE.DirectionalLight(0xffffff, 0.25); rim.position.set(0, -1, 
 const center = new THREE.Vector3(...(MAN.center || [0, 1.6, 0]));
 const radius = MAN.radius || 0.16;
 const isDark = () => { const t = document.documentElement.getAttribute('data-theme'); return t === 'dark' || (t !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches); };
-const materials = {}; const ghosts = {}; let selMat;
+const materials = {}; const ghosts = {}; const pieceGhosts = {}; let selMat, selGhostMat;
 function buildMaterials() {
   const dark = isDark();
   for (const s of ORDER) {
@@ -297,7 +313,9 @@ function buildMaterials() {
     if (s === 'skin') { const c = new THREE.Color(TONES[state.tone].hex); if (dark) c.multiplyScalar(0.82); hex = c.getHex(); }
     materials[s] = new THREE.MeshPhongMaterial({ color: hex, shininess: s === 'skin' ? 6 : 22, specular: s === 'skin' ? 0x1c1a18 : 0x222222, side: THREE.DoubleSide });
     ghosts[s] = new THREE.MeshPhongMaterial({ color: hex, transparent: true, opacity: 0.1, depthWrite: false, side: THREE.DoubleSide, shininess: 5 });
+    pieceGhosts[s] = new THREE.MeshPhongMaterial({ color: hex, transparent: true, opacity: 0.22, depthWrite: false, side: THREE.DoubleSide, shininess: 5 });
   }
+  selGhostMat = new THREE.MeshPhongMaterial({ color: dark ? 0x7fd0ea : 0x1f6f8b, transparent: true, opacity: 0.38, depthWrite: false, side: THREE.DoubleSide });
   selMat = new THREE.MeshPhongMaterial({ color: dark ? 0x7fd0ea : 0x1f6f8b, emissive: dark ? 0x1b5868 : 0x0b3a4a, shininess: 30, side: THREE.DoubleSide });
   goodMat = new THREE.MeshPhongMaterial({ color: 0x3fbf6f, emissive: 0x0f4a26, side: THREE.DoubleSide });
   badMat = new THREE.MeshPhongMaterial({ color: 0xd95050, emissive: 0x4a1010, side: THREE.DoubleSide });
@@ -460,26 +478,27 @@ function passesFilter(id) { const k = labelOfId.get(id); return !state.query.tri
 let filtered = new Set();
 function applyVisibility() {
   pickables = [];
-  const selKey = state.selected;
   meshes.forEach(m => {
-    const u = m.userData; const key = labelOfId.get(u.id);
-    const on = state.systems[u.system] && sideOk(u.side) && passesFilter(u.id);
+    const u = m.userData; const isSel = sel.has(u.id);
+    const on = state.systems[u.system] && sideOk(u.side) && passesFilter(u.id) && !hiddenIds.has(u.id);
     const peeled = u.tier < state.peel;
-    const iso = state.isolate && selKey && key !== selKey;
-    let mat;
+    const iso = state.isolate && sel.size > 0 && !isSel;
+    const pg = ghostIds.has(u.id);
+    let mat; u.ghosted = false;
     if (!on) { m.visible = false; return; }
     if (u.quizMark === 'good') mat = goodMat; else if (u.quizMark === 'bad') mat = badMat;
-    else if (key === selKey && !(state.mode === 'quiz' && state.quiz && state.quiz.q && !state.quiz.q.answered && state.quiz.type === 'find')) mat = selMat;
-    else if (peeled) { if (!state.ghost || u.tier !== 0) { m.visible = false; return; } mat = ghosts[u.system]; }
-    else if (iso) mat = ghosts[u.system];
+    else if (isSel && !(state.mode === 'quiz' && state.quiz && state.quiz.q && !state.quiz.q.answered && state.quiz.type === 'find')) { mat = pg ? selGhostMat : selMat; u.ghosted = pg; }
+    else if (peeled) { if (!state.ghost || u.tier !== 0) { m.visible = false; return; } mat = ghosts[u.system]; u.ghosted = true; }
+    else if (iso) { mat = ghosts[u.system]; u.ghosted = true; }
+    else if (pg) { mat = pieceGhosts[u.system]; u.ghosted = true; }
     else mat = materials[u.system];
     m.visible = true; m.material = mat;
-    if (!(peeled || iso)) pickables.push(m);
+    if (!(peeled || iso || pg)) pickables.push(m); // ghosted pieces are click-through
   });
   needsRender = true;
 }
 function updateCounts() {
-  const visibleLabels = new Set(); meshes.forEach(m => { if (m.visible && m.material !== ghosts[m.userData.system]) visibleLabels.add(labelOfId.get(m.userData.id)); });
+  const visibleLabels = new Set(); meshes.forEach(m => { if (m.visible && !m.userData.ghosted) visibleLabels.add(labelOfId.get(m.userData.id)); });
   document.getElementById('count').textContent = `${visibleLabels.size} structures in view · ${modelLabelCount} in model · ${cardOnlyCount} card-only`;
 }
 
@@ -504,7 +523,7 @@ function showTip(m, e) {
   const u = m.userData; tip.innerHTML = `${esc(u.label)}${u.side !== 'm' ? `<small>${u.side === 'l' ? 'LEFT' : 'RIGHT'}</small>` : ''}`;
   const r = canvas.parentElement.getBoundingClientRect(); tip.style.left = (e.clientX - r.left) + 'px'; tip.style.top = (e.clientY - r.top) + 'px'; tip.classList.add('on'); canvas.style.cursor = 'pointer';
 }
-function pick(e) { const m = castAt(e); if (state.mode === 'explore') { select(m ? labelOfId.get(m.userData.id) : null); return; } if (m) quizClick(labelOfId.get(m.userData.id)); }
+function pick(e) { const m = castAt(e); if (state.mode === 'explore') { const add = e.shiftKey || e.metaKey || e.ctrlKey; if (!m) { if (!add) select(null); return; } select(labelOfId.get(m.userData.id), false, { ids: [m.userData.id], add }); return; } if (m) quizClick(labelOfId.get(m.userData.id)); }
 
 /* ---------- Clipping ---------- */
 let clipPlane = null;
@@ -549,7 +568,7 @@ function renderIndex() {
     const groups = [...new Set(items.map(L => L.group || ''))];
     for (const g of groups) {
       if (g) html += `<h4><button class="grp" data-grp="${esc(g)}">${esc(g)}</button></h4>`;
-      for (const L of items.filter(L => (L.group || '') === g)) html += `<button class="row${L.virtual ? ' virtual' : ''}" data-key="${esc(L.key)}" style="--c:${SYS[s].color}" aria-current="${L.key === state.selected}">${esc(L.label)}<span class="m">${L.virtual ? 'card only' : (L.ids.length > 1 ? 'L+R' : '') + (L.card ? (L.ids.length > 1 ? ' · ' : '') + 'card' : '')}</span></button>`;
+      for (const L of items.filter(L => (L.group || '') === g)) html += `<button class="row${L.virtual ? ' virtual' : ''}" data-key="${esc(L.key)}" style="--c:${SYS[s].color}" aria-current="${L.key === state.selected || L.ids.some(id => sel.has(id))}">${esc(L.label)}<span class="m">${L.ids.some(id => hiddenIds.has(id)) ? 'hidden · ' : L.ids.some(id => ghostIds.has(id)) ? 'ghost · ' : ''}${L.virtual ? 'card only' : (L.ids.length > 1 ? 'L+R' : '') + (L.card ? (L.ids.length > 1 ? ' · ' : '') + 'card' : '')}</span></button>`;
     }
   }
   idx.innerHTML = html || `<div class="empty">No structures match “${esc(state.query)}” in the active systems.</div>`;
@@ -558,16 +577,26 @@ function renderIndex() {
 }
 document.getElementById('index').addEventListener('click', e => {
   const g = e.target.closest('button.grp'); if (g) { setQuery(state.query.trim().toLowerCase() === g.dataset.grp.toLowerCase() ? '' : g.dataset.grp); return; }
-  const b = e.target.closest('button.row'); if (b) select(b.dataset.key, true);
+  const b = e.target.closest('button.row'); if (b) select(b.dataset.key, true, { add: e.shiftKey || e.metaKey || e.ctrlKey });
 });
 function setQuery(v) { state.query = v; const q = document.getElementById('q'); if (q.value !== v) q.value = v; computeFilter(); applyVisibility(); updateCounts(); renderIndex(); if (state.selected && !visibleLabels().some(L => L.key === state.selected)) select(null); if (state.mode === 'quiz') resetQuizPool(); }
 document.getElementById('q').addEventListener('input', e => setQuery(e.target.value));
 document.getElementById('clear-q').onclick = () => setQuery('');
 
-function select(key, fromList) {
-  state.selected = key && labels.has(key) ? key : null; if (!state.selected || labels.get(state.selected).virtual) state.isolate = false;
-  applyVisibility(); renderDetail();
-  const idx = document.getElementById('index'); idx.querySelectorAll('button.row').forEach(b => b.setAttribute('aria-current', String(b.dataset.key === state.selected)));
+/* Selection is per piece (mesh id). A click on the model selects that one piece; an index row selects every piece of the structure (both sides).
+   opts.add (shift/cmd/ctrl-click) toggles the pieces in the current selection instead of replacing it. state.selected is the structure whose card is shown. */
+function select(key, fromList, opts) {
+  opts = opts || {}; const L0 = key && labels.get(key);
+  if (!L0) { sel.clear(); state.selected = null; }
+  else if (L0.virtual || !opts.add) { sel.clear(); (opts.ids || L0.ids).forEach(id => sel.add(id)); state.selected = key; }
+  else {
+    const ids = opts.ids || L0.ids; const all = ids.every(id => sel.has(id));
+    ids.forEach(id => all ? sel.delete(id) : sel.add(id));
+    if (!all) state.selected = key; else { const rest = [...sel]; state.selected = rest.length ? labelOfId.get(rest[rest.length - 1]) : null; }
+  }
+  if (!sel.size) state.isolate = false;
+  applyVisibility(); updateCounts(); renderDetail(); renderMods();
+  const idx = document.getElementById('index'); idx.querySelectorAll('button.row').forEach(b => { const Lr = labels.get(b.dataset.key); b.setAttribute('aria-current', String(b.dataset.key === state.selected || !!(Lr && Lr.ids.some(id => sel.has(id))))); });
   const row = idx.querySelector(`button.row[data-key="${CSS.escape(state.selected || '')}"]`); if (row && !fromList) row.scrollIntoView({ block: 'nearest' });
   if (state.selected) { const L = labels.get(state.selected); if (!L.virtual && L.tier < state.peel) { /* structure is peeled away: bring peel back to it */ setPeel(L.tier); } loadSystem(L.system); }
 }
@@ -575,20 +604,40 @@ function renderDetail() {
   const d = document.getElementById('detail'); const L = state.selected && labels.get(state.selected);
   if (!L) { d.innerHTML = `<div class="placeholder"><div class="eyebrow">Specimen card</div><h2>Pick a structure</h2><p>Click any structure on the model, or choose from the index. Use Peel to remove layers from the skin inward, Side to view one half, and Cut to slice the model. Ghost keeps a transparent skin envelope while you peel; turn it off to hide the skin entirely.</p></div>`; return; }
   const s = SYS[L.system]; const c = L.card && cardById.get(L.card);
-  let html = `<div class="eyebrow" style="--c:${s.color}"><span class="cat">${s.label}</span><span>·</span><span>${L.virtual ? 'not shown on the model' : TIERS[L.tier]}</span>${L.ids.length > 1 ? '<span>·</span><span>paired</span>' : ''}</div><h2>${esc(L.label)}</h2>`;
+  let html = `<div class="eyebrow" style="--c:${s.color}"><span class="cat">${s.label}</span><span>·</span><span>${L.virtual ? 'not shown on the model' : TIERS[L.tier]}</span>${L.ids.length > 1 ? `<span>·</span><span>${L.ids.every(id => sel.has(id)) ? 'both sides' : L.ids.filter(id => sel.has(id)).map(id => entryById.get(id).side === 'l' ? 'left' : entryById.get(id).side === 'r' ? 'right' : 'midline').join(' + ') || 'paired'}</span>` : ''}</div><h2>${esc(L.label)}</h2>`;
+  const selLabels = [...new Set([...sel].map(id => labelOfId.get(id)))];
+  if (sel.size > 1 && selLabels.length > 1) html += `<p class="multi"><b>${sel.size} pieces selected</b> across ${selLabels.length} structures: ${selLabels.map(k => `<button data-open="${esc(k)}">${esc(labels.get(k).label)}</button>`).join(', ')}. Hide, Ghost and Isolate apply to all of them.</p>`;
   if (L.virtual) html += `<p class="nocard">The Z-Anatomy model has no mesh for this structure, so it cannot be highlighted or clicked; the card is from Netter.</p>`;
   if (c) {
     html += `${c.name.toLowerCase() !== L.label.toLowerCase() ? `<div class="eyebrow" style="margin-bottom:6px">Card: ${esc(c.name)} · ${esc(c.group)}</div>` : ''}<p class="fn">${esc(c.function)}</p><dl>${(c.details || []).map(x => `<dt>${esc(x.label)}</dt><dd>${esc(x.value)}</dd>`).join('')}</dl>${c.pearl ? `<div class="pearl"><b>Step 2 pearl</b>${esc(c.pearl)}</div>` : ''}`;
   } else html += `<p class="nocard">Shown for anatomical context. This structure has no specimen card yet; the name and system come from the Z-Anatomy model.</p>`;
-  html += L.virtual ? `<div class="acts"><button id="deselect">Clear</button></div>` : `<div class="acts"><button id="isolate" aria-pressed="${state.isolate}">Isolate</button><button id="focus">Center view</button><button id="deselect">Clear</button></div>`;
+  html += L.virtual ? `<div class="acts"><button id="deselect">Clear</button></div>` : `<div class="acts"><button id="p-hide" aria-pressed="${sel.size > 0 && [...sel].every(id => hiddenIds.has(id))}" title="Remove the selected pieces from view (H)">Hide${sel.size > 1 ? ' ' + sel.size : ''}</button><button id="p-ghost" aria-pressed="${sel.size > 0 && [...sel].every(id => ghostIds.has(id))}" title="Make the selected pieces transparent and click-through (G)">Ghost${sel.size > 1 ? ' ' + sel.size : ''}</button><button id="isolate" aria-pressed="${state.isolate}" title="Ghost everything except the selection (I)">Isolate</button>${L.ids.length > 1 && !L.ids.every(id => sel.has(id)) ? '<button id="p-both">Select both sides</button>' : ''}<button id="focus">Center view</button><button id="deselect">Clear</button></div><p class="hintline">Shift-click the model or the index to add pieces to the selection.</p>`;
   d.innerHTML = html;
 }
 document.getElementById('detail').addEventListener('click', e => {
   const t = e.target.closest('button'); if (!t) return;
-  if (t.id === 'isolate') { state.isolate = !state.isolate; applyVisibility(); renderDetail(); }
+  if (t.dataset.open) { select(t.dataset.open); return; }
+  if (t.id === 'isolate') toggleIsolate();
+  else if (t.id === 'p-hide') togglePieces(hiddenIds);
+  else if (t.id === 'p-ghost') togglePieces(ghostIds);
+  else if (t.id === 'p-both') { const L = labels.get(state.selected); if (L) select(L.key, true, { ids: L.ids.filter(id => !sel.has(id)), add: true }); }
   else if (t.id === 'focus') focusSelected();
   else if (t.id === 'deselect') select(null);
 });
+function toggleIsolate() { if (!sel.size) return; state.isolate = !state.isolate; applyVisibility(); updateCounts(); renderDetail(); }
+function togglePieces(set) { if (!sel.size) return; const all = [...sel].every(id => set.has(id)); sel.forEach(id => all ? set.delete(id) : set.add(id)); piecesChanged(); }
+function piecesChanged() { applyVisibility(); updateCounts(); renderIndex(); renderDetail(); renderMods(); if (state.mode === 'quiz') resetQuizPool(); }
+function pieceName(id) { const e = entryById.get(id); return e.label + (e.side === 'l' ? ' (L)' : e.side === 'r' ? ' (R)' : ''); }
+function renderMods() {
+  const el = document.getElementById('mods'); const chip = (id, kind) => `<button class="chip-x" data-restore="${esc(id)}" data-kind="${kind}" title="Restore ${esc(pieceName(id))}">${esc(pieceName(id))}<span aria-hidden="true">×</span></button>`;
+  let html = '';
+  if (hiddenIds.size) html += `<div class="modrow"><span class="k">Hidden ${hiddenIds.size}</span>${[...hiddenIds].map(id => chip(id, 'h')).join('')}</div>`;
+  if (ghostIds.size) html += `<div class="modrow"><span class="k">Ghosted ${ghostIds.size}</span>${[...ghostIds].map(id => chip(id, 'g')).join('')}</div>`;
+  el.innerHTML = html || `<span class="none">Select a piece, then Hide, Ghost or Isolate it. Shift-click adds pieces to the selection.</span>`;
+  document.getElementById('mods-reset').hidden = !(hiddenIds.size || ghostIds.size);
+}
+document.getElementById('mods').addEventListener('click', e => { const b = e.target.closest('[data-restore]'); if (!b) return; (b.dataset.kind === 'h' ? hiddenIds : ghostIds).delete(b.dataset.restore); piecesChanged(); });
+document.getElementById('mods-reset').onclick = () => { hiddenIds.clear(); ghostIds.clear(); state.isolate = false; piecesChanged(); };
 function centerOn(L) {
   // move the orbit target to the structure without changing zoom, so a highlighted target is on screen
   const box = new THREE.Box3(); let any = false;
@@ -596,7 +645,7 @@ function centerOn(L) {
   if (!any) return; orbit.target.copy(box.getCenter(new THREE.Vector3())); updateCamera();
 }
 function focusSelected() {
-  const L = labels.get(state.selected); if (!L) return; const box = new THREE.Box3(); let any = false;
+  const L = { ids: [...sel] }; if (!L.ids.length) return; const box = new THREE.Box3(); let any = false;
   for (const id of L.ids) { const m = meshes.get(id); if (m && m.geometry.boundingSphere) { const bs = m.geometry.boundingSphere; box.expandByPoint(bs.center.clone().addScalar(-bs.radius)); box.expandByPoint(bs.center.clone().addScalar(bs.radius)); any = true; } }
   if (!any) return; const c = box.getCenter(new THREE.Vector3()); const r = box.getSize(new THREE.Vector3()).length() / 2;
   orbit.target.copy(c); orbit.dist = clampDist(Math.max(r * 3.2, radius * 0.8)); updateCamera();
@@ -615,7 +664,7 @@ document.getElementById('mode-explore').onclick = () => setMode('explore'); docu
 
 /* ---------- Quiz ---------- */
 const TYPES = { name: 'Name it', find: 'Find it', function: 'Function' };
-function quizPool() { const vis = visibleLabels(); if (state.quiz && state.quiz.type === 'function') return vis.filter(L => L.card && (L.virtual || (L.tier >= state.peel && L.ids.some(id => meshes.has(id))))); return vis.filter(L => !L.virtual && L.tier >= state.peel && L.ids.some(id => meshes.has(id))); }
+function quizPool() { const vis = visibleLabels(); if (state.quiz && state.quiz.type === 'function') return vis.filter(L => L.card && (L.virtual || (L.tier >= state.peel && L.ids.some(id => meshes.has(id) && !hiddenIds.has(id))))); return vis.filter(L => !L.virtual && L.tier >= state.peel && L.ids.some(id => meshes.has(id) && !hiddenIds.has(id))); }
 function resetQuizPool() { if (state.quiz) { state.quiz.q = null; clearQuizMarks(); renderQuiz(); } }
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function newQuestion() {
@@ -629,8 +678,8 @@ function newQuestion() {
   for (const L of shuffle(pool.slice())) { if (ds.length >= 3) break; if (L.key !== target.key && !used.has(L.key)) { ds.push(L); used.add(L.key); } }
   qz.q = { target, options: shuffle([target, ...ds]), answered: false, picked: null, correct: false };
   clearQuizMarks();
-  if (qz.type === 'name') { state.selected = target.key; applyVisibility(); centerOn(target); }
-  else { state.selected = null; applyVisibility(); }
+  if (qz.type === 'name') { state.selected = target.key; sel.clear(); target.ids.forEach(id => sel.add(id)); applyVisibility(); centerOn(target); }
+  else { state.selected = null; sel.clear(); applyVisibility(); }
   renderQuiz();
 }
 function clearQuizMarks() { meshes.forEach(m => { m.userData.quizMark = null; }); applyVisibility(); }
@@ -642,7 +691,7 @@ function answer(key) {
   state.stats.total++; if (q.correct) state.stats.correct++; state.stats.best = Math.max(state.stats.best, qz.streak); store.set('stats', state.stats);
   for (const id of q.target.ids) { const m = meshes.get(id); if (m) m.userData.quizMark = 'good'; }
   if (!q.correct && key && labels.has(key)) for (const id of labels.get(key).ids) { const m = meshes.get(id); if (m) m.userData.quizMark = 'bad'; }
-  state.selected = null; applyVisibility(); renderQuiz();
+  state.selected = null; sel.clear(); applyVisibility(); renderQuiz();
 }
 function maskName(text, L) { const words = L.label.replace(/\(.*?\)/g, '').split(/[\s\-–\/,]+/).filter(w => w.length > 3); let out = text; for (const w of words) out = out.replace(new RegExp(w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), '▒▒▒'); return out; }
 function renderQuiz() {
@@ -681,6 +730,7 @@ document.getElementById('quiz-ui').addEventListener('click', e => {
 });
 document.addEventListener('keydown', e => {
   if (e.target && /^(INPUT|TEXTAREA)$/.test(e.target.tagName)) return;
+  if (state.mode === 'explore' && !e.metaKey && !e.ctrlKey && !e.altKey) { const k = e.key.toLowerCase(); if (k === 'h') togglePieces(hiddenIds); else if (k === 'g') togglePieces(ghostIds); else if (k === 'i') toggleIsolate(); else if (e.key === 'Escape') select(null); return; }
   if (state.mode !== 'quiz' || !state.quiz) return; const q = state.quiz.q;
   if (e.key === 'Enter' && (!q || q.answered)) { newQuestion(); return; }
   const i = 'abcd'.indexOf(e.key.toLowerCase()); if (i >= 0 && q && !q.answered && state.quiz.type !== 'find' && q.options[i]) answer(q.options[i].key);
@@ -697,7 +747,7 @@ function frame() {
 buildMaterials();
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', buildMaterials);
 new MutationObserver(buildMaterials).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
-resize(); setView('front'); setPeel(0); applyCut(); computeFilter(); renderIndex(); renderDetail(); frame();
+resize(); setView('front'); setPeel(0); applyCut(); computeFilter(); renderIndex(); renderDetail(); renderMods(); frame();
 (async () => {
   try {
     for (const s of ['skin', 'muscle', 'bone', 'artery', 'vein', 'nerve', 'lymph', 'viscera', 'cns']) { if (state.systems[s]) await loadSystem(s); }
