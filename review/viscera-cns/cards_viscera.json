@@ -1,0 +1,2590 @@
+{
+ "cards": [
+  {
+   "id": "parotid-gland",
+   "name": "Parotid gland",
+   "category": "viscera",
+   "group": "Salivary glands",
+   "function": "Largest salivary gland, purely serous; wraps the posterior border of the ramus of the mandible and is traversed by the facial nerve, which supplies none of it.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Parotid bed between the ramus of the mandible and masseter in front, the mastoid process and sternocleidomastoid behind and the external acoustic meatus above; deep part reaches the styloid process and the carotid sheath"
+    },
+    {
+     "label": "Divisions",
+     "value": "Superficial and deep parts, separated by the plane of the facial nerve (temporofacial and cervicofacial divisions); accessory parotid gland on the masseter along the parotid duct"
+    },
+    {
+     "label": "Relations",
+     "value": "Within the gland from superficial to deep: branches of the facial nerve, retromandibular vein, external carotid artery; auriculotemporal nerve and superficial temporal vessels emerge at its upper pole"
+    },
+    {
+     "label": "Innervation",
+     "value": "Secretomotor: CN IX via the tympanic nerve and lesser petrosal nerve to the otic ganglion, then the auriculotemporal nerve; sensory: auriculotemporal and great auricular nerves"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Preauricular and intraglandular parotid nodes, then superior deep lateral cervical nodes"
+    }
+   ],
+   "pearl": "Pleomorphic adenoma is the most common tumour (painless, slow, superficial part); facial palsy or pain means malignancy. Superficial parotidectomy risks CN VII and gustatory sweating (Frey syndrome); mumps gives painful bilateral swelling.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "parotid-duct",
+   "name": "Parotid duct (of Stensen)",
+   "category": "viscera",
+   "group": "Salivary glands",
+   "function": "Carries serous saliva from the parotid gland across the masseter and through the buccinator into the oral vestibule.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "About 5 cm long; leaves the anterior border of the gland, crosses the masseter a fingerbreadth below the zygomatic arch, turns medially at its anterior border and pierces the buccinator; ends at the papilla of the parotid duct on the cheek mucosa opposite the upper 2nd molar"
+    },
+    {
+     "label": "Relations",
+     "value": "Transverse facial artery above, buccal branches of the facial nerve alongside; accessory parotid gland may lie on it"
+    }
+   ],
+   "pearl": "Surface line: middle third of a line from the tragus to the mid upper lip; a deep cheek laceration here with buccal-branch weakness means duct injury and needs repair over a stent. Pus at the papilla on massaging the gland indicates suppurative parotitis (S. aureus in dehydrated elderly patients).",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "submandibular-gland",
+   "name": "Submandibular gland",
+   "category": "viscera",
+   "group": "Salivary glands",
+   "function": "Mixed, mainly serous gland that produces most of the resting saliva; fills the submandibular triangle and hooks around the posterior border of the mylohyoid.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Submandibular (digastric) triangle, between the body of the mandible and the two bellies of the digastric, on the mylohyoid and hyoglossus"
+    },
+    {
+     "label": "Divisions",
+     "value": "Superficial lobe below the mylohyoid and deep lobe above it, continuous around the muscle's posterior border; the submandibular duct leaves the deep lobe"
+    },
+    {
+     "label": "Relations",
+     "value": "Facial artery grooves its deep and upper surface, facial vein and marginal mandibular branch of CN VII cross it superficially; lingual nerve and submandibular ganglion above the deep lobe, hypoglossal nerve below it; submandibular lymph nodes on its surface"
+    },
+    {
+     "label": "Innervation",
+     "value": "Secretomotor: CN VII via the chorda tympani and lingual nerve, synapsing in the submandibular ganglion; sympathetic along the facial artery"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Facial artery and vein (submental and glandular branches)"
+    }
+   ],
+   "pearl": "Most salivary stones (about 80%) form here: saliva is thicker, more alkaline and drains upward, giving swelling and pain at meals. Gland excision risks the marginal mandibular, lingual and hypoglossal nerves.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "submandibular-duct",
+   "name": "Submandibular duct (of Wharton)",
+   "category": "viscera",
+   "group": "Salivary glands",
+   "function": "Drains the submandibular gland to the floor of the mouth beside the frenulum of the tongue.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "About 5 cm long; runs forward from the deep lobe between the mylohyoid and hyoglossus, then between the sublingual gland and genioglossus; opens on the sublingual caruncle at the side of the frenulum of the tongue"
+    },
+    {
+     "label": "Relations",
+     "value": "Lingual nerve crosses it from lateral to medial by looping beneath it; hypoglossal nerve below; sublingual gland lateral, some sublingual ducts joining it"
+    }
+   ],
+   "pearl": "A stone in the duct is palpable bimanually in the floor of the mouth and is removed intraorally; the lingual nerve looping under the duct is the structure at risk.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "sublingual-gland",
+   "name": "Sublingual gland",
+   "category": "viscera",
+   "group": "Salivary glands",
+   "function": "Smallest of the three major salivary glands, mainly mucous; lies under the mucosa of the floor of the mouth where it raises the sublingual fold.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Above the mylohyoid in the sublingual fossa of the mandible, between the mandible and genioglossus"
+    },
+    {
+     "label": "Divisions",
+     "value": "Drains by many small sublingual ducts (of Rivinus) opening along the sublingual fold; some open into the submandibular duct"
+    },
+    {
+     "label": "Relations",
+     "value": "Submandibular duct and lingual nerve on its medial side; sublingual artery and vein"
+    },
+    {
+     "label": "Innervation",
+     "value": "Secretomotor: chorda tympani via the lingual nerve and submandibular ganglion"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Sublingual artery (lingual) and submental artery (facial)"
+    }
+   ],
+   "pearl": "A ranula is a mucus extravasation cyst of the sublingual gland: bluish, fluctuant swelling in the floor of the mouth; a plunging ranula passes through or behind the mylohyoid into the neck.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "minor-salivary-glands",
+   "name": "Minor salivary glands (lingual, molar and palatine glands)",
+   "category": "viscera",
+   "group": "Salivary glands",
+   "function": "Hundreds of small, mostly mucous glands scattered in the oral submucosa that keep the mucosa moist between meals.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Lingual minor salivary gland near the apex of the tongue; molar minor salivary glands; palatine glands of the hard and soft palate; lingual glands (serous glands of von Ebner) opening into the furrows of the vallate papillae; labial and buccal glands"
+    },
+    {
+     "label": "Innervation",
+     "value": "Palatine glands: greater petrosal nerve via the pterygopalatine ganglion and palatine nerves; lingual and labial glands: chorda tympani via the lingual nerve"
+    }
+   ],
+   "pearl": "A tumour of a minor salivary gland is more likely to be malignant than one of the parotid (adenoid cystic and mucoepidermoid carcinoma, typically a palatal mass). A mucocele of the lower lip follows trauma to a labial gland duct.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "thyroid-gland",
+   "name": "Thyroid gland",
+   "category": "viscera",
+   "group": "Thyroid & parathyroid",
+   "function": "Endocrine gland producing T3 and T4 from its follicles and calcitonin from parafollicular C cells; bound to the larynx and trachea by pretracheal fascia so it rises on swallowing.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Anterior neck from the thyroid cartilage lamina to about the 5th tracheal ring (C5–T1), deep to the sternothyroid and sternohyoid"
+    },
+    {
+     "label": "Divisions",
+     "value": "Right lobe, left lobe and isthmus; pyramidal lobe (often absent or small); enclosed in a fibrous capsule inside the pretracheal fascia"
+    },
+    {
+     "label": "Relations",
+     "value": "Trachea, cricoid cartilage and cricothyroid muscle medially; recurrent laryngeal nerve in the tracheoesophageal groove and parathyroid glands behind; common carotid artery posterolateral; external branch of the superior laryngeal nerve beside the superior thyroid artery at the upper pole"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Superior thyroid artery (external carotid) and inferior thyroid artery (thyrocervical trunk), sometimes a thyroid ima artery; superior and middle thyroid veins to the internal jugular vein, inferior thyroid veins to the brachiocephalic veins"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Prelaryngeal, pretracheal and paratracheal nodes, then deep lateral cervical nodes"
+    }
+   ],
+   "pearl": "Thyroidectomy complications follow the relations: recurrent laryngeal nerve injury (hoarseness; bilateral gives stridor), external laryngeal nerve injury (loss of high pitch), hypocalcaemia from parathyroid devascularisation, and a neck haematoma compressing the airway.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "isthmus-of-thyroid-gland",
+   "name": "Isthmus of thyroid gland",
+   "category": "viscera",
+   "group": "Thyroid & parathyroid",
+   "function": "Band of thyroid tissue joining the right and left lobes across the front of the trachea.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Anterior to the 2nd to 4th tracheal rings, just below the cricoid cartilage"
+    },
+    {
+     "label": "Relations",
+     "value": "Pretracheal fascia and infrahyoid muscles in front; anastomosis of the superior thyroid arteries along its upper border; inferior thyroid veins leave its lower border; pyramidal lobe may ascend from it"
+    }
+   ],
+   "pearl": "The isthmus overlies the usual tracheostomy site and is retracted or divided; the cricothyroid ligament above it is avascular and is the emergency airway.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "pyramidal-lobe-of-thyroid-gland",
+   "name": "Pyramidal lobe of thyroid gland",
+   "category": "viscera",
+   "group": "Thyroid & parathyroid",
+   "function": "Inconstant upward tongue of thyroid tissue (often absent or small), a remnant of the lower thyroglossal duct.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Ascends from the isthmus, usually left of the midline, in front of the cricoid and thyroid cartilages toward the hyoid bone"
+    },
+    {
+     "label": "Relations",
+     "value": "Median cricothyroid ligament and cricothyroid muscles behind it; may be tethered to the hyoid by a fibrous or muscular band"
+    }
+   ],
+   "pearl": "Thyroglossal duct cyst: midline neck mass that rises on tongue protrusion; excision takes the middle of the hyoid body (Sistrunk). A pyramidal lobe left behind at thyroidectomy is a source of residual uptake or recurrent Graves disease.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "superior-parathyroid-gland",
+   "name": "Superior parathyroid gland",
+   "category": "viscera",
+   "group": "Thyroid & parathyroid",
+   "function": "Secretes parathyroid hormone, raising serum calcium via bone, kidney and vitamin D activation. Derived from the 4th pharyngeal pouch and constant in position.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Posterior border of the thyroid lobe at about the level of the cricoid cartilage, inside the fibrous capsule region of the gland, above the entry of the inferior thyroid artery"
+    },
+    {
+     "label": "Relations",
+     "value": "Recurrent laryngeal nerve and inferior thyroid artery just below and in front; inferior pharyngeal constrictor and esophagus medially"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Inferior thyroid artery, with anastomotic twigs from the superior thyroid artery"
+    }
+   ],
+   "pearl": "Transient hypocalcaemia after total thyroidectomy (perioral tingling, Chvostek and Trousseau signs) comes from parathyroid removal or devascularisation; the inferior thyroid artery is ligated close to the gland capsule to protect the supply.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "inferior-parathyroid-gland",
+   "name": "Inferior parathyroid gland",
+   "category": "viscera",
+   "group": "Thyroid & parathyroid",
+   "function": "Secretes parathyroid hormone. Derived from the 3rd pharyngeal pouch with the thymus, so it descends further and its position varies.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Near the lower pole of the thyroid lobe below the inferior thyroid artery; may be more caudally located, even within the mediastinum"
+    },
+    {
+     "label": "Relations",
+     "value": "Recurrent laryngeal nerve, inferior thyroid artery and inferior thyroid veins; thymus when ectopic"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Inferior thyroid artery"
+    }
+   ],
+   "pearl": "Primary hyperparathyroidism is usually a single adenoma; when the neck exploration is negative the missing gland is typically an inferior one in the thymus or mediastinum (sestamibi scan). Absent 3rd and 4th pouches (22q11 deletion) give hypocalcaemia with thymic aplasia.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "larynx",
+   "name": "Larynx",
+   "category": "viscera",
+   "group": "Larynx",
+   "function": "Airway sphincter and organ of phonation between the laryngopharynx and the trachea; closes during swallowing and coughing.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Anterior neck opposite C3–C6, suspended from the hyoid bone by the thyrohyoid membrane and continuous with the trachea below the cricoid cartilage"
+    },
+    {
+     "label": "Divisions",
+     "value": "Laryngeal inlet; vestibule (to the vestibular folds); ventricle between the vestibular and vocal folds; infraglottic cavity (below the vocal folds, inside the conus elasticus and cricoid cartilage)"
+    },
+    {
+     "label": "Innervation",
+     "value": "Sensory above the vocal folds: internal branch of the superior laryngeal nerve; below: recurrent laryngeal nerve. Motor: recurrent laryngeal nerve to all intrinsic muscles except cricothyroid (external branch of the superior laryngeal nerve)"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Superior laryngeal artery (superior thyroid) and inferior laryngeal artery (inferior thyroid)"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Above the vocal folds to superior deep lateral cervical nodes; below to prelaryngeal, pretracheal and paratracheal nodes"
+    }
+   ],
+   "pearl": "Laryngeal squamous cell carcinoma (smoking, alcohol): glottic tumours present early with hoarseness and rarely have nodes; supraglottic tumours present late with bilateral nodes. Hoarseness for more than 3 weeks needs laryngoscopy.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "laryngeal-inlet",
+   "name": "Laryngeal inlet",
+   "category": "viscera",
+   "group": "Larynx",
+   "function": "Obliquely set opening from the laryngopharynx into the laryngeal vestibule; narrowed and covered by the epiglottis during swallowing.",
+   "details": [
+    {
+     "label": "Relations",
+     "value": "Epiglottis in front, aryepiglottic folds with the cuneiform and corniculate tubercles at the sides, interarytenoid notch behind; piriform recess on each side"
+    },
+    {
+     "label": "Innervation",
+     "value": "Mucosa: internal branch of the superior laryngeal nerve (afferent limb of the cough reflex); closure: aryepiglottic part of the oblique arytenoid and thyroepiglottic part of the thyroarytenoid (recurrent laryngeal nerve)"
+    }
+   ],
+   "pearl": "Loss of supraglottic sensation (superior laryngeal nerve or vagal lesion) abolishes the protective cough at the inlet and causes silent aspiration.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "aryepiglottic-fold",
+   "name": "Aryepiglottic fold",
+   "category": "viscera",
+   "group": "Larynx",
+   "function": "Mucosal fold from the side of the epiglottis to the arytenoid cartilage forming the lateral rim of the laryngeal inlet and the medial wall of the piriform recess.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Cuneiform tubercle and corniculate tubercle raised by the cuneiform and corniculate cartilages in its posterior part"
+    },
+    {
+     "label": "Relations",
+     "value": "Contains the aryepiglottic part of the oblique arytenoid muscle and the upper edge of the quadrangular membrane; piriform recess lateral, laryngeal vestibule medial"
+    },
+    {
+     "label": "Innervation",
+     "value": "Internal branch of the superior laryngeal nerve"
+    }
+   ],
+   "pearl": "Laryngomalacia, the most common cause of infant stridor: short aryepiglottic folds and an omega-shaped epiglottis prolapse on inspiration; stridor is worse supine and when feeding and resolves by 12–18 months.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "laryngeal-vestibule",
+   "name": "Vestibule of larynx",
+   "category": "viscera",
+   "group": "Larynx",
+   "function": "Supraglottic part of the laryngeal cavity, from the laryngeal inlet down to the vestibular folds.",
+   "details": [
+    {
+     "label": "Relations",
+     "value": "Epiglottis in front, aryepiglottic folds and quadrangular membranes at the sides, arytenoid cartilages behind; vestibular folds below"
+    },
+    {
+     "label": "Innervation",
+     "value": "Internal branch of the superior laryngeal nerve"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Superior laryngeal artery and vein, entering through the thyrohyoid membrane with the nerve"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Rich, bilateral, to the superior deep lateral cervical nodes"
+    }
+   ],
+   "pearl": "Supraglottic cancers spread early to nodes on both sides because of the rich midline-crossing lymphatics; epiglottitis is a supraglottic cellulitis.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "vestibular-fold",
+   "name": "Vestibular fold (false cord)",
+   "category": "viscera",
+   "group": "Larynx",
+   "function": "Upper, thicker, pink fold of the laryngeal wall above the ventricle; protective, with little role in normal phonation.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "From the thyroid cartilage angle to the arytenoid cartilage, above and lateral to the vocal fold"
+    },
+    {
+     "label": "Relations",
+     "value": "Encloses the vestibular ligament (free lower edge of the quadrangular membrane); vestibule above, ventricle below"
+    },
+    {
+     "label": "Innervation",
+     "value": "Internal branch of the superior laryngeal nerve"
+    }
+   ],
+   "pearl": "On laryngoscopy the false cords are pink and lateral, the true cords pearly white and medial. Phonation with the vestibular folds (dysphonia plicae ventricularis) gives a rough, low voice.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "laryngeal-ventricle",
+   "name": "Ventricle of larynx",
+   "category": "viscera",
+   "group": "Larynx",
+   "function": "Slit-like lateral recess between the vestibular fold above and the vocal fold below; its saccule lubricates the vocal fold.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Middle part of the laryngeal cavity, extending laterally between the vestibular fold and the vocalis and thyroarytenoid muscles"
+    },
+    {
+     "label": "Divisions",
+     "value": "Saccule: blind pouch ascending from its anterior end between the vestibular fold and the thyroid cartilage lamina, rich in mucous glands"
+    }
+   ],
+   "pearl": "A laryngocele is an air-filled dilatation of the saccule (glass blowers, wind players, or obstruction by a ventricular carcinoma); an external one bulges through the thyrohyoid membrane as a neck swelling that enlarges on Valsalva.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "vocal-fold",
+   "name": "Vocal fold (true cord)",
+   "category": "viscera",
+   "group": "Larynx",
+   "function": "Vibrating fold that produces voice and, when adducted, closes the airway; tension, length and position are set by the intrinsic laryngeal muscles.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "From the inner surface of the thyroid cartilage angle to the vocal process of the arytenoid cartilage"
+    },
+    {
+     "label": "Divisions",
+     "value": "Vocal ligament (thickened free upper edge of the conus elasticus), vocalis muscle lateral to it, and a covering of stratified squamous epithelium"
+    },
+    {
+     "label": "Innervation",
+     "value": "Motor: recurrent laryngeal nerve (posterior cricoarytenoid abducts; lateral cricoarytenoid, transverse and oblique arytenoids adduct; vocalis and thyroarytenoid relax); cricothyroid (external branch of the superior laryngeal nerve) lengthens and tenses. Sensory: internal branch above, recurrent laryngeal nerve below"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Almost none in the fold itself, which divides upper from lower laryngeal drainage"
+    }
+   ],
+   "pearl": "Unilateral recurrent laryngeal nerve palsy: hoarse, breathy voice with a paramedian cord; bilateral palsy: stridor needing an airway. Nodules form at the junction of the anterior and middle thirds; glottic cancer stays local because the fold lacks lymphatics.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "rima-glottidis",
+   "name": "Rima glottidis",
+   "category": "viscera",
+   "group": "Larynx",
+   "function": "The gap between the two vocal folds and arytenoid cartilages; the narrowest part of the adult laryngeal cavity and the aperture varied in breathing and phonation.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Intermembranous part between the vocal ligaments (anterior three-fifths) and intercartilaginous part between the vocal processes and bases of the arytenoid cartilages"
+    },
+    {
+     "label": "Relations",
+     "value": "Opened only by the posterior cricoarytenoid muscles (abduction of the vocal ligaments); closed by the lateral cricoarytenoid and the transverse and oblique arytenoid muscles"
+    }
+   ],
+   "pearl": "Laryngospasm is reflex closure of the rima after extubation or aspiration; in bilateral recurrent laryngeal nerve injury the unopposed cords lie paramedian and the airway is a slit. In children the narrowest point is the cricoid ring, not the rima.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "infraglottic-cavity",
+   "name": "Infraglottic cavity",
+   "category": "viscera",
+   "group": "Larynx",
+   "function": "Lower part of the laryngeal cavity, from the vocal folds to the lower border of the cricoid cartilage, widening into the trachea.",
+   "details": [
+    {
+     "label": "Relations",
+     "value": "Walled by the conus elasticus and the cricoid cartilage; median cricothyroid ligament in front"
+    },
+    {
+     "label": "Innervation",
+     "value": "Recurrent laryngeal nerve"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Inferior laryngeal artery"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Prelaryngeal, pretracheal and paratracheal nodes"
+    }
+   ],
+   "pearl": "Croup (parainfluenza) is subglottic oedema inside the rigid cricoid ring: barking cough, inspiratory stridor and a steeple sign. Prolonged intubation causes subglottic stenosis; cricothyrotomy enters the airway here.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "pharynx",
+   "name": "Pharynx",
+   "category": "viscera",
+   "group": "Pharynx",
+   "function": "Fibromuscular tube behind the nasal cavity, oral cavity and larynx that carries air and food; its constrictors and longitudinal muscles drive the pharyngeal phase of swallowing.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "From the basilar part of the occipital bone to the lower border of the cricoid cartilage (C6), where it becomes the esophagus; retropharyngeal space and prevertebral fascia behind"
+    },
+    {
+     "label": "Divisions",
+     "value": "Nasopharynx, oropharynx and laryngopharynx. Wall from inside out: mucosa, pharyngobasilar fascia, constrictor and longitudinal pharyngeal muscles, buccopharyngeal fascia"
+    },
+    {
+     "label": "Innervation",
+     "value": "Pharyngeal nervous plexus: motor from the pharyngeal branch of the vagus (stylopharyngeus by CN IX); sensory mainly CN IX, with the maxillary nerve to the nasopharynx and the internal branch of the superior laryngeal nerve to the laryngopharynx"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Ascending pharyngeal artery, ascending palatine and tonsillar branches of the facial artery, superior and inferior thyroid arteries; pharyngeal venous plexus"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Retropharyngeal nodes and superior deep lateral cervical nodes (jugulodigastric node)"
+    }
+   ],
+   "pearl": "Gag reflex: afferent CN IX, efferent CN X. Pharyngeal squamous cancers present with a neck node, referred otalgia or dysphagia.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "nasopharynx",
+   "name": "Nasopharynx",
+   "category": "viscera",
+   "group": "Pharynx",
+   "function": "Upper, purely respiratory part of the pharynx behind the choanae; ventilates the middle ear through the auditory tube and is closed off by the soft palate during swallowing.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "From the body of the sphenoid and basilar part of the occipital bone down to the soft palate, in front of the anterior arch of the atlas"
+    },
+    {
+     "label": "Divisions",
+     "value": "Contains the pharyngeal tonsil in its roof, the pharyngeal opening of the auditory tube, torus tubarius, salpingopharyngeal fold and pharyngeal recess on each lateral wall"
+    },
+    {
+     "label": "Innervation",
+     "value": "Pharyngeal branch of the maxillary nerve (CN V2) and CN IX"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Retropharyngeal nodes and superior deep lateral cervical nodes"
+    }
+   ],
+   "pearl": "Nasopharyngeal carcinoma (EBV, southern Chinese ancestry) arises in the pharyngeal recess: painless neck node, unilateral serous otitis media in an adult, epistaxis, later CN V and VI palsies. Enlarged adenoids cause mouth breathing, snoring and glue ear in children.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "oropharynx",
+   "name": "Oropharynx",
+   "category": "viscera",
+   "group": "Pharynx",
+   "function": "Middle part of the pharynx behind the oral cavity, shared by air and food.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "From the soft palate to the upper border of the epiglottis, opposite C2–C3; opens forward through the fauces"
+    },
+    {
+     "label": "Divisions",
+     "value": "Contains the palatine tonsils between the palatoglossal and palatopharyngeal arches, the root of the tongue with the lingual tonsil, and the valleculae"
+    },
+    {
+     "label": "Innervation",
+     "value": "CN IX (sensory limb of the gag reflex)"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Jugulodigastric node and superior deep lateral cervical nodes; posterior wall to retropharyngeal nodes"
+    }
+   ],
+   "pearl": "HPV-16 oropharyngeal carcinoma of the tonsil or tongue base: younger non-smoker presenting with a cystic level II node, p16 positive, better prognosis than tobacco-related disease.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "laryngopharynx",
+   "name": "Laryngopharynx (hypopharynx)",
+   "category": "viscera",
+   "group": "Pharynx",
+   "function": "Lower part of the pharynx behind the larynx, funnelling the bolus around the laryngeal inlet into the esophagus.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "From the upper border of the epiglottis to the lower border of the cricoid cartilage (C6), opposite C4–C6"
+    },
+    {
+     "label": "Divisions",
+     "value": "Piriform recess on each side of the laryngeal inlet; posterior wall; postcricoid region over the lamina of the cricoid cartilage"
+    },
+    {
+     "label": "Innervation",
+     "value": "Internal branch of the superior laryngeal nerve and recurrent laryngeal nerve (CN X)"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Superior and inferior deep lateral cervical nodes, paratracheal and retropharyngeal nodes"
+    }
+   ],
+   "pearl": "Hypopharyngeal cancer is silent until late (dysphagia, referred otalgia via the vagus, neck nodes). Postcricoid webs and carcinoma occur in Plummer–Vinson syndrome (iron deficiency, dysphagia).",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "piriform-recess",
+   "name": "Piriform recess",
+   "category": "viscera",
+   "group": "Pharynx",
+   "function": "Pear-shaped mucosal gutter of the laryngopharynx on each side of the laryngeal inlet through which the bolus passes to the esophagus.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Between the aryepiglottic fold medially and the thyroid cartilage lamina and thyrohyoid membrane laterally"
+    },
+    {
+     "label": "Relations",
+     "value": "Internal branch of the superior laryngeal nerve runs just under its mucosa, raising a fold; superior laryngeal artery and vein with it"
+    },
+    {
+     "label": "Innervation",
+     "value": "Internal branch of the superior laryngeal nerve"
+    }
+   ],
+   "pearl": "Fish bones lodge here, and removing them can injure the internal laryngeal nerve under the mucosa. Carcinoma of the piriform recess grows unnoticed and presents as a neck node.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "vallecula",
+   "name": "Vallecula",
+   "category": "viscera",
+   "group": "Pharynx",
+   "function": "Paired depression between the root of the tongue and the epiglottis that holds saliva and the bolus briefly before the swallow.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "In the oropharynx behind the lingual tonsil, in front of the epiglottis"
+    },
+    {
+     "label": "Relations",
+     "value": "Separated from its fellow by the median glossoepiglottic fold and bounded on each side by the lateral glossoepiglottic fold; hyoepiglottic ligament deep to its floor"
+    },
+    {
+     "label": "Innervation",
+     "value": "Internal branch of the superior laryngeal nerve (CN X), which also carries taste from this region"
+    }
+   ],
+   "pearl": "In direct laryngoscopy the tip of a curved (Macintosh) blade sits in the vallecula and lifts the epiglottis by tensing the hyoepiglottic ligament.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "pharyngeal-recess",
+   "name": "Pharyngeal recess (fossa of Rosenmüller)",
+   "category": "viscera",
+   "group": "Pharynx",
+   "function": "Deep mucosal pocket of the lateral nasopharyngeal wall behind the torus tubarius.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Behind and above the torus tubarius and the pharyngeal opening of the auditory tube, extending toward the base of the skull"
+    },
+    {
+     "label": "Relations",
+     "value": "Internal carotid artery and foramen lacerum beyond its apex; levator veli palatini and cartilage of the auditory tube in front; longus capitis and retropharyngeal nodes behind"
+    }
+   ],
+   "pearl": "Commonest site of origin of nasopharyngeal carcinoma, which blocks the auditory tube (unilateral effusion) and spreads through the foramen lacerum to the cavernous sinus.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "torus-tubarius",
+   "name": "Torus tubarius and salpingopharyngeal fold",
+   "category": "viscera",
+   "group": "Pharynx",
+   "function": "Elevation of the nasopharyngeal wall made by the cartilaginous part of the auditory tube, hooded over the tube's pharyngeal opening.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Lateral wall of the nasopharynx behind the inferior nasal concha"
+    },
+    {
+     "label": "Divisions",
+     "value": "Torus tubarius above and behind the opening; salpingopharyngeal fold (over the salpingopharyngeus) descending from it; torus levatorius (fold caused by the levator veli palatini) below the opening"
+    },
+    {
+     "label": "Relations",
+     "value": "Pharyngeal recess behind; tubal tonsil in the mucosa around the opening"
+    }
+   ],
+   "pearl": "Landmark for passing a eustachian catheter and for nasopharyngoscopy; adenoid or tubal tonsil hypertrophy around it obstructs the tube and causes otitis media with effusion.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "pharyngobasilar-fascia",
+   "name": "Pharyngobasilar fascia and pharyngeal raphe",
+   "category": "viscera",
+   "group": "Pharynx",
+   "function": "Fibrous submucosal layer that hangs the pharynx from the base of the skull and keeps the nasopharynx open where muscle is deficient.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Between the mucosa and the muscle coat, thickest above the upper border of the superior pharyngeal constrictor"
+    },
+    {
+     "label": "Relations",
+     "value": "Attached to the pharyngeal tubercle of the basilar part of the occipital bone, the petrous part of the temporal bone and the medial pterygoid plate; the auditory tube and levator veli palatini pass through the gap above the superior constrictor"
+    },
+    {
+     "label": "Divisions",
+     "value": "Pharyngeal raphe: posterior midline seam from the pharyngeal tubercle into which the constrictors insert"
+    }
+   ],
+   "pearl": "",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "retropharyngeal-space",
+   "name": "Retropharyngeal space and buccopharyngeal fascia",
+   "category": "viscera",
+   "group": "Pharynx",
+   "function": "Potential space of loose tissue behind the pharynx and esophagus that lets them move on the vertebral column during swallowing; a pathway for infection into the mediastinum.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Between the buccopharyngeal fascia on the pharyngeal constrictors and the prevertebral fascia, from the skull base downward; subdivided by the alar fascia"
+    },
+    {
+     "label": "Relations",
+     "value": "Carotid sheaths laterally; contains retropharyngeal lymph nodes, prominent in young children"
+    },
+    {
+     "label": "Divisions",
+     "value": "Buccopharyngeal fascia: outer fascial coat of the pharynx, continuous forward over the buccinator and below with the pretracheal (visceral) fascia"
+    }
+   ],
+   "pearl": "Retropharyngeal abscess (child under 5 after an upper respiratory infection, or after a penetrating injury): fever, drooling, neck stiffness and refusal to extend the neck, widened prevertebral soft tissue on a lateral film; spread behind the alar fascia leads to mediastinitis.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "oral-cavity",
+   "name": "Oral cavity",
+   "category": "viscera",
+   "group": "Oral cavity & tongue",
+   "function": "First part of the digestive tract, for mastication, taste, speech and the oral phase of swallowing.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Oral vestibule between the lips and cheeks and the teeth and gingivae; oral cavity proper inside the dental arches. Roof: hard and soft palate; floor: tongue on the mylohyoid and geniohyoid muscles; opens behind through the fauces into the oropharynx"
+    },
+    {
+     "label": "Innervation",
+     "value": "Roof: greater palatine and nasopalatine nerves (CN V2); cheek: buccal nerve; floor and anterior tongue: lingual nerve (CN V3)"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Branches of the lingual, facial and maxillary arteries"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Submental and submandibular nodes, then jugulodigastric and juguloomohyoid nodes"
+    }
+   ],
+   "pearl": "Oral squamous cell carcinoma (tobacco, alcohol, betel) favours the lateral tongue and floor of the mouth; erythroplakia carries a higher malignant risk than leukoplakia, and any ulcer lasting more than 3 weeks is biopsied.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "tongue",
+   "name": "Tongue",
+   "category": "viscera",
+   "group": "Oral cavity & tongue",
+   "function": "Muscular organ of taste, speech, mastication and swallowing.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Apex, body and root; dorsum divided by the terminal sulcus into an anterior two-thirds bearing the papillae and a posterior third bearing the lingual tonsil; midline groove; inferior surface with the frenulum"
+    },
+    {
+     "label": "Innervation",
+     "value": "Motor: hypoglossal nerve (CN XII) to all muscles except palatoglossus (vagus). Anterior two-thirds: general sensation by the lingual nerve (CN V3), taste by the chorda tympani (CN VII). Posterior third: taste and general sensation by CN IX. Root near the epiglottis: superior laryngeal nerve (CN X)"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Lingual artery (dorsal lingual, deep lingual and sublingual arteries); lingual vein and vena comitans of the hypoglossal nerve"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Apex to the submental nodes; sides of the body to the submandibular nodes; root to the jugulodigastric and superior deep lateral cervical nodes of both sides; all finally to the juguloomohyoid node"
+    }
+   ],
+   "pearl": "Hypoglossal nerve lesion: the protruded tongue deviates to the weak side, with wasting and fasciculation if lower motor neuron. Tumours near the midline or in the posterior third metastasise bilaterally.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "lingual-papillae",
+   "name": "Lingual papillae",
+   "category": "viscera",
+   "group": "Oral cavity & tongue",
+   "function": "Projections of the mucosa of the dorsum of the tongue anterior to the terminal sulcus; they give grip and carry the taste buds.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Filiform papillae: most numerous, keratinized tips, no taste buds. Fungiform papillae: scattered red dots with taste buds. Foliate papillae: ridges on the posterior lateral margin. Vallate papillae: 8–12 in a V in front of the terminal sulcus, each in a furrow lined with taste buds and rinsed by the lingual glands (serous glands of von Ebner)"
+    },
+    {
+     "label": "Innervation",
+     "value": "Taste from fungiform papillae: chorda tympani; from vallate and foliate papillae: CN IX"
+    }
+   ],
+   "pearl": "Atrophic glossitis (iron, B12, folate deficiency) is loss of the filiform papillae, leaving a smooth red sore tongue; strawberry tongue (scarlet fever, Kawasaki disease) is prominent fungiform papillae.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "terminal-sulcus-and-foramen-cecum-of-tongue",
+   "name": "Terminal sulcus and foramen cecum of tongue",
+   "category": "viscera",
+   "group": "Oral cavity & tongue",
+   "function": "V-shaped groove on the dorsum of the tongue marking the embryological boundary between the oral anterior two-thirds and the pharyngeal posterior third; the foramen cecum at its apex marks the origin of the thyroid.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Behind the row of vallate papillae; the foramen cecum is the midline pit at the apex of the V"
+    },
+    {
+     "label": "Relations",
+     "value": "Lingual tonsil and root of the tongue behind; vallate papillae in front, although they are supplied by CN IX"
+    }
+   ],
+   "pearl": "The thyroid descends from the foramen cecum along the thyroglossal duct. A lingual thyroid is a midline mass at the tongue base that may be the patient's only thyroid tissue, so image before excising it.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "frenulum-of-tongue",
+   "name": "Frenulum of tongue and inferior surface of tongue",
+   "category": "viscera",
+   "group": "Oral cavity & tongue",
+   "function": "Midline mucosal fold tying the inferior surface of the tongue to the floor of the mouth.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Midline of the inferior surface of the tongue, running to the floor of the mouth behind the lower incisors"
+    },
+    {
+     "label": "Relations",
+     "value": "Sublingual caruncle on each side of its base; deep lingual artery and veins and the lingual nerve under the thin mucosa on each side, lateral to which lies the fimbriated fold; lingual minor salivary gland near the apex"
+    }
+   ],
+   "pearl": "A short frenulum (ankyloglossia, tongue-tie) limits protrusion and can impair breastfeeding; frenotomy when symptomatic. The thin mucosa over the deep lingual veins gives rapid absorption of sublingual drugs such as nitroglycerin.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "sublingual-caruncle-and-fold",
+   "name": "Sublingual caruncle and sublingual fold",
+   "category": "viscera",
+   "group": "Oral cavity & tongue",
+   "function": "Mucosal landmarks of the floor of the mouth marking where the submandibular and sublingual glands open.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Caruncle: papilla at each side of the base of the frenulum of the tongue. Fold: ridge running posterolaterally from the caruncle over the sublingual gland"
+    },
+    {
+     "label": "Divisions",
+     "value": "Sublingual caruncle with the opening of the submandibular duct (of Wharton); sublingual fold with the openings of the sublingual ducts"
+    },
+    {
+     "label": "Relations",
+     "value": "Sublingual gland, submandibular duct, lingual nerve and sublingual artery and vein beneath the mucosa; mylohyoid muscle below"
+    }
+   ],
+   "pearl": "Ludwig angina is a rapidly spreading bilateral cellulitis of the sublingual and submandibular spaces, usually from a lower molar: woody floor of mouth, elevated tongue and airway compromise.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "gingiva",
+   "name": "Gingiva",
+   "category": "viscera",
+   "group": "Oral cavity & tongue",
+   "function": "Dense mucosa bound to the alveolar bone and the necks of the teeth, sealing the periodontium from the oral cavity.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Gingival epithelium (stratified) over the lamina propria of the gingiva, which is fused with the mandibular or maxillary periosteum; gingival groove; interdental papilla filling each interproximal space"
+    },
+    {
+     "label": "Innervation",
+     "value": "Upper buccal: superior alveolar and infraorbital nerves; upper palatal: greater palatine and nasopalatine nerves; lower buccal: buccal and mental nerves; lower lingual: lingual nerve"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Superior and inferior alveolar, greater palatine, buccal and lingual arteries"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Submandibular and submental nodes"
+    }
+   ],
+   "pearl": "Gingival hyperplasia: phenytoin, cyclosporine, calcium channel blockers and monocytic leukaemia. Bleeding gums with corkscrew hairs is scurvy; a blue gingival line is lead poisoning.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "lips",
+   "name": "Lips",
+   "category": "viscera",
+   "group": "Oral cavity & tongue",
+   "function": "Mobile muscular folds around the oral fissure for oral competence, speech and facial expression.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Upper lip with the philtrum and tubercle; lower lip; frenulum of the upper lip and frenulum of the lower lip joining each to the gingiva"
+    },
+    {
+     "label": "Innervation",
+     "value": "Sensory: infraorbital nerve (upper) and mental nerve (lower); motor: buccal and marginal mandibular branches of the facial nerve to orbicularis oris"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Superior and inferior labial arteries from the facial artery"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Upper lip and lateral lower lip to the submandibular nodes; central lower lip to the submental nodes"
+    }
+   ],
+   "pearl": "Squamous cell carcinoma favours the sun-exposed lower lip, basal cell carcinoma the upper lip. Cleft lip is failure of the maxillary prominence to fuse with the intermaxillary segment.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "soft-palate",
+   "name": "Soft palate",
+   "category": "viscera",
+   "group": "Palate & tonsils",
+   "function": "Mobile fibromuscular curtain hanging from the hard palate; rises against the posterior pharyngeal wall to close the nasopharynx in swallowing and speech.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Attached to the posterior edge of the horizontal plate of the palatine bone, between the nasopharynx and oropharynx; ends in the uvula"
+    },
+    {
+     "label": "Divisions",
+     "value": "Palatine aponeurosis (from the tensor veli palatini), levator veli palatini, palatoglossus, palatopharyngeus, musculus uvulae and palatine glands"
+    },
+    {
+     "label": "Innervation",
+     "value": "Motor: vagus through the pharyngeal plexus, except tensor veli palatini (CN V3); sensory: lesser palatine nerves (CN V2) and CN IX"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Lesser palatine artery, ascending palatine artery (facial) and the pharyngeal branch of the ascending pharyngeal artery"
+    }
+   ],
+   "pearl": "Vagal lesion: the palate droops on the affected side and the uvula is pulled to the normal side on saying 'ah', with nasal speech and nasal regurgitation. Cleft palate causes velopharyngeal insufficiency and otitis media with effusion.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "uvula-of-palate",
+   "name": "Uvula of the palate",
+   "category": "viscera",
+   "group": "Palate & tonsils",
+   "function": "Conical midline process of the soft palate that helps seal the nasopharynx.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Hangs from the middle of the free border of the soft palate, between the palatopharyngeal arches"
+    },
+    {
+     "label": "Divisions",
+     "value": "Core of musculus uvulae with palatine glands under the mucosa"
+    },
+    {
+     "label": "Innervation",
+     "value": "Motor: vagus through the pharyngeal plexus; sensory: lesser palatine nerves"
+    }
+   ],
+   "pearl": "A bifid uvula signals a submucous cleft palate. The uvula deviates away from the side of a vagal palsy and is pushed away from a peritonsillar abscess.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "palatoglossal-arch",
+   "name": "Palatoglossal arch",
+   "category": "viscera",
+   "group": "Palate & tonsils",
+   "function": "Anterior pillar of the fauces: mucosal fold over the palatoglossus marking the boundary between the oral cavity and the oropharynx.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "From the soft palate to the side of the tongue at the junction of its anterior two-thirds and posterior third"
+    },
+    {
+     "label": "Relations",
+     "value": "Palatine tonsil behind it; triangular fold extends back from it over the tonsil"
+    },
+    {
+     "label": "Innervation",
+     "value": "Palatoglossus: vagus through the pharyngeal plexus; mucosa: CN IX and lesser palatine nerves"
+    }
+   ],
+   "pearl": "",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "palatopharyngeal-arch",
+   "name": "Palatopharyngeal arch",
+   "category": "viscera",
+   "group": "Palate & tonsils",
+   "function": "Posterior pillar of the fauces: mucosal fold over the palatopharyngeus that draws the pharyngeal walls together behind the bolus.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "From the soft palate and uvula down the lateral wall of the oropharynx"
+    },
+    {
+     "label": "Relations",
+     "value": "Palatine tonsil in front; posterior wall of the oropharynx behind"
+    },
+    {
+     "label": "Innervation",
+     "value": "Palatopharyngeus: vagus through the pharyngeal plexus; mucosa: CN IX"
+    }
+   ],
+   "pearl": "",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "fauces",
+   "name": "Fauces and tonsillar fossa",
+   "category": "viscera",
+   "group": "Palate & tonsils",
+   "function": "Passage from the oral cavity to the oropharynx; the tonsillar fossa between its two arches lodges the palatine tonsil.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Palatoglossal arch, palatopharyngeal arch and the tonsillar fossa between them, with the supratonsillar fossa above the tonsil and the semilunar and triangular folds over it"
+    },
+    {
+     "label": "Relations",
+     "value": "Bed of the fossa: pharyngobasilar fascia and superior pharyngeal constrictor, with the glossopharyngeal nerve and its tonsillar branch, the stylohyoid ligament and the tonsillar branch of the facial artery lateral to it"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Tonsillar branches of the facial, ascending palatine, ascending pharyngeal, lesser palatine and dorsal lingual arteries"
+    },
+    {
+     "label": "Innervation",
+     "value": "Tonsillar branch of the glossopharyngeal nerve and lesser palatine nerves"
+    }
+   ],
+   "pearl": "Post-tonsillectomy haemorrhage is primary (within 24 hours) or secondary (days 5–10, when the slough separates); either can be life-threatening in a child. Earache after tonsillectomy is referred through CN IX.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "palatine-aponeurosis",
+   "name": "Palatine aponeurosis",
+   "category": "viscera",
+   "group": "Palate & tonsils",
+   "function": "Fibrous skeleton of the soft palate formed by the expanded tendons of the tensor veli palatini; the other palatal muscles attach to it.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Anterior two-thirds of the soft palate, fixed to the posterior border of the horizontal plate of the palatine bone"
+    },
+    {
+     "label": "Relations",
+     "value": "Tendon of the tensor veli palatini reaches it by hooking around the pterygoid hamulus; levator veli palatini, palatopharyngeus and musculus uvulae insert on it"
+    }
+   ],
+   "pearl": "",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "palatal-mucosa",
+   "name": "Mucosa of hard palate (palatine raphe, incisive papilla, transverse palatine folds)",
+   "category": "viscera",
+   "group": "Palate & tonsils",
+   "function": "Thick keratinized mucosa bound to the periosteum of the hard palate, against which the tongue crushes food.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Incisive papilla over the incisive fossa; palatine raphe in the midline; transverse palatine folds anteriorly; palatine glands in the posterior submucosa"
+    },
+    {
+     "label": "Innervation",
+     "value": "Nasopalatine nerve behind the incisors; greater palatine nerve for the remainder"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Greater palatine artery, running forward from the greater palatine foramen"
+    }
+   ],
+   "pearl": "Palatal injections are painful because the mucoperiosteum is tightly bound. A firm palatal swelling off the midline is a minor salivary gland tumour until proven otherwise.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "nasal-cavity",
+   "name": "Nasal cavity",
+   "category": "viscera",
+   "group": "Nasal cavity",
+   "function": "Paired airway that warms, humidifies and filters inspired air, houses the olfactory mucosa and receives the paranasal sinuses and the nasolacrimal duct.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Nasal vestibule; respiratory region with the superior, middle and inferior nasal conchae and meatuses and the sphenoethmoidal recess; olfactory region in the roof. Opens behind through the choana into the nasopharynx"
+    },
+    {
+     "label": "Relations",
+     "value": "Nasal septum medially; cribriform plate of the ethmoid bone above; hard palate below; orbit, ethmoidal cells and maxillary sinus laterally"
+    },
+    {
+     "label": "Innervation",
+     "value": "Smell: olfactory nerve. General sensation: anterior ethmoidal nerve (CN V1) anterosuperiorly; nasopalatine and posterior lateral nasal nerves (CN V2) posteroinferiorly. Secretomotor through the pterygopalatine ganglion"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Sphenopalatine, anterior and posterior ethmoidal, greater palatine and superior labial (septal branch) arteries"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Anteriorly to the submandibular nodes; posteriorly to the retropharyngeal and superior deep lateral cervical nodes"
+    }
+   ],
+   "pearl": "Epistaxis: 90% anterior from Kiesselbach's plexus (pinch the nostrils, lean forward, then cautery or packing); posterior bleeds from sphenopalatine branches occur in older hypertensive patients and need posterior packing or artery ligation.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "nasal-vestibule",
+   "name": "Nasal vestibule",
+   "category": "viscera",
+   "group": "Nasal cavity",
+   "function": "Skin-lined entrance to the nasal cavity inside the nostril; its hairs filter coarse particles.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Within the ala of the nose, bounded by the lateral and medial crura of the major alar cartilage"
+    },
+    {
+     "label": "Relations",
+     "value": "Limen nasi marks its upper limit, where skin gives way to respiratory mucosa; atrium of the middle nasal meatus beyond"
+    },
+    {
+     "label": "Innervation",
+     "value": "Nasal branches of the infraorbital nerve and external nasal branch of the anterior ethmoidal nerve"
+    }
+   ],
+   "pearl": "The vestibule is the reservoir for Staphylococcus aureus carriage (mupirocin decolonisation); a vestibular furuncle lies in the danger triangle of the face and can spread by the facial and ophthalmic veins to the cavernous sinus.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "nasal-septum",
+   "name": "Nasal septum",
+   "category": "viscera",
+   "group": "Nasal cavity",
+   "function": "Medial wall of each nasal cavity, part bone and part cartilage, covered with mucoperichondrium and mucoperiosteum.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Septal nasal cartilage anteriorly; perpendicular plate of the ethmoid bone above; vomer below and behind; nasal crests of the maxillary and palatine bones along the floor; medial crura of the major alar cartilages in the columella"
+    },
+    {
+     "label": "Innervation",
+     "value": "Nasopalatine nerve (CN V2) and anterior ethmoidal nerve (CN V1); olfactory nerves in its upper part"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Posterior septal branches of the sphenopalatine artery, anterior and posterior ethmoidal arteries, greater palatine artery and septal branch of the superior labial artery, anastomosing anteroinferiorly as Kiesselbach's plexus"
+    }
+   ],
+   "pearl": "A septal haematoma after nasal trauma (boggy bilateral swelling) must be drained at once: the cartilage depends on its perichondrium and necroses, giving a saddle nose. Perforation: cocaine, granulomatosis with polyangiitis, previous surgery.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "nasal-mucosa",
+   "name": "Mucosa of nasal cavity",
+   "category": "viscera",
+   "group": "Nasal cavity",
+   "function": "Lining of the nasal cavity: a vascular, ciliated respiratory mucosa that conditions air and a small olfactory mucosa for smell.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Respiratory region: ciliated epithelium with goblet cells and venous plexuses, thickest over the inferior and middle nasal conchae. Olfactory region: roof, superior nasal concha and upper nasal septum under the cribriform plate"
+    },
+    {
+     "label": "Innervation",
+     "value": "Secretomotor: greater petrosal nerve (CN VII) via the nerve of the pterygoid canal and pterygopalatine ganglion; vasoconstrictor sympathetics via the deep petrosal nerve; sensation CN V1 and V2; smell CN I"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Sphenopalatine artery mainly; ethmoidal arteries above"
+    }
+   ],
+   "pearl": "Topical decongestants used for more than 3–5 days cause rebound congestion (rhinitis medicamentosa). Nasal polyps suggest aspirin-exacerbated respiratory disease in adults and cystic fibrosis in children. Anosmia after head injury is shearing of the olfactory nerves at the cribriform plate.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "choanae",
+   "name": "Choanae",
+   "category": "viscera",
+   "group": "Nasal cavity",
+   "function": "Paired posterior apertures through which the nasal cavities open into the nasopharynx.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Posterior end of each nasal cavity above the soft palate, opening into the nasopharynx"
+    },
+    {
+     "label": "Relations",
+     "value": "Vomer between them; medial plate of the pterygoid process laterally; horizontal plate of the palatine bone below; body of the sphenoid bone above; posterior ends of the inferior and middle nasal conchae visible through them"
+    }
+   ],
+   "pearl": "Choanal atresia: bilateral disease gives cyclical cyanosis in a newborn that improves with crying, and a catheter will not pass through the nose; unilateral disease presents later with a one-sided discharge. Part of CHARGE syndrome.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "cervical-trachea",
+   "name": "Trachea (cervical part)",
+   "category": "viscera",
+   "group": "Trachea & esophagus",
+   "function": "Airway continuing from the larynx; held open by C-shaped cartilages and lined by ciliated respiratory mucosa.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Begins at the lower border of the cricoid cartilage (C6) and descends in the midline behind the suprasternal space into the thorax"
+    },
+    {
+     "label": "Relations",
+     "value": "Isthmus of the thyroid gland, inferior thyroid veins and pretracheal fascia in front; thyroid lobes and common carotid arteries at the sides; esophagus behind, with the recurrent laryngeal nerves in the tracheoesophageal grooves"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Inferior thyroid arteries and veins"
+    },
+    {
+     "label": "Innervation",
+     "value": "Recurrent laryngeal nerves (CN X) and sympathetic trunk"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Pretracheal and paratracheal nodes"
+    }
+   ],
+   "pearl": "The trachea deviates away from a tension pneumothorax or large effusion and toward collapse or fibrosis. Bright bleeding from a tracheostomy weeks after placement is a tracheo-innominate fistula until proven otherwise.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "cervical-esophagus",
+   "name": "Esophagus (cervical part)",
+   "category": "viscera",
+   "group": "Trachea & esophagus",
+   "function": "Muscular tube carrying the bolus from the pharynx to the stomach; its upper end is closed at rest by the cricopharyngeus (upper esophageal sphincter).",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Begins at the lower border of the cricoid cartilage (C6), behind the trachea and in front of the prevertebral fascia, inclining slightly to the left"
+    },
+    {
+     "label": "Divisions",
+     "value": "Longitudinal esophageal muscle, attached above to the cricoid cartilage by the cricoesophageal tendon, and circular esophageal muscle; both striated at this level"
+    },
+    {
+     "label": "Relations",
+     "value": "Trachea in front with the recurrent laryngeal nerves in the tracheoesophageal grooves; thyroid lobes and carotid sheaths at the sides; retropharyngeal space and longus colli behind"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Inferior thyroid artery and vein"
+    },
+    {
+     "label": "Innervation",
+     "value": "Recurrent laryngeal nerves; sympathetic trunk"
+    }
+   ],
+   "pearl": "Narrowest point of the gut, 15 cm from the incisors: swallowed coins and food boluses impact at the cricopharyngeus, and instrumental perforation here leaks into the retropharyngeal space and mediastinum (neck pain, surgical emphysema, fever).",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "pharyngoesophageal-junction",
+   "name": "Pharyngoesophageal junction",
+   "category": "viscera",
+   "group": "Trachea & esophagus",
+   "function": "Transition from the inferior pharyngeal constrictor to the esophagus at C6, with two muscular weak points in its posterior wall.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Zone of sparse muscle fibers between the thyropharyngeal and cricopharyngeal parts of the inferior pharyngeal constrictor; V-shaped area (of Laimer) below the cricopharyngeus, where only circular esophageal muscle covers the wall"
+    },
+    {
+     "label": "Relations",
+     "value": "Lamina of the cricoid cartilage in front; right and left recurrent laryngeal nerves entering the larynx beneath the lower border of the inferior constrictor; cricoesophageal tendon"
+    }
+   ],
+   "pearl": "Zenker diverticulum: mucosa herniates through the zone of sparse fibers above the cricopharyngeus in elderly patients, giving dysphagia, regurgitation of undigested food, halitosis and aspiration; barium swallow is diagnostic and treatment is cricopharyngeal myotomy.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "tracheoesophageal-groove",
+   "name": "Tracheoesophageal groove",
+   "category": "viscera",
+   "group": "Trachea & esophagus",
+   "function": "Gutter between the trachea and esophagus on each side that conducts the recurrent laryngeal nerve up to the larynx.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "On each side of the neck between the trachea in front and the esophagus behind, medial to the thyroid lobe"
+    },
+    {
+     "label": "Relations",
+     "value": "Recurrent laryngeal nerve and inferior laryngeal artery within it; thyroid lobe and parathyroid glands lateral; inferior thyroid artery crossing the nerve; paratracheal lymph nodes"
+    }
+   ],
+   "pearl": "The left recurrent laryngeal nerve lies reliably in the groove; the right runs more obliquely and is occasionally non-recurrent (with an aberrant right subclavian artery), making it the more vulnerable nerve in thyroid surgery.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "auricle",
+   "name": "Auricle (pinna)",
+   "category": "viscera",
+   "group": "Ear",
+   "function": "Elastic cartilage flap covered by thin skin that collects sound and funnels it into the external acoustic meatus.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Helix with its crux; antihelix with its crura; triangular fossa; scaphoid fossa; concha of the auricle; tragus, antitragus and intertragic notch; lobule (no cartilage); auricular tubercle (of Darwin)"
+    },
+    {
+     "label": "Innervation",
+     "value": "Great auricular nerve (lower and posterior parts), auriculotemporal nerve (anterosuperior part), lesser occipital nerve; concha by the auricular branch of the vagus and CN VII"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Posterior auricular artery and auricular branches of the superficial temporal artery"
+    },
+    {
+     "label": "Lymph drainage",
+     "value": "Preauricular (parotid), mastoid and superficial cervical nodes"
+    }
+   ],
+   "pearl": "An auricular haematoma separates perichondrium from cartilage and must be drained and bolstered, or it organises into a cauliflower ear. Vesicles in the concha with facial palsy is Ramsay Hunt syndrome.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "tympanic-cavity",
+   "name": "Tympanic cavity (middle ear)",
+   "category": "viscera",
+   "group": "Ear",
+   "function": "Air-filled space in the temporal bone in which the ossicles carry vibration from the tympanic membrane to the oval window.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Between the tympanic membrane and the promontory of the inner ear, under the tegmen tympani"
+    },
+    {
+     "label": "Divisions",
+     "value": "Tympanic cavity proper and epitympanic recess; continuous in front with the auditory tube and behind with the mastoid antrum and mastoid cells"
+    },
+    {
+     "label": "Relations",
+     "value": "Contains the malleus, incus and stapes, the tendons of tensor tympani and stapedius, the chorda tympani and the tympanic plexus on the promontory; facial nerve in its canal on the medial and posterior walls; internal jugular vein below, internal carotid artery in front"
+    },
+    {
+     "label": "Innervation",
+     "value": "Tympanic plexus (tympanic nerve of CN IX with caroticotympanic nerves)"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Anterior tympanic, posterior tympanic (stylomastoid), inferior tympanic, superior tympanic and caroticotympanic arteries"
+    }
+   ],
+   "pearl": "Acute otitis media (S. pneumoniae, non-typeable H. influenzae, Moraxella): bulging immobile membrane; spread goes to the mastoid, facial canal, labyrinth or through the tegmen to the meninges. Throat cancer or tonsillitis refers pain here through CN IX.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "auditory-tube",
+   "name": "Auditory tube (eustachian)",
+   "category": "viscera",
+   "group": "Ear",
+   "function": "Channel between the tympanic cavity and the nasopharynx that equalises middle ear pressure and drains its secretions; normally closed and opened on swallowing and yawning by the tensor veli palatini.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Runs forward, medially and downward from the anterior wall of the tympanic cavity to its pharyngeal opening behind the inferior nasal concha"
+    },
+    {
+     "label": "Divisions",
+     "value": "Bony part in the temporal bone (lateral third) and cartilaginous part (medial two-thirds) with medial and lateral laminae, ending as the torus tubarius"
+    },
+    {
+     "label": "Relations",
+     "value": "Tensor veli palatini lateral, levator veli palatini below, tensor tympani above the bony part; internal carotid artery medial to the bony part"
+    },
+    {
+     "label": "Innervation",
+     "value": "Tympanic plexus (CN IX) and pharyngeal branch of the maxillary nerve"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Tubal artery, ascending pharyngeal artery and artery of the pterygoid canal"
+    }
+   ],
+   "pearl": "In children the tube is shorter and more horizontal, which explains their otitis media; cleft palate (poor tensor action) causes chronic effusions. A unilateral middle ear effusion in an adult needs nasopharyngoscopy to exclude carcinoma.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "membranous-labyrinth",
+   "name": "Membranous labyrinth",
+   "category": "viscera",
+   "group": "Ear",
+   "function": "Closed system of endolymph-filled ducts and sacs suspended in the perilymph of the bony labyrinth, carrying the receptor organs of hearing and balance.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Cochlear duct; saccule and utricle in the vestibule; anterior, lateral and posterior semicircular ducts with their ampullae; ductus reuniens; endolymphatic duct and sac"
+    },
+    {
+     "label": "Innervation",
+     "value": "Vestibulocochlear nerve (CN VIII): cochlear nerve from the spiral ganglion; superior and inferior parts of the vestibular nerve from the vestibular ganglion"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Labyrinthine artery, an end artery through the internal acoustic meatus"
+    }
+   ],
+   "pearl": "Ménière disease (endolymphatic hydrops): episodes of vertigo lasting minutes to hours with fluctuating low-frequency sensorineural hearing loss, tinnitus and aural fullness. Occlusion of the labyrinthine artery (AICA territory) gives sudden deafness with vertigo.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "semicircular-ducts",
+   "name": "Semicircular ducts",
+   "category": "viscera",
+   "group": "Ear",
+   "function": "Three membranous ducts set at right angles that detect angular acceleration of the head through the receptors in their ampullae.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Inside the anterior, lateral and posterior semicircular canals of the bony labyrinth, opening into the utricle"
+    },
+    {
+     "label": "Divisions",
+     "value": "Anterior, lateral and posterior semicircular ducts, each with an ampulla; anterior and posterior ducts share the common membranous limb"
+    },
+    {
+     "label": "Innervation",
+     "value": "Superior part of the vestibular nerve: anterior and lateral ampullae; inferior part: posterior ampulla"
+    }
+   ],
+   "pearl": "Benign paroxysmal positional vertigo: otoconia displaced into the posterior semicircular duct give seconds of vertigo on head turning, with torsional upbeat nystagmus on Dix–Hallpike; treated by the Epley manoeuvre.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "utricle-and-saccule",
+   "name": "Utricle and saccule",
+   "category": "viscera",
+   "group": "Ear",
+   "function": "Two membranous sacs in the vestibule whose maculae sense linear acceleration and head tilt: the utricle in the horizontal plane, the saccule in the vertical.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Utricle in the elliptical recess and saccule in the spherical recess of the vestibule"
+    },
+    {
+     "label": "Relations",
+     "value": "Semicircular ducts open into the utricle; saccule joins the cochlear duct through the ductus reuniens; both drain to the endolymphatic duct"
+    },
+    {
+     "label": "Innervation",
+     "value": "Utricle: superior part of the vestibular nerve; saccule: inferior part"
+    }
+   ],
+   "pearl": "Vestibular neuritis: days of continuous vertigo with unidirectional horizontal nystagmus, a positive head impulse test and normal hearing; hearing loss in addition means labyrinthitis. A normal head impulse test with acute continuous vertigo suggests a posterior circulation stroke.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "cochlear-duct",
+   "name": "Cochlear duct and spiral organ (of Corti)",
+   "category": "viscera",
+   "group": "Ear",
+   "function": "Endolymph-filled spiral duct of the cochlea carrying the spiral organ, where hair cells turn basilar membrane vibration into nerve impulses.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Between the scala vestibuli and scala tympani, coiling around the modiolus from the vestibule to the helicotrema"
+    },
+    {
+     "label": "Divisions",
+     "value": "Vestibular (Reissner's) membrane roof; basilar membrane floor bearing the spiral organ with one row of inner hair cells, outer hair cells, pillar cells and the tectorial membrane; spiral ligament on the outer wall"
+    },
+    {
+     "label": "Innervation",
+     "value": "Cochlear nerve; cell bodies in the spiral ganglion within the modiolus"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Labyrinthine artery"
+    }
+   ],
+   "pearl": "Tonotopy: high frequencies at the base, low at the apex. Presbycusis and ototoxic drugs (aminoglycosides, cisplatin) destroy basal hair cells first, giving high-frequency loss; noise damage gives a notch at 4 kHz.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "endolymphatic-duct-and-sac",
+   "name": "Endolymphatic duct and sac",
+   "category": "viscera",
+   "group": "Ear",
+   "function": "Blind extension of the membranous labyrinth in which endolymph is resorbed.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Duct runs from the utricle and saccule through the vestibular aqueduct; the sac lies between layers of dura mater on the posterior surface of the petrous part of the temporal bone"
+    },
+    {
+     "label": "Relations",
+     "value": "Sigmoid sinus lateral to the sac; opening of the vestibular aqueduct behind the internal acoustic opening"
+    }
+   ],
+   "pearl": "An enlarged vestibular aqueduct is the most common imaging finding in childhood sensorineural hearing loss (Pendred syndrome); endolymphatic sac tumours occur in von Hippel–Lindau disease.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "cochlear-nuclei",
+   "name": "Cochlear nuclei (anterior and posterior)",
+   "category": "viscera",
+   "group": "Ear",
+   "function": "First central relay of hearing: the cochlear nerve fibres end here and second-order neurons project to both sides of the brain stem.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "On the surface of the inferior cerebellar peduncle at the pontomedullary junction, where the vestibulocochlear nerve enters"
+    },
+    {
+     "label": "Divisions",
+     "value": "Anterior cochlear nucleus and posterior cochlear nucleus"
+    },
+    {
+     "label": "Relations",
+     "value": "Afferents from the cochlear (spiral) ganglion; efferents cross in the trapezoid body to the superior olivary nuclei and ascend in the lateral lemniscus to the inferior colliculus, medial geniculate body and auditory cortex"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Anterior inferior cerebellar artery"
+    }
+   ],
+   "pearl": "Because the pathway is bilateral above the cochlear nuclei, a unilateral lesion central to them does not cause deafness in one ear; unilateral sensorineural loss localises to the cochlea, the nerve (vestibular schwannoma) or the nuclei (AICA infarct).",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "lacrimal-gland",
+   "name": "Lacrimal gland",
+   "category": "viscera",
+   "group": "Lacrimal apparatus",
+   "function": "Serous gland producing the aqueous layer of the tear film; reflex tearing is driven by the facial nerve.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Lacrimal fossa in the superolateral orbit, behind the orbital septum"
+    },
+    {
+     "label": "Divisions",
+     "value": "Orbital part and palpebral part, separated by the lateral edge of the levator palpebrae superioris aponeurosis; excretory ducts of the lacrimal gland open into the superior conjunctival fornix"
+    },
+    {
+     "label": "Innervation",
+     "value": "Secretomotor: greater petrosal nerve (CN VII), nerve of the pterygoid canal, pterygopalatine ganglion, then the zygomatic nerve (CN V2) and its communication to the lacrimal nerve; sensory: lacrimal nerve (CN V1)"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Lacrimal artery (ophthalmic)"
+    }
+   ],
+   "pearl": "Dry eye with dry mouth is Sjögren syndrome (Schirmer test). A facial nerve lesion proximal to the geniculate ganglion gives a dry eye; misdirected regrowth causes tearing while eating (crocodile tears).",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "lacrimal-papillae-and-puncta",
+   "name": "Lacrimal papillae and puncta",
+   "category": "viscera",
+   "group": "Lacrimal apparatus",
+   "function": "Entry points of tear drainage: a small opening on a papilla at the medial end of each eyelid margin.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Superior lacrimal papilla and punctum; inferior lacrimal papilla and punctum"
+    },
+    {
+     "label": "Relations",
+     "value": "Face the lacrimal lake beside the lacrimal caruncle and plica semilunaris; each leads into a lacrimal canaliculus"
+    }
+   ],
+   "pearl": "Ectropion turns the inferior punctum away from the lacrimal lake and causes epiphora; punctal plugs deliberately block drainage to treat dry eye.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "lacrimal-canaliculi",
+   "name": "Lacrimal canaliculi",
+   "category": "viscera",
+   "group": "Lacrimal apparatus",
+   "function": "Superior and inferior channels that carry tears from the puncta to the lacrimal sac, pumped by blinking.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Medial end of each eyelid margin, deep to the medial palpebral ligament"
+    },
+    {
+     "label": "Divisions",
+     "value": "Short vertical part from the punctum, a dilated ampulla at the bend, then a horizontal part running medially; the two usually unite before entering the lacrimal sac"
+    },
+    {
+     "label": "Relations",
+     "value": "Surrounded by fibres of the palpebral part of the orbicularis oculi, which compress them on blinking"
+    }
+   ],
+   "pearl": "A laceration of the eyelid medial to the punctum is assumed to have cut the canaliculus and needs ophthalmic repair over a stent, or permanent epiphora follows.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "lacrimal-sac",
+   "name": "Lacrimal sac",
+   "category": "viscera",
+   "group": "Lacrimal apparatus",
+   "function": "Dilated upper end of the nasolacrimal drainage pathway that collects tears from the canaliculi.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Fossa for the lacrimal sac on the medial orbital wall, between the frontal process of the maxillary bone and the lacrimal bone"
+    },
+    {
+     "label": "Relations",
+     "value": "Medial palpebral ligament in front; lacrimal canaliculi enter its lateral wall; continues below as the nasolacrimal duct"
+    }
+   ],
+   "pearl": "Dacryocystitis: tender red swelling below the medial canthus with pus from the puncta, usually from nasolacrimal obstruction (S. aureus, streptococci); recurrent cases are treated by dacryocystorhinostomy into the middle meatus.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "nasolacrimal-duct",
+   "name": "Nasolacrimal duct",
+   "category": "viscera",
+   "group": "Lacrimal apparatus",
+   "function": "Drains tears from the lacrimal sac to the nose, which is why crying causes a runny nose.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Descends in the nasolacrimal canal between the maxillary bone, lacrimal bone and inferior nasal concha"
+    },
+    {
+     "label": "Relations",
+     "value": "Opening of the nasolacrimal duct in the inferior nasal meatus under the inferior nasal concha, guarded by a mucosal fold; maxillary sinus lateral"
+    }
+   ],
+   "pearl": "Congenital nasolacrimal duct obstruction (an imperforate membrane at the lower end) gives a watery, sticky eye from the first weeks of life; most cases resolve by 12 months with sac massage, otherwise the duct is probed.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "lacrimal-caruncle-and-plica-semilunaris",
+   "name": "Lacrimal caruncle and plica semilunaris",
+   "category": "viscera",
+   "group": "Lacrimal apparatus",
+   "function": "Landmarks of the medial angle of the eye where tears pool before entering the puncta.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Lacrimal caruncle: small fleshy mound of modified skin in the lacrimal lake (lacus lacrimalis); plica semilunaris: crescentic fold of conjunctiva lateral to it"
+    },
+    {
+     "label": "Relations",
+     "value": "Superior and inferior lacrimal papillae and puncta on the lid margins at the edge of the lacrimal lake; medial palpebral ligament deep to it"
+    }
+   ],
+   "pearl": "",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "eyeball",
+   "name": "Eyeball",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Organ of vision: a near-spherical globe whose cornea and lens focus light on the retina.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Anterior orbit, within the bulbar sheath (Tenon's capsule), cushioned by retrobulbar fat and moved by the extrinsic eye muscles"
+    },
+    {
+     "label": "Divisions",
+     "value": "Fibrous layer: sclera and cornea. Vascular layer: choroid, ciliary body and iris. Inner layer: retina. Contents: aqueous humor of the anterior and posterior chambers, lens, vitreous body"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Ophthalmic artery: central retinal artery, short and long posterior ciliary arteries, anterior ciliary arteries; vorticose veins and central retinal vein"
+    },
+    {
+     "label": "Innervation",
+     "value": "Optic nerve (CN II); long ciliary nerves (sensory and sympathetic) and short ciliary nerves (parasympathetic from the ciliary ganglion, sensory, sympathetic)"
+    }
+   ],
+   "pearl": "Open globe injury: teardrop pupil, shallow anterior chamber, positive Seidel test; shield the eye, avoid any pressure or tonometry, give antiemetics and antibiotics, and refer for urgent repair.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "anterior-segment-of-eyeball",
+   "name": "Anterior segment of eyeball",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Front third of the eye, containing the refracting structures and the aqueous humor circulation.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Cornea, anterior chamber, iris, posterior chamber, ciliary body, zonular fibers and lens"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Anterior ciliary arteries and long posterior ciliary arteries forming the major arterial circle of the iris"
+    }
+   ],
+   "pearl": "Examined with the slit lamp. Blood layering in the anterior chamber is a hyphaema (trauma; risk of raised pressure and rebleeding); layered pus is a hypopyon (keratitis, endophthalmitis).",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "posterior-segment-of-eyeball",
+   "name": "Posterior segment of eyeball",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Back two-thirds of the eye behind the lens, containing the light-sensing retina.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Vitreous body, optic part of the retina with the optic disc and macula, choroid and posterior sclera"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Central retinal artery to the inner retina; short posterior ciliary arteries to the choroid, which nourishes the outer retina"
+    }
+   ],
+   "pearl": "Examined by fundoscopy. Painless sudden visual loss is a posterior segment problem: retinal artery or vein occlusion, vitreous haemorrhage or retinal detachment.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "cornea",
+   "name": "Cornea",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Transparent avascular front of the fibrous layer and the main refracting surface of the eye.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Anterior one-sixth of the eyeball, joining the sclera at the corneoscleral junction (corneal limbus)"
+    },
+    {
+     "label": "Divisions",
+     "value": "Anterior epithelium, stroma, posterior limiting lamina (Descemet's membrane) and posterior epithelium"
+    },
+    {
+     "label": "Innervation",
+     "value": "Long ciliary nerves from the nasociliary nerve (CN V1): afferent limb of the corneal reflex, with the facial nerve efferent"
+    },
+    {
+     "label": "Relations",
+     "value": "Tear film in front, anterior chamber behind; nourished by aqueous humor, tears and limbal vessels"
+    }
+   ],
+   "pearl": "Corneal abrasion: pain, photophobia and fluorescein uptake. Contact lens wearers get Pseudomonas keratitis; a dendritic ulcer is herpes simplex (no topical steroids). Kayser–Fleischer rings are copper in Descemet's membrane.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "sclera",
+   "name": "Sclera",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Opaque white fibrous coat of the posterior five-sixths of the eyeball; keeps the globe's shape and receives the extrinsic eye muscle tendons.",
+   "details": [
+    {
+     "label": "Relations",
+     "value": "Bulbar conjunctiva and bulbar sheath outside, separated by the episcleral space; choroid inside across the perichoroidal space; continuous with the cornea at the limbus and with the meningeal sheath of the optic nerve behind"
+    },
+    {
+     "label": "Divisions",
+     "value": "Scleral spur and scleral venous sinus (canal of Schlemm) at the limbus; lamina cribrosa of the sclera transmitting the optic nerve fibres"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Episcleral arteries and veins; pierced by the ciliary arteries and vorticose veins"
+    }
+   ],
+   "pearl": "Scleritis (rheumatoid arthritis, granulomatosis with polyangiitis) is a deep boring pain with a violaceous eye that does not blanch with phenylephrine; episcleritis is mild and blanches. Blue sclerae suggest osteogenesis imperfecta.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "iris",
+   "name": "Iris",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Pigmented diaphragm in front of the lens whose central opening, the pupil, regulates the light entering the eye.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Between the anterior and posterior chambers, attached at its root to the ciliary body"
+    },
+    {
+     "label": "Divisions",
+     "value": "Stroma with the folds of the iris; sphincter pupillae and dilator pupillae muscles; pigment epithelium (iridial part of the retina) on its posterior surface"
+    },
+    {
+     "label": "Innervation",
+     "value": "Sphincter pupillae: parasympathetic from CN III via the ciliary ganglion and short ciliary nerves; dilator pupillae: sympathetic from the superior cervical ganglion via the long ciliary nerves"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Major arterial circle of the iris (long posterior and anterior ciliary arteries) and minor arterial circle of the iris"
+    }
+   ],
+   "pearl": "Anterior uveitis (HLA-B27 disease, sarcoidosis): painful red eye with ciliary flush, photophobia, a small irregular pupil and cells in the anterior chamber. Horner syndrome gives miosis; a CN III lesion gives a dilated pupil.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "lens",
+   "name": "Lens",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Transparent biconvex body that fine-tunes focus; it rounds up for near vision when the ciliary muscle contracts and the zonular fibers slacken.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Behind the iris and pupil, in front of the vitreous body, suspended from the ciliary processes by the zonular fibers"
+    },
+    {
+     "label": "Divisions",
+     "value": "Capsule, cortex and nucleus; anterior and posterior poles joined by the axis; equator at the rim"
+    },
+    {
+     "label": "Relations",
+     "value": "Posterior chamber and iris in front, vitreous body behind; avascular, nourished by the aqueous humor"
+    }
+   ],
+   "pearl": "Cataract (age, diabetes, corticosteroids, trauma): painless gradual blurring with glare and a dull red reflex. Lens dislocation is upward in Marfan syndrome and downward in homocystinuria. Presbyopia is loss of lens elasticity with age.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "zonular-fibers",
+   "name": "Zonular fibers (suspensory ligament of lens)",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Fine radial fibres that hold the lens in place and transmit ciliary muscle action to it.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "From the ciliary processes and orbiculus ciliaris across the posterior chamber to the lens capsule around the whole circumference of the lens"
+    },
+    {
+     "label": "Divisions",
+     "value": "Preequatorial, equatorial and postequatorial fibres, fanning out and blending into the lens capsule"
+    }
+   ],
+   "pearl": "Weak zonular fibers allow ectopia lentis (Marfan syndrome, homocystinuria, trauma): the lens edge is visible in the pupil and the iris trembles (iridodonesis).",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "ciliary-body",
+   "name": "Ciliary body",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Ring of the vascular layer between the choroid and the iris that secretes aqueous humor and contains the muscle of accommodation.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Ciliary processes (secrete aqueous humor and anchor the zonular fibers); orbiculus ciliaris; ciliary muscle with meridional and circular fibers; lined by the ciliary part of the retina"
+    },
+    {
+     "label": "Relations",
+     "value": "Extends from the scleral spur to the ora serrata; perichoroidal space outside"
+    },
+    {
+     "label": "Innervation",
+     "value": "Parasympathetic from CN III via the ciliary ganglion and short ciliary nerves to the ciliary muscle"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Long posterior ciliary and anterior ciliary arteries"
+    }
+   ],
+   "pearl": "Glaucoma drugs that lower aqueous production act here: beta-blockers (timolol), alpha-2 agonists and carbonic anhydrase inhibitors.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "choroid",
+   "name": "Choroid",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Pigmented vascular layer between the sclera and the retina that nourishes the outer retina and absorbs stray light.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Posterior five-sixths of the eyeball, from the optic nerve to the ora serrata, where it continues as the ciliary body"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Short posterior ciliary arteries; drained by the vorticose (choroid) veins"
+    },
+    {
+     "label": "Relations",
+     "value": "Sclera outside across the perichoroidal space; pigmented layer of the optic part of the retina inside"
+    }
+   ],
+   "pearl": "In central retinal artery occlusion the fovea still shows the intact choroidal circulation as a cherry-red spot. Choroidal melanoma is the most common primary intraocular malignancy of adults and metastasises to the liver.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "retina",
+   "name": "Retina",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Light-sensitive inner layer of the eyeball; photoreceptors signal through bipolar and ganglion cells whose axons form the optic nerve.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Optic (visual) part of the retina, ending in front at the ora serrata; ciliary part and iridial part (non-visual) over the ciliary body and iris. Macula with the fovea centralis on the visual axis; optic disc medial to it"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Central retinal artery (superior and inferior, nasal and temporal retinal arterioles) to the inner layers; choroid to the photoreceptors; central retinal vein"
+    },
+    {
+     "label": "Relations",
+     "value": "Vitreous body inside; choroid outside"
+    }
+   ],
+   "pearl": "Retinal detachment: flashes, floaters and a curtain over the vision. Central retinal artery occlusion: sudden painless blindness, pale retina and cherry-red spot. Central retinal vein occlusion: widespread haemorrhages. A swollen optic disc means raised intracranial pressure.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "vitreous-body",
+   "name": "Vitreous body",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Transparent gel filling the vitreous chamber behind the lens; transmits light and holds the retina against the choroid.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Posterior four-fifths of the eyeball, between the lens and the retina"
+    },
+    {
+     "label": "Relations",
+     "value": "Lens and zonular fibers in front; attached firmly at the ora serrata and around the optic disc; traversed by the hyaloid canal"
+    }
+   ],
+   "pearl": "Posterior vitreous detachment with ageing causes floaters and flashes and can tear the retina. Vitreous haemorrhage (proliferative diabetic retinopathy) gives sudden painless visual loss with an absent red reflex.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "anterior-chamber-of-eyeball",
+   "name": "Anterior chamber of eyeball",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Aqueous-filled space between the cornea and the iris; aqueous humor leaves the eye at its angle.",
+   "details": [
+    {
+     "label": "Relations",
+     "value": "Cornea in front; iris and pupil behind; iridocorneal angle at its periphery, with the trabecular meshwork and scleral venous sinus (canal of Schlemm)"
+    },
+    {
+     "label": "Divisions",
+     "value": "Communicates with the posterior chamber through the pupil"
+    }
+   ],
+   "pearl": "Acute angle-closure glaucoma: painful red eye, haloes, vomiting, hazy cornea and a fixed mid-dilated pupil, often after pupillary dilatation in a hyperopic eye; treat with topical timolol and pilocarpine and acetazolamide, then laser iridotomy.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "posterior-chamber-of-eyeball",
+   "name": "Posterior chamber of eyeball",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Narrow aqueous-filled space behind the iris into which the ciliary processes secrete aqueous humor.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Between the posterior surface of the iris and the lens, in the anterior segment of the eyeball"
+    },
+    {
+     "label": "Relations",
+     "value": "Iris in front; lens and zonular fibers behind; ciliary processes laterally; opens through the pupil into the anterior chamber"
+    }
+   ],
+   "pearl": "If the iris sticks to the lens (pupillary block, posterior synechiae after uveitis), aqueous humor trapped here bows the iris forward and closes the iridocorneal angle.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "iridocorneal-angle",
+   "name": "Iridocorneal angle and scleral venous sinus (canal of Schlemm)",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Drainage angle of the anterior chamber: aqueous humor filters through the trabecular meshwork into the scleral venous sinus and so to the episcleral veins.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Circumference of the anterior chamber where the root of the iris meets the corneoscleral junction"
+    },
+    {
+     "label": "Divisions",
+     "value": "Trabecular meshwork and spaces of the iridocorneal angle (of Fontana); pectinate ligament; scleral spur; scleral venous sinus (canal of Schlemm); linea translucens (Schwalbe's line)"
+    },
+    {
+     "label": "Relations",
+     "value": "Ciliary muscle (meridional fibers) attaches to the scleral spur; anterior ciliary veins receive the outflow"
+    }
+   ],
+   "pearl": "Primary open-angle glaucoma: resistance in the trabecular meshwork, painless loss of peripheral vision with optic disc cupping; first-line treatment is a prostaglandin analogue (latanoprost).",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "conjunctiva",
+   "name": "Conjunctiva",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Thin transparent mucous membrane lining the eyelids and covering the sclera; its goblet cells supply the mucous layer of the tear film.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Palpebral conjunctiva on the tarsi; bulbar conjunctiva over the sclera to the corneal limbus; superior and inferior conjunctival fornices where they reflect"
+    },
+    {
+     "label": "Innervation",
+     "value": "Branches of the ophthalmic nerve (lacrimal, supratrochlear, infratrochlear); infraorbital nerve for the lower lid"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Palpebral arteries and anterior ciliary arteries (conjunctival vessels)"
+    }
+   ],
+   "pearl": "Conjunctivitis: diffuse redness with discharge and normal vision. Redness concentrated around the limbus (ciliary flush) with pain, photophobia or reduced vision means keratitis, uveitis or acute glaucoma. Jaundice shows in the conjunctiva over the sclera.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "bulbar-sheath-and-suspensory-ligament-of-eyeball",
+   "name": "Bulbar sheath (Tenon's capsule) and suspensory ligament of eyeball",
+   "category": "viscera",
+   "group": "Eye",
+   "function": "Fascial socket in which the eyeball rotates; its thickened lower part forms a hammock that supports the globe.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Surrounds the eyeball from the optic nerve to near the corneoscleral junction, separated from the sclera by the episcleral space"
+    },
+    {
+     "label": "Divisions",
+     "value": "Fascial sheaths prolonged along the extrinsic eye muscles; check ligaments of the medial and lateral rectus muscles; suspensory ligament: sling formed by the lower sheath with the sheaths of the inferior rectus and inferior oblique, slung between the two check ligaments"
+    },
+    {
+     "label": "Relations",
+     "value": "Retrobulbar fat (orbital fat body) and periorbita outside; pierced by the tendons of the extrinsic eye muscles, the ciliary nerves and vessels"
+    }
+   ],
+   "pearl": "In an orbital floor blow-out fracture the suspensory ligament can keep the globe level, while entrapment of the inferior rectus limits upgaze and causes vertical diplopia. Sub-Tenon anaesthesia is placed in the episcleral space.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "hypophysis",
+   "name": "Hypophysis (pituitary gland)",
+   "category": "viscera",
+   "group": "Pituitary & pineal",
+   "function": "Master endocrine gland hanging from the hypothalamus by the infundibulum.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Sella turcica (hypophyseal fossa) of the sphenoid bone, roofed by the diaphragma sellae"
+    },
+    {
+     "label": "Divisions",
+     "value": "Anterior lobe (adenohypophysis): pars distalis, pars tuberalis, pars intermedia. Posterior lobe (neurohypophysis): infundibular stem and infundibular process, continuous with the median eminence of the tuber cinereum"
+    },
+    {
+     "label": "Relations",
+     "value": "Optic chiasm above; sphenoidal sinus below and in front; cavernous sinus with the internal carotid artery and CN III, IV, V1 and VI on each side"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Superior and inferior hypophyseal arteries (internal carotid); hypophyseal portal veins carry hypothalamic hormones to the anterior lobe; efferent hypophyseal veins drain to the cavernous sinus"
+    }
+   ],
+   "pearl": "A macroadenoma compresses the optic chiasm (bitemporal hemianopia) and is removed through the sphenoidal sinus. Pituitary apoplexy: sudden headache, visual loss, ophthalmoplegia and adrenal crisis; give hydrocortisone.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "adenohypophysis",
+   "name": "Anterior lobe of pituitary gland (adenohypophysis)",
+   "category": "viscera",
+   "group": "Pituitary & pineal",
+   "function": "Glandular lobe derived from Rathke's pouch (oral ectoderm); secretes GH, prolactin, ACTH, TSH, FSH and LH under control of hypothalamic releasing and inhibiting hormones delivered by the portal veins.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Pars distalis (main mass), pars tuberalis (wrapped around the infundibulum) and pars intermedia (next to the cleft)"
+    },
+    {
+     "label": "Relations",
+     "value": "Tuberohypophyseal tract ends on the portal capillaries in the median eminence; posterior lobe behind"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Superior hypophyseal artery through the hypophyseal portal veins; almost no direct arterial supply"
+    }
+   ],
+   "pearl": "Prolactinoma is the most common adenoma (galactorrhoea, amenorrhoea; treat with cabergoline); stalk compression also raises prolactin by removing dopamine inhibition. Sheehan syndrome: postpartum infarction of the enlarged portal-dependent lobe, with failure of lactation.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "neurohypophysis",
+   "name": "Posterior lobe of pituitary gland (neurohypophysis)",
+   "category": "viscera",
+   "group": "Pituitary & pineal",
+   "function": "Downgrowth of the diencephalon that stores and releases ADH (vasopressin) and oxytocin made in the supraoptic and paraventricular hypothalamic nuclei.",
+   "details": [
+    {
+     "label": "Divisions",
+     "value": "Infundibular stem and infundibular process, continuous above with the median eminence of the tuber cinereum"
+    },
+    {
+     "label": "Relations",
+     "value": "Supraopticohypophyseal tract (hypothalamohypophyseal tract) carries the hormones down the infundibulum to its capillaries"
+    },
+    {
+     "label": "Blood supply",
+     "value": "Inferior hypophyseal artery"
+    }
+   ],
+   "pearl": "Central diabetes insipidus follows pituitary surgery, head injury or stalk lesions: polyuria with dilute urine that concentrates after desmopressin; damage below the median eminence is often transient because the hypothalamic neurons survive.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  },
+  {
+   "id": "pineal-gland",
+   "name": "Pineal gland",
+   "category": "viscera",
+   "group": "Pituitary & pineal",
+   "function": "Midline neuroendocrine gland secreting melatonin in darkness; entrains the circadian rhythm.",
+   "details": [
+    {
+     "label": "Location",
+     "value": "Posterior wall of the 3rd ventricle between the habenular commissure and the posterior commissure, above the superior colliculi of the tectal plate"
+    },
+    {
+     "label": "Relations",
+     "value": "Great cerebral vein (of Galen) and splenium of the corpus callosum above and behind; cerebral aqueduct in front and below; pineal and suprapineal recesses of the 3rd ventricle"
+    },
+    {
+     "label": "Innervation",
+     "value": "Sympathetic fibres from the superior cervical ganglion, driven by the suprachiasmatic nucleus"
+    }
+   ],
+   "pearl": "A pineal region tumour (germinoma in adolescent boys) compresses the tectal plate and aqueduct: Parinaud syndrome (upgaze palsy, light-near dissociation, convergence-retraction nystagmus) with obstructive hydrocephalus; hCG-secreting tumours cause precocious puberty.",
+   "depth": "deep",
+   "marker": {
+    "x": 500,
+    "y": 500
+   }
+  }
+ ],
+ "refs": {
+  "parotid-gland": "Plate 53 (p. 108)",
+  "parotid-duct": "Plate 54 (p. 109)",
+  "submandibular-gland": "Plate 53 (p. 108)",
+  "submandibular-duct": "Plate 69 (p. 124)",
+  "sublingual-gland": "Plate 53 (p. 108)",
+  "minor-salivary-glands": "Plate 65 (p. 120)",
+  "thyroid-gland": "Plate 87 (p. 142)",
+  "isthmus-of-thyroid-gland": "Plate 87 (p. 142)",
+  "pyramidal-lobe-of-thyroid-gland": "Plate 87 (p. 142)",
+  "superior-parathyroid-gland": "Plate 89 (p. 144)",
+  "inferior-parathyroid-gland": "Plate 89 (p. 144)",
+  "larynx": "Plate 92 (p. 147)",
+  "laryngeal-inlet": "Plate 79 (p. 134)",
+  "aryepiglottic-fold": "Plate 79 (p. 134)",
+  "laryngeal-vestibule": "Plate 92 (p. 147)",
+  "vestibular-fold": "Plate 91 (p. 146)",
+  "laryngeal-ventricle": "Plate 92 (p. 147)",
+  "vocal-fold": "Plate 91 (p. 146)",
+  "rima-glottidis": "Plate 91 (p. 146)",
+  "infraglottic-cavity": "Plate 92 (p. 147)",
+  "pharynx": "Plate 79 (p. 134)",
+  "nasopharynx": "Plate 77 (p. 132)",
+  "oropharynx": "Plate 77 (p. 132)",
+  "laryngopharynx": "Plate 79 (p. 134)",
+  "piriform-recess": "Plate 79 (p. 134)",
+  "vallecula": "Plate 71 (p. 126)",
+  "pharyngeal-recess": "Plate 72 (p. 127)",
+  "torus-tubarius": "Plate 72 (p. 127)",
+  "pharyngobasilar-fascia": "Plate 75 (p. 130)",
+  "retropharyngeal-space": "Plate 33 (p. 88)",
+  "oral-cavity": "Plate 65 (p. 120)",
+  "tongue": "Plate 71 (p. 126)",
+  "lingual-papillae": "Plate 71 (p. 126)",
+  "terminal-sulcus-and-foramen-cecum-of-tongue": "Plate 71 (p. 126)",
+  "frenulum-of-tongue": "Plate 65 (p. 120)",
+  "sublingual-caruncle-and-fold": "Plate 65 (p. 120)",
+  "gingiva": "Plate 74 (p. 129)",
+  "lips": "Plate 65 (p. 120)",
+  "soft-palate": "Plate 72 (p. 127)",
+  "uvula-of-palate": "Plate 65 (p. 120)",
+  "palatoglossal-arch": "Plate 72 (p. 127)",
+  "palatopharyngeal-arch": "Plate 72 (p. 127)",
+  "fauces": "Plate 72 (p. 127)",
+  "palatine-aponeurosis": "Plate 67 (p. 122)",
+  "palatal-mucosa": "Plate 67 (p. 122)",
+  "nasal-cavity": "Plate 43 (p. 98)",
+  "nasal-vestibule": "Plate 43 (p. 98)",
+  "nasal-septum": "Plate 45 (p. 100)",
+  "nasal-mucosa": "Plate 43 (p. 98)",
+  "choanae": "Plate 45 (p. 100)",
+  "cervical-trachea": "Plate 77 (p. 132)",
+  "cervical-esophagus": "Plate 77 (p. 132)",
+  "pharyngoesophageal-junction": "Plate 80 (p. 135)",
+  "tracheoesophageal-groove": "Plate 81 (p. 136)",
+  "auricle": "Plate 106 (p. 161)",
+  "tympanic-cavity": "Plate 106 (p. 161)",
+  "auditory-tube": "Plate 105 (p. 160)",
+  "membranous-labyrinth": "Plate 108 (p. 163)",
+  "semicircular-ducts": "Plate 108 (p. 163)",
+  "utricle-and-saccule": "Plate 108 (p. 163)",
+  "cochlear-duct": "Plate 109 (p. 164)",
+  "endolymphatic-duct-and-sac": "Plate 109 (p. 164)",
+  "cochlear-nuclei": "Plate 135 (p. 190)",
+  "lacrimal-gland": "Plate 95 (p. 150)",
+  "lacrimal-papillae-and-puncta": "Plate 95 (p. 150)",
+  "lacrimal-canaliculi": "Plate 95 (p. 150)",
+  "lacrimal-sac": "Plate 95 (p. 150)",
+  "nasolacrimal-duct": "Plate 95 (p. 150)",
+  "lacrimal-caruncle-and-plica-semilunaris": "Plate 94 (p. 149)",
+  "eyeball": "Plate 100 (p. 155)",
+  "anterior-segment-of-eyeball": "Plate 102 (p. 157)",
+  "posterior-segment-of-eyeball": "Plate 103 (p. 158)",
+  "cornea": "Plate 101 (p. 156)",
+  "sclera": "Plate 100 (p. 155)",
+  "iris": "Plate 101 (p. 156)",
+  "lens": "Plate 102 (p. 157)",
+  "zonular-fibers": "Plate 102 (p. 157)",
+  "ciliary-body": "Plate 101 (p. 156)",
+  "choroid": "Plate 100 (p. 155)",
+  "retina": "Plate 103 (p. 158)",
+  "vitreous-body": "Plate 100 (p. 155)",
+  "anterior-chamber-of-eyeball": "Plate 101 (p. 156)",
+  "posterior-chamber-of-eyeball": "Plate 101 (p. 156)",
+  "iridocorneal-angle": "Plate 101 (p. 156)",
+  "conjunctiva": "Plate 94 (p. 149)",
+  "bulbar-sheath-and-suspensory-ligament-of-eyeball": "Plate BP26 (p. 234)",
+  "hypophysis": "Plate 158 (p. 213)",
+  "adenohypophysis": "Plate 158 (p. 213)",
+  "neurohypophysis": "Plate 158 (p. 213)",
+  "pineal-gland": "Plate 117 (p. 172)"
+ }
+}

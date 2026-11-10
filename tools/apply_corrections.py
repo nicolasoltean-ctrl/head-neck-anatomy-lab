@@ -20,7 +20,7 @@ cdir = pathlib.Path(args[0])
 
 ORDER_AFTER = {"Blood supply": ["Innervation", "Insertion", "Origin"]}
 totals = {"applied": 0, "skipped": 0}
-for cat in ["bone", "muscle", "nerve", "lymph", "artery", "vein"]:
+for cat in ["bone", "muscle", "nerve", "lymph", "artery", "vein", "viscera", "cns"]:
     cfile = cdir / f"corrections_{cat}.json"
     if not cfile.exists():
         print(f"{cat}: no corrections file"); continue

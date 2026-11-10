@@ -16,8 +16,9 @@ mesh_dir = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else pathlib.Path(__fi
 man = json.load(open(mesh_dir / "manifest.json"))["meshes"]
 
 # ---------------- cards ----------------
+CATS = [c for c in ["bone", "muscle", "nerve", "lymph", "artery", "vein", "viscera", "cns"] if (here / "data" / f"{c}.json").exists()]
 cards = []
-for cat in ["bone", "muscle", "nerve", "lymph", "artery", "vein"]:
+for cat in CATS:
     for it in json.load(open(here / "data" / f"{cat}.json")):
         it["category"] = cat; cards.append(it)
 card_by_id = {c["id"]: c for c in cards}
@@ -141,7 +142,7 @@ for sysname, p in art["packs"].items():
 
 # ---------------- splice ----------------
 items = []
-for cat in ["bone", "muscle", "nerve", "lymph", "artery", "vein"]:
+for cat in CATS:
     for it in json.load(open(here / "data" / f"{cat}.json")):
         it["category"] = cat; items.append(it)
 tpl = (here / "template3d.html").read_text()

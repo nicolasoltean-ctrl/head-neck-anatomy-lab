@@ -356,7 +356,7 @@ for (const e of entries) {
 const entryById = new Map(entries.map(e => [e.id, e]));
 const labelOfId = new Map(entries.map(e => [e.id, e.system + ':' + e.label]));
 /* Cards whose structure has no mesh in the Z-Anatomy model: listed in the index under their system and asked in the function quiz, never highlighted. */
-const VTIER = { muscle: 2, artery: 3, vein: 3, nerve: 3, lymph: 3, bone: 5 };
+const VTIER = { muscle: 2, artery: 3, vein: 3, nerve: 3, lymph: 3, viscera: 4, bone: 5, cns: 6 };
 const matchedCards = new Set([...labels.values()].map(L => L.card).filter(Boolean));
 for (const c of DATA) if (!matchedCards.has(c.id) && SYS[c.category]) labels.set('card:' + c.id, { key: 'card:' + c.id, label: c.name, system: c.category, tier: VTIER[c.category] ?? 3, card: c.id, ids: [], group: c.group || '', virtual: true });
 /* A part mesh (e.g. the orbital part of orbicularis oculi) carries its own card and names its whole structure as parent: the parent's label gains those pieces, so choosing the whole from the index selects every part. */
