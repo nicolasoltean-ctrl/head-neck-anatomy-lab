@@ -1,0 +1,241 @@
+{
+ "_about": "Names for the splines inside fused Z-Anatomy curves; see tools/split_branches.py. Identified from each spline's course (tools' spline report) against Netter 7e plates 54, 59, 61, 97, 132-134, 138.",
+ "Facial nerve (VII)": [
+  {
+   "spline": 0,
+   "from": 0.0,
+   "to": 0.54,
+   "label": "Facial nerve (VII)"
+  },
+  {
+   "spline": 0,
+   "from": 0.54,
+   "to": 0.64,
+   "label": "Cervicofacial division of facial nerve"
+  },
+  {
+   "spline": 0,
+   "from": 0.64,
+   "to": 1.0,
+   "label": "Marginal mandibular branch of facial nerve"
+  },
+  {
+   "spline": 1,
+   "label": "Marginal mandibular branch of facial nerve"
+  },
+  {
+   "spline": 2,
+   "label": "Cervical branch of facial nerve"
+  },
+  {
+   "spline": 3,
+   "from": 0.0,
+   "to": 0.28,
+   "label": "Temporofacial division of facial nerve"
+  },
+  {
+   "spline": 3,
+   "from": 0.28,
+   "to": 1.0,
+   "label": "Zygomatic branches of facial nerve"
+  },
+  {
+   "spline": 4,
+   "label": "Zygomatic branches of facial nerve"
+  },
+  {
+   "spline": [
+    5,
+    6
+   ],
+   "label": "Buccal branches of facial nerve"
+  },
+  {
+   "spline": [
+    7,
+    8
+   ],
+   "label": "Temporal branches of facial nerve"
+  },
+  {
+   "spline": 9,
+   "label": "Chorda tympani"
+  },
+  {
+   "spline": 10,
+   "label": "Greater petrosal nerve"
+  },
+  {
+   "spline": 11,
+   "label": "Intermediate nerve"
+  }
+ ],
+ "Maxillary nerve": [
+  {
+   "spline": 0,
+   "from": 0.0,
+   "to": 0.47,
+   "label": "Maxillary nerve"
+  },
+  {
+   "spline": 0,
+   "from": 0.47,
+   "to": 1.0,
+   "label": "Infra-orbital nerve"
+  },
+  {
+   "spline": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "label": "Infra-orbital nerve"
+  }
+ ],
+ "Ophthalmic nerve": [
+  {
+   "spline": 0,
+   "from": 0.0,
+   "to": 0.3,
+   "label": "Ophthalmic nerve"
+  },
+  {
+   "spline": 0,
+   "from": 0.3,
+   "to": 0.81,
+   "label": "Frontal nerve"
+  },
+  {
+   "spline": 0,
+   "from": 0.81,
+   "to": 1.0,
+   "label": "Supra-orbital nerve"
+  },
+  {
+   "spline": [
+    3,
+    4
+   ],
+   "label": "Supra-orbital nerve"
+  },
+  {
+   "spline": [
+    1,
+    2
+   ],
+   "label": "Supratrochlear nerve"
+  }
+ ],
+ "Meningeal branch of maxillary nerve": [
+  {
+   "spline": [
+    0,
+    1,
+    2
+   ],
+   "label": "Auriculotemporal nerve"
+  }
+ ],
+ "Accessory nerve (XI)": [
+  {
+   "spline": 0,
+   "from": 0.0,
+   "to": 0.11,
+   "label": "Cranial root of accessory nerve"
+  },
+  {
+   "spline": 0,
+   "from": 0.11,
+   "to": 1.0,
+   "label": "Accessory nerve (XI)"
+  },
+  {
+   "spline": [
+    3,
+    4,
+    5
+   ],
+   "label": "Spinal root of accessory nerve"
+  }
+ ],
+ "Oculomotor nerve (III)": [
+  {
+   "spline": 1,
+   "label": "Superior division of oculomotor nerve"
+  },
+  {
+   "spline": [
+    2,
+    3
+   ],
+   "label": "Inferior division of oculomotor nerve"
+  }
+ ],
+ "Trigeminal nerve (V)": [
+  {
+   "spline": 1,
+   "label": "Mandibular nerve"
+  }
+ ],
+ "Inferior alveolar nerve": [
+  {
+   "spline": [
+    1,
+    5,
+    6,
+    7,
+    8
+   ],
+   "label": "Incisive nerve"
+  },
+  {
+   "spline": [
+    2,
+    3,
+    4,
+    9,
+    10
+   ],
+   "label": "Inferior dental branches"
+  },
+  {
+   "spline": 11,
+   "label": "Mental nerve"
+  }
+ ],
+ "Superficial temporal artery": [
+  {
+   "spline": 0,
+   "from": 0.0,
+   "to": 0.5,
+   "label": "Superficial temporal artery"
+  },
+  {
+   "spline": 0,
+   "from": 0.5,
+   "to": 1.0,
+   "label": "Frontal branch of superficial temporal artery"
+  },
+  {
+   "spline": [
+    1,
+    2,
+    3
+   ],
+   "label": "Frontal branch of superficial temporal artery"
+  },
+  {
+   "spline": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "label": "Parietal branch of superficial temporal artery"
+  }
+ ]
+}

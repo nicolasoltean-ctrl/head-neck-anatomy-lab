@@ -3851,5 +3851,59 @@
       }
     ],
     "pearl": "Along with the mandibular nerve's own meningeal branch (nervus spinosus), it explains why middle cranial fossa dural pain can be referred to the maxillary or mandibular distribution."
+  },
+  {
+    "id": "incisive-nerve",
+    "name": "Incisive nerve",
+    "category": "nerve",
+    "group": "Trigeminal branches",
+    "depth": "deep",
+    "marker": {
+      "x": 455,
+      "y": 565
+    },
+    "function": "The terminal continuation of the inferior alveolar nerve inside the mandible beyond the mental foramen, carrying sensation from the lower canine and incisor teeth and their periodontium.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "Sensory (general somatic afferent), branch of the inferior alveolar nerve (CN V3)"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Continues forward in the incisive canal of the mandible from the mental foramen toward the midline; does not leave the bone"
+      },
+      {
+        "label": "Supplies",
+        "value": "Lower canine and incisor teeth (often the first premolar), with their periodontal ligament and bone"
+      }
+    ],
+    "pearl": "A mental nerve block at the mental foramen numbs the lip and chin but leaves the incisors partly sensate unless anesthetic diffuses into the canal to reach the incisive nerve."
+  },
+  {
+    "id": "inferior-dental-plexus",
+    "name": "Inferior dental branches (inferior dental plexus)",
+    "category": "nerve",
+    "group": "Trigeminal branches",
+    "depth": "deep",
+    "marker": {
+      "x": 455,
+      "y": 565
+    },
+    "function": "Small branches given off by the inferior alveolar nerve inside the mandibular canal that form a plexus supplying the lower molar and premolar teeth and the adjacent gingiva.",
+    "details": [
+      {
+        "label": "Type",
+        "value": "Sensory (general somatic afferent), branches of the inferior alveolar nerve (CN V3)"
+      },
+      {
+        "label": "Exit/route",
+        "value": "Arise within the mandibular canal and rise through the bone to the roots of the teeth"
+      },
+      {
+        "label": "Supplies",
+        "value": "Lower molars and premolars, their periodontal ligaments and the buccal gingiva of the premolar region via the plexus"
+      }
+    ],
+    "pearl": "An inferior alveolar nerve block at the mandibular foramen anesthetizes all of these branches at once, which is why one injection numbs every lower tooth on that side."
   }
 ]

@@ -34,7 +34,29 @@
   "Motor root of trigeminal nerve": "cn-v-trigeminal-nerve",
   "Sensory root of trigeminal nerve": "cn-v-trigeminal-nerve",
   "Cochlear nerve": "cn-viii-vestibulocochlear-nerve",
-  "Vestibular nerve": "cn-viii-vestibulocochlear-nerve"
+  "Vestibular nerve": "cn-viii-vestibulocochlear-nerve",
+  "Cervicofacial division of facial nerve": "cn-vii-facial-nerve",
+  "Temporofacial division of facial nerve": "cn-vii-facial-nerve",
+  "Marginal mandibular branch of facial nerve": "cn-vii-facial-nerve",
+  "Cervical branch of facial nerve": "cn-vii-facial-nerve",
+  "Zygomatic branches of facial nerve": "cn-vii-facial-nerve",
+  "Buccal branches of facial nerve": "cn-vii-facial-nerve",
+  "Temporal branches of facial nerve": "cn-vii-facial-nerve",
+  "Greater petrosal nerve": "cn-vii-facial-nerve",
+  "Intermediate nerve": "cn-vii-facial-nerve",
+  "Chorda tympani": "cn-vii-facial-nerve",
+  "Infra-orbital nerve": "maxillary-division-v2",
+  "Frontal nerve": "ophthalmic-division-v1",
+  "Supra-orbital nerve": "ophthalmic-division-v1",
+  "Supratrochlear nerve": "ophthalmic-division-v1",
+  "Auriculotemporal nerve": "mandibular-division-v3",
+  "Cranial root of accessory nerve": "cn-xi-accessory-nerve",
+  "Spinal root of accessory nerve": "cn-xi-accessory-nerve",
+  "Superior division of oculomotor nerve": "cn-iii-oculomotor-nerve",
+  "Inferior division of oculomotor nerve": "cn-iii-oculomotor-nerve",
+  "Mandibular nerve": "cn-v-trigeminal-nerve",
+  "Incisive nerve": "inferior-alveolar-nerve",
+  "Inferior dental branches": "inferior-alveolar-nerve"
  },
  "lymph": {
   "Nasolabial node": "facial-buccal-nodes",
@@ -63,7 +85,8 @@
   "Lateral pontine branches of basilar artery": "basilar-artery",
   "Medial pontine branches of basilar artery": "basilar-artery",
   "Posterior lateral nasal branches of sphenopalatine artery.": "sphenopalatine-artery",
-  "Posterior septal branches of sphenopalatine artery": "sphenopalatine-artery"
+  "Posterior septal branches of sphenopalatine artery": "sphenopalatine-artery",
+  "Parietal branch of superficial temporal artery": "superficial-temporal-artery"
  },
  "vein": {
   "Anterior division of retromandibular vein": "retromandibular-vein",
