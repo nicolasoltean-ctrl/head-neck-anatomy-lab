@@ -56,7 +56,8 @@
   "Inferior division of oculomotor nerve": "cn-iii-oculomotor-nerve",
   "Mandibular nerve": "cn-v-trigeminal-nerve",
   "Incisive nerve": "inferior-alveolar-nerve",
-  "Inferior dental branches": "inferior-alveolar-nerve"
+  "Inferior dental branches": "inferior-alveolar-nerve",
+  "Pharyngeal branch of vagus nerve": "cn-x-vagus-nerve"
  },
  "lymph": {
   "Nasolabial node": "facial-buccal-nodes",
@@ -86,7 +87,10 @@
   "Medial pontine branches of basilar artery": "basilar-artery",
   "Posterior lateral nasal branches of sphenopalatine artery.": "sphenopalatine-artery",
   "Posterior septal branches of sphenopalatine artery": "sphenopalatine-artery",
-  "Parietal branch of superficial temporal artery": "superficial-temporal-artery"
+  "Parietal branch of superficial temporal artery": "superficial-temporal-artery",
+  "Mandibular (first) part of maxillary artery": "maxillary-artery",
+  "Pterygoid (second) part of maxillary artery": "maxillary-artery",
+  "Pterygopalatine (third) part of maxillary artery": "maxillary-artery"
  },
  "vein": {
   "Anterior division of retromandibular vein": "retromandibular-vein",

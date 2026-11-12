@@ -109,7 +109,8 @@
   "Mandibular nerve": "mandibular-division-v3",
   "Incisive nerve": "incisive-nerve",
   "Inferior dental branches": "inferior-dental-plexus",
-  "Mental nerve": "mental-nerve"
+  "Mental nerve": "mental-nerve",
+  "Pharyngeal branch of vagus nerve": "pharyngeal-branch-of-vagus"
  },
  "lymph": {
   "Nasolabial node": "nasolabial-nodes",
@@ -148,8 +149,14 @@
   "Medial pontine branches of basilar artery": "pontine-arteries",
   "Posterior lateral nasal branches of sphenopalatine artery.": "posterior-lateral-nasal-branches-of-sphenopalatine-artery",
   "Posterior septal branches of sphenopalatine artery": "posterior-septal-branches-of-sphenopalatine-artery",
-  "Maxillary artery": "maxillary-artery",
-  "Parietal branch of superficial temporal artery": "parietal-branch-of-superficial-temporal-artery"
+  "Parietal branch of superficial temporal artery": "parietal-branch-of-superficial-temporal-artery",
+  "Posterior auricular artery": "posterior-auricular-artery",
+  "Mandibular (first) part of maxillary artery": "maxillary-artery-mandibular-part",
+  "Pterygoid (second) part of maxillary artery": "maxillary-artery-pterygoid-part",
+  "Pterygopalatine (third) part of maxillary artery": "maxillary-artery-pterygopalatine-part",
+  "Posterior superior alveolar artery": "posterior-superior-alveolar-artery",
+  "Middle superior alveolar artery": "infraorbital-artery",
+  "Ascending palatine artery": "ascending-palatine-artery"
  },
  "vein": {
   "Anterior division of retromandibular vein": "anterior-division-of-retromandibular-vein",

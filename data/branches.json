@@ -236,6 +236,67 @@
     13
    ],
    "label": "Parietal branch of superficial temporal artery"
+  },
+  {
+   "spline": [
+    4,
+    5,
+    6
+   ],
+   "label": "Posterior auricular artery"
+  }
+ ],
+ "Maxillary artery": [
+  {
+   "spline": 0,
+   "from": 0.0,
+   "to": 0.3,
+   "label": "Mandibular (first) part of maxillary artery"
+  },
+  {
+   "spline": 0,
+   "from": 0.3,
+   "to": 0.72,
+   "label": "Pterygoid (second) part of maxillary artery"
+  },
+  {
+   "spline": 0,
+   "from": 0.72,
+   "to": 1.0,
+   "label": "Pterygopalatine (third) part of maxillary artery"
+  },
+  {
+   "spline": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "label": "Posterior superior alveolar artery"
+  },
+  {
+   "spline": [
+    1,
+    2,
+    3
+   ],
+   "label": "Middle superior alveolar artery"
+  }
+ ],
+ "Ascending pharyngeal artery": [
+  {
+   "spline": [
+    1,
+    2
+   ],
+   "label": "Ascending palatine artery"
+  }
+ ],
+ "Vagus nerve (X)": [
+  {
+   "spline": 1,
+   "label": "Pharyngeal branch of vagus nerve"
   }
  ]
 }
