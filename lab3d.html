@@ -205,15 +205,15 @@ header.top .btn { padding: 6px 13px; font-size: 13px; }
 .pop button.confirm { padding: 10px 8px; font-size: 14px; }
 .pop button.confirm:hover { background: var(--confirm); filter: brightness(1.07); border-color: var(--confirm); }
 
-/* ---------- Opening screen: a sculpted head turning over the wordmark; a click eases the options in ---------- */
-.intro { position: fixed; inset: 0; z-index: 30; overflow: auto; display: flex; padding: max(20px, env(safe-area-inset-top, 0px)) 16px 28px;
-  background: radial-gradient(120% 85% at 50% 16%, var(--splash-hi), var(--splash-mid) 52%, var(--splash-lo)); }
-.intro.is-splash { cursor: pointer; }
-.intro-inner { margin: auto; width: 100%; max-width: 900px; display: flex; flex-direction: column; align-items: center; }
-.splash { display: flex; flex-direction: column; align-items: center; gap: clamp(8px, 2vh, 20px); border-radius: 24px; outline-offset: 10px; }
-.splash-head { position: relative; width: var(--s); height: var(--s); transition: width .85s cubic-bezier(.2, .8, .2, 1), height .85s cubic-bezier(.2, .8, .2, 1); }
-.is-splash .splash-head { --s: min(60vh, 84vw, 540px); }
-.is-options .splash-head { --s: clamp(120px, 21vh, 190px); }
+/* ---------- Opening screen: a sculpted head turning over the wordmark; one click fades it away to the simulator ---------- */
+.intro { position: fixed; inset: 0; z-index: 30; display: flex; cursor: pointer; padding: max(20px, env(safe-area-inset-top, 0px)) 16px 28px;
+  background: radial-gradient(120% 85% at 50% 16%, var(--splash-hi), var(--splash-mid) 52%, var(--splash-lo)); transition: opacity .75s ease; }
+.intro:focus-visible { outline: none; }
+.intro:focus-visible .wordmark { outline: 2px solid var(--accent); outline-offset: 10px; border-radius: 6px; }
+.intro.is-leaving { opacity: 0; pointer-events: none; }
+.splash { margin: auto; display: flex; flex-direction: column; align-items: center; gap: clamp(8px, 2vh, 20px); }
+.splash-head { position: relative; width: min(60vh, 84vw, 540px); height: min(60vh, 84vw, 540px); transition: transform 1s cubic-bezier(.2, .8, .2, 1); }
+.is-leaving .splash-head { transform: scale(1.07); }
 .splash-head::before { content: ""; position: absolute; inset: 6%; border-radius: 50%; background: radial-gradient(circle, var(--splash-halo), transparent 68%); animation: halo 2.6s ease-in-out infinite; }
 .splash-head.ready::before { animation: none; opacity: 1; }
 @keyframes halo { 0%, 100% { opacity: .35; transform: scale(.92); } 50% { opacity: 1; transform: scale(1); } }
@@ -223,57 +223,19 @@ header.top .btn { padding: 6px 13px; font-size: 13px; }
 .wordmark { display: flex; gap: .9em; padding-left: .34em; font-family: var(--font-display); text-transform: uppercase; letter-spacing: .34em; font-size: clamp(11.5px, 1.5vw, 15px); white-space: nowrap; }
 .wordmark b { font-weight: 700; color: var(--fg); }
 .wordmark span { font-weight: 500; color: var(--fg-3); }
-.intro-opts { display: grid; grid-template-rows: 0fr; opacity: 0; width: 100%; pointer-events: none; transition: grid-template-rows .85s cubic-bezier(.2, .8, .2, 1), opacity .5s ease .2s; }
-.intro-opts-in { overflow: hidden; min-height: 0; padding: 0 6px; }
-.is-options .intro-opts { grid-template-rows: 1fr; opacity: 1; pointer-events: auto; }
-.intro-card { margin: 22px auto 26px; max-width: 880px; background: var(--bg-2); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); padding: clamp(18px, 3.6vw, 30px); display: flex; flex-direction: column; gap: 22px; }
-.intro .grp, .intro .intro-foot { opacity: 0; transform: translateY(16px); transition: opacity .55s ease, transform .7s cubic-bezier(.2, .8, .2, 1); }
-.is-options .grp, .is-options .intro-foot { opacity: 1; transform: none; }
-.is-options .grp:nth-child(1) { transition-delay: .25s; } .is-options .grp:nth-child(2) { transition-delay: .37s; } .is-options .grp:nth-child(3) { transition-delay: .49s; } .is-options .intro-foot { transition-delay: .6s; }
-.intro .grp { display: flex; flex-direction: column; gap: 10px; }
-.intro h3 { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--fg-3); }
-.opts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
-@media (min-width: 700px) { #intro-start { grid-template-columns: repeat(3, 1fr); } }
-.opt { text-align: left; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 14px; background: var(--bg); cursor: pointer; display: flex; flex-direction: column; gap: 3px; transition: border-color .15s, background .15s; }
-.opt b { font-size: 15px; font-weight: 600; }
-.opt span { font-size: 13px; color: var(--fg-2); line-height: 1.4; }
-.opt:hover { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
-.opt[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 16%, transparent); }
-.tone-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
-.tone-row .swatches button { width: 28px; height: 28px; }
-.tone-row .val { font-size: 13px; color: var(--fg-2); }
-.intro-foot { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 18px; }
-.intro .skip { display: inline-flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--fg-2); cursor: pointer; }
-.intro .skip input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
-<div class="intro is-splash" id="intro" role="dialog" aria-modal="true" aria-label="Head and Neck Simulator">
-  <div class="intro-inner">
-    <div class="splash" id="splash" tabindex="0" role="button" aria-label="Open the simulator options">
-      <div class="splash-head" id="splash-head"><canvas id="splash-gl"></canvas></div>
-      <div class="wordmark"><b>Head and Neck</b><span>Simulator</span></div>
-    </div>
-    <div class="intro-opts" id="intro-opts" inert>
-      <div class="intro-opts-in">
-        <div class="intro-card">
-          <div class="grp"><h3>How do you want to study?</h3><div class="opts-grid" id="intro-study"></div></div>
-          <div class="grp"><h3>Where do you want to start?</h3><div class="opts-grid" id="intro-start"></div></div>
-          <div class="grp"><h3>Skin tone</h3><div class="tone-row"><div class="swatches" id="intro-tones" role="group" aria-label="Skin tone"></div><span class="val" id="intro-tone-val"></span></div></div>
-          <div class="intro-foot">
-            <label class="skip"><input type="checkbox" id="intro-skip"> Skip this screen next time</label>
-            <button class="btn primary big" id="intro-go">Start</button>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="intro" id="intro" role="button" tabindex="0" aria-label="Head and Neck Simulator. Enter">
+  <div class="splash">
+    <div class="splash-head" id="splash-head"><canvas id="splash-gl"></canvas></div>
+    <div class="wordmark"><b>Head and Neck</b><span>Simulator</span></div>
   </div>
 </div>
 <div class="wrap">
   <header class="top">
     <div class="brand"><span class="mark" aria-hidden="true"></span><h1>Head and Neck Simulator<span class="tag">3D</span></h1></div>
     <div class="seg" role="group" aria-label="Mode"><button id="mode-explore" aria-pressed="true">Explore</button><button id="mode-quiz" aria-pressed="false">Quiz</button></div>
-    <button class="btn" id="open-intro" title="Choose a study mode and starting layer">Start screen</button>
     <span class="count" id="count"></span>
   </header>
 
@@ -562,16 +524,20 @@ async function loadSystem(sys) {
     setLoad(`Loading ${SYS[sys].label.toLowerCase()}…`, null);
     const res = await fetch(pack.file); if (!res.ok) throw new Error('fetch failed ' + pack.file);
     let buf;
-    if (pack.b64) { const txt = await res.text(); const bin = atob(txt); const u8 = new Uint8Array(bin.length); for (let k = 0; k < bin.length; k++) u8[k] = bin.charCodeAt(k); buf = u8.buffer; }
+    if (pack.b64) { // decode in slices, yielding between them, so a large pack never blocks a frame
+      const txt = await res.text(); const u8 = new Uint8Array(Math.ceil(txt.length * 3 / 4)); let o = 0;
+      for (let c = 0; c < txt.length; c += 131072) { const bin = atob(txt.slice(c, c + 131072)); for (let k = 0; k < bin.length; k++) u8[o++] = bin.charCodeAt(k); await new Promise(r => setTimeout(r, 0)); }
+      buf = u8.buffer.slice(0, o); }
     else buf = await res.arrayBuffer();
-    let i = 0;
+    let i = 0, tick = performance.now();
     for (const e of pack.meshes) {
       try {
         const g = parseMesh(buf, e.off, e.len);
         const m = new THREE.Mesh(g, materials[sys]); m.userData = { id: e.id, system: sys, tier: e.tier, side: e.side, label: e.label, dirtyMat: true };
         m.matrixAutoUpdate = false; root.add(m); meshes.set(e.id, m);
       } catch (err) { console.warn('mesh', e.id, err); }
-      if (++i % 40 === 0) { setLoad(`Loading ${SYS[sys].label.toLowerCase()}… ${i}/${pack.meshes.length}`, i / pack.meshes.length * 100); await new Promise(r => setTimeout(r, 0)); }
+      if (++i % 40 === 0) setLoad(`Loading ${SYS[sys].label.toLowerCase()}… ${i}/${pack.meshes.length}`, i / pack.meshes.length * 100);
+      if (performance.now() - tick > 7) { await new Promise(r => setTimeout(r, 0)); tick = performance.now(); } // hand the frame back every few milliseconds
     }
     if (sys === 'skin') weldSkin();
     loaded.add(sys); loading.delete(sys); applyVisibility(); updateCounts();
@@ -899,106 +865,106 @@ function frame() {
   if (needsRender) { renderer.render(scene, camera); needsRender = false; }
 }
 
-/* ---------- Intro screen: choose how to study and where to start ---------- */
-const STUDY = [
-  { id: 'explore', label: 'Explore freely', desc: 'Rotate, peel and select any structure to read its card.' },
-  { id: 'name', label: 'Quiz: name it', desc: 'A structure lights up. Choose its name.' },
-  { id: 'find', label: 'Quiz: find it', desc: 'You get a name. Select the structure and confirm.' },
-  { id: 'function', label: 'Quiz: function', desc: 'Match a function to the structure it describes.' },
-];
-const STARTS = [
-  { id: 'surface', label: 'Surface', desc: 'Skin regions and landmarks, everything beneath intact.', peel: 0, systems: ['skin', 'muscle', 'bone', 'artery', 'vein', 'nerve', 'lymph', 'viscera'] },
-  { id: 'muscle', label: 'Muscles', desc: 'Skin ghosted, facial and neck muscles on bone.', peel: 1, systems: ['skin', 'muscle', 'bone'] },
-  { id: 'neuro', label: 'Vessels and nerves', desc: 'Arteries, veins, nerves and nodes over the skeleton.', peel: 3, systems: ['skin', 'bone', 'artery', 'vein', 'nerve', 'lymph'] },
-  { id: 'viscera', label: 'Glands and airway', desc: 'Salivary and thyroid glands, larynx, pharynx.', peel: 4, systems: ['skin', 'bone', 'viscera'] },
-  { id: 'bone', label: 'Skeleton', desc: 'Skull, mandible, hyoid and cervical spine.', peel: 5, systems: ['skin', 'bone'] },
-  { id: 'cns', label: 'Brain and eye', desc: 'Brain, brainstem and globe inside a ghosted head.', peel: 6, systems: ['skin', 'cns'] },
-];
+/* ---------- Opening screen ----------
+   The model's own skin, fused into one surface, subdivided and smoothed into a sculpture, drawn by a second small renderer and
+   turned at a steady rate. One click (or Enter) fades it away to the simulator. */
 const introEl = document.getElementById('intro');
-const intro = Object.assign({ study: 'explore', start: 'surface', skip: false }, store.get('intro', {}));
-function renderIntro() {
-  const opt = (kind, o, cur) => `<button class="opt" data-${kind}="${o.id}" aria-pressed="${o.id === cur}"><b>${esc(o.label)}</b><span>${esc(o.desc)}</span></button>`;
-  document.getElementById('intro-study').innerHTML = STUDY.map(o => opt('study', o, intro.study)).join('');
-  document.getElementById('intro-start').innerHTML = STARTS.map(o => opt('start', o, intro.start)).join('');
-  document.getElementById('intro-tones').innerHTML = TONES.map((t, i) => `<button data-tone="${i}" aria-pressed="${i === state.tone}" title="${esc(t.name)}" aria-label="${esc(t.name)}" style="--sw:#${t.hex.toString(16).padStart(6, '0')}"></button>`).join('');
-  document.getElementById('intro-tone-val').textContent = TONES[state.tone].name;
-  document.getElementById('intro-skip').checked = !!intro.skip;
-}
-/* The opening head: the model's own skin (plus sclera and cornea so the eyes are not empty), drawn as one matte sculpture by a
-   second small renderer. It turns slowly; once the options are open it takes on the chosen skin tone as a live preview. */
-const splash = { r: null, scene: null, cam: null, pivot: null, inner: null, mat: null, raf: 0, have: new Set(), w: 0, h: 0, col: null };
+const splash = { r: null, scene: null, cam: null, pivot: null, inner: null, mat: null, raf: 0, w: 0, h: 0, last: 0, angle: 0.55, speed: 0, ready: false, eyes: new Set() };
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+function sculptGeometry(list) {
+  // 1. fuse the separate skin regions into one indexed surface. Each region is a thin shell with side walls; where regions meet,
+  //    those walls end up inside the head and would drag the surface into grooves when smoothed, so drop every wall triangle
+  //    (its face normal is square to the surface normals of its corners).
+  const seen = new Map(); const pos = []; const nor = []; let idx = [];
+  for (const m of list) {
+    const p = m.geometry.attributes.position.array, q = m.geometry.attributes.normal.array, ix = m.geometry.index.array; const map = new Int32Array(p.length / 3);
+    for (let i = 0; i < p.length; i += 3) {
+      const k = Math.round(p[i] * 20000) + ',' + Math.round(p[i + 1] * 20000) + ',' + Math.round(p[i + 2] * 20000);
+      let j = seen.get(k); if (j === undefined) { j = pos.length / 3; seen.set(k, j); pos.push(p[i], p[i + 1], p[i + 2]); nor.push(0, 0, 0); }
+      nor[j * 3] += q[i]; nor[j * 3 + 1] += q[i + 1]; nor[j * 3 + 2] += q[i + 2]; map[i / 3] = j;
+    }
+    for (let t = 0; t < ix.length; t += 3) { const a = map[ix[t]], b = map[ix[t + 1]], c = map[ix[t + 2]]; if (a !== b && b !== c && a !== c) idx.push(a, b, c); }
+  }
+  { const keep = [];
+    for (let t = 0; t < idx.length; t += 3) {
+      const a = idx[t] * 3, b = idx[t + 1] * 3, c = idx[t + 2] * 3;
+      const ux = pos[b] - pos[a], uy = pos[b + 1] - pos[a + 1], uz = pos[b + 2] - pos[a + 2], vx = pos[c] - pos[a], vy = pos[c + 1] - pos[a + 1], vz = pos[c + 2] - pos[a + 2];
+      const fx = uy * vz - uz * vy, fy = uz * vx - ux * vz, fz = ux * vy - uy * vx, fl = Math.hypot(fx, fy, fz);
+      const nx = nor[a] + nor[b] + nor[c], ny = nor[a + 1] + nor[b + 1] + nor[c + 1], nz = nor[a + 2] + nor[b + 2] + nor[c + 2], nl = Math.hypot(nx, ny, nz);
+      if (fl > 0 && nl > 0.6 && Math.abs(fx * nx + fy * ny + fz * nz) / (fl * nl) > 0.45) keep.push(idx[t], idx[t + 1], idx[t + 2]);
+    }
+    idx = keep; }
+  // 2. subdivide twice (each triangle into four) for a round silhouette
+  for (let level = 0; level < 2; level++) {
+    const mid = new Map(); const out = [];
+    const M = (a, b) => { const k = a < b ? a * 4194304 + b : b * 4194304 + a; let j = mid.get(k); if (j === undefined) { j = pos.length / 3; mid.set(k, j); pos.push((pos[a * 3] + pos[b * 3]) / 2, (pos[a * 3 + 1] + pos[b * 3 + 1]) / 2, (pos[a * 3 + 2] + pos[b * 3 + 2]) / 2); } return j; };
+    for (let t = 0; t < idx.length; t += 3) { const a = idx[t], b = idx[t + 1], c = idx[t + 2]; const ab = M(a, b), bc = M(b, c), ca = M(c, a); out.push(a, ab, ca, ab, b, bc, ca, bc, c, ab, bc, ca); }
+    idx = out;
+  }
+  // 3. smooth: a few plain Laplacian passes to melt the facets, then Taubin passes that smooth without shrinking
+  const P = new Float32Array(pos), n = P.length / 3, S = new Float32Array(P.length), C = new Float32Array(n);
+  const pass = f => {
+    S.fill(0); C.fill(0);
+    for (let t = 0; t < idx.length; t += 3) for (let e = 0; e < 3; e++) { const a = idx[t + e], b = idx[t + (e + 1) % 3]; S[a * 3] += P[b * 3]; S[a * 3 + 1] += P[b * 3 + 1]; S[a * 3 + 2] += P[b * 3 + 2]; C[a]++; S[b * 3] += P[a * 3]; S[b * 3 + 1] += P[a * 3 + 1]; S[b * 3 + 2] += P[a * 3 + 2]; C[b]++; }
+    for (let i = 0; i < n; i++) if (C[i]) for (let a = 0; a < 3; a++) P[i * 3 + a] += f * (S[i * 3 + a] / C[i] - P[i * 3 + a]);
+  };
+  for (let k = 0; k < 4; k++) pass(0.5);
+  for (let k = 0; k < 10; k++) { pass(0.5); pass(-0.53); }
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(P, 3)); g.setIndex(new THREE.BufferAttribute(new Uint32Array(idx), 1)); g.computeVertexNormals();
+  return g;
+}
 function splashInit() {
   if (splash.r) return true;
-  try { splash.r = new THREE.WebGLRenderer({ canvas: document.getElementById('splash-gl'), antialias: true, alpha: true, powerPreference: 'low-power' }); } catch (err) { return false; }
+  try { splash.r = new THREE.WebGLRenderer({ canvas: document.getElementById('splash-gl'), antialias: true, alpha: true }); } catch (err) { return false; }
   splash.r.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); splash.r.outputEncoding = THREE.sRGBEncoding; splash.r.toneMapping = THREE.ACESFilmicToneMapping; splash.r.toneMappingExposure = 0.98; splash.r.setClearColor(0x000000, 0);
   splash.scene = new THREE.Scene(); splash.cam = new THREE.PerspectiveCamera(24, 1, 0.01, 10);
-  const look = new THREE.Vector3(0, center.y + 0.026, 0); splash.cam.position.set(0, center.y + 0.05, 0.72); splash.cam.lookAt(look);
+  splash.cam.position.set(0, center.y + 0.05, 0.72); splash.cam.lookAt(new THREE.Vector3(0, center.y + 0.026, 0));
   splash.pivot = new THREE.Group(); splash.pivot.position.set(0, 0, center.z - 0.02); splash.inner = new THREE.Group(); splash.inner.position.set(0, 0, -(center.z - 0.02)); splash.pivot.add(splash.inner); splash.scene.add(splash.pivot);
   splash.scene.add(new THREE.HemisphereLight(0xf4f7ff, 0x5c74ad, 0.42));
-  const k = new THREE.DirectionalLight(0xffffff, 1.05); k.position.set(-1.2, 1.4, 1.3); splash.scene.add(k);   // soft key from upper left
+  const k = new THREE.DirectionalLight(0xffffff, 1.05); k.position.set(-1.2, 1.4, 1.3); splash.scene.add(k);     // soft key from upper left
   const rim = new THREE.DirectionalLight(0x3f7bff, 1.35); rim.position.set(1.5, 0.35, -0.9); splash.scene.add(rim); // cool blue rim from behind
   const fill = new THREE.DirectionalLight(0xffe9d6, 0.16); fill.position.set(1.0, -0.3, 1.2); splash.scene.add(fill);
-  splash.col = new THREE.Color(splashTarget());
-  splash.mat = new THREE.MeshStandardMaterial({ color: splash.col, roughness: 0.52, metalness: 0.04, side: THREE.DoubleSide });
-  loadSystem('skin').then(splashSync); loadSystem('viscera').then(splashSync);
+  splash.mat = new THREE.MeshStandardMaterial({ color: isDark() ? 0xb4c2e0 : 0xd9e1f2, roughness: 0.52, metalness: 0.04, side: THREE.DoubleSide });
+  loadSystem('skin').then(() => {
+    if (!splash.r) return;
+    const skin = [...meshes.values()].filter(m => m.userData.system === 'skin'); if (!skin.length) return;
+    splash.geo = sculptGeometry(skin); splash.inner.add(new THREE.Mesh(splash.geo, splash.mat)); splash.ready = true; document.getElementById('splash-head').classList.add('ready');
+  }).catch(() => {});
+  loadSystem('viscera').then(() => {
+    if (!splash.r) return;
+    meshes.forEach(m => { const u = m.userData; if (u.system === 'viscera' && (u.label === 'Sclera' || u.label === 'Cornea') && !splash.eyes.has(u.id)) { splash.eyes.add(u.id); splash.inner.add(new THREE.Mesh(m.geometry, splash.mat)); } });
+  }).catch(() => {});
   return true;
-}
-function splashTarget() {
-  if (introEl.classList.contains('is-options')) { const c = new THREE.Color(TONES[state.tone].hex); return c.lerp(new THREE.Color(0xffffff), 0.12).getHex(); }
-  return isDark() ? 0xb4c2e0 : 0xd9e1f2;
-}
-function splashSync() {
-  if (!splash.r) return;
-  meshes.forEach(m => {
-    const u = m.userData; if (splash.have.has(u.id)) return;
-    if (u.system !== 'skin' && !(u.system === 'viscera' && (u.label === 'Sclera' || u.label === 'Cornea'))) return;
-    splash.inner.add(new THREE.Mesh(m.geometry, splash.mat)); splash.have.add(u.id);
-  });
-  if ([...splash.have].some(id => meshes.get(id).userData.system === 'skin')) document.getElementById('splash-head').classList.add('ready');
 }
 function splashFrame(ts) {
   if (introEl.hidden || !splash.r) { splash.raf = 0; return; }
   splash.raf = requestAnimationFrame(splashFrame);
   const el = document.getElementById('splash-head'); const w = el.clientWidth, h = el.clientHeight;
   if (w && h && (w !== splash.w || h !== splash.h)) { splash.w = w; splash.h = h; splash.r.setSize(w, h, false); splash.cam.aspect = w / h; splash.cam.updateProjectionMatrix(); }
-  splash.pivot.rotation.y = reduceMotion.matches ? 0.55 : 0.55 + ts * 0.00032;
-  splash.mat.color.lerp(splash.col.setHex(splashTarget()), 0.06);
+  // advance by elapsed time, capped, so a late frame continues the turn instead of jumping; the speed eases in from rest
+  const dt = Math.min(34, ts - (splash.last || ts)); splash.last = ts;
+  if (splash.ready && !reduceMotion.matches) { splash.speed += (0.00022 - splash.speed) * Math.min(1, dt / 1400); splash.angle += splash.speed * dt; }
+  splash.pivot.rotation.y = splash.angle;
   splash.r.render(splash.scene, splash.cam);
 }
 function splashStart() { if (splashInit() && !splash.raf) splash.raf = requestAnimationFrame(splashFrame); }
-function setIntroState(st) {
-  const opts = st === 'options'; introEl.classList.toggle('is-splash', !opts); introEl.classList.toggle('is-options', opts);
-  document.getElementById('intro-opts').inert = !opts;
-  const sp = document.getElementById('splash');
-  if (opts) { sp.removeAttribute('role'); sp.removeAttribute('tabindex'); sp.removeAttribute('aria-label'); }
-  else { sp.setAttribute('role', 'button'); sp.setAttribute('tabindex', '0'); sp.setAttribute('aria-label', 'Open the simulator options'); }
-}
-function showOptions() { if (!introEl.classList.contains('is-splash')) return; setIntroState('options'); setTimeout(() => { if (!introEl.hidden) document.getElementById('intro-go').focus({ preventScroll: true }); }, 900); }
-function openIntro() { renderIntro(); introEl.hidden = false; setIntroState('options'); splashStart(); document.getElementById('intro-go').focus({ preventScroll: true }); }
-document.getElementById('splash').addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && introEl.classList.contains('is-splash')) { e.preventDefault(); showOptions(); } });
-introEl.addEventListener('click', e => {
-  if (introEl.classList.contains('is-splash')) { showOptions(); return; } // the first click anywhere opens the options
-  const b = e.target.closest('button'); if (!b) return;
-  if (b.dataset.study) { intro.study = b.dataset.study; renderIntro(); }
-  else if (b.dataset.start) { intro.start = b.dataset.start; renderIntro(); }
-  else if (b.dataset.tone) { state.tone = +b.dataset.tone; store.set('tone', state.tone); renderTones(); buildMaterials(); renderIntro(); }
-  else if (b.id === 'intro-go') {
-    intro.skip = document.getElementById('intro-skip').checked; store.set('intro', intro);
-    const st = STARTS.find(o => o.id === intro.start) || STARTS[0];
-    hiddenIds.clear(); ghostIds.clear(); setQuery(''); setSystems(st.systems); setPeel(st.peel); renderMods();
-    if (intro.study === 'explore') setMode('explore'); else { setMode('quiz'); state.quiz.type = intro.study; state.quiz.q = null; clearQuizMarks(); renderQuiz(); }
+function enterApp() {
+  if (introEl.hidden || introEl.classList.contains('is-leaving')) return;
+  introEl.classList.add('is-leaving');
+  setTimeout(() => {
     introEl.hidden = true; resize(); needsRender = true;
-  }
-});
-document.getElementById('open-intro').onclick = openIntro;
+    if (splash.r) { if (splash.geo) splash.geo.dispose(); splash.mat.dispose(); splash.r.dispose(); splash.r = null; } // the eye meshes share the main model's geometry and are left alone
+  }, reduceMotion.matches ? 0 : 780);
+}
+introEl.addEventListener('click', enterApp);
+introEl.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); enterApp(); } });
 
 /* ---------- Boot ---------- */
 buildMaterials();
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', buildMaterials);
 new MutationObserver(buildMaterials).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 resize(); setView('front'); setPeel(0); applyCut(); computeFilter(); renderIndex(); renderDetail(); renderMods(); frame();
-if (intro.skip || location.hash.length > 1) introEl.hidden = true; else { renderIntro(); setIntroState('splash'); splashStart(); }
+if (location.hash.length > 1) introEl.hidden = true; else { splashStart(); introEl.focus({ preventScroll: true }); }
 (async () => {
   try {
     for (const s of ['skin', 'muscle', 'bone', 'artery', 'vein', 'nerve', 'lymph', 'viscera', 'cns']) { if (state.systems[s]) await loadSystem(s); }
