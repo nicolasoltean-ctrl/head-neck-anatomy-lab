@@ -23,7 +23,7 @@ img { max-width: 100%; }
   --bg: #f3f6fb; --bg-2: #ffffff; --bg-3: #e9eff9; --fg: #0e1c36; --fg-2: #465779; --fg-3: #7a89a8; --line: #dbe3f0;
   --accent: #1e5eea; --accent-fg: #ffffff; --accent-soft: #e8efff; --confirm: #0f9d58; --confirm-fg: #ffffff; --good: #16864d; --bad: #c23b3b;
   --c-skin: #c98f6a; --c-bone: #a8832e; --c-muscle: #a8463c; --c-nerve: #b48a00; --c-lymph: #2f8a5b; --c-artery: #d1232a; --c-vein: #2f5fbf; --c-viscera: #9a5a8a; --c-cns: #b0708a;
-  --stage-bg: #eaf0fa;
+  --stage-bg: #eaf0fa; --splash-hi: #ffffff; --splash-mid: #edf2fb; --splash-lo: #d6e2f7; --splash-halo: rgba(30, 94, 234, .17);
   --font-display: "Manrope", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
   --radius: 12px; --shadow: 0 1px 2px rgba(16, 40, 90, .05), 0 8px 24px rgba(16, 40, 90, .07);
 }
@@ -32,7 +32,7 @@ img { max-width: 100%; }
     --bg: #0a1120; --bg-2: #111a2d; --bg-3: #1a2540; --fg: #eaf0fc; --fg-2: #a8b6d3; --fg-3: #7083a8; --line: #24324f;
     --accent: #6c9dff; --accent-fg: #071028; --accent-soft: #18274a; --confirm: #35c27d; --confirm-fg: #04170d; --good: #5fcf8f; --bad: #ef7c7c;
     --c-skin: #e0a884; --c-bone: #e0bf6c; --c-muscle: #e8907f; --c-nerve: #f2cc4f; --c-lymph: #63d195; --c-artery: #ff6b6b; --c-vein: #6f9bff; --c-viscera: #d08fc0; --c-cns: #e0a0b8;
-    --stage-bg: #0b1322; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    --stage-bg: #0b1322; --splash-hi: #1a2848; --splash-mid: #0c1427; --splash-lo: #060b16; --splash-halo: rgba(108, 157, 255, .24); --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
     color-scheme: dark;
   }
 }
@@ -40,7 +40,7 @@ img { max-width: 100%; }
   --bg: #0a1120; --bg-2: #111a2d; --bg-3: #1a2540; --fg: #eaf0fc; --fg-2: #a8b6d3; --fg-3: #7083a8; --line: #24324f;
   --accent: #6c9dff; --accent-fg: #071028; --accent-soft: #18274a; --confirm: #35c27d; --confirm-fg: #04170d; --good: #5fcf8f; --bad: #ef7c7c;
   --c-skin: #e0a884; --c-bone: #e0bf6c; --c-muscle: #e8907f; --c-nerve: #f2cc4f; --c-lymph: #63d195; --c-artery: #ff6b6b; --c-vein: #6f9bff; --c-viscera: #d08fc0; --c-cns: #e0a0b8;
-  --stage-bg: #0b1322; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+  --stage-bg: #0b1322; --splash-hi: #1a2848; --splash-mid: #0c1427; --splash-lo: #060b16; --splash-halo: rgba(108, 157, 255, .24); --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -220,12 +220,31 @@ header.top .btn { padding: 6px 13px; font-size: 13px; }
 .pop button.confirm { padding: 10px 8px; font-size: 14px; }
 .pop button.confirm:hover { background: var(--confirm); filter: brightness(1.07); border-color: var(--confirm); }
 
-/* ---------- Intro screen ---------- */
-.intro { position: fixed; inset: 0; z-index: 30; overflow: auto; background: linear-gradient(180deg, var(--accent-soft), var(--bg) 46%); padding: max(28px, env(safe-area-inset-top, 0px)) 16px 32px; }
-.intro-card { max-width: 880px; margin: 0 auto; background: var(--bg-2); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); padding: clamp(18px, 4vw, 34px); display: flex; flex-direction: column; gap: 24px; }
-.intro-head { display: flex; flex-direction: column; gap: 10px; }
-.intro h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(26px, 5vw, 36px); letter-spacing: -.03em; line-height: 1.1; margin: 6px 0 0; text-wrap: balance; }
-.intro .lede { margin: 0; color: var(--fg-2); font-size: 15.5px; max-width: 64ch; }
+/* ---------- Opening screen: a sculpted head turning over the wordmark; a click eases the options in ---------- */
+.intro { position: fixed; inset: 0; z-index: 30; overflow: auto; display: flex; padding: max(20px, env(safe-area-inset-top, 0px)) 16px 28px;
+  background: radial-gradient(120% 85% at 50% 16%, var(--splash-hi), var(--splash-mid) 52%, var(--splash-lo)); }
+.intro.is-splash { cursor: pointer; }
+.intro-inner { margin: auto; width: 100%; max-width: 900px; display: flex; flex-direction: column; align-items: center; }
+.splash { display: flex; flex-direction: column; align-items: center; gap: clamp(8px, 2vh, 20px); border-radius: 24px; outline-offset: 10px; }
+.splash-head { position: relative; width: var(--s); height: var(--s); transition: width .85s cubic-bezier(.2, .8, .2, 1), height .85s cubic-bezier(.2, .8, .2, 1); }
+.is-splash .splash-head { --s: min(60vh, 84vw, 540px); }
+.is-options .splash-head { --s: clamp(120px, 21vh, 190px); }
+.splash-head::before { content: ""; position: absolute; inset: 6%; border-radius: 50%; background: radial-gradient(circle, var(--splash-halo), transparent 68%); animation: halo 2.6s ease-in-out infinite; }
+.splash-head.ready::before { animation: none; opacity: 1; }
+@keyframes halo { 0%, 100% { opacity: .35; transform: scale(.92); } 50% { opacity: 1; transform: scale(1); } }
+.splash-head canvas { position: relative; display: block; width: 100%; height: 100%; opacity: 0; transition: opacity 1.4s ease;
+  -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent 97%); mask-image: linear-gradient(to bottom, #000 70%, transparent 97%); }
+.splash-head.ready canvas { opacity: 1; }
+.wordmark { display: flex; gap: .9em; padding-left: .34em; font-family: var(--font-display); text-transform: uppercase; letter-spacing: .34em; font-size: clamp(11.5px, 1.5vw, 15px); white-space: nowrap; }
+.wordmark b { font-weight: 700; color: var(--fg); }
+.wordmark span { font-weight: 500; color: var(--fg-3); }
+.intro-opts { display: grid; grid-template-rows: 0fr; opacity: 0; width: 100%; pointer-events: none; transition: grid-template-rows .85s cubic-bezier(.2, .8, .2, 1), opacity .5s ease .2s; }
+.intro-opts-in { overflow: hidden; min-height: 0; padding: 0 6px; }
+.is-options .intro-opts { grid-template-rows: 1fr; opacity: 1; pointer-events: auto; }
+.intro-card { margin: 22px auto 26px; max-width: 880px; background: var(--bg-2); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); padding: clamp(18px, 3.6vw, 30px); display: flex; flex-direction: column; gap: 22px; }
+.intro .grp, .intro .intro-foot { opacity: 0; transform: translateY(16px); transition: opacity .55s ease, transform .7s cubic-bezier(.2, .8, .2, 1); }
+.is-options .grp, .is-options .intro-foot { opacity: 1; transform: none; }
+.is-options .grp:nth-child(1) { transition-delay: .25s; } .is-options .grp:nth-child(2) { transition-delay: .37s; } .is-options .grp:nth-child(3) { transition-delay: .49s; } .is-options .intro-foot { transition-delay: .6s; }
 .intro .grp { display: flex; flex-direction: column; gap: 10px; }
 .intro h3 { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--fg-3); }
 .opts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
@@ -246,19 +265,24 @@ header.top .btn { padding: 6px 13px; font-size: 13px; }
 
 </head>
 <body>
-<div class="intro" id="intro" role="dialog" aria-modal="true" aria-labelledby="intro-title">
-  <div class="intro-card">
-    <div class="intro-head">
-      <div class="brand"><span class="mark" aria-hidden="true"></span><span class="brand-name">Head and Neck Simulator</span></div>
-      <h2 id="intro-title">Set up your session</h2>
-      <p class="lede">A rotatable 3D head and neck with 564 structures you can peel from skin to brain, and <span id="intro-n">594</span> cards checked against Netter. Choose how to begin; you can change everything later.</p>
+<div class="intro is-splash" id="intro" role="dialog" aria-modal="true" aria-label="Head and Neck Simulator">
+  <div class="intro-inner">
+    <div class="splash" id="splash" tabindex="0" role="button" aria-label="Open the simulator options">
+      <div class="splash-head" id="splash-head"><canvas id="splash-gl"></canvas></div>
+      <div class="wordmark"><b>Head and Neck</b><span>Simulator</span></div>
     </div>
-    <div class="grp"><h3>How do you want to study?</h3><div class="opts-grid" id="intro-study"></div></div>
-    <div class="grp"><h3>Where do you want to start?</h3><div class="opts-grid" id="intro-start"></div></div>
-    <div class="grp"><h3>Skin tone</h3><div class="tone-row"><div class="swatches" id="intro-tones" role="group" aria-label="Skin tone"></div><span class="val" id="intro-tone-val"></span></div></div>
-    <div class="intro-foot">
-      <label class="skip"><input type="checkbox" id="intro-skip"> Skip this screen next time</label>
-      <button class="btn primary big" id="intro-go">Start</button>
+    <div class="intro-opts" id="intro-opts" inert>
+      <div class="intro-opts-in">
+        <div class="intro-card">
+          <div class="grp"><h3>How do you want to study?</h3><div class="opts-grid" id="intro-study"></div></div>
+          <div class="grp"><h3>Where do you want to start?</h3><div class="opts-grid" id="intro-start"></div></div>
+          <div class="grp"><h3>Skin tone</h3><div class="tone-row"><div class="swatches" id="intro-tones" role="group" aria-label="Skin tone"></div><span class="val" id="intro-tone-val"></span></div></div>
+          <div class="intro-foot">
+            <label class="skip"><input type="checkbox" id="intro-skip"> Skip this screen next time</label>
+            <button class="btn primary big" id="intro-go">Start</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -910,7 +934,6 @@ const STARTS = [
 const introEl = document.getElementById('intro');
 const intro = Object.assign({ study: 'explore', start: 'surface', skip: false }, store.get('intro', {}));
 function renderIntro() {
-  document.getElementById('intro-n').textContent = DATA.length;
   const opt = (kind, o, cur) => `<button class="opt" data-${kind}="${o.id}" aria-pressed="${o.id === cur}"><b>${esc(o.label)}</b><span>${esc(o.desc)}</span></button>`;
   document.getElementById('intro-study').innerHTML = STUDY.map(o => opt('study', o, intro.study)).join('');
   document.getElementById('intro-start').innerHTML = STARTS.map(o => opt('start', o, intro.start)).join('');
@@ -918,8 +941,61 @@ function renderIntro() {
   document.getElementById('intro-tone-val').textContent = TONES[state.tone].name;
   document.getElementById('intro-skip').checked = !!intro.skip;
 }
-function openIntro() { renderIntro(); introEl.hidden = false; document.getElementById('intro-go').focus(); }
+/* The opening head: the model's own skin (plus sclera and cornea so the eyes are not empty), drawn as one matte sculpture by a
+   second small renderer. It turns slowly; once the options are open it takes on the chosen skin tone as a live preview. */
+const splash = { r: null, scene: null, cam: null, pivot: null, inner: null, mat: null, raf: 0, have: new Set(), w: 0, h: 0, col: null };
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+function splashInit() {
+  if (splash.r) return true;
+  try { splash.r = new THREE.WebGLRenderer({ canvas: document.getElementById('splash-gl'), antialias: true, alpha: true, powerPreference: 'low-power' }); } catch (err) { return false; }
+  splash.r.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); splash.r.outputEncoding = THREE.sRGBEncoding; splash.r.toneMapping = THREE.ACESFilmicToneMapping; splash.r.toneMappingExposure = 0.98; splash.r.setClearColor(0x000000, 0);
+  splash.scene = new THREE.Scene(); splash.cam = new THREE.PerspectiveCamera(24, 1, 0.01, 10);
+  const look = new THREE.Vector3(0, center.y + 0.026, 0); splash.cam.position.set(0, center.y + 0.05, 0.72); splash.cam.lookAt(look);
+  splash.pivot = new THREE.Group(); splash.pivot.position.set(0, 0, center.z - 0.02); splash.inner = new THREE.Group(); splash.inner.position.set(0, 0, -(center.z - 0.02)); splash.pivot.add(splash.inner); splash.scene.add(splash.pivot);
+  splash.scene.add(new THREE.HemisphereLight(0xf4f7ff, 0x5c74ad, 0.42));
+  const k = new THREE.DirectionalLight(0xffffff, 1.05); k.position.set(-1.2, 1.4, 1.3); splash.scene.add(k);   // soft key from upper left
+  const rim = new THREE.DirectionalLight(0x3f7bff, 1.35); rim.position.set(1.5, 0.35, -0.9); splash.scene.add(rim); // cool blue rim from behind
+  const fill = new THREE.DirectionalLight(0xffe9d6, 0.16); fill.position.set(1.0, -0.3, 1.2); splash.scene.add(fill);
+  splash.col = new THREE.Color(splashTarget());
+  splash.mat = new THREE.MeshStandardMaterial({ color: splash.col, roughness: 0.52, metalness: 0.04, side: THREE.DoubleSide });
+  loadSystem('skin').then(splashSync); loadSystem('viscera').then(splashSync);
+  return true;
+}
+function splashTarget() {
+  if (introEl.classList.contains('is-options')) { const c = new THREE.Color(TONES[state.tone].hex); return c.lerp(new THREE.Color(0xffffff), 0.12).getHex(); }
+  return isDark() ? 0xb4c2e0 : 0xd9e1f2;
+}
+function splashSync() {
+  if (!splash.r) return;
+  meshes.forEach(m => {
+    const u = m.userData; if (splash.have.has(u.id)) return;
+    if (u.system !== 'skin' && !(u.system === 'viscera' && (u.label === 'Sclera' || u.label === 'Cornea'))) return;
+    splash.inner.add(new THREE.Mesh(m.geometry, splash.mat)); splash.have.add(u.id);
+  });
+  if ([...splash.have].some(id => meshes.get(id).userData.system === 'skin')) document.getElementById('splash-head').classList.add('ready');
+}
+function splashFrame(ts) {
+  if (introEl.hidden || !splash.r) { splash.raf = 0; return; }
+  splash.raf = requestAnimationFrame(splashFrame);
+  const el = document.getElementById('splash-head'); const w = el.clientWidth, h = el.clientHeight;
+  if (w && h && (w !== splash.w || h !== splash.h)) { splash.w = w; splash.h = h; splash.r.setSize(w, h, false); splash.cam.aspect = w / h; splash.cam.updateProjectionMatrix(); }
+  splash.pivot.rotation.y = reduceMotion.matches ? 0.55 : 0.55 + ts * 0.00032;
+  splash.mat.color.lerp(splash.col.setHex(splashTarget()), 0.06);
+  splash.r.render(splash.scene, splash.cam);
+}
+function splashStart() { if (splashInit() && !splash.raf) splash.raf = requestAnimationFrame(splashFrame); }
+function setIntroState(st) {
+  const opts = st === 'options'; introEl.classList.toggle('is-splash', !opts); introEl.classList.toggle('is-options', opts);
+  document.getElementById('intro-opts').inert = !opts;
+  const sp = document.getElementById('splash');
+  if (opts) { sp.removeAttribute('role'); sp.removeAttribute('tabindex'); sp.removeAttribute('aria-label'); }
+  else { sp.setAttribute('role', 'button'); sp.setAttribute('tabindex', '0'); sp.setAttribute('aria-label', 'Open the simulator options'); }
+}
+function showOptions() { if (!introEl.classList.contains('is-splash')) return; setIntroState('options'); setTimeout(() => { if (!introEl.hidden) document.getElementById('intro-go').focus({ preventScroll: true }); }, 900); }
+function openIntro() { renderIntro(); introEl.hidden = false; setIntroState('options'); splashStart(); document.getElementById('intro-go').focus({ preventScroll: true }); }
+document.getElementById('splash').addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && introEl.classList.contains('is-splash')) { e.preventDefault(); showOptions(); } });
 introEl.addEventListener('click', e => {
+  if (introEl.classList.contains('is-splash')) { showOptions(); return; } // the first click anywhere opens the options
   const b = e.target.closest('button'); if (!b) return;
   if (b.dataset.study) { intro.study = b.dataset.study; renderIntro(); }
   else if (b.dataset.start) { intro.start = b.dataset.start; renderIntro(); }
@@ -939,7 +1015,7 @@ buildMaterials();
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', buildMaterials);
 new MutationObserver(buildMaterials).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 resize(); setView('front'); setPeel(0); applyCut(); computeFilter(); renderIndex(); renderDetail(); renderMods(); frame();
-if (intro.skip || location.hash.length > 1) introEl.hidden = true; else renderIntro();
+if (intro.skip || location.hash.length > 1) introEl.hidden = true; else { renderIntro(); setIntroState('splash'); splashStart(); }
 (async () => {
   try {
     for (const s of ['skin', 'muscle', 'bone', 'artery', 'vein', 'nerve', 'lymph', 'viscera', 'cns']) { if (state.systems[s]) await loadSystem(s); }

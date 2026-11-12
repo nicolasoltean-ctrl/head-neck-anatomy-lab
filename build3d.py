@@ -154,7 +154,7 @@ print("artifact ->", here / "lab3d.html", f"{len(out_art)//1024} KB")
 out = tpl.replace("/*__DATA__*/[]", j(items)).replace("/*__MANIFEST__*/{}", j(slim))
 
 # standalone
-split = out.index('<div class="intro"')  # first body element
+split = out.index('<div class="intro')  # first body element (its class list varies)
 head_part = out[:split].replace('<meta name="claude:viewport-fit-sides" content="cover">\n', "")
 body_part = out[split:]
 favicon = ("data:image/svg+xml," + "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f6f8b'/%3E%3Cpath d='M20 50 C14 40 16 24 30 18 C42 13 52 22 50 34 C49 42 44 44 42 48 L36 50 L34 46 L28 46 L26 52 Z' fill='%23f5f0e6'/%3E%3Ccircle cx='27' cy='29' r='3' fill='%231f6f8b'/%3E%3C/svg%3E")
