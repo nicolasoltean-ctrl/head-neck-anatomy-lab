@@ -222,22 +222,46 @@ header.top .btn { padding: 6px 13px; font-size: 13px; }
 
 /* ---------- Opening screen: a sculpted head turning over the wordmark; one click fades it away to the simulator ---------- */
 .intro { position: fixed; inset: 0; z-index: 30; display: flex; cursor: pointer; padding: max(20px, env(safe-area-inset-top, 0px)) 16px 28px;
-  background: radial-gradient(120% 85% at 50% 16%, var(--splash-hi), var(--splash-mid) 52%, var(--splash-lo)); transition: opacity .75s ease; }
+  background: radial-gradient(120% 85% at 50% 16%, var(--splash-hi), var(--splash-mid) 52%, var(--splash-lo)); }
 .intro:focus-visible { outline: none; }
 .intro:focus-visible .wordmark { outline: 2px solid var(--accent); outline-offset: 10px; border-radius: 6px; }
-.intro.is-leaving { opacity: 0; pointer-events: none; }
+.intro.is-leaving { background: none; pointer-events: none; } /* the simulator behind sits on the identical gradient, so nothing appears to change */
 .splash { margin: auto; display: flex; flex-direction: column; align-items: center; gap: clamp(8px, 2vh, 20px); }
-.splash-head { position: relative; width: min(60vh, 84vw, 540px); height: min(60vh, 84vw, 540px); transition: transform 1s cubic-bezier(.2, .8, .2, 1); }
-.is-leaving .splash-head { transform: scale(1.07); }
+.splash-head { position: relative; width: min(60vh, 84vw, 540px); height: min(60vh, 84vw, 540px); transition: transform .95s cubic-bezier(.3, .7, .2, 1); }
+.intro .wordmark { transition: transform .9s cubic-bezier(.3, .7, .2, 1); }
 .splash-head::before { content: ""; position: absolute; inset: 6%; border-radius: 50%; background: radial-gradient(circle, var(--splash-halo), transparent 68%); animation: halo 2.6s ease-in-out infinite; }
-.splash-head.ready::before { animation: none; opacity: 1; }
+.splash-head.ready::before { animation: none; opacity: 1; transition: opacity .6s ease .3s; }
+.is-leaving .splash-head.ready::before { opacity: 0; }
 @keyframes halo { 0%, 100% { opacity: .35; transform: scale(.92); } 50% { opacity: 1; transform: scale(1); } }
 .splash-head canvas { position: relative; display: block; width: 100%; height: 100%; opacity: 0; transition: opacity 1.4s ease;
   -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent 97%); mask-image: linear-gradient(to bottom, #000 70%, transparent 97%); }
 .splash-head.ready canvas { opacity: 1; }
+.is-leaving .splash-head.ready canvas { opacity: 0; transition: opacity .55s ease .6s; } /* cross-fades into the real model underneath */
 .wordmark { display: flex; gap: .9em; padding-left: .34em; font-family: var(--font-display); text-transform: uppercase; letter-spacing: .34em; font-size: clamp(11.5px, 1.5vw, 15px); white-space: nowrap; }
 .wordmark b { font-weight: 700; color: var(--fg); }
 .wordmark span { font-weight: 500; color: var(--fg-3); }
+
+/* ---------- One continuous space: the simulator sits on the opening screen's gradient ---------- */
+body { background: radial-gradient(120% 85% at 50% 16%, var(--splash-hi), var(--splash-mid) 52%, var(--splash-lo)) fixed; }
+body::before { background: var(--splash-hi); }
+header.top { background: none; border: 0; box-shadow: none; padding: 8px 6px 2px; margin-bottom: 12px; }
+header.top h1.wordmark { margin: 0; font-size: clamp(11.5px, 1.5vw, 15px); letter-spacing: .34em; font-weight: 500; }
+body:not(.docked) #brand { visibility: hidden; } /* until the opening wordmark has slid into its place */
+.stage { background-color: color-mix(in srgb, var(--bg-2) 26%, transparent); border-color: color-mix(in srgb, var(--line) 55%, transparent); box-shadow: none; }
+.stage::before { content: ""; position: absolute; left: 50%; top: 50%; height: 88%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(circle, var(--splash-halo), transparent 68%); pointer-events: none; }
+.stage canvas { position: relative; }
+.card, .controls { background: color-mix(in srgb, var(--bg-2) 82%, transparent); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); }
+.chip { background: color-mix(in srgb, var(--bg-2) 80%, transparent); }
+/* before the first click everything but the gradient is held back; on entry it eases in around the head */
+body.pre header.top, body.pre .toolbar, body.pre .controls, body.pre .panel .card, body.pre .foot, body.pre .stage > :not(canvas) { opacity: 0; }
+body.pre .toolbar { transform: translateY(-10px); } body.pre .controls { transform: translateY(18px); } body.pre .panel .card { transform: translateX(22px); }
+body.pre .stage { border-color: transparent; background-color: transparent; } body.pre .stage::before, body.pre #gl { opacity: 0; }
+body.entering header.top, body.entering .toolbar, body.entering .controls, body.entering .panel .card, body.entering .foot, body.entering .stage, body.entering .stage > *, body.entering .stage::before {
+  transition: opacity .7s ease, transform .9s cubic-bezier(.2, .8, .2, 1), border-color .7s ease, background-color .7s ease; }
+body.entering .toolbar { transition-delay: .1s; } body.entering .controls { transition-delay: .32s; } body.entering .foot { transition-delay: .6s; }
+body.entering .panel .card { transition-delay: .2s; } body.entering .panel .card ~ .card { transition-delay: .3s; } body.entering .panel .card ~ .card ~ .card { transition-delay: .4s; }
+body.entering .stage::before { transition-delay: .5s; }
+body.entering #gl { transition: opacity .55s ease .6s; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
@@ -251,7 +275,7 @@ header.top .btn { padding: 6px 13px; font-size: 13px; }
 </div>
 <div class="wrap">
   <header class="top">
-    <div class="brand"><span class="mark" aria-hidden="true"></span><h1>Head and Neck Simulator<span class="tag">3D</span></h1></div>
+    <h1 class="wordmark" id="brand"><b>Head and Neck</b><span>Simulator</span></h1>
     <div class="seg" role="group" aria-label="Mode"><button id="mode-explore" aria-pressed="true">Explore</button><button id="mode-quiz" aria-pressed="false">Quiz</button></div>
     <span class="count" id="count"></span>
   </header>
@@ -378,7 +402,7 @@ const state = {
 /* ---------- Three.js scene ---------- */
 const canvas = document.getElementById('gl');
 const stageEl = document.getElementById('stage'), popEl = document.getElementById('pop');
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'high-performance' });
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
 renderer.outputEncoding = THREE.sRGBEncoding;
 const scene = new THREE.Scene();
@@ -406,7 +430,7 @@ function buildMaterials() {
   selMat = new THREE.MeshPhongMaterial({ color: dark ? 0x8ccbff : 0x1e9bff, emissive: dark ? 0x15407a : 0x0a3a7a, shininess: 30, side: THREE.DoubleSide });
   goodMat = new THREE.MeshPhongMaterial({ color: 0x3fbf6f, emissive: 0x0f4a26, side: THREE.DoubleSide });
   badMat = new THREE.MeshPhongMaterial({ color: 0xd95050, emissive: 0x4a1010, side: THREE.DoubleSide });
-  renderer.setClearColor(new THREE.Color(getComputedStyle(document.documentElement).getPropertyValue('--stage-bg').trim() || (dark ? '#0e1218' : '#e9ecf0')));
+  renderer.setClearColor(0x000000, 0); // transparent: the stage floats on the page's gradient, the same one the opening screen uses
   meshes.forEach(m => { m.userData.dirtyMat = true; });
   applyVisibility();
 }
@@ -934,9 +958,9 @@ function splashInit() {
   if (splash.r) return true;
   try { splash.r = new THREE.WebGLRenderer({ canvas: document.getElementById('splash-gl'), antialias: true, alpha: true }); } catch (err) { return false; }
   splash.r.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); splash.r.outputEncoding = THREE.sRGBEncoding; splash.r.toneMapping = THREE.ACESFilmicToneMapping; splash.r.toneMappingExposure = 0.98; splash.r.setClearColor(0x000000, 0);
-  splash.scene = new THREE.Scene(); splash.cam = new THREE.PerspectiveCamera(24, 1, 0.01, 10);
-  splash.cam.position.set(0, center.y + 0.05, 0.72); splash.cam.lookAt(new THREE.Vector3(0, center.y + 0.026, 0));
-  splash.pivot = new THREE.Group(); splash.pivot.position.set(0, 0, center.z - 0.02); splash.inner = new THREE.Group(); splash.inner.position.set(0, 0, -(center.z - 0.02)); splash.pivot.add(splash.inner); splash.scene.add(splash.pivot);
+  splash.scene = new THREE.Scene(); splash.cam = new THREE.PerspectiveCamera(camera.fov, 1, 0.01, 10);
+  { const ph = VIEWS.front[1], d = radius * 3.4; splash.cam.position.set(center.x, center.y + d * Math.cos(ph), center.z + d * Math.sin(ph)); splash.cam.lookAt(center); } // identical to setView('front')
+  splash.pivot = new THREE.Group(); splash.pivot.position.set(center.x, 0, center.z); splash.inner = new THREE.Group(); splash.inner.position.set(-center.x, 0, -center.z); splash.pivot.add(splash.inner); splash.scene.add(splash.pivot); // turns about the main camera's orbit axis
   splash.scene.add(new THREE.HemisphereLight(0xf4f7ff, 0x5c74ad, 0.42));
   const k = new THREE.DirectionalLight(0xffffff, 1.05); k.position.set(-1.2, 1.4, 1.3); splash.scene.add(k);     // soft key from upper left
   const rim = new THREE.DirectionalLight(0x3f7bff, 1.35); rim.position.set(1.5, 0.35, -0.9); splash.scene.add(rim); // cool blue rim from behind
@@ -960,18 +984,39 @@ function splashFrame(ts) {
   if (w && h && (w !== splash.w || h !== splash.h)) { splash.w = w; splash.h = h; splash.r.setSize(w, h, false); splash.cam.aspect = w / h; splash.cam.updateProjectionMatrix(); }
   // advance by elapsed time, capped, so a late frame continues the turn instead of jumping; the speed eases in from rest
   const dt = Math.min(34, ts - (splash.last || ts)); splash.last = ts;
-  if (splash.ready && !reduceMotion.matches) { splash.speed += (0.00022 - splash.speed) * Math.min(1, dt / 1400); splash.angle += splash.speed * dt; }
+  if (splash.ready && !splash.frozen && !reduceMotion.matches) { splash.speed += (0.00022 - splash.speed) * Math.min(1, dt / 1400); splash.angle += splash.speed * dt; }
   splash.pivot.rotation.y = splash.angle;
   splash.r.render(splash.scene, splash.cam);
 }
 function splashStart() { if (splashInit() && !splash.raf) splash.raf = requestAnimationFrame(splashFrame); }
+/* Entering: the sculpture glides to where the stage's model is and cross-fades into it in the same pose, the wordmark slides up
+   to become the header, and the panels ease in around them. Then the model turns to face front. */
+const wrapEl = document.querySelector('.wrap');
+let settleTok = 0;
+function settleFront() {
+  const tok = ++settleTok, from = orbit.theta, t0 = performance.now();
+  (function step(now) { if (tok !== settleTok) return; const u = Math.min(1, (now - t0) / 1700), e = 1 - Math.pow(1 - u, 3); orbit.theta = from * (1 - e); updateCamera(); if (u < 1) requestAnimationFrame(step); })(t0);
+}
+canvas.addEventListener('pointerdown', () => { settleTok++; }, true); canvas.addEventListener('wheel', () => { settleTok++; }, { capture: true, passive: true });
 function enterApp() {
   if (introEl.hidden || introEl.classList.contains('is-leaving')) return;
-  introEl.classList.add('is-leaving');
-  setTimeout(() => {
-    introEl.hidden = true; resize(); needsRender = true;
+  const finish = () => {
+    introEl.hidden = true; document.body.classList.remove('pre', 'entering'); document.body.classList.add('docked'); wrapEl.inert = false;
     if (splash.r) { if (splash.geo) splash.geo.dispose(); splash.mat.dispose(); splash.r.dispose(); splash.r = null; } // the eye meshes share the main model's geometry and are left alone
-  }, reduceMotion.matches ? 0 : 780);
+    resize(); needsRender = true;
+  };
+  if (reduceMotion.matches || !splash.r) { finish(); return; }
+  // give the sculpture's pose to the main camera: turning the model by +a is the camera orbiting by -a
+  splash.frozen = true; setView('front');
+  let a = splash.angle % (2 * Math.PI); if (a > Math.PI) a -= 2 * Math.PI; if (a < -Math.PI) a += 2 * Math.PI; orbit.theta = -a; updateCamera();
+  const head = document.getElementById('splash-head'), wm = introEl.querySelector('.wordmark');
+  const hr = head.getBoundingClientRect(), sr = stageEl.getBoundingClientRect(), wr = wm.getBoundingClientRect(), br = document.getElementById('brand').getBoundingClientRect();
+  // both cameras share one field of view and distance, so matching the canvas heights makes the two heads the same size
+  head.style.transform = `translate(${sr.left + sr.width / 2 - (hr.left + hr.width / 2)}px, ${sr.top + sr.height / 2 - (hr.top + hr.height / 2)}px) scale(${sr.height / hr.height})`;
+  wm.style.transform = `translate(${br.left - wr.left}px, ${br.top - wr.top}px)`;
+  introEl.classList.add('is-leaving'); document.body.classList.remove('pre'); document.body.classList.add('entering');
+  setTimeout(() => { document.body.classList.add('docked'); wm.style.visibility = 'hidden'; }, 930);
+  setTimeout(() => { finish(); settleFront(); }, 1300);
 }
 introEl.addEventListener('click', enterApp);
 introEl.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); enterApp(); } });
@@ -981,7 +1026,7 @@ buildMaterials();
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', buildMaterials);
 new MutationObserver(buildMaterials).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 resize(); setView('front'); setPeel(0); applyCut(); computeFilter(); renderIndex(); renderDetail(); renderMods(); frame();
-if (location.hash.length > 1) introEl.hidden = true; else { splashStart(); introEl.focus({ preventScroll: true }); }
+if (location.hash.length > 1) { introEl.hidden = true; document.body.classList.add('docked'); } else { document.body.classList.add('pre'); wrapEl.inert = true; splashStart(); introEl.focus({ preventScroll: true }); }
 (async () => {
   try {
     for (const s of ['skin', 'muscle', 'bone', 'artery', 'vein', 'nerve', 'lymph', 'viscera', 'cns']) { if (state.systems[s]) await loadSystem(s); }
