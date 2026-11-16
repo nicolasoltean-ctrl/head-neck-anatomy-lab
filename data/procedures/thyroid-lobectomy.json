@@ -1,0 +1,462 @@
+{
+ "id": "thyroid-lobectomy",
+ "name": "Thyroid lobectomy (hemithyroidectomy)",
+ "category": "Endocrine neck",
+ "side": "l",
+ "summary": "Removal of one thyroid lobe with the isthmus, leaving the opposite lobe in place, performed by dissecting on the thyroid capsule so that everything lying against it stays in the neck. The anatomy matters because the recurrent laryngeal nerve, the external branch of the superior laryngeal nerve and both parathyroid glands with their end-arterial supply all lie within millimetres of that capsule.",
+ "setup": "Supine with the neck extended over a shoulder roll and the head supported in the midline. A transverse collar incision is placed in a skin crease between the cricoid cartilage and the suprasternal notch, centred on the midline and reaching towards the anterior borders of the sternocleidomastoid muscles; the thyroid notch, cricoid arch and suprasternal notch are palpated and marked first.",
+ "steps": [
+  {
+   "title": "Surface landmarks and collar incision",
+   "action": "The midline laryngeal skeleton is palpated from above down: thyroid notch, cricoid arch, then the tracheal rings to the suprasternal notch. The isthmus lies over the upper trachea just below the cricoid, and each lobe extends from the oblique line of the thyroid cartilage down towards the thoracic inlet. The incision is carried through skin and subcutaneous fat onto the platysma.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "skin",
+     "bone"
+    ],
+    "peel": 0
+   },
+   "focus": [
+    "Muscular triangle",
+    "Cricoid cartilage",
+    "Thyroid cartilage"
+   ],
+   "risk": [],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "The cricoid arch is the most reliable palpable landmark; the isthmus lies immediately below it over the upper tracheal rings.",
+    "The gland occupies the muscular triangle: midline medially, superior belly of omohyoid above and laterally, anterior border of sternocleidomastoid below and laterally."
+   ],
+   "pearl": "The gland is fixed to the larynx and trachea by the pretracheal fascia, which is why it rises on swallowing and why the cricoid predicts the level of the isthmus."
+  },
+  {
+   "title": "Subplatysmal flaps",
+   "action": "The platysma is divided in the line of the incision and flaps are raised in the subplatysmal plane, between the deep surface of the platysma and the investing layer of deep cervical fascia. The upper flap reaches the thyroid notch and the lower flap the suprasternal notch. The anterior jugular veins stay down on the investing fascia.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "vein"
+    ],
+    "peel": 1
+   },
+   "focus": [
+    "Platysma",
+    "Superficial investing cervical fascia"
+   ],
+   "risk": [
+    {
+     "label": "Anterior jugular vein",
+     "why": "Lies immediately deep to the flap plane on the investing fascia; a flap raised too deep tears it or its communicating arch, so the plane is kept hard on the platysma."
+    },
+    {
+     "label": "card:transverse-cervical-nerve",
+     "why": "Its branches run in and just deep to the platysma across the upper flap; they are divided with the flap, which accounts for numbness of the anterior neck skin."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "The platysma is thin or absent in the midline, so the plane is easiest to enter laterally and carry medially.",
+    "The anterior jugular veins descend either side of the midline and are joined above the sternum by the jugular venous arch."
+   ],
+   "pearl": "The correct plane is bloodless and leaves the anterior jugular veins on the floor of the dissection, not on the flap."
+  },
+  {
+   "title": "Midline raphe and separation of the strap muscles",
+   "action": "The investing fascia is opened in the midline, where the two sternohyoid muscles meet at an avascular raphe, from the thyroid notch to the suprasternal notch. Sternohyoid is the superficial strap; sternothyroid lies deep and slightly lateral to it, directly on the thyroid capsule, and is lifted off the gland in a loose areolar plane.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "vein",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Sternohyoid muscle",
+    "Sternothyroid muscle",
+    "Anterior jugular vein"
+   ],
+   "risk": [
+    {
+     "label": "Anterior jugular vein",
+     "why": "Runs beside the midline and may cross it through a communicating vein; straying off the raphe opens it."
+    },
+    {
+     "label": "card:ansa-cervicalis",
+     "why": "Supplies the straps through branches that enter their lower lateral parts; if a strap must be divided for exposure it is cut high so the nerve supply to the bulk of the muscle is kept."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "The midline is found most easily low in the neck, where the sternohyoids diverge slightly towards the sternum.",
+    "Sternothyroid inserts on the oblique line of the thyroid cartilage and so caps the superior pole of the lobe."
+   ],
+   "pearl": "Because sternothyroid ends on the oblique line, it is the muscle that limits access to the superior pole; its upper fibres may be released there to bring the pole into view.",
+   "check": {
+    "prompt": "Click the vein that descends beside the midline on the strap muscles and is linked to its fellow above the sternum",
+    "answer": "Anterior jugular vein"
+   }
+  },
+  {
+   "title": "Lateral mobilisation and the middle thyroid vein",
+   "action": "With the straps retracted laterally the lobe is drawn medially and forwards, opening the space between the gland and the carotid sheath. The middle thyroid vein, when present, crosses this space from the lateral border of the lobe, passing in front of the common carotid artery to enter the internal jugular vein. It is divided close to the gland, which lets the lobe rotate medially and exposes its posterior surface.",
+   "view": {
+    "from": "left-front",
+    "systems": [
+     "muscle",
+     "artery",
+     "vein",
+     "nerve",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Thyroid gland",
+    "Internal jugular vein",
+    "Left common carotid artery"
+   ],
+   "risk": [
+    {
+     "label": "card:middle-thyroid-vein",
+     "why": "Short, thin-walled and unaccompanied by an artery; medial traction on the lobe avulses it from the internal jugular vein unless it is secured before the lobe is delivered."
+    },
+    {
+     "label": "Internal jugular vein",
+     "why": "Forms the lateral limit of the dissection; a torn middle thyroid vein leaves a side hole in it."
+    }
+   ],
+   "hide": [
+    "Sternohyoid muscle",
+    "Sternothyroid muscle",
+    "Anterior jugular vein"
+   ],
+   "ghost": [
+    "Sternocleidomastoid muscle",
+    "Omohyoid muscle"
+   ],
+   "landmarks": [
+    "The carotid sheath (common carotid medially, internal jugular vein laterally, vagus behind and between) is the lateral wall of the thyroid bed.",
+    "The middle thyroid vein is the only thyroid vessel that runs directly lateral; the superior and inferior pedicles run with the long axis of the lobe."
+   ],
+   "pearl": "The middle thyroid vein has no companion artery and drains straight into the internal jugular vein, so it is the first tether to release and the easiest vessel to tear."
+  },
+  {
+   "title": "Superior pole: vessels and the external laryngeal nerve",
+   "action": "The superior pole is drawn downwards and laterally, opening the avascular space between the pole and the cricothyroid muscle. The superior thyroid artery descends from the external carotid with the superior thyroid vein and breaks into anterior and posterior branches on the pole; these are divided individually on the capsule. The external branch of the superior laryngeal nerve descends on the inferior constrictor, medial to the vessels, and turns forwards to enter the cricothyroid.",
+   "view": {
+    "from": "left-front",
+    "systems": [
+     "muscle",
+     "artery",
+     "vein",
+     "nerve",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Superior thyroid vein",
+    "Thyroid gland",
+    "Straight part of cricothyroid muscle",
+    "Oblique part of cricothyroid muscle",
+    "Inferior pharyngeal constrictor",
+    "Thyroid cartilage"
+   ],
+   "risk": [
+    {
+     "label": "card:external-laryngeal-nerve",
+     "why": "Runs with the superior thyroid vessels and in some necks crosses them at or below the tip of the pole; it is spared by opening the space medial to the pole and taking each vessel branch separately on the capsule, never the pedicle en masse."
+    },
+    {
+     "label": "card:superior-thyroid-artery",
+     "why": "A stump divided high or under tension retracts beneath the straps towards the carotid triangle and bleeds out of reach; it is controlled low, on the gland."
+    },
+    {
+     "label": "Superior parathyroid gland",
+     "why": "May depend on the posterior branch of the superior thyroid artery; dividing only the branches that enter the gland keeps that branch."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Sternocleidomastoid muscle",
+    "Omohyoid muscle"
+   ],
+   "landmarks": [
+    "The nerve lies in the triangle between the superior pole and its vessels laterally, the inferior constrictor and cricothyroid medially, and the sternothyroid insertion on the oblique line above.",
+    "The internal branch of the superior laryngeal nerve is higher, piercing the thyrohyoid membrane with the superior laryngeal artery, and is out of the field."
+   ],
+   "pearl": "The external laryngeal nerve supplies the cricothyroid, the tensor of the vocal fold; its loss costs pitch range and vocal stamina while the cord still moves on laryngoscopy.",
+   "check": {
+    "prompt": "Click the pharyngeal muscle on whose surface the external laryngeal nerve descends before it reaches the cricothyroid",
+    "answer": "Inferior pharyngeal constrictor"
+   }
+  },
+  {
+   "title": "Parathyroid glands and their blood supply",
+   "action": "With the lobe rotated medially its posterior surface is inspected under the thin fascial layer that covers it. The superior parathyroid lies on the back of the upper half of the lobe at about the level of the cricoid cartilage; the inferior gland lies on or near the lower pole and is more variable in position. Each gland is swept off the capsule posterolaterally on its own vascular pedicle by dividing only the terminal vessels that enter the thyroid, medial to the parathyroid.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "artery",
+     "vein",
+     "nerve",
+     "viscera",
+     "bone"
+    ],
+    "peel": 3
+   },
+   "focus": [
+    "Superior parathyroid gland",
+    "Inferior parathyroid gland",
+    "Inferior thyroid artery",
+    "Thyroid gland"
+   ],
+   "risk": [
+    {
+     "label": "Superior parathyroid gland",
+     "why": "Its small end-artery enters at a hilum on the lateral side; dissection lateral to the gland or diathermy near it leaves it in place but ischaemic."
+    },
+    {
+     "label": "Inferior parathyroid gland",
+     "why": "Lies among the inferior thyroid veins and the thyrothymic fat and is removed with the lobe unless it is looked for on the lower pole before those veins are divided."
+    },
+    {
+     "label": "Inferior thyroid artery",
+     "why": "Supplies both parathyroids in most necks; ligating its trunk laterally devascularises them, so only its terminal branches are divided on the capsule."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Internal jugular vein",
+    "Left common carotid artery"
+   ],
+   "landmarks": [
+    "Superior gland: above the crossing of the inferior thyroid artery and the recurrent laryngeal nerve, and dorsal to the plane of the nerve.",
+    "Inferior gland: below that crossing and ventral to the plane of the nerve, on the lower pole or in the thyrothymic ligament.",
+    "The inferior gland descends with the thymus from the third pouch, the superior with the thyroid from the fourth, which is why the inferior is the less predictable."
+   ],
+   "pearl": "Both parathyroids are usually fed by the inferior thyroid artery, with the superior thyroid artery or the anastomosis between the two contributing to the superior gland, so the trunk of the inferior thyroid artery is preserved.",
+   "check": {
+    "prompt": "Click the parathyroid gland that descends with the thymus and is therefore the more variable in position",
+    "answer": "Inferior parathyroid gland"
+   }
+  },
+  {
+   "title": "Recurrent laryngeal nerve: the inferior thyroid artery and the tracheo-oesophageal groove",
+   "action": "The inferior thyroid artery arches medially from the thyrocervical trunk, passing behind the carotid sheath to reach the middle of the posterior border of the lobe. The left recurrent laryngeal nerve, having hooked under the aortic arch, ascends in or just beside the groove between trachea and oesophagus and crosses the artery close to the gland. The nerve is sought low in the neck by spreading gently parallel to its course, then followed upwards; nothing in this area is divided until the nerve has been seen.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "artery",
+     "vein",
+     "nerve",
+     "viscera",
+     "bone"
+    ],
+    "peel": 3
+   },
+   "focus": [
+    "Inferior thyroid artery",
+    "Thyrocervical trunk",
+    "Trachea",
+    "Thyroid gland"
+   ],
+   "risk": [
+    {
+     "label": "card:recurrent-laryngeal-nerve",
+     "why": "Passes deep to, superficial to or between the branches of the inferior thyroid artery, and is stretched forwards with the lobe when it is rotated; any strand crossing the artery is kept until the nerve is traced past it."
+    },
+    {
+     "label": "card:cervical-esophagus",
+     "why": "Forms the posteromedial wall of the groove, projecting slightly to the left of the trachea; dissection carried too deep and medial enters its muscle coat."
+    },
+    {
+     "label": "Sympathetic trunk",
+     "why": "Lies on the prevertebral muscles behind the carotid sheath where the inferior thyroid artery arches medially; following the artery too far laterally puts it and the middle cervical ganglion at risk."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Internal jugular vein",
+    "Left common carotid artery"
+   ],
+   "landmarks": [
+    "Low in the neck the nerve lies in the triangle between the trachea medially, the common carotid artery laterally and the lower pole of the lobe above.",
+    "The left nerve runs nearly vertically in the groove; the right, recurring higher around the subclavian artery, runs more obliquely from lateral to medial.",
+    "A posterolateral projection of the lobe (tubercle of Zuckerkandl), when present, usually overlies the nerve, which runs in the cleft between it and the trachea."
+   ],
+   "pearl": "The relation of nerve to artery is variable, but the crossing is constant: the inferior thyroid artery always leads to the nerve."
+  },
+  {
+   "title": "Recurrent laryngeal nerve: ligament of Berry and laryngeal entry",
+   "action": "The nerve is followed up to the point where the lobe is bound to the cricoid cartilage and the first two or three tracheal rings by the posterior suspensory ligament (ligament of Berry). Here the nerve lies immediately lateral and deep to the ligament before disappearing under the lower border of the inferior constrictor, just behind the cricothyroid joint. The ligament is divided on the trachea under direct vision of the nerve.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "muscle",
+     "artery",
+     "vein",
+     "nerve",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Cricoid cartilage",
+    "Inferior pharyngeal constrictor",
+    "Trachea",
+    "Thyroid cartilage"
+   ],
+   "risk": [
+    {
+     "label": "card:recurrent-laryngeal-nerve",
+     "why": "Closest to the gland at the ligament, tethered and kinked forwards by traction on the lobe, and often already divided into branches; it is injured here by traction, heat or a clamp placed blindly on a bleeding point."
+    },
+    {
+     "label": "card:inferior-laryngeal-artery",
+     "why": "This terminal branch of the inferior thyroid artery runs with the nerve at the ligament; its bleeding is controlled by pressure and precise fine ligature, not diathermy against the nerve."
+    },
+    {
+     "label": "Superior parathyroid gland",
+     "why": "Lies just behind and above this point near the cricothyroid joint and is easily lifted away with the last attachment of the lobe."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Thyroid gland",
+    "Sternocleidomastoid muscle",
+    "Omohyoid muscle",
+    "Internal jugular vein",
+    "Left common carotid artery"
+   ],
+   "landmarks": [
+    "The inferior horn of the thyroid cartilage is palpable; the nerve enters the larynx directly behind its joint with the cricoid.",
+    "The entry point under the lower border of the inferior constrictor (cricopharyngeus) is the most constant position of the nerve and the fallback when it cannot be found below.",
+    "Thyroid tissue may extend behind the nerve at the ligament, so the nerve can appear to pass through the gland."
+   ],
+   "pearl": "When the nerve branches before entering the larynx, the anterior branch carries most of the motor fibres, so every branch is preserved.",
+   "check": {
+    "prompt": "Click the cartilage to which the posterior suspensory ligament fixes the lobe, and behind whose joint with the thyroid cartilage the nerve enters the larynx",
+    "answer": "Cricoid cartilage"
+   }
+  },
+  {
+   "title": "Division of the isthmus",
+   "action": "The lobe, now free laterally and posteriorly, is turned across the front of the trachea. The isthmus is separated from the trachea in the pretracheal plane, the inferior thyroid veins running down from its lower border are controlled, and it is divided at its junction with the opposite lobe. A pyramidal lobe, if present, ascends from the isthmus towards the hyoid and is removed with the specimen.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "artery",
+     "vein",
+     "lymph",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Thyroid gland",
+    "Trachea",
+    "Cricoid cartilage",
+    "Median cricothyroid ligament"
+   ],
+   "risk": [
+    {
+     "label": "Trachea",
+     "why": "The anterior wall lies directly under the isthmus; dissection is kept in the loose pretracheal plane and heat is kept off the cartilage rings."
+    },
+    {
+     "label": "card:inferior-thyroid-veins",
+     "why": "Descend from the isthmus and lower poles in front of the trachea to the brachiocephalic veins; an uncontrolled stump retracts behind the manubrium."
+    },
+    {
+     "label": "card:thyroid-ima-artery",
+     "why": "An occasional midline artery ascending on the trachea to the isthmus from the brachiocephalic trunk or aortic arch; it bleeds from below if not anticipated."
+    },
+    {
+     "label": "Straight part of cricothyroid muscle",
+     "why": "Lies beside the midline just above the isthmus; clearing a pyramidal lobe or prelaryngeal tissue with diathermy on its surface damages the muscle that tensions the vocal fold."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Sternocleidomastoid muscle"
+   ],
+   "landmarks": [
+    "The isthmus overlies the second and third tracheal rings, sometimes the fourth.",
+    "Prelaryngeal nodes lie on the cricothyroid ligament just above the isthmus; pretracheal nodes lie below it among the inferior thyroid veins."
+   ],
+   "pearl": "The contralateral side is not dissected beyond the isthmus, which leaves the opposite recurrent laryngeal nerve and parathyroids undisturbed in unscarred planes."
+  },
+  {
+   "title": "Thyroid bed: final inspection and closure",
+   "action": "With the lobe removed the bed is bounded by the trachea and larynx medially, the carotid sheath laterally and the prevertebral fascia over longus colli behind. The recurrent laryngeal nerve is confirmed intact along its course to the lower border of the inferior constrictor, and each parathyroid is checked for colour on its pedicle. The straps are brought together in the midline and the platysma is closed as a separate layer.",
+   "view": {
+    "from": "left-front",
+    "systems": [
+     "muscle",
+     "artery",
+     "vein",
+     "nerve",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Trachea",
+    "Superior parathyroid gland",
+    "Inferior parathyroid gland",
+    "Inferior thyroid artery",
+    "Inferior pharyngeal constrictor"
+   ],
+   "risk": [
+    {
+     "label": "card:recurrent-laryngeal-nerve",
+     "why": "Lies bare in the bed; late haemostasis with diathermy or a suture near the ligament of Berry injures a nerve that was dissected safely."
+    },
+    {
+     "label": "card:middle-thyroid-vein",
+     "why": "Its stump and those of the superior pole vessels are the usual sources of a postoperative haematoma, which collects deep to the closed straps and compresses the airway."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Thyroid gland",
+    "Sternocleidomastoid muscle",
+    "Omohyoid muscle"
+   ],
+   "landmarks": [
+    "A parathyroid that has darkened has lost its venous drainage or arterial supply; a gland found on the specimen is retrieved and reimplanted into muscle.",
+    "The space deep to the straps is closed and unyielding, so a small volume of blood there narrows the airway through venous congestion and laryngeal oedema."
+   ],
+   "pearl": "A haematoma deep to the strap muscles threatens the airway by laryngeal oedema more than by direct tracheal compression, so the deep layer must be opened to decompress it.",
+   "check": {
+    "prompt": "Click the parathyroid gland that lies behind the upper half of the lobe near the cricothyroid joint, dorsal to the plane of the recurrent laryngeal nerve",
+    "answer": "Superior parathyroid gland"
+   }
+  }
+ ],
+ "complications": [
+  "Recurrent laryngeal nerve palsy: the nerve crosses the inferior thyroid artery and lies against the ligament of Berry, where traction on the lobe, heat or blind clamping injures it; the result is a paramedian immobile vocal fold with a weak, breathy voice and risk of aspiration.",
+  "External laryngeal nerve injury: the nerve descends with the superior thyroid vessels on the inferior constrictor and is caught when the superior pole is ligated en masse; cricothyroid paralysis causes loss of high pitch and vocal fatigue.",
+  "Postoperative haematoma with airway compromise: bleeding from the superior pole vessels, middle thyroid vein stump or inferior thyroid veins collects in the closed space deep to the straps and produces laryngeal oedema.",
+  "Parathyroid devascularisation or inadvertent removal: the glands lie on the capsule and hang on end-branches of the inferior thyroid artery; after lobectomy the opposite glands usually prevent hypocalcaemia, but the loss matters if the other side is operated on later.",
+  "Tracheal or oesophageal injury: the trachea lies directly under the isthmus and ligament of Berry, and the oesophagus forms the floor of the left tracheo-oesophageal groove.",
+  "Anterior neck numbness and scar tethering: the transverse cervical nerve branches are divided with the upper flap, and a flap raised outside the subplatysmal plane adheres to the straps and moves with swallowing.",
+  "Hypothyroidism: the remaining lobe may not maintain hormone output, since half of the functioning parenchyma has been removed."
+ ],
+ "notes": "No geometry (referenced by card or text only): recurrent laryngeal nerve, external and internal laryngeal nerves, superior thyroid artery, middle thyroid vein, inferior thyroid veins, thyroid ima artery, inferior laryngeal artery, oesophagus and tracheo-oesophageal groove, ansa cervicalis, transverse cervical nerve, isthmus and pyramidal lobe as separate pieces, inferior horn of thyroid cartilage and cricothyroid joint, ligament of Berry, tubercle of Zuckerkandl, carotid sheath, sternum/manubrium. The two nerve-identification steps therefore highlight the landmarks (inferior thyroid artery, trachea, cricoid, inferior constrictor) with the nerve itself only as a risk card; adding a recurrent laryngeal nerve curve would be the single most valuable model addition for this module. Simplifications: 'Thyroid gland' is one midline mesh, so the left lobe cannot be hidden on its own; in steps 8 and 10 the whole gland is ghosted to stand for medial rotation and removal of the left lobe, and the right lobe will also appear transparent. Sternocleidomastoid and omohyoid are ghosted rather than hidden because they are retracted, not divided; the carotid and internal jugular are ghosted in lateral views for the same reason. Steps 6 and 7 omit the muscle system so that scalene and prevertebral muscles do not obscure a lateral view; a 'left' camera may still need adjusting if the clavicle or vertebrae crowd the frame. Step 1 highlights the cricoid and thyroid cartilages under intact skin; if highlights do not show through skin, ghost 'Muscular triangle' or drop those two labels. Step 2 lists the anterior jugular vein as a risk although it is largely covered by platysma at peel 1. Order of steps: many surgeons divide the isthmus early to mobilise the lobe; it is placed late here as specified. Points to verify against Netter and an operative atlas: the statement that the left nerve more often lies deep to the inferior thyroid artery was deliberately left out in favour of 'variable'; the tracheal ring levels of the isthmus (2nd-3rd, sometimes 4th) and of the ligament of Berry (cricoid and first two or three rings) follow common teaching but vary between texts; 'Zuckerkandl' and 'Berry' are the only eponyms used."
+}

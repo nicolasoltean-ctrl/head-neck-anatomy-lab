@@ -247,6 +247,54 @@ body.entering .toolbar { transition-delay: .1s; } body.entering .controls { tran
 body.entering .panel .card { transition-delay: .2s; } body.entering .panel .card ~ .card { transition-delay: .3s; } body.entering .panel .card ~ .card ~ .card { transition-delay: .4s; }
 body.entering .stage::before { transition-delay: .5s; }
 body.entering #gl { transition: opacity .55s ease .6s; }
+
+/* ---------- Training modes: surgery walkthroughs and the scope ---------- */
+.train { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 12px; }
+.train .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--fg-3); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.train h2 { font-family: var(--font-display); font-weight: 700; font-size: 21px; line-height: 1.2; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+.train h3 { margin: 0; font-size: 11.5px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--fg-3); }
+.train p { margin: 0; font-size: 14.5px; line-height: 1.5; }
+.train .muted { color: var(--fg-2); font-size: 13.5px; }
+.train .fine { color: var(--fg-3); font-size: 12px; }
+.proc-list { display: grid; gap: 8px; }
+.proc { text-align: left; padding: 11px 13px; border: 1.5px solid var(--line); border-radius: 12px; background: var(--bg); cursor: pointer; display: flex; flex-direction: column; gap: 3px; }
+.proc:hover { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
+.proc b { font-size: 15px; font-weight: 600; } .proc span { font-size: 13px; color: var(--fg-2); line-height: 1.4; }
+.proc .meta { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .05em; text-transform: uppercase; color: var(--fg-3); }
+.dots { display: flex; gap: 4px; flex-wrap: wrap; }
+.dots button { width: 22px; height: 6px; border-radius: 3px; border: 0; padding: 0; background: var(--bg-3); cursor: pointer; }
+.dots button.done { background: color-mix(in srgb, var(--accent) 45%, var(--bg-3)); } .dots button.now { background: var(--accent); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.s-chip { padding: 4px 10px; border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--line)); border-radius: 999px; background: var(--accent-soft); cursor: pointer; font-size: 13px; }
+.s-chip:hover { border-color: var(--accent); }
+.risks { display: grid; gap: 6px; }
+.s-risk { text-align: left; display: grid; grid-template-columns: 10px minmax(0, 1fr); gap: 3px 9px; align-items: baseline; padding: 8px 10px; border: 1px solid color-mix(in srgb, var(--risk) 45%, var(--line)); border-radius: 10px; background: color-mix(in srgb, var(--risk) 9%, var(--bg-2)); cursor: pointer; font-size: 13.5px; }
+.s-risk::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--risk); align-self: center; }
+.s-risk b { font-weight: 600; } .s-risk span { grid-column: 2; color: var(--fg-2); font-size: 13px; line-height: 1.4; } .s-risk i { font-style: normal; color: var(--fg-3); font-size: 11.5px; margin-left: 6px; }
+.train ul { margin: 0; padding-left: 18px; font-size: 13.5px; color: var(--fg-2); display: grid; gap: 3px; }
+.train .pearl { border-left: 3px solid var(--accent); background: color-mix(in srgb, var(--accent) 9%, var(--bg-2)); padding: 8px 12px; border-radius: 0 10px 10px 0; font-size: 14px; }
+.train .pearl b { display: block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+.checkbox { border: 1.5px dashed color-mix(in srgb, var(--accent) 50%, var(--line)); border-radius: 12px; padding: 10px 12px; display: grid; gap: 8px; background: var(--bg); }
+.checkbox .verdict { font-weight: 600; font-size: 14px; } .checkbox .verdict.good { color: var(--good); } .checkbox .verdict.bad { color: var(--bad); }
+.train .nav { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.train .nav .spacer { flex: 1; }
+.linkbtn { border: 0; background: none; padding: 0; color: var(--accent); cursor: pointer; text-decoration: underline; font-size: 13px; }
+.scope-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 8px; align-items: center; }
+.scope-row input[type="range"] { width: 100%; accent-color: var(--accent); margin: 0; }
+.checklist { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 3px 10px; font-size: 13px; color: var(--fg-2); list-style: none; padding: 0; }
+.checklist li::before { content: "○ "; color: var(--fg-3); } .checklist li.seen { color: var(--fg); } .checklist li.seen::before { content: "● "; color: var(--good); }
+:root { --risk: #d97706; } :root[data-theme="dark"] { --risk: #fbbf24; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --risk: #fbbf24; } }
+/* the endoscope view: a round image on black */
+.stage.is-scope { background-color: #06080c; border-color: transparent; }
+.stage.is-scope::before, .stage.is-scope .views, .stage.is-scope .hint, .stage.is-scope .corner { display: none; }
+.stage.is-scope canvas { clip-path: circle(48% at 50% 50%); cursor: crosshair; }
+.scope-tags { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.scope-tag { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.scope-tag i { width: 9px; height: 9px; border-radius: 50%; border: 2px solid #fff; background: var(--accent); box-shadow: 0 0 0 3px rgba(30, 94, 234, .35); }
+.scope-tag span { font-size: 11.5px; font-weight: 600; color: #fff; background: rgba(8, 14, 28, .72); padding: 2px 7px; border-radius: 6px; white-space: nowrap; }
+.scope-tags.quiet .scope-tag { display: none; }
+.scope-hud { position: absolute; left: 12px; top: 10px; right: 12px; display: flex; justify-content: space-between; gap: 10px; font-family: var(--font-mono); font-size: 11.5px; color: #c9d6f2; pointer-events: none; letter-spacing: .03em; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
@@ -259,7 +307,7 @@ body.entering #gl { transition: opacity .55s ease .6s; }
 <div class="wrap">
   <header class="top">
     <h1 class="wordmark" id="brand"><b>Head and Neck</b><span>Simulator</span></h1>
-    <div class="seg" role="group" aria-label="Mode"><button id="mode-explore" aria-pressed="true">Explore</button><button id="mode-quiz" aria-pressed="false">Quiz</button></div>
+    <div class="seg" role="group" aria-label="Mode"><button id="mode-explore" aria-pressed="true">Explore</button><button id="mode-quiz" aria-pressed="false">Quiz</button><button id="mode-surgery" aria-pressed="false">Surgery</button><button id="mode-scope" aria-pressed="false">Scope</button></div>
     <span class="count" id="count"></span>
   </header>
 
@@ -280,6 +328,8 @@ body.entering #gl { transition: opacity .55s ease .6s; }
         <div class="load" id="load"><div id="load-text">Loading skin…</div><progress id="load-bar" max="100" value="0"></progress></div>
         <div class="tip" id="tip"></div>
         <div class="pop" id="pop" role="menu" aria-label="Actions for the selection" hidden></div>
+        <div class="scope-tags" id="scope-tags" hidden></div>
+        <div class="scope-hud" id="scope-hud" hidden></div>
         <div class="hint">drag rotate · right-drag or shift-drag pan · scroll zoom · click to select · shift-click adds</div>
       </div>
       <div class="controls">
@@ -318,8 +368,10 @@ body.entering #gl { transition: opacity .55s ease .6s; }
           <span class="n" id="qn"></span>
         </div>
         <div class="card index" id="index"></div>
-        <div class="card detail" id="detail"></div>
       </div>
+      <div id="surgery-ui" class="card train" hidden></div>
+      <div id="scope-ui" class="card train" hidden></div>
+      <div class="card detail" id="detail"></div>
       <div id="quiz-ui" class="card quiz" hidden></div>
     </aside>
   </div>
@@ -331,6 +383,8 @@ body.entering #gl { transition: opacity .55s ease .6s; }
 <script>
 const DATA = /*__DATA__*/[];
 const MAN = /*__MANIFEST__*/{};
+const PROCS = /*__PROCS__*/[];
+const SCOPE = /*__SCOPE__*/{};
 
 const SYS = {
   skin:    { label: 'Skin',       color: 'var(--c-skin)',    hex: [0xe3b48e, 0xb98668] },
@@ -418,6 +472,14 @@ function buildMaterials() {
   applyVisibility();
 }
 let goodMat, badMat;
+const riskIds = new Set(); // structures at risk in the current surgery step, drawn amber
+const riskMat = new THREE.MeshPhongMaterial({ color: 0xf59e0b, emissive: 0x6b3d00, shininess: 30, side: THREE.DoubleSide });
+/* Scope view: its own wide-angle camera carrying a headlight, and wet mucosa-coloured materials */
+const scopeCam = new THREE.PerspectiveCamera(86, 1, 0.0004, 0.4);
+const scopeLight = new THREE.PointLight(0xfff1e6, 2.1, 0.085, 2); scopeLight.visible = false; scopeCam.add(scopeLight); scene.add(scopeCam);
+const SCOPE_SYS = new Set(['viscera', 'bone', 'muscle', 'lymph']);
+const scopeMats = { soft: new THREE.MeshPhongMaterial({ color: 0xd98282, specular: 0x4a2a2a, shininess: 46, side: THREE.DoubleSide }), hard: new THREE.MeshPhongMaterial({ color: 0xe2a8a0, specular: 0x4a2f2c, shininess: 40, side: THREE.DoubleSide }) }; // cartilage and turbinate bone are mucosa-covered in life, so only slightly paler
+const activeCam = () => state.mode === 'scope' ? scopeCam : camera;
 const meshes = new Map(); // id -> THREE.Mesh
 const loaded = new Set(); const loading = new Map();
 
@@ -436,7 +498,8 @@ function resize() {
   if (state.pop) { state.pop = null; popEl.hidden = true; }
   const r = canvas.parentElement.getBoundingClientRect();
   const w = Math.max(1, Math.round(r.width)), h = Math.max(1, Math.round(r.height));
-  renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); needsRender = true;
+  renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); scopeCam.aspect = w / h; scopeCam.updateProjectionMatrix(); needsRender = true;
+  if (state.mode === 'scope') scopeUpdate();
 }
 new ResizeObserver(resize).observe(canvas.parentElement);
 const VIEWS = { front: [0, 1.45], left: [Math.PI / 2, 1.5], right: [-Math.PI / 2, 1.5], back: [Math.PI, 1.45], top: [0, 0.05] };
@@ -453,12 +516,13 @@ canvas.addEventListener('pointerdown', e => {
 });
 canvas.addEventListener('pointermove', e => {
   if (pointers.has(e.pointerId)) pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
-  if (pointers.size === 2) { const [a, b] = [...pointers.values()]; const d = Math.hypot(a.x - b.x, a.y - b.y); if (pinchDist) { orbit.dist = clampDist(orbit.dist * pinchDist / d); updateCamera(); } pinchDist = d; return; }
+  if (pointers.size === 2) { const [a, b] = [...pointers.values()]; const d = Math.hypot(a.x - b.x, a.y - b.y); if (pinchDist && state.mode === 'scope') { scopeAdvance((d - pinchDist) * 0.25); } else if (pinchDist) { orbit.dist = clampDist(orbit.dist * pinchDist / d); updateCamera(); } pinchDist = d; return; }
   if (drag && drag.id === e.pointerId) {
     const dx = e.clientX - drag.x, dy = e.clientY - drag.y; drag.x = e.clientX; drag.y = e.clientY;
     if (Math.abs(e.clientX - drag.sx) + Math.abs(e.clientY - drag.sy) > 4) { drag.moved = true; canvas.classList.add('panning'); }
     if (!drag.moved) return;
-    if (drag.pan) { pan(dx, dy); } else { orbit.theta -= dx * 0.008; orbit.phi = Math.min(Math.PI - 0.05, Math.max(0.05, orbit.phi - dy * 0.008)); updateCamera(); }
+    if (state.mode === 'scope') { scope.yaw = Math.max(-1.0, Math.min(1.0, scope.yaw - dx * 0.005)); scope.pitch = Math.max(-1.0, Math.min(1.0, scope.pitch + dy * 0.005)); scopeUpdate(); }
+    else if (drag.pan) { pan(dx, dy); } else { orbit.theta -= dx * 0.008; orbit.phi = Math.min(Math.PI - 0.05, Math.max(0.05, orbit.phi - dy * 0.008)); updateCamera(); }
     return;
   }
   hover(e);
@@ -472,7 +536,7 @@ canvas.addEventListener('pointerup', endPointer); canvas.addEventListener('point
 canvas.addEventListener('pointerleave', () => showTip(null));
 canvas.addEventListener('contextmenu', e => e.preventDefault());
 const clampDist = d => Math.min(radius * 12, Math.max(radius * 0.6, d));
-canvas.addEventListener('wheel', e => { e.preventDefault(); orbit.dist = clampDist(orbit.dist * (e.deltaY > 0 ? 1.1 : 1 / 1.1)); updateCamera(); }, { passive: false });
+canvas.addEventListener('wheel', e => { e.preventDefault(); if (state.mode === 'scope') { scopeAdvance(e.deltaY < 0 ? 2 : -2); return; } orbit.dist = clampDist(orbit.dist * (e.deltaY > 0 ? 1.1 : 1 / 1.1)); updateCamera(); }, { passive: false });
 function pan(dx, dy) {
   const r = canvas.getBoundingClientRect(); const k = orbit.dist * Math.tan(camera.fov * Math.PI / 360) * 2 / r.height;
   const right = new THREE.Vector3(); const up = new THREE.Vector3(); camera.matrix.extractBasis(right, up, new THREE.Vector3());
@@ -580,6 +644,8 @@ function applyVisibility() {
   pickables = [];
   meshes.forEach(m => {
     const u = m.userData; const isSel = sel.has(u.id);
+    if (state.mode === 'scope') { // the scope sees every wall of the airway, whatever layers the main view has on
+      m.visible = SCOPE_SYS.has(u.system); u.ghosted = false; if (m.visible) { m.material = isSel ? selMat : (u.system === 'bone' ? scopeMats.hard : scopeMats.soft); pickables.push(m); } return; }
     const on = state.systems[u.system] && sideOk(u.side) && passesFilter(u.id) && !hiddenIds.has(u.id);
     const peeled = u.tier < state.peel;
     const iso = state.isolate && sel.size > 0 && !isSel;
@@ -587,6 +653,7 @@ function applyVisibility() {
     let mat; u.ghosted = false;
     if (!on) { m.visible = false; return; }
     if (u.quizMark === 'good') mat = goodMat; else if (u.quizMark === 'bad') mat = badMat;
+    else if (riskIds.has(u.id)) mat = riskMat;
     else if (isSel) { mat = pg ? selGhostMat : selMat; u.ghosted = pg; }
     else if (peeled) { if (!state.ghost || u.tier !== 0) { m.visible = false; return; } mat = ghosts[u.system]; u.ghosted = true; }
     else if (iso) { mat = ghosts[u.system]; u.ghosted = true; }
@@ -606,7 +673,7 @@ function updateCounts() {
 const ray = new THREE.Raycaster(); const ndc = new THREE.Vector2();
 function castAt(e) {
   const r = canvas.getBoundingClientRect(); ndc.x = ((e.clientX - r.left) / r.width) * 2 - 1; ndc.y = -((e.clientY - r.top) / r.height) * 2 + 1;
-  ray.setFromCamera(ndc, camera);
+  ray.setFromCamera(ndc, activeCam());
   const hits = ray.intersectObjects(pickables, false);
   if (!hits.length) return null;
   // honour the clipping plane: skip hits on the clipped side
@@ -625,8 +692,10 @@ function showTip(m, e) {
 }
 const findOpen = () => state.mode === 'quiz' && !!state.quiz && state.quiz.type === 'find' && !!state.quiz.q && !state.quiz.q.answered;
 function pick(e) {
-  if (state.mode !== 'explore' && !findOpen()) return; // name and function quizzes are answered in the panel
+  if (state.mode === 'scope') { scopeClick(e); return; }
+  if (state.mode === 'quiz' && !findOpen()) return; // name and function quizzes are answered in the panel
   const m = castAt(e); const add = e.shiftKey || e.metaKey || e.ctrlKey;
+  if (state.mode === 'surgery' && surg.check && !surg.check.done) { if (m) surgAnswer(labelOfId.get(m.userData.id)); return; }
   if (!m) { if (!add) select(null); return; }
   const r = stageEl.getBoundingClientRect(); const pop = { x: e.clientX - r.left, y: e.clientY - r.top };
   select(labelOfId.get(m.userData.id), false, { ids: [m.userData.id], add, pop });
@@ -761,7 +830,7 @@ function projectSel() {
 }
 function renderPop() {
   const fq = findOpen();
-  if (!state.pop || !sel.size || (state.mode === 'quiz' && !fq)) { popEl.hidden = true; return; }
+  if (!state.pop || !sel.size || state.mode === 'scope' || (state.mode === 'quiz' && !fq)) { popEl.hidden = true; return; }
   const L = labels.get(state.selected); const ids = [...sel]; const n = ids.length > 1 ? ' ' + ids.length : '';
   const on = set => ids.every(id => set.has(id));
   let html = fq ? `<div class="pop-title">Your pick${ids.length > 1 ? ' (last piece selected)' : ''}</div><button class="confirm" data-act="confirm">Confirm answer</button>`
@@ -797,14 +866,207 @@ function focusSelected() {
 
 /* ---------- Mode ---------- */
 function setMode(m) {
+  const prev = state.mode; if (prev === m) return;
+  if (prev === 'scope') scopeExit();
+  if (prev === 'surgery') { riskIds.clear(); hiddenIds.clear(); ghostIds.clear(); sel.clear(); state.selected = null; renderMods(); }
   state.mode = m;
-  document.getElementById('mode-explore').setAttribute('aria-pressed', String(m === 'explore')); document.getElementById('mode-quiz').setAttribute('aria-pressed', String(m === 'quiz'));
-  document.getElementById('explore-ui').style.display = m === 'explore' ? 'contents' : 'none'; document.getElementById('quiz-ui').hidden = m !== 'quiz';
+  for (const k of ['explore', 'quiz', 'surgery', 'scope']) document.getElementById('mode-' + k).setAttribute('aria-pressed', String(m === k));
+  document.getElementById('explore-ui').style.display = m === 'explore' ? 'contents' : 'none';
+  document.getElementById('quiz-ui').hidden = m !== 'quiz'; document.getElementById('surgery-ui').hidden = m !== 'surgery'; document.getElementById('scope-ui').hidden = m !== 'scope';
+  document.getElementById('detail').hidden = m === 'quiz';
   clearQuizMarks();
   if (m === 'explore') { renderIndex(); renderDetail(); applyVisibility(); }
-  else { state.isolate = false; select(null); state.quiz = state.quiz || { type: 'name', q: null, correct: 0, total: 0, streak: 0, missed: [], asked: new Set() }; renderQuiz(); }
+  else if (m === 'quiz') { state.isolate = false; select(null); state.quiz = state.quiz || { type: 'name', q: null, correct: 0, total: 0, streak: 0, missed: [], asked: new Set() }; renderQuiz(); }
+  else if (m === 'surgery') { state.isolate = false; select(null); if (surg.proc) surgApply(); else renderSurgery(); }
+  else if (m === 'scope') { state.isolate = false; select(null); scopeEnter(); }
 }
-document.getElementById('mode-explore').onclick = () => setMode('explore'); document.getElementById('mode-quiz').onclick = () => setMode('quiz');
+for (const k of ['explore', 'quiz', 'surgery', 'scope']) document.getElementById('mode-' + k).onclick = () => setMode(k);
+
+/* ---------- Surgery: step-by-step operative anatomy ----------
+   Each procedure (data/procedures/*.json) is a list of steps. A step sets the layers and peel depth, removes what has been
+   divided or retracted so far, highlights the structures in play (blue) and those at risk (amber), and frames them. */
+const surg = { proc: null, i: 0, check: null };
+const SURG_VIEWS = { front: [0, 1.45], left: [Math.PI / 2, 1.5], right: [-Math.PI / 2, 1.5], back: [Math.PI, 1.45], 'left-front': [Math.PI / 4, 1.45], 'right-front': [-Math.PI / 4, 1.45], 'left-back': [3 * Math.PI / 4, 1.45], 'below-front': [0, 1.95], 'above-front': [0, 0.95], 'below-left': [Math.PI / 3, 1.95] };
+function labelsNamed(label) { return [...labels.values()].filter(L => !L.virtual && L.label === label); }
+function idsOfLabel(label, side) {
+  const out = [];
+  for (const L of labelsNamed(label)) for (const id of L.ids) {
+    if (labelOfId.get(id) !== L.key && !L.key.startsWith('card:')) continue; // a whole structure's borrowed part pieces are named separately
+    const sd = entryById.get(id).side; if (!side || side === 'both' || sd === side || sd === 'm') out.push(id);
+  }
+  return out;
+}
+function frameIds(ids, from) {
+  const box = new THREE.Box3(); let any = false;
+  for (const id of ids) { const m = meshes.get(id); if (m && m.geometry.boundingSphere) { const bs = m.geometry.boundingSphere; box.expandByPoint(bs.center.clone().addScalar(-bs.radius)); box.expandByPoint(bs.center.clone().addScalar(bs.radius)); any = true; } }
+  const [t, p] = SURG_VIEWS[from] || SURG_VIEWS.front; orbit.theta = t; orbit.phi = p;
+  if (any) { orbit.target.copy(box.getCenter(new THREE.Vector3())); orbit.dist = Math.min(radius * 3.4, clampDist(Math.max(box.getSize(new THREE.Vector3()).length() * 1.5, radius * 0.95))); }
+  else { orbit.target.copy(center); orbit.dist = radius * 3.4; }
+  settleTok++; updateCamera();
+}
+function surgStart(id) { surg.proc = PROCS.find(p => p.id === id) || null; surg.i = 0; if (surg.proc) surgApply(); else renderSurgery(); }
+function surgGo(i) { if (!surg.proc) return; const n = surg.proc.steps.length; if (i < 0 || i > n) return; surg.i = i; surgApply(); }
+function surgApply() {
+  const P = surg.proc; if (!P) { renderSurgery(); return; }
+  const done = surg.i >= P.steps.length, st = P.steps[Math.min(surg.i, P.steps.length - 1)], side = P.side || 'both';
+  if (!done) surg.check = st.check ? { prompt: st.check.prompt, answer: st.check.answer, done: false, ok: null, said: '' } : null; else surg.check = null;
+  const sys = st.view.systems || ['skin', 'muscle', 'bone'];
+  setSystems(sys); setPeel(st.view.peel || 0);
+  state.side = 'both'; document.querySelectorAll('[data-side]').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.side === 'both')));
+  hiddenIds.clear(); for (let k = 0; k <= Math.min(surg.i, P.steps.length - 1); k++) for (const lab of (P.steps[k].hide || [])) idsOfLabel(lab, side).forEach(id => hiddenIds.add(id));
+  ghostIds.clear(); for (const lab of (st.ghost || [])) idsOfLabel(lab, side).forEach(id => ghostIds.add(id));
+  state.isolate = false; surgPaint();
+  const token = P.id + ':' + surg.i; surg.token = token;
+  Promise.all(sys.map(k => loadSystem(k))).then(() => { if (surg.token === token && state.mode === 'surgery') surgPaint(); });
+}
+function surgPaint() {
+  const P = surg.proc, st = P.steps[Math.min(surg.i, P.steps.length - 1)], side = P.side || 'both';
+  const focus = [], risk = [];
+  for (const lab of (st.focus || [])) focus.push(...idsOfLabel(lab, side));
+  for (const r of (st.risk || [])) if (!r.label.startsWith('card:')) risk.push(...idsOfLabel(r.label, side));
+  const hold = surg.check && !surg.check.done; // while an identification is pending the answer is not given away by colour
+  sel.clear(); riskIds.clear(); state.selected = null; state.pop = null;
+  if (!hold) { focus.forEach(id => sel.add(id)); risk.forEach(id => riskIds.add(id)); const L = labelsNamed((st.focus || [])[0])[0]; state.selected = L ? L.key : null; }
+  applyVisibility(); updateCounts(); renderMods(); renderDetail(); frameIds([...focus, ...risk], st.view.from); renderSurgery();
+}
+function surgAnswer(key) {
+  const c = surg.check; if (!c || c.done) return; const L = labels.get(key);
+  if (L && L.label === c.answer) { c.done = true; c.ok = true; surgPaint(); } else { c.ok = false; c.said = L ? L.label : ''; renderSurgery(); }
+}
+function surgShow(label) {
+  const P = surg.proc, st = P.steps[Math.min(surg.i, P.steps.length - 1)]; const ids = idsOfLabel(label, P.side || 'both'); if (!ids.length) return;
+  sel.clear(); ids.forEach(id => sel.add(id)); const L = labelsNamed(label)[0]; state.selected = L ? L.key : null; state.pop = null;
+  applyVisibility(); renderDetail(); frameIds(ids, st.view.from);
+}
+function renderSurgery() {
+  const ui = document.getElementById('surgery-ui'); const P = surg.proc;
+  const fine = `<p class="fine">For anatomical preparation only. It does not teach operative technique and is not a substitute for supervised training.</p>`;
+  if (!P) {
+    ui.innerHTML = `<div class="eyebrow">Surgery</div><h2>Operative anatomy, step by step</h2><p class="muted">Each walkthrough sets the layers and view for every step of the operation, highlights the structures in play in blue and the structures at risk in amber, and asks you to identify key landmarks on the model.</p>
+      <div class="proc-list">${PROCS.map(p => `<button class="proc" data-proc="${esc(p.id)}"><span class="meta">${esc(p.category)} · ${p.steps.length} steps</span><b>${esc(p.name)}</b><span>${esc(p.summary)}</span></button>`).join('') || '<p class="muted">No procedures are installed.</p>'}</div>${fine}`;
+    return;
+  }
+  const n = P.steps.length, dots = `<div class="dots" role="group" aria-label="Steps">${P.steps.map((x, k) => `<button data-step="${k}" class="${k < surg.i ? 'done' : k === surg.i ? 'now' : ''}" title="${k + 1}. ${esc(x.title)}" aria-label="Step ${k + 1}: ${esc(x.title)}"></button>`).join('')}</div>`;
+  if (surg.i >= n) {
+    ui.innerHTML = `<div class="eyebrow"><span>${esc(P.category)}</span><span>·</span><span>Complete</span></div><h2>${esc(P.name)}</h2>${dots}
+      <h3>Complications and their anatomy</h3><ul>${(P.complications || []).map(c => `<li>${esc(c)}</li>`).join('')}</ul>
+      <div class="nav"><button class="btn" data-go="${n - 1}">Back</button><button class="btn primary" data-go="0">Run it again</button><span class="spacer"></span><button class="linkbtn" data-proc="">All procedures</button></div>${fine}`;
+    return;
+  }
+  const st = P.steps[surg.i], c = surg.check, hold = c && !c.done;
+  const riskHtml = (st.risk || []).map(r => { const card = r.label.startsWith('card:'); const nm = card ? ((cardById.get(r.label.slice(5)) || {}).name || r.label.slice(5)) : r.label; return `<button class="s-risk" ${card ? `data-card="${esc(r.label.slice(5))}"` : `data-show="${esc(r.label)}"`}><b>${esc(nm)}${card ? '<i>not on the model</i>' : ''}</b><span>${esc(r.why)}</span></button>`; }).join('');
+  let check = '';
+  if (c) check = `<div class="checkbox"><h3>Identify on the model</h3><p>${esc(c.prompt)}</p>${c.done ? `<div class="verdict good">${c.ok ? 'Correct' : 'Shown'}: ${esc(c.answer)}.</div>` : `${c.ok === false ? `<div class="verdict bad">${c.said ? `That is ${esc(c.said)}.` : 'Not that one.'} Try again.</div>` : `<p class="fine">Click the structure on the model. The highlights appear once you have answered.</p>`}<div class="nav"><button class="btn" id="surg-reveal">Show me</button></div>`}</div>`;
+  ui.innerHTML = `<div class="eyebrow"><span>${esc(P.name)}</span><span>·</span><span>Step ${surg.i + 1} of ${n}</span></div><h2>${esc(st.title)}</h2>${dots}
+    ${surg.i === 0 && P.setup ? `<p class="muted">${esc(P.setup)}</p>` : ''}<p>${esc(st.action)}</p>${check}
+    ${hold ? '' : `<h3>In play</h3><div class="chips">${(st.focus || []).map(f => `<button class="s-chip" data-show="${esc(f)}">${esc(f)}</button>`).join('')}</div>${riskHtml ? `<h3>At risk</h3><div class="risks">${riskHtml}</div>` : ''}`}
+    ${(st.landmarks || []).length ? `<h3>Landmarks</h3><ul>${st.landmarks.map(l => `<li>${esc(l)}</li>`).join('')}</ul>` : ''}
+    ${st.pearl ? `<div class="pearl"><b>Pearl</b>${esc(st.pearl)}</div>` : ''}
+    <div class="nav"><button class="btn" data-go="${surg.i - 1}" ${surg.i === 0 ? 'disabled' : ''}>Back</button><button class="btn primary" data-go="${surg.i + 1}">${surg.i === n - 1 ? 'Finish' : 'Next step'}</button><span class="spacer"></span><button class="linkbtn" data-proc="">All procedures</button></div>${fine}`;
+}
+document.getElementById('surgery-ui').addEventListener('click', e => {
+  const t = e.target.closest('button'); if (!t) return;
+  if (t.dataset.proc !== undefined) { if (t.dataset.proc) surgStart(t.dataset.proc); else { surg.proc = null; riskIds.clear(); hiddenIds.clear(); ghostIds.clear(); select(null); renderMods(); renderSurgery(); } }
+  else if (t.dataset.step !== undefined) surgGo(+t.dataset.step);
+  else if (t.dataset.go !== undefined) surgGo(+t.dataset.go);
+  else if (t.dataset.show) surgShow(t.dataset.show);
+  else if (t.dataset.card) { if (labels.has('card:' + t.dataset.card)) { state.selected = 'card:' + t.dataset.card; sel.clear(); applyVisibility(); renderDetail(); } }
+  else if (t.id === 'surg-reveal' && surg.check) { surg.check.done = true; surg.check.ok = false; surgPaint(); }
+});
+
+/* ---------- Scope: flexible nasopharyngoscopy ----------
+   The camera rides a precomputed centreline (data/scope.json) from the left nasal vestibule to above the laryngeal inlet.
+   Wheel, arrows or the slider advance and withdraw; dragging deflects the tip. Landmarks are anchor points shown as tags
+   when they are in front of the lens, near, and not hidden behind a wall. */
+const scope = { s: 0, yaw: 0, pitch: 0, tags: true, quiz: null, seen: new Set(), P: null, T: null, U: null, shown: [], saved: null };
+function scopeFrames() {
+  if (scope.P || !SCOPE.path) return;
+  const P = SCOPE.path.map(q => new THREE.Vector3(q[0], q[1], q[2])), n = P.length, T = [], U = [];
+  for (let i = 0; i < n; i++) T.push(P[Math.min(n - 1, i + 7)].clone().sub(P[Math.max(0, Math.min(n - 8, i) - 1)]).normalize()); // looks a little way ahead, so bends are anticipated
+  let u = new THREE.Vector3(0, 1, 0);
+  for (let i = 0; i < n; i++) { u = u.clone().addScaledVector(T[i], -u.dot(T[i])).normalize(); U.push(u); } // carry "up" along the path without twisting, as a real scope does
+  scope.P = P; scope.T = T; scope.U = U;
+}
+function scopeUpdate() {
+  if (!scope.P) return;
+  const n = scope.P.length, s = Math.max(0, Math.min(n - 1.001, scope.s)), i = Math.floor(s), f = s - i;
+  const p = scope.P[i].clone().lerp(scope.P[i + 1], f), t = scope.T[i].clone().lerp(scope.T[i + 1], f).normalize(), u = scope.U[i].clone().lerp(scope.U[i + 1], f).normalize();
+  const r = new THREE.Vector3().crossVectors(t, u).normalize(), cy = Math.cos(scope.yaw), sy = Math.sin(scope.yaw), cp = Math.cos(scope.pitch), sp = Math.sin(scope.pitch);
+  const dir = t.clone().multiplyScalar(cy * cp).addScaledVector(r, sy * cp).addScaledVector(u, sp);
+  scopeCam.position.copy(p); scopeCam.up.copy(u); scopeCam.lookAt(p.clone().add(dir)); scopeCam.updateMatrixWorld(true);
+  // landmark tags
+  const tagsEl = document.getElementById('scope-tags'), w = canvas.clientWidth, h = canvas.clientHeight, R = Math.min(w, h) * 0.46; let html = ''; scope.shown = [];
+  for (const a of (SCOPE.anchors || [])) {
+    const q = new THREE.Vector3(a.p[0], a.p[1], a.p[2]), d = q.distanceTo(p); if (d > 0.04 || d < 0.002) continue;
+    const v = q.clone().project(scopeCam); if (v.z > 1 || v.z < -1) continue;
+    const x = (v.x + 1) / 2 * w, y = (1 - v.y) / 2 * h; if (Math.hypot(x - w / 2, y - h / 2) > R) continue;
+    ray.set(p, q.clone().sub(p).normalize()); const hit = ray.intersectObjects(pickables, false)[0]; if (hit && hit.distance < d - 0.007) continue; // well behind a wall (anchors sit on or just under the surface)
+    scope.shown.push({ a, x, y, d }); if (d < 0.03) scope.seen.add(a.id);
+    html += `<div class="scope-tag" style="left:${x.toFixed(1)}px;top:${y.toFixed(1)}px"><i></i><span>${esc(a.name)}</span></div>`;
+  }
+  tagsEl.innerHTML = html; tagsEl.classList.toggle('quiet', !scope.tags || !!(scope.quiz && !scope.quiz.done));
+  const reg = scopeRegion(); document.getElementById('scope-hud').innerHTML = `<span>${(scope.s / 10).toFixed(1)} cm</span><span>${esc(reg.name)}</span>`;
+  const dEl = document.getElementById('scope-depth'); if (dEl) { dEl.textContent = (scope.s / 10).toFixed(1) + ' cm'; document.getElementById('scope-slider').value = scope.s; document.getElementById('scope-region').textContent = reg.name; document.getElementById('scope-teach').textContent = reg.teach; scopeChecklist(); }
+  needsRender = true;
+}
+function scopeRegion() { return (SCOPE.regions || []).find(r => scope.s <= r.to) || { name: '', teach: '' }; }
+function scopeAdvance(d) { scope.s = Math.max(0, Math.min(scope.P.length - 1.001, scope.s + d)); scopeUpdate(); }
+function scopePalate(on) {
+  const o = SCOPE.palate_offset || [0, 0, 0];
+  meshes.forEach(m => { if ((SCOPE.palate_labels || []).includes(m.userData.label)) { m.position.set(on ? o[0] : 0, on ? o[1] : 0, on ? o[2] : 0); m.updateMatrix(); m.updateMatrixWorld(true); } });
+}
+function scopeEnter() {
+  scopeFrames(); if (!scope.P) { document.getElementById('scope-ui').innerHTML = '<p class="muted">The scope route is not installed.</p>'; return; }
+  scope.saved = { hemi: hemi.intensity, key: key.intensity, fill: fill.intensity, rim: rim.intensity };
+  hemi.intensity = 0.07; key.intensity = 0; fill.intensity = 0; rim.intensity = 0; scopeLight.visible = true; scene.fog = new THREE.Fog(0x120606, 0.003, 0.055); // light falls off with distance, as from a scope tip
+  renderer.clippingPlanes = []; stageEl.classList.add('is-scope'); document.getElementById('scope-tags').hidden = false; document.getElementById('scope-hud').hidden = false;
+  showTip(null); renderScope(); applyVisibility(); scopeUpdate();
+  Promise.all([...SCOPE_SYS].map(k => loadSystem(k))).then(() => { if (state.mode !== 'scope') return; scopePalate(true); applyVisibility(); scopeUpdate(); });
+}
+function scopeExit() {
+  if (scope.saved) { hemi.intensity = scope.saved.hemi; key.intensity = scope.saved.key; fill.intensity = scope.saved.fill; rim.intensity = scope.saved.rim; }
+  scopeLight.visible = false; scene.fog = null; scopePalate(false); stageEl.classList.remove('is-scope'); document.getElementById('scope-tags').hidden = true; document.getElementById('scope-hud').hidden = true;
+  sel.clear(); state.selected = null; applyCut(); needsRender = true;
+}
+function scopeChecklist() {
+  const el = document.getElementById('scope-check'); if (!el) return;
+  el.innerHTML = (SCOPE.anchors || []).map(a => `<li class="${scope.seen.has(a.id) ? 'seen' : ''}">${esc(a.name)}</li>`).join('');
+  document.getElementById('scope-count').textContent = `${scope.seen.size} of ${(SCOPE.anchors || []).length} seen`;
+}
+function renderScope() {
+  const ui = document.getElementById('scope-ui'), reg = scopeRegion(), n = scope.P.length - 1, q = scope.quiz;
+  let quiz = `<div class="nav"><button class="btn" id="scope-quiz">Test me: find a landmark</button></div>`;
+  if (q) quiz = `<div class="checkbox"><h3>Find it</h3><p>Navigate to and click: <b>${esc(q.target.name)}</b></p>${q.done ? `<div class="verdict good">Found. ${esc(q.target.note)}</div>` : q.said ? `<div class="verdict bad">${esc(q.said)}</div>` : '<p class="fine">The tags are hidden. Advance, steer, and click the landmark in the view.</p>'}
+    <div class="nav"><button class="btn primary" id="scope-quiz">${q.done ? 'Another' : 'Skip'}</button><button class="btn" id="scope-quiz-end">Stop testing</button><span class="spacer"></span><span class="fine">${scope.score || 0} found</span></div></div>`;
+  ui.innerHTML = `<div class="eyebrow"><span>Scope</span><span>·</span><span>Left nasal passage</span></div><h2>Flexible nasopharyngoscopy</h2>
+    <div class="scope-row"><button class="btn" id="scope-back" title="Withdraw (down arrow)">Withdraw</button><input type="range" id="scope-slider" min="0" max="${n}" step="0.5" value="${scope.s}" aria-label="Scope depth"><button class="btn primary" id="scope-fwd" title="Advance (up arrow)">Advance</button></div>
+    <div class="eyebrow"><span id="scope-depth">${(scope.s / 10).toFixed(1)} cm</span><span>·</span><span id="scope-region">${esc(reg.name)}</span></div>
+    <p id="scope-teach">${esc(reg.teach)}</p>${quiz}
+    <div class="nav"><button class="icon-btn" id="scope-tagbtn" aria-pressed="${scope.tags}">Landmark tags</button><button class="icon-btn" id="scope-center" title="Straighten the tip (0)">Straighten tip</button><span class="spacer"></span><span class="fine" id="scope-count"></span></div>
+    <h3>Landmarks</h3><ul class="checklist" id="scope-check"></ul>
+    <p class="fine">Scroll or use the arrow keys to advance and withdraw; drag to deflect the tip; click a wall to identify it. In this model the soft palate is shown dropped forward, as in quiet nasal breathing, so the scope can pass behind it. For anatomical preparation only; it does not replace supervised endoscopy training.</p>`;
+  scopeChecklist();
+}
+function scopeNewQuiz() { const pool = (SCOPE.anchors || []).filter(a => !scope.quiz || a.id !== scope.quiz.target.id); scope.quiz = { target: pool[Math.floor(Math.random() * pool.length)], done: false, said: '' }; renderScope(); scopeUpdate(); }
+function scopeClick(e) {
+  const r = canvas.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+  if (scope.quiz && !scope.quiz.done) {
+    let best = null; for (const t of scope.shown) { const d = Math.hypot(t.x - x, t.y - y); if (d < 64 && (!best || d < best.d)) best = { t, d }; }
+    if (best && best.t.a.id === scope.quiz.target.id) { scope.quiz.done = true; scope.score = (scope.score || 0) + 1; }
+    else scope.quiz.said = best ? `That is the ${best.t.a.name.toLowerCase()}. Keep looking.` : 'No landmark there. Move closer or steer toward it.';
+    renderScope(); scopeUpdate(); return;
+  }
+  const m = castAt(e); if (!m) return; const key2 = labelOfId.get(m.userData.id); sel.clear(); sel.add(m.userData.id); state.selected = key2; applyVisibility(); renderDetail(); scopeUpdate();
+}
+document.getElementById('scope-ui').addEventListener('click', e => {
+  const t = e.target.closest('button'); if (!t) return;
+  if (t.id === 'scope-fwd') scopeAdvance(4); else if (t.id === 'scope-back') scopeAdvance(-4);
+  else if (t.id === 'scope-tagbtn') { scope.tags = !scope.tags; t.setAttribute('aria-pressed', String(scope.tags)); scopeUpdate(); }
+  else if (t.id === 'scope-center') { scope.yaw = scope.pitch = 0; scopeUpdate(); }
+  else if (t.id === 'scope-quiz') scopeNewQuiz();
+  else if (t.id === 'scope-quiz-end') { scope.quiz = null; renderScope(); scopeUpdate(); }
+});
+document.getElementById('scope-ui').addEventListener('input', e => { if (e.target.id === 'scope-slider') { scope.s = +e.target.value; scopeUpdate(); } });
 
 /* ---------- Quiz ---------- */
 const TYPES = { name: 'Name it', find: 'Find it', function: 'Function' };
@@ -875,6 +1137,8 @@ document.getElementById('quiz-ui').addEventListener('click', e => {
 });
 document.addEventListener('keydown', e => {
   if (e.target && /^(INPUT|TEXTAREA)$/.test(e.target.tagName)) return;
+  if (state.mode === 'scope') { if (e.key === 'ArrowUp' || e.key === 'w') { e.preventDefault(); scopeAdvance(2); } else if (e.key === 'ArrowDown' || e.key === 's') { e.preventDefault(); scopeAdvance(-2); } else if (e.key === 'ArrowLeft') { scope.yaw = Math.max(-1, scope.yaw - 0.08); scopeUpdate(); } else if (e.key === 'ArrowRight') { scope.yaw = Math.min(1, scope.yaw + 0.08); scopeUpdate(); } else if (e.key === '0') { scope.yaw = scope.pitch = 0; scopeUpdate(); } return; }
+  if (state.mode === 'surgery') { if (surg.proc && e.key === 'ArrowRight') surgGo(surg.i + 1); else if (surg.proc && e.key === 'ArrowLeft') surgGo(surg.i - 1); return; }
   if (state.mode === 'explore' && !e.metaKey && !e.ctrlKey && !e.altKey) { const k = e.key.toLowerCase(); if (k === 'h') togglePieces(hiddenIds); else if (k === 'g') togglePieces(ghostIds); else if (k === 'i') toggleIsolate(); else if (e.key === 'Escape') select(null); return; }
   if (state.mode !== 'quiz' || !state.quiz) return; const q = state.quiz.q;
   if (e.key === 'Enter' && findOpen() && state.selected && sel.size) { answer(state.selected); return; }
@@ -886,7 +1150,7 @@ document.addEventListener('keydown', e => {
 function frame() {
   requestAnimationFrame(frame);
   if (state.spin) { orbit.theta += 0.004; updateCamera(); }
-  if (needsRender) { renderer.render(scene, camera); needsRender = false; }
+  if (needsRender) { renderer.render(scene, activeCam()); needsRender = false; }
 }
 
 /* ---------- Opening screen ----------

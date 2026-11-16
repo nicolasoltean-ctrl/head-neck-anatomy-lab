@@ -1,0 +1,433 @@
+{
+ "id": "open-tracheostomy",
+ "name": "Open tracheostomy",
+ "category": "Airway",
+ "side": "both",
+ "summary": "Open tracheostomy creates a surgical airway through the anterior wall of the cervical trachea, entered between the second and third rings through a midline dissection of the infrahyoid neck. The operation is safe only while it stays in the midline and between two limits: the cricoid cartilage above and the great vessels of the thoracic inlet below, with the recurrent laryngeal nerves and pleural apices lying just lateral to the field.",
+ "setup": "Supine with a shoulder roll and the neck extended, which lifts the trachea out of the thoracic inlet and brings it closer to the skin. The thyroid notch, cricoid arch and sternal notch are palpated and marked; a horizontal skin-crease incision is placed about midway between the cricoid and the sternal notch.",
+ "steps": [
+  {
+   "title": "Surface landmarks and incision",
+   "action": "The laryngotracheal skeleton is palpated from above down: thyroid notch, the soft gap of the cricothyroid ligament, the firm arch of the cricoid, then the trachea sinking away towards the sternal notch. The horizontal incision is marked over the muscular triangles in the midline, below the cricoid and above the notch, where the trachea is still cervical. Skin over the muscular triangle is shown transparent so the cartilages beneath can be seen.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "skin",
+     "bone",
+     "viscera"
+    ],
+    "peel": 0
+   },
+   "focus": [
+    "Thyroid cartilage",
+    "Median cricothyroid ligament",
+    "Cricoid cartilage",
+    "Trachea"
+   ],
+   "risk": [
+    {
+     "label": "Cricoid cartilage",
+     "why": "An incision and stoma planned too high bring the tube against the cricoid; the cricoid arch is identified by palpation first and the incision is kept well below it."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Muscular triangle"
+   ],
+   "landmarks": [
+    "Cricoid arch lies at about the level of C6 and is the first firm ring felt below the thyroid cartilage",
+    "The trachea runs backwards as it descends, so it is deepest at the sternal notch",
+    "Neck extension draws more tracheal rings above the sternal notch, and draws the mediastinal vessels up with them"
+   ],
+   "pearl": "The cricoid, not the thyroid notch, is the landmark that fixes the level of the stoma; everything is counted down from it.",
+   "check": {
+    "prompt": "Click the midline membrane between the thyroid and cricoid cartilages, the site of an emergency cricothyroidotomy and above the level of a formal tracheostomy",
+    "answer": "Median cricothyroid ligament"
+   }
+  },
+  {
+   "title": "Skin, subcutaneous fat and platysma",
+   "action": "The incision is carried through skin and subcutaneous fat to the platysma, which is divided in the line of the incision. Near the midline of the lower neck the two platysma sheets diverge, so the layer is thin or absent directly over the trachea and thicker towards the ends of the wound. The plane entered is the subplatysmal plane, on the investing layer of deep cervical fascia.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "vein"
+    ],
+    "peel": 1
+   },
+   "focus": [
+    "Platysma"
+   ],
+   "risk": [
+    {
+     "label": "Anterior jugular vein",
+     "why": "It runs vertically just deep to the platysma on either side of the midline and is cut if the platysma is divided blindly; the muscle is lifted and divided under vision."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Superficial investing cervical fascia"
+   ],
+   "landmarks": [
+    "Platysma lies in the superficial fascia, superficial to the investing layer of deep cervical fascia",
+    "The medial borders of the two platysma muscles diverge inferiorly, leaving a bare strip over the lower midline"
+   ],
+   "pearl": "Absence of platysma in the midline is normal low in the neck; fat directly on fascia there does not mean the plane has been lost."
+  },
+  {
+   "title": "Subplatysmal plane and anterior jugular veins",
+   "action": "Short subplatysmal flaps are raised up to the cricoid and down to the sternal notch, exposing the investing fascia over the strap muscles. The anterior jugular veins are seen descending on either side of the midline; low in the neck they pierce the investing fascia and are joined across the midline by the jugular venous arch in the suprasternal space. Veins that cross the field are retracted laterally or ligated.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "vein"
+    ],
+    "peel": 1
+   },
+   "focus": [
+    "Anterior jugular vein"
+   ],
+   "risk": [
+    {
+     "label": "Anterior jugular vein",
+     "why": "A communicating vein or the jugular venous arch crossing the midline is torn during flap elevation or midline fascial incision; crossing veins are ligated before the fascia is opened."
+    }
+   ],
+   "hide": [
+    "Platysma"
+   ],
+   "ghost": [
+    "Superficial investing cervical fascia"
+   ],
+   "landmarks": [
+    "Anterior jugular veins descend near the midline and turn laterally deep to sternocleidomastoid to reach the external jugular or subclavian vein",
+    "The jugular venous arch joins the two veins just above the manubrium, in the suprasternal space"
+   ],
+   "pearl": "Anterior jugular veins vary in size, number and symmetry; a single midline vein lying exactly in the path of dissection is common.",
+   "check": {
+    "prompt": "Click the paired superficial vein that descends beside the midline of the neck and is ligated or retracted when it crosses the field",
+    "answer": "Anterior jugular vein"
+   }
+  },
+  {
+   "title": "Midline raphe of the strap muscles",
+   "action": "The investing fascia is opened vertically in the midline, in the pale avascular line between the two sternohyoid muscles. The sternohyoids are separated and retracted laterally, then the sternothyroids beneath them, exposing the pretracheal fascia. Dissection stays strictly vertical and midline, with the trachea palpated repeatedly to confirm position.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "vein",
+     "artery",
+     "bone",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Sternohyoid muscle",
+    "Sternothyroid muscle"
+   ],
+   "risk": [
+    {
+     "label": "Left common carotid artery",
+     "why": "Dissection that drifts off the midline passes lateral to the trachea towards the carotid sheath; uneven retraction pulls the trachea to one side, so retractors are placed symmetrically and the trachea is re-palpated."
+    },
+    {
+     "label": "Internal jugular vein",
+     "why": "It lies in the carotid sheath lateral to the artery and is reached only by lateral drift; staying between the paired strap muscles keeps the dissection medial to both sheaths."
+    },
+    {
+     "label": "card:ansa-cervicalis",
+     "why": "Its branches enter the strap muscles from their lateral borders, so the muscles are separated in the midline rather than divided transversely."
+    }
+   ],
+   "hide": [
+    "Superficial investing cervical fascia"
+   ],
+   "ghost": [],
+   "landmarks": [
+    "Sternohyoid is superficial; sternothyroid lies deep to it, directly on the thyroid gland and pretracheal fascia",
+    "The sternohyoids lie apart at the sternum and converge as they ascend; the sternothyroids are closest at the sternum and diverge towards the thyroid cartilage",
+    "The carotid sheaths lie lateral to the trachea and thyroid lobes, deep to sternocleidomastoid"
+   ],
+   "pearl": "The midline between the strap muscles is an avascular plane; bleeding or muscle fibres across the field mean the dissection has left the midline."
+  },
+  {
+   "title": "Thyroid isthmus and pretracheal fascia",
+   "action": "With the straps retracted, the thyroid isthmus is seen crossing the front of the trachea, with the cricoid arch above it and the pretracheal fascia and fat below it. The isthmus usually covers the second and third tracheal rings, which is exactly where the trachea is to be opened. The pretracheal (visceral) fascia encloses the gland and trachea together and is incised to reach the tracheal wall.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "vein",
+     "artery",
+     "bone",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Thyroid gland",
+    "Cricoid cartilage",
+    "Trachea"
+   ],
+   "risk": [
+    {
+     "label": "card:isthmus-of-thyroid-gland",
+     "why": "The isthmus is vascular and bleeds if torn by a retractor or cut without control; it is defined at its upper and lower borders before it is moved or divided."
+    },
+    {
+     "label": "card:pyramidal-lobe-of-thyroid-gland",
+     "why": "When present it ascends from the isthmus near the midline over the cricoid and is torn during superior dissection; it is retracted or divided with haemostasis."
+    },
+    {
+     "label": "card:inferior-thyroid-veins",
+     "why": "They leave the lower border of the isthmus and descend on the front of the trachea in the pretracheal fat; blunt spreading below the isthmus tears them, so they are identified and ligated."
+    }
+   ],
+   "hide": [
+    "Sternohyoid muscle",
+    "Sternothyroid muscle"
+   ],
+   "ghost": [],
+   "landmarks": [
+    "Thyroid isthmus joins the two lobes across the second and third tracheal rings",
+    "Cricoid arch is palpable immediately above the upper border of the isthmus",
+    "Inferior thyroid veins run from the isthmus and lower poles down the front of the trachea to the brachiocephalic veins"
+   ],
+   "pearl": "The isthmus sits on the rings that are to be opened, so every tracheostomy needs a decision about it: retract it up, retract it down, or divide it.",
+   "check": {
+    "prompt": "Click the gland whose midline bridge lies across the second and third tracheal rings",
+    "answer": "Thyroid gland"
+   }
+  },
+  {
+   "title": "Managing the isthmus",
+   "action": "A small isthmus is freed from the trachea and retracted superiorly or inferiorly. A bulky isthmus is separated from the anterior tracheal wall in the plane between its capsule and the trachea, divided in the midline, and both cut edges are secured. The anterior tracheal wall is then cleared of pretracheal fat and veins from the cricoid down to the fourth ring, keeping the dissection on the front of the trachea.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "vein",
+     "artery",
+     "bone",
+     "viscera",
+     "lymph"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Trachea",
+    "Cricoid cartilage"
+   ],
+   "risk": [
+    {
+     "label": "card:isthmus-of-thyroid-gland",
+     "why": "Unsecured cut edges of the divided isthmus bleed into the wound and around the tube; each stump is suture-ligated or sealed."
+    },
+    {
+     "label": "card:thyroid-ima-artery",
+     "why": "This inconstant artery ascends on the front of the trachea in the midline to the isthmus and is divided unseen when pretracheal tissue is swept bluntly; midline pretracheal tissue is inspected and controlled before division."
+    },
+    {
+     "label": "card:inferior-thyroid-veins",
+     "why": "They form a plexus on the trachea below the isthmus and are avulsed by downward traction; they are ligated rather than swept."
+    }
+   ],
+   "hide": [
+    "Thyroid gland"
+   ],
+   "ghost": [],
+   "landmarks": [
+    "The isthmus is bound to the upper trachea by pretracheal fascia; the plane between gland and trachea is opened from its lower border",
+    "Thyroid ima artery, when present, arises from the brachiocephalic trunk or aortic arch and reaches the isthmus from below in the midline",
+    "Pretracheal lymph nodes lie in the same fat as the inferior thyroid veins"
+   ],
+   "pearl": "The midline in front of the trachea is not avascular below the isthmus: the inferior thyroid veins and an occasional thyroid ima artery both run there."
+  },
+  {
+   "title": "Cricoid hook and counting the rings",
+   "action": "A cricoid hook is seated under the cricoid arch, in the interval between the cricoid and the first tracheal ring, and the larynx is drawn upwards and forwards. This steadies the airway and delivers the upper trachea out of the thoracic inlet into the wound. The rings are then counted downwards from the cricoid to identify the second and third.",
+   "view": {
+    "from": "left-front",
+    "systems": [
+     "bone",
+     "viscera",
+     "artery",
+     "vein"
+    ],
+    "peel": 3
+   },
+   "focus": [
+    "Cricoid cartilage",
+    "Trachea",
+    "Median cricothyroid ligament"
+   ],
+   "risk": [
+    {
+     "label": "Cricoid cartilage",
+     "why": "A stoma through or against the cricoid or first ring exposes the only complete cartilaginous ring to pressure and infection; the rings are counted from the cricoid and the opening is placed at the second to third ring."
+    },
+    {
+     "label": "card:tracheal-rings",
+     "why": "Miscounting places the opening too high or too low; the first ring is identified immediately below the cricoid arch before any ring is cut."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "The cricoid is the only complete ring of the airway, with a narrow arch in front and a tall lamina behind",
+    "The first tracheal ring is joined to the lower border of the cricoid by the cricotracheal ligament",
+    "Tracheal rings are incomplete posteriorly, where the membranous wall lies against the oesophagus"
+   ],
+   "pearl": "The cricothyroid ligament above the cricoid and the first ring below it are both off limits for an elective tracheostomy.",
+   "check": {
+    "prompt": "Click the only complete cartilaginous ring of the airway, under whose arch the hook is placed",
+    "answer": "Cricoid cartilage"
+   }
+  },
+  {
+   "title": "Lower limit: the thoracic inlet",
+   "action": "Before the trachea is opened, the lower end of the field is checked. The brachiocephalic trunk crosses the front of the trachea obliquely from left to right just behind the manubrium, with the left brachiocephalic vein in front of it, and the apices of the pleura rise into the root of the neck on either side. Dissection and the tracheal opening are kept above this level and on the midline of the trachea.",
+   "view": {
+    "from": "below-front",
+    "systems": [
+     "bone",
+     "viscera",
+     "artery",
+     "vein"
+    ],
+    "peel": 3
+   },
+   "focus": [
+    "Trachea",
+    "Brachiocephalic trunk",
+    "Clavicle"
+   ],
+   "risk": [
+    {
+     "label": "Brachiocephalic trunk",
+     "why": "It may ride above the sternal notch, especially with the neck extended and in children, and is injured by low dissection or later eroded by a low-lying tube; a pulsatile vessel on the anterior trachea is looked for and the opening is not made below the fourth ring."
+    },
+    {
+     "label": "card:brachiocephalic-veins",
+     "why": "The left brachiocephalic vein crosses in front of the trachea at the thoracic inlet and may present in the lower wound; dissection does not pass behind the manubrium."
+    },
+    {
+     "label": "Right common carotid artery",
+     "why": "It arises from the brachiocephalic trunk beside the trachea and lies close to its right anterolateral wall low in the neck; dissection is kept on the anterior tracheal midline."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "Brachiocephalic trunk arises from the aortic arch to the left of the midline and crosses the trachea to reach the right sternoclavicular joint",
+    "The pleural apices project above the medial third of each clavicle, lateral to the trachea and deep to the scalene muscles",
+    "The pretracheal space is continuous below with the superior mediastinum"
+   ],
+   "pearl": "Neck extension that helpfully raises the trachea also raises the brachiocephalic trunk towards the wound.",
+   "check": {
+    "prompt": "Click the great artery that crosses the front of the trachea from left to right at the thoracic inlet",
+    "answer": "Brachiocephalic trunk"
+   }
+  },
+  {
+   "title": "Tracheotomy at the second and third rings",
+   "action": "The anterior tracheal wall is opened in the midline between the second and third rings, as a horizontal intercartilaginous incision, a small anterior window, or an inferiorly based flap of the anterior wall sutured to the skin edge. Only the anterior wall is cut: the incision does not extend around the sides of the trachea and the blade does not pass deeply into the lumen. The tracheo-oesophageal grooves, the posterior membranous wall and the oesophagus lie immediately beyond those limits.",
+   "view": {
+    "from": "left-front",
+    "systems": [
+     "bone",
+     "viscera",
+     "nerve",
+     "artery"
+    ],
+    "peel": 3
+   },
+   "focus": [
+    "Trachea",
+    "Cricoid cartilage"
+   ],
+   "risk": [
+    {
+     "label": "card:recurrent-laryngeal-nerve",
+     "why": "Each nerve ascends in the tracheo-oesophageal groove at the posterolateral edge of the trachea and is injured by lateral dissection or a tracheal incision carried too far around the side; all work stays on the anterior wall."
+    },
+    {
+     "label": "card:tracheoesophageal-groove",
+     "why": "The groove also carries branches of the inferior thyroid artery beside the nerve; it is not opened or cauterised during a tracheostomy."
+    },
+    {
+     "label": "card:cervical-esophagus",
+     "why": "It lies directly behind the thin membranous posterior tracheal wall and is perforated by a blade or dilator passed too deeply; the incision is made shallow and under direct vision."
+    },
+    {
+     "label": "Cricoid cartilage",
+     "why": "An opening that extends up into the first ring brings the tube against the cricoid; the upper cut stays below the first ring."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "Recurrent laryngeal nerves run in the tracheo-oesophageal grooves and enter the larynx behind the cricothyroid joints",
+    "The posterior tracheal wall is membrane and trachealis muscle only, with the oesophagus directly behind it",
+    "Lateral traction sutures, when used, are placed around a ring on the anterolateral wall, not in the groove"
+   ],
+   "pearl": "The recurrent laryngeal nerves are never seen in a correctly performed tracheostomy; seeing the tracheo-oesophageal groove means the dissection is too lateral."
+  },
+  {
+   "title": "Tube placement and the final relations",
+   "action": "The tube is passed through the opening and turned down the lumen, so that its shaft lies in the cervical trachea with the tip above the carina and the flange flat on the skin. The tube must enter the lumen rather than the pretracheal space in front of the trachea, and its tip must not press on the posterior wall. Once seated, the tube's anterior curve and cuff rest against the anterior tracheal wall, which is the wall the brachiocephalic trunk crosses lower down.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "bone",
+     "viscera",
+     "artery",
+     "vein"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Trachea",
+    "Cricoid cartilage",
+    "Brachiocephalic trunk"
+   ],
+   "risk": [
+    {
+     "label": "Brachiocephalic trunk",
+     "why": "A stoma placed too low, or a tube tip or cuff bearing on the anterior wall, can erode through the trachea into the artery where it crosses; the stoma is kept at the second to third ring and the tube sits without anterior leverage."
+    },
+    {
+     "label": "card:cervical-esophagus",
+     "why": "A tube forced backwards tears the membranous wall into the oesophagus; the tube is introduced along the axis of the lumen under vision."
+    },
+    {
+     "label": "Cricoid cartilage",
+     "why": "A tube lying against the cricoid causes perichondritis and later subglottic stenosis; this is the consequence of a stoma sited too high."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "The pretracheal space in front of the trachea leads down into the superior mediastinum; a tube placed there creates a false passage",
+    "The trachea lies progressively deeper from cricoid to sternal notch, so the tube passes backwards as well as downwards",
+    "The pleural apices lie lateral to the lower cervical trachea; air tracking from the wound or a false passage reaches the mediastinum and pleura"
+   ],
+   "pearl": "Each limit of the operation has its own late complication: too high injures the cricoid, too low reaches the brachiocephalic trunk, too deep reaches the oesophagus."
+  }
+ ],
+ "complications": [
+  "Early haemorrhage: the anterior jugular veins, thyroid isthmus, inferior thyroid veins and an occasional thyroid ima artery all lie in or beside the midline path to the trachea.",
+  "Subglottic stenosis: a stoma at the first ring or cricothyroid level puts the tube against the cricoid, the only complete ring, where perichondritis and scarring narrow the airway.",
+  "Tracheo-innominate artery fistula: the brachiocephalic trunk crosses the anterior tracheal wall at the thoracic inlet, where a low stoma, tube tip or cuff can erode into it.",
+  "Pneumothorax and pneumomediastinum: the pleural apices rise into the root of the neck beside the trachea, and the pretracheal space is continuous with the superior mediastinum.",
+  "Recurrent laryngeal nerve injury: the nerves ascend in the tracheo-oesophageal grooves and are reached by dissection or tracheal incision carried lateral to the anterior wall.",
+  "Tracheo-oesophageal fistula or posterior wall injury: the membranous posterior wall has no cartilage and lies directly on the oesophagus.",
+  "False passage and tube displacement: the tube can enter the pretracheal space instead of the lumen, particularly where the trachea is deep, as in a thick or short neck."
+ ],
+ "notes": "Structures with no geometry in the model, referenced by card or described in text only: recurrent laryngeal nerve, tracheo-oesophageal groove, cervical oesophagus, thyroid isthmus and pyramidal lobe (the thyroid gland is a single mesh), inferior thyroid veins, thyroid ima artery, brachiocephalic veins, individual tracheal rings, ansa cervicalis. Structures with neither geometry nor card: pleural apices (cervical pleura), manubrium and sternal notch, jugular venous arch as a separate object (covered by the anterior jugular vein card), pretracheal fascia, cricotracheal ligament. Simplifications: step 1 relies on ghosting the 'Muscular triangle' skin region so the cartilages show through intact skin; if the skin is one welded mesh or ghosting does not make it see-through, peel should be raised to 1 for that step. The whole 'Thyroid gland' is hidden from step 6 to stand for retraction or division of the isthmus, although the lobes stay in place in reality. Steps 2 and 3 ghost the investing fascia so the anterior jugular veins show; the model's depth order of vein and fascia was not checked. Ring numbering cannot be shown because the trachea is one mesh. Least certain statements: the isthmus is given as overlying rings 2-3 (some texts give 2-4), and the level at which the brachiocephalic trunk crosses the trachea is deliberately described without a ring number because it varies. The 'not below the fourth ring' limit and the convergence/divergence pattern of sternohyoid versus sternothyroid are standard teaching but worth a reviewer's glance. The inferiorly based tracheal flap is the Bjork flap; the eponym was left out of the step text."
+}

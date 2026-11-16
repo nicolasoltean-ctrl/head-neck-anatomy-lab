@@ -19,3 +19,13 @@ plain export fuses them under the parent's name. To separate them:
    It is re-runnable; unnamed pieces keep the parent's label.
 4. Map new labels to cards in `data/label_map.json` and to their whole structure in `data/label_parents.json`, then
    run `build3d.py`.
+
+## Training content (Surgery and Scope modes)
+
+- `data/procedures/<id>.json`: one surgical walkthrough each. A step has `view` (`from`, `systems`, `peel`), `focus` (highlighted
+  blue), `risk` (amber; a model label or `card:<id>` for a structure with no geometry), cumulative `hide`, per-step `ghost`,
+  `landmarks`, `pearl` and an optional `check` (click-to-identify). Labels must match the model exactly; `build3d.py` embeds the
+  files in `PROC_ORDER`. Each file's `notes` field records what the model lacks and what the author was unsure of; it is not shipped.
+- `data/scope.json`: the nasopharyngoscopy route (`path`, 1 mm spacing), region texts and landmark `anchors`. Regenerate the path
+  with `tools/scope_path.py` (needs numpy; Blender's bundled Python has it), which centres a hand-set waypoint route between the
+  airway walls. `palate_offset` moves the soft palate and uvula in Scope mode only, to open the velopharyngeal port.

@@ -146,6 +146,18 @@ for cat in CATS:
     for it in json.load(open(here / "data" / f"{cat}.json")):
         it["category"] = cat; items.append(it)
 tpl = (here / "template3d.html").read_text()
+# training content: surgical walkthroughs (data/procedures/*.json, in PROC_ORDER) and the scope route (data/scope.json)
+PROC_ORDER = ["open-tracheostomy", "thyroid-lobectomy", "superficial-parotidectomy", "submandibular-gland-excision", "selective-neck-dissection", "tonsillectomy"]
+pdir = here / "data" / "procedures"; procs = []
+if pdir.exists():
+    found = {f.stem: json.load(open(f)) for f in sorted(pdir.glob("*.json"))}
+    procs = [found[k] for k in PROC_ORDER if k in found] + [v for k, v in sorted(found.items()) if k not in PROC_ORDER]
+    for pr in procs: pr.pop("notes", None)
+scope_data = json.load(open(here / "data" / "scope.json")) if (here / "data" / "scope.json").exists() else {}
+scope_data.pop("_about", None)
+assert tpl.count("/*__PROCS__*/[]") == 1 and tpl.count("/*__SCOPE__*/{}") == 1
+tpl = tpl.replace("/*__PROCS__*/[]", json.dumps(procs, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")).replace("/*__SCOPE__*/{}", json.dumps(scope_data, separators=(",", ":")))
+print("procedures", [pr["id"] for pr in procs], "| scope path points", len(scope_data.get("path", [])))
 assert tpl.count("/*__DATA__*/[]") == 1 and tpl.count("/*__MANIFEST__*/{}") == 1
 j = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 out_art = tpl.replace("/*__DATA__*/[]", j(items)).replace("/*__MANIFEST__*/{}", j(art))

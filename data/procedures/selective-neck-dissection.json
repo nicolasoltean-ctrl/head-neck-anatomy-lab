@@ -1,0 +1,544 @@
+{
+ "id": "selective-neck-dissection",
+ "name": "Selective neck dissection (levels II-IV)",
+ "category": "Oncologic neck",
+ "side": "l",
+ "summary": "Selective (lateral) neck dissection removes the fibrofatty tissue and lymph nodes of levels II-IV along the internal jugular vein in one block while preserving the sternocleidomastoid, the internal jugular vein and the spinal accessory nerve. Every border of the specimen is a named muscle, nerve or vessel, so the operation is safe only when each boundary structure is identified before the tissue beside it is divided.",
+ "setup": "Supine with a shoulder roll, neck extended and head turned to the right. A transverse skin-crease incision in the mid-neck (or a hockey-stick extension toward the mastoid) is kept at least two fingerbreadths below the lower border of the mandible; mastoid tip, angle of mandible, hyoid, cricoid, clavicle and both borders of sternocleidomastoid are marked first.",
+ "steps": [
+  {
+   "title": "Surface landmarks and incision",
+   "action": "The borders of sternocleidomastoid, the angle of the mandible, hyoid, cricoid and clavicle are palpated and the incision is marked in a skin crease over the middle of the muscle. Levels II-IV lie deep to sternocleidomastoid along the internal jugular vein, from the skull base to the clavicle. Skin and subcutaneous fat are divided down to the platysma.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "skin"
+    ],
+    "peel": 0
+   },
+   "focus": [
+    "Sternocleidomastoid region",
+    "Carotid triangle",
+    "Submandibular triangle",
+    "Lateral region of neck"
+   ],
+   "risk": [],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "Hyoid marks the level II/III boundary and the lower border of the cricoid marks III/IV",
+    "The posterior border of sternocleidomastoid is the lateral limit of levels II-IV; behind it lies level V, which is not entered",
+    "An incision two fingerbreadths or more below the mandible stays clear of the marginal mandibular branch"
+   ],
+   "pearl": "The node levels are defined by structures that can be felt through the skin (hyoid, cricoid, sternocleidomastoid), so the dissection can be mapped before the first cut."
+  },
+  {
+   "title": "Platysma and the subplatysmal plane",
+   "action": "The platysma is divided in the line of the incision and flaps are raised on its deep surface, in the areolar plane between the muscle and the superficial (investing) layer of deep cervical fascia. The superior flap is carried to the lower border of the submandibular gland and the inferior flap to the clavicle. The external jugular vein and great auricular nerve are left down on the sternocleidomastoid.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "muscle",
+     "bone",
+     "vein",
+     "nerve"
+    ],
+    "peel": 1
+   },
+   "focus": [
+    "Platysma"
+   ],
+   "risk": [
+    {
+     "label": "External jugular vein",
+     "why": "It lies immediately deep to the platysma on the sternocleidomastoid and is opened if the flap is raised too deep."
+    },
+    {
+     "label": "card:great-auricular-nerve",
+     "why": "It ascends on the sternocleidomastoid toward the ear lobe just behind the external jugular vein; the platysma is thin or absent here, so the flap plane drifts deep to the nerve unless it is kept on the fascia."
+    },
+    {
+     "label": "Marginal mandibular branch of facial nerve",
+     "why": "It runs just deep to the platysma near the lower border of the mandible and is cut if the superior flap is raised in the wrong plane or the incision is placed too high."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "The platysma is deficient in the midline and posteriorly over the upper sternocleidomastoid",
+    "The correct plane leaves the external jugular vein and great auricular nerve on the fascia covering sternocleidomastoid"
+   ],
+   "pearl": "Flaps raised directly on the deep surface of the platysma keep its blood supply in the flap and every named nerve and vein in the floor."
+  },
+  {
+   "title": "Superior flap and the marginal mandibular branch",
+   "action": "With the platysma elevated, the investing fascia over the submandibular gland comes into view with the facial vein crossing the gland. The marginal mandibular branch runs within this fascia, superficial to the facial vein and artery. In a level II-IV dissection the submandibular triangle is not opened; the fascia is incised at the lower border of the gland, well below the nerve, and the nerve is carried up with the flap.",
+   "view": {
+    "from": "below-left",
+    "systems": [
+     "muscle",
+     "bone",
+     "artery",
+     "vein",
+     "nerve",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 1
+   },
+   "focus": [
+    "Marginal mandibular branch of facial nerve",
+    "Facial vein",
+    "Submandibular gland",
+    "Cervical branch of facial nerve"
+   ],
+   "risk": [
+    {
+     "label": "Marginal mandibular branch of facial nerve",
+     "why": "It loops below the mandible in the fascia over the gland and is stretched by a retractor on the superior flap or divided with the fascia; incising the fascia low on the gland and lifting it with the facial vein keeps the nerve in the flap."
+    },
+    {
+     "label": "Facial vein",
+     "why": "It crosses the surface of the gland just deep to the nerve and is torn when the fascia is lifted without first identifying it."
+    }
+   ],
+   "hide": [
+    "Platysma"
+   ],
+   "ghost": [
+    "Superficial investing cervical fascia"
+   ],
+   "landmarks": [
+    "The marginal mandibular branch crosses superficial to the facial vein and artery",
+    "The lower border of the submandibular gland and the tail of the parotid lead back to the posterior belly of digastric"
+   ],
+   "pearl": "The nerve is always superficial to the facial vein, so fascia divided at the lower border of the gland and reflected upward with the ligated vein carries the nerve out of the field.",
+   "check": {
+    "prompt": "Click the nerve that runs in the fascia over the submandibular gland, superficial to the facial vessels, on its way to the muscles of the lower lip",
+    "answer": "Marginal mandibular branch of facial nerve"
+   }
+  },
+  {
+   "title": "Unwrapping the fascia from sternocleidomastoid",
+   "action": "The investing fascia is incised along the anterior border of sternocleidomastoid from mastoid to clavicle and peeled off the anterior border and then the deep surface of the muscle, so that the fascia stays on the specimen. The external jugular vein is ligated where it crosses the muscle and the great auricular nerve is kept when possible. The muscle is then retracted laterally to open the space beneath it.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "muscle",
+     "bone",
+     "artery",
+     "vein",
+     "nerve",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Sternocleidomastoid muscle",
+    "External jugular vein"
+   ],
+   "risk": [
+    {
+     "label": "Accessory nerve (XI)",
+     "why": "It enters the deep surface of the upper sternocleidomastoid and is divided if the fascia is stripped from the upper muscle before the nerve has been seen."
+    },
+    {
+     "label": "card:great-auricular-nerve",
+     "why": "It curves around the posterior border of the muscle at the nerve point and crosses its surface; dividing it leaves the ear lobe and skin over the angle of the mandible numb."
+    },
+    {
+     "label": "External jugular vein",
+     "why": "It crosses the muscle obliquely and bleeds from both ends if avulsed rather than ligated."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "The investing layer splits to enclose sternocleidomastoid; the dissection follows its deep leaf",
+    "Small arterial branches enter the deep surface of the muscle from the occipital and superior thyroid arteries",
+    "The accessory nerve leaves the posterior border of the muscle just above the nerve point, where the great auricular nerve appears"
+   ],
+   "pearl": "On the deep surface of the upper third of the muscle, any cord running obliquely downward and backward is the accessory nerve until proven otherwise."
+  },
+  {
+   "title": "Posterior belly of digastric: the superior guide",
+   "action": "With sternocleidomastoid retracted laterally, the tail of the parotid and the lower border of the submandibular gland are lifted to expose the posterior belly of digastric with the stylohyoid beside it. Dissection along the lower border of the muscle is safe because no important structure crosses superficial to it except the facial vein and the marginal mandibular branch. The internal jugular vein, both carotids and cranial nerves X, XI and XII all pass deep to it.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "muscle",
+     "bone",
+     "artery",
+     "vein",
+     "nerve",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Posterior belly of digastric muscle",
+    "Stylohyoid muscle",
+    "Internal jugular vein",
+    "Occipital artery"
+   ],
+   "risk": [
+    {
+     "label": "Internal jugular vein",
+     "why": "Its upper end lies directly deep to the muscle and is torn by blind dissection or by a retractor placed under the digastric before the vein is seen."
+    },
+    {
+     "label": "Hypoglossal nerve (XII)",
+     "why": "It emerges below the lower border of the muscle to cross the carotids and is injured when bleeding in this corner is clamped blindly."
+    },
+    {
+     "label": "Occipital artery",
+     "why": "It runs backward along the lower border and deep surface of the muscle across the vein and the accessory nerve and bleeds into the top of level II if not controlled."
+    }
+   ],
+   "hide": [
+    "Sternocleidomastoid muscle",
+    "External jugular vein"
+   ],
+   "ghost": [
+    "Parotid gland"
+   ],
+   "landmarks": [
+    "The posterior belly runs from the mastoid notch toward the hyoid and is the upper limit of the dissection",
+    "The transverse process of the atlas is palpable deep to the upper end of the field, with the internal jugular vein and accessory nerve lying on it"
+   ],
+   "pearl": "Everything that matters in the upper neck lies deep to the posterior belly of digastric, so the muscle can be exposed along its whole length without danger and then retracted upward.",
+   "check": {
+    "prompt": "Click the muscle that forms the upper limit of the dissection and has the internal jugular vein, the carotids and the last three cranial nerves passing deep to it",
+    "answer": "Posterior belly of digastric muscle"
+   }
+  },
+  {
+   "title": "Spinal accessory nerve and levels IIa and IIb",
+   "action": "The accessory nerve is found emerging from beneath the posterior belly of digastric, crossing the internal jugular vein and running downward and backward to the deep surface of sternocleidomastoid. It is freed along its length; tissue in front of and below the nerve is level IIa and tissue above and behind it is level IIb. Level IIb is cleared off the splenius capitis and levator scapulae and passed forward beneath the nerve to stay in continuity with IIa.",
+   "view": {
+    "from": "left-back",
+    "systems": [
+     "muscle",
+     "bone",
+     "artery",
+     "vein",
+     "nerve",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Accessory nerve (XI)",
+    "Internal jugular vein",
+    "Jugulodigastric node",
+    "Lateral superior jugular node",
+    "Splenius capitis muscle"
+   ],
+   "risk": [
+    {
+     "label": "Accessory nerve (XI)",
+     "why": "Even when left intact it is weakened by traction, skeletonisation and loss of its small vessels during clearance of level IIb; it is handled gently and never lifted on a tight sling."
+    },
+    {
+     "label": "Internal jugular vein",
+     "why": "The nerve usually crosses superficial to the vein but may pass deep to it, so the vein is at risk while the nerve is traced up toward the skull base."
+    },
+    {
+     "label": "Occipital artery",
+     "why": "It or its sternocleidomastoid branch crosses the nerve at the top of level II and bleeds when the nerve is being freed."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Parotid gland"
+   ],
+   "landmarks": [
+    "The accessory nerve divides level II into IIa (anteroinferior) and IIb (posterosuperior)",
+    "Splenius capitis and levator scapulae form the floor of level IIb",
+    "The jugulodigastric node lies in IIa where the digastric crosses the internal jugular vein"
+   ],
+   "pearl": "Level IIb is the apex of the dissection, bounded by the skull base, the digastric and the accessory nerve, and clearing it is the step that puts the nerve at greatest risk.",
+   "check": {
+    "prompt": "Click the nerve that crosses the upper internal jugular vein obliquely to reach the deep surface of sternocleidomastoid and separates level IIa from IIb",
+    "answer": "Accessory nerve (XI)"
+   }
+  },
+  {
+   "title": "Posterior limit: cervical plexus rootlets and the deep floor",
+   "action": "Deep to the posterior border of sternocleidomastoid the fibrofatty tissue is divided down to the fascia covering the deep muscles, and the specimen is swept forward off that fascia. The cutaneous branches of the cervical plexus emerge here through the prevertebral fascia and mark the posterior and deep limit; the dissection stays superficial to them. The scalene muscles and levator scapulae form the floor, still covered by prevertebral fascia.",
+   "view": {
+    "from": "left-back",
+    "systems": [
+     "muscle",
+     "bone",
+     "artery",
+     "vein",
+     "nerve",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Scalenus medius muscle",
+    "Scalenus anterior muscle",
+    "Splenius capitis muscle"
+   ],
+   "risk": [
+    {
+     "label": "card:cervical-plexus",
+     "why": "The C2-C4 rootlets mark the deep plane; dividing them close to their origin or dissecting deep to them breaches the prevertebral fascia and endangers the phrenic contributions."
+    },
+    {
+     "label": "card:phrenic-nerve",
+     "why": "It is formed from C3-C5 at the lateral border of the anterior scalene, deep to the prevertebral fascia, and is injured when cervical rootlets are pulled up and cut flush with the muscle."
+    },
+    {
+     "label": "Accessory nerve (XI)",
+     "why": "Beyond the posterior border of sternocleidomastoid it crosses the posterior triangle superficially on levator scapulae and is cut if the dissection strays into level V."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "Cervical plexus rootlets emerging through the prevertebral fascia mark the posterior limit of levels II-IV",
+    "Floor from above down: splenius capitis, levator scapulae, middle scalene, anterior scalene",
+    "The prevertebral fascia stays on the muscles and is not part of the specimen"
+   ],
+   "pearl": "The prevertebral fascia is the safety layer of the lateral neck: the phrenic nerve, brachial plexus and sympathetic trunk all lie deep to it."
+  },
+  {
+   "title": "Omohyoid, phrenic nerve and brachial plexus",
+   "action": "The omohyoid is exposed where it crosses the internal jugular vein; it is retracted downward or divided to open level IV. On the floor below it, the phrenic nerve is identified through the prevertebral fascia running downward and medially across the front of the anterior scalene. Lateral to the muscle, the roots and trunks of the brachial plexus emerge between the anterior and middle scalenes, also deep to the fascia.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "muscle",
+     "bone",
+     "artery",
+     "vein",
+     "nerve",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Omohyoid muscle",
+    "Scalenus anterior muscle",
+    "Scalenus medius muscle",
+    "Internal jugular vein",
+    "Inferior deep lateral cervical nodes"
+   ],
+   "risk": [
+    {
+     "label": "card:phrenic-nerve",
+     "why": "It lies on the anterior scalene beneath the prevertebral fascia and is cut or cauterised if the fascia is lifted with the level IV fat."
+    },
+    {
+     "label": "card:brachial-plexus-roots-trunks",
+     "why": "The upper roots appear between the anterior and middle scalenes at the lateral edge of the field and are injured when dissection goes deep to the fascia laterally."
+    },
+    {
+     "label": "Internal jugular vein",
+     "why": "The omohyoid crosses directly on the vein, so the muscle is lifted off it before being divided."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "The omohyoid crossing the internal jugular vein is the operative landmark between levels III and IV; the jugulo-omohyoid node lies at this crossing",
+    "The phrenic nerve is the only structure that crosses the anterior scalene from lateral to medial as it descends",
+    "The brachial plexus emerges between the anterior and middle scalenes"
+   ],
+   "pearl": "The phrenic nerve is seen through the prevertebral fascia rather than dissected out; if it has been laid bare, the plane is already too deep.",
+   "check": {
+    "prompt": "Click the muscle on whose anterior surface the phrenic nerve descends, deep to the prevertebral fascia",
+    "answer": "Scalenus anterior muscle"
+   }
+  },
+  {
+   "title": "Low level IV: thoracic duct and transverse cervical vessels",
+   "action": "With the omohyoid out of the way, the fat pad between the lower internal jugular vein and the anterior scalene is mobilised above the clavicle. The transverse cervical vessels run laterally across the anterior scalene and phrenic nerve, superficial to the prevertebral fascia, and form the floor of this part of the dissection. On the left, the thoracic duct arches up behind the carotid sheath and turns laterally and downward to enter the junction of the internal jugular and subclavian veins; the lowest pedicle of fat is therefore clamped and tied rather than cauterised.",
+   "view": {
+    "from": "left-front",
+    "systems": [
+     "muscle",
+     "bone",
+     "artery",
+     "vein",
+     "nerve",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Transverse cervical artery",
+    "Internal jugular vein",
+    "Left subclavian vein",
+    "Anterior inferior jugular nodes",
+    "Inferior deep lateral cervical nodes",
+    "Clavicle"
+   ],
+   "risk": [
+    {
+     "label": "card:thoracic-duct",
+     "why": "Its thin-walled arch and frequent multiple terminal branches lie in the fat behind and lateral to the lower internal jugular vein and are torn by blunt dissection or left open by cautery; tissue here is ligated and the field checked for chyle."
+    },
+    {
+     "label": "Transverse cervical artery",
+     "why": "It crosses the floor of level IV from the thyrocervical trunk and bleeds if the fat pad is swept off the scalene without identifying it."
+    },
+    {
+     "label": "Internal jugular vein",
+     "why": "The lower end is thin-walled and tethered at the venous angle; a tear here bleeds heavily and can entrain air."
+    },
+    {
+     "label": "card:phrenic-nerve",
+     "why": "It passes beneath the transverse cervical vessels on the anterior scalene and is caught if a clamp is applied deep to the fascia while controlling them."
+    }
+   ],
+   "hide": [
+    "Omohyoid muscle"
+   ],
+   "ghost": [],
+   "landmarks": [
+    "The thoracic duct ends at the left venous angle, where the internal jugular and subclavian veins join",
+    "The duct arches in front of the anterior scalene and phrenic nerve and behind the carotid sheath",
+    "Transverse cervical vessels lie superficial to the prevertebral fascia; the phrenic nerve lies deep to it"
+   ],
+   "pearl": "Chyle leak is a left-sided, low level IV complication: nothing is divided blindly behind the lower internal jugular vein."
+  },
+  {
+   "title": "Carotid sheath: internal jugular vein, carotid and vagus",
+   "action": "The specimen is now carried forward over the carotid sheath. The fascia is opened along the internal jugular vein and peeled around it so that the vein is left bare, with tributaries such as the common facial and superior and middle thyroid veins ligated as they are met on its anteromedial side. The vagus is identified in the groove behind and between the vein and the common carotid artery before any clamp is placed near the vein.",
+   "view": {
+    "from": "left-front",
+    "systems": [
+     "muscle",
+     "bone",
+     "artery",
+     "vein",
+     "nerve",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Internal jugular vein",
+    "Left common carotid artery",
+    "Vagus nerve (X)",
+    "Common facial vein",
+    "Hyoid bone",
+    "Cricoid cartilage"
+   ],
+   "risk": [
+    {
+     "label": "Internal jugular vein",
+     "why": "Tributaries avulsed flush with the wall leave side holes; each is tied in continuity while the fascia is rolled off the vein."
+    },
+    {
+     "label": "Vagus nerve (X)",
+     "why": "It lies in the posterior groove between vein and artery and is included in a clamp or ligature placed on the vein when bleeding is controlled blindly."
+    },
+    {
+     "label": "Sympathetic trunk",
+     "why": "It lies behind the carotid sheath on the prevertebral muscles and is injured if dissection passes deep to the carotid artery."
+    },
+    {
+     "label": "card:carotid-bifurcation",
+     "why": "Traction or pressure on the carotid sinus can cause bradycardia and hypotension, so the bifurcation is handled as little as possible."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "In the sheath the vein is lateral, the artery medial and the vagus posterior between them",
+    "The common facial vein joins the internal jugular vein near the level of the hyoid",
+    "Hyoid and cricoid levels divide the jugular chain into levels II, III and IV"
+   ],
+   "pearl": "The internal jugular vein is the axis of the whole dissection: the specimen is unrolled from its posterior, lateral and anterior surfaces in turn.",
+   "check": {
+    "prompt": "Click the nerve that descends within the carotid sheath in the groove behind and between the great vein and the artery",
+    "answer": "Vagus nerve (X)"
+   }
+  },
+  {
+   "title": "Anterior limit: hypoglossal nerve, ansa cervicalis and delivery of the specimen",
+   "action": "Medially the specimen is freed from the carotid bifurcation up to the hypoglossal nerve, which emerges below the posterior belly of digastric and crosses lateral to the internal and external carotid arteries. The superior root of the ansa cervicalis leaves it here and descends on the front of the sheath. The specimen is released along the lateral border of the strap muscles, with the superior thyroid vessels left on the external carotid, and delivered as one block containing the jugulodigastric, upper, middle and lower jugular nodes.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "muscle",
+     "bone",
+     "artery",
+     "vein",
+     "nerve",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Hypoglossal nerve (XII)",
+    "External carotid artery",
+    "Internal carotid artery",
+    "Internal jugular vein",
+    "Sternohyoid muscle",
+    "Posterior belly of digastric muscle"
+   ],
+   "risk": [
+    {
+     "label": "Hypoglossal nerve (XII)",
+     "why": "Small veins cross it as it runs over the carotids just below the digastric; clamping or cauterising them before the nerve is seen is the usual mechanism of injury."
+    },
+    {
+     "label": "card:ansa-cervicalis",
+     "why": "Its superior root runs down the front of the carotid sheath and its inferior root loops around the internal jugular vein; it is preserved when possible to keep the strap muscles innervated."
+    },
+    {
+     "label": "card:superior-thyroid-artery",
+     "why": "The first anterior branch of the external carotid lies at the anteromedial edge of the specimen and is avulsed when the block is pulled forward."
+    },
+    {
+     "label": "card:superior-laryngeal-nerve",
+     "why": "It descends deep to both carotids toward the larynx and is at risk only if dissection or a clamp passes medial to the carotid near the superior thyroid pedicle."
+    }
+   ],
+   "hide": [
+    "Jugulodigastric node",
+    "Lateral superior jugular node",
+    "Inferior deep lateral cervical nodes",
+    "Anterior inferior jugular nodes"
+   ],
+   "ghost": [
+    "Submandibular gland"
+   ],
+   "landmarks": [
+    "The hypoglossal nerve crosses lateral to both carotids just below the posterior belly of digastric",
+    "The lateral border of sternohyoid is the anterior limit of levels III and IV; the stylohyoid is the anterior limit of level II",
+    "Structures left in the cleared field: sternocleidomastoid, internal jugular vein, accessory nerve, carotid system, vagus, hypoglossal nerve, phrenic nerve and cervical rootlets"
+   ],
+   "pearl": "Bleeding near the hypoglossal nerve is controlled with pressure first; the nerve is identified before any clamp or cautery is used.",
+   "check": {
+    "prompt": "Click the nerve that hooks forward below the posterior belly of digastric and crosses the lateral surface of both the internal and external carotid arteries on its way to the tongue",
+    "answer": "Hypoglossal nerve (XII)"
+   }
+  }
+ ],
+ "complications": [
+  "Shoulder dysfunction (trapezius weakness, shoulder droop and pain): the accessory nerve is stretched or devascularised while level IIb is cleared from beneath it, even when it is anatomically intact",
+  "Lower lip weakness: the marginal mandibular branch runs just deep to the platysma in the fascia over the submandibular gland and is stretched or divided under the superior flap",
+  "Chyle leak: the thoracic duct arches into the left venous angle through the fat of low level IV behind the internal jugular vein",
+  "Hemidiaphragm paralysis: the phrenic nerve lies on the anterior scalene and is injured when the prevertebral fascia is breached or cervical rootlets are divided too close to their origin",
+  "Tongue weakness and deviation toward the operated side: the hypoglossal nerve crosses the carotids below the digastric among small veins that bleed easily",
+  "Haemorrhage or air embolism: the thin-walled internal jugular vein has tributaries along its anteromedial side and is tethered at the venous angle",
+  "Horner syndrome or hoarseness: the sympathetic trunk lies behind the carotid sheath and the vagus within it, both reached when dissection or clamps pass deep to the great vessels"
+ ],
+ "notes": "No geometry (card only, referenced in risk or described in text): great auricular nerve, nerve point of the neck, cervical plexus rootlets, phrenic nerve, brachial plexus roots and trunks, thoracic duct, venous angle, ansa cervicalis, superior thyroid artery, middle thyroid vein, superior laryngeal nerve, carotid bifurcation, jugulo-omohyoid node, levator scapulae. The prevertebral fascia and carotid sheath have neither geometry nor a card and are described in text only. Node labels used: 'Jugulodigastric node' and 'Lateral superior jugular node' stand for level II, 'Inferior deep lateral cervical nodes' and 'Anterior inferior jugular nodes' for levels III-IV; this mapping is an assumption about where those meshes sit and should be checked in the viewer. There is no separate level III node mesh. Sternocleidomastoid is hidden from step 5 to represent lateral retraction (it is preserved, not resected), omohyoid is hidden from step 9 (retracted or divided), and the four node groups are hidden in the final step to show the cleared field. Step 3 ghosts the investing fascia on the assumption that its mesh may cover the marginal mandibular branch and facial vein; steps 5-6 ghost the parotid and step 11 the submandibular gland for the same reason. The III/IV boundary is given both ways: lower border of cricoid (formal definition) and omohyoid crossing the vein (operative landmark). The accessory nerve is stated to cross usually superficial to the internal jugular vein, without a percentage. The Left subclavian vein and Left common carotid artery are separate left-sided labels and were used as such."
+}

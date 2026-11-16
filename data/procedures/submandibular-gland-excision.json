@@ -1,0 +1,493 @@
+{
+ "id": "submandibular-gland-excision",
+ "name": "Submandibular gland excision",
+ "category": "Salivary gland",
+ "side": "l",
+ "summary": "Removal of the submandibular gland through the neck, most often for stone disease, chronic sialadenitis or a tumour. The gland is wrapped round the posterior border of mylohyoid and three nerves lie against it (marginal mandibular superficially, lingual and hypoglossal deeply), so the operation is an exercise in staying on the gland capsule and knowing which nerve belongs to which layer.",
+ "setup": "Supine with a shoulder roll, neck extended and head turned to the right. A skin-crease incision is placed two finger-breadths below the inferior border of the left mandible, at about the level of the hyoid, over the palpable gland; the angle of the mandible, the facial artery pulse at the anterior border of masseter and the hyoid are the surface landmarks.",
+ "steps": [
+  {
+   "title": "Surface landmarks and incision",
+   "action": "The submandibular triangle is mapped between the inferior border of the mandible and the two bellies of digastric, with the gland palpable in its posterior half. The incision is marked in a skin crease two finger-breadths below the mandible so that skin and platysma are divided below the lowest course of the marginal mandibular branch.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "skin",
+     "bone",
+     "nerve"
+    ],
+    "peel": 0
+   },
+   "focus": [
+    "Submandibular triangle"
+   ],
+   "risk": [
+    {
+     "label": "Marginal mandibular branch of facial nerve",
+     "why": "An incision placed close to the mandible divides the nerve with the platysma; it is kept two finger-breadths below the bone because the nerve can loop into the neck, more so with the neck extended."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "Submandibular (digastric) triangle: inferior border of mandible above, anterior and posterior bellies of digastric below.",
+    "The facial artery is palpable on the mandible at the anterior border of masseter.",
+    "The hyoid lies at about the level of the incision and of the digastric tendon."
+   ],
+   "pearl": "Neck extension and rotation, the position used for the operation, draw the marginal mandibular branch further down into the neck."
+  },
+  {
+   "title": "Platysma and subplatysmal flaps",
+   "action": "Skin, subcutaneous fat and platysma are divided in the line of the incision. Short flaps are raised in the subplatysmal plane, directly on the deep surface of the muscle, leaving the investing layer of deep cervical fascia undisturbed over the gland. The upper flap is not carried onto the mandible.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "muscle",
+     "nerve",
+     "vein",
+     "bone"
+    ],
+    "peel": 1
+   },
+   "focus": [
+    "Platysma"
+   ],
+   "risk": [
+    {
+     "label": "Marginal mandibular branch of facial nerve",
+     "why": "It runs immediately deep to platysma in the fascia over the gland, so a flap raised deeper than the bare muscle surface, or diathermy on the upper flap, injures it."
+    },
+    {
+     "label": "Cervical branch of facial nerve",
+     "why": "It descends deep to platysma to supply that muscle and is often divided with it, giving a mild weakness of lower-lip depression that can be mistaken for a marginal mandibular palsy."
+    },
+    {
+     "label": "card:transverse-cervical-nerve",
+     "why": "Its branches cross the field to reach the skin of the anterior neck and are cut with the flaps, leaving a patch of numbness below the mandible."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "Platysma is the only muscle between skin and the investing fascia over the gland.",
+    "The marginal mandibular and cervical branches both leave the lower pole of the parotid deep to platysma."
+   ],
+   "pearl": "The flap plane is the bare deep surface of platysma; fascia left on the muscle may carry the nerve up with it."
+  },
+  {
+   "title": "Marginal mandibular branch and facial vein",
+   "action": "The investing fascia is incised low, along the inferior border of the gland. The facial vein is found on the superficial surface of the gland, ligated and divided there, and its upper stump is reflected superiorly together with the fascia (Hayes Martin manoeuvre). The marginal mandibular branch, which runs in that fascia superficial to the vein, is carried up out of the field without being dissected.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "muscle",
+     "nerve",
+     "artery",
+     "vein",
+     "viscera",
+     "bone"
+    ],
+    "peel": 1
+   },
+   "focus": [
+    "Facial vein",
+    "Submandibular gland",
+    "Depressor anguli oris",
+    "Depressor labii inferioris"
+   ],
+   "risk": [
+    {
+     "label": "Marginal mandibular branch of facial nerve",
+     "why": "It crosses superficial to the facial vessels in the fascia over the gland; it is protected by dividing the fascia and vein low and lifting them as one layer, and is injured by traction or diathermy near the mandibular border."
+    }
+   ],
+   "hide": [
+    "Platysma"
+   ],
+   "ghost": [
+    "Superficial investing cervical fascia"
+   ],
+   "landmarks": [
+    "Layers over the gland from superficial to deep: platysma, investing fascia with the marginal mandibular branch, facial vein, gland.",
+    "The facial vein and artery cross the mandible at the anterior border of masseter, the vein posterior to the artery."
+   ],
+   "pearl": "Behind the facial vessels the nerve may dip below the border of the mandible; in front of them it runs above the border on its way to the depressors of the lower lip.",
+   "check": {
+    "prompt": "Click the nerve that crosses superficial to the facial vessels and supplies the depressors of the lower lip",
+    "answer": "Marginal mandibular branch of facial nerve"
+   }
+  },
+  {
+   "title": "Inferior border: the digastric",
+   "action": "With the fascia opened, the inferior pole of the gland is lifted off the intermediate tendon and both bellies of digastric, staying on the gland capsule. Veins at the posteroinferior pole are ligated. The digastric defines the lower limit of the dissection; nothing in this operation requires going deep to it.",
+   "view": {
+    "from": "below-left",
+    "systems": [
+     "muscle",
+     "nerve",
+     "artery",
+     "vein",
+     "viscera",
+     "bone",
+     "lymph"
+    ],
+    "peel": 1
+   },
+   "focus": [
+    "Submandibular gland",
+    "Anterior belly of digastric muscle",
+    "Intermediate tendon of digastric muscle",
+    "Posterior belly of digastric muscle",
+    "Stylohyoid muscle",
+    "Submandibular nodes"
+   ],
+   "risk": [
+    {
+     "label": "Hypoglossal nerve (XII)",
+     "why": "It runs on hyoglossus just above the digastric tendon and the greater horn of the hyoid, and is reached if the dissection strays deep to the tendon instead of staying on the gland."
+    },
+    {
+     "label": "Common facial vein",
+     "why": "It forms at the posteroinferior pole of the gland where the facial vein meets the anterior division of the retromandibular vein and tears with blunt dissection; tributaries are ligated before the gland is rolled upward."
+    }
+   ],
+   "hide": [
+    "Superficial investing cervical fascia"
+   ],
+   "ghost": [],
+   "landmarks": [
+    "Anterior belly of digastric: anteroinferior boundary; posterior belly with stylohyoid: posteroinferior boundary.",
+    "The intermediate tendon is held to the hyoid by a fascial sling, and stylohyoid splits around it.",
+    "The submandibular nodes lie on the surface of the gland and along the facial vessels, outside its capsule."
+   ],
+   "pearl": "Unlike the parotid, the submandibular gland has no lymph nodes within it; the nodes of the triangle lie outside the capsule, which is why a benign gland can be removed in a capsular plane."
+  },
+  {
+   "title": "Facial artery at the mandible",
+   "action": "The superior border of the gland is freed from the inferior border of the mandible beneath the reflected fascia. The facial artery, which has run in a groove on the deep and posterior surface of the gland, emerges at its upper border and curves over the mandible; it is ligated and divided close to the gland, below the level of the nerve. Alternatively the artery is preserved by dividing only its glandular branches.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "muscle",
+     "nerve",
+     "artery",
+     "vein",
+     "viscera",
+     "bone",
+     "lymph"
+    ],
+    "peel": 1
+   },
+   "focus": [
+    "Facial artery",
+    "Submandibular gland",
+    "Superficial part of masseter",
+    "Mandible"
+   ],
+   "risk": [
+    {
+     "label": "Marginal mandibular branch of facial nerve",
+     "why": "It crosses superficial to the artery at the border of the mandible; the tie is placed on the gland side of the reflected vein stump so the nerve is not caught."
+    },
+    {
+     "label": "Submental artery",
+     "why": "It leaves the facial artery as that vessel clears the gland and runs forward on mylohyoid; if torn it retracts beneath the mandible, so it is identified and controlled rather than avulsed."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "Facial vein: superficial to the gland. Facial artery: deep to the gland, grooving its posterior and upper surface.",
+    "The artery reaches the face at the anterior border of masseter, where its pulse is felt against the mandible."
+   ],
+   "pearl": "At the border of the mandible the marginal mandibular branch is superficial to both facial vessels, so any tie placed there goes on under direct vision of the vessel alone.",
+   "check": {
+    "prompt": "Click the artery that grooves the deep surface of the gland and then hooks over the mandible at the anterior border of masseter",
+    "answer": "Facial artery"
+   }
+  },
+  {
+   "title": "Mobilising the gland off mylohyoid",
+   "action": "The gland is retracted posteriorly and its anterior part is separated from the anterior belly of digastric and the superficial surface of mylohyoid in a loose areolar plane. The submental vessels and the nerve to mylohyoid with its small accompanying vessels run on the muscle here; branches entering the gland are controlled. Dissection continues backward until the free posterior border of mylohyoid is defined.",
+   "view": {
+    "from": "below-left",
+    "systems": [
+     "muscle",
+     "nerve",
+     "artery",
+     "vein",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Mylohyoid muscle",
+    "Anterior belly of digastric muscle",
+    "Submandibular gland",
+    "Submental vein"
+   ],
+   "risk": [
+    {
+     "label": "Nerve to mylohyoid muscle",
+     "why": "It lies on the superficial surface of mylohyoid beside the submental vessels and is divided when those vessels are cauterised en masse; bleeding points are picked up individually."
+    },
+    {
+     "label": "Submental artery",
+     "why": "It runs forward on mylohyoid under cover of the mandible and bleeds when the gland is swept off the muscle bluntly."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "Mylohyoid forms the floor of the anterior half of the triangle; hyoglossus forms the floor behind it.",
+    "The superficial part of the gland overlaps the anterior belly of digastric and the lower surface of mylohyoid."
+   ],
+   "pearl": "The nerve to mylohyoid is the motor supply of both mylohyoid and the anterior belly of digastric and reaches them on the superficial surface of mylohyoid."
+  },
+  {
+   "title": "Retracting mylohyoid forward",
+   "action": "A retractor under the free posterior border of mylohyoid draws the muscle anteriorly while the gland is pulled downward and backward. This opens the interval between mylohyoid laterally and hyoglossus medially, which holds the deep part of the gland and the start of the duct. The lingual nerve, the duct and the hypoglossal nerve come into view on hyoglossus, in that order from above down.",
+   "view": {
+    "from": "below-left",
+    "systems": [
+     "muscle",
+     "nerve",
+     "artery",
+     "vein",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Mylohyoid muscle",
+    "Hyoglossus muscle",
+    "Submandibular gland",
+    "Submandibular duct"
+   ],
+   "risk": [
+    {
+     "label": "Lingual nerve",
+     "why": "Traction on the gland pulls it down from under the mandible into the field before it has been recognised; nothing is divided above the gland until it is seen."
+    },
+    {
+     "label": "Hypoglossal nerve (XII)",
+     "why": "It lies on hyoglossus directly under the retractor tip and the lower part of the gland; the blade is placed under vision and not pushed deep along the muscle."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Mandible"
+   ],
+   "landmarks": [
+    "The gland is folded round the posterior border of mylohyoid: superficial part below and lateral to the muscle, deep part above and medial to it.",
+    "Mylohyoid is the lateral wall and hyoglossus the medial wall of the space for the deep part of the gland."
+   ],
+   "pearl": "On hyoglossus from above down: lingual nerve, submandibular duct, hypoglossal nerve.",
+   "check": {
+    "prompt": "Click the muscle whose free posterior border is retracted forward to expose the deep part of the gland",
+    "answer": "Mylohyoid muscle"
+   }
+  },
+  {
+   "title": "Lingual nerve and submandibular ganglion",
+   "action": "Downward traction on the gland draws the lingual nerve into a V-shaped loop, tethered at its apex by the submandibular ganglion and the secretomotor branches passing from it to the gland. These attachments, with a small accompanying vessel, are divided under direct vision on the gland side of the ganglion. The released nerve springs back upward under cover of the mandible.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "muscle",
+     "nerve",
+     "artery",
+     "vein",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Hyoglossus muscle",
+    "Submandibular duct"
+   ],
+   "risk": [
+    {
+     "label": "Lingual nerve",
+     "why": "A clamp or tie placed at the apex of the loop, or applied blindly to the bleeding vessel beside the ganglion, includes the nerve trunk; the attachments are divided only once the full width of the nerve is seen above them."
+    },
+    {
+     "label": "card:submandibular-ganglion",
+     "why": "It hangs from the lingual nerve by two short roots above the deep part of the gland; the division is made below it, through the glandular branches, so the roots and the nerve are not pulled into the tie."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Submandibular gland",
+    "Mylohyoid muscle",
+    "Mandible"
+   ],
+   "landmarks": [
+    "The lingual nerve is the uppermost structure on hyoglossus, a broad flat band coming from under the mandible.",
+    "The ganglion is suspended from the nerve on hyoglossus, between the nerve and the deep part of the gland."
+   ],
+   "pearl": "Preganglionic parasympathetic fibres from the chorda tympani reach the ganglion through the lingual nerve; dividing only the branches below the ganglion leaves sensation and taste of the anterior tongue intact."
+  },
+  {
+   "title": "Hypoglossal nerve on hyoglossus",
+   "action": "Before the duct is divided the hypoglossal nerve is identified at the lower edge of the field. It lies on hyoglossus beneath a thin fascial layer, just above the digastric tendon and the greater horn of the hyoid, accompanied by veins, and passes forward deep to mylohyoid. The deep surface of the gland is separated from this fascia without exposing the nerve further than needed.",
+   "view": {
+    "from": "below-left",
+    "systems": [
+     "muscle",
+     "nerve",
+     "artery",
+     "vein",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Hyoglossus muscle",
+    "Intermediate tendon of digastric muscle",
+    "Hyoid bone"
+   ],
+   "risk": [
+    {
+     "label": "Hypoglossal nerve (XII)",
+     "why": "It is injured by dissection deep to the fascia on hyoglossus, especially when chronic inflammation has fixed the gland to its bed, or by diathermy to the veins running with it."
+    },
+    {
+     "label": "Lingual vein",
+     "why": "Veins accompanying the hypoglossal nerve on hyoglossus bleed when the gland is peeled off its bed, and blind clamping here endangers the nerve; they are controlled precisely with bipolar diathermy."
+    },
+    {
+     "label": "card:lingual-artery",
+     "why": "It runs parallel to the nerve but deep to hyoglossus and is reached only if the muscle fibres are breached, so the dissection stays superficial to the muscle."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Submandibular gland",
+    "Mylohyoid muscle",
+    "Mandible"
+   ],
+   "landmarks": [
+    "The nerve passes deep to the posterior belly of digastric and stylohyoid, runs forward on hyoglossus above the greater horn of the hyoid, then disappears deep to mylohyoid.",
+    "Hyoglossus separates the hypoglossal nerve (superficial to it) from the lingual artery (deep to it)."
+   ],
+   "pearl": "The hypoglossal nerve is lower and deeper than the lingual nerve, runs with veins, and is not attached to the gland, so traction on the gland does not move it.",
+   "check": {
+    "prompt": "Click the motor nerve of the tongue that lies on hyoglossus below the duct, just above the digastric tendon",
+    "answer": "Hypoglossal nerve (XII)"
+   }
+  },
+  {
+   "title": "Submandibular duct",
+   "action": "With both nerves in view, the duct is followed forward from the deep part of the gland on hyoglossus, deep to the retracted mylohyoid. It is ligated and divided once it is seen to be separate from the lingual nerve. For stone disease it is traced as far forward as the exposure allows so that no calculus is left in the stump.",
+   "view": {
+    "from": "below-left",
+    "systems": [
+     "muscle",
+     "nerve",
+     "artery",
+     "vein",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Submandibular duct",
+    "Hyoglossus muscle",
+    "Genioglossus muscle"
+   ],
+   "risk": [
+    {
+     "label": "Lingual nerve",
+     "why": "It starts lateral to the duct, loops beneath it and ascends on its medial side, so a tie placed far forward without separating the two structures includes the nerve."
+    },
+    {
+     "label": "Sublingual gland",
+     "why": "Its posterior end lies against the duct deep to mylohyoid; tearing it during a far anterior duct dissection can lead to a salivary collection or ranula."
+    },
+    {
+     "label": "Hypoglossal nerve (XII)",
+     "why": "It runs parallel to and below the duct on hyoglossus and is caught if the duct is clamped before the lower nerve has been identified."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Submandibular gland",
+    "Mylohyoid muscle",
+    "Mandible"
+   ],
+   "landmarks": [
+    "The duct leaves the deep part of the gland and runs forward on hyoglossus and then genioglossus, medial to the sublingual gland, to open on the sublingual caruncle beside the frenulum.",
+    "The duct lies between the lingual nerve above and the hypoglossal nerve below."
+   ],
+   "pearl": "The duct is thin-walled and can look like a vein, the lingual nerve is a flat white band crossing under it; both are seen separately before anything is tied.",
+   "check": {
+    "prompt": "Click the structure that runs forward between the two nerves to drain the gland into the floor of the mouth",
+    "answer": "Submandibular duct"
+   }
+  },
+  {
+   "title": "Proximal facial artery and delivery",
+   "action": "The gland now hangs posteriorly on the facial artery, which emerges from deep to the posterior belly of digastric and stylohyoid to enter the groove on the back of the gland. The artery is doubly ligated and divided close to the gland and the specimen is delivered. The bed is inspected, with mylohyoid in front and hyoglossus behind carrying the lingual nerve above and the hypoglossal nerve below, then a drain is placed and platysma and skin are closed.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "muscle",
+     "nerve",
+     "artery",
+     "vein",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Posterior belly of digastric muscle",
+    "Stylohyoid muscle",
+    "Hyoglossus muscle",
+    "Mylohyoid muscle",
+    "External carotid artery"
+   ],
+   "risk": [
+    {
+     "label": "Facial artery",
+     "why": "A proximal stump that slips its tie retracts deep to the digastric and bleeds from close to the external carotid; it is tied twice, or suture-ligated, before it is divided."
+    },
+    {
+     "label": "Hypoglossal nerve (XII)",
+     "why": "It crosses just deep to the posterior belly of digastric below the artery, so clamps applied blindly to a retracted stump or to bleeding in the posterior bed catch it."
+    },
+    {
+     "label": "Lingual nerve",
+     "why": "It lies bare on the upper part of the bed after the gland is removed and is at risk from diathermy during final haemostasis."
+    }
+   ],
+   "hide": [
+    "Submandibular gland"
+   ],
+   "ghost": [
+    "Mandible"
+   ],
+   "landmarks": [
+    "The facial artery arises from the external carotid above the lingual artery and ascends deep to the posterior belly of digastric and stylohyoid before arching onto the gland.",
+    "Gland bed: mylohyoid anteriorly, hyoglossus posteriorly, digastric tendon below, mandible and medial pterygoid above and laterally."
+   ],
+   "pearl": "The facial artery is divided twice in the standard operation, once where it leaves the gland for the face and once where it enters the gland from beneath the digastric."
+  }
+ ],
+ "complications": [
+  "Lower-lip weakness: the marginal mandibular branch runs deep to platysma in the fascia over the gland and is stretched by retraction, heated by diathermy or divided when the fascia is opened too high.",
+  "Lingual nerve injury with numbness and loss of taste of the anterior tongue on that side: the nerve is tethered to the gland by the submandibular ganglion and is pulled into the field by traction.",
+  "Hypoglossal nerve injury with deviation and wasting of that half of the tongue: the nerve lies on hyoglossus in the gland bed, close to the veins that bleed during the deep dissection.",
+  "Haematoma, with floor-of-mouth swelling if large: the proximal facial artery stump retracts beneath the digastric, and the facial vein, submental vessels and veins on hyoglossus are all divided or exposed.",
+  "Retained stone or infection in the duct remnant: the duct runs a long course forward to the sublingual caruncle and a calculus beyond the ligature is left behind.",
+  "Salivary collection or ranula: the sublingual gland lies against the duct in the floor of the mouth and can be torn during the anterior dissection.",
+  "Numbness of the skin below the mandible: branches of the transverse cervical nerve are cut when the incision and flaps are made."
+ ],
+ "notes": "No geometry for the submandibular ganglion, lingual artery or transverse cervical nerve (referenced by card), nor for styloglossus, the glandular branches of the facial artery, or separate venae comitantes of the hypoglossal nerve; the model's 'Lingual vein' is used as a stand-in for the veins on hyoglossus and may not sit beside the nerve. The gland is a single mesh, so its superficial and deep parts are described but not shown separately. Retraction cannot be shown: mylohyoid and the mandible are ghosted (not hidden) in the deep steps, the gland is ghosted in steps 8-10 and hidden only in the last step, and the reflected facial vein and divided facial artery stay drawn intact. In steps 1-2 the risk nerves lie under opaque skin or platysma and may not be visible unless the viewer draws risk structures through cover. At-risk structures are listed in risk only, not repeated in focus. Hypoglossal identification is placed before duct division (a common teaching order); some atlases list the duct first. Statements about the position of the marginal mandibular branch relative to the mandibular border are given qualitatively, without figures."
+}

@@ -1,0 +1,482 @@
+{
+ "id": "superficial-parotidectomy",
+ "name": "Superficial parotidectomy",
+ "category": "Salivary gland",
+ "side": "l",
+ "summary": "Removal of the part of the parotid gland lying lateral to the facial nerve, most often for a benign tumour, with the nerve trunk, both divisions and all five branch groups dissected and preserved. The gland has no true lobes: the plane of the facial nerve is the only divider, so the operation depends on finding the trunk from fixed landmarks and then staying on the surface of the nerve.",
+ "setup": "Supine with the head turned to the right and slightly extended, the left side of the face left exposed so the eye and the corner of the mouth can be watched; long-acting muscle relaxant is avoided so the nerve can be stimulated. The modified Blair incision runs in the preauricular crease at the front of the tragus, curves beneath the lobule toward the mastoid tip, then turns forward in an upper neck skin crease about two fingerbreadths below the angle of the mandible.",
+ "steps": [
+  {
+   "title": "Surface landmarks and modified Blair incision",
+   "action": "The incision is marked in three limbs: a preauricular limb in the crease at the anterior margin of the tragus, a curve around the attachment of the lobule toward the mastoid tip, and a cervical limb running forward in a skin crease below the angle of the mandible. The gland lies under the parotideomasseteric region, wedged between the ramus of the mandible in front and the mastoid and sternocleidomastoid behind, with its tail overlapping the upper sternocleidomastoid below the lobule.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "skin"
+    ],
+    "peel": 0
+   },
+   "focus": [
+    "Tragus",
+    "Lobule of auricle",
+    "Mastoid region",
+    "Parotideomasseteric region",
+    "Sternocleidomastoid region"
+   ],
+   "risk": [],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "Surface projection of the gland: zygomatic arch above, ear canal and mastoid behind, masseter in front, tail below the lobule over the angle of the mandible",
+    "The cervical limb is kept well below the mandible, under the course of the marginal mandibular branch"
+   ],
+   "pearl": "The lobule is the hinge of the incision: the great auricular nerve and the tail of the gland both lie directly below it.",
+   "check": {
+    "prompt": "Click the cartilaginous prominence in front of the ear canal whose anterior margin carries the preauricular limb of the incision",
+    "answer": "Tragus"
+   }
+  },
+  {
+   "title": "Skin flap over the parotid fascia",
+   "action": "The anterior flap is raised forward from the preauricular incision in the plane directly on the dense white parotid fascia, and in the neck immediately deep to the platysma. Elevation stops at the anterior border of the gland, where the fascia thins out over the masseter. A short posterior flap exposes the mastoid tip and the upper sternocleidomastoid.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "muscle",
+     "viscera",
+     "nerve",
+     "bone"
+    ],
+    "peel": 1
+   },
+   "focus": [
+    "Parotid gland",
+    "Masseteric fascia",
+    "Platysma"
+   ],
+   "risk": [
+    {
+     "label": "Buccal branches of facial nerve",
+     "why": "Emerge from the anterior border of the gland and lie on the masseter under thin fascia only; the flap is not carried forward beyond the edge of the gland."
+    },
+    {
+     "label": "Marginal mandibular branch of facial nerve",
+     "why": "Runs just deep to the platysma near the angle of the mandible; the cervical part of the flap is kept on the undersurface of the platysma and not deepened toward the mandible."
+    },
+    {
+     "label": "Temporal branches of facial nerve",
+     "why": "Become very superficial as they cross the zygomatic arch; the upper part of the flap is not extended forward over the arch past the gland."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "Flap plane on the face: on the parotid fascia, deep to the subcutaneous fat",
+    "Flap plane in the neck: immediately deep to the platysma",
+    "Anterior limit of elevation: the anterior border of the gland on the masseter"
+   ],
+   "pearl": "The branches are covered by gland only while they are inside it; at the anterior border nothing but thin masseteric fascia lies over them."
+  },
+  {
+   "title": "Great auricular nerve and external jugular vein",
+   "action": "With the platysma lifted in the flap, the great auricular nerve is found on the surface of the sternocleidomastoid, running obliquely upward from the posterior border of the muscle toward the lobule, with the external jugular vein parallel and in front of it. The nerve is followed to the tail of the gland: its anterior branch enters the parotid and is divided, while the posterior branch to the lobule and postauricular skin can often be kept.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "muscle",
+     "viscera",
+     "vein",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Sternocleidomastoid muscle",
+    "Parotid gland"
+   ],
+   "risk": [
+    {
+     "label": "card:great-auricular-nerve",
+     "why": "Lies directly under the platysma on the sternocleidomastoid and is cut with the flap if not looked for; dividing the trunk leaves the lobule and the skin over the angle of the mandible numb."
+    },
+    {
+     "label": "External jugular vein",
+     "why": "Crosses the muscle just in front of the nerve and is torn during flap elevation or when the tail is freed; it is identified and ligated deliberately if it is in the way."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "Great auricular nerve: turns around the posterior border of sternocleidomastoid at the nerve point of the neck and ascends across the muscle toward the lobule",
+    "External jugular vein: anterior and parallel to the nerve, formed near the tail of the gland by the posterior division of the retromandibular vein and the posterior auricular vein"
+   ],
+   "pearl": "A long segment of great auricular nerve preserved at this stage is also the nearest donor if a facial nerve graft is needed."
+  },
+  {
+   "title": "Mobilising the tail and the posterior border",
+   "action": "The fascia between the tail of the gland and the anterior border of sternocleidomastoid is divided and the muscle retracted backward, exposing the posterior belly of digastric running from the mastoid forward and down toward the hyoid. The tail is lifted forward off the lateral surface of the digastric, and the posterior division of the retromandibular vein is ligated where it leaves the lower pole. Above, the gland is separated from the cartilage of the external ear canal in the avascular preauricular plane down to the tragal pointer.",
+   "view": {
+    "from": "below-left",
+    "systems": [
+     "muscle",
+     "viscera",
+     "vein",
+     "nerve",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Posterior belly of digastric muscle",
+    "Stylohyoid muscle",
+    "Parotid gland"
+   ],
+   "risk": [
+    {
+     "label": "Posterior division of retromandibular vein",
+     "why": "Leaves the lower pole to form the external jugular vein and tears when the tail is pulled forward; it is isolated and tied under vision because the cervical and marginal mandibular branches leave the gland close to it."
+    },
+    {
+     "label": "Internal jugular vein",
+     "why": "Lies immediately deep to the posterior belly of digastric with the internal carotid artery and the lower cranial nerves; dissection stays on the lateral surface of the muscle."
+    },
+    {
+     "label": "Accessory nerve (XI)",
+     "why": "Crosses the internal jugular vein deep to the digastric and enters the deep surface of the upper sternocleidomastoid; the anterior border of the muscle is freed superficially and not followed along its deep surface."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Sternocleidomastoid muscle"
+   ],
+   "landmarks": [
+    "Posterior belly of digastric: from the digastric notch medial to the mastoid tip, forward and down to the intermediate tendon at the hyoid",
+    "Stylohyoid muscle runs along the upper border of the posterior belly",
+    "Preauricular plane: between the gland and the perichondrium of the cartilaginous ear canal"
+   ],
+   "pearl": "The lateral surface of the posterior belly of digastric is the safe plane of the upper neck: the great vessels and cranial nerves IX to XII all lie deep to it.",
+   "check": {
+    "prompt": "Click the muscle exposed when the sternocleidomastoid is retracted, whose lateral surface is the safe plane for lifting the tail of the gland",
+    "answer": "Posterior belly of digastric muscle"
+   }
+  },
+  {
+   "title": "Landmarks for the facial nerve trunk",
+   "action": "With the gland retracted forward, the interval between the cartilaginous ear canal and mastoid behind and the gland in front is deepened by spreading parallel to the expected course of the nerve. Four landmarks converge on the trunk: the tragal pointer, the tympanomastoid suture, the upper border of the posterior belly of digastric at the mastoid, and the styloid process. The trunk lies in the fat between them, lateral to the styloid.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "bone",
+     "muscle",
+     "nerve",
+     "artery",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Temporal bone",
+    "Posterior belly of digastric muscle",
+    "Stylohyoid muscle"
+   ],
+   "risk": [
+    {
+     "label": "Facial nerve (VII)",
+     "why": "Met before it is expected if tissue is spread across rather than along its course, or in a small child, whose mastoid tip is undeveloped and whose trunk is superficial; nothing is divided until it has been lifted and seen through."
+    },
+    {
+     "label": "Internal carotid artery",
+     "why": "Lies with the internal jugular vein medial to the styloid process; the styloid is the deep limit of the dissection and is never passed."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Parotid gland",
+    "Sternocleidomastoid muscle"
+   ],
+   "landmarks": [
+    "Tragal pointer (medial tip of the tragal cartilage): the trunk lies about 1 cm deep and slightly anteroinferior to it",
+    "Tympanomastoid suture (groove between the tympanic part and the mastoid): followed medially it leads to the stylomastoid foramen, with the trunk a few millimetres deep to its lower end",
+    "Posterior belly of digastric: the trunk lies at the depth of the upper border of the muscle at its mastoid attachment, just above and in front of it, with the styloid process deep to the nerve"
+   ],
+   "pearl": "The tympanomastoid suture is the most constant landmark because it is bone and is not displaced by tumour or retraction; the tragal pointer is cartilage and moves."
+  },
+  {
+   "title": "Facial nerve trunk at the stylomastoid foramen",
+   "action": "The trunk is found as a firm white cord a few millimetres thick, emerging from the stylomastoid foramen between the base of the styloid process and the mastoid and running forward, laterally and slightly downward into the posteromedial surface of the gland. A small artery crossing just lateral to it is controlled with bipolar before the nerve is exposed. Identification is confirmed by following the cord forward to its bifurcation and, where needed, by stimulation.",
+   "view": {
+    "from": "below-left",
+    "systems": [
+     "bone",
+     "muscle",
+     "nerve",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Facial nerve (VII)",
+    "Posterior belly of digastric muscle",
+    "Stylohyoid muscle"
+   ],
+   "risk": [
+    {
+     "label": "card:stylomastoid-artery",
+     "why": "Lies just superficial to the trunk and bleeds as the nerve is approached; it is coagulated precisely with bipolar, never clamped blindly in this space."
+    },
+    {
+     "label": "card:posterior-auricular-nerve",
+     "why": "First extracranial branch, turning back behind the ear to the occipitalis and posterior auricular muscle; it is divided or mistaken for the trunk if dissection strays behind the foramen."
+    },
+    {
+     "label": "card:digastric-and-stylohyoid-branches-of-facial-nerve",
+     "why": "Leave the trunk just outside the foramen to enter the two muscles; they are torn by dissection along the lower border of the trunk or by heavy traction on the digastric, usually without noticeable deficit."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Parotid gland",
+    "Sternocleidomastoid muscle"
+   ],
+   "landmarks": [
+    "Stylomastoid foramen: between the base of the styloid process and the mastoid process, at the medial end of the tympanomastoid suture",
+    "Course of the trunk: forward, lateral and slightly downward, crossing lateral to the styloid process, the retromandibular vein and the external carotid artery",
+    "Branches given off before the gland: posterior auricular nerve, nerves to the posterior belly of digastric and stylohyoid"
+   ],
+   "pearl": "A structure is accepted as the trunk only when it has the right size, depth and direction and is seen to divide; until then nothing in this space is cut.",
+   "check": {
+    "prompt": "Click the nerve trunk that emerges from the stylomastoid foramen and enters the posteromedial surface of the gland",
+    "answer": "Facial nerve (VII)"
+   }
+  },
+  {
+   "title": "Pes anserinus: temporofacial and cervicofacial divisions",
+   "action": "The gland over the trunk is lifted with a fine curved clamp passed directly on the surface of the nerve, the clamp is spread, and the bridge of parotid tissue is divided under vision. A short distance inside the gland, behind the ramus of the mandible, the trunk divides at the pes anserinus into an upper temporofacial division, usually the larger, and a lower cervicofacial division. The retromandibular vein lies immediately deep to the divisions and the external carotid artery deeper still.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "bone",
+     "muscle",
+     "nerve",
+     "vein",
+     "artery",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Facial nerve (VII)",
+    "External carotid artery"
+   ],
+   "risk": [
+    {
+     "label": "Temporofacial division of facial nerve",
+     "why": "Stretched when the superficial part of the gland is pulled forward, or burned by diathermy in the tunnel; parotid tissue is cut only with the nerve in view beneath the open clamp, and retraction is gentle."
+    },
+    {
+     "label": "Cervicofacial division of facial nerve",
+     "why": "Turns downward from the bifurcation and is cut if the tunnel is driven straight forward along the upper division; both divisions are exposed before the tissue between them is divided."
+    },
+    {
+     "label": "Retromandibular vein",
+     "why": "Thin-walled and directly under the divisions, occasionally passing lateral to one of them; bleeding is controlled with pressure and precise bipolar, since a blind clamp here catches a division."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Parotid gland"
+   ],
+   "landmarks": [
+    "Order within the gland from lateral to medial: facial nerve, retromandibular vein, external carotid artery",
+    "Pes anserinus: bifurcation of the trunk within the gland just behind the posterior border of the ramus"
+   ],
+   "pearl": "The plane of dissection is the surface of the nerve itself: gland lateral to the nerve is specimen, gland medial to it stays."
+  },
+  {
+   "title": "Upper division: temporal and zygomatic branches",
+   "action": "Dissection continues antegrade along the temporofacial division, opening the tunnel over each branch in turn and turning the upper part of the gland forward. The temporal branches climb across the zygomatic arch toward the frontalis and the upper orbicularis oculi; the zygomatic branches run forward over the zygomatic bone toward the lateral canthus. At the upper pole the superficial temporal vessels and the auriculotemporal nerve ascend just in front of the tragus, behind the temporal branches.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "bone",
+     "muscle",
+     "nerve",
+     "artery",
+     "vein",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Temporofacial division of facial nerve",
+    "Zygomatic bone",
+    "Auriculotemporal nerve"
+   ],
+   "risk": [
+    {
+     "label": "Temporal branches of facial nerve",
+     "why": "Fine, superficial where they cross the zygomatic arch and poorly connected to their neighbours, so traction or heat leaves a lasting brow droop; the tunnel is opened branch by branch with no monopolar diathermy near the arch."
+    },
+    {
+     "label": "Zygomatic branches of facial nerve",
+     "why": "Supply the orbicularis oculi, and injury leaves incomplete eye closure with an exposed cornea; each branch heading for the lateral canthus is followed to the edge of the gland before the tissue over it is divided."
+    },
+    {
+     "label": "Superficial temporal artery",
+     "why": "Leaves the upper pole in front of the tragus with its veins; bleeding here invites hurried clamping next to the temporal branches, so the vessels are identified and either preserved or ligated deliberately."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Parotid gland"
+   ],
+   "landmarks": [
+    "Temporal branches cross the zygomatic arch along a line from just below the tragus to just above the lateral end of the eyebrow",
+    "Zygomatic branches run forward over the zygomatic bone toward the lateral canthus",
+    "Auriculotemporal nerve ascends behind the superficial temporal vessels, between them and the tragus"
+   ],
+   "pearl": "The temporal branches have few connections with neighbouring branches, so recovery after injury is poorer than for the zygomatic and buccal branches.",
+   "check": {
+    "prompt": "Click the branches that cross the zygomatic arch to supply the frontalis and raise the eyebrow",
+    "answer": "Temporal branches of facial nerve"
+   }
+  },
+  {
+   "title": "Buccal branches and the parotid duct",
+   "action": "As the specimen is turned forward off the nerve, the buccal branches are followed across the masseter to the anterior border of the gland. The parotid duct leaves the anterior border and crosses the masseter about a fingerbreadth below the zygomatic arch, with the transverse facial artery above it and buccal branches running alongside. Duct tributaries draining the specimen are ligated and divided at the anterior border; the main duct continues forward, turns medially around the masseter and pierces the buccinator to open opposite the upper second molar.",
+   "view": {
+    "from": "left-front",
+    "systems": [
+     "bone",
+     "muscle",
+     "nerve",
+     "artery",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Parotid duct",
+    "(Accessory parotid gland)",
+    "Superficial part of masseter"
+   ],
+   "risk": [
+    {
+     "label": "Buccal branches of facial nerve",
+     "why": "Run in contact with the duct, immediately above and below it, and are caught in a ligature or clamp placed around the duct; duct tissue is separated from the adjacent branch before it is tied."
+    },
+    {
+     "label": "Transverse facial artery",
+     "why": "Runs forward between the zygomatic arch and the duct and bleeds at the anterior border beside the zygomatic and buccal branches; it is controlled with bipolar under vision."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Parotid gland"
+   ],
+   "landmarks": [
+    "Surface line of the duct: middle third of a line from the tragus to a point midway between the ala of the nose and the upper lip",
+    "Accessory parotid tissue lies on the masseter along the upper border of the duct",
+    "On the masseter from above down: zygomatic arch, transverse facial artery, parotid duct, with buccal branches beside the duct"
+   ],
+   "pearl": "Buccal branches receive fibres from both divisions and interconnect richly with the zygomatic branches, so an isolated injury is usually compensated."
+  },
+  {
+   "title": "Lower division: marginal mandibular and cervical branches",
+   "action": "The cervicofacial division is followed downward and forward through the tail of the gland. The marginal mandibular branch leaves the lower anterior border near the angle of the mandible, crosses superficial to the retromandibular vein and then to the facial vein, and runs forward deep to the platysma to the depressors of the lower lip. The cervical branch descends from the tail into the neck to the deep surface of the platysma.",
+   "view": {
+    "from": "below-left",
+    "systems": [
+     "bone",
+     "muscle",
+     "nerve",
+     "vein",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Cervicofacial division of facial nerve",
+    "Retromandibular vein",
+    "Facial vein"
+   ],
+   "risk": [
+    {
+     "label": "Marginal mandibular branch of facial nerve",
+     "why": "A fine branch with few cross-connections, stretched or divided in the tail where it crosses the retromandibular vein; the vein is ligated only after the nerve has been seen crossing it, and injury leaves the lower lip unable to depress on that side."
+    },
+    {
+     "label": "Cervical branch of facial nerve",
+     "why": "Leaves the tail and may be divided with it at little cost to platysma function; the danger is mistaking the marginal mandibular branch, which lies just above it, for the cervical branch."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Parotid gland"
+   ],
+   "landmarks": [
+    "The marginal mandibular branch crosses superficial to the retromandibular vein at the lower pole",
+    "In front of the gland the branch runs along or just below the lower border of the mandible, deep to the platysma and superficial to the facial vein and artery",
+    "The retromandibular vein divides near the lower pole: anterior division to the facial vein, posterior division to the external jugular vein"
+   ],
+   "pearl": "When the trunk cannot be reached safely, for example behind a large tumour, the marginal mandibular branch on the retromandibular vein is the usual starting point for retrograde dissection.",
+   "check": {
+    "prompt": "Click the branch that crosses the retromandibular vein at the lower pole and runs along the lower border of the mandible to the depressors of the lower lip",
+    "answer": "Marginal mandibular branch of facial nerve"
+   }
+  },
+  {
+   "title": "Specimen removal and the parotid bed",
+   "action": "The last attachments at the anterior border are divided and the superficial part of the gland is delivered, leaving the trunk, both divisions and all five branch groups lying on the deep part of the gland and the masseter. The bed is inspected: retromandibular vein under the nerve, external carotid artery deeper within the retained gland. After haemostasis a suction drain is laid away from the nerve and the flap is closed in layers, including platysma in the cervical limb.",
+   "view": {
+    "from": "left",
+    "systems": [
+     "bone",
+     "muscle",
+     "nerve",
+     "vein",
+     "artery",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Facial nerve (VII)",
+    "Temporofacial division of facial nerve",
+    "Cervicofacial division of facial nerve",
+    "External carotid artery",
+    "Superficial part of masseter"
+   ],
+   "risk": [
+    {
+     "label": "Auriculotemporal nerve",
+     "why": "Its divided parasympathetic secretomotor fibres to the gland regrow into the sweat glands and vessels of the overlying skin, giving gustatory sweating; a thicker flap or a tissue layer between the bed and the skin makes this less likely."
+    },
+    {
+     "label": "Retromandibular vein",
+     "why": "Oozing from the vein or its tributaries collects under the flap as a haematoma; the bed is checked with venous pressure raised before closure, using bipolar only beside the nerve."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Parotid gland"
+   ],
+   "landmarks": [
+    "The retained deep part of the gland lies behind and medial to the ramus, medial to the plane of the nerve",
+    "The external carotid artery enters the deep part of the gland after passing deep to the posterior belly of digastric and stylohyoid, and ends behind the neck of the mandible as the maxillary and superficial temporal arteries",
+    "Most parotid lymph nodes lie in the removed superficial part, lateral to the nerve"
+   ],
+   "pearl": "Every branch is inspected in continuity, and stimulated where there is doubt, before closure, so the record states an anatomically intact nerve."
+  }
+ ],
+ "complications": [
+  "Temporary facial weakness: stretch, heat and loss of blood supply to branches exposed along their length, the marginal mandibular branch most often because it is long, fine and poorly connected",
+  "Permanent facial paralysis: division or thermal injury of the trunk or a division, or of a branch with few cross-connections (temporal, marginal mandibular)",
+  "Gustatory sweating (Frey syndrome): cut parasympathetic secretomotor fibres carried by the auriculotemporal nerve reinnervate the sweat glands and vessels of the skin flap",
+  "Numbness of the lobule and the skin over the angle of the mandible: division of the great auricular nerve or its branches at the tail of the gland",
+  "Sialocele or salivary fistula: saliva leaks from the cut surface of the retained deep part of the gland into the space under the flap",
+  "Haematoma: retromandibular vein tributaries, superficial temporal and transverse facial vessels or the stylomastoid artery bleeding under the flap",
+  "Retromandibular contour hollow: loss of gland volume between the ramus of the mandible and the mastoid"
+ ],
+ "notes": "No geometry, referenced by card or text only: great auricular nerve, stylomastoid artery, posterior auricular nerve, nerves to posterior belly of digastric and stylohyoid (cards in risk); mastoid process, styloid process, stylomastoid foramen, tympanomastoid suture and tympanic part are only available as the whole 'Temporal bone' (cards exist: mastoid-process, styloid-process, stylomastoid-foramen, tympanic-part-of-temporal-bone, external-acoustic-meatus); the tragal pointer and cartilaginous ear canal, the parotid fascia proper and the superficial musculo-aponeurotic layer have neither geometry nor card ('Masseteric fascia' stands in for the parotideomasseteric fascia in step 2; the skin 'Tragus' is the only tragal structure). Simplifications: the model has a single 'Parotid gland' with no separate superficial and deep parts, so it is ghosted from step 5 onward rather than hidden, and in the last step the ghost stands for the retained deep part; no structure is put in hide (platysma and fascia are removed by peel 2, sternocleidomastoid is retracted, not divided, and is ghosted in steps 4 to 6); the posterior division of the retromandibular vein is described as ligated in step 4 but left visible so the venous anatomy can be shown in step 10. Focus and risk lists are kept disjoint in every step, so the nerve branch being dissected usually appears under risk. 'Facial nerve (VII)' is assumed to be the trunk (including its intratemporal course) now that divisions and branches are separate structures. Points to verify against the atlas: the quoted depths of the trunk from the tragal pointer (about 1 cm) and from the tympanomastoid suture (a few millimetres); the retromandibular vein lying deep to both divisions is the usual arrangement but variants are well described; management of the duct (tributaries versus the main duct being ligated) varies between surgeons; the order of auriculotemporal nerve and superficial temporal vessels in front of the tragus is given as nerve posterior to the vessels."
+}

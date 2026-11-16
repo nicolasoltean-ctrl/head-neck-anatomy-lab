@@ -1,0 +1,494 @@
+{
+ "id": "tonsillectomy",
+ "name": "Tonsillectomy",
+ "category": "Oropharynx",
+ "side": "l",
+ "summary": "Removal of the palatine tonsil together with its capsule, by dissection through the open mouth in the peritonsillar space between the capsule and the superior constrictor. The anatomy matters because that one thin muscle is the only layer between the dissection and the glossopharyngeal nerve, the facial artery and the carotid sheath, and because every vessel that bleeds afterward enters the tonsil by piercing it.",
+ "setup": "Supine with a shoulder roll and the neck extended, surgeon seated at the head. There is no skin incision: a mouth gag bearing on the upper incisors with its blade on the midline of the tongue opens the jaw, and the working landmarks are the uvula in the midline, the palatoglossal and palatopharyngeal arches on each side and the tongue base below.",
+ "steps": [
+  {
+   "title": "Positioning and mouth gag",
+   "action": "The neck is extended over a shoulder roll and a mouth gag is seated with its frame on the upper incisors and its blade along the midline of the tongue. Opening and suspending the gag drops the mandible and carries the tongue forward and down. The oropharyngeal isthmus then lies in view between the soft palate above and the tongue base below.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "bone",
+     "muscle",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Mandible",
+    "Maxilla"
+   ],
+   "risk": [
+    {
+     "label": "Upper medial incisor",
+     "why": "The gag frame levers on the upper incisors, so loose, carious or deciduous teeth are chipped or avulsed unless the frame is seated on sound teeth and opened gently."
+    },
+    {
+     "label": "Articular capsule of temporomandibular joint",
+     "why": "Forced wide opening stretches the capsule and can sublux the condyle; the gag is opened only as far as the exposure needs."
+    },
+    {
+     "label": "Atlas (C1)",
+     "why": "Neck extension loads the atlanto-axial joint, which can sublux where its ligaments are lax (for example in Down syndrome); extension is kept minimal in those patients."
+    },
+    {
+     "label": "Tongue",
+     "why": "Squeezed between the blade and the mandible the tongue becomes ischaemic and swollen and the lingual nerve along its side can be bruised; the blade is kept in the midline and the gag relaxed during a long case."
+    }
+   ],
+   "hide": [],
+   "ghost": [],
+   "landmarks": [
+    "Gag frame on the upper incisors, blade in the midline of the tongue",
+    "Isthmus of the fauces: soft palate and uvula above, tongue base below, a pair of arches on each side"
+   ],
+   "pearl": "Loose teeth, limited jaw opening and limited neck extension are identified before the gag goes in, not discovered after it comes out."
+  },
+  {
+   "title": "Inspection of the fauces",
+   "action": "With the tongue held down by the blade, the fauces are inspected before anything is cut. The tonsil sits in the tonsillar fossa between the palatoglossal arch in front and the palatopharyngeal arch behind, with the soft palate and supratonsillar fossa above and the tongue base below. The lateral and posterior pharyngeal walls are watched for pulsation.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Palatine tonsil",
+    "Palatopharyngeus muscle",
+    "Soft palate",
+    "Uvula of palate"
+   ],
+   "risk": [
+    {
+     "label": "card:internal-carotid-cervical-part",
+     "why": "A tortuous or medially displaced internal carotid can lie directly beneath the pharyngeal mucosa behind the posterior pillar; a pulsating bulge is looked for before any incision is made."
+    }
+   ],
+   "hide": [
+    "Tongue",
+    "Genioglossus muscle",
+    "Gingiva"
+   ],
+   "ghost": [
+    "Oropharynx",
+    "Medial pterygoid muscle"
+   ],
+   "landmarks": [
+    "Anterior pillar = palatoglossal arch over palatoglossus; posterior pillar = palatopharyngeal arch over palatopharyngeus",
+    "Upper pole extends up into the soft palate; lower pole meets the lingual tonsil at the tongue base",
+    "Uvula marks the midline between the two fossae"
+   ],
+   "pearl": "The surface seen in the mouth understates the tonsil, much of which is buried lateral to the anterior pillar; the capsule, not the visible surface, defines what is removed.",
+   "check": {
+    "prompt": "Click the muscle that forms the posterior pillar of the fauces",
+    "answer": "Palatopharyngeus muscle"
+   }
+  },
+  {
+   "title": "Medial traction and anterior pillar incision",
+   "action": "The tonsil is grasped near its upper pole and drawn toward the midline, which tents the mucosa and shows where the anterior pillar ends and the tonsil begins. Mucosa alone is incised along that junction from the upper pole down toward the tongue and around the upper pole onto the posterior pillar. Palatoglossus is left intact beneath the pillar mucosa.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Palatine tonsil",
+    "Soft palate",
+    "Palatopharyngeus muscle"
+   ],
+   "risk": [
+    {
+     "label": "card:palatoglossal-arch",
+     "why": "An incision placed too far laterally removes pillar mucosa and cuts palatoglossus, giving more bleeding and pain and a scarred, shortened arch; the cut follows the tonsil-pillar junction and is mucosa-deep only."
+    },
+    {
+     "label": "Uvula of palate",
+     "why": "Carrying the upper end of the incision medially, or resting a hot instrument against it, injures the uvula and the free edge of the palate and leaves it oedematous; the incision turns laterally over the upper pole."
+    }
+   ],
+   "hide": [
+    "Oropharynx"
+   ],
+   "ghost": [
+    "Medial pterygoid muscle"
+   ],
+   "landmarks": [
+    "Mucosal junction of anterior pillar and tonsil, made obvious by medial traction",
+    "The incision curves over the upper pole just below the free edge of the soft palate"
+   ],
+   "pearl": "Medial traction turns a flush tonsil into a defined edge and draws the capsule away from the lateral wall, so it is held for the whole dissection."
+  },
+  {
+   "title": "Upper pole and the peritonsillar plane",
+   "action": "Through the mucosal incision at the upper pole the smooth white tonsillar capsule is found, and the loose areolar tissue of the peritonsillar space is opened between the capsule and the superior constrictor. The upper pole is freed out of the supratonsillar fossa and turned downward. Capsule on one side and bare muscle on the other confirms the plane for the rest of the dissection.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "lymph",
+     "viscera",
+     "artery"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Palatine tonsil",
+    "Soft palate"
+   ],
+   "risk": [
+    {
+     "label": "Superior pharyngeal constrictor",
+     "why": "This thin sheet is the only layer between the dissection and the parapharyngeal space and is breached when instruments are driven laterally; dissection stays on the capsule and is blunt."
+    },
+    {
+     "label": "Descending palatine artery",
+     "why": "Its lesser palatine branches run through the soft palate to the upper pole and are torn as the pole is freed; they are controlled at the capsule rather than chased up into the palate."
+    },
+    {
+     "label": "Ascending pharyngeal artery",
+     "why": "Its twigs reach the upper posterior bed through the constrictor while the trunk lies on the pharyngeal wall just outside it; haemostasis here is kept superficial."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Medial pterygoid muscle"
+   ],
+   "landmarks": [
+    "Capsule: a condensation of pharyngobasilar fascia covering the deep surface of the tonsil",
+    "Peritonsillar space: loose areolar tissue between capsule and superior constrictor, the site of a peritonsillar abscess",
+    "Upper pole vessels arrive through the soft palate: lesser palatine and ascending pharyngeal branches"
+   ],
+   "pearl": "White capsule on the specimen and intact red muscle in the bed means the plane is right; lymphoid tissue left on the wall is too shallow and fat is too deep.",
+   "check": {
+    "prompt": "Click the muscle that forms the lateral wall of the tonsillar bed",
+    "answer": "Superior pharyngeal constrictor"
+   }
+  },
+  {
+   "title": "Dissection along the capsule",
+   "action": "With the tonsil held medially, the capsule is separated from its bed from above downward. Fibres of palatoglossus and palatopharyngeus that blend with the capsule are swept off it and left on the wall, so both pillars stay intact while the tonsil hinges toward its lower pole. Vessels crossing the space are seen where they pierce the constrictor and are controlled against the capsule.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Palatine tonsil",
+    "Superior pharyngeal constrictor"
+   ],
+   "risk": [
+    {
+     "label": "card:external-palatine-vein",
+     "why": "It crosses the peritonsillar space on the capsule and is torn by blunt dissection; cut flush with the wall it retracts through the constrictor, so it is identified and sealed on the capsular side."
+    },
+    {
+     "label": "Palatopharyngeus muscle",
+     "why": "Dissecting behind rather than in front of the posterior pillar strips or divides this muscle and scars the palate toward the pharyngeal wall; the pillar is kept as the posterior limit of the dissection."
+    },
+    {
+     "label": "card:palatoglossus",
+     "why": "Its fibres blend with the capsule anteriorly and are cut when the dissection drifts lateral to the capsule; they are pushed off the capsule, not removed with it."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Medial pterygoid muscle"
+   ],
+   "landmarks": [
+    "Plane: capsule medially, superior constrictor laterally, palatopharyngeus at the posterior edge of the bed",
+    "Paratonsillar (external palatine) vein: descends from the soft palate across the lateral surface of the capsule, then pierces the constrictor"
+   ],
+   "pearl": "The paratonsillar vein is the usual source of brisk dark bleeding during the dissection and in the first hours after it."
+  },
+  {
+   "title": "Lower pole and vascular pedicle",
+   "action": "The tonsil now hangs on its lower pole, where the capsule is most firmly tethered to the side of the tongue and the main artery enters. The tonsillar branch of the facial artery, having pierced the superior constrictor, runs in this pedicle with twigs from the ascending palatine and dorsal lingual arteries. The pedicle is divided at the tonsillolingual sulcus, separating the palatine tonsil from the lingual tonsil.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "lymph",
+     "viscera",
+     "artery"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Palatine tonsil",
+    "Facial artery",
+    "Ascending palatine artery"
+   ],
+   "risk": [
+    {
+     "label": "card:tonsillar-artery",
+     "why": "It is divided in the pedicle, and if cut flush it retracts lateral to the constrictor and bleeds from a hole in the bed; it is secured before or as the pedicle is divided."
+    },
+    {
+     "label": "card:branches-of-lingual-artery",
+     "why": "Dorsal lingual branches are opened when the lower dissection strays into the tongue base; the cut stays at the tonsillolingual sulcus."
+    },
+    {
+     "label": "card:lingual-tonsil",
+     "why": "Lymphoid tissue is continuous here, so the lower pole can be left behind as a remnant or the lingual tonsil entered by mistake; the capsule is followed to its lower end."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Medial pterygoid muscle"
+   ],
+   "landmarks": [
+    "Tonsillar branch of the facial artery: pierces the superior constrictor to enter the lower pole, the principal supply",
+    "Dorsal lingual twigs enter from the tongue anteroinferiorly; ascending palatine twigs posteroinferiorly",
+    "Tonsillolingual sulcus marks the lower limit of the resection"
+   ],
+   "pearl": "The most significant arterial bleeding comes from the lower pole, where the largest vessel enters and where the facial artery itself can loop up against the outside of the bed.",
+   "check": {
+    "prompt": "Click the artery whose tonsillar branch pierces the superior constrictor to enter the lower pole",
+    "answer": "Facial artery"
+   }
+  },
+  {
+   "title": "The tonsillar bed",
+   "action": "With the tonsil out, the fossa is inspected. Its lateral wall is the superior constrictor under a thin layer of pharyngobasilar fascia, with palatoglossus at the anterior edge, palatopharyngeus at the posterior edge and styloglossus crossing the lower anterior part. The wall should be an unbroken sheet of muscle with no lymphoid tissue left on it and no fat showing through.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Palatopharyngeus muscle",
+    "Soft palate",
+    "Uvula of palate"
+   ],
+   "risk": [
+    {
+     "label": "Superior pharyngeal constrictor",
+     "why": "A gap in the muscle opens the parapharyngeal space, where the glossopharyngeal nerve, facial artery and carotid sheath lie; no instrument, diathermy or suture is passed through a defect."
+    }
+   ],
+   "hide": [
+    "Palatine tonsil"
+   ],
+   "ghost": [
+    "Medial pterygoid muscle"
+   ],
+   "landmarks": [
+    "Bed from the lumen outward: pharyngobasilar fascia, superior constrictor, buccopharyngeal fascia, parapharyngeal space",
+    "An elongated styloid process or ossified stylohyoid ligament can be felt through the lower part of the bed"
+   ],
+   "pearl": "Fat in the bed means the constrictor has been breached and the parapharyngeal space is open."
+  },
+  {
+   "title": "Deep to the lower pole: glossopharyngeal nerve",
+   "action": "The superior constrictor is drawn transparent to show what lies immediately outside the lower bed. The glossopharyngeal nerve descends on stylopharyngeus, curves forward around it and passes with it between the superior and middle constrictors, then runs deep to hyoglossus to the posterior third of the tongue. At the lower pole only the constrictor, which is thin here, separates the nerve from the dissection.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "lymph",
+     "viscera",
+     "nerve"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Stylopharyngeus muscle",
+    "Middle pharyngeal constrictor",
+    "Hyoglossus muscle"
+   ],
+   "risk": [
+    {
+     "label": "Glossopharyngeal nerve (IX)",
+     "why": "Deep diathermy, a deeply placed ligature or oedema at the lower pole affects the nerve just outside the constrictor, giving altered taste, numbness of the posterior tongue and dysphagia; haemostasis at the lower pole is kept superficial and precise."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Superior pharyngeal constrictor",
+    "Medial pterygoid muscle",
+    "Sternocleidomastoid muscle"
+   ],
+   "landmarks": [
+    "Stylopharyngeus and the glossopharyngeal nerve enter the pharyngeal wall through the gap between the superior and middle constrictors",
+    "The nerve carries taste and general sensation from the posterior third of the tongue, the tonsil and the oropharynx, and reaches the middle ear through its tympanic branch"
+   ],
+   "pearl": "Shared glossopharyngeal supply to the tonsillar bed and the middle ear is why throat pain after tonsillectomy is felt in the ear.",
+   "check": {
+    "prompt": "Click the nerve that winds around stylopharyngeus and passes just outside the lower pole of the tonsillar bed",
+    "answer": "Glossopharyngeal nerve (IX)"
+   }
+  },
+  {
+   "title": "Lateral to the constrictor: the carotid",
+   "action": "Beyond the constrictor and its buccopharyngeal fascia lies the parapharyngeal space. The internal carotid artery ascends about 2.5 cm posterolateral to the tonsil with the internal jugular vein lateral to it and the vagus between them; the external carotid lies anterolateral to the internal and gives off the vessels that feed the tonsil. Stylopharyngeus, styloglossus and the glossopharyngeal nerve pass between the two carotids.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "lymph",
+     "viscera",
+     "artery",
+     "vein",
+     "nerve"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "External carotid artery",
+    "Internal jugular vein",
+    "Vagus nerve (X)",
+    "Stylopharyngeus muscle"
+   ],
+   "risk": [
+    {
+     "label": "Internal carotid artery",
+     "why": "It is reached only when an instrument, needle or diathermy passes through the constrictor and the parapharyngeal fat, but a tortuous or medially placed artery can lie directly behind the bed; deep blind sutures and deep diathermy posteriorly are avoided."
+    },
+    {
+     "label": "Facial artery",
+     "why": "Its cervical loop can arch upward against the outer surface of the constrictor near the lower pole, so lateral penetration there opens the main trunk rather than its tonsillar branch."
+    },
+    {
+     "label": "Ascending pharyngeal artery",
+     "why": "It runs up the pharyngeal wall between the internal carotid and the pharynx, just outside the posterior part of the bed, and is injured by deep dissection behind the posterior pillar."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Superior pharyngeal constrictor",
+    "Medial pterygoid muscle",
+    "Sternocleidomastoid muscle"
+   ],
+   "landmarks": [
+    "Internal carotid: about 2.5 cm posterolateral to the tonsillar bed, with no branches in the neck",
+    "The styloid muscles and the glossopharyngeal nerve pass between the internal and external carotids",
+    "Tonsillar lymph drains through the constrictor to the jugulodigastric node behind the angle of the mandible"
+   ],
+   "pearl": "The margin of safety from the carotid is the constrictor plus the parapharyngeal fat, and it is smaller when the artery is tortuous and in small children, where every distance is shorter.",
+   "check": {
+    "prompt": "Click the artery that ascends about 2.5 cm posterolateral to the tonsillar bed and gives no branches in the neck",
+    "answer": "Internal carotid artery"
+   }
+  },
+  {
+   "title": "Haemostasis by arterial source",
+   "action": "The bed is dried and each bleeding point is dealt with according to where it arises. Upper pole bleeding comes from lesser palatine and ascending pharyngeal branches; lower pole bleeding from the tonsillar branch of the facial artery and from ascending palatine and dorsal lingual twigs; dark venous bleeding from the paratonsillar vein. All of these arteries belong to the external carotid system, shown here with the constrictor transparent.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "lymph",
+     "viscera",
+     "artery",
+     "nerve"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "External carotid artery",
+    "Facial artery",
+    "Ascending palatine artery",
+    "Ascending pharyngeal artery",
+    "Descending palatine artery"
+   ],
+   "risk": [
+    {
+     "label": "card:tonsillar-artery",
+     "why": "A cut end that has retracted through the constrictor bleeds from a hole in the lower bed; it is picked up precisely at the surface rather than with a deep bite."
+    },
+    {
+     "label": "card:external-palatine-vein",
+     "why": "A retracted vein end oozes from the upper lateral bed and restarts with coughing or straining; it is sealed where it pierces the wall."
+    },
+    {
+     "label": "Glossopharyngeal nerve (IX)",
+     "why": "Deep ligatures or prolonged diathermy at the lower pole catch the nerve just outside the constrictor; haemostatic bites take mucosa and superficial muscle only."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Superior pharyngeal constrictor",
+    "Medial pterygoid muscle",
+    "Sternocleidomastoid muscle"
+   ],
+   "landmarks": [
+    "Upper pole: lesser palatine branches (descending palatine, from the maxillary artery) and the ascending pharyngeal artery",
+    "Lower pole: tonsillar branch of the facial artery (main supply), ascending palatine (facial) and dorsal lingual (lingual) arteries",
+    "All five sources arise from the external carotid or its branches"
+   ],
+   "pearl": "Because the whole supply is external carotid, that trunk is the vessel controlled in the neck when bleeding from the fossa cannot be stopped through the mouth."
+  },
+  {
+   "title": "Gag release and final check",
+   "action": "Tension on the gag is released for a moment and both fossae are inspected again, since stretch from the gag can hold small vessels closed. Clot is cleared from the nasopharynx behind the soft palate and from the laryngopharynx, and the uvula and pillars are checked. The gag is then removed with a last look at the teeth, lips, tongue and jaw.",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "lymph",
+     "viscera"
+    ],
+    "peel": 2
+   },
+   "focus": [
+    "Nasopharynx",
+    "Laryngopharynx",
+    "Soft palate"
+   ],
+   "risk": [
+    {
+     "label": "Uvula of palate",
+     "why": "Traction, suction and diathermy leave the uvula swollen, which causes a foreign-body sensation and occasionally obstruction; it is inspected before the gag comes out."
+    },
+    {
+     "label": "card:permanent-teeth",
+     "why": "A tooth loosened by the gag frame can be dislodged as the gag is withdrawn and then aspirated; the teeth are counted and tested again."
+    },
+    {
+     "label": "card:temporomandibular-joint",
+     "why": "A condyle subluxed by prolonged wide opening has to be recognised and reduced before waking; the jaw is closed and the bite checked."
+    }
+   ],
+   "hide": [],
+   "ghost": [
+    "Medial pterygoid muscle"
+   ],
+   "landmarks": [
+    "Nasopharynx: above and behind the soft palate, hidden from the oral view",
+    "With the neck extended the nasopharynx is the dependent part of the pharynx, so blood pools there rather than at the larynx"
+   ],
+   "pearl": "A clot left in the nasopharynx can fall onto the larynx when the neck is flexed at the end of the case, so it is removed under vision."
+  }
+ ],
+ "complications": [
+  "Primary haemorrhage (first 24 hours): a vessel cut flush with the bed, usually the paratonsillar vein or the tonsillar branch of the facial artery, retracts through the superior constrictor and reopens",
+  "Secondary haemorrhage (about a week later): the slough separates from an open muscular bed and exposes vessels where they perforate the constrictor",
+  "Altered taste, posterior tongue numbness or dysphagia: the glossopharyngeal nerve lies just outside the constrictor at the lower pole and is affected by deep diathermy, sutures or oedema",
+  "Referred otalgia: the glossopharyngeal nerve supplies both the tonsillar bed and the middle ear (tympanic branch)",
+  "Velopharyngeal insufficiency or palatal scarring: loss or tethering of palatopharyngeus, palatoglossus and the edge of the soft palate when the dissection leaves the capsule",
+  "Dental, temporomandibular joint and tongue injury: the gag bears on the upper incisors, holds the mandible wide open and compresses the tongue and lingual nerve against it",
+  "Major vessel injury: penetration of the superior constrictor reaches the facial artery loop, the ascending pharyngeal artery and, about 2.5 cm posterolateral or closer when tortuous, the internal carotid"
+ ],
+ "notes": "VIEWS: every step is from the front with the superficial layers removed (peel 2), as a stand-in for the transoral view. The model's mouth is closed and has no gag, so after step 1 the bone layer is switched off (jaws and teeth block the view), and Tongue, Genioglossus muscle and Gingiva are hidden from step 2 to represent the tongue held down by the blade. The 'Oropharynx' mesh is a mucosal lining of the oral cavity and oropharynx that covers the constrictor and pillars from the front; it is ghosted in step 2 and hidden from step 3 (mucosa incised). Medial pterygoid is ghosted from step 2 onward because in the model it overlaps the left tonsil and the internal carotid in a straight frontal view; sternocleidomastoid is ghosted in the deep steps for the same reason. MODEL LIMITS: the Palatine tonsil mesh is small and sits high and lateral, straddling the superior constrictor next to the medial pterygoid rather than between the pillars, so palatopharyngeus, the facial artery and the glossopharyngeal nerve are further from it than in life (the internal carotid is about 27 mm behind it, which matches the taught 2.5 cm). Treat positions as schematic. NO GEOMETRY (card or text only): palatoglossus and the palatoglossal arch, tonsillar branch of the facial artery, lingual artery and its dorsal lingual branches, lesser palatine arteries (the Descending palatine artery mesh stands in as their parent), paratonsillar (external palatine) vein, styloglossus, lingual tonsil, the tonsillar capsule, pharyngobasilar and buccopharyngeal fascia, styloid process as a separate piece. The Stylohyoid ligament and temporomandibular joint parts have geometry but belong to the bone layer and are not shown after step 1. The cervical internal carotid risk in step 2 and the teeth and TMJ risks in step 11 are card references. SIMPLIFICATIONS: one dissection (cold steel or diathermy, extracapsular) is described without instrument detail; intracapsular tonsillotomy and adenoidectomy are not covered. LESS CERTAIN: the lingual nerve as the structure bruised by tongue-blade compression (the tongue swelling and numbness are well described, the exact mechanism less so); the point about fibres of both pillar muscles blending with the capsule is stated generally; 'about a week' for secondary haemorrhage is an approximate teaching figure."
+}
