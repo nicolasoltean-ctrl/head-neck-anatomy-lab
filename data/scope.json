@@ -1,5 +1,5 @@
 {
- "_about": "Flexible nasopharyngoscopy route through the LEFT nasal passage, computed by tools/scope_path.py (centred between the walls of the model's airway meshes; 1 mm between points, metres, Y-up). palate_offset opens the velopharyngeal port as in quiet nasal breathing: in the model at rest the soft palate lies about 2 mm from the posterior wall.",
+ "_about": "Flexible nasopharyngoscopy route through the LEFT nasal passage, computed by tools/scope_path.py (centred between the walls of the model's airway meshes; 1 mm between points, metres, Y-up). palate_offset opens the velopharyngeal port as in quiet nasal breathing: in the model at rest the soft palate lies about 2 mm from the posterior wall. The larynx's mucosal folds are not in Z-Anatomy; Scope mode draws them (see larynxBuild in template3d.html) and hides the bare intrinsic muscles listed in hide_labels.",
  "path": [
   [
    0.005,
@@ -715,6 +715,51 @@
    0.0,
    1.503,
    0.0155
+  ],
+  [
+   0.0,
+   1.502,
+   0.01558
+  ],
+  [
+   0.0,
+   1.501,
+   0.01566
+  ],
+  [
+   0.0,
+   1.5,
+   0.01573
+  ],
+  [
+   0.0,
+   1.499,
+   0.01581
+  ],
+  [
+   0.0,
+   1.498,
+   0.01589
+  ],
+  [
+   0.0,
+   1.497,
+   0.01597
+  ],
+  [
+   0.0,
+   1.496,
+   0.01604
+  ],
+  [
+   0.0,
+   1.495,
+   0.01612
+  ],
+  [
+   0.0,
+   1.494,
+   0.0162
   ]
  ],
  "palate_offset": [
@@ -758,9 +803,14 @@
    "teach": "Posterior pharyngeal wall behind, base of tongue and palatine tonsils in front and to the sides. The epiglottis comes into view below."
   },
   {
-   "to": 999,
+   "to": 144,
    "name": "Hypopharynx, above the laryngeal inlet",
    "teach": "The view down onto the larynx: epiglottis in front, aryepiglottic folds running back to the arytenoids, the piriform fossae on each side and the valleculae in front of the epiglottis."
+  },
+  {
+   "to": 999,
+   "name": "Laryngeal vestibule, above the vocal folds",
+   "teach": "Hold the tip here and assess the folds: ask the patient to sniff (the folds abduct) and to say 'eee' (they meet in the midline). Compare the two sides for symmetry of movement, and inspect the vestibular folds, ventricles, anterior commissure and interarytenoid area."
   }
  ],
  "anchors": [
@@ -898,9 +948,9 @@
    "id": "ae-fold",
    "name": "Aryepiglottic fold",
    "p": [
-    0.007,
-    1.492,
-    0.013
+    0.0069,
+    1.4925,
+    0.0133
    ],
    "note": "Runs from the side of the epiglottis to the arytenoid and forms the rim of the laryngeal inlet."
   },
@@ -923,6 +973,51 @@
     0.0095
    ],
    "note": "The recess lateral to the aryepiglottic fold. The internal branch of the superior laryngeal nerve runs under its mucosa."
+  },
+  {
+   "id": "vestibular-fold",
+   "name": "Vestibular (false) fold",
+   "p": [
+    0.0068,
+    1.4816,
+    0.0155
+   ],
+   "note": "The pink fold above the ventricle. It does not vibrate in normal voice."
+  },
+  {
+   "id": "vocal-fold",
+   "name": "True vocal fold",
+   "p": [
+    0.0034,
+    1.4756,
+    0.0165
+   ],
+   "note": "The pearly white fold from the anterior commissure to the vocal process of the arytenoid. Abduction is by the posterior cricoarytenoid, supplied by the recurrent laryngeal nerve."
+  },
+  {
+   "id": "anterior-commissure",
+   "name": "Anterior commissure",
+   "p": [
+    0.0,
+    1.4758,
+    0.0236
+   ],
+   "note": "Where the two vocal folds meet at the inner surface of the thyroid cartilage."
+  },
+  {
+   "id": "interarytenoid",
+   "name": "Interarytenoid area (posterior commissure)",
+   "p": [
+    0.0,
+    1.4795,
+    0.0062
+   ],
+   "note": "Mucosa between the arytenoids at the back of the glottis. Thickening here is a common finding in laryngopharyngeal reflux."
   }
+ ],
+ "hide_labels": [
+  "External part of thyro-arytenoid muscle",
+  "Thyro-epiglottic part of thyro-arytenoid muscle",
+  "Ary-epiglottic part of oblique arytenoid muscle"
  ]
 }

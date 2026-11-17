@@ -285,6 +285,11 @@ body.entering #gl { transition: opacity .55s ease .6s; }
 .checklist li::before { content: "○ "; color: var(--fg-3); } .checklist li.seen { color: var(--fg); } .checklist li.seen::before { content: "● "; color: var(--good); }
 :root { --risk: #d97706; } :root[data-theme="dark"] { --risk: #fbbf24; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --risk: #fbbf24; } }
+.exam-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; } .exam-head .clock, .score span { font-family: var(--font-mono); font-size: 13px; color: var(--fg-2); }
+.score { display: flex; align-items: baseline; gap: 8px; } .score b { font-size: 34px; line-height: 1; font-weight: 650; color: var(--accent); letter-spacing: -.02em; } .score .spacer { flex: 1; }
+.results { list-style: none; padding: 0; display: grid; gap: 5px; font-size: 13px; color: var(--fg-2); } .results li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 8px; align-items: start; }
+.results li > span { font-family: var(--font-mono); font-size: 12px; text-align: center; border-radius: 6px; padding: 1px 0; background: var(--bg-3); } .results li.ok > span { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); } .results li.miss > span { background: color-mix(in srgb, var(--bad) 16%, transparent); color: var(--bad); } .results b { color: var(--fg); font-weight: 600; }
+.train .eyebrow .seg { margin-left: auto; text-transform: none; letter-spacing: 0; font-family: var(--font-ui); } .train .seg button { font-size: 12.5px; padding: 4px 11px; } .train .seg button:disabled { opacity: .5; cursor: default; }
 /* the endoscope view: a round image on black */
 .stage.is-scope { background-color: #06080c; border-color: transparent; }
 .stage.is-scope::before, .stage.is-scope .views, .stage.is-scope .hint, .stage.is-scope .corner { display: none; }
@@ -477,7 +482,7 @@ const riskMat = new THREE.MeshPhongMaterial({ color: 0xf59e0b, emissive: 0x6b3d0
 /* Scope view: its own wide-angle camera carrying a headlight, and wet mucosa-coloured materials */
 const scopeCam = new THREE.PerspectiveCamera(86, 1, 0.0004, 0.4);
 const scopeLight = new THREE.PointLight(0xfff1e6, 2.1, 0.085, 2); scopeLight.visible = false; scopeCam.add(scopeLight); scene.add(scopeCam);
-const SCOPE_SYS = new Set(['viscera', 'bone', 'muscle', 'lymph']);
+const SCOPE_SYS = new Set(['viscera', 'bone', 'muscle', 'lymph']); const SCOPE_HIDE = new Set(SCOPE.hide_labels || []); // bare intrinsic muscles that the drawn folds replace
 const scopeMats = { soft: new THREE.MeshPhongMaterial({ color: 0xd98282, specular: 0x4a2a2a, shininess: 46, side: THREE.DoubleSide }), hard: new THREE.MeshPhongMaterial({ color: 0xe2a8a0, specular: 0x4a2f2c, shininess: 40, side: THREE.DoubleSide }) }; // cartilage and turbinate bone are mucosa-covered in life, so only slightly paler
 const activeCam = () => state.mode === 'scope' ? scopeCam : camera;
 const meshes = new Map(); // id -> THREE.Mesh
@@ -645,7 +650,7 @@ function applyVisibility() {
   meshes.forEach(m => {
     const u = m.userData; const isSel = sel.has(u.id);
     if (state.mode === 'scope') { // the scope sees every wall of the airway, whatever layers the main view has on
-      m.visible = SCOPE_SYS.has(u.system); u.ghosted = false; if (m.visible) { m.material = isSel ? selMat : (u.system === 'bone' ? scopeMats.hard : scopeMats.soft); pickables.push(m); } return; }
+      m.visible = SCOPE_SYS.has(u.system) && !SCOPE_HIDE.has(u.label); u.ghosted = false; if (m.visible) { m.material = isSel ? selMat : (u.system === 'bone' ? scopeMats.hard : scopeMats.soft); pickables.push(m); } return; }
     const on = state.systems[u.system] && sideOk(u.side) && passesFilter(u.id) && !hiddenIds.has(u.id);
     const peeled = u.tier < state.peel;
     const iso = state.isolate && sel.size > 0 && !isSel;
@@ -974,19 +979,118 @@ document.getElementById('surgery-ui').addEventListener('click', e => {
   else if (t.id === 'surg-reveal' && surg.check) { surg.check.done = true; surg.check.ok = false; surgPaint(); }
 });
 
+/* ---------- The larynx as the scope sees it ----------
+   Z-Anatomy has the laryngeal cartilages and bare intrinsic muscles but none of the mucosal folds, so Scope mode draws them
+   (schematic, in millimetres, on the model's own cartilages): the aryepiglottic folds, the side walls of the vestibule, the
+   vestibular folds, and vocal folds that open and close with the arytenoids. They exist only in Scope mode. */
+const larynx = { group: null, parts: [], gap: 3.4, to: 3.4, raf: 0, state: 'breathe' };
+const LX = { rest: 2.9, pivot: [6.0, 5.0], tip: [2.9, 10.9], gaps: { breathe: 3.4, sniff: 5.2, phonate: 0.12 },
+  wallVocal: [[3, 9.9], [9.4, 9.7], [15, 8.7], [18.7, 6.4], [21.9, 4.0], [24.7, 0.2]], // half-width of the airway wall by z, at the vocal folds
+  wallVest: [[3, 10.4], [9.1, 10.2], [15, 10.3], [19.5, 7.9], [23.7, 5.05], [28.4, 0.2]], // and at the vestibular folds
+  rim: [[1.0, 1481.6, 25.8], [3.2, 1485, 24.1], [6.4, 1490, 22.0], [7.4, 1495, 20.3], [7.8, 1502, 19.5], [8.3, 1500, 17.6], [7.6, 1495, 15.2], [6.4, 1490, 12.0], [5.6, 1485, 9.2], [4.3, 1482.3, 5.0]], // up the edge of the epiglottis, then back along the aryepiglottic fold to the arytenoid's apex
+  rimMove: [0, 0, 0, 0, 0, 0, 0, 0.3, 0.6, 1] };
+function lxWall(tab, z) { if (z <= tab[0][0]) return tab[0][1]; for (let i = 1; i < tab.length; i++) if (z <= tab[i][0]) { const a = tab[i - 1], b = tab[i]; return a[1] + (b[1] - a[1]) * (z - a[0]) / (b[0] - a[0]); } return tab[tab.length - 1][1]; }
+function lxPose(gap) { // where an arytenoid sits for a given half-width of the glottis at the vocal process: part slide, part swing about a vertical axis
+  const d = gap - LX.rest, phi = 0.0763 * d, dx = 0.55 * d, rx = LX.tip[0] - LX.pivot[0], rz = LX.tip[1] - LX.pivot[1];
+  return { phi, dx, x: LX.pivot[0] + dx + rx * Math.cos(phi) + rz * Math.sin(phi), z: LX.pivot[1] - rx * Math.sin(phi) + rz * Math.cos(phi) };
+}
+// Each part is a sheet: rows run front to back, columns run across the fold. All are written for the left side and mirrored.
+function lxVocal(gap) {
+  const t = lxPose(gap), rows = [], N = 14, back = [[1.4, 1.5], [3.4, 3.0], [5.9, 4.2], [7.9, 4.5]];
+  for (let k = 0; k <= N + back.length; k++) {
+    let z, e, y = 1474.5;
+    if (k <= N) { const f = k / N; z = 24.3 + (t.z - 24.3) * f; e = 0.04 + (t.x - 0.04) * f; y = 1475.7 - 1.2 * f; } // anterior commissure to vocal process
+    else { z = t.z - back[k - N - 1][0]; e = t.x + back[k - N - 1][1]; } // carried back inside the arytenoid, to close the floor beside it
+    const span = Math.max(0.5, lxWall(LX.wallVocal, z) - e), f = Math.min(1, span / 4.5);
+    rows.push([[span + 1.5, -9], [2.2 * f, -3.5], [0.5 * f, -1.4], [0, -0.5], [0.35 * f, 0.05], [1.6 * f, 0.25], [Math.max(2.4 * f, span - 1.2), 0.1], [span + 1.5, -0.7]].map(p => [e + p[0], y + p[1], z]));
+  }
+  return rows;
+}
+function lxVest(gap) {
+  const gv = 4.6 + 0.6 * (gap - LX.rest), rows = [], N = 14;
+  for (let k = 0; k <= N; k++) {
+    const f = k / N, z = 26 - 19.5 * f, e = 0.8 + (gv - 0.8) * f + 3 * Math.pow(Math.sin(Math.PI * f), 0.8), y = 1481 - 0.8 * f;
+    const span = Math.max(0.5, lxWall(LX.wallVest, z) - e), s = Math.min(1, span / 3.5);
+    rows.push([[span + 1.5, -3.2], [1.6 * s, -2.0], [0.4 * s, -1.2], [0, -0.3], [0.45 * s, 0.6], [Math.max(1.6 * s, 0.45 * span), 2.0], [span + 1.5, 4.8]].map(p => [e + p[0], y + p[1], z]));
+  }
+  return rows;
+}
+function lxRim(gap, from) { const d = (gap - LX.rest) * 0.55; return new THREE.CatmullRomCurve3(LX.rim.slice(from || 0).map((p, i) => new THREE.Vector3(p[0] + d * LX.rimMove[i + (from || 0)], p[1], p[2]))); }
+function lxCurtain(gap) { // the side wall of the vestibule (quadrangular membrane): from the vestibular fold up to the epiglottis and aryepiglottic fold
+  const vest = lxVest(gap), rim = lxRim(gap), M = 5;
+  return vest.map((r, k) => { const b = r[4], t = rim.getPointAt(k / (vest.length - 1)).toArray(); return Array.from({ length: M + 1 }, (_, j) => b.map((v, a) => v + (t[a] - v) * j / M)); });
+}
+function lxAeFold(gap) { // the rounded free edge of that wall, with the cuneiform and corniculate tubercles as swellings near its back end
+  const c = lxRim(gap, 4), rows = [], S = 22, n = new THREE.Vector3(), b = new THREE.Vector3();
+  for (let i = 0; i <= S; i++) {
+    const u = i / S, p = c.getPointAt(u), t = c.getTangentAt(u); n.set(0, 0, 1).cross(t).normalize(); b.crossVectors(t, n).normalize();
+    const r = 1.35 + 0.55 * Math.exp(-Math.pow((u - 0.72) / 0.07, 2)) + 0.7 * Math.exp(-Math.pow((u - 0.97) / 0.06, 2));
+    rows.push(Array.from({ length: 9 }, (_, j) => { const a = j / 8 * Math.PI * 2; return [p.x + r * (Math.cos(a) * n.x + Math.sin(a) * b.x), p.y + r * (Math.cos(a) * n.y + Math.sin(a) * b.y), p.z + r * (Math.cos(a) * n.z + Math.sin(a) * b.z)]; }));
+  }
+  return rows;
+}
+const lxMat = new THREE.MeshPhongMaterial({ vertexColors: true, specular: 0x5a4040, shininess: 58, side: THREE.DoubleSide });
+function lxFill(m, gap) {
+  const u = m.userData, rows = u.rowsOf(gap), R = rows.length, C = rows[0].length, g = m.geometry;
+  if (!g.getAttribute('position')) {
+    const idx = [], col = new Float32Array(R * C * 3), c = new THREE.Color();
+    for (let r = 0; r < R - 1; r++) for (let k = 0; k < C - 1; k++) { const a = r * C + k; idx.push(a, a + 1, a + C, a + 1, a + C + 1, a + C); }
+    for (let r = 0; r < R; r++) for (let k = 0; k < C; k++) { c.set(u.colorOf(k)); col.set([c.r, c.g, c.b], (r * C + k) * 3); }
+    g.setIndex(idx); g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(R * C * 3), 3)); g.setAttribute('color', new THREE.BufferAttribute(col, 3));
+  }
+  const pos = g.getAttribute('position'); let i = 0;
+  for (const row of rows) for (const p of row) pos.setXYZ(i++, p[0] * u.side, p[1], p[2]);
+  pos.needsUpdate = true; g.computeVertexNormals(); g.computeBoundingSphere(); g.computeBoundingBox();
+}
+function larynxBuild() {
+  if (larynx.group) return;
+  larynx.group = new THREE.Group(); larynx.group.scale.setScalar(0.001); larynx.group.visible = false; root.add(larynx.group);
+  const pink = 0xd98282, cord = 0xf3ece6;
+  const part = (rowsOf, colorOf, card) => { for (const side of [1, -1]) { const m = new THREE.Mesh(new THREE.BufferGeometry(), lxMat); m.userData = { rowsOf, colorOf, side, card }; m.frustumCulled = false; larynx.group.add(m); larynx.parts.push(m); } };
+  part(lxVocal, k => [pink, 0xdf9a94, cord, cord, cord, cord, 0xe8b9b0, pink][k], 'vocal-fold');
+  part(lxVest, k => k === 3 || k === 4 ? 0xde8f8c : pink, 'vestibular-fold');
+  part(lxCurtain, () => pink, 'aryepiglottic-fold');
+  part(lxAeFold, () => 0xdc8a88, 'aryepiglottic-fold');
+}
+function larynxSet(gap, off) { // off: put the arytenoids back where the atlas has them
+  larynx.gap = gap; if (!off) for (const m of larynx.parts) lxFill(m, gap);
+  const t = lxPose(off ? LX.rest : gap);
+  meshes.forEach(m => {
+    const u = m.userData; if (u.label !== 'Arytenoid cartilage' && u.label !== 'Corniculate cartilage') return;
+    const s = u.side === 'r' ? -1 : 1, cx = s * LX.pivot[0] / 1000, cz = LX.pivot[1] / 1000, a = s * t.phi, co = Math.cos(a), si = Math.sin(a);
+    m.rotation.y = a; m.position.set(cx + s * t.dx / 1000 - (cx * co + cz * si), 0, cz - (-cx * si + cz * co)); m.updateMatrix(); m.updateMatrixWorld(true);
+  });
+  if (larynx.group) larynx.group.updateMatrixWorld(true);
+  needsRender = true;
+}
+function larynxTo(st) { // ease the glottis to "breathe", "sniff" or "phonate"
+  larynx.state = st; larynx.to = LX.gaps[st]; cancelAnimationFrame(larynx.raf); let last = performance.now();
+  if (reduceMotion.matches) { larynxSet(larynx.to); scopeUpdate(); return; }
+  (function step(now) {
+    const k = Math.min(1, (now - last) / 120); last = now; const d = larynx.to - larynx.gap;
+    if (Math.abs(d) < 0.02) { larynxSet(larynx.to); if (state.mode === 'scope') scopeUpdate(); return; }
+    larynxSet(larynx.gap + d * k); larynx.raf = requestAnimationFrame(step);
+  })(last);
+}
+
 /* ---------- Scope: flexible nasopharyngoscopy ----------
-   The camera rides a precomputed centreline (data/scope.json) from the left nasal vestibule to above the laryngeal inlet.
-   Wheel, arrows or the slider advance and withdraw; dragging deflects the tip. Landmarks are anchor points shown as tags
-   when they are in front of the lens, near, and not hidden behind a wall. */
-const scope = { s: 0, yaw: 0, pitch: 0, tags: true, quiz: null, seen: new Set(), P: null, T: null, U: null, shown: [], saved: null };
-function scopeFrames() {
-  if (scope.P || !SCOPE.path) return;
-  const P = SCOPE.path.map(q => new THREE.Vector3(q[0], q[1], q[2])), n = P.length, T = [], U = [];
+   The camera rides a precomputed centreline (data/scope.json) from a nasal vestibule to just above the vocal folds; the route
+   was computed in the left passage and is mirrored for the right. Wheel, arrows or the slider advance and withdraw; dragging
+   deflects the tip. Landmarks are anchor points shown as tags when they are in front of the lens, near, and not behind a wall.
+   Practice asks for one landmark at a time; the examination asks for ten, timed and scored, and keeps the best result. */
+const scope = { s: 0, yaw: 0, pitch: 0, tags: true, quiz: null, exam: null, seen: new Set(), side: 'l', P: null, T: null, U: null, A: [], shown: [], saved: null, timer: 0, score: 0 };
+const EXAM_N = 10, EXAM_PTS = [10, 5, 2]; // landmarks asked; points for finding one on the first, second and third identification
+function scopeFrames(force) {
+  if ((scope.P && !force) || !SCOPE.path) return;
+  const sx = scope.side === 'r' ? -1 : 1;
+  const P = SCOPE.path.map(q => new THREE.Vector3(sx * q[0], q[1], q[2])), n = P.length, T = [], U = [];
   for (let i = 0; i < n; i++) T.push(P[Math.min(n - 1, i + 7)].clone().sub(P[Math.max(0, Math.min(n - 8, i) - 1)]).normalize()); // looks a little way ahead, so bends are anticipated
   let u = new THREE.Vector3(0, 1, 0);
   for (let i = 0; i < n; i++) { u = u.clone().addScaledVector(T[i], -u.dot(T[i])).normalize(); U.push(u); } // carry "up" along the path without twisting, as a real scope does
   scope.P = P; scope.T = T; scope.U = U;
+  scope.A = (SCOPE.anchors || []).map(a => ({ id: a.id, name: a.name, note: a.note, q: new THREE.Vector3(sx * a.p[0], a.p[1], a.p[2]) }));
 }
+const scopeTesting = () => !!((scope.quiz && !scope.quiz.done) || (scope.exam && !scope.exam.done));
 function scopeUpdate() {
   if (!scope.P) return;
   const n = scope.P.length, s = Math.max(0, Math.min(n - 1.001, scope.s)), i = Math.floor(s), f = s - i;
@@ -994,18 +1098,23 @@ function scopeUpdate() {
   const r = new THREE.Vector3().crossVectors(t, u).normalize(), cy = Math.cos(scope.yaw), sy = Math.sin(scope.yaw), cp = Math.cos(scope.pitch), sp = Math.sin(scope.pitch);
   const dir = t.clone().multiplyScalar(cy * cp).addScaledVector(r, sy * cp).addScaledVector(u, sp);
   scopeCam.position.copy(p); scopeCam.up.copy(u); scopeCam.lookAt(p.clone().add(dir)); scopeCam.updateMatrixWorld(true);
+  const walls = larynx.group && larynx.group.visible ? pickables.concat(larynx.parts) : pickables;
+  // automatic exposure, as a video scope has: dim the light when the walls ahead are close, so near mucosa keeps its colour and shape
+  let near = 0, rays = 0;
+  for (const [a, b] of [[0, 0], [0.42, 0], [-0.42, 0], [0, 0.42], [0, -0.42]]) { ray.set(p, dir.clone().addScaledVector(r, a).addScaledVector(u, b).normalize()); const hit = ray.intersectObjects(walls, false)[0]; near += Math.min(0.03, hit ? hit.distance : 0.03); rays++; }
+  scopeLight.intensity = 2.1 * Math.max(0.5, Math.min(1, (near / rays) / 0.02));
   // landmark tags
   const tagsEl = document.getElementById('scope-tags'), w = canvas.clientWidth, h = canvas.clientHeight, R = Math.min(w, h) * 0.46; let html = ''; scope.shown = [];
-  for (const a of (SCOPE.anchors || [])) {
-    const q = new THREE.Vector3(a.p[0], a.p[1], a.p[2]), d = q.distanceTo(p); if (d > 0.04 || d < 0.002) continue;
+  for (const a of scope.A) {
+    const q = a.q, d = q.distanceTo(p); if (d > 0.04 || d < 0.002) continue;
     const v = q.clone().project(scopeCam); if (v.z > 1 || v.z < -1) continue;
     const x = (v.x + 1) / 2 * w, y = (1 - v.y) / 2 * h; if (Math.hypot(x - w / 2, y - h / 2) > R) continue;
-    ray.set(p, q.clone().sub(p).normalize()); const hit = ray.intersectObjects(pickables, false)[0]; if (hit && hit.distance < d - 0.007) continue; // well behind a wall (anchors sit on or just under the surface)
-    scope.shown.push({ a, x, y, d }); if (d < 0.03) scope.seen.add(a.id);
+    ray.set(p, q.clone().sub(p).normalize()); const hit = ray.intersectObjects(walls, false)[0]; if (hit && hit.distance < d - 0.007) continue; // well behind a wall (anchors sit on or just under the surface)
+    scope.shown.push({ a, x, y, d }); if (d < 0.03 && !scopeTesting()) scope.seen.add(a.id);
     html += `<div class="scope-tag" style="left:${x.toFixed(1)}px;top:${y.toFixed(1)}px"><i></i><span>${esc(a.name)}</span></div>`;
   }
-  tagsEl.innerHTML = html; tagsEl.classList.toggle('quiet', !scope.tags || !!(scope.quiz && !scope.quiz.done));
-  const reg = scopeRegion(); document.getElementById('scope-hud').innerHTML = `<span>${(scope.s / 10).toFixed(1)} cm</span><span>${esc(reg.name)}</span>`;
+  tagsEl.innerHTML = html; tagsEl.classList.toggle('quiet', !scope.tags || scopeTesting());
+  const reg = scopeRegion(); document.getElementById('scope-hud').innerHTML = `<span>${(scope.s / 10).toFixed(1)} cm · ${scope.side === 'r' ? 'right' : 'left'}</span><span>${esc(reg.name)}</span>`;
   const dEl = document.getElementById('scope-depth'); if (dEl) { dEl.textContent = (scope.s / 10).toFixed(1) + ' cm'; document.getElementById('scope-slider').value = scope.s; document.getElementById('scope-region').textContent = reg.name; document.getElementById('scope-teach').textContent = reg.teach; scopeChecklist(); }
   needsRender = true;
 }
@@ -1020,43 +1129,82 @@ function scopeEnter() {
   scope.saved = { hemi: hemi.intensity, key: key.intensity, fill: fill.intensity, rim: rim.intensity };
   hemi.intensity = 0.07; key.intensity = 0; fill.intensity = 0; rim.intensity = 0; scopeLight.visible = true; scene.fog = new THREE.Fog(0x120606, 0.003, 0.055); // light falls off with distance, as from a scope tip
   renderer.clippingPlanes = []; stageEl.classList.add('is-scope'); document.getElementById('scope-tags').hidden = false; document.getElementById('scope-hud').hidden = false;
+  larynxBuild(); larynx.group.visible = true; larynxSet(larynx.gap);
   showTip(null); renderScope(); applyVisibility(); scopeUpdate();
-  Promise.all([...SCOPE_SYS].map(k => loadSystem(k))).then(() => { if (state.mode !== 'scope') return; scopePalate(true); applyVisibility(); scopeUpdate(); });
+  Promise.all([...SCOPE_SYS].map(k => loadSystem(k))).then(() => { if (state.mode !== 'scope') return; scopePalate(true); larynxSet(larynx.gap); applyVisibility(); scopeUpdate(); });
 }
 function scopeExit() {
   if (scope.saved) { hemi.intensity = scope.saved.hemi; key.intensity = scope.saved.key; fill.intensity = scope.saved.fill; rim.intensity = scope.saved.rim; }
   scopeLight.visible = false; scene.fog = null; scopePalate(false); stageEl.classList.remove('is-scope'); document.getElementById('scope-tags').hidden = true; document.getElementById('scope-hud').hidden = true;
+  cancelAnimationFrame(larynx.raf); if (larynx.group) larynx.group.visible = false; larynxSet(larynx.to, true);
+  clearInterval(scope.timer); if (scope.exam && !scope.exam.done) scope.exam = null;
   sel.clear(); state.selected = null; applyCut(); needsRender = true;
 }
 function scopeChecklist() {
   const el = document.getElementById('scope-check'); if (!el) return;
-  el.innerHTML = (SCOPE.anchors || []).map(a => `<li class="${scope.seen.has(a.id) ? 'seen' : ''}">${esc(a.name)}</li>`).join('');
-  document.getElementById('scope-count').textContent = `${scope.seen.size} of ${(SCOPE.anchors || []).length} seen`;
+  el.innerHTML = scope.A.map(a => `<li class="${scope.seen.has(a.id) ? 'seen' : ''}">${esc(a.name)}</li>`).join('');
+  document.getElementById('scope-count').textContent = `${scope.seen.size} of ${scope.A.length} seen`;
 }
+const fmtTime = ms => { const s = Math.round(ms / 1000); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
 function renderScope() {
-  const ui = document.getElementById('scope-ui'), reg = scopeRegion(), n = scope.P.length - 1, q = scope.quiz;
-  let quiz = `<div class="nav"><button class="btn" id="scope-quiz">Test me: find a landmark</button></div>`;
-  if (q) quiz = `<div class="checkbox"><h3>Find it</h3><p>Navigate to and click: <b>${esc(q.target.name)}</b></p>${q.done ? `<div class="verdict good">Found. ${esc(q.target.note)}</div>` : q.said ? `<div class="verdict bad">${esc(q.said)}</div>` : '<p class="fine">The tags are hidden. Advance, steer, and click the landmark in the view.</p>'}
-    <div class="nav"><button class="btn primary" id="scope-quiz">${q.done ? 'Another' : 'Skip'}</button><button class="btn" id="scope-quiz-end">Stop testing</button><span class="spacer"></span><span class="fine">${scope.score || 0} found</span></div></div>`;
-  ui.innerHTML = `<div class="eyebrow"><span>Scope</span><span>·</span><span>Left nasal passage</span></div><h2>Flexible nasopharyngoscopy</h2>
+  const ui = document.getElementById('scope-ui'), reg = scopeRegion(), n = scope.P.length - 1, q = scope.quiz, x = scope.exam, rec = store.get('scopeExam', null);
+  let test = `<div class="nav"><button class="btn primary" id="scope-exam">Timed examination</button><button class="btn" id="scope-quiz">Practice: find a landmark</button></div>` +
+    (rec && rec.runs && rec.runs.length ? `<p class="fine">Best examination: ${rec.best} of ${EXAM_N * 10} in ${fmtTime(rec.bestMs)} · ${rec.runs.length} recent ${rec.runs.length === 1 ? 'attempt' : 'attempts'}, average ${Math.round(rec.runs.reduce((a, r) => a + r.score, 0) / rec.runs.length)}</p>` : '');
+  if (q) test = `<div class="checkbox"><h3>Find it</h3><p>Navigate to and click: <b>${esc(q.target.name)}</b></p>${q.done ? `<div class="verdict good">Found. ${esc(q.target.note)}</div>` : q.said ? `<div class="verdict bad">${esc(q.said)}</div>` : '<p class="fine">The tags are hidden. Advance, steer, and click the landmark in the view.</p>'}
+    <div class="nav"><button class="btn primary" id="scope-quiz">${q.done ? 'Another' : 'Skip'}</button><button class="btn" id="scope-quiz-end">Stop practising</button><span class="spacer"></span><span class="fine">${scope.score} found</span></div></div>`;
+  if (x && !x.done) test = `<div class="checkbox"><div class="exam-head"><h3>Examination · ${x.i + 1} of ${x.list.length}</h3><span class="clock" id="scope-clock">${fmtTime(performance.now() - x.t0)}</span></div>
+    <p>Navigate to and click: <b>${esc(x.list[x.i].name)}</b></p>${x.said ? `<div class="verdict ${x.ok ? 'good' : 'bad'}">${esc(x.said)}</div>` : `<p class="fine">Tags are hidden. ${EXAM_PTS[0]} points on the first identification, ${EXAM_PTS[1]} on the second, ${EXAM_PTS[2]} on the third.</p>`}
+    <div class="nav"><button class="btn" id="scope-exam-skip">Skip</button><button class="btn" id="scope-exam-end">End examination</button><span class="spacer"></span><span class="fine">Score ${x.score}</span></div></div>`;
+  if (x && x.done) test = `<div class="checkbox"><h3>Examination result</h3>
+    <div class="score"><b>${x.score}</b><span>of ${x.list.length * 10}</span><span class="spacer"></span><span>${fmtTime(x.ms)}</span></div>
+    <p class="fine">${x.results.filter(r => r.pts === EXAM_PTS[0]).length} of ${x.list.length} on the first identification · ${x.side === 'r' ? 'right' : 'left'} passage${x.record ? ' · new best' : rec && rec.runs.length > 1 ? ` · best ${rec.best} in ${fmtTime(rec.bestMs)}` : ''}</p>
+    <ul class="results">${x.results.map(r => `<li class="${r.pts === EXAM_PTS[0] ? 'ok' : r.pts ? 'part' : 'miss'}"><span>${r.pts}</span><div><b>${esc(r.a.name)}</b>${r.pts === EXAM_PTS[0] ? '' : `<br>${esc(r.a.note)}`}</div></li>`).join('')}</ul>
+    <div class="nav"><button class="btn primary" id="scope-exam">Repeat</button><button class="btn" id="scope-exam-close">Close</button></div></div>`;
+  const busy = !!(x && !x.done), side = k => `<button data-nostril="${k}" aria-pressed="${scope.side === k}"${busy ? ' disabled' : ''}>${k === 'l' ? 'Left' : 'Right'}</button>`;
+  const voice = (k, label) => `<button data-voice="${k}" aria-pressed="${larynx.state === k}">${label}</button>`;
+  ui.innerHTML = `<div class="eyebrow"><span>Scope</span><span>·</span><span>Nasal passage</span><div class="seg" role="group" aria-label="Nasal passage">${side('l')}${side('r')}</div></div><h2>Flexible nasopharyngoscopy</h2>
     <div class="scope-row"><button class="btn" id="scope-back" title="Withdraw (down arrow)">Withdraw</button><input type="range" id="scope-slider" min="0" max="${n}" step="0.5" value="${scope.s}" aria-label="Scope depth"><button class="btn primary" id="scope-fwd" title="Advance (up arrow)">Advance</button></div>
     <div class="eyebrow"><span id="scope-depth">${(scope.s / 10).toFixed(1)} cm</span><span>·</span><span id="scope-region">${esc(reg.name)}</span></div>
-    <p id="scope-teach">${esc(reg.teach)}</p>${quiz}
+    <p id="scope-teach">${esc(reg.teach)}</p>
+    <div class="nav"><span class="fine">Ask the patient to</span><div class="seg" role="group" aria-label="Vocal fold movement">${voice('breathe', 'Breathe')}${voice('sniff', 'Sniff')}${voice('phonate', 'Say “eee”')}</div></div>${test}
     <div class="nav"><button class="icon-btn" id="scope-tagbtn" aria-pressed="${scope.tags}">Landmark tags</button><button class="icon-btn" id="scope-center" title="Straighten the tip (0)">Straighten tip</button><span class="spacer"></span><span class="fine" id="scope-count"></span></div>
-    <h3>Landmarks</h3><ul class="checklist" id="scope-check"></ul>
-    <p class="fine">Scroll or use the arrow keys to advance and withdraw; drag to deflect the tip; click a wall to identify it. In this model the soft palate is shown dropped forward, as in quiet nasal breathing, so the scope can pass behind it. For anatomical preparation only; it does not replace supervised endoscopy training.</p>`;
+    <div${busy ? ' hidden' : ''}><h3>Landmarks</h3><ul class="checklist" id="scope-check"></ul></div>
+    <p class="fine">Scroll or use the arrow keys to advance and withdraw; drag to deflect the tip; click a wall to identify it. The soft palate is shown dropped forward, as in quiet nasal breathing, so the scope can pass behind it. The aryepiglottic, vestibular and vocal folds are drawn schematically on the model's cartilages, which carry no mucosa of their own. For anatomical preparation only; it does not replace supervised endoscopy training.</p>`;
   scopeChecklist();
 }
-function scopeNewQuiz() { const pool = (SCOPE.anchors || []).filter(a => !scope.quiz || a.id !== scope.quiz.target.id); scope.quiz = { target: pool[Math.floor(Math.random() * pool.length)], done: false, said: '' }; renderScope(); scopeUpdate(); }
+function scopeNewQuiz() { const pool = scope.A.filter(a => !scope.quiz || a.id !== scope.quiz.target.id); scope.exam = null; scope.quiz = { target: pool[Math.floor(Math.random() * pool.length)], done: false, said: '' }; renderScope(); scopeUpdate(); }
+function scopeExamStart() {
+  const pool = scope.A.slice(); for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+  scope.quiz = null; scope.exam = { list: pool.slice(0, EXAM_N), i: 0, tries: 0, score: 0, results: [], t0: performance.now(), ms: 0, done: false, said: '', ok: false, side: scope.side, record: false };
+  scope.s = 0; scope.yaw = scope.pitch = 0; sel.clear(); state.selected = null; applyVisibility(); renderDetail();
+  clearInterval(scope.timer); scope.timer = setInterval(() => { const x = scope.exam, el = document.getElementById('scope-clock'); if (!x || x.done) { clearInterval(scope.timer); return; } if (el) el.textContent = fmtTime(performance.now() - x.t0); }, 500);
+  renderScope(); scopeUpdate();
+}
+function scopeExamScore(pts, said, ok) { // close the current landmark and move to the next, or finish
+  const x = scope.exam; x.results.push({ a: x.list[x.i], pts }); x.score += pts; x.said = said; x.ok = ok; x.i++; x.tries = 0;
+  if (x.i < x.list.length) return;
+  x.done = true; x.ms = performance.now() - x.t0; clearInterval(scope.timer);
+  const rec = store.get('scopeExam', null) || { best: 0, bestMs: 0, runs: [] };
+  if (!rec.runs.length || x.score > rec.best || (x.score === rec.best && x.ms < rec.bestMs)) { x.record = rec.runs.length > 0; rec.best = x.score; rec.bestMs = Math.round(x.ms); }
+  rec.runs = rec.runs.concat([{ score: x.score, ms: Math.round(x.ms), side: x.side, at: Date.now() }]).slice(-10); store.set('scopeExam', rec);
+}
 function scopeClick(e) {
   const r = canvas.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
-  if (scope.quiz && !scope.quiz.done) {
+  if (scopeTesting()) {
     let best = null; for (const t of scope.shown) { const d = Math.hypot(t.x - x, t.y - y); if (d < 64 && (!best || d < best.d)) best = { t, d }; }
-    if (best && best.t.a.id === scope.quiz.target.id) { scope.quiz.done = true; scope.score = (scope.score || 0) + 1; }
-    else scope.quiz.said = best ? `That is the ${best.t.a.name.toLowerCase()}. Keep looking.` : 'No landmark there. Move closer or steer toward it.';
+    const hit = best ? best.t.a : null, ex = scope.exam && !scope.exam.done ? scope.exam : null, target = ex ? ex.list[ex.i] : scope.quiz.target;
+    if (ex) {
+      if (hit && hit.id === target.id) scopeExamScore(EXAM_PTS[ex.tries] || 0, `Correct: ${target.name.toLowerCase()}, ${EXAM_PTS[ex.tries] || 0} points.`, true);
+      else if (!hit) { ex.said = 'No landmark there. Move closer or steer toward it.'; ex.ok = false; } // a click on bare wall costs nothing
+      else if (++ex.tries >= EXAM_PTS.length) scopeExamScore(0, `That was the ${hit.name.toLowerCase()}. No points for the ${target.name.toLowerCase()}.`, false);
+      else { ex.said = `That is the ${hit.name.toLowerCase()}. ${EXAM_PTS.length - ex.tries} ${EXAM_PTS.length - ex.tries === 1 ? 'identification' : 'identifications'} left.`; ex.ok = false; }
+    } else if (hit && hit.id === target.id) { scope.quiz.done = true; scope.score++; }
+    else scope.quiz.said = hit ? `That is the ${hit.name.toLowerCase()}. Keep looking.` : 'No landmark there. Move closer or steer toward it.';
     renderScope(); scopeUpdate(); return;
   }
-  const m = castAt(e); if (!m) return; const key2 = labelOfId.get(m.userData.id); sel.clear(); sel.add(m.userData.id); state.selected = key2; applyVisibility(); renderDetail(); scopeUpdate();
+  const m = castAt(e), wallAt = m ? ray.intersectObject(m, false)[0].distance : Infinity, fold = larynx.group && larynx.group.visible ? ray.intersectObjects(larynx.parts, false)[0] : null;
+  if (fold && fold.distance < wallAt) { const k = 'card:' + fold.object.userData.card; if (labels.has(k)) { sel.clear(); state.selected = k; applyVisibility(); renderDetail(); scopeUpdate(); } return; } // the drawn folds answer with their cards
+  if (!m) return; const key2 = labelOfId.get(m.userData.id); sel.clear(); sel.add(m.userData.id); state.selected = key2; applyVisibility(); renderDetail(); scopeUpdate();
 }
 document.getElementById('scope-ui').addEventListener('click', e => {
   const t = e.target.closest('button'); if (!t) return;
@@ -1065,6 +1213,11 @@ document.getElementById('scope-ui').addEventListener('click', e => {
   else if (t.id === 'scope-center') { scope.yaw = scope.pitch = 0; scopeUpdate(); }
   else if (t.id === 'scope-quiz') scopeNewQuiz();
   else if (t.id === 'scope-quiz-end') { scope.quiz = null; renderScope(); scopeUpdate(); }
+  else if (t.id === 'scope-exam') scopeExamStart();
+  else if (t.id === 'scope-exam-skip') { const x = scope.exam; scopeExamScore(0, `Skipped the ${x.list[x.i].name.toLowerCase()}.`, false); renderScope(); scopeUpdate(); }
+  else if (t.id === 'scope-exam-end' || t.id === 'scope-exam-close') { clearInterval(scope.timer); scope.exam = null; renderScope(); scopeUpdate(); }
+  else if (t.dataset.voice) { larynxTo(t.dataset.voice); for (const b of t.parentNode.children) b.setAttribute('aria-pressed', String(b === t)); }
+  else if (t.dataset.nostril && t.dataset.nostril !== scope.side) { scope.side = t.dataset.nostril; scopeFrames(true); scope.s = 0; scope.yaw = scope.pitch = 0; renderScope(); scopeUpdate(); }
 });
 document.getElementById('scope-ui').addEventListener('input', e => { if (e.target.id === 'scope-slider') { scope.s = +e.target.value; scopeUpdate(); } });
 

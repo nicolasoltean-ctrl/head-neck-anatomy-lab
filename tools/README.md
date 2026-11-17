@@ -29,3 +29,8 @@ plain export fuses them under the parent's name. To separate them:
 - `data/scope.json`: the nasopharyngoscopy route (`path`, 1 mm spacing), region texts and landmark `anchors`. Regenerate the path
   with `tools/scope_path.py` (needs numpy; Blender's bundled Python has it), which centres a hand-set waypoint route between the
   airway walls. `palate_offset` moves the soft palate and uvula in Scope mode only, to open the velopharyngeal port.
+  The last points of the path, from above the laryngeal inlet down into the vestibule, were appended by hand as a straight
+  midline run (the script stops above the inlet), so re-append them after regenerating. The route is stored for the left passage
+  and mirrored at run time for the right. Z-Anatomy has no mucosal folds in the larynx: Scope mode draws the aryepiglottic,
+  vestibular and vocal folds itself (`larynxBuild` and the `LX` table in template3d.html, in millimetres, fitted to the model's
+  cartilages) and hides the bare muscles named in `hide_labels`. Examination results are kept in the browser (`hnal3d:scopeExam`).
