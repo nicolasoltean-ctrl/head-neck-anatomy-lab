@@ -34,3 +34,14 @@ plain export fuses them under the parent's name. To separate them:
   and mirrored at run time for the right. Z-Anatomy has no mucosal folds in the larynx: Scope mode draws the aryepiglottic,
   vestibular and vocal folds itself (`larynxBuild` and the `LX` table in template3d.html, in millimetres, fitted to the model's
   cartilages) and hides the bare muscles named in `hide_labels`. Examination results are kept in the browser (`hnal3d:scopeExam`).
+
+## Simulation cases (Surgery mode)
+
+A procedure file with `"sim": true` is played task by task with the instrument tray (`data/instruments.json`; icons are
+`TOOL_ICON` in template3d.html). Each step has `tasks`; a task has `do` (the goal, never naming the instrument), then either
+`tool` (accepted instrument ids, or null for find-only) with an optional `target` (labels to click) or a `choice` list, plus
+`ok`, `bad` (feedback per wrong instrument), `also` (an instrument that does this and skips following tasks), and `hide` /
+`ghost` effects that persist. `"Label*"` means both sides; a plain label means the operated `side`. Every target must be
+clickable in its step's view: check with a scripted playthrough in the preview. `source` is shown as the attribution line.
+Cases are adapted, in our own words, from the Open Access Atlas of Otolaryngology, Head & Neck Operative Surgery
+(CC BY-NC 3.0: attribution required, non-commercial use only).

@@ -1,0 +1,82 @@
+[
+ {
+  "id": "marker",
+  "name": "Skin marker",
+  "note": "Marks the incision before the knife."
+ },
+ {
+  "id": "scalpel",
+  "name": "Scalpel",
+  "note": "Blade for skin and for sharp dissection."
+ },
+ {
+  "id": "monopolar",
+  "name": "Monopolar diathermy",
+  "note": "Cuts and coagulates; the heat spreads to nearby tissue."
+ },
+ {
+  "id": "bipolar",
+  "name": "Bipolar forceps",
+  "note": "Coagulates only between its tips, in short bursts."
+ },
+ {
+  "id": "scissors",
+  "name": "Dissecting scissors",
+  "note": "Divide fascia and tissue held between clamps."
+ },
+ {
+  "id": "forceps",
+  "name": "Tissue forceps",
+  "note": "Hold and lift tissue."
+ },
+ {
+  "id": "finger",
+  "name": "Finger",
+  "note": "Gentle digital retraction and blunt dissection."
+ },
+ {
+  "id": "retractor-self",
+  "name": "Self-retaining retractor",
+  "note": "Joll's type frame that holds the skin flaps apart."
+ },
+ {
+  "id": "retractor-hand",
+  "name": "Right-angled retractor",
+  "note": "Hand-held retractor, repositioned as the field moves."
+ },
+ {
+  "id": "haemostat",
+  "name": "Haemostats",
+  "note": "Artery forceps for clamping vessels and tissue."
+ },
+ {
+  "id": "tie",
+  "name": "Ligature",
+  "note": "Silk or absorbable tie, 2/0 or 3/0."
+ },
+ {
+  "id": "dissector",
+  "name": "Fine dissector",
+  "note": "Mosquito forceps or pledget for teasing tissue apart."
+ },
+ {
+  "id": "needle",
+  "name": "Needle holder and suture",
+  "note": "For oversewing and for closing in layers."
+ },
+ {
+  "id": "suction",
+  "name": "Suction and irrigation",
+  "note": "Washes and clears the field."
+ },
+ {
+  "id": "drain",
+  "name": "Suction drain",
+  "note": "Closed drain brought out through a separate stab."
+ },
+ {
+  "id": "harmonic",
+  "name": "Harmonic scalpel",
+  "note": "Ultrasonic shears that seal and divide vessels; they generate heat."
+ }
+]

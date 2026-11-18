@@ -290,6 +290,15 @@ body.entering #gl { transition: opacity .55s ease .6s; }
 .results { list-style: none; padding: 0; display: grid; gap: 5px; font-size: 13px; color: var(--fg-2); } .results li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 8px; align-items: start; }
 .results li > span { font-family: var(--font-mono); font-size: 12px; text-align: center; border-radius: 6px; padding: 1px 0; background: var(--bg-3); } .results li.ok > span { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); } .results li.miss > span { background: color-mix(in srgb, var(--bad) 16%, transparent); color: var(--bad); } .results b { color: var(--fg); font-weight: 600; }
 .train .eyebrow .seg { margin-left: auto; text-transform: none; letter-spacing: 0; font-family: var(--font-ui); } .train .seg button { font-size: 12.5px; padding: 4px 11px; } .train .seg button:disabled { opacity: .5; cursor: default; }
+/* simulation cases: instrument tray, decisions, log of finished tasks */
+.proc.sim { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); background: color-mix(in srgb, var(--accent) 6%, var(--bg)); }
+.tray { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; } .tray.off { opacity: .45; }
+.tool { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 7px 3px 6px; border: 1.5px solid var(--line); border-radius: 10px; background: var(--bg-2); cursor: pointer; color: var(--fg-2); font-size: 10.5px; line-height: 1.15; text-align: center; min-height: 62px; }
+.tool svg { width: 24px; height: 24px; flex: none; color: var(--fg); } .tool:hover:not(:disabled) { border-color: var(--accent); } .tool:disabled { cursor: default; }
+.tool[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--fg); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 30%, transparent); } .tool[aria-pressed="true"] svg { color: var(--accent); }
+.choices { display: grid; gap: 6px; } .choices .btn { text-align: left; border-radius: 12px; white-space: normal; }
+.simlog { list-style: none; padding: 0; display: grid; gap: 4px; font-size: 13px; color: var(--fg-2); } .simlog li { padding-left: 20px; position: relative; } .simlog li::before { content: "\2713"; position: absolute; left: 2px; color: var(--good); font-weight: 700; }
+.stage.has-tool canvas { cursor: var(--tool-cursor), crosshair !important; }
 /* the endoscope view: a round image on black */
 .stage.is-scope { background-color: #06080c; border-color: transparent; }
 .stage.is-scope::before, .stage.is-scope .views, .stage.is-scope .hint, .stage.is-scope .corner { display: none; }
@@ -389,7 +398,7 @@ body.entering #gl { transition: opacity .55s ease .6s; }
 const DATA = /*__DATA__*/[];
 const MAN = /*__MANIFEST__*/{};
 const PROCS = /*__PROCS__*/[];
-const SCOPE = /*__SCOPE__*/{};
+const SCOPE = /*__SCOPE__*/{}; const INSTR = /*__INSTR__*/[];
 
 const SYS = {
   skin:    { label: 'Skin',       color: 'var(--c-skin)',    hex: [0xe3b48e, 0xb98668] },
@@ -691,7 +700,7 @@ const tip = document.getElementById('tip');
 function showTip(m, e) {
   if (!m) { tip.classList.remove('on'); canvas.style.cursor = 'grab'; return; }
   const quizHide = state.mode === 'quiz' && state.quiz && state.quiz.q && !state.quiz.q.answered;
-  if (quizHide) { tip.classList.remove('on'); canvas.style.cursor = 'crosshair'; return; }
+  if (quizHide || (state.mode === 'surgery' && simTask() && simTask().target)) { tip.classList.remove('on'); canvas.style.cursor = 'crosshair'; return; }
   const u = m.userData; tip.innerHTML = `${esc(u.label)}${u.side !== 'm' ? `<small>${u.side === 'l' ? 'LEFT' : 'RIGHT'}</small>` : ''}`;
   const r = canvas.parentElement.getBoundingClientRect(); tip.style.left = (e.clientX - r.left) + 'px'; tip.style.top = (e.clientY - r.top) + 'px'; tip.classList.add('on'); canvas.style.cursor = 'pointer';
 }
@@ -701,6 +710,7 @@ function pick(e) {
   if (state.mode === 'quiz' && !findOpen()) return; // name and function quizzes are answered in the panel
   const m = castAt(e); const add = e.shiftKey || e.metaKey || e.ctrlKey;
   if (state.mode === 'surgery' && surg.check && !surg.check.done) { if (m) surgAnswer(labelOfId.get(m.userData.id)); return; }
+  if (state.mode === 'surgery' && simTask() && simTask().target) { if (!m) return; if (simTask().tool && !surg.tool) { surg.said = 'Choose an instrument from the tray first.'; renderSurgery(); } else simUse(surg.tool, m.userData.id); return; }
   if (!m) { if (!add) select(null); return; }
   const r = stageEl.getBoundingClientRect(); const pop = { x: e.clientX - r.left, y: e.clientY - r.top };
   select(labelOfId.get(m.userData.id), false, { ids: [m.userData.id], add, pop });
@@ -873,7 +883,7 @@ function focusSelected() {
 function setMode(m) {
   const prev = state.mode; if (prev === m) return;
   if (prev === 'scope') scopeExit();
-  if (prev === 'surgery') { riskIds.clear(); hiddenIds.clear(); ghostIds.clear(); sel.clear(); state.selected = null; renderMods(); }
+  if (prev === 'surgery') { surg.tool = null; simCursor(); riskIds.clear(); hiddenIds.clear(); ghostIds.clear(); sel.clear(); state.selected = null; renderMods(); }
   state.mode = m;
   for (const k of ['explore', 'quiz', 'surgery', 'scope']) document.getElementById('mode-' + k).setAttribute('aria-pressed', String(m === k));
   document.getElementById('explore-ui').style.display = m === 'explore' ? 'contents' : 'none';
@@ -890,7 +900,7 @@ for (const k of ['explore', 'quiz', 'surgery', 'scope']) document.getElementById
 /* ---------- Surgery: step-by-step operative anatomy ----------
    Each procedure (data/procedures/*.json) is a list of steps. A step sets the layers and peel depth, removes what has been
    divided or retracted so far, highlights the structures in play (blue) and those at risk (amber), and frames them. */
-const surg = { proc: null, i: 0, check: null };
+const surg = { proc: null, i: 0, check: null, t: 0, tool: null, said: '', miss: 0, log: [], stats: new Map() };
 const SURG_VIEWS = { front: [0, 1.45], left: [Math.PI / 2, 1.5], right: [-Math.PI / 2, 1.5], back: [Math.PI, 1.45], 'left-front': [Math.PI / 4, 1.45], 'right-front': [-Math.PI / 4, 1.45], 'left-back': [3 * Math.PI / 4, 1.45], 'below-front': [0, 1.95], 'above-front': [0, 0.95], 'below-left': [Math.PI / 3, 1.95] };
 function labelsNamed(label) { return [...labels.values()].filter(L => !L.virtual && L.label === label); }
 function idsOfLabel(label, side) {
@@ -901,6 +911,8 @@ function idsOfLabel(label, side) {
   }
   return out;
 }
+const bare = spec => spec.replace(/\*$/, ''); // "Label*" in a procedure means both sides; a plain label means the operated side
+const surgIds = (spec, side) => spec.endsWith('*') ? idsOfLabel(bare(spec), 'both') : idsOfLabel(spec, side);
 function frameIds(ids, from) {
   const box = new THREE.Box3(); let any = false;
   for (const id of ids) { const m = meshes.get(id); if (m && m.geometry.boundingSphere) { const bs = m.geometry.boundingSphere; box.expandByPoint(bs.center.clone().addScalar(-bs.radius)); box.expandByPoint(bs.center.clone().addScalar(bs.radius)); any = true; } }
@@ -909,74 +921,133 @@ function frameIds(ids, from) {
   else { orbit.target.copy(center); orbit.dist = radius * 3.4; }
   settleTok++; updateCamera();
 }
-function surgStart(id) { surg.proc = PROCS.find(p => p.id === id) || null; surg.i = 0; if (surg.proc) surgApply(); else renderSurgery(); }
-function surgGo(i) { if (!surg.proc) return; const n = surg.proc.steps.length; if (i < 0 || i > n) return; surg.i = i; surgApply(); }
+function surgStart(id) { surg.proc = PROCS.find(p => p.id === id) || null; surg.i = 0; surg.t = 0; surg.tool = null; surg.said = ''; surg.miss = 0; surg.log = []; surg.stats = new Map(); simCursor(); if (surg.proc) surgApply(); else renderSurgery(); }
+function surgGo(i) { if (!surg.proc) return; const n = surg.proc.steps.length; if (i < 0 || i > n) return; surg.i = i; surg.t = 0; surg.tool = null; surg.said = ''; surg.miss = 0; surg.log = []; simCursor(); surgApply(); }
+function surgLayers() { // what has been divided, retracted or removed so far: whole earlier steps, and the tasks already done in this one
+  const P = surg.proc, last = Math.min(surg.i, P.steps.length - 1), st = P.steps[last], side = P.side || 'both', hide = [], ghost = [...(st.ghost || [])];
+  P.steps.forEach((s, k) => { if (k > last) return; hide.push(...(s.hide || [])); (s.tasks || []).forEach((t, j) => { if (k < last || j < surg.t || surg.i > last) { hide.push(...(t.hide || [])); ghost.push(...(t.ghost || [])); } }); });
+  hiddenIds.clear(); for (const lab of hide) surgIds(lab, side).forEach(id => hiddenIds.add(id));
+  ghostIds.clear(); for (const lab of ghost) surgIds(lab, side).forEach(id => { if (!hiddenIds.has(id)) ghostIds.add(id); });
+}
 function surgApply() {
   const P = surg.proc; if (!P) { renderSurgery(); return; }
-  const done = surg.i >= P.steps.length, st = P.steps[Math.min(surg.i, P.steps.length - 1)], side = P.side || 'both';
+  const done = surg.i >= P.steps.length, st = P.steps[Math.min(surg.i, P.steps.length - 1)];
   if (!done) surg.check = st.check ? { prompt: st.check.prompt, answer: st.check.answer, done: false, ok: null, said: '' } : null; else surg.check = null;
   const sys = st.view.systems || ['skin', 'muscle', 'bone'];
   setSystems(sys); setPeel(st.view.peel || 0);
   state.side = 'both'; document.querySelectorAll('[data-side]').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.side === 'both')));
-  hiddenIds.clear(); for (let k = 0; k <= Math.min(surg.i, P.steps.length - 1); k++) for (const lab of (P.steps[k].hide || [])) idsOfLabel(lab, side).forEach(id => hiddenIds.add(id));
-  ghostIds.clear(); for (const lab of (st.ghost || [])) idsOfLabel(lab, side).forEach(id => ghostIds.add(id));
-  state.isolate = false; surgPaint();
+  surgLayers(); state.isolate = false; surgPaint();
   const token = P.id + ':' + surg.i; surg.token = token;
-  Promise.all(sys.map(k => loadSystem(k))).then(() => { if (surg.token === token && state.mode === 'surgery') surgPaint(); });
+  Promise.all(sys.map(k => loadSystem(k))).then(() => { if (surg.token === token && state.mode === 'surgery') { surgLayers(); surgPaint(); } });
 }
-function surgPaint() {
+function surgPaint(still) { // still: keep the camera where it is
   const P = surg.proc, st = P.steps[Math.min(surg.i, P.steps.length - 1)], side = P.side || 'both';
   const focus = [], risk = [];
-  for (const lab of (st.focus || [])) focus.push(...idsOfLabel(lab, side));
-  for (const r of (st.risk || [])) if (!r.label.startsWith('card:')) risk.push(...idsOfLabel(r.label, side));
-  const hold = surg.check && !surg.check.done; // while an identification is pending the answer is not given away by colour
+  for (const lab of (st.focus || [])) focus.push(...surgIds(lab, side));
+  for (const r of (st.risk || [])) if (!r.label.startsWith('card:')) risk.push(...surgIds(r.label, side));
+  const hold = (surg.check && !surg.check.done) || !!simTask(); // while something is still to be found or done, colour does not give it away
   sel.clear(); riskIds.clear(); state.selected = null; state.pop = null;
-  if (!hold) { focus.forEach(id => sel.add(id)); risk.forEach(id => riskIds.add(id)); const L = labelsNamed((st.focus || [])[0])[0]; state.selected = L ? L.key : null; }
-  applyVisibility(); updateCounts(); renderMods(); renderDetail(); frameIds([...focus, ...risk], st.view.from); renderSurgery();
+  if (!hold) { focus.forEach(id => sel.add(id)); risk.forEach(id => riskIds.add(id)); const L = labelsNamed(bare((st.focus || [''])[0]))[0]; state.selected = L ? L.key : null; }
+  applyVisibility(); updateCounts(); renderMods(); renderDetail(); if (!still) frameIds([...focus, ...risk], st.view.from); renderSurgery();
 }
 function surgAnswer(key) {
   const c = surg.check; if (!c || c.done) return; const L = labels.get(key);
   if (L && L.label === c.answer) { c.done = true; c.ok = true; surgPaint(); } else { c.ok = false; c.said = L ? L.label : ''; renderSurgery(); }
 }
-function surgShow(label) {
-  const P = surg.proc, st = P.steps[Math.min(surg.i, P.steps.length - 1)]; const ids = idsOfLabel(label, P.side || 'both'); if (!ids.length) return;
-  sel.clear(); ids.forEach(id => sel.add(id)); const L = labelsNamed(label)[0]; state.selected = L ? L.key : null; state.pop = null;
+function surgShow(spec) {
+  const P = surg.proc, st = P.steps[Math.min(surg.i, P.steps.length - 1)]; const ids = surgIds(spec, P.side || 'both'); if (!ids.length) return;
+  sel.clear(); ids.forEach(id => sel.add(id)); const L = labelsNamed(bare(spec))[0]; state.selected = L ? L.key : null; state.pop = null;
   applyVisibility(); renderDetail(); frameIds(ids, st.view.from);
 }
+
+/* Simulation cases (a procedure with "sim": true): every step is a list of tasks. A task is done by choosing the right
+   instrument from the tray and, where it has a target, using it on that structure of the model; some tasks are a decision
+   between options, and some only ask for a structure to be found. Finished tasks change the field (hide, ghost). */
+const TOOL_ICON = {
+  marker: 'M4 20l2-5L16 5l3 3L9 18z M14 7l3 3', scalpel: 'M20 4l-9 9 M11 13c-3 1-6 4-7 7 4-1 7-3 9-5z',
+  monopolar: 'M4 20l3-3 M7 17l9-9 3 3-9 9z M17.5 6.5c1.5-2.5 3.5-2.5 3.5-4.5', bipolar: 'M4 20L15 6 M4 20l14-11 M15 6l3 3 M16.5 7.5L21 3',
+  scissors: 'M4 20L17 8.5 M4 15l12.5-2 M21.5 7a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z M21 14a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z', forceps: 'M4 20L17 4 M4 20L20 8 M17 4l3 4',
+  finger: 'M9 20V9a1.5 1.5 0 0 1 3 0v5 M12 12.5a1.5 1.5 0 0 1 3 0V15 M15 13.5a1.5 1.5 0 0 1 3 0V17c0 3-2 5-5 5h-1c-2 0-3-1-4-2.5L6 16c-.6-1 .8-2 1.7-1L9 16.5',
+  'retractor-self': 'M6 3v8 M18 3v8 M6 7h12 M12 7v11 M8.5 18h7 M6 11l-2 2 M18 11l2 2', 'retractor-hand': 'M21 3L7 17l-3-3 M7 17v3',
+  haemostat: 'M4 20c4 0 6-3 13-11.5 M4 16c5 0 8-1 12.5-3 M21.5 7a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z M21 14a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z',
+  tie: 'M3 17c5 0 6-10 10-10 3 0 3 5 0 5-4 0-4-6 8-6 M11 17h10', dissector: 'M20 4L8.5 15.5 M8.6 18.6a3 3 0 1 1-4.2-4.2 3 3 0 0 1 4.2 4.2z',
+  needle: 'M5 13a6 6 0 0 1 11-3 M16 10l1-3 M16 10h-3 M5 13c0 5 6 7 15 6', suction: 'M4 20c0-3 2-4 4-6L19 3l2 2 M4 20l1.5 1.5',
+  drain: 'M3 10h8c3 0 2 3 4.5 3 M21 14a3 3 0 1 1-6 0 3 3 0 0 1 6 0z M5 10v.01 M8 10v.01', harmonic: 'M20 4L8 16l-4 2 M8 16l-2 4 M17 11l-2 3h3l-2 3' };
+const toolSvg = (id, extra) => `<svg viewBox="0 0 24 24" ${extra || ''} fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${TOOL_ICON[id] || ''}"/></svg>`;
+const toolName = id => (INSTR.find(x => x.id === id) || { name: id }).name;
+function simTask() { const P = surg.proc; if (!P || !P.sim || surg.i >= P.steps.length) return null; return (P.steps[surg.i].tasks || [])[surg.t] || null; }
+function simCursor() { // the chosen instrument rides on the pointer over the model
+  const on = !!(surg.tool && state.mode === 'surgery' && simTask()); stageEl.classList.toggle('has-tool', on); if (!on) return;
+  const d = TOOL_ICON[surg.tool], svg = `<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="${d}" stroke="#fff" stroke-width="4"/><path d="${d}" stroke="#1e5eea" stroke-width="1.8"/></svg>`;
+  stageEl.style.setProperty('--tool-cursor', `url("data:image/svg+xml,${encodeURIComponent(svg)}") 5 29`);
+}
+function simDone(text, skip) {
+  const st = surg.proc.steps[surg.i]; for (let k = 0; k <= (skip || 0); k++) surg.stats.set(surg.i + ':' + (surg.t + k), surg.miss);
+  surg.log.push(text); surg.t += 1 + (skip || 0); surg.tool = null; surg.said = ''; surg.miss = 0; simCursor(); surgLayers(); surgPaint(surg.t < st.tasks.length);
+}
+function simFail(text) { surg.miss++; surg.said = text; renderSurgery(); }
+function simUse(tool, id) { // an instrument applied to the field, or to the piece of the model that was clicked
+  const T = simTask(); if (!T || T.choice) return; const P = surg.proc;
+  if (tool && T.also && T.also[tool]) return simDone(T.also[tool].ok, T.also[tool].skip);
+  if (T.tool && !T.tool.includes(tool)) return simFail((T.bad && (T.bad[tool] || T.bad['*'])) || `${toolName(tool)}: not what this task calls for.`);
+  if (T.target && !T.target.some(spec => surgIds(spec, P.side || 'both').includes(id))) { const L = labels.get(labelOfId.get(id)); return simFail(`That is ${L ? L.label.toLowerCase() : 'another structure'}${L && T.target.map(bare).includes(L.label) ? ', on the other side' : ''}.`); }
+  simDone(T.ok);
+}
+function simScore() { const P = surg.proc; let n = 0, first = 0, slips = 0; P.steps.forEach((s, i) => (s.tasks || []).forEach((t, j) => { n++; const m = surg.stats.get(i + ':' + j); if (m === 0) first++; else if (m) slips += m; })); return { n, first, slips, seen: surg.stats.size }; }
 function renderSurgery() {
   const ui = document.getElementById('surgery-ui'); const P = surg.proc;
   const fine = `<p class="fine">For anatomical preparation only. It does not teach operative technique and is not a substitute for supervised training.</p>`;
   if (!P) {
-    ui.innerHTML = `<div class="eyebrow">Surgery</div><h2>Operative anatomy, step by step</h2><p class="muted">Each walkthrough sets the layers and view for every step of the operation, highlights the structures in play in blue and the structures at risk in amber, and asks you to identify key landmarks on the model.</p>
-      <div class="proc-list">${PROCS.map(p => `<button class="proc" data-proc="${esc(p.id)}"><span class="meta">${esc(p.category)} · ${p.steps.length} steps</span><b>${esc(p.name)}</b><span>${esc(p.summary)}</span></button>`).join('') || '<p class="muted">No procedures are installed.</p>'}</div>${fine}`;
+    const card = p => `<button class="proc${p.sim ? ' sim' : ''}" data-proc="${esc(p.id)}"><span class="meta">${esc(p.category)} · ${p.steps.length} steps${p.sim ? ` · ${p.steps.reduce((a, x) => a + (x.tasks || []).length, 0)} tasks · ${(p.instruments || []).length} instruments` : ''}</span><b>${esc(p.name)}</b><span>${esc(p.summary)}</span></button>`;
+    const sims = PROCS.filter(p => p.sim), walks = PROCS.filter(p => !p.sim);
+    ui.innerHTML = `<div class="eyebrow">Surgery</div><h2>Operate, step by step</h2>
+      ${sims.length ? `<h3>Simulation cases</h3><p class="muted">Choose each instrument from the tray and use it on the model, one task at a time.</p><div class="proc-list">${sims.map(card).join('')}</div>` : ''}
+      <h3>Operative anatomy walkthroughs</h3><p class="muted">Each walkthrough sets the layers and view for every step, highlights the structures in play in blue and those at risk in amber, and asks you to identify key landmarks.</p>
+      <div class="proc-list">${walks.map(card).join('') || '<p class="muted">No procedures are installed.</p>'}</div>${fine}`;
     return;
   }
-  const n = P.steps.length, dots = `<div class="dots" role="group" aria-label="Steps">${P.steps.map((x, k) => `<button data-step="${k}" class="${k < surg.i ? 'done' : k === surg.i ? 'now' : ''}" title="${k + 1}. ${esc(x.title)}" aria-label="Step ${k + 1}: ${esc(x.title)}"></button>`).join('')}</div>`;
+  const src = P.source ? `<p class="fine">Operative steps adapted from: ${esc(P.source.cite)} <a href="${esc(P.source.url)}" target="_blank" rel="noopener">Open the atlas</a>. Licensed ${esc(P.source.licence)}.</p>` : '';
+  const n = P.steps.length, T = simTask(), dots = `<div class="dots" role="group" aria-label="Steps">${P.steps.map((x, k) => `<button data-step="${k}" class="${k < surg.i ? 'done' : k === surg.i ? 'now' : ''}" title="${k + 1}. ${esc(x.title)}" aria-label="Step ${k + 1}: ${esc(x.title)}"${P.sim && k > surg.i ? ' disabled' : ''}></button>`).join('')}</div>`;
   if (surg.i >= n) {
+    const sc = P.sim ? simScore() : null;
     ui.innerHTML = `<div class="eyebrow"><span>${esc(P.category)}</span><span>·</span><span>Complete</span></div><h2>${esc(P.name)}</h2>${dots}
+      ${sc ? `<div class="checkbox"><h3>Case result</h3><div class="score"><b>${sc.first}</b><span>of ${sc.n} tasks right first time</span><span class="spacer"></span><span>${sc.slips} ${sc.slips === 1 ? 'slip' : 'slips'}</span></div></div>` : ''}
       <h3>Complications and their anatomy</h3><ul>${(P.complications || []).map(c => `<li>${esc(c)}</li>`).join('')}</ul>
-      <div class="nav"><button class="btn" data-go="${n - 1}">Back</button><button class="btn primary" data-go="0">Run it again</button><span class="spacer"></span><button class="linkbtn" data-proc="">All procedures</button></div>${fine}`;
+      <div class="nav"><button class="btn" data-go="${n - 1}">Back</button><button class="btn primary" data-proc="${esc(P.id)}">Run it again</button><span class="spacer"></span><button class="linkbtn" data-proc="">All procedures</button></div>${src}${fine}`;
     return;
   }
-  const st = P.steps[surg.i], c = surg.check, hold = c && !c.done;
-  const riskHtml = (st.risk || []).map(r => { const card = r.label.startsWith('card:'); const nm = card ? ((cardById.get(r.label.slice(5)) || {}).name || r.label.slice(5)) : r.label; return `<button class="s-risk" ${card ? `data-card="${esc(r.label.slice(5))}"` : `data-show="${esc(r.label)}"`}><b>${esc(nm)}${card ? '<i>not on the model</i>' : ''}</b><span>${esc(r.why)}</span></button>`; }).join('');
+  const st = P.steps[surg.i], c = surg.check, hold = (c && !c.done) || !!T;
+  const riskHtml = (st.risk || []).map(r => { const card = r.label.startsWith('card:'); const nm = card ? ((cardById.get(r.label.slice(5)) || {}).name || r.label.slice(5)) : bare(r.label); return `<button class="s-risk" ${card ? `data-card="${esc(r.label.slice(5))}"` : `data-show="${esc(r.label)}"`}><b>${esc(nm)}${card ? '<i>not on the model</i>' : ''}</b><span>${esc(r.why)}</span></button>`; }).join('');
   let check = '';
   if (c) check = `<div class="checkbox"><h3>Identify on the model</h3><p>${esc(c.prompt)}</p>${c.done ? `<div class="verdict good">${c.ok ? 'Correct' : 'Shown'}: ${esc(c.answer)}.</div>` : `${c.ok === false ? `<div class="verdict bad">${c.said ? `That is ${esc(c.said)}.` : 'Not that one.'} Try again.</div>` : `<p class="fine">Click the structure on the model. The highlights appear once you have answered.</p>`}<div class="nav"><button class="btn" id="surg-reveal">Show me</button></div>`}</div>`;
+  let sim = '';
+  if (P.sim) {
+    const log = surg.log.map(x => `<li>${esc(x)}</li>`).join('');
+    if (T) {
+      const body = T.choice ? `<div class="choices">${T.choice.map((o, k) => `<button class="btn" data-choice="${k}">${esc(o.t)}</button>`).join('')}</div>`
+        : `<div class="tray${T.tool ? '' : ' off'}" role="group" aria-label="Instrument tray">${(P.instruments || []).map(id => `<button class="tool" data-tool="${id}" aria-pressed="${surg.tool === id}" title="${esc((INSTR.find(x => x.id === id) || {}).note || '')}"${T.tool ? '' : ' disabled'}>${toolSvg(id)}<span>${esc(toolName(id))}</span></button>`).join('')}</div>`;
+      const hint = T.choice ? 'Choose one.' : !T.tool ? 'No instrument needed: click the structure on the model.' : T.target ? (surg.tool ? `${toolName(surg.tool)} in hand: click where to use it on the model.` : 'Choose an instrument, then click where to use it on the model.') : 'Choose the instrument to use.';
+      sim = `${log ? `<ul class="simlog">${log}</ul>` : ''}<div class="checkbox"><div class="exam-head"><h3>Task ${surg.t + 1} of ${st.tasks.length}</h3><button class="linkbtn" id="sim-show">Show me</button></div><p><b>${esc(T.do)}</b></p>${body}
+        ${surg.said ? `<div class="verdict bad">${esc(surg.said)}</div>` : `<p class="fine">${esc(hint)}</p>`}</div>`;
+    } else sim = `<ul class="simlog">${log}</ul>`;
+  }
   ui.innerHTML = `<div class="eyebrow"><span>${esc(P.name)}</span><span>·</span><span>Step ${surg.i + 1} of ${n}</span></div><h2>${esc(st.title)}</h2>${dots}
-    ${surg.i === 0 && P.setup ? `<p class="muted">${esc(P.setup)}</p>` : ''}<p>${esc(st.action)}</p>${check}
-    ${hold ? '' : `<h3>In play</h3><div class="chips">${(st.focus || []).map(f => `<button class="s-chip" data-show="${esc(f)}">${esc(f)}</button>`).join('')}</div>${riskHtml ? `<h3>At risk</h3><div class="risks">${riskHtml}</div>` : ''}`}
-    ${(st.landmarks || []).length ? `<h3>Landmarks</h3><ul>${st.landmarks.map(l => `<li>${esc(l)}</li>`).join('')}</ul>` : ''}
-    ${st.pearl ? `<div class="pearl"><b>Pearl</b>${esc(st.pearl)}</div>` : ''}
-    <div class="nav"><button class="btn" data-go="${surg.i - 1}" ${surg.i === 0 ? 'disabled' : ''}>Back</button><button class="btn primary" data-go="${surg.i + 1}">${surg.i === n - 1 ? 'Finish' : 'Next step'}</button><span class="spacer"></span><button class="linkbtn" data-proc="">All procedures</button></div>${fine}`;
+    ${surg.i === 0 && P.setup ? `<p class="muted">${esc(P.setup)}</p>` : ''}<p>${esc(st.action)}</p>${check}${sim}
+    ${hold ? '' : `<h3>In play</h3><div class="chips">${(st.focus || []).map(f => `<button class="s-chip" data-show="${esc(f)}">${esc(bare(f))}</button>`).join('')}</div>${riskHtml ? `<h3>At risk</h3><div class="risks">${riskHtml}</div>` : ''}`}
+    ${T ? '' : `${(st.landmarks || []).length ? `<h3>Landmarks</h3><ul>${st.landmarks.map(l => `<li>${esc(l)}</li>`).join('')}</ul>` : ''}${st.pearl ? `<div class="pearl"><b>Pearl</b>${esc(st.pearl)}</div>` : ''}`}
+    <div class="nav"><button class="btn" data-go="${surg.i - 1}" ${surg.i === 0 ? 'disabled' : ''}>Back</button><button class="btn primary" data-go="${surg.i + 1}"${T ? ' disabled' : ''}>${surg.i === n - 1 ? 'Finish' : 'Next step'}</button><span class="spacer"></span><button class="linkbtn" data-proc="">All procedures</button></div>${src}${fine}`;
 }
 document.getElementById('surgery-ui').addEventListener('click', e => {
   const t = e.target.closest('button'); if (!t) return;
-  if (t.dataset.proc !== undefined) { if (t.dataset.proc) surgStart(t.dataset.proc); else { surg.proc = null; riskIds.clear(); hiddenIds.clear(); ghostIds.clear(); select(null); renderMods(); renderSurgery(); } }
+  if (t.dataset.proc !== undefined) { if (t.dataset.proc) surgStart(t.dataset.proc); else { surg.proc = null; surg.tool = null; simCursor(); riskIds.clear(); hiddenIds.clear(); ghostIds.clear(); select(null); renderMods(); renderSurgery(); } }
   else if (t.dataset.step !== undefined) surgGo(+t.dataset.step);
   else if (t.dataset.go !== undefined) surgGo(+t.dataset.go);
   else if (t.dataset.show) surgShow(t.dataset.show);
   else if (t.dataset.card) { if (labels.has('card:' + t.dataset.card)) { state.selected = 'card:' + t.dataset.card; sel.clear(); applyVisibility(); renderDetail(); } }
   else if (t.id === 'surg-reveal' && surg.check) { surg.check.done = true; surg.check.ok = false; surgPaint(); }
+  else if (t.dataset.tool) { const T = simTask(); if (!T || !T.tool) return; surg.tool = t.dataset.tool; surg.said = ''; if (T.target) { simCursor(); renderSurgery(); } else simUse(surg.tool); }
+  else if (t.dataset.choice !== undefined) { const T = simTask(), o = T && T.choice && T.choice[+t.dataset.choice]; if (o) { if (o.ok) simDone(o.why); else simFail(o.why); } }
+  else if (t.id === 'sim-show') { const T = simTask(); if (T) { surg.miss++; simDone('Shown. ' + (T.choice ? T.choice.find(o => o.ok).t + '. ' + T.choice.find(o => o.ok).why : (T.tool ? toolName(T.tool[0]) + (T.target ? ' on ' + bare(T.target[0]).toLowerCase() : '') + '. ' : '') + T.ok)); } }
 });
 
 /* ---------- The larynx as the scope sees it ----------

@@ -147,7 +147,7 @@ for cat in CATS:
         it["category"] = cat; items.append(it)
 tpl = (here / "template3d.html").read_text()
 # training content: surgical walkthroughs (data/procedures/*.json, in PROC_ORDER) and the scope route (data/scope.json)
-PROC_ORDER = ["open-tracheostomy", "thyroid-lobectomy", "superficial-parotidectomy", "submandibular-gland-excision", "selective-neck-dissection", "tonsillectomy"]
+PROC_ORDER = ["thyroidectomy", "open-tracheostomy", "thyroid-lobectomy", "superficial-parotidectomy", "submandibular-gland-excision", "selective-neck-dissection", "tonsillectomy"]
 pdir = here / "data" / "procedures"; procs = []
 if pdir.exists():
     found = {f.stem: json.load(open(f)) for f in sorted(pdir.glob("*.json"))}
@@ -156,6 +156,9 @@ if pdir.exists():
 scope_data = json.load(open(here / "data" / "scope.json")) if (here / "data" / "scope.json").exists() else {}
 scope_data.pop("_about", None)
 assert tpl.count("/*__PROCS__*/[]") == 1 and tpl.count("/*__SCOPE__*/{}") == 1
+instr = json.load(open(here / "data" / "instruments.json")) if (here / "data" / "instruments.json").exists() else []
+assert tpl.count("/*__INSTR__*/[]") == 1
+tpl = tpl.replace("/*__INSTR__*/[]", json.dumps(instr, ensure_ascii=False, separators=(",", ":")))
 tpl = tpl.replace("/*__PROCS__*/[]", json.dumps(procs, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")).replace("/*__SCOPE__*/{}", json.dumps(scope_data, separators=(",", ":")))
 print("procedures", [pr["id"] for pr in procs], "| scope path points", len(scope_data.get("path", [])))
 assert tpl.count("/*__DATA__*/[]") == 1 and tpl.count("/*__MANIFEST__*/{}") == 1

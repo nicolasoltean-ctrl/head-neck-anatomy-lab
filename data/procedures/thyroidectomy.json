@@ -1,0 +1,878 @@
+{
+ "id": "thyroidectomy",
+ "name": "Thyroidectomy",
+ "category": "Simulation case",
+ "sim": true,
+ "side": "r",
+ "summary": "Operate step by step: choose each instrument from the tray and use it on the model. Right lobe, as in the atlas's figures; for a total thyroidectomy the same steps are repeated on the left.",
+ "setup": "",
+ "instruments": [
+  "marker",
+  "scalpel",
+  "monopolar",
+  "bipolar",
+  "scissors",
+  "forceps",
+  "finger",
+  "retractor-self",
+  "retractor-hand",
+  "haemostat",
+  "tie",
+  "dissector",
+  "needle",
+  "suction",
+  "drain",
+  "harmonic"
+ ],
+ "source": {
+  "cite": "Panieri E, Fagan JJ. Thyroidectomy. In: Fagan JJ (ed.), The Open Access Atlas of Otolaryngology, Head & Neck Operative Surgery. University of Cape Town.",
+  "url": "https://health.uct.ac.za/entdev/guides/open-access-atlas-otolaryngology-head-neck-operative-surgery",
+  "licence": "CC BY-NC 3.0"
+ },
+ "steps": [
+  {
+   "title": "Position, mark and incise",
+   "view": {
+    "from": "front",
+    "systems": [
+     "skin",
+     "muscle",
+     "vein",
+     "bone"
+    ],
+    "peel": 0
+   },
+   "action": "General anaesthesia with an endotracheal tube. A bolster between the scapulae extends the neck slightly, the head rests on a ring, and the table is tilted 30 degrees head-up to empty the neck veins. The head is draped free so that it can be turned. No prophylactic antibiotics are needed.",
+   "focus": [
+    "Muscular triangle*",
+    "Platysma*"
+   ],
+   "risk": [],
+   "tasks": [
+    {
+     "do": "Plan the incision: a curved line in a skin crease, two fingerbreadths above the sternal notch, from the medial border of one sternocleidomastoid to the other.",
+     "tool": [
+      "marker"
+     ],
+     "target": [
+      "Muscular triangle*"
+     ],
+     "ok": "Marked. Placed lower, the scar ends up over the heads of the clavicles once the neck is no longer extended.",
+     "bad": {
+      "scalpel": "Mark before you cut. With the neck extended, an incision placed by eye tends to sit too low."
+     }
+    },
+    {
+     "do": "Open the skin along the mark.",
+     "tool": [
+      "scalpel"
+     ],
+     "target": [
+      "Muscular triangle*"
+     ],
+     "hide": [
+      "Muscular triangle*"
+     ],
+     "ok": "Skin incised. The incision can be widened for a large goitre or a lateral neck dissection.",
+     "bad": {
+      "monopolar": "Skin is opened with a blade.",
+      "scissors": "Skin is opened with a blade."
+     }
+    },
+    {
+     "do": "Divide the subcutaneous fat and the muscle sheet that lies in it.",
+     "tool": [
+      "monopolar",
+      "scalpel",
+      "scissors"
+     ],
+     "target": [
+      "Platysma*"
+     ],
+     "ok": "Fat and platysma divided. Platysma is often absent in the midline."
+    }
+   ],
+   "landmarks": [
+    "Sternal notch below; medial borders of the two sternocleidomastoids at either end.",
+    "The isthmus usually lies over the second and third tracheal rings."
+   ],
+   "pearl": "Use a natural skin crease: the scar hides well, though it tends to descend with age."
+  },
+  {
+   "title": "Subplatysmal flaps",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "vein",
+     "bone"
+    ],
+    "peel": 1
+   },
+   "action": "A plane is developed just deep to platysma, upwards to the thyroid cartilage and downwards to the sternal notch.",
+   "focus": [
+    "Platysma*",
+    "Anterior jugular vein*",
+    "Thyroid cartilage"
+   ],
+   "risk": [
+    {
+     "label": "Anterior jugular vein*",
+     "why": "The flap is raised superficial to these veins; going deep to them opens them."
+    }
+   ],
+   "tasks": [
+    {
+     "do": "Raise the upper and lower flaps in the plane immediately deep to this muscle.",
+     "tool": [
+      "monopolar",
+      "scissors",
+      "scalpel"
+     ],
+     "target": [
+      "Platysma*"
+     ],
+     "hide": [
+      "Platysma*",
+      "Superficial investing cervical fascia*"
+     ],
+     "ok": "Flaps raised from the thyroid cartilage above to the sternal notch below."
+    },
+    {
+     "do": "Identify the veins that the flap must stay superficial to.",
+     "tool": null,
+     "target": [
+      "Anterior jugular vein*"
+     ],
+     "ok": "The anterior jugular veins stay down on the strap muscles."
+    },
+    {
+     "do": "Keep the flaps apart for the rest of the operation.",
+     "tool": [
+      "retractor-self"
+     ],
+     "target": null,
+     "ok": "The skin flaps are secured to a fixed, self-retaining (Joll's) retractor.",
+     "bad": {
+      "retractor-hand": "A hand-held retractor would tie up an assistant for the whole case. The flaps are fixed to a self-retaining frame."
+     }
+    }
+   ],
+   "landmarks": [
+    "Upper limit: thyroid cartilage. Lower limit: sternal notch."
+   ],
+   "pearl": "The correct plane is nearly bloodless and leaves the anterior jugular veins undisturbed."
+  },
+  {
+   "title": "Separate the strap muscles",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "vein",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "action": "The strap muscles (sternohyoid, sternothyroid, omohyoid) cover the front of the gland. They meet in an avascular midline plane.",
+   "focus": [
+    "Sternohyoid muscle*",
+    "Sternothyroid muscle*",
+    "Thyroid gland"
+   ],
+   "risk": [
+    {
+     "label": "Anterior jugular vein*",
+     "why": "Small veins sometimes cross the midline between the two anterior jugular veins, especially low down."
+    }
+   ],
+   "tasks": [
+    {
+     "do": "Open the fascia in the midline between the right and left strap muscles.",
+     "tool": [
+      "monopolar",
+      "scissors"
+     ],
+     "target": [
+      "Sternohyoid muscle*",
+      "Sternothyroid muscle*"
+     ],
+     "ok": "Midline opened. Watch for small crossing veins inferiorly.",
+     "bad": {
+      "scalpel": "The atlas opens this plane with diathermy or scissors."
+     }
+    },
+    {
+     "do": "Draw the strap muscles on the side of the lobe laterally to expose the gland.",
+     "tool": [
+      "retractor-hand"
+     ],
+     "target": [
+      "Sternohyoid muscle",
+      "Sternothyroid muscle"
+     ],
+     "hide": [
+      "Sternohyoid muscle",
+      "Sternothyroid muscle",
+      "Anterior jugular vein"
+     ],
+     "ok": "Straps retracted with a right-angled retractor. For a massive goitre they may be divided instead. The surgeon now usually moves to the side of the table opposite the lobe.",
+     "bad": {
+      "retractor-self": "The self-retaining retractor is holding the skin flaps. The straps are drawn aside with a hand-held right-angled retractor.",
+      "scissors": "The straps are retracted, not divided, unless the goitre is massive."
+     }
+    }
+   ],
+   "landmarks": [
+    "Sternothyroid inserts on the oblique line of the thyroid cartilage, which marks the upper front limit of the lobe."
+   ],
+   "pearl": "Stay exactly in the midline and the plane is avascular."
+  },
+  {
+   "title": "Rotate the lobe; middle thyroid vein",
+   "view": {
+    "from": "right-front",
+    "systems": [
+     "muscle",
+     "artery",
+     "vein",
+     "nerve",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "ghost": [
+    "Sternocleidomastoid muscle",
+    "Omohyoid muscle"
+   ],
+   "action": "The lobe is turned towards the midline. The first important vessel to appear is the middle thyroid vein, stretched tight between the lobe and the great vein beside it.",
+   "focus": [
+    "Thyroid gland",
+    "Internal jugular vein"
+   ],
+   "risk": [
+    {
+     "label": "card:middle-thyroid-vein",
+     "why": "Encountered early; if it is not secured it tears and bleeds from the internal jugular vein."
+    }
+   ],
+   "tasks": [
+    {
+     "do": "Rotate the lobe medially.",
+     "tool": [
+      "finger"
+     ],
+     "target": [
+      "Thyroid gland"
+     ],
+     "ok": "Gentle digital retraction turns the lobe medially.",
+     "bad": {
+      "forceps": "Grasping the gland tears its capsule and the veins on it. Use gentle digital retraction.",
+      "haemostat": "Grasping the gland tears its capsule and the veins on it. Use gentle digital retraction."
+     }
+    },
+    {
+     "do": "Identify the vein that the middle thyroid vein drains into.",
+     "tool": null,
+     "target": [
+      "Internal jugular vein"
+     ],
+     "ok": "The middle thyroid vein runs straight laterally into the internal jugular vein."
+    },
+    {
+     "do": "Control the middle thyroid vein before dividing it.",
+     "tool": [
+      "haemostat"
+     ],
+     "target": null,
+     "also": {
+      "harmonic": {
+       "skip": 2,
+       "ok": "Sealed and divided with the harmonic scalpel, which the atlas's first author uses for vessels to save operating time."
+      }
+     },
+     "ok": "Two haemostats are on the vein.",
+     "bad": {
+      "scissors": "Clamp before you cut.",
+      "monopolar": "A thin-walled vein under tension is clamped and tied."
+     }
+    },
+    {
+     "do": "Divide the vein.",
+     "tool": [
+      "scissors",
+      "scalpel"
+     ],
+     "target": null,
+     "ok": "Divided between the haemostats."
+    },
+    {
+     "do": "Secure both ends.",
+     "tool": [
+      "tie"
+     ],
+     "target": null,
+     "ok": "Ligated with 3/0 ties. The bulk of the lobe can now be delivered into the wound."
+    }
+   ],
+   "landmarks": [
+    "Lateral to the gland: the carotid sheath with the common carotid artery, internal jugular vein and vagus."
+   ],
+   "pearl": "Venous drainage is variable; there may be more than one middle thyroid vein."
+  },
+  {
+   "title": "Superior pole and superior thyroid artery",
+   "view": {
+    "from": "right-front",
+    "systems": [
+     "muscle",
+     "artery",
+     "vein",
+     "nerve",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "ghost": [
+    "Sternocleidomastoid muscle",
+    "Omohyoid muscle"
+   ],
+   "action": "The superior thyroid artery, the first branch of the external carotid, runs down over the inferior constrictor to enter the gland just below the tip of the upper pole. The external branch of the superior laryngeal nerve usually lies deep to it, but the relationship is very variable.",
+   "focus": [
+    "Thyroid gland",
+    "Superior thyroid vein",
+    "External carotid artery"
+   ],
+   "risk": [
+    {
+     "label": "card:external-laryngeal-nerve",
+     "why": "Motor to cricothyroid. It lies close to the artery near the upper pole and may pass between its branches; injury lowers pitch and volume and tires the voice."
+    },
+    {
+     "label": "card:superior-thyroid-artery",
+     "why": "The upper-pole pedicle. Not drawn on this model; the superior thyroid vein marks its course."
+    }
+   ],
+   "tasks": [
+    {
+     "do": "Bring the superior pole fully into view.",
+     "tool": [
+      "retractor-hand"
+     ],
+     "target": null,
+     "ok": "Retractors repositioned; the superior thyroid pedicle comes into view."
+    },
+    {
+     "do": "Where on the pedicle should the superior thyroid artery be divided?",
+     "choice": [
+      {
+       "t": "As close to the thyroid parenchyma as possible",
+       "ok": true,
+       "why": "Correct. The authors do not routinely look for the external branch of the superior laryngeal nerve; they protect it by staying on the gland."
+      },
+      {
+       "t": "High on the pedicle, well above the pole",
+       "why": "That is where the external branch of the superior laryngeal nerve lies close to the artery."
+      },
+      {
+       "t": "At its origin from the external carotid",
+       "why": "Far outside the field, and proximal to the nerve's crossing."
+      }
+     ]
+    },
+    {
+     "do": "Secure and divide the upper-pole pedicle (on this model, click the vein that runs with the artery).",
+     "tool": [
+      "tie"
+     ],
+     "target": [
+      "Superior thyroid vein"
+     ],
+     "hide": [
+      "Superior thyroid vein"
+     ],
+     "ok": "The pedicle is double ligated with 2/0 or 3/0 ties and divided on the gland.",
+     "bad": {
+      "haemostat": "Clamps alone are not left on this pedicle: it is double ligated.",
+      "scissors": "Ligate before you divide."
+     }
+    }
+   ],
+   "landmarks": [
+    "The internal branch of the superior laryngeal nerve is sensory, enters through the thyrohyoid membrane, and lies above the field."
+   ],
+   "pearl": "Stay on the gland at the upper pole."
+  },
+  {
+   "title": "Superior parathyroid gland",
+   "view": {
+    "from": "right",
+    "systems": [
+     "artery",
+     "vein",
+     "nerve",
+     "viscera",
+     "bone"
+    ],
+    "peel": 3
+   },
+   "ghost": [
+    "Internal jugular vein",
+    "Right common carotid artery"
+   ],
+   "action": "With the upper pole delivered forwards, the back of the lobe comes into view. The superior parathyroid lies posteriorly at the level of the upper two-thirds of the lobe, close to the tubercle of Zuckerkandl and about 1 cm above the point where the recurrent laryngeal nerve crosses the inferior thyroid artery.",
+   "focus": [
+    "Superior parathyroid gland",
+    "Inferior thyroid artery",
+    "Thyroid gland"
+   ],
+   "risk": [
+    {
+     "label": "Superior parathyroid gland",
+     "why": "Must stay in place with its blood supply, which comes from the inferior thyroid artery."
+    }
+   ],
+   "tasks": [
+    {
+     "do": "Find the superior parathyroid gland.",
+     "tool": null,
+     "target": [
+      "Superior parathyroid gland"
+     ],
+     "ok": "Rich orange-yellow, oval, 3 to 8 mm. It lies deep (dorsal) to the plane of the recurrent laryngeal nerve."
+    },
+    {
+     "do": "Free it from the back of the thyroid, leaving it in the neck on its blood supply, and control the small bleeding points.",
+     "tool": [
+      "bipolar"
+     ],
+     "target": [
+      "Superior parathyroid gland"
+     ],
+     "ok": "Dissected carefully off the posterior surface of the thyroid, with short bursts of bipolar for bleeding.",
+     "bad": {
+      "monopolar": "Too much heat spread beside a parathyroid and the nerve. The atlas uses short bursts of bipolar.",
+      "harmonic": "Too much heat beside a parathyroid and the nerve. The atlas uses short bursts of bipolar.",
+      "tie": "A tie here would take the gland's own blood supply."
+     }
+    }
+   ],
+   "landmarks": [
+    "Tubercle of Zuckerkandl: a projection of the lateral edge of the lobe, present in up to 75%, usually lateral to the nerve."
+   ],
+   "pearl": "Bleeding makes parathyroids hard to recognise, so keep the field dry."
+  },
+  {
+   "title": "Inferior thyroid veins and inferior parathyroid",
+   "view": {
+    "from": "right",
+    "systems": [
+     "artery",
+     "vein",
+     "nerve",
+     "viscera",
+     "bone"
+    ],
+    "peel": 3
+   },
+   "ghost": [
+    "Internal jugular vein",
+    "Right common carotid artery"
+   ],
+   "action": "The inferior thyroid veins leave the lower pole. Dividing them exposes the trachea and lets the gland be delivered fully out of the wound.",
+   "focus": [
+    "Thyroid gland",
+    "Trachea",
+    "Inferior parathyroid gland"
+   ],
+   "risk": [
+    {
+     "label": "Inferior parathyroid gland",
+     "why": "Lies on the lower pole or in the thyrothymic ligament, superficial (ventral) to the plane of the nerve; keep it in place and spare its inferior thyroid artery supply."
+    },
+    {
+     "label": "card:inferior-thyroid-veins",
+     "why": "Leaves the lower pole; divided and ligated to free the gland."
+    }
+   ],
+   "tasks": [
+    {
+     "do": "Expose the lower neck and the lower pole.",
+     "tool": [
+      "retractor-hand"
+     ],
+     "target": null,
+     "ok": "Retractors repositioned to show the lower pole and the inferior thyroid veins."
+    },
+    {
+     "do": "Deal with the inferior thyroid veins.",
+     "tool": [
+      "tie",
+      "harmonic"
+     ],
+     "target": null,
+     "ok": "Divided and ligated. The trachea is exposed and the gland can be delivered.",
+     "bad": {
+      "monopolar": "These veins are divided and ligated."
+     }
+    },
+    {
+     "do": "Find the inferior parathyroid gland.",
+     "tool": null,
+     "target": [
+      "Inferior parathyroid gland"
+     ],
+     "ok": "Most often on the front or the posterolateral surface of the lower pole (42%), or lower in the neck near the thymus (39%)."
+    }
+   ],
+   "landmarks": [
+    "The inferior parathyroids descend with the thymus, so their position is far more variable than that of the superior glands."
+   ],
+   "pearl": "A parathyroid that is devascularised or comes free is kept in saline, cut into 1 mm cubes and placed in pockets in the sternocleidomastoid."
+  },
+  {
+   "title": "Find the recurrent laryngeal nerve",
+   "view": {
+    "from": "right",
+    "systems": [
+     "artery",
+     "vein",
+     "nerve",
+     "viscera",
+     "bone"
+    ],
+    "peel": 3
+   },
+   "action": "The nerve climbs towards the tracheo-oesophageal groove and enters the larynx deep to the inferior constrictor, behind the cricothyroid joint. On the right it comes in from a more lateral direction and is less predictable. It is classically found in Simon's triangle.",
+   "focus": [
+    "Inferior thyroid artery",
+    "Right common carotid artery",
+    "Trachea",
+    "Cricoid cartilage"
+   ],
+   "risk": [
+    {
+     "label": "card:recurrent-laryngeal-nerve",
+     "why": "Supplies every intrinsic laryngeal muscle except cricothyroid. It may pass behind, in front of, or between the branches of the inferior thyroid artery. Not drawn on this model."
+    }
+   ],
+   "tasks": [
+    {
+     "do": "With the lobe rotated medially, draw the carotid sheath laterally.",
+     "tool": [
+      "retractor-hand"
+     ],
+     "target": [
+      "Right common carotid artery",
+      "Internal jugular vein"
+     ],
+     "ghost": [
+      "Internal jugular vein",
+      "Right common carotid artery"
+     ],
+     "ok": "The common carotid artery and internal jugular vein are retracted laterally."
+    },
+    {
+     "do": "Simon's triangle has the common carotid laterally and the oesophagus medially. Identify its superior border.",
+     "tool": null,
+     "target": [
+      "Inferior thyroid artery"
+     ],
+     "ok": "The inferior thyroid artery forms the upper side of the triangle."
+    },
+    {
+     "do": "Find the nerve within the triangle.",
+     "tool": [
+      "dissector"
+     ],
+     "target": null,
+     "ok": "The tissues are teased apart until the nerve is seen. It is left undisturbed where it lies: not skeletonised, not handled. Some surgeons instead find it about 0.5 cm below the inferior horn of the thyroid cartilage, where it enters the larynx.",
+     "bad": {
+      "monopolar": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
+      "bipolar": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
+      "harmonic": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
+      "forceps": "The nerve is not grasped or handled.",
+      "scalpel": "Tease the tissues apart; do not cut until the nerve has been seen.",
+      "scissors": "Tease the tissues apart; do not cut until the nerve has been seen."
+     }
+    }
+   ],
+   "landmarks": [
+    "A non-recurrent nerve (about 0.6%, almost always on the right) leaves the vagus high and runs straight to the larynx.",
+    "Elevating the tubercle of Zuckerkandl usually shows the nerve medial to it."
+   ],
+   "pearl": "See the nerve and all of its divisions before anything in this area is divided."
+  },
+  {
+   "title": "Capsular dissection and Berry's ligament",
+   "view": {
+    "from": "right",
+    "systems": [
+     "muscle",
+     "artery",
+     "vein",
+     "nerve",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "ghost": [
+    "Sternocleidomastoid muscle",
+    "Omohyoid muscle",
+    "Internal jugular vein",
+    "Right common carotid artery"
+   ],
+   "action": "The inferior thyroid artery, from the thyrocervical trunk, is the sole arterial supply of all the parathyroids. The posteromedial gland is bound to the cricoid and the first and second tracheal rings by the ligament of Berry; most nerves lie within 3 mm of it.",
+   "focus": [
+    "Inferior thyroid artery",
+    "Cricoid cartilage",
+    "Trachea",
+    "Thyroid gland"
+   ],
+   "risk": [
+    {
+     "label": "card:recurrent-laryngeal-nerve",
+     "why": "Usually passes behind the ligament of Berry, within 3 mm; rarely it is embedded in it."
+    },
+    {
+     "label": "Inferior thyroid artery",
+     "why": "Dividing its trunk puts every parathyroid on that side at risk of ischaemia."
+    }
+   ],
+   "tasks": [
+    {
+     "do": "How should the inferior thyroid artery be dealt with?",
+     "choice": [
+      {
+       "t": "Divide each branch separately on the thyroid capsule",
+       "ok": true,
+       "why": "Correct. Pericapsular division keeps the parathyroids supplied and keeps you away from the nerve."
+      },
+      {
+       "t": "Ligate the trunk laterally, behind the carotid sheath",
+       "why": "The trunk supplies both parathyroids on that side; ligating it risks ischaemia."
+      },
+      {
+       "t": "Coagulate the trunk where the nerve crosses it",
+       "why": "Wrong on both counts: the trunk is preserved, and no cautery is used near the nerve."
+      }
+     ]
+    },
+    {
+     "do": "Divide the branches of the artery at the capsule.",
+     "tool": [
+      "tie"
+     ],
+     "target": [
+      "Inferior thyroid artery"
+     ],
+     "ok": "Each branch is individually ligated with a 3/0 tie and divided on the capsule, with minimal handling of the nerve.",
+     "bad": {
+      "monopolar": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
+      "bipolar": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
+      "harmonic": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve."
+     }
+    },
+    {
+     "do": "What must be true before the ligament of Berry is divided?",
+     "choice": [
+      {
+       "t": "The recurrent laryngeal nerve has been identified",
+       "ok": true,
+       "why": "Correct. The nerve usually runs just behind the ligament."
+      },
+      {
+       "t": "The isthmus has been divided",
+       "why": "The order of the isthmus does not protect the nerve."
+      },
+      {
+       "t": "The inferior thyroid artery trunk has been tied",
+       "why": "The trunk is not tied at all."
+      }
+     ]
+    },
+    {
+     "do": "Free the gland from the airway at the ligament of Berry (click where the ligament attaches).",
+     "tool": [
+      "scalpel",
+      "scissors"
+     ],
+     "target": [
+      "Cricoid cartilage",
+      "Trachea"
+     ],
+     "ok": "Divided by sharp dissection with the nerve in view; the lobe is free of the trachea.",
+     "bad": {
+      "monopolar": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
+      "bipolar": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
+      "harmonic": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
+      "finger": "The ligament is dense; pulling it apart drags on the nerve. It is divided sharply."
+     }
+    }
+   ],
+   "landmarks": [
+    "Ligament of Berry: side of the cricoid and the first two tracheal rings."
+   ],
+   "pearl": "Ties and sharp dissection only in this area."
+  },
+  {
+   "title": "Divide the isthmus",
+   "view": {
+    "from": "front",
+    "systems": [
+     "muscle",
+     "artery",
+     "vein",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "ghost": [
+    "Sternocleidomastoid muscle"
+   ],
+   "action": "For a lobectomy the isthmus is divided and the lobe removed. For a total thyroidectomy the same steps are repeated on the other side instead.",
+   "focus": [
+    "Thyroid gland",
+    "Trachea"
+   ],
+   "risk": [],
+   "tasks": [
+    {
+     "do": "Control the isthmus.",
+     "tool": [
+      "haemostat"
+     ],
+     "target": [
+      "Thyroid gland"
+     ],
+     "ok": "The isthmus is cross-clamped."
+    },
+    {
+     "do": "Divide it.",
+     "tool": [
+      "scalpel",
+      "scissors",
+      "harmonic"
+     ],
+     "target": [
+      "Thyroid gland"
+     ],
+     "ghost": [
+      "Thyroid gland"
+     ],
+     "ok": "Divided; the lobe is out. (This model's gland is one piece, so the whole gland fades to stand for the removed lobe.)"
+    },
+    {
+     "do": "Secure the cut edge of the remnant.",
+     "tool": [
+      "needle"
+     ],
+     "target": null,
+     "ok": "The remnant is oversewn with a continuous, interlocking suture."
+    }
+   ],
+   "landmarks": [
+    "A pyramidal lobe extends upwards near the midline in up to 70%; in a total thyroidectomy it is removed too."
+   ],
+   "pearl": "Total thyroidectomy: both lobes, isthmus and pyramidal lobe, leaving no visible thyroid tissue."
+  },
+  {
+   "title": "Haemostasis and closure",
+   "view": {
+    "from": "right-front",
+    "systems": [
+     "muscle",
+     "artery",
+     "vein",
+     "nerve",
+     "viscera",
+     "bone"
+    ],
+    "peel": 2
+   },
+   "ghost": [
+    "Thyroid gland",
+    "Sternocleidomastoid muscle",
+    "Omohyoid muscle"
+   ],
+   "action": "The thyroid bed is checked: the nerve, both parathyroids and their colour, and every tie.",
+   "focus": [
+    "Superior parathyroid gland",
+    "Inferior parathyroid gland",
+    "Trachea"
+   ],
+   "risk": [],
+   "tasks": [
+    {
+     "do": "Wash out the wound.",
+     "tool": [
+      "suction"
+     ],
+     "target": null,
+     "ok": "The wound is irrigated."
+    },
+    {
+     "do": "What manoeuvre is requested before closure, and why?",
+     "choice": [
+      {
+       "t": "A Valsalva manoeuvre, to show up venous bleeding",
+       "ok": true,
+       "why": "Correct. Raised venous pressure reveals veins that will bleed later; haemostasis is then completed."
+      },
+      {
+       "t": "Head-up tilt, to empty the veins",
+       "why": "That hides venous bleeding rather than revealing it."
+      },
+      {
+       "t": "Neck flexion, to test the suture line",
+       "why": "There is no suture line under tension to test."
+      }
+     ]
+    },
+    {
+     "do": "Is a drain placed routinely?",
+     "choice": [
+      {
+       "t": "No. Only if judged necessary: a suction drain in the thyroid bed, out through a lateral stab",
+       "ok": true,
+       "why": "Correct. Wound drainage is not routinely required."
+      },
+      {
+       "t": "Yes, always, through the incision",
+       "why": "Not routine, and when used it leaves by a separate lateral skin puncture."
+      },
+      {
+       "t": "Never; drains are contraindicated",
+       "why": "A suction drain is used when the surgeon judges it necessary."
+      }
+     ]
+    },
+    {
+     "do": "Close in layers.",
+     "tool": [
+      "needle"
+     ],
+     "target": null,
+     "ok": "Strap muscles approximated for 70% of their length; platysma with interrupted absorbable 3/0; subcuticular absorbable monofilament to skin; a light dressing, so that a haematoma is not hidden."
+    }
+   ],
+   "landmarks": [],
+   "pearl": "Avoid bulky dressings. A large haematoma can obstruct the airway and is a surgical emergency."
+  }
+ ],
+ "complications": [
+  "Haematoma and airway: fewer than 1% develop stridor after surgery, from haematoma or airway oedema. The patient is watched overnight for bleeding and airway obstruction.",
+  "Recurrent laryngeal nerve: a unilateral palsy gives a breathy, hoarse voice, less often dysphagia and aspiration. A bilateral palsy usually shows at extubation as stridor or obstruction and may need an emergency tracheostomy or cricothyroidotomy. About 1% are left with permanent hoarseness.",
+  "External branch of the superior laryngeal nerve: lower pitch, reduced volume and voice fatigue; subtler than a recurrent nerve injury and often missed.",
+  "Hypoparathyroidism: transient hypocalcaemia in about 20% after total thyroidectomy, permanent in 1 to 5%. Serum PTH is checked within 24 hours of a total thyroidectomy; signs include circumoral numbness, carpopedal spasm, and Chvostek's and Trousseau's signs.",
+  "Hypothyroidism: uncommon after lobectomy (about 5%; TSH is checked at 6 to 8 weeks), inevitable after total thyroidectomy.",
+  "Seroma: small ones are common and resorb; larger ones can be aspirated under sterile conditions.",
+  "Tracheomalacia: an uncommon cause of obstruction, unmasked when a long-standing goitre that was splinting the trachea is removed."
+ ],
+ "notes": "Adapted (reworded, not copied) from the Open Access Atlas thyroidectomy chapter, CC BY-NC 3.0: attribution is shown in the panel; NON-COMMERCIAL licence. Not on the model: recurrent and external laryngeal nerves, superior thyroid artery, middle and inferior thyroid veins, oesophagus, ligament of Berry, tubercle of Zuckerkandl; tasks on those use no model target or a stand-in (superior thyroid vein for the upper-pole pedicle; cricoid/trachea for Berry's ligament). The gland is one mesh, so lobe removal is shown by ghosting the whole gland. Atlas spells the retractor 'Jowell's'; Joll's is the usual spelling."
+}
