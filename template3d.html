@@ -290,6 +290,8 @@ body.entering #gl { transition: opacity .55s ease .6s; }
 .results { list-style: none; padding: 0; display: grid; gap: 5px; font-size: 13px; color: var(--fg-2); } .results li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 8px; align-items: start; }
 .results li > span { font-family: var(--font-mono); font-size: 12px; text-align: center; border-radius: 6px; padding: 1px 0; background: var(--bg-3); } .results li.ok > span { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); } .results li.miss > span { background: color-mix(in srgb, var(--bad) 16%, transparent); color: var(--bad); } .results b { color: var(--fg); font-weight: 600; }
 .train .eyebrow .seg { margin-left: auto; text-transform: none; letter-spacing: 0; font-family: var(--font-ui); } .train .seg button { font-size: 12.5px; padding: 4px 11px; } .train .seg button:disabled { opacity: .5; cursor: default; }
+.ctl .chk { display: inline-flex; align-items: center; gap: 6px; color: var(--fg-2); font-size: 12.5px; font-weight: 500; cursor: pointer; } .ctl .chk input[type="range"] { width: 90px; } .ctl .chk input[type="checkbox"] { accent-color: var(--accent); margin: 0; }
+.stage.has-tissue canvas { cursor: grab; } .stage.has-tissue.is-pulling canvas { cursor: grabbing; }
 /* simulation cases: instrument tray, decisions, log of finished tasks */
 .proc.sim { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); background: color-mix(in srgb, var(--accent) 6%, var(--bg)); }
 .tray { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; } .tray.off { opacity: .45; }
@@ -366,6 +368,13 @@ body.entering #gl { transition: opacity .55s ease .6s; }
           <label>Pieces</label>
           <div class="mods" id="mods"></div>
           <button class="icon-btn" id="mods-reset" hidden title="Show every hidden piece and un-ghost every ghosted piece">Restore all</button>
+        </div>
+        <div class="ctl" id="tissue-ctl">
+          <label>Tissue</label>
+          <div class="row"><div class="seg" role="group" aria-label="Tissue tool"><button data-tissue="off" aria-pressed="true" title="Drag to orbit">Off</button><button data-tissue="move" aria-pressed="false" title="Drag a structure to move it; its ends stay attached">Move</button><button data-tissue="stretch" aria-pressed="false" title="Drag along a structure to lengthen or shorten it">Stretch</button><button data-tissue="mold" aria-pressed="false" title="Pull a soft region into a new shape">Mold</button></div>
+            <label class="chk"><input type="checkbox" id="tissue-elastic" checked> Springs back</label>
+            <label class="chk" id="tissue-size-wrap" hidden>Brush <input type="range" id="tissue-size" min="3" max="40" step="1" value="12" aria-label="Mold brush size in millimetres"><span id="tissue-size-val">12 mm</span></label></div>
+          <button class="icon-btn" id="tissue-reset" hidden title="Return every moved structure to where it was">Reset tissue</button>
         </div>
         <div class="ctl">
           <label>Side</label>
@@ -524,7 +533,7 @@ document.getElementById('spin').onclick = e => { state.spin = !state.spin; e.cur
 let drag = null; const pointers = new Map(); let pinchDist = 0;
 canvas.addEventListener('pointerdown', e => {
   canvas.setPointerCapture(e.pointerId); pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
-  if (pointers.size === 1) drag = { x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, moved: false, pan: e.button === 2 || e.shiftKey, id: e.pointerId };
+  if (pointers.size === 1) drag = { x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, moved: false, pan: e.button === 2 || e.shiftKey, id: e.pointerId, tissue: (e.button === 0 && !e.shiftKey) ? tissueStart(e) : null };
   else if (pointers.size === 2) { const [a, b] = [...pointers.values()]; pinchDist = Math.hypot(a.x - b.x, a.y - b.y); drag = null; }
   if (state.spin) { state.spin = false; document.getElementById('spin').setAttribute('aria-pressed', 'false'); }
 });
@@ -535,6 +544,7 @@ canvas.addEventListener('pointermove', e => {
     const dx = e.clientX - drag.x, dy = e.clientY - drag.y; drag.x = e.clientX; drag.y = e.clientY;
     if (Math.abs(e.clientX - drag.sx) + Math.abs(e.clientY - drag.sy) > 4) { drag.moved = true; canvas.classList.add('panning'); }
     if (!drag.moved) return;
+    if (drag.tissue) { tissueMove(e, drag.tissue); return; }
     if (state.mode === 'scope') { scope.yaw = Math.max(-1.0, Math.min(1.0, scope.yaw - dx * 0.005)); scope.pitch = Math.max(-1.0, Math.min(1.0, scope.pitch + dy * 0.005)); scopeUpdate(); }
     else if (drag.pan) { pan(dx, dy); } else { orbit.theta -= dx * 0.008; orbit.phi = Math.min(Math.PI - 0.05, Math.max(0.05, orbit.phi - dy * 0.008)); updateCamera(); }
     return;
@@ -543,7 +553,7 @@ canvas.addEventListener('pointermove', e => {
 });
 function endPointer(e) {
   pointers.delete(e.pointerId);
-  if (drag && drag.id === e.pointerId) { const moved = drag.moved; drag = null; canvas.classList.remove('panning'); if (!moved && e.type === 'pointerup') pick(e); }
+  if (drag && drag.id === e.pointerId) { const moved = drag.moved; if (drag.tissue && moved) tissueEnd(drag.tissue); drag = null; canvas.classList.remove('panning'); if (!moved && e.type === 'pointerup') pick(e); }
   if (pointers.size < 2) pinchDist = 0;
 }
 canvas.addEventListener('pointerup', endPointer); canvas.addEventListener('pointercancel', endPointer);
@@ -687,11 +697,11 @@ function updateCounts() {
 const ray = new THREE.Raycaster(); const ndc = new THREE.Vector2();
 function castAt(e) {
   const r = canvas.getBoundingClientRect(); ndc.x = ((e.clientX - r.left) / r.width) * 2 - 1; ndc.y = -((e.clientY - r.top) / r.height) * 2 + 1;
-  ray.setFromCamera(ndc, activeCam());
+  ray.setFromCamera(ndc, activeCam()); castAt.hit = null;
   const hits = ray.intersectObjects(pickables, false);
   if (!hits.length) return null;
   // honour the clipping plane: skip hits on the clipped side
-  for (const h of hits) { if (!clipPlane || clipPlane.distanceToPoint(h.point) >= 0) return h.object; }
+  for (const h of hits) { if (!clipPlane || clipPlane.distanceToPoint(h.point) >= 0) { castAt.hit = h; return h.object; } }
   return null;
 }
 let hoverT = 0;
@@ -805,6 +815,7 @@ function renderDetail() {
   let html = `<div class="eyebrow" style="--c:${s.color}"><span class="cat">${s.label}</span><span>·</span><span>${L.virtual ? 'not shown on the model' : TIERS[L.tier]}</span>${L.ids.length > 1 ? `<span>·</span><span>${L.ids.every(id => sel.has(id)) ? 'both sides' : L.ids.filter(id => sel.has(id)).map(id => entryById.get(id).side === 'l' ? 'left' : entryById.get(id).side === 'r' ? 'right' : 'midline').join(' + ') || 'paired'}</span>` : ''}</div><h2>${esc(L.label)}</h2>`;
   const selLabels = [...new Set([...sel].map(id => labelOfId.get(id)))];
   if (sel.size > 1 && selLabels.length > 1) html += `<p class="multi"><b>${sel.size} pieces selected</b> across ${selLabels.length} structures: ${selLabels.map(k => `<button data-open="${esc(k)}">${esc(labels.get(k).label)}</button>`).join(', ')}. Hide, Ghost and Isolate apply to all of them.</p>`;
+  if (!L.virtual && L.ids.every(id => (entryById.get(id) || {}).auth)) html += `<p class="nocard">Schematic: the source model does not have this structure, so it is drawn along its described course (Netter, and the operative atlas used for the surgery cases). Its route is right; its exact millimetres are not measured.</p>`;
   if (L.virtual) html += `<p class="nocard">The Z-Anatomy model has no mesh for this structure, so it cannot be highlighted or clicked; the card is from Netter.</p>`;
   if (c) {
     html += `${c.name.toLowerCase() !== L.label.toLowerCase() ? `<div class="eyebrow" style="margin-bottom:6px">Card: ${esc(c.name)} · ${esc(c.group)}</div>` : ''}<p class="fn">${esc(c.function)}</p><dl>${(c.details || []).map(x => `<dt>${esc(x.label)}</dt><dd>${esc(x.value)}</dd>`).join('')}</dl>${c.pearl ? `<div class="pearl"><b>Step 2 pearl</b>${esc(c.pearl)}</div>` : ''}`;
@@ -883,7 +894,7 @@ function focusSelected() {
 function setMode(m) {
   const prev = state.mode; if (prev === m) return;
   if (prev === 'scope') scopeExit();
-  if (prev === 'surgery') { surg.tool = null; simCursor(); riskIds.clear(); hiddenIds.clear(); ghostIds.clear(); sel.clear(); state.selected = null; renderMods(); }
+  if (prev === 'surgery') { surg.tool = null; simCursor(); tissueClearAll(); riskIds.clear(); hiddenIds.clear(); ghostIds.clear(); sel.clear(); state.selected = null; renderMods(); }
   state.mode = m;
   for (const k of ['explore', 'quiz', 'surgery', 'scope']) document.getElementById('mode-' + k).setAttribute('aria-pressed', String(m === k));
   document.getElementById('explore-ui').style.display = m === 'explore' ? 'contents' : 'none';
@@ -901,7 +912,7 @@ for (const k of ['explore', 'quiz', 'surgery', 'scope']) document.getElementById
    Each procedure (data/procedures/*.json) is a list of steps. A step sets the layers and peel depth, removes what has been
    divided or retracted so far, highlights the structures in play (blue) and those at risk (amber), and frames them. */
 const surg = { proc: null, i: 0, check: null, t: 0, tool: null, said: '', miss: 0, log: [], stats: new Map() };
-const SURG_VIEWS = { front: [0, 1.45], left: [Math.PI / 2, 1.5], right: [-Math.PI / 2, 1.5], back: [Math.PI, 1.45], 'left-front': [Math.PI / 4, 1.45], 'right-front': [-Math.PI / 4, 1.45], 'left-back': [3 * Math.PI / 4, 1.45], 'below-front': [0, 1.95], 'above-front': [0, 0.95], 'below-left': [Math.PI / 3, 1.95] };
+const SURG_VIEWS = { front: [0, 1.45], left: [Math.PI / 2, 1.5], right: [-Math.PI / 2, 1.5], back: [Math.PI, 1.45], 'left-front': [Math.PI / 4, 1.45], 'right-front': [-Math.PI / 4, 1.45], 'left-back': [3 * Math.PI / 4, 1.45], 'right-back': [-3 * Math.PI / 4, 1.45], 'below-front': [0, 1.95], 'above-front': [0, 0.95], 'below-left': [Math.PI / 3, 1.95] };
 function labelsNamed(label) { return [...labels.values()].filter(L => !L.virtual && L.label === label); }
 function idsOfLabel(label, side) {
   const out = [];
@@ -913,21 +924,24 @@ function idsOfLabel(label, side) {
 }
 const bare = spec => spec.replace(/\*$/, ''); // "Label*" in a procedure means both sides; a plain label means the operated side
 const surgIds = (spec, side) => spec.endsWith('*') ? idsOfLabel(bare(spec), 'both') : idsOfLabel(spec, side);
-function frameIds(ids, from) {
+function frameIds(ids, from, minDist) {
   const box = new THREE.Box3(); let any = false;
   for (const id of ids) { const m = meshes.get(id); if (m && m.geometry.boundingSphere) { const bs = m.geometry.boundingSphere; box.expandByPoint(bs.center.clone().addScalar(-bs.radius)); box.expandByPoint(bs.center.clone().addScalar(bs.radius)); any = true; } }
   const [t, p] = SURG_VIEWS[from] || SURG_VIEWS.front; orbit.theta = t; orbit.phi = p;
-  if (any) { orbit.target.copy(box.getCenter(new THREE.Vector3())); orbit.dist = Math.min(radius * 3.4, clampDist(Math.max(box.getSize(new THREE.Vector3()).length() * 1.5, radius * 0.95))); }
+  if (any) { orbit.target.copy(box.getCenter(new THREE.Vector3())); orbit.dist = Math.min(radius * 3.4, clampDist(Math.max(box.getSize(new THREE.Vector3()).length() * 1.5, minDist || radius * 0.95))); }
   else { orbit.target.copy(center); orbit.dist = radius * 3.4; }
   settleTok++; updateCamera();
 }
 function surgStart(id) { surg.proc = PROCS.find(p => p.id === id) || null; surg.i = 0; surg.t = 0; surg.tool = null; surg.said = ''; surg.miss = 0; surg.log = []; surg.stats = new Map(); simCursor(); if (surg.proc) surgApply(); else renderSurgery(); }
 function surgGo(i) { if (!surg.proc) return; const n = surg.proc.steps.length; if (i < 0 || i > n) return; surg.i = i; surg.t = 0; surg.tool = null; surg.said = ''; surg.miss = 0; surg.log = []; simCursor(); surgApply(); }
-function surgLayers() { // what has been divided, retracted or removed so far: whole earlier steps, and the tasks already done in this one
+function surgLayers(animate) { // what has been divided, retracted or removed so far: whole earlier steps, and the tasks already done in this one
   const P = surg.proc, last = Math.min(surg.i, P.steps.length - 1), st = P.steps[last], side = P.side || 'both', hide = [], ghost = [...(st.ghost || [])];
   P.steps.forEach((s, k) => { if (k > last) return; hide.push(...(s.hide || [])); (s.tasks || []).forEach((t, j) => { if (k < last || j < surg.t || surg.i > last) { hide.push(...(t.hide || [])); ghost.push(...(t.ghost || [])); } }); });
   hiddenIds.clear(); for (const lab of hide) surgIds(lab, side).forEach(id => hiddenIds.add(id));
   ghostIds.clear(); for (const lab of ghost) surgIds(lab, side).forEach(id => { if (!hiddenIds.has(id)) ghostIds.add(id); });
+  const poses = new Map(); // finished tasks can move structures aside (retracted, rotated): the latest pose of each wins
+  P.steps.forEach((s, k) => { if (k > last) return; (s.tasks || []).forEach((t, j) => { if (k < last || j < surg.t || surg.i > last) (t.pose || []).forEach(q => poses.set(q.label, q)); }); });
+  tissuePoses([...poses.values()].map(q => ({ ids: surgIds(q.label, side), v: q.v.map(x => x / 1000), sign: side === 'r' ? -1 : 1 })), !animate);
 }
 function surgApply() {
   const P = surg.proc; if (!P) { renderSurgery(); return; }
@@ -936,9 +950,9 @@ function surgApply() {
   const sys = st.view.systems || ['skin', 'muscle', 'bone'];
   setSystems(sys); setPeel(st.view.peel || 0);
   state.side = 'both'; document.querySelectorAll('[data-side]').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.side === 'both')));
-  surgLayers(); state.isolate = false; surgPaint();
+  tissueReset(true); surgLayers(false); state.isolate = false; surgPaint();
   const token = P.id + ':' + surg.i; surg.token = token;
-  Promise.all(sys.map(k => loadSystem(k))).then(() => { if (surg.token === token && state.mode === 'surgery') { surgLayers(); surgPaint(); } });
+  Promise.all(sys.map(k => loadSystem(k))).then(() => { if (surg.token === token && state.mode === 'surgery') { surgLayers(false); surgPaint(); } });
 }
 function surgPaint(still) { // still: keep the camera where it is
   const P = surg.proc, st = P.steps[Math.min(surg.i, P.steps.length - 1)], side = P.side || 'both';
@@ -948,7 +962,11 @@ function surgPaint(still) { // still: keep the camera where it is
   const hold = (surg.check && !surg.check.done) || !!simTask(); // while something is still to be found or done, colour does not give it away
   sel.clear(); riskIds.clear(); state.selected = null; state.pop = null;
   if (!hold) { focus.forEach(id => sel.add(id)); risk.forEach(id => riskIds.add(id)); const L = labelsNamed(bare((st.focus || [''])[0]))[0]; state.selected = L ? L.key : null; }
-  applyVisibility(); updateCounts(); renderMods(); renderDetail(); if (!still) frameIds([...focus, ...risk], st.view.from); renderSurgery();
+  applyVisibility(); updateCounts(); renderMods(); renderDetail();
+  if (!still) { // long vessels and muscles would pull the view out: frame on the compact structures of the step when there are any
+    const all = [...focus, ...risk], near = all.filter(id => { const m = meshes.get(id); return m && m.geometry.boundingSphere && m.geometry.boundingSphere.radius < 0.04; });
+    frameIds(P.sim && near.length ? near : all, st.view.from, P.sim ? 0.085 : undefined); }
+  renderSurgery();
 }
 function surgAnswer(key) {
   const c = surg.check; if (!c || c.done) return; const L = labels.get(key);
@@ -983,7 +1001,7 @@ function simCursor() { // the chosen instrument rides on the pointer over the mo
 }
 function simDone(text, skip) {
   const st = surg.proc.steps[surg.i]; for (let k = 0; k <= (skip || 0); k++) surg.stats.set(surg.i + ':' + (surg.t + k), surg.miss);
-  surg.log.push(text); surg.t += 1 + (skip || 0); surg.tool = null; surg.said = ''; surg.miss = 0; simCursor(); surgLayers(); surgPaint(surg.t < st.tasks.length);
+  surg.log.push(text); surg.t += 1 + (skip || 0); surg.tool = null; surg.said = ''; surg.miss = 0; simCursor(); surgLayers(true); surgPaint(surg.t < st.tasks.length);
 }
 function simFail(text) { surg.miss++; surg.said = text; renderSurgery(); }
 function simUse(tool, id) { // an instrument applied to the field, or to the piece of the model that was clicked
@@ -1039,7 +1057,7 @@ function renderSurgery() {
 }
 document.getElementById('surgery-ui').addEventListener('click', e => {
   const t = e.target.closest('button'); if (!t) return;
-  if (t.dataset.proc !== undefined) { if (t.dataset.proc) surgStart(t.dataset.proc); else { surg.proc = null; surg.tool = null; simCursor(); riskIds.clear(); hiddenIds.clear(); ghostIds.clear(); select(null); renderMods(); renderSurgery(); } }
+  if (t.dataset.proc !== undefined) { if (t.dataset.proc) surgStart(t.dataset.proc); else { surg.proc = null; surg.tool = null; simCursor(); tissueClearAll(); riskIds.clear(); hiddenIds.clear(); ghostIds.clear(); select(null); renderMods(); renderSurgery(); } }
   else if (t.dataset.step !== undefined) surgGo(+t.dataset.step);
   else if (t.dataset.go !== undefined) surgGo(+t.dataset.go);
   else if (t.dataset.show) surgShow(t.dataset.show);
@@ -1049,6 +1067,140 @@ document.getElementById('surgery-ui').addEventListener('click', e => {
   else if (t.dataset.choice !== undefined) { const T = simTask(), o = T && T.choice && T.choice[+t.dataset.choice]; if (o) { if (o.ok) simDone(o.why); else simFail(o.why); } }
   else if (t.id === 'sim-show') { const T = simTask(); if (T) { surg.miss++; simDone('Shown. ' + (T.choice ? T.choice.find(o => o.ok).t + '. ' + T.choice.find(o => o.ok).why : (T.tool ? toolName(T.tool[0]) + (T.target ? ' on ' + bare(T.target[0]).toLowerCase() : '') + '. ' : '') + T.ok)); } }
 });
+
+/* ---------- Tissue: structures that move, stretch and take a new shape ----------
+   Every soft piece keeps its resting vertices and three offsets from them: a pose (set by an operative step, such as a retracted
+   muscle), the user's own pulling, and what it is carried along by. Muscles, vessels and nerves stay attached at their ends, so
+   moving one stretches it between them; compact organs move freely. Pieces that touch the one being pulled follow it over a few
+   millimetres, so a vein stretches between a gland and the vessel it drains into. Bone, cartilage, skin and brain are rigid here. */
+const SOFT_SYS = new Set(['muscle', 'artery', 'vein', 'nerve', 'lymph', 'viscera']);
+const tissue = { tool: 'off', size: 0.012, elastic: true, recs: new Map(), binds: new Map(), poses: [], raf: 0, anim: null };
+const GLAND_FAMILY = new Set(['Thyroid gland', 'Isthmus of thyroid gland', 'Pyramidal lobe of thyroid gland']);
+const tsmooth = t => t <= 0 ? 0 : t >= 1 ? 1 : t * t * (3 - 2 * t);
+function tRec(m) {
+  const id = m.userData.id; let r = tissue.recs.get(id); if (r) return r;
+  const arr = m.geometry.getAttribute('position').array, n = arr.length / 3, rest = new Float32Array(arr);
+  r = { m, id, n, rest, base: new Float32Array(n * 3), user: new Float32Array(n * 3), fol: new Float32Array(n * 3), pin: new Float32Array(n).fill(1), c: [0, 0, 0], a: [0, 1, 0], t0: 0, t1: 0 };
+  let cx = 0, cy = 0, cz = 0; for (let i = 0; i < n; i++) { cx += rest[i * 3]; cy += rest[i * 3 + 1]; cz += rest[i * 3 + 2]; } cx /= n; cy /= n; cz /= n;
+  let a = [0.3, 1, 0.2];
+  for (let it = 0; it < 7; it++) { // principal axis by power iteration on the covariance
+    const o = [0, 0, 0];
+    for (let i = 0; i < n; i += 2) { const x = rest[i * 3] - cx, y = rest[i * 3 + 1] - cy, z = rest[i * 3 + 2] - cz, d = x * a[0] + y * a[1] + z * a[2]; o[0] += x * d; o[1] += y * d; o[2] += z * d; }
+    const l = Math.hypot(...o) || 1; a = [o[0] / l, o[1] / l, o[2] / l];
+  }
+  let t0 = 1e9, t1 = -1e9; for (let i = 0; i < n; i++) { const t = (rest[i * 3] - cx) * a[0] + (rest[i * 3 + 1] - cy) * a[1] + (rest[i * 3 + 2] - cz) * a[2]; if (t < t0) t0 = t; if (t > t1) t1 = t; }
+  r.c = [cx, cy, cz]; r.a = a; r.t0 = t0; r.t1 = t1;
+  const sys = m.userData.system, L = t1 - t0, f = sys === 'muscle' ? 0.3 : (sys === 'artery' || sys === 'vein' || sys === 'nerve') ? 0.16 : 0;
+  if (f && L > 0.004) for (let i = 0; i < n; i++) { const t = (rest[i * 3] - cx) * a[0] + (rest[i * 3 + 1] - cy) * a[1] + (rest[i * 3 + 2] - cz) * a[2]; r.pin[i] = tsmooth(Math.min(t - t0, t1 - t) / (f * L)); } // free in the middle, held at the ends
+  tissue.recs.set(id, r); return r;
+}
+function tBinds(A) { // vertices of touching soft pieces that follow A, with how strongly (1 at the surface, 0 at 5 mm)
+  if (tissue.binds.has(A.id)) return tissue.binds.get(A.id);
+  const cell = 0.004, FR0 = 0.005, TOUCH = 0.0018, grid = new Map(), key = (x, y, z) => x * 73856093 ^ y * 19349663 ^ z * 83492791, ar = A.rest;
+  for (let i = 0; i < A.n; i++) { const k = key(Math.floor(ar[i * 3] / cell), Math.floor(ar[i * 3 + 1] / cell), Math.floor(ar[i * 3 + 2] / cell)); (grid.get(k) || grid.set(k, []).get(k)).push(i); }
+  const bb = A.m.geometry.boundingBox || (A.m.geometry.computeBoundingBox(), A.m.geometry.boundingBox), out = [];
+  meshes.forEach(m => {
+    const sy = m.userData.system; if (m === A.m || !m.geometry.getAttribute('position')) return;
+    const fam = GLAND_FAMILY.has(A.m.userData.label) && GLAND_FAMILY.has(m.userData.label), FR = fam ? 0.012 : FR0, rng = Math.ceil(FR / cell); // lobes, isthmus and pyramidal lobe are one gland: they carry each other
+    if (!fam && !(sy === 'artery' || sy === 'vein' || sy === 'nerve' || sy === 'lymph' || sy === 'viscera')) return; // muscles and organs are not carried along; vessels, nerves, nodes and small glands are tethered to what they touch
+    const g = m.geometry; if (!g.boundingBox) g.computeBoundingBox(); const b = g.boundingBox;
+    if (!fam && sy === 'viscera' && b.min.distanceTo(b.max) > 0.015) return;
+    if (b.max.x < bb.min.x - FR || b.min.x > bb.max.x + FR || b.max.y < bb.min.y - FR || b.min.y > bb.max.y + FR || b.max.z < bb.min.z - FR || b.min.z > bb.max.z + FR) return;
+    const R = tRec(m), unpinned = fam || !(sy === 'artery' || sy === 'vein' || sy === 'nerve'), br = R.rest, nb = br.length / 3, js = [], is = [], ws = []; let touch = false;
+    for (let j = 0; j < nb; j++) {
+      const x = br[j * 3], y = br[j * 3 + 1], z = br[j * 3 + 2], cx = Math.floor(x / cell), cy = Math.floor(y / cell), cz = Math.floor(z / cell); let best = -1, bd = FR * FR;
+      for (let dx = -rng; dx <= rng; dx++) for (let dy = -rng; dy <= rng; dy++) for (let dz = -rng; dz <= rng; dz++) { const l = grid.get(key(cx + dx, cy + dy, cz + dz)); if (!l) continue; for (const i of l) { const ex = ar[i * 3] - x, ey = ar[i * 3 + 1] - y, ez = ar[i * 3 + 2] - z, d = ex * ex + ey * ey + ez * ez; if (d < bd) { bd = d; best = i; } } }
+      if (best >= 0) { const d = Math.sqrt(bd), end = unpinned ? 1 : 1 - R.pin[j]; if (d < TOUCH && end > 0.4) touch = true; js.push(j); is.push(best); ws.push((1 - tsmooth(d / FR)) * end); } // contact at a vessel's end counts; a vessel merely running alongside does not
+    }
+    if (touch) out.push({ rec: R, j: Int32Array.from(js), i: Int32Array.from(is), w: Float32Array.from(ws) });
+  });
+  tissue.binds.set(A.id, out); return out;
+}
+function tApply(r) {
+  const p = r.m.geometry.getAttribute('position'), a = p.array, { rest, base, user, fol } = r;
+  for (let k = 0; k < a.length; k++) a[k] = rest[k] + base[k] + user[k] + fol[k];
+  p.needsUpdate = true; const g = r.m.geometry; g.computeVertexNormals(); g.computeBoundingSphere(); g.computeBoundingBox(); needsRender = true;
+}
+const tNonzero = arr => { for (let k = 0; k < arr.length; k++) if (arr[k] !== 0) return true; return false; };
+function tRefresh() { // carry followers along, then write every piece that has moved or is moving
+  for (const r of tissue.recs.values()) r.fol.fill(0);
+  for (const A of [...tissue.recs.values()]) {
+    if (!(tNonzero(A.base) || tNonzero(A.user))) continue;
+    for (const b of tBinds(A)) { const f = b.rec.fol; for (let q = 0; q < b.j.length; q++) { const j = b.j[q] * 3, i = b.i[q] * 3, w = b.w[q]; f[j] += (A.base[i] + A.user[i]) * w; f[j + 1] += (A.base[i + 1] + A.user[i + 1]) * w; f[j + 2] += (A.base[i + 2] + A.user[i + 2]) * w; } }
+  }
+  for (const r of [...tissue.recs.values()]) { const nz = tNonzero(r.base) || tNonzero(r.user) || tNonzero(r.fol); if (nz || r.applied) tApply(r); r.applied = nz; }
+  tissueUi();
+}
+function tissueUi() {
+  let any = false; for (const r of tissue.recs.values()) { for (let k = 0; k < r.user.length; k++) if (r.user[k] !== 0) { any = true; break; } if (any) break; }
+  document.getElementById('tissue-reset').hidden = !any;
+}
+function tAnimate(step, ms, done) { // run step(u) for u 0..1, easing out
+  cancelAnimationFrame(tissue.raf); const t0 = performance.now();
+  if (reduceMotion.matches) { step(1); tRefresh(); if (done) done(); return; }
+  (function f(now) { const u = Math.min(1, (now - t0) / ms), e = 1 - Math.pow(1 - u, 3); step(e); tRefresh(); if (u < 1) tissue.raf = requestAnimationFrame(f); else if (done) done(); })(t0);
+}
+function tissueReset(instant) { // the user's own pulling goes back; poses stay
+  const from = [...tissue.recs.values()].map(r => ({ r, u: r.user.slice() }));
+  if (instant) { from.forEach(({ r }) => r.user.fill(0)); tRefresh(); return; }
+  tAnimate(e => from.forEach(({ r, u }) => { for (let k = 0; k < u.length; k++) r.user[k] = u[k] * (1 - e); }), 300);
+}
+function tissueClearAll() { tissue.poses = []; for (const r of tissue.recs.values()) { r.user.fill(0); r.base.fill(0); } tissue.binds.clear(); cancelAnimationFrame(tissue.raf); tRefresh(); }
+function tissuePoses(list, instant) { // list: [{ids, v:[x,y,z] metres}]; each piece moves by v at full weight in the free part
+  const want = new Map();
+  for (const p of list) for (const id of p.ids) { const m = meshes.get(id); if (!m || !SOFT_SYS.has(m.userData.system)) continue; const r = tRec(m), s = m.userData.side === 'r' ? -1 : (m.userData.side === 'l' ? 1 : p.sign || 1), t = new Float32Array(r.n * 3);
+    for (let i = 0; i < r.n; i++) { const w = r.pin[i]; t[i * 3] = p.v[0] * s * w; t[i * 3 + 1] = p.v[1] * w; t[i * 3 + 2] = p.v[2] * w; } want.set(id, t); }
+  const from = [...tissue.recs.values()].map(r => ({ r, b: r.base.slice(), t: want.get(r.id) || new Float32Array(r.n * 3) }));
+  tissue.binds.clear();
+  const step = e => from.forEach(({ r, b, t }) => { for (let k = 0; k < b.length; k++) r.base[k] = b[k] + (t[k] - b[k]) * e; });
+  if (instant) { step(1); tRefresh(); } else tAnimate(step, 420);
+}
+function tissueStart(e) { // pointer went down: is there a soft piece under it for the tool to take hold of?
+  if (tissue.tool === 'off' || !(state.mode === 'explore' || state.mode === 'surgery')) return null;
+  const m = castAt(e), hit = castAt.hit; if (!m || !hit) return null; if (!SOFT_SYS.has(m.userData.system)) return null;
+  const r = tRec(m), id = m.userData.id, many = tissue.tool === 'move' && sel.has(id) && sel.size > 1;
+  const rs = many ? [...sel].map(i => meshes.get(i)).filter(x => x && SOFT_SYS.has(x.userData.system)).map(tRec) : [r];
+  const P = hit.point.clone();
+  const T = { r, rs, P, x0: e.clientX, y0: e.clientY, dist: activeCam().position.distanceTo(P), tool: tissue.tool, snap: rs.map(q => q.user.slice()), w: null, st: null };
+  if (T.tool === 'mold') { // brush weights from the current surface near the grab point
+    const q = r, a = q.m.geometry.getAttribute('position').array; T.w = new Float32Array(q.n);
+    for (let i = 0; i < q.n; i++) { const d = Math.hypot(a[i * 3] - P.x, a[i * 3 + 1] - P.y, a[i * 3 + 2] - P.z); T.w[i] = (1 - tsmooth(d / tissue.size)) * q.pin[i]; }
+  } else if (T.tool === 'stretch') {
+    const c = r.c, a = r.a, tp = (P.x - c[0]) * a[0] + (P.y - c[1]) * a[1] + (P.z - c[2]) * a[2], dir = tp >= 0 ? 1 : -1, anchorT = dir > 0 ? r.t0 : r.t1;
+    const ax = new THREE.Vector3(a[0] * dir, a[1] * dir, a[2] * dir), an = new THREE.Vector3(c[0] + a[0] * anchorT, c[1] + a[1] * anchorT, c[2] + a[2] * anchorT);
+    T.st = { ax, an, L: Math.max(0.004, r.t1 - r.t0), p0: r.rest.slice() };
+  }
+  canvas.parentElement.classList.add('is-pulling'); return T;
+}
+function tissueMove(e, T) {
+  const cam = activeCam(), px = 2 * Math.tan(cam.fov * Math.PI / 360) * T.dist / canvas.clientHeight;
+  const right = new THREE.Vector3().setFromMatrixColumn(cam.matrixWorld, 0), up = new THREE.Vector3().setFromMatrixColumn(cam.matrixWorld, 1);
+  const dw = right.multiplyScalar((e.clientX - T.x0) * px).addScaledVector(up, -(e.clientY - T.y0) * px);
+  if (T.tool === 'move') T.rs.forEach((q, k) => { const s = T.snap[k]; for (let i = 0; i < q.n; i++) { const w = q.pin[i]; q.user[i * 3] = s[i * 3] + dw.x * w; q.user[i * 3 + 1] = s[i * 3 + 1] + dw.y * w; q.user[i * 3 + 2] = s[i * 3 + 2] + dw.z * w; } });
+  else if (T.tool === 'mold') { const q = T.r, s = T.snap[0]; for (let i = 0; i < q.n; i++) { const w = T.w[i]; q.user[i * 3] = s[i * 3] + dw.x * w; q.user[i * 3 + 1] = s[i * 3 + 1] + dw.y * w; q.user[i * 3 + 2] = s[i * 3 + 2] + dw.z * w; } }
+  else { // stretch: lengthen or shorten along the long axis from the far end, and thin or fatten across it so volume is roughly kept
+    const q = T.r, { ax, an, L } = T.st, s = T.snap[0], f = Math.max(0.45, Math.min(2.6, 1 + dw.dot(ax) / L)), side = 1 / Math.sqrt(f), v = new THREE.Vector3();
+    for (let i = 0; i < q.n; i++) {
+      const k = i * 3; v.set(q.rest[k] + q.base[k] + s[k] - an.x, q.rest[k + 1] + q.base[k + 1] + s[k + 1] - an.y, q.rest[k + 2] + q.base[k + 2] + s[k + 2] - an.z);
+      const al = v.dot(ax); v.addScaledVector(ax, -al); v.multiplyScalar(side).addScaledVector(ax, al * f);
+      q.user[k] = an.x + v.x - q.rest[k] - q.base[k]; q.user[k + 1] = an.y + v.y - q.rest[k + 1] - q.base[k + 1]; q.user[k + 2] = an.z + v.z - q.rest[k + 2] - q.base[k + 2];
+    }
+  }
+  tRefresh();
+}
+function tissueEnd(T) {
+  canvas.parentElement.classList.remove('is-pulling');
+  if (!tissue.elastic) return;
+  const from = T.rs.map(q => ({ r: q, u: q.user.slice() }));
+  tAnimate(e => from.forEach(({ r, u }) => { for (let k = 0; k < u.length; k++) r.user[k] = u[k] * (1 - e); }), 320);
+}
+function setTissueTool(t) {
+  tissue.tool = t; document.querySelectorAll('[data-tissue]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tissue === t)));
+  stageEl.classList.toggle('has-tissue', t !== 'off'); document.getElementById('tissue-size-wrap').hidden = t !== 'mold';
+}
+document.getElementById('tissue-ctl').addEventListener('click', e => { const b = e.target.closest('[data-tissue]'); if (b) setTissueTool(b.dataset.tissue); else if (e.target.closest('#tissue-reset')) tissueReset(false); });
+document.getElementById('tissue-elastic').addEventListener('change', e => { tissue.elastic = e.target.checked; });
+document.getElementById('tissue-size').addEventListener('input', e => { tissue.size = e.target.value / 1000; document.getElementById('tissue-size-val').textContent = e.target.value + ' mm'; });
 
 /* ---------- The larynx as the scope sees it ----------
    Z-Anatomy has the laryngeal cartilages and bare intrinsic muscles but none of the mucosal folds, so Scope mode draws them

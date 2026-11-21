@@ -101,5 +101,11 @@
   "Inferior ophthalmic vein": "ophthalmic-veins",
   "Transverse sinus": "transverse-sigmoid-sinuses",
   "Sigmoid sinus": "transverse-sigmoid-sinuses"
+ },
+ "viscera": {
+  "Isthmus of thyroid gland": "thyroid-gland",
+  "Pyramidal lobe of thyroid gland": "thyroid-gland",
+  "Ligament of Berry": "thyroid-gland",
+  "Tubercle of Zuckerkandl": "thyroid-gland"
  }
 }

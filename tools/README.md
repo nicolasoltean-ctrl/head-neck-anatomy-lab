@@ -45,3 +45,21 @@ A procedure file with `"sim": true` is played task by task with the instrument t
 clickable in its step's view: check with a scripted playthrough in the preview. `source` is shown as the attribution line.
 Cases are adapted, in our own words, from the Open Access Atlas of Otolaryngology, Head & Neck Operative Surgery
 (CC BY-NC 3.0: attribution required, non-commercial use only).
+
+## Authored structures and tissue (2026-11)
+
+`tools/author_structures.py` (run with Blender's Python for numpy, after `split_branches.py`, before `build3d.py`; pass `--extra DIR`
+with oesophagus.bin and thymus-lobe-l/r.bin exported by `export_meshes.py` from objects "Oesophagus", "Left lobe of thymus", "Right
+lobe of thymus") adds what thyroid surgery needs and Z-Anatomy lacks: recurrent laryngeal nerve (right one loops under the subclavian
+artery), superior laryngeal nerve with internal and external branches, superior thyroid artery, middle and inferior thyroid veins,
+the inferior thyroid artery's course behind the carotid sheath with branches, ligament of Berry, tubercle of Zuckerkandl; and splits
+the one-piece gland into right lobe, left lobe, isthmus and pyramidal lobe. Drawn pieces carry `"authored": "drawn"` (the card says
+"Schematic"). Waypoints are millimetres placed against the model's own vessels, cartilages and airway: check new routes by viewing
+from behind and from the side. Note the source places the gland and parathyroids higher than the airway would suggest, and its
+carotid sheath hugs the trachea, so everything is fitted to those as they are.
+
+Tissue tool (Explore and Surgery modes, Tissue row under the viewer): Move drags a whole structure, Stretch lengthens it along its
+long axis from the far end, Mold pulls a soft region (brush size in mm); "Springs back" returns it on release. Muscles, vessels and
+nerves stay held at their ends (`tRec` pins), vessels, nerves, nodes and small glands touching a pulled piece follow it over 5 mm,
+the gland's parts carry each other, bone/cartilage/skin/brain are rigid. Procedure tasks can carry `"pose": [{"label", "v": [lateral,
+up, anterior] mm}]`; finished tasks move those structures (the latest pose per label wins).

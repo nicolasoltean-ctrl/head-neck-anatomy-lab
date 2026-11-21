@@ -134,9 +134,10 @@
      ],
      "hide": [
       "Platysma*",
-      "Superficial investing cervical fascia*"
+      "Superficial investing cervical fascia*",
+      "External jugular vein*"
      ],
-     "ok": "Flaps raised from the thyroid cartilage above to the sternal notch below."
+     "ok": "Flaps raised from the thyroid cartilage above to the sternal notch below. The external jugular veins lie out to the sides over the sternocleidomastoids and are not in the field."
     },
     {
      "do": "Identify the veins that the flap must stay superficial to.",
@@ -213,15 +214,39 @@
       "Sternothyroid muscle"
      ],
      "hide": [
-      "Sternohyoid muscle",
-      "Sternothyroid muscle",
       "Anterior jugular vein"
      ],
-     "ok": "Straps retracted with a right-angled retractor. For a massive goitre they may be divided instead. The surgeon now usually moves to the side of the table opposite the lobe.",
+     "ok": "Straps retracted laterally with a right-angled retractor: they stay attached at both ends and bow aside. For a massive goitre they may be divided instead. The surgeon now usually moves to the side of the table opposite the lobe.",
      "bad": {
       "retractor-self": "The self-retaining retractor is holding the skin flaps. The straps are drawn aside with a hand-held right-angled retractor.",
       "scissors": "The straps are retracted, not divided, unless the goitre is massive."
-     }
+     },
+     "pose": [
+      {
+       "label": "Sternohyoid muscle",
+       "v": [
+        11,
+        0,
+        2
+       ]
+      },
+      {
+       "label": "Sternothyroid muscle",
+       "v": [
+        11,
+        0,
+        2
+       ]
+      },
+      {
+       "label": "Omohyoid muscle",
+       "v": [
+        9,
+        0,
+        2
+       ]
+      }
+     ]
     }
    ],
    "landmarks": [
@@ -250,11 +275,12 @@
    "action": "The lobe is turned towards the midline. The first important vessel to appear is the middle thyroid vein, stretched tight between the lobe and the great vein beside it.",
    "focus": [
     "Thyroid gland",
-    "Internal jugular vein"
+    "Internal jugular vein",
+    "Middle thyroid vein"
    ],
    "risk": [
     {
-     "label": "card:middle-thyroid-vein",
+     "label": "Middle thyroid vein",
      "why": "Encountered early; if it is not secured it tears and bleeds from the internal jugular vein."
     }
    ],
@@ -271,7 +297,25 @@
      "bad": {
       "forceps": "Grasping the gland tears its capsule and the veins on it. Use gentle digital retraction.",
       "haemostat": "Grasping the gland tears its capsule and the veins on it. Use gentle digital retraction."
-     }
+     },
+     "pose": [
+      {
+       "label": "Thyroid gland",
+       "v": [
+        -6,
+        0,
+        2.5
+       ]
+      }
+     ]
+    },
+    {
+     "do": "Find the vein that is pulled tight as the lobe is turned.",
+     "tool": null,
+     "target": [
+      "Middle thyroid vein"
+     ],
+     "ok": "The middle thyroid vein: short and thin-walled, running straight from the lobe to the internal jugular vein. There may be more than one."
     },
     {
      "do": "Identify the vein that the middle thyroid vein drains into.",
@@ -286,7 +330,9 @@
      "tool": [
       "haemostat"
      ],
-     "target": null,
+     "target": [
+      "Middle thyroid vein"
+     ],
      "also": {
       "harmonic": {
        "skip": 2,
@@ -305,8 +351,13 @@
       "scissors",
       "scalpel"
      ],
-     "target": null,
-     "ok": "Divided between the haemostats."
+     "target": [
+      "Middle thyroid vein"
+     ],
+     "ok": "Divided between the haemostats.",
+     "hide": [
+      "Middle thyroid vein"
+     ]
     },
     {
      "do": "Secure both ends.",
@@ -343,17 +394,17 @@
    "action": "The superior thyroid artery, the first branch of the external carotid, runs down over the inferior constrictor to enter the gland just below the tip of the upper pole. The external branch of the superior laryngeal nerve usually lies deep to it, but the relationship is very variable.",
    "focus": [
     "Thyroid gland",
-    "Superior thyroid vein",
-    "External carotid artery"
+    "Superior thyroid artery",
+    "External laryngeal nerve"
    ],
    "risk": [
     {
-     "label": "card:external-laryngeal-nerve",
+     "label": "External laryngeal nerve",
      "why": "Motor to cricothyroid. It lies close to the artery near the upper pole and may pass between its branches; injury lowers pitch and volume and tires the voice."
     },
     {
-     "label": "card:superior-thyroid-artery",
-     "why": "The upper-pole pedicle. Not drawn on this model; the superior thyroid vein marks its course."
+     "label": "Superior thyroid artery",
+     "why": "The upper-pole pedicle: divide it on the gland, below the nerve's crossing."
     }
    ],
    "tasks": [
@@ -363,7 +414,17 @@
       "retractor-hand"
      ],
      "target": null,
-     "ok": "Retractors repositioned; the superior thyroid pedicle comes into view."
+     "ok": "Retractors repositioned; the superior thyroid pedicle comes into view.",
+     "pose": [
+      {
+       "label": "Thyroid gland",
+       "v": [
+        -8,
+        -2,
+        6
+       ]
+      }
+     ]
     },
     {
      "do": "Where on the pedicle should the superior thyroid artery be divided?",
@@ -384,14 +445,15 @@
      ]
     },
     {
-     "do": "Secure and divide the upper-pole pedicle (on this model, click the vein that runs with the artery).",
+     "do": "Secure and divide the upper-pole pedicle on the gland (click the superior thyroid artery).",
      "tool": [
       "tie"
      ],
      "target": [
-      "Superior thyroid vein"
+      "Superior thyroid artery"
      ],
      "hide": [
+      "Superior thyroid artery",
       "Superior thyroid vein"
      ],
      "ok": "The pedicle is double ligated with 2/0 or 3/0 ties and divided on the gland.",
@@ -409,7 +471,7 @@
   {
    "title": "Superior parathyroid gland",
    "view": {
-    "from": "right",
+    "from": "right-back",
     "systems": [
      "artery",
      "vein",
@@ -421,7 +483,14 @@
    },
    "ghost": [
     "Internal jugular vein",
-    "Right common carotid artery"
+    "Right common carotid artery",
+    "Thyroid gland",
+    "Vertebra C3",
+    "Vertebra C4",
+    "Vertebra C5",
+    "Vertebra C6",
+    "Vertebra C7",
+    "Vertebral artery"
    ],
    "action": "With the upper pole delivered forwards, the back of the lobe comes into view. The superior parathyroid lies posteriorly at the level of the upper two-thirds of the lobe, close to the tubercle of Zuckerkandl and about 1 cm above the point where the recurrent laryngeal nerve crosses the inferior thyroid artery.",
    "focus": [
@@ -468,7 +537,7 @@
   {
    "title": "Inferior thyroid veins and inferior parathyroid",
    "view": {
-    "from": "right",
+    "from": "right-back",
     "systems": [
      "artery",
      "vein",
@@ -480,22 +549,26 @@
    },
    "ghost": [
     "Internal jugular vein",
-    "Right common carotid artery"
+    "Right common carotid artery",
+    "Thyroid gland",
+    "Vertebra C3",
+    "Vertebra C4",
+    "Vertebra C5",
+    "Vertebra C6",
+    "Vertebra C7",
+    "Vertebral artery"
    ],
    "action": "The inferior thyroid veins leave the lower pole. Dividing them exposes the trachea and lets the gland be delivered fully out of the wound.",
    "focus": [
     "Thyroid gland",
     "Trachea",
-    "Inferior parathyroid gland"
+    "Inferior parathyroid gland",
+    "Inferior thyroid veins"
    ],
    "risk": [
     {
      "label": "Inferior parathyroid gland",
      "why": "Lies on the lower pole or in the thyrothymic ligament, superficial (ventral) to the plane of the nerve; keep it in place and spare its inferior thyroid artery supply."
-    },
-    {
-     "label": "card:inferior-thyroid-veins",
-     "why": "Leaves the lower pole; divided and ligated to free the gland."
     }
    ],
    "tasks": [
@@ -513,11 +586,16 @@
       "tie",
       "harmonic"
      ],
-     "target": null,
+     "target": [
+      "Inferior thyroid veins"
+     ],
      "ok": "Divided and ligated. The trachea is exposed and the gland can be delivered.",
      "bad": {
       "monopolar": "These veins are divided and ligated."
-     }
+     },
+     "hide": [
+      "Inferior thyroid veins"
+     ]
     },
     {
      "do": "Find the inferior parathyroid gland.",
@@ -536,7 +614,7 @@
   {
    "title": "Find the recurrent laryngeal nerve",
    "view": {
-    "from": "right",
+    "from": "right-back",
     "systems": [
      "artery",
      "vein",
@@ -549,14 +627,14 @@
    "action": "The nerve climbs towards the tracheo-oesophageal groove and enters the larynx deep to the inferior constrictor, behind the cricothyroid joint. On the right it comes in from a more lateral direction and is less predictable. It is classically found in Simon's triangle.",
    "focus": [
     "Inferior thyroid artery",
-    "Right common carotid artery",
+    "Oesophagus",
     "Trachea",
     "Cricoid cartilage"
    ],
    "risk": [
     {
-     "label": "card:recurrent-laryngeal-nerve",
-     "why": "Supplies every intrinsic laryngeal muscle except cricothyroid. It may pass behind, in front of, or between the branches of the inferior thyroid artery. Not drawn on this model."
+     "label": "Recurrent laryngeal nerve",
+     "why": "Supplies every intrinsic laryngeal muscle except cricothyroid. It may pass behind, in front of, or between the branches of the inferior thyroid artery."
     }
    ],
    "tasks": [
@@ -569,11 +647,25 @@
       "Right common carotid artery",
       "Internal jugular vein"
      ],
-     "ghost": [
-      "Internal jugular vein",
-      "Right common carotid artery"
-     ],
-     "ok": "The common carotid artery and internal jugular vein are retracted laterally."
+     "ok": "The common carotid artery and internal jugular vein are retracted laterally.",
+     "pose": [
+      {
+       "label": "Right common carotid artery",
+       "v": [
+        6,
+        0,
+        0
+       ]
+      },
+      {
+       "label": "Internal jugular vein",
+       "v": [
+        7,
+        0,
+        0
+       ]
+      }
+     ]
     },
     {
      "do": "Simon's triangle has the common carotid laterally and the oesophagus medially. Identify its superior border.",
@@ -584,11 +676,21 @@
      "ok": "The inferior thyroid artery forms the upper side of the triangle."
     },
     {
+     "do": "Simon's triangle is bounded by the carotid, the inferior thyroid artery and one more structure on its medial side. Click it.",
+     "tool": null,
+     "target": [
+      "Oesophagus"
+     ],
+     "ok": "The oesophagus forms the medial side. The nerve lies in the groove between it and the trachea."
+    },
+    {
      "do": "Find the nerve within the triangle.",
      "tool": [
       "dissector"
      ],
-     "target": null,
+     "target": [
+      "Recurrent laryngeal nerve"
+     ],
      "ok": "The tissues are teased apart until the nerve is seen. It is left undisturbed where it lies: not skeletonised, not handled. Some surgeons instead find it about 0.5 cm below the inferior horn of the thyroid cartilage, where it enters the larynx.",
      "bad": {
       "monopolar": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
@@ -604,14 +706,22 @@
     "A non-recurrent nerve (about 0.6%, almost always on the right) leaves the vagus high and runs straight to the larynx.",
     "Elevating the tubercle of Zuckerkandl usually shows the nerve medial to it."
    ],
-   "pearl": "See the nerve and all of its divisions before anything in this area is divided."
+   "pearl": "See the nerve and all of its divisions before anything in this area is divided.",
+   "ghost": [
+    "Thyroid gland",
+    "Vertebra C3",
+    "Vertebra C4",
+    "Vertebra C5",
+    "Vertebra C6",
+    "Vertebra C7",
+    "Vertebral artery"
+   ]
   },
   {
    "title": "Capsular dissection and Berry's ligament",
    "view": {
-    "from": "right",
+    "from": "right-back",
     "systems": [
-     "muscle",
      "artery",
      "vein",
      "nerve",
@@ -624,18 +734,30 @@
     "Sternocleidomastoid muscle",
     "Omohyoid muscle",
     "Internal jugular vein",
-    "Right common carotid artery"
+    "Right common carotid artery",
+    "Thyroid gland",
+    "Vertebra C3",
+    "Vertebra C4",
+    "Vertebra C5",
+    "Vertebra C6",
+    "Vertebra C7",
+    "Vertebral artery",
+    "Inferior thyroid artery",
+    "Cricoid cartilage",
+    "Thyroid cartilage",
+    "Trachea"
    ],
    "action": "The inferior thyroid artery, from the thyrocervical trunk, is the sole arterial supply of all the parathyroids. The posteromedial gland is bound to the cricoid and the first and second tracheal rings by the ligament of Berry; most nerves lie within 3 mm of it.",
    "focus": [
     "Inferior thyroid artery",
+    "Ligament of Berry",
     "Cricoid cartilage",
     "Trachea",
     "Thyroid gland"
    ],
    "risk": [
     {
-     "label": "card:recurrent-laryngeal-nerve",
+     "label": "Recurrent laryngeal nerve",
      "why": "Usually passes behind the ligament of Berry, within 3 mm; rarely it is embedded in it."
     },
     {
@@ -667,15 +789,23 @@
      "tool": [
       "tie"
      ],
-     "target": [
-      "Inferior thyroid artery"
-     ],
-     "ok": "Each branch is individually ligated with a 3/0 tie and divided on the capsule, with minimal handling of the nerve.",
+     "target": null,
+     "ok": "Each branch is individually ligated with a 3/0 tie and divided on the capsule, with minimal handling of the nerve. (Shown faded here so that the ligament behind it can be reached.)",
      "bad": {
       "monopolar": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
       "bipolar": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
       "harmonic": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve."
-     }
+     },
+     "pose": [
+      {
+       "label": "Thyroid gland",
+       "v": [
+        -9,
+        0,
+        5
+       ]
+      }
+     ]
     },
     {
      "do": "What must be true before the ligament of Berry is divided?",
@@ -696,14 +826,13 @@
      ]
     },
     {
-     "do": "Free the gland from the airway at the ligament of Berry (click where the ligament attaches).",
+     "do": "Free the gland from the airway at the ligament of Berry (click the ligament).",
      "tool": [
       "scalpel",
       "scissors"
      ],
      "target": [
-      "Cricoid cartilage",
-      "Trachea"
+      "Ligament of Berry"
      ],
      "ok": "Divided by sharp dissection with the nerve in view; the lobe is free of the trachea.",
      "bad": {
@@ -711,7 +840,20 @@
       "bipolar": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
       "harmonic": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
       "finger": "The ligament is dense; pulling it apart drags on the nerve. It is divided sharply."
-     }
+     },
+     "hide": [
+      "Ligament of Berry"
+     ],
+     "pose": [
+      {
+       "label": "Thyroid gland",
+       "v": [
+        -13,
+        -1,
+        9
+       ]
+      }
+     ]
     }
    ],
    "landmarks": [
@@ -733,12 +875,13 @@
     "peel": 2
    },
    "ghost": [
-    "Sternocleidomastoid muscle"
+    "Thyroid gland"
    ],
    "action": "For a lobectomy the isthmus is divided and the lobe removed. For a total thyroidectomy the same steps are repeated on the other side instead.",
    "focus": [
-    "Thyroid gland",
-    "Trachea"
+    "Isthmus of thyroid gland",
+    "Trachea",
+    "Pyramidal lobe of thyroid gland"
    ],
    "risk": [],
    "tasks": [
@@ -748,7 +891,7 @@
       "haemostat"
      ],
      "target": [
-      "Thyroid gland"
+      "Isthmus of thyroid gland"
      ],
      "ok": "The isthmus is cross-clamped."
     },
@@ -760,12 +903,12 @@
       "harmonic"
      ],
      "target": [
-      "Thyroid gland"
+      "Isthmus of thyroid gland"
      ],
-     "ghost": [
+     "ok": "Divided; the lobe is out of the neck.",
+     "hide": [
       "Thyroid gland"
-     ],
-     "ok": "Divided; the lobe is out. (This model's gland is one piece, so the whole gland fades to stand for the removed lobe.)"
+     ]
     },
     {
      "do": "Secure the cut edge of the remnant.",
@@ -796,7 +939,6 @@
     "peel": 2
    },
    "ghost": [
-    "Thyroid gland",
     "Sternocleidomastoid muscle",
     "Omohyoid muscle"
    ],
@@ -874,5 +1016,5 @@
   "Seroma: small ones are common and resorb; larger ones can be aspirated under sterile conditions.",
   "Tracheomalacia: an uncommon cause of obstruction, unmasked when a long-standing goitre that was splinting the trachea is removed."
  ],
- "notes": "Adapted (reworded, not copied) from the Open Access Atlas thyroidectomy chapter, CC BY-NC 3.0: attribution is shown in the panel; NON-COMMERCIAL licence. Not on the model: recurrent and external laryngeal nerves, superior thyroid artery, middle and inferior thyroid veins, oesophagus, ligament of Berry, tubercle of Zuckerkandl; tasks on those use no model target or a stand-in (superior thyroid vein for the upper-pole pedicle; cricoid/trachea for Berry's ligament). The gland is one mesh, so lobe removal is shown by ghosting the whole gland. Atlas spells the retractor 'Jowell's'; Joll's is the usual spelling."
+ "notes": "Adapted (reworded, not copied) from the Open Access Atlas thyroidectomy chapter, CC BY-NC 3.0: attribution is shown in the panel; NON-COMMERCIAL licence. Not on the model: recurrent and external laryngeal nerves, superior thyroid artery, middle and inferior thyroid veins, oesophagus, ligament of Berry, tubercle of Zuckerkandl; tasks on those use no model target or a stand-in (superior thyroid vein for the upper-pole pedicle; cricoid/trachea for Berry's ligament). The gland is one mesh, so lobe removal is shown by ghosting the whole gland. Atlas spells the retractor 'Jowell's'; Joll's is the usual spelling. Structures added to the model for this case are authored (tools/author_structures.py), schematic in exact millimetres."
 }

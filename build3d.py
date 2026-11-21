@@ -115,7 +115,7 @@ for sysname in systems:
             card = match_label(m["label"], sysname); labels_seen[(sysname, m["label"])] = card
             if card: matched += 1
         group = card_by_id[card]["group"] if card else ""
-        recs.append({"id": m["id"], "label": m["label"], "side": m["side"], "tier": m["tier"], "off": off, "len": len(data), "tris": m["tris"], "card": card, "group": group, "bbox": m["bbox"], **({"parent": parents[(sysname, m["label"])]} if (sysname, m["label"]) in parents else {})})
+        recs.append({"id": m["id"], "label": m["label"], "side": m["side"], "tier": m["tier"], "off": off, "len": len(data), "tris": m["tris"], "card": card, "group": group, "bbox": m["bbox"], **({"auth": 1} if m.get("authored") == "drawn" else {}), **({"parent": parents[(sysname, m["label"])]} if (sysname, m["label"]) in parents else {})})
     (packs_dir / f"{sysname}.pack").write_bytes(out)
     manifest["packs"][sysname] = {"file": f"packs/{sysname}.pack", "bytes": len(out), "meshes": recs}
     print(f"{sysname}: {len(recs)} meshes, {len(out)//1024} KB")

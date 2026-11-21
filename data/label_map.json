@@ -156,7 +156,8 @@
   "Pterygopalatine (third) part of maxillary artery": "maxillary-artery-pterygopalatine-part",
   "Posterior superior alveolar artery": "posterior-superior-alveolar-artery",
   "Middle superior alveolar artery": "infraorbital-artery",
-  "Ascending palatine artery": "ascending-palatine-artery"
+  "Ascending palatine artery": "ascending-palatine-artery",
+  "Superior thyroid artery": "superior-thyroid-artery"
  },
  "vein": {
   "Anterior division of retromandibular vein": "anterior-division-of-retromandibular-vein",
@@ -209,7 +210,11 @@
   "Trachea": "cervical-trachea",
   "Uvula of palate": "uvula-of-palate",
   "Vitreous body": "vitreous-body",
-  "Zonular fibres": "zonular-fibers"
+  "Zonular fibres": "zonular-fibers",
+  "Oesophagus": "cervical-esophagus",
+  "Ligament of Berry": "ligament-of-berry",
+  "Tubercle of Zuckerkandl": "tubercle-of-zuckerkandl",
+  "Thymus": "thymus"
  },
  "cns": {
   "Amygdaloid body": "amygdaloid-body",
