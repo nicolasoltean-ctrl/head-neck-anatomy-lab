@@ -63,3 +63,14 @@ long axis from the far end, Mold pulls a soft region (brush size in mm); "Spring
 nerves stay held at their ends (`tRec` pins), vessels, nerves, nodes and small glands touching a pulled piece follow it over 5 mm,
 the gland's parts carry each other, bone/cartilage/skin/brain are rigid. Procedure tasks can carry `"pose": [{"label", "v": [lateral,
 up, anterior] mm}]`; finished tasks move those structures (the latest pose per label wins).
+
+## Instrument physics (simulation cases)
+
+In a `sim` case the instruments act on the tissue (template3d.html, `phys*`). Haemostat and ligature place marks at the clicked
+point along the structure's long axis (two each side of it); bipolar seals; a task flagged `"divide": true` (or an `also` harmonic)
+really divides the structure there with a scalpel, scissors or harmonic scalpel: the mesh is split in two with closed ends that
+recoil apart, vessels without a clamp, tie or seal within 9 mm bleed (blood pool, mL counter, a forced "control the bleeding" task),
+heat within 3 mm of a laryngeal nerve or a grip on one records a nerve injury, and a task with `"retract": {"min": mm}` is done by
+dragging the structure aside with a retractor or finger (a plain click applies the scripted `pose`). Every act is logged in the
+structure's resting frame (`surg.acts`), so Back and Next rebuild the same field by replay. Blood lost and injuries are kept for the
+case result.

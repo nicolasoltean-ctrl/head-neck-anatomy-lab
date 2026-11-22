@@ -301,6 +301,8 @@ body.entering #gl { transition: opacity .55s ease .6s; }
 .choices { display: grid; gap: 6px; } .choices .btn { text-align: left; border-radius: 12px; white-space: normal; }
 .simlog { list-style: none; padding: 0; display: grid; gap: 4px; font-size: 13px; color: var(--fg-2); } .simlog li { padding-left: 20px; position: relative; } .simlog li::before { content: "\2713"; position: absolute; left: 2px; color: var(--good); font-weight: 700; }
 .stage.has-tool canvas { cursor: var(--tool-cursor), crosshair !important; }
+.bleedbar { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 12.5px; color: var(--fg-2); padding: 6px 10px; border-radius: 10px; background: color-mix(in srgb, var(--bad) 9%, var(--bg-2)); } .bleedbar b { font-family: var(--font-mono); color: var(--bad); } .bleedbar .inj { color: var(--bad); font-weight: 600; }
+.checkbox.alarm { border-color: var(--bad); background: color-mix(in srgb, var(--bad) 7%, var(--bg)); }
 /* the endoscope view: a round image on black */
 .stage.is-scope { background-color: #06080c; border-color: transparent; }
 .stage.is-scope::before, .stage.is-scope .views, .stage.is-scope .hint, .stage.is-scope .corner { display: none; }
@@ -720,7 +722,7 @@ function pick(e) {
   if (state.mode === 'quiz' && !findOpen()) return; // name and function quizzes are answered in the panel
   const m = castAt(e); const add = e.shiftKey || e.metaKey || e.ctrlKey;
   if (state.mode === 'surgery' && surg.check && !surg.check.done) { if (m) surgAnswer(labelOfId.get(m.userData.id)); return; }
-  if (state.mode === 'surgery' && simTask() && simTask().target) { if (!m) return; if (simTask().tool && !surg.tool) { surg.said = 'Choose an instrument from the tray first.'; renderSurgery(); } else simUse(surg.tool, m.userData.id); return; }
+  if (state.mode === 'surgery' && simTask() && simTask().target) { if (!m) return; if (simTask().tool && !surg.tool) { surg.said = 'Choose an instrument from the tray first.'; renderSurgery(); } else simUse(surg.tool, m.userData.id, castAt.hit); return; }
   if (!m) { if (!add) select(null); return; }
   const r = stageEl.getBoundingClientRect(); const pop = { x: e.clientX - r.left, y: e.clientY - r.top };
   select(labelOfId.get(m.userData.id), false, { ids: [m.userData.id], add, pop });
@@ -911,7 +913,7 @@ for (const k of ['explore', 'quiz', 'surgery', 'scope']) document.getElementById
 /* ---------- Surgery: step-by-step operative anatomy ----------
    Each procedure (data/procedures/*.json) is a list of steps. A step sets the layers and peel depth, removes what has been
    divided or retracted so far, highlights the structures in play (blue) and those at risk (amber), and frames them. */
-const surg = { proc: null, i: 0, check: null, t: 0, tool: null, said: '', miss: 0, log: [], stats: new Map() };
+const surg = { proc: null, i: 0, check: null, t: 0, tool: null, said: '', miss: 0, log: [], stats: new Map(), acts: [] };
 const SURG_VIEWS = { front: [0, 1.45], left: [Math.PI / 2, 1.5], right: [-Math.PI / 2, 1.5], back: [Math.PI, 1.45], 'left-front': [Math.PI / 4, 1.45], 'right-front': [-Math.PI / 4, 1.45], 'left-back': [3 * Math.PI / 4, 1.45], 'right-back': [-3 * Math.PI / 4, 1.45], 'below-front': [0, 1.95], 'above-front': [0, 0.95], 'below-left': [Math.PI / 3, 1.95] };
 function labelsNamed(label) { return [...labels.values()].filter(L => !L.virtual && L.label === label); }
 function idsOfLabel(label, side) {
@@ -932,15 +934,15 @@ function frameIds(ids, from, minDist) {
   else { orbit.target.copy(center); orbit.dist = radius * 3.4; }
   settleTok++; updateCamera();
 }
-function surgStart(id) { surg.proc = PROCS.find(p => p.id === id) || null; surg.i = 0; surg.t = 0; surg.tool = null; surg.said = ''; surg.miss = 0; surg.log = []; surg.stats = new Map(); simCursor(); if (surg.proc) surgApply(); else renderSurgery(); }
-function surgGo(i) { if (!surg.proc) return; const n = surg.proc.steps.length; if (i < 0 || i > n) return; surg.i = i; surg.t = 0; surg.tool = null; surg.said = ''; surg.miss = 0; surg.log = []; simCursor(); surgApply(); }
+function surgStart(id) { surg.proc = PROCS.find(p => p.id === id) || null; surg.i = 0; surg.t = 0; surg.tool = null; surg.said = ''; surg.miss = 0; surg.log = []; surg.stats = new Map(); physReset(true); simCursor(); if (surg.proc) surgApply(); else renderSurgery(); }
+function surgGo(i) { if (!surg.proc) return; const n = surg.proc.steps.length; if (i < 0 || i > n) return; surg.acts = surg.acts.filter(a => a.k < i); surg.i = i; surg.t = 0; surg.tool = null; surg.said = ''; surg.miss = 0; surg.log = []; simCursor(); surgApply(); }
 function surgLayers(animate) { // what has been divided, retracted or removed so far: whole earlier steps, and the tasks already done in this one
   const P = surg.proc, last = Math.min(surg.i, P.steps.length - 1), st = P.steps[last], side = P.side || 'both', hide = [], ghost = [...(st.ghost || [])];
   P.steps.forEach((s, k) => { if (k > last) return; hide.push(...(s.hide || [])); (s.tasks || []).forEach((t, j) => { if (k < last || j < surg.t || surg.i > last) { hide.push(...(t.hide || [])); ghost.push(...(t.ghost || [])); } }); });
   hiddenIds.clear(); for (const lab of hide) surgIds(lab, side).forEach(id => hiddenIds.add(id));
   ghostIds.clear(); for (const lab of ghost) surgIds(lab, side).forEach(id => { if (!hiddenIds.has(id)) ghostIds.add(id); });
   const poses = new Map(); // finished tasks can move structures aside (retracted, rotated): the latest pose of each wins
-  P.steps.forEach((s, k) => { if (k > last) return; (s.tasks || []).forEach((t, j) => { if (k < last || j < surg.t || surg.i > last) (t.pose || []).forEach(q => poses.set(q.label, q)); }); });
+  P.steps.forEach((s, k) => { if (k > last) return; (s.tasks || []).forEach((t, j) => { if ((k < last || j < surg.t || surg.i > last) && !surg.acts.some(a => a.kind === 'retract' && a.k === k && a.j === j)) (t.pose || []).forEach(q => poses.set(q.label, q)); }); });
   tissuePoses([...poses.values()].map(q => ({ ids: surgIds(q.label, side), v: q.v.map(x => x / 1000), sign: side === 'r' ? -1 : 1 })), !animate);
 }
 function surgApply() {
@@ -950,7 +952,7 @@ function surgApply() {
   const sys = st.view.systems || ['skin', 'muscle', 'bone'];
   setSystems(sys); setPeel(st.view.peel || 0);
   state.side = 'both'; document.querySelectorAll('[data-side]').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.side === 'both')));
-  tissueReset(true); surgLayers(false); state.isolate = false; surgPaint();
+  tissueReset(true); physReset(false); physReplay(); surgLayers(false); state.isolate = false; surgPaint();
   const token = P.id + ':' + surg.i; surg.token = token;
   Promise.all(sys.map(k => loadSystem(k))).then(() => { if (surg.token === token && state.mode === 'surgery') { surgLayers(false); surgPaint(); } });
 }
@@ -993,7 +995,7 @@ const TOOL_ICON = {
   drain: 'M3 10h8c3 0 2 3 4.5 3 M21 14a3 3 0 1 1-6 0 3 3 0 0 1 6 0z M5 10v.01 M8 10v.01', harmonic: 'M20 4L8 16l-4 2 M8 16l-2 4 M17 11l-2 3h3l-2 3' };
 const toolSvg = (id, extra) => `<svg viewBox="0 0 24 24" ${extra || ''} fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${TOOL_ICON[id] || ''}"/></svg>`;
 const toolName = id => (INSTR.find(x => x.id === id) || { name: id }).name;
-function simTask() { const P = surg.proc; if (!P || !P.sim || surg.i >= P.steps.length) return null; return (P.steps[surg.i].tasks || [])[surg.t] || null; }
+function simTask() { const P = surg.proc; if (!P || !P.sim || surg.i >= P.steps.length) return null; if (phys.bleeds.size) return physBleedTask(); return (P.steps[surg.i].tasks || [])[surg.t] || null; }
 function simCursor() { // the chosen instrument rides on the pointer over the model
   const on = !!(surg.tool && state.mode === 'surgery' && simTask()); stageEl.classList.toggle('has-tool', on); if (!on) return;
   const d = TOOL_ICON[surg.tool], svg = `<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="${d}" stroke="#fff" stroke-width="4"/><path d="${d}" stroke="#1e5eea" stroke-width="1.8"/></svg>`;
@@ -1004,12 +1006,13 @@ function simDone(text, skip) {
   surg.log.push(text); surg.t += 1 + (skip || 0); surg.tool = null; surg.said = ''; surg.miss = 0; simCursor(); surgLayers(true); surgPaint(surg.t < st.tasks.length);
 }
 function simFail(text) { surg.miss++; surg.said = text; renderSurgery(); }
-function simUse(tool, id) { // an instrument applied to the field, or to the piece of the model that was clicked
-  const T = simTask(); if (!T || T.choice) return; const P = surg.proc;
-  if (tool && T.also && T.also[tool]) return simDone(T.also[tool].ok, T.also[tool].skip);
+function simUse(tool, id, hit) { // an instrument applied to the field, or to the piece of the model that was clicked
+  const T = simTask(); if (!T || T.choice) return; const P = surg.proc; if (T.synthetic) return physBleedUse(tool, id, hit, T);
+  const onTarget = !T.target || (id !== undefined && T.target.some(spec => surgIds(spec, P.side || 'both').includes(id)));
+  if (tool && T.also && T.also[tool] && onTarget) { const note = physUse(tool, id, hit, T); return simDone(T.also[tool].ok + note, T.also[tool].skip); }
   if (T.tool && !T.tool.includes(tool)) return simFail((T.bad && (T.bad[tool] || T.bad['*'])) || `${toolName(tool)}: not what this task calls for.`);
-  if (T.target && !T.target.some(spec => surgIds(spec, P.side || 'both').includes(id))) { const L = labels.get(labelOfId.get(id)); return simFail(`That is ${L ? L.label.toLowerCase() : 'another structure'}${L && T.target.map(bare).includes(L.label) ? ', on the other side' : ''}.`); }
-  simDone(T.ok);
+  if (!onTarget) { const L = labels.get(labelOfId.get(id)); return simFail(`That is ${L ? L.label.toLowerCase() : 'another structure'}${L && T.target.map(bare).includes(L.label) ? ', on the other side' : ''}.`); }
+  const note = physUse(tool, id, hit, T); simDone(T.ok + note);
 }
 function simScore() { const P = surg.proc; let n = 0, first = 0, slips = 0; P.steps.forEach((s, i) => (s.tasks || []).forEach((t, j) => { n++; const m = surg.stats.get(i + ':' + j); if (m === 0) first++; else if (m) slips += m; })); return { n, first, slips, seen: surg.stats.size }; }
 function renderSurgery() {
@@ -1029,7 +1032,7 @@ function renderSurgery() {
   if (surg.i >= n) {
     const sc = P.sim ? simScore() : null;
     ui.innerHTML = `<div class="eyebrow"><span>${esc(P.category)}</span><span>·</span><span>Complete</span></div><h2>${esc(P.name)}</h2>${dots}
-      ${sc ? `<div class="checkbox"><h3>Case result</h3><div class="score"><b>${sc.first}</b><span>of ${sc.n} tasks right first time</span><span class="spacer"></span><span>${sc.slips} ${sc.slips === 1 ? 'slip' : 'slips'}</span></div></div>` : ''}
+      ${sc ? `<div class="checkbox"><h3>Case result</h3><div class="score"><b>${sc.first}</b><span>of ${sc.n} tasks right first time</span><span class="spacer"></span><span>${sc.slips} ${sc.slips === 1 ? 'slip' : 'slips'}</span></div><p class="fine">Blood lost: ${Math.round(phys.blood)} mL${phys.injuries.length ? '' : ' · no nerve injuries'}</p>${phys.injuries.length ? `<ul class="results">${phys.injuries.map(x => `<li class="miss"><span>!</span><div>${esc(x)}</div></li>`).join('')}</ul>` : ''}</div>` : ''}
       <h3>Complications and their anatomy</h3><ul>${(P.complications || []).map(c => `<li>${esc(c)}</li>`).join('')}</ul>
       <div class="nav"><button class="btn" data-go="${n - 1}">Back</button><button class="btn primary" data-proc="${esc(P.id)}">Run it again</button><span class="spacer"></span><button class="linkbtn" data-proc="">All procedures</button></div>${src}${fine}`;
     return;
@@ -1040,12 +1043,12 @@ function renderSurgery() {
   if (c) check = `<div class="checkbox"><h3>Identify on the model</h3><p>${esc(c.prompt)}</p>${c.done ? `<div class="verdict good">${c.ok ? 'Correct' : 'Shown'}: ${esc(c.answer)}.</div>` : `${c.ok === false ? `<div class="verdict bad">${c.said ? `That is ${esc(c.said)}.` : 'Not that one.'} Try again.</div>` : `<p class="fine">Click the structure on the model. The highlights appear once you have answered.</p>`}<div class="nav"><button class="btn" id="surg-reveal">Show me</button></div>`}</div>`;
   let sim = '';
   if (P.sim) {
-    const log = surg.log.map(x => `<li>${esc(x)}</li>`).join('');
+    const log = surg.log.map(x => `<li>${esc(x)}</li>`).join(''), bar = (phys.blood > 0 || phys.injuries.length) ? `<div class="bleedbar"><span>Blood lost <b id="blood">${Math.round(phys.blood)} mL</b></span>${phys.injuries.map(x => `<span class="inj">${esc(x)}</span>`).join('')}</div>` : '';
     if (T) {
       const body = T.choice ? `<div class="choices">${T.choice.map((o, k) => `<button class="btn" data-choice="${k}">${esc(o.t)}</button>`).join('')}</div>`
         : `<div class="tray${T.tool ? '' : ' off'}" role="group" aria-label="Instrument tray">${(P.instruments || []).map(id => `<button class="tool" data-tool="${id}" aria-pressed="${surg.tool === id}" title="${esc((INSTR.find(x => x.id === id) || {}).note || '')}"${T.tool ? '' : ' disabled'}>${toolSvg(id)}<span>${esc(toolName(id))}</span></button>`).join('')}</div>`;
-      const hint = T.choice ? 'Choose one.' : !T.tool ? 'No instrument needed: click the structure on the model.' : T.target ? (surg.tool ? `${toolName(surg.tool)} in hand: click where to use it on the model.` : 'Choose an instrument, then click where to use it on the model.') : 'Choose the instrument to use.';
-      sim = `${log ? `<ul class="simlog">${log}</ul>` : ''}<div class="checkbox"><div class="exam-head"><h3>Task ${surg.t + 1} of ${st.tasks.length}</h3><button class="linkbtn" id="sim-show">Show me</button></div><p><b>${esc(T.do)}</b></p>${body}
+      const hint = T.choice ? 'Choose one.' : !T.tool ? 'No instrument needed: click the structure on the model.' : T.retract ? (surg.tool ? `${toolName(surg.tool)} in hand: drag the structure aside on the model (at least ${T.retract.min} mm), or click it for a standard retraction.` : 'Choose a retractor, then drag the structure aside on the model (or click it).') : T.synthetic ? 'Click the red pool at the cut end with the instrument in hand.' : T.target ? (surg.tool ? `${toolName(surg.tool)} in hand: click where to use it on the model.` : 'Choose an instrument, then click where to use it on the model.') : 'Choose the instrument to use.';
+      sim = `${log ? `<ul class="simlog">${log}</ul>` : ''}${bar}<div class="checkbox${T.synthetic ? ' alarm' : ''}"><div class="exam-head"><h3>Task ${surg.t + 1} of ${st.tasks.length}</h3><button class="linkbtn" id="sim-show">Show me</button></div><p><b>${esc(T.do)}</b></p>${body}
         ${surg.said ? `<div class="verdict bad">${esc(surg.said)}</div>` : `<p class="fine">${esc(hint)}</p>`}</div>`;
     } else sim = `<ul class="simlog">${log}</ul>`;
   }
@@ -1065,7 +1068,12 @@ document.getElementById('surgery-ui').addEventListener('click', e => {
   else if (t.id === 'surg-reveal' && surg.check) { surg.check.done = true; surg.check.ok = false; surgPaint(); }
   else if (t.dataset.tool) { const T = simTask(); if (!T || !T.tool) return; surg.tool = t.dataset.tool; surg.said = ''; if (T.target) { simCursor(); renderSurgery(); } else simUse(surg.tool); }
   else if (t.dataset.choice !== undefined) { const T = simTask(), o = T && T.choice && T.choice[+t.dataset.choice]; if (o) { if (o.ok) simDone(o.why); else simFail(o.why); } }
-  else if (t.id === 'sim-show') { const T = simTask(); if (T) { surg.miss++; simDone('Shown. ' + (T.choice ? T.choice.find(o => o.ok).t + '. ' + T.choice.find(o => o.ok).why : (T.tool ? toolName(T.tool[0]) + (T.target ? ' on ' + bare(T.target[0]).toLowerCase() : '') + '. ' : '') + T.ok)); } }
+  else if (t.id === 'sim-show') { const T = simTask(); if (T) {
+    if (T.synthetic) { [...phys.bleeds.keys()].forEach(id => physBleedUse('haemostat', id, null, T)); return; }
+    surg.miss++; const ok = T.choice && T.choice.find(o => o.ok); let text;
+    if (ok) text = 'Shown. ' + ok.t + '. ' + ok.why;
+    else { if (T.target && T.tool) { const id = T.target.flatMap(sp => surgIds(sp, surg.proc.side || 'both'))[0]; if (id !== undefined) physUse(T.tool[0], id, null, T); } else if (T.tool && !T.target && T.tool[0] === 'tie') physUse('tie', undefined, null, T); text = 'Shown. ' + (T.tool ? toolName(T.tool[0]) + (T.target ? ' on ' + bare(T.target[0]).toLowerCase() : '') + '. ' : '') + T.ok; }
+    simDone(text); } }
 });
 
 /* ---------- Tissue: structures that move, stretch and take a new shape ----------
@@ -1080,7 +1088,7 @@ const tsmooth = t => t <= 0 ? 0 : t >= 1 ? 1 : t * t * (3 - 2 * t);
 function tRec(m) {
   const id = m.userData.id; let r = tissue.recs.get(id); if (r) return r;
   const arr = m.geometry.getAttribute('position').array, n = arr.length / 3, rest = new Float32Array(arr);
-  r = { m, id, n, rest, base: new Float32Array(n * 3), user: new Float32Array(n * 3), fol: new Float32Array(n * 3), pin: new Float32Array(n).fill(1), c: [0, 0, 0], a: [0, 1, 0], t0: 0, t1: 0 };
+  r = { m, id, n, rest, base: new Float32Array(n * 3), user: new Float32Array(n * 3), fol: new Float32Array(n * 3), perm: new Float32Array(n * 3), pin: new Float32Array(n).fill(1), c: [0, 0, 0], a: [0, 1, 0], t0: 0, t1: 0 };
   let cx = 0, cy = 0, cz = 0; for (let i = 0; i < n; i++) { cx += rest[i * 3]; cy += rest[i * 3 + 1]; cz += rest[i * 3 + 2]; } cx /= n; cy /= n; cz /= n;
   let a = [0.3, 1, 0.2];
   for (let it = 0; it < 7; it++) { // principal axis by power iteration on the covariance
@@ -1117,19 +1125,19 @@ function tBinds(A) { // vertices of touching soft pieces that follow A, with how
   tissue.binds.set(A.id, out); return out;
 }
 function tApply(r) {
-  const p = r.m.geometry.getAttribute('position'), a = p.array, { rest, base, user, fol } = r;
-  for (let k = 0; k < a.length; k++) a[k] = rest[k] + base[k] + user[k] + fol[k];
+  const p = r.m.geometry.getAttribute('position'), a = p.array, { rest, base, user, fol, perm } = r;
+  for (let k = 0; k < a.length; k++) a[k] = rest[k] + base[k] + user[k] + fol[k] + perm[k];
   p.needsUpdate = true; const g = r.m.geometry; g.computeVertexNormals(); g.computeBoundingSphere(); g.computeBoundingBox(); needsRender = true;
 }
 const tNonzero = arr => { for (let k = 0; k < arr.length; k++) if (arr[k] !== 0) return true; return false; };
 function tRefresh() { // carry followers along, then write every piece that has moved or is moving
   for (const r of tissue.recs.values()) r.fol.fill(0);
   for (const A of [...tissue.recs.values()]) {
-    if (!(tNonzero(A.base) || tNonzero(A.user))) continue;
-    for (const b of tBinds(A)) { const f = b.rec.fol; for (let q = 0; q < b.j.length; q++) { const j = b.j[q] * 3, i = b.i[q] * 3, w = b.w[q]; f[j] += (A.base[i] + A.user[i]) * w; f[j + 1] += (A.base[i + 1] + A.user[i + 1]) * w; f[j + 2] += (A.base[i + 2] + A.user[i + 2]) * w; } }
+    if (!(tNonzero(A.base) || tNonzero(A.user) || tNonzero(A.perm))) continue;
+    for (const b of tBinds(A)) { const f = b.rec.fol; for (let q = 0; q < b.j.length; q++) { const j = b.j[q] * 3, i = b.i[q] * 3, w = b.w[q]; f[j] += (A.base[i] + A.user[i] + A.perm[i]) * w; f[j + 1] += (A.base[i + 1] + A.user[i + 1] + A.perm[i + 1]) * w; f[j + 2] += (A.base[i + 2] + A.user[i + 2] + A.perm[i + 2]) * w; } }
   }
-  for (const r of [...tissue.recs.values()]) { const nz = tNonzero(r.base) || tNonzero(r.user) || tNonzero(r.fol); if (nz || r.applied) tApply(r); r.applied = nz; }
-  tissueUi();
+  for (const r of [...tissue.recs.values()]) { const nz = tNonzero(r.base) || tNonzero(r.user) || tNonzero(r.fol) || tNonzero(r.perm); if (nz || r.applied) tApply(r); r.applied = nz; }
+  physMarks(); tissueUi();
 }
 function tissueUi() {
   let any = false; for (const r of tissue.recs.values()) { for (let k = 0; k < r.user.length; k++) if (r.user[k] !== 0) { any = true; break; } if (any) break; }
@@ -1145,7 +1153,7 @@ function tissueReset(instant) { // the user's own pulling goes back; poses stay
   if (instant) { from.forEach(({ r }) => r.user.fill(0)); tRefresh(); return; }
   tAnimate(e => from.forEach(({ r, u }) => { for (let k = 0; k < u.length; k++) r.user[k] = u[k] * (1 - e); }), 300);
 }
-function tissueClearAll() { tissue.poses = []; for (const r of tissue.recs.values()) { r.user.fill(0); r.base.fill(0); } tissue.binds.clear(); cancelAnimationFrame(tissue.raf); tRefresh(); }
+function tissueClearAll() { physReset(true); tissue.poses = []; for (const r of tissue.recs.values()) { r.user.fill(0); r.base.fill(0); r.perm.fill(0); } tissue.binds.clear(); cancelAnimationFrame(tissue.raf); tRefresh(); }
 function tissuePoses(list, instant) { // list: [{ids, v:[x,y,z] metres}]; each piece moves by v at full weight in the free part
   const want = new Map();
   for (const p of list) for (const id of p.ids) { const m = meshes.get(id); if (!m || !SOFT_SYS.has(m.userData.system)) continue; const r = tRec(m), s = m.userData.side === 'r' ? -1 : (m.userData.side === 'l' ? 1 : p.sign || 1), t = new Float32Array(r.n * 3);
@@ -1156,12 +1164,15 @@ function tissuePoses(list, instant) { // list: [{ids, v:[x,y,z] metres}]; each p
   if (instant) { step(1); tRefresh(); } else tAnimate(step, 420);
 }
 function tissueStart(e) { // pointer went down: is there a soft piece under it for the tool to take hold of?
-  if (tissue.tool === 'off' || !(state.mode === 'explore' || state.mode === 'surgery')) return null;
+  const Tk = state.mode === 'surgery' ? simTask() : null;
+  const instr = !!(Tk && Tk.retract && surg.tool && Tk.tool && Tk.tool.includes(surg.tool) && ['retractor-hand', 'retractor-self', 'finger', 'forceps'].includes(surg.tool)); // a retractor or finger dragging a structure aside
+  if (!instr && (tissue.tool === 'off' || !(state.mode === 'explore' || state.mode === 'surgery'))) return null;
   const m = castAt(e), hit = castAt.hit; if (!m || !hit) return null; if (!SOFT_SYS.has(m.userData.system)) return null;
+  if (instr && !Tk.target.some(spec => surgIds(spec, surg.proc.side || 'both').includes(m.userData.id))) return null;
   const r = tRec(m), id = m.userData.id, many = tissue.tool === 'move' && sel.has(id) && sel.size > 1;
   const rs = many ? [...sel].map(i => meshes.get(i)).filter(x => x && SOFT_SYS.has(x.userData.system)).map(tRec) : [r];
   const P = hit.point.clone();
-  const T = { r, rs, P, x0: e.clientX, y0: e.clientY, dist: activeCam().position.distanceTo(P), tool: tissue.tool, snap: rs.map(q => q.user.slice()), w: null, st: null };
+  const T = { r, rs, P, instr, task: Tk, x0: e.clientX, y0: e.clientY, dist: activeCam().position.distanceTo(P), tool: instr ? 'move' : tissue.tool, snap: rs.map(q => q.user.slice()), w: null, st: null };
   if (T.tool === 'mold') { // brush weights from the current surface near the grab point
     const q = r, a = q.m.geometry.getAttribute('position').array; T.w = new Float32Array(q.n);
     for (let i = 0; i < q.n; i++) { const d = Math.hypot(a[i * 3] - P.x, a[i * 3 + 1] - P.y, a[i * 3 + 2] - P.z); T.w[i] = (1 - tsmooth(d / tissue.size)) * q.pin[i]; }
@@ -1175,7 +1186,7 @@ function tissueStart(e) { // pointer went down: is there a soft piece under it f
 function tissueMove(e, T) {
   const cam = activeCam(), px = 2 * Math.tan(cam.fov * Math.PI / 360) * T.dist / canvas.clientHeight;
   const right = new THREE.Vector3().setFromMatrixColumn(cam.matrixWorld, 0), up = new THREE.Vector3().setFromMatrixColumn(cam.matrixWorld, 1);
-  const dw = right.multiplyScalar((e.clientX - T.x0) * px).addScaledVector(up, -(e.clientY - T.y0) * px);
+  const dw = right.multiplyScalar((e.clientX - T.x0) * px).addScaledVector(up, -(e.clientY - T.y0) * px); T.dw = dw.clone();
   if (T.tool === 'move') T.rs.forEach((q, k) => { const s = T.snap[k]; for (let i = 0; i < q.n; i++) { const w = q.pin[i]; q.user[i * 3] = s[i * 3] + dw.x * w; q.user[i * 3 + 1] = s[i * 3 + 1] + dw.y * w; q.user[i * 3 + 2] = s[i * 3 + 2] + dw.z * w; } });
   else if (T.tool === 'mold') { const q = T.r, s = T.snap[0]; for (let i = 0; i < q.n; i++) { const w = T.w[i]; q.user[i * 3] = s[i * 3] + dw.x * w; q.user[i * 3 + 1] = s[i * 3 + 1] + dw.y * w; q.user[i * 3 + 2] = s[i * 3 + 2] + dw.z * w; } }
   else { // stretch: lengthen or shorten along the long axis from the far end, and thin or fatten across it so volume is roughly kept
@@ -1190,6 +1201,7 @@ function tissueMove(e, T) {
 }
 function tissueEnd(T) {
   canvas.parentElement.classList.remove('is-pulling');
+  if (T.instr) return physRetractEnd(T);
   if (!tissue.elastic) return;
   const from = T.rs.map(q => ({ r: q, u: q.user.slice() }));
   tAnimate(e => from.forEach(({ r, u }) => { for (let k = 0; k < u.length; k++) r.user[k] = u[k] * (1 - e); }), 320);
@@ -1201,6 +1213,152 @@ function setTissueTool(t) {
 document.getElementById('tissue-ctl').addEventListener('click', e => { const b = e.target.closest('[data-tissue]'); if (b) setTissueTool(b.dataset.tissue); else if (e.target.closest('#tissue-reset')) tissueReset(false); });
 document.getElementById('tissue-elastic').addEventListener('change', e => { tissue.elastic = e.target.checked; });
 document.getElementById('tissue-size').addEventListener('input', e => { tissue.size = e.target.value / 1000; document.getElementById('tissue-size-val').textContent = e.target.value + ' mm'; });
+
+/* ---------- Instruments on tissue ----------
+   In a simulation case the instruments do physical things: a haemostat or ligature goes on a vessel at the place that was clicked,
+   a blade or scissors divides the structure there (the two cut ends recoil, vessels bleed unless they were clamped, tied or sealed),
+   heat or a crushing grip next to a nerve injures it, and a retractor dragged on a muscle holds it aside. Every one of these is
+   written down as an "act" in the rest frame of the structure (its id and a position along its long axis), so that going back a
+   step rebuilds the same field. */
+const phys = { root: new Map(), pieces: new Map(), orig: new Map(), halves: new Set(), snap: null, marks: [], bleeds: new Map(), blood: 0, injuries: [], n: 0, raf: 0, last: 0, replaying: false };
+const MMAT = { steel: new THREE.MeshPhongMaterial({ color: 0xaab4c4, shininess: 90, specular: 0xffffff }), silk: new THREE.MeshPhongMaterial({ color: 0xf6f2e8, shininess: 20 }), seal: new THREE.MeshPhongMaterial({ color: 0x4a3025, shininess: 8 }),
+  burn: new THREE.MeshPhongMaterial({ color: 0xf3ecd6, emissive: 0x3a3320, shininess: 10 }), crush: new THREE.MeshPhongMaterial({ color: 0xb89b3a, shininess: 10 }), blood: new THREE.MeshPhongMaterial({ color: 0xa8121b, shininess: 110, specular: 0xffb0b0, transparent: true, opacity: 0.93 }) };
+const CUTTERS = ['scalpel', 'scissors', 'harmonic', 'monopolar'], heatTools = ['monopolar', 'bipolar', 'harmonic'], gripTools = ['forceps', 'haemostat', 'tie'];
+function physTv(rid, r) { if (r.tv) return r.tv; const root = tRec(meshes.get(rid) || r.m), c = root.c, a = root.a, tv = new Float32Array(r.n); for (let i = 0; i < r.n; i++) tv[i] = (r.rest[i * 3] - c[0]) * a[0] + (r.rest[i * 3 + 1] - c[1]) * a[1] + (r.rest[i * 3 + 2] - c[2]) * a[2]; r.tv = tv; return tv; }
+const pieceFor = (rid, t) => { const L = phys.pieces.get(rid) || [{ id: rid, lo: -1e9, hi: 1e9 }]; return L.find(p => t >= p.lo && t < p.hi) || L[0]; };
+function physHit(id, hit) { // which structure and where along its long axis: the vertex nearest the click, in the resting frame
+  const m = meshes.get(id), r = tRec(m), rid = phys.root.get(id) || id, tv = physTv(rid, r); let vi = hit && hit.face ? hit.face.a : -1;
+  if (vi < 0 || vi >= r.n) { let best = 1e9; const mid = (r.t0 + r.t1) / 2; for (let i = 0; i < r.n; i++) { const d = Math.abs(tv[i] - mid); if (d < best) { best = d; vi = i; } } }
+  return { rid, t: tv[vi], vi };
+}
+function physSnapshot() { if (phys.snap) return; phys.snap = { labels: [...labels.values()].map(L => [L, L.ids.slice()]), entries: entries.length }; }
+function physBuild(m, r, rid, tri, side, tc, instant) {
+  const n = r.n, map = new Map(), src = [], use = v => { let k = map.get(v); if (k === undefined) { k = src.length; map.set(v, k); src.push(v); } return k; };
+  const idx = tri.map(use), cnt = new Map(), edge = (a, b) => { const k = a < b ? a * n + b : b * n + a; cnt.set(k, (cnt.get(k) || 0) + 1); };
+  for (let q = 0; q < tri.length; q += 3) { edge(tri[q], tri[q + 1]); edge(tri[q + 1], tri[q + 2]); edge(tri[q + 2], tri[q]); }
+  const bnd = []; for (let q = 0; q < tri.length; q += 3) for (const [a, b] of [[tri[q], tri[q + 1]], [tri[q + 1], tri[q + 2]], [tri[q + 2], tri[q]]]) if (cnt.get(a < b ? a * n + b : b * n + a) === 1) bnd.push([a, b]);
+  const nv = src.length, n2 = nv + 1, cv = nv, pa = m.geometry.getAttribute('position').array, tv = r.tv;
+  const rest = new Float32Array(n2 * 3), base = new Float32Array(n2 * 3), user = new Float32Array(n2 * 3), perm = new Float32Array(n2 * 3), pos = new Float32Array(n2 * 3), pin = new Float32Array(n2), tv2 = new Float32Array(n2);
+  for (let k = 0; k < nv; k++) { const o = src[k]; for (let a = 0; a < 3; a++) { rest[k * 3 + a] = r.rest[o * 3 + a]; base[k * 3 + a] = r.base[o * 3 + a]; user[k * 3 + a] = r.user[o * 3 + a]; perm[k * 3 + a] = r.perm[o * 3 + a]; pos[k * 3 + a] = pa[o * 3 + a]; } tv2[k] = tv[o]; }
+  const bs = new Set(); bnd.forEach(([a, b]) => { bs.add(a); bs.add(b); });
+  for (const o of bs) { for (let a = 0; a < 3; a++) { for (const arr of [[rest, r.rest], [base, r.base], [user, r.user], [perm, r.perm]]) arr[0][cv * 3 + a] += arr[1][o * 3 + a] / bs.size; pos[cv * 3 + a] += pa[o * 3 + a] / bs.size; } tv2[cv] += tv[o] / bs.size; }
+  for (const [a, b] of bnd) idx.push(cv, map.get(a), map.get(b)); // close the cut end
+  let farT = side === 0 ? 1e9 : -1e9; for (let k = 0; k < nv; k++) farT = side === 0 ? Math.min(farT, tv2[k]) : Math.max(farT, tv2[k]);
+  const L = Math.max(0.003, Math.abs(tc - farT));
+  for (let k = 0; k < nv; k++) pin[k] = Math.min(r.pin[src[k]], tsmooth(Math.abs(tv2[k] - farT) / (0.7 * L))); pin[cv] = 1; // the far end stays held, the cut end is free
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(pos, 3)); g.setIndex(new THREE.BufferAttribute(new Uint32Array(idx), 1)); g.computeVertexNormals(); g.computeBoundingSphere();
+  const id2 = rid + '~' + (++phys.n), mesh = new THREE.Mesh(g, materials[m.userData.system]); mesh.userData = Object.assign({}, m.userData, { id: id2, dirtyMat: true }); mesh.matrixAutoUpdate = false; root.add(mesh); meshes.set(id2, mesh);
+  const e0 = entryById.get(m.userData.id) || entryById.get(rid), e2 = Object.assign({}, e0, { id: id2 }); entries.push(e2); entryById.set(id2, e2); labelOfId.set(id2, labelOfId.get(m.userData.id) || labelOfId.get(rid)); phys.halves.add(id2); phys.root.set(id2, rid);
+  const rec = { m: mesh, id: id2, n: n2, rest, base, user, fol: new Float32Array(n2 * 3), perm, pin, c: r.c, a: r.a, t0: Math.min(...tv2), t1: Math.max(...tv2), tv: tv2, cap: cv };
+  tissue.recs.set(id2, rec); return rec;
+}
+function physCut(rid, tc, sealed) { // divide the structure at tc; returns the two halves
+  const piece = pieceFor(rid, tc), m = meshes.get(piece.id); if (!m) return null;
+  const r = tRec(m); physTv(rid, r); const ix = m.geometry.index.array, tv = r.tv, A = [], B = [];
+  for (let q = 0; q < ix.length; q += 3) { const c = (tv[ix[q]] + tv[ix[q + 1]] + tv[ix[q + 2]]) / 3; (c < tc ? A : B).push(ix[q], ix[q + 1], ix[q + 2]); }
+  if (A.length < 9 || B.length < 9) return null;
+  physSnapshot(); const origId = m.userData.id; if (!phys.orig.has(rid) && origId === rid) phys.orig.set(rid, { m, r });
+  const ha = physBuild(m, r, rid, A, 0, tc), hb = physBuild(m, r, rid, B, 1, tc);
+  for (const L of labels.values()) { const k = L.ids.indexOf(origId); if (k >= 0) L.ids.splice(k, 1, ha.id, hb.id); }
+  root.remove(m); meshes.delete(origId); if (origId !== rid) { phys.halves.delete(origId); entryById.delete(origId); labelOfId.delete(origId); } tissue.recs.delete(origId); tissue.binds.clear();
+  const L = (phys.pieces.get(rid) || [{ id: origId, lo: -1e9, hi: 1e9 }]).filter(p => p.id !== origId), ext = piece;
+  phys.pieces.set(rid, L.concat([{ id: ha.id, lo: ext.lo, hi: tc }, { id: hb.id, lo: tc, hi: ext.hi }]));
+  const sys = m.userData.system, amt = (sys === 'artery' ? 0.004 : sys === 'nerve' || sys === 'vein' ? 0.0028 : 0.0016), dirs = [-1, 1], hs = [ha, hb]; // cut ends spring apart
+  const tgt = hs.map((h, k) => { const o = new Float32Array(h.n * 3), a = h.a; for (let i = 0; i < h.n; i++) { const w = h.pin[i] * dirs[k] * amt; o[i * 3] = a[0] * w; o[i * 3 + 1] = a[1] * w; o[i * 3 + 2] = a[2] * w; } return o; });
+  const from = hs.map(h => h.perm.slice());
+  const step = e => hs.forEach((h, k) => { for (let q = 0; q < h.perm.length; q++) h.perm[q] = from[k][q] + (tgt[k][q] - from[k][q]) * e; });
+  if (phys.replaying || reduceMotion.matches) { step(1); } else tAnimate(step, 380);
+  if (!phys.replaying) { physBlood(rid, tc, hs, sys, sealed); }
+  tRefresh(); return hs;
+}
+function physBlood(rid, tc, hs, sys, sealed) { // an unsecured vessel end bleeds until it is controlled
+  if (sealed || !(sys === 'artery' || sys === 'vein')) return;
+  hs.forEach((h, k) => { const secured = phys.marks.some(mk => mk.rid === rid && Math.abs(mk.t - tc) < 0.009 && (k === 0 ? mk.t < tc : mk.t >= tc) && (mk.kind === 'clamp' || mk.kind === 'tie' || mk.kind === 'seal')); if (secured) return;
+    const blob = new THREE.Mesh(new THREE.SphereGeometry(1, 14, 10), MMAT.blood); blob.scale.setScalar(0.0012); root.add(blob);
+    phys.bleeds.set(h.id, { rate: sys === 'artery' ? 10 : 4, ml: 0, blob, rid, tc, side: k, sys }); });
+  if (phys.bleeds.size && !phys.raf) { phys.last = performance.now(); phys.raf = requestAnimationFrame(physTick); }
+}
+function physTick(now) {
+  const dt = Math.min(0.1, (now - phys.last) / 1000); phys.last = now;
+  phys.bleeds.forEach((b, id) => { b.ml += b.rate * dt; phys.blood += b.rate * dt; const r = tissue.recs.get(id); if (r) { const a = r.m.geometry.getAttribute('position').array, k = r.cap * 3; b.blob.position.set(a[k], a[k + 1], a[k + 2]); } b.blob.scale.setScalar(0.0012 + 0.0011 * Math.cbrt(b.ml)); });
+  needsRender = true; const el = document.getElementById('blood'); if (el) el.textContent = Math.round(phys.blood) + ' mL'; else if (phys.blood > 0) renderSurgery();
+  phys.raf = phys.bleeds.size ? requestAnimationFrame(physTick) : 0; if (!phys.bleeds.size) renderSurgery();
+}
+function markObj(kind) {
+  const g = new THREE.Group();
+  if (kind === 'clamp') { const jaw = new THREE.Mesh(new THREE.BoxGeometry(0.0038, 0.0012, 0.0014), MMAT.steel), h = new THREE.Mesh(new THREE.BoxGeometry(0.0007, 0.0085, 0.0007), MMAT.steel); h.position.set(-0.0014, 0.0048, 0); const h2 = h.clone(); h2.position.x = 0.0014; g.add(jaw, h, h2); }
+  else if (kind === 'tie') g.add(new THREE.Mesh(new THREE.TorusGeometry(1, 0.24, 6, 16), MMAT.silk));
+  else if (kind === 'seal') g.add(new THREE.Mesh(new THREE.SphereGeometry(0.0011, 10, 8), MMAT.seal));
+  else if (kind === 'burn') g.add(new THREE.Mesh(new THREE.SphereGeometry(0.0017, 10, 8), MMAT.burn));
+  else g.add(new THREE.Mesh(new THREE.TorusGeometry(0.0011, 0.0006, 6, 14), MMAT.crush));
+  return g;
+}
+function physMark(kind, rid, t, at) { const mk = { kind, rid, t, at: at || null, obj: markObj(kind) }; root.add(mk.obj); phys.marks.push(mk); markPlace(mk); return mk; }
+function markPlace(mk) {
+  const p = pieceFor(mk.rid, mk.t), m = meshes.get(p.id); if (!m) { mk.obj.visible = false; return; } mk.obj.visible = true;
+  const r = tissue.recs.get(p.id) || tRec(m), tv = physTv(mk.rid, r), pos = m.geometry.getAttribute('position').array; let sx = 0, sy = 0, sz = 0, n = 0, best = 1e9, bi = 0;
+  for (let i = 0; i < r.n; i++) { const d = Math.abs(tv[i] - mk.t); if (d < 0.0009) { sx += pos[i * 3]; sy += pos[i * 3 + 1]; sz += pos[i * 3 + 2]; n++; } if (d < best) { best = d; bi = i; } }
+  if (!n) { sx = pos[bi * 3]; sy = pos[bi * 3 + 1]; sz = pos[bi * 3 + 2]; n = 1; }
+  const cx = sx / n, cy = sy / n, cz = sz / n; let rad = 0, k = 0; for (let i = 0; i < r.n; i++) if (Math.abs(tv[i] - mk.t) < 0.0009) { rad += Math.hypot(pos[i * 3] - cx, pos[i * 3 + 1] - cy, pos[i * 3 + 2] - cz); k++; }
+  rad = k ? rad / k : 0.001; const a = r.a; mk.obj.position.set(cx, cy, cz); mk.obj.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), new THREE.Vector3(a[0], a[1], a[2]).normalize());
+  if (mk.kind === 'tie') mk.obj.scale.setScalar(Math.max(0.0007, rad * 1.12)); else if (mk.kind === 'clamp') mk.obj.scale.setScalar(Math.max(0.8, Math.min(1.8, rad / 0.0012)));
+}
+function physMarks() { for (const mk of phys.marks) markPlace(mk); }
+function physReset(full) { // back to the intact anatomy; the blood lost and the injuries stay unless the whole case restarts
+  phys.marks.forEach(mk => root.remove(mk.obj)); phys.marks = []; phys.bleeds.forEach(b => root.remove(b.blob)); phys.bleeds.clear();
+  if (phys.snap) {
+    phys.halves.forEach(id => { const m = meshes.get(id); if (m) { root.remove(m); m.geometry.dispose(); } meshes.delete(id); tissue.recs.delete(id); entryById.delete(id); labelOfId.delete(id); });
+    phys.snap.labels.forEach(([L, ids]) => { L.ids = ids; }); entries.length = phys.snap.entries;
+    phys.orig.forEach(({ m, r }, rid) => { root.add(m); meshes.set(rid, m); r.base.fill(0); r.user.fill(0); r.perm.fill(0); r.fol.fill(0); tissue.recs.set(rid, r); tApply(r); });
+    phys.snap = null; phys.halves.clear(); phys.orig.clear(); tissue.binds.clear();
+  }
+  phys.pieces.clear(); phys.root.clear(); phys.n = 0; cancelAnimationFrame(phys.raf); phys.raf = 0;
+  if (full) { phys.blood = 0; phys.injuries = []; if (typeof surg !== 'undefined') surg.acts = []; }
+  tissue.recs.forEach(r => r.perm.fill(0)); applyVisibility && applyVisibility();
+}
+function physDo(a) { // one act, live or replayed
+  const { tool, rid, t } = a;
+  if (a.kind === 'retract') { const r = tissue.recs.get(rid) || tRec(meshes.get(rid)); for (let i = 0; i < r.n; i++) { const w = r.pin[i]; r.perm[i * 3] += a.vec[0] * w; r.perm[i * 3 + 1] += a.vec[1] * w; r.perm[i * 3 + 2] += a.vec[2] * w; } tissue.binds.clear(); tRefresh(); return; }
+  if (a.kind === 'control') { const id = [...phys.bleeds.keys()].find(k => phys.bleeds.get(k).rid === rid && phys.bleeds.get(k).side === a.side); const b = id && phys.bleeds.get(id); if (b) { root.remove(b.blob); phys.bleeds.delete(id); } physMark(a.tool === 'tie' ? 'tie' : a.tool === 'haemostat' ? 'clamp' : 'seal', rid, a.t + (a.side ? 0.0012 : -0.0012)); return; }
+  if (tool === 'haemostat') { physMark('clamp', rid, t - 0.0026); physMark('clamp', rid, t + 0.0026); }
+  else if (tool === 'tie') { if (t === undefined) phys.marks.forEach(mk => { if (mk.kind === 'clamp') { root.remove(mk.obj); mk.kind = 'tie'; mk.obj = markObj('tie'); root.add(mk.obj); markPlace(mk); } }); else { physMark('tie', rid, t - 0.0026); physMark('tie', rid, t + 0.0026); } }
+  else if (tool === 'bipolar') physMark('seal', rid, t);
+  else if (CUTTERS.includes(tool)) { const sealed = tool === 'harmonic'; const hs = physCut(rid, t, sealed); if (hs && sealed) { physMark('seal', rid, t - 0.0012); physMark('seal', rid, t + 0.0012); } }
+  tRefresh();
+}
+function physNearNerve(P, r) { // a nerve within r metres of a point
+  let hit = null; meshes.forEach((m, id) => { if (hit || m.userData.system !== 'nerve' || !/laryngeal/.test(m.userData.label) || !m.visible) return; const a = m.geometry.getAttribute('position').array; for (let i = 0; i < a.length; i += 3) if (Math.hypot(a[i] - P.x, a[i + 1] - P.y, a[i + 2] - P.z) < r) { hit = m.userData.label; return; } }); return hit;
+}
+function physUse(tool, id, hit, T) { // returns text to add to the task's result
+  const P = hit && hit.point ? hit.point : null; let note = '';
+  if (id !== undefined && meshes.get(id) && SOFT_SYS.has(meshes.get(id).userData.system)) {
+    const { rid, t } = physHit(id, hit), act = { k: surg.i, j: surg.t, tool, rid, t }, cls = meshes.get(id).userData.system;
+    if (tool === 'haemostat' || tool === 'tie' || tool === 'bipolar' || (CUTTERS.includes(tool) && (T.divide || (T.also && T.also[tool])))) { surg.acts.push(act); physDo(act); } // only tasks that divide something divide it: opening skin or a fascial plane leaves the muscles whole
+    if (P && heatTools.includes(tool)) { const n = physNearNerve(P, 0.003); if (n) { phys.injuries.push(`Thermal injury to the ${n.toLowerCase()}: heat spread within 3 mm.`); physMark('burn', rid, t); note = ` Warning: heat spread has injured the ${n.toLowerCase()}.`; } }
+    if (cls === 'nerve' && gripTools.includes(tool)) { phys.injuries.push(`Crush injury to the ${meshes.get(id).userData.label.toLowerCase()}: the nerve was gripped.`); physMark('crush', rid, t); note = ` Warning: gripping the ${meshes.get(id).userData.label.toLowerCase()} has crushed it.`; }
+  } else if (tool === 'tie') { const act = { k: surg.i, j: surg.t, tool }; surg.acts.push(act); physDo(act); }
+  return note;
+}
+function physReplay() { phys.replaying = true; for (const a of surg.acts) if (a.k < surg.i) physDo(a); phys.replaying = false; }
+function physBleedTask() {
+  const ids = [...phys.bleeds.keys()];
+  return { synthetic: true, do: 'Bleeding. Control the bleeding end now: click it with a haemostat, bipolar forceps or a ligature.', tool: ['haemostat', 'bipolar', 'tie'], target: [], targetIds: ids, ok: 'Bleeding controlled.', bad: { '*': 'Not for a bleeding vessel: use a haemostat, bipolar forceps or a ligature.' } };
+}
+function physBleedUse(tool, id, hit, T) {
+  if (!T.tool.includes(tool)) return simFail(T.bad['*']);
+  const b = phys.bleeds.get(id); if (!b) return simFail('Click the bleeding end (the red pool).');
+  const act = { kind: 'control', k: surg.i, j: surg.t, tool, rid: b.rid, t: b.tc, side: b.side }; surg.acts.push(act); physDo(act); surg.said = ''; surg.log.push(`Bleeding controlled with ${toolName(tool).toLowerCase()}.`); surg.tool = null; simCursor(); surgPaint(true);
+}
+function physRetractEnd(T) { // an instrument dragged a structure aside: hold it if it moved far enough, otherwise let it go back
+  const q = T.r, s = T.snap[0]; let peak = 0; for (let i = 0; i < q.n; i++) peak = Math.max(peak, Math.hypot(q.user[i * 3] - s[i * 3], q.user[i * 3 + 1] - s[i * 3 + 1], q.user[i * 3 + 2] - s[i * 3 + 2]));
+  const min = T.task.retract.min / 1000;
+  if (peak >= min && simTask() === T.task) {
+    const rid = phys.root.get(q.id) || q.id, vec = [T.dw.x, T.dw.y, T.dw.z]; T.rs.forEach(r => { r.user.fill(0); }); const act = { kind: 'retract', k: surg.i, j: surg.t, tool: surg.tool, rid, vec }; surg.acts.push(act); physDo(act);
+    return simDone(T.task.ok);
+  }
+  const from = T.rs.map(r => ({ r, u: r.user.slice() })); tAnimate(e => from.forEach(({ r, u }) => { for (let k = 0; k < u.length; k++) r.user[k] = u[k] * (1 - e); }), 300);
+  simFail(`It needs to be drawn further aside: at least ${T.task.retract.min} mm (it moved ${(peak * 1000).toFixed(1)} mm). Drag it with the instrument in hand.`);
+}
 
 /* ---------- The larynx as the scope sees it ----------
    Z-Anatomy has the laryngeal cartilages and bare intrinsic muscles but none of the mucosal folds, so Scope mode draws them

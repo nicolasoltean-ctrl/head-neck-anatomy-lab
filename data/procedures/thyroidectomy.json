@@ -246,7 +246,10 @@
         2
        ]
       }
-     ]
+     ],
+     "retract": {
+      "min": 7
+     }
     }
    ],
    "landmarks": [
@@ -307,7 +310,10 @@
         2.5
        ]
       }
-     ]
+     ],
+     "retract": {
+      "min": 4
+     }
     },
     {
      "do": "Find the vein that is pulled tight as the lobe is turned.",
@@ -354,10 +360,8 @@
      "target": [
       "Middle thyroid vein"
      ],
-     "ok": "Divided between the haemostats.",
-     "hide": [
-      "Middle thyroid vein"
-     ]
+     "ok": "Divided between the haemostats; the cut ends draw back.",
+     "divide": true
     },
     {
      "do": "Secure both ends.",
@@ -365,7 +369,7 @@
       "tie"
      ],
      "target": null,
-     "ok": "Ligated with 3/0 ties. The bulk of the lobe can now be delivered into the wound."
+     "ok": "Both stumps are ligated with 3/0 ties. The bulk of the lobe can now be delivered into the wound."
     }
    ],
    "landmarks": [
@@ -445,22 +449,34 @@
      ]
     },
     {
-     "do": "Secure and divide the upper-pole pedicle on the gland (click the superior thyroid artery).",
+     "do": "Double-ligate the upper-pole pedicle on the gland (click the superior thyroid artery where it meets the pole).",
      "tool": [
       "tie"
      ],
      "target": [
       "Superior thyroid artery"
      ],
-     "hide": [
-      "Superior thyroid artery",
-      "Superior thyroid vein"
-     ],
-     "ok": "The pedicle is double ligated with 2/0 or 3/0 ties and divided on the gland.",
+     "ok": "Two ties on the pedicle, close to the thyroid and below where the external laryngeal nerve runs.",
      "bad": {
       "haemostat": "Clamps alone are not left on this pedicle: it is double ligated.",
       "scissors": "Ligate before you divide."
      }
+    },
+    {
+     "do": "Divide the artery between the ties.",
+     "tool": [
+      "scissors",
+      "scalpel"
+     ],
+     "target": [
+      "Superior thyroid artery"
+     ],
+     "ok": "Divided between the ligatures; the ends draw back.",
+     "bad": {
+      "monopolar": "Divide it with scissors or a blade between the ties.",
+      "tie": "It is already tied; now divide it."
+     },
+     "divide": true
     }
    ],
    "landmarks": [
@@ -581,21 +597,38 @@
      "ok": "Retractors repositioned to show the lower pole and the inferior thyroid veins."
     },
     {
-     "do": "Deal with the inferior thyroid veins.",
+     "do": "Ligate an inferior thyroid vein (click one).",
      "tool": [
-      "tie",
-      "harmonic"
+      "tie"
      ],
      "target": [
       "Inferior thyroid veins"
      ],
-     "ok": "Divided and ligated. The trachea is exposed and the gland can be delivered.",
+     "also": {
+      "harmonic": {
+       "skip": 1,
+       "ok": "Sealed and divided with the harmonic scalpel."
+      }
+     },
+     "ok": "Tied on either side of the point you chose.",
      "bad": {
       "monopolar": "These veins are divided and ligated."
-     },
-     "hide": [
+     }
+    },
+    {
+     "do": "Divide it between the ties.",
+     "tool": [
+      "scissors",
+      "scalpel"
+     ],
+     "target": [
       "Inferior thyroid veins"
-     ]
+     ],
+     "ok": "Divided. The trachea is exposed and the gland can be delivered.",
+     "bad": {
+      "monopolar": "Divide it with scissors or a blade between the ties."
+     },
+     "divide": true
     },
     {
      "do": "Find the inferior parathyroid gland.",
@@ -841,9 +874,6 @@
       "harmonic": "Heat spreads beyond the tips. The atlas warns against every form of cautery this close to the recurrent laryngeal nerve.",
       "finger": "The ligament is dense; pulling it apart drags on the nerve. It is divided sharply."
      },
-     "hide": [
-      "Ligament of Berry"
-     ],
      "pose": [
       {
        "label": "Thyroid gland",
@@ -853,7 +883,8 @@
         9
        ]
       }
-     ]
+     ],
+     "divide": true
     }
    ],
    "landmarks": [
@@ -908,7 +939,8 @@
      "ok": "Divided; the lobe is out of the neck.",
      "hide": [
       "Thyroid gland"
-     ]
+     ],
+     "divide": true
     },
     {
      "do": "Secure the cut edge of the remnant.",
@@ -1016,5 +1048,5 @@
   "Seroma: small ones are common and resorb; larger ones can be aspirated under sterile conditions.",
   "Tracheomalacia: an uncommon cause of obstruction, unmasked when a long-standing goitre that was splinting the trachea is removed."
  ],
- "notes": "Adapted (reworded, not copied) from the Open Access Atlas thyroidectomy chapter, CC BY-NC 3.0: attribution is shown in the panel; NON-COMMERCIAL licence. Not on the model: recurrent and external laryngeal nerves, superior thyroid artery, middle and inferior thyroid veins, oesophagus, ligament of Berry, tubercle of Zuckerkandl; tasks on those use no model target or a stand-in (superior thyroid vein for the upper-pole pedicle; cricoid/trachea for Berry's ligament). The gland is one mesh, so lobe removal is shown by ghosting the whole gland. Atlas spells the retractor 'Jowell's'; Joll's is the usual spelling. Structures added to the model for this case are authored (tools/author_structures.py), schematic in exact millimetres."
+ "notes": "Adapted (reworded, not copied) from the Open Access Atlas thyroidectomy chapter, CC BY-NC 3.0: attribution is shown in the panel; NON-COMMERCIAL licence. Not on the model: recurrent and external laryngeal nerves, superior thyroid artery, middle and inferior thyroid veins, oesophagus, ligament of Berry, tubercle of Zuckerkandl; tasks on those use no model target or a stand-in (superior thyroid vein for the upper-pole pedicle; cricoid/trachea for Berry's ligament). The gland is one mesh, so lobe removal is shown by ghosting the whole gland. Atlas spells the retractor 'Jowell's'; Joll's is the usual spelling. Structures added to the model for this case are authored (tools/author_structures.py), schematic in exact millimetres. Physics: haemostat/ligature/seal marks, divisions with recoil, bleeding, thermal and crush injury to the laryngeal nerves, and dragged retraction are in template3d.html (phys*)."
 }
