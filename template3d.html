@@ -290,8 +290,6 @@ body.entering #gl { transition: opacity .55s ease .6s; }
 .results { list-style: none; padding: 0; display: grid; gap: 5px; font-size: 13px; color: var(--fg-2); } .results li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 8px; align-items: start; }
 .results li > span { font-family: var(--font-mono); font-size: 12px; text-align: center; border-radius: 6px; padding: 1px 0; background: var(--bg-3); } .results li.ok > span { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); } .results li.miss > span { background: color-mix(in srgb, var(--bad) 16%, transparent); color: var(--bad); } .results b { color: var(--fg); font-weight: 600; }
 .train .eyebrow .seg { margin-left: auto; text-transform: none; letter-spacing: 0; font-family: var(--font-ui); } .train .seg button { font-size: 12.5px; padding: 4px 11px; } .train .seg button:disabled { opacity: .5; cursor: default; }
-.ctl .chk { display: inline-flex; align-items: center; gap: 6px; color: var(--fg-2); font-size: 12.5px; font-weight: 500; cursor: pointer; } .ctl .chk input[type="range"] { width: 90px; } .ctl .chk input[type="checkbox"] { accent-color: var(--accent); margin: 0; }
-.stage.has-tissue canvas { cursor: grab; } .stage.has-tissue.is-pulling canvas { cursor: grabbing; }
 /* simulation cases: instrument tray, decisions, log of finished tasks */
 .proc.sim { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); background: color-mix(in srgb, var(--accent) 6%, var(--bg)); }
 .tray { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; } .tray.off { opacity: .45; }
@@ -370,13 +368,6 @@ body.entering #gl { transition: opacity .55s ease .6s; }
           <label>Pieces</label>
           <div class="mods" id="mods"></div>
           <button class="icon-btn" id="mods-reset" hidden title="Show every hidden piece and un-ghost every ghosted piece">Restore all</button>
-        </div>
-        <div class="ctl" id="tissue-ctl">
-          <label>Tissue</label>
-          <div class="row"><div class="seg" role="group" aria-label="Tissue tool"><button data-tissue="off" aria-pressed="true" title="Drag to orbit">Off</button><button data-tissue="move" aria-pressed="false" title="Drag a structure to move it; its ends stay attached">Move</button><button data-tissue="stretch" aria-pressed="false" title="Drag along a structure to lengthen or shorten it">Stretch</button><button data-tissue="mold" aria-pressed="false" title="Pull a soft region into a new shape">Mold</button></div>
-            <label class="chk"><input type="checkbox" id="tissue-elastic" checked> Springs back</label>
-            <label class="chk" id="tissue-size-wrap" hidden>Brush <input type="range" id="tissue-size" min="3" max="40" step="1" value="12" aria-label="Mold brush size in millimetres"><span id="tissue-size-val">12 mm</span></label></div>
-          <button class="icon-btn" id="tissue-reset" hidden title="Return every moved structure to where it was">Reset tissue</button>
         </div>
         <div class="ctl">
           <label>Side</label>
@@ -714,7 +705,7 @@ function showTip(m, e) {
   const quizHide = state.mode === 'quiz' && state.quiz && state.quiz.q && !state.quiz.q.answered;
   if (quizHide || (state.mode === 'surgery' && simTask() && simTask().target)) { tip.classList.remove('on'); canvas.style.cursor = 'crosshair'; return; }
   const u = m.userData; tip.innerHTML = `${esc(u.label)}${u.side !== 'm' ? `<small>${u.side === 'l' ? 'LEFT' : 'RIGHT'}</small>` : ''}`;
-  const r = canvas.parentElement.getBoundingClientRect(); tip.style.left = (e.clientX - r.left) + 'px'; tip.style.top = (e.clientY - r.top) + 'px'; tip.classList.add('on'); canvas.style.cursor = 'pointer';
+  const r = canvas.parentElement.getBoundingClientRect(); tip.style.left = (e.clientX - r.left) + 'px'; tip.style.top = (e.clientY - r.top) + 'px'; tip.classList.add('on'); canvas.style.cursor = SOFT_SYS.has(u.system) && (state.mode === 'explore' || state.mode === 'surgery') ? 'grab' : 'pointer';
 }
 const findOpen = () => state.mode === 'quiz' && !!state.quiz && state.quiz.type === 'find' && !!state.quiz.q && !state.quiz.q.answered;
 function pick(e) {
@@ -1082,7 +1073,7 @@ document.getElementById('surgery-ui').addEventListener('click', e => {
    moving one stretches it between them; compact organs move freely. Pieces that touch the one being pulled follow it over a few
    millimetres, so a vein stretches between a gland and the vessel it drains into. Bone, cartilage, skin and brain are rigid here. */
 const SOFT_SYS = new Set(['muscle', 'artery', 'vein', 'nerve', 'lymph', 'viscera']);
-const tissue = { tool: 'off', size: 0.012, elastic: true, recs: new Map(), binds: new Map(), poses: [], raf: 0, anim: null };
+const tissue = { recs: new Map(), binds: new Map(), poses: [], raf: 0, anim: null };
 const GLAND_FAMILY = new Set(['Thyroid gland', 'Isthmus of thyroid gland', 'Pyramidal lobe of thyroid gland']);
 const tsmooth = t => t <= 0 ? 0 : t >= 1 ? 1 : t * t * (3 - 2 * t);
 function tRec(m) {
@@ -1139,10 +1130,7 @@ function tRefresh() { // carry followers along, then write every piece that has 
   for (const r of [...tissue.recs.values()]) { const nz = tNonzero(r.base) || tNonzero(r.user) || tNonzero(r.fol) || tNonzero(r.perm); if (nz || r.applied) tApply(r); r.applied = nz; }
   physMarks(); tissueUi();
 }
-function tissueUi() {
-  let any = false; for (const r of tissue.recs.values()) { for (let k = 0; k < r.user.length; k++) if (r.user[k] !== 0) { any = true; break; } if (any) break; }
-  document.getElementById('tissue-reset').hidden = !any;
-}
+function tissueUi() {}
 function tAnimate(step, ms, done) { // run step(u) for u 0..1, easing out
   cancelAnimationFrame(tissue.raf); const t0 = performance.now();
   if (reduceMotion.matches) { step(1); tRefresh(); if (done) done(); return; }
@@ -1166,16 +1154,17 @@ function tissuePoses(list, instant) { // list: [{ids, v:[x,y,z] metres}]; each p
 function tissueStart(e) { // pointer went down: is there a soft piece under it for the tool to take hold of?
   const Tk = state.mode === 'surgery' ? simTask() : null;
   const instr = !!(Tk && Tk.retract && surg.tool && Tk.tool && Tk.tool.includes(surg.tool) && ['retractor-hand', 'retractor-self', 'finger', 'forceps'].includes(surg.tool)); // a retractor or finger dragging a structure aside
-  if (!instr && (tissue.tool === 'off' || !(state.mode === 'explore' || state.mode === 'surgery'))) return null;
+  if (!instr && (!(state.mode === 'explore' || state.mode === 'surgery') || e.altKey)) return null; // soft tissue always gives; hold Alt/Option to orbit over it
   const m = castAt(e), hit = castAt.hit; if (!m || !hit) return null; if (!SOFT_SYS.has(m.userData.system)) return null;
   if (instr && !Tk.target.some(spec => surgIds(spec, surg.proc.side || 'both').includes(m.userData.id))) return null;
-  const r = tRec(m), id = m.userData.id, many = tissue.tool === 'move' && sel.has(id) && sel.size > 1;
+  const r = tRec(m), id = m.userData.id, many = false;
   const rs = many ? [...sel].map(i => meshes.get(i)).filter(x => x && SOFT_SYS.has(x.userData.system)).map(tRec) : [r];
   const P = hit.point.clone();
-  const T = { r, rs, P, instr, task: Tk, x0: e.clientX, y0: e.clientY, dist: activeCam().position.distanceTo(P), tool: instr ? 'move' : tissue.tool, snap: rs.map(q => q.user.slice()), w: null, st: null };
-  if (T.tool === 'mold') { // brush weights from the current surface near the grab point
+  const T = { r, rs, P, instr, task: Tk, x0: e.clientX, y0: e.clientY, dist: activeCam().position.distanceTo(P), tool: instr ? 'move' : 'mold', snap: rs.map(q => q.user.slice()), w: null, st: null };
+  if (T.tool === 'mold') { // a soft pull: it takes hold of a region in proportion to the structure's length, held at its attached ends
+    T.size = Math.max(0.006, Math.min(0.03, 0.4 * Math.max(0.01, r.t1 - r.t0)));
     const q = r, a = q.m.geometry.getAttribute('position').array; T.w = new Float32Array(q.n);
-    for (let i = 0; i < q.n; i++) { const d = Math.hypot(a[i * 3] - P.x, a[i * 3 + 1] - P.y, a[i * 3 + 2] - P.z); T.w[i] = (1 - tsmooth(d / tissue.size)) * q.pin[i]; }
+    for (let i = 0; i < q.n; i++) { const d = Math.hypot(a[i * 3] - P.x, a[i * 3 + 1] - P.y, a[i * 3 + 2] - P.z); T.w[i] = (1 - tsmooth(d / T.size)) * q.pin[i]; }
   } else if (T.tool === 'stretch') {
     const c = r.c, a = r.a, tp = (P.x - c[0]) * a[0] + (P.y - c[1]) * a[1] + (P.z - c[2]) * a[2], dir = tp >= 0 ? 1 : -1, anchorT = dir > 0 ? r.t0 : r.t1;
     const ax = new THREE.Vector3(a[0] * dir, a[1] * dir, a[2] * dir), an = new THREE.Vector3(c[0] + a[0] * anchorT, c[1] + a[1] * anchorT, c[2] + a[2] * anchorT);
@@ -1202,17 +1191,10 @@ function tissueMove(e, T) {
 function tissueEnd(T) {
   canvas.parentElement.classList.remove('is-pulling');
   if (T.instr) return physRetractEnd(T);
-  if (!tissue.elastic) return;
   const from = T.rs.map(q => ({ r: q, u: q.user.slice() }));
   tAnimate(e => from.forEach(({ r, u }) => { for (let k = 0; k < u.length; k++) r.user[k] = u[k] * (1 - e); }), 320);
 }
-function setTissueTool(t) {
-  tissue.tool = t; document.querySelectorAll('[data-tissue]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tissue === t)));
-  stageEl.classList.toggle('has-tissue', t !== 'off'); document.getElementById('tissue-size-wrap').hidden = t !== 'mold';
-}
-document.getElementById('tissue-ctl').addEventListener('click', e => { const b = e.target.closest('[data-tissue]'); if (b) setTissueTool(b.dataset.tissue); else if (e.target.closest('#tissue-reset')) tissueReset(false); });
-document.getElementById('tissue-elastic').addEventListener('change', e => { tissue.elastic = e.target.checked; });
-document.getElementById('tissue-size').addEventListener('input', e => { tissue.size = e.target.value / 1000; document.getElementById('tissue-size-val').textContent = e.target.value + ' mm'; });
+
 
 /* ---------- Instruments on tissue ----------
    In a simulation case the instruments do physical things: a haemostat or ligature goes on a vessel at the place that was clicked,

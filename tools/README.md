@@ -58,10 +58,10 @@ the one-piece gland into right lobe, left lobe, isthmus and pyramidal lobe. Draw
 from behind and from the side. Note the source places the gland and parathyroids higher than the airway would suggest, and its
 carotid sheath hugs the trachea, so everything is fitted to those as they are.
 
-Tissue tool (Explore and Surgery modes, Tissue row under the viewer): Move drags a whole structure, Stretch lengthens it along its
-long axis from the far end, Mold pulls a soft region (brush size in mm); "Springs back" returns it on release. Muscles, vessels and
-nerves stay held at their ends (`tRec` pins), vessels, nerves, nodes and small glands touching a pulled piece follow it over 5 mm,
-the gland's parts carry each other, bone/cartilage/skin/brain are rigid. Procedure tasks can carry `"pose": [{"label", "v": [lateral,
+Tissue is always soft (Explore and Surgery): dragging a muscle, vessel, nerve or organ pulls it, in proportion to its length, and it
+springs back on release; drag empty space, bone or skin, or hold Alt/Option, to orbit. Muscles, vessels and nerves stay held at their
+ends (`tRec` pins), vessels, nerves, nodes and small glands touching a pulled piece follow it over 5 mm, the gland's parts carry
+each other, bone/cartilage/skin/brain are rigid. Procedure tasks can carry `"pose": [{"label", "v": [lateral,
 up, anterior] mm}]`; finished tasks move those structures (the latest pose per label wins).
 
 ## Instrument physics (simulation cases)
